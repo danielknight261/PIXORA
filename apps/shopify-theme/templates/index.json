@@ -1,0 +1,341 @@
+{
+  "sections": {
+    "product_blocks": {
+      "type": "product-blocks",
+      "blocks": {
+        "canvas": {
+          "type": "product_block",
+          "settings": {
+            "title": "Canvas prints",
+            "price_label": "From £14.99",
+            "link": "/collections/canvas-prints",
+            "accent": "blue",
+            "coming_soon": false
+          }
+        },
+        "framed_canvas": {
+          "type": "product_block",
+          "settings": {
+            "title": "Framed canvas",
+            "price_label": "Coming soon",
+            "link": "/collections/framed-canvas",
+            "accent": "cyan",
+            "coming_soon": true
+          }
+        },
+        "framed": {
+          "type": "product_block",
+          "settings": {
+            "title": "Framed prints",
+            "price_label": "Coming soon",
+            "link": "/collections/framed-prints",
+            "accent": "mint",
+            "coming_soon": true
+          }
+        },
+        "aluminum": {
+          "type": "product_block",
+          "settings": {
+            "title": "Metal / aluminium prints",
+            "price_label": "Coming soon",
+            "link": "/collections/aluminum-prints",
+            "accent": "slate",
+            "coming_soon": true
+          }
+        },
+        "acrylic": {
+          "type": "product_block",
+          "settings": {
+            "title": "Acrylic prints",
+            "price_label": "Coming soon",
+            "link": "/collections/acrylic-prints",
+            "accent": "cyan",
+            "coming_soon": true
+          }
+        },
+        "posters": {
+          "type": "product_block",
+          "settings": {
+            "title": "Posters",
+            "price_label": "Coming soon",
+            "link": "/collections/posters",
+            "accent": "rose",
+            "coming_soon": true
+          }
+        },
+        "posters_hangers": {
+          "type": "product_block",
+          "settings": {
+            "title": "Posters with hangers",
+            "price_label": "Coming soon",
+            "link": "/collections/posters-with-hangers",
+            "accent": "magenta",
+            "coming_soon": true
+          }
+        },
+        "foam": {
+          "type": "product_block",
+          "settings": {
+            "title": "Foam prints",
+            "price_label": "Coming soon",
+            "link": "/collections/foam-prints",
+            "accent": "blue",
+            "coming_soon": true
+          }
+        },
+        "wood": {
+          "type": "product_block",
+          "settings": {
+            "title": "Wood prints",
+            "price_label": "Coming soon",
+            "link": "/collections/wood-prints",
+            "accent": "mint",
+            "coming_soon": true
+          }
+        },
+        "photo_prints": {
+          "type": "product_block",
+          "settings": {
+            "title": "Photo prints",
+            "price_label": "Coming soon",
+            "link": "/collections/photo-prints",
+            "accent": "cyan",
+            "coming_soon": true
+          }
+        },
+        "enlargements": {
+          "type": "product_block",
+          "settings": {
+            "title": "Photo enlargements",
+            "price_label": "Coming soon",
+            "link": "/collections/photo-enlargements",
+            "accent": "blue",
+            "coming_soon": true
+          }
+        },
+        "mugs": {
+          "type": "product_block",
+          "settings": {
+            "title": "Personalised mugs",
+            "price_label": "From £11.99",
+            "link": "/collections/mugs",
+            "accent": "magenta",
+            "coming_soon": false
+          }
+        },
+        "cushions": {
+          "type": "product_block",
+          "settings": {
+            "title": "Cushions",
+            "price_label": "Coming soon",
+            "link": "/collections/cushions",
+            "accent": "mint",
+            "coming_soon": true
+          }
+        },
+        "photo_blocks": {
+          "type": "product_block",
+          "settings": {
+            "title": "Photo blocks",
+            "price_label": "Coming soon",
+            "link": "/collections/photo-blocks",
+            "accent": "blue",
+            "coming_soon": true
+          }
+        },
+        "magnets": {
+          "type": "product_block",
+          "settings": {
+            "title": "Magnets",
+            "price_label": "Coming soon",
+            "link": "/collections/magnets",
+            "accent": "cyan",
+            "coming_soon": true
+          }
+        },
+        "jigsaws": {
+          "type": "product_block",
+          "settings": {
+            "title": "Jigsaws",
+            "price_label": "Coming soon",
+            "link": "/collections/jigsaws",
+            "accent": "rose",
+            "coming_soon": true
+          }
+        },
+        "cards": {
+          "type": "product_block",
+          "settings": {
+            "title": "Greeting cards",
+            "price_label": "Coming soon",
+            "link": "/collections/cards",
+            "accent": "rose",
+            "coming_soon": true
+          }
+        },
+        "calendars": {
+          "type": "product_block",
+          "settings": {
+            "title": "Calendars",
+            "price_label": "Coming soon",
+            "link": "/collections/calendars",
+            "accent": "mint",
+            "coming_soon": true
+          }
+        },
+        "photo_books": {
+          "type": "product_block",
+          "settings": {
+            "title": "Photo books",
+            "price_label": "Coming soon",
+            "link": "/collections/photo-books",
+            "accent": "magenta",
+            "coming_soon": true
+          }
+        }
+      },
+      "block_order": [
+        "canvas",
+        "framed_canvas",
+        "framed",
+        "aluminum",
+        "acrylic",
+        "posters",
+        "posters_hangers",
+        "foam",
+        "wood",
+        "photo_prints",
+        "enlargements",
+        "mugs",
+        "cushions",
+        "photo_blocks",
+        "magnets",
+        "jigsaws",
+        "cards",
+        "calendars",
+        "photo_books"
+      ],
+      "settings": {
+        "heading": "Photo products",
+        "text": "Print life's best moments with Pixora — wall art, gifts, photo prints, cards, calendars and photo books. Personalise with live mockups, then we print and ship.",
+        "footer_heading": "",
+        "footer_text": ""
+      }
+    },
+    "trust_strip": {
+      "type": "trust-strip",
+      "blocks": {
+        "t1": {
+          "type": "item",
+          "settings": {
+            "title": "Premium print quality",
+            "text": "Vivid colour & durable finishes",
+            "accent": "cyan"
+          }
+        },
+        "t2": {
+          "type": "item",
+          "settings": {
+            "title": "Live product mockups",
+            "text": "See your design before you buy",
+            "accent": "magenta"
+          }
+        },
+        "t3": {
+          "type": "item",
+          "settings": {
+            "title": "Printed on demand",
+            "text": "Made for you, shipped to your door",
+            "accent": "mint"
+          }
+        }
+      },
+      "block_order": ["t1", "t2", "t3"],
+      "settings": {}
+    },
+    "how_it_works": {
+      "type": "how-it-works",
+      "blocks": {
+        "s1": {
+          "type": "step",
+          "settings": {
+            "title": "Upload your photo",
+            "text": "Pick a favourite moment — phone or desktop, JPG or PNG.",
+            "accent": "cyan"
+          }
+        },
+        "s2": {
+          "type": "step",
+          "settings": {
+            "title": "Personalise live",
+            "text": "See your design on a real product mockup before you buy.",
+            "accent": "magenta"
+          }
+        },
+        "s3": {
+          "type": "step",
+          "settings": {
+            "title": "We print & ship",
+            "text": "Premium print-on-demand quality, packed and delivered to your door.",
+            "accent": "mint"
+          }
+        }
+      },
+      "block_order": ["s1", "s2", "s3"],
+      "settings": {
+        "eyebrow": "Simple process",
+        "heading": "From photo to keepsake in three steps",
+        "text": "Upload your favourite snap, personalise on a live product mockup, and we print and ship premium quality to your door."
+      }
+    },
+    "pricing_teaser": {
+      "type": "pricing-teaser",
+      "blocks": {
+        "p1": {
+          "type": "price_card",
+          "settings": {
+            "label": "Wall art",
+            "title": "Canvas prints",
+            "price": "£14.99",
+            "note": "Gallery wraps, ready to hang",
+            "button_label": "Shop canvas",
+            "link": "/collections/canvas-prints",
+            "accent": "blue"
+          }
+        },
+        "p2": {
+          "type": "price_card",
+          "settings": {
+            "label": "Home & gifts",
+            "title": "Personalised mugs",
+            "price": "£11.99",
+            "note": "Dishwasher-friendly ceramics",
+            "button_label": "Shop mugs",
+            "link": "/collections/mugs",
+            "accent": "magenta"
+          }
+        },
+        "p3": {
+          "type": "price_card",
+          "settings": {
+            "label": "Photo printing",
+            "title": "Photo prints",
+            "price": "£0.13",
+            "note": "Standard sizes & enlargements",
+            "button_label": "Browse prints",
+            "link": "/collections/photo-printing",
+            "accent": "mint"
+          }
+        }
+      },
+      "block_order": ["p1", "p2", "p3"],
+      "settings": {
+        "eyebrow": "Transparent pricing",
+        "heading": "Great print quality, clear prices",
+        "text": "No hidden fees on the product price. Shipping is calculated at checkout based on size and destination.",
+        "footnote": "Prices shown are starting points — final price depends on size, finish, and options."
+      }
+    }
+  },
+  "order": ["product_blocks", "trust_strip", "how_it_works", "pricing_teaser"]
+}

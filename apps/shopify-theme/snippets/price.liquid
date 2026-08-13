@@ -1,0 +1,5 @@
+{% if product.price_varies %}
+  from {{ product.price_min | money }}
+{% else %}
+  {{ product.price | money }}
+{% endif %}

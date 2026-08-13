@@ -1,0 +1,229 @@
+{%- liquid
+  assign handle = collection.handle
+  assign is_canvas = false
+  assign is_wall_art = false
+  assign is_posters = false
+  if handle == 'canvas-prints' or handle == 'canvas'
+    assign is_canvas = true
+  endif
+  if handle == 'wall-art'
+    assign is_wall_art = true
+  endif
+  if handle == 'posters'
+    assign is_posters = true
+  endif
+-%}
+
+<section class="main-collection{% if is_canvas or is_wall_art or is_posters %} main-collection--canvas{% endif %}">
+  {% if is_canvas %}
+    {%- comment -%} Skip chooser — send shoppers straight to the canvas product PDP. {%- endcomment -%}
+    <script>
+      window.location.replace('/products/canvas-20x20-cm-8x8');
+    </script>
+    <div class="page-width collection-body" style="padding: 3rem 0;">
+      <p class="muted">Taking you to Personalized Canvas Print…</p>
+      <a class="button button--primary" href="/products/canvas-20x20-cm-8x8">Continue to canvas</a>
+    </div>
+
+  {% elsif is_posters %}
+    <header class="collection-hero collection-hero--compact">
+      <div class="collection-hero__bg" aria-hidden="true"></div>
+      <div class="page-width collection-hero__inner">
+        <nav class="pb-canvas__crumbs" aria-label="Breadcrumb">
+          <a href="/">Home</a>
+          <span>/</span>
+          <a href="/collections/wall-art">Wall art</a>
+          <span>/</span>
+          <span>Posters</span>
+        </nav>
+        <h1 class="collection-hero__title">Posters</h1>
+        <p class="collection-hero__lead">
+          Pick a paper finish. Next you’ll choose size and personalize with your photo.
+        </p>
+      </div>
+    </header>
+
+    <div class="page-width collection-body">
+      <div class="finish-grid">
+        <a class="finish-card" href="/products/classic-semi-glossy-paper-poster">
+          <div class="finish-card__media">
+            <img
+              src="{{ 'poster-semi-glossy.svg' | asset_url }}"
+              alt="Classic semi-glossy paper poster mockup"
+              width="640"
+              height="420"
+              loading="lazy"
+            >
+          </div>
+          <div class="finish-card__body">
+            <p class="finish-card__eyebrow">Best value</p>
+            <h2 class="finish-card__title">Classic Semi-Glossy</h2>
+            <p class="finish-card__desc">
+              Bright, budget-friendly semi-glossy paper with vivid colour and a light sheen — a great everyday poster option.
+            </p>
+            <ul class="finish-card__meta">
+              <li>Semi-glossy</li>
+              <li>29 sizes</li>
+              <li>Personalize</li>
+            </ul>
+            <span class="finish-card__cta">Choose size &amp; personalize</span>
+          </div>
+        </a>
+
+        <a class="finish-card" href="/products/premium-matte-paper-poster">
+          <div class="finish-card__media">
+            <img
+              src="{{ 'poster-matte.svg' | asset_url }}"
+              alt="Premium matte paper poster mockup"
+              width="640"
+              height="420"
+              loading="lazy"
+            >
+          </div>
+          <div class="finish-card__body">
+            <p class="finish-card__eyebrow">Paper finish</p>
+            <h2 class="finish-card__title">Premium Matte Paper</h2>
+            <p class="finish-card__desc">
+              Soft, non-reflective matte stock that keeps colours rich without glare — great for photos and everyday wall art.
+            </p>
+            <ul class="finish-card__meta">
+              <li>Matte finish</li>
+              <li>29 sizes</li>
+              <li>Personalize</li>
+            </ul>
+            <span class="finish-card__cta">Choose size &amp; personalize</span>
+          </div>
+        </a>
+
+        <a class="finish-card" href="/products/fine-art-poster">
+          <div class="finish-card__media">
+            <img
+              src="{{ 'poster-fine-art.svg' | asset_url }}"
+              alt="Fine art paper poster mockup"
+              width="640"
+              height="420"
+              loading="lazy"
+            >
+          </div>
+          <div class="finish-card__body">
+            <p class="finish-card__eyebrow">Premium</p>
+            <h2 class="finish-card__title">Fine Art Poster</h2>
+            <p class="finish-card__desc">
+              Gallery-grade fine art paper with a textured, museum-style feel — ideal when you want a more premium print.
+            </p>
+            <ul class="finish-card__meta">
+              <li>Fine art paper</li>
+              <li>29 sizes</li>
+              <li>Personalize</li>
+            </ul>
+            <span class="finish-card__cta">Choose size &amp; personalize</span>
+          </div>
+        </a>
+      </div>
+    </div>
+
+  {% elsif is_wall_art %}
+    <header class="collection-hero">
+      <div class="collection-hero__bg" aria-hidden="true"></div>
+      <div class="page-width collection-hero__inner">
+        <p class="collection-hero__eyebrow">Shop</p>
+        <h1 class="collection-hero__title">Wall art</h1>
+        <p class="collection-hero__lead">
+          Canvas, framed prints, metal, acrylic, posters and more — pick a product type to personalize.
+        </p>
+      </div>
+    </header>
+
+    <div class="page-width collection-body">
+      <div class="wall-art-grid">
+        <a class="wall-art-card wall-art-card--live" href="/products/canvas-20x20-cm-8x8">
+          <span class="wall-art-card__swatch wall-art-card__swatch--blue" aria-hidden="true"></span>
+          <span class="wall-art-card__title">Canvas prints</span>
+          <span class="wall-art-card__desc">26 sizes · slim &amp; thick · personalize</span>
+          <span class="wall-art-card__cta">Choose size →</span>
+        </a>
+        <a class="wall-art-card" href="/collections/framed-canvas">
+          <span class="wall-art-card__swatch wall-art-card__swatch--cyan" aria-hidden="true"></span>
+          <span class="wall-art-card__title">Framed canvas</span>
+          <span class="wall-art-card__desc">Canvas in a tray frame</span>
+          <span class="wall-art-card__cta muted">Coming soon</span>
+        </a>
+        <a class="wall-art-card" href="/collections/framed-prints">
+          <span class="wall-art-card__swatch wall-art-card__swatch--mint" aria-hidden="true"></span>
+          <span class="wall-art-card__title">Framed prints</span>
+          <span class="wall-art-card__desc">Wood &amp; metal frames</span>
+          <span class="wall-art-card__cta muted">Coming soon</span>
+        </a>
+        <a class="wall-art-card" href="/collections/aluminum-prints">
+          <span class="wall-art-card__swatch wall-art-card__swatch--slate" aria-hidden="true"></span>
+          <span class="wall-art-card__title">Metal / aluminium</span>
+          <span class="wall-art-card__desc">Sleek metal panels</span>
+          <span class="wall-art-card__cta muted">Coming soon</span>
+        </a>
+        <a class="wall-art-card" href="/collections/acrylic-prints">
+          <span class="wall-art-card__swatch wall-art-card__swatch--cyan" aria-hidden="true"></span>
+          <span class="wall-art-card__title">Acrylic prints</span>
+          <span class="wall-art-card__desc">Glossy, vivid colour</span>
+          <span class="wall-art-card__cta muted">Coming soon</span>
+        </a>
+        <a class="wall-art-card wall-art-card--live" href="/collections/posters">
+          <span class="wall-art-card__swatch wall-art-card__swatch--rose" aria-hidden="true"></span>
+          <span class="wall-art-card__title">Posters</span>
+          <span class="wall-art-card__desc">Paper finishes · many sizes · personalize</span>
+          <span class="wall-art-card__cta">Choose finish →</span>
+        </a>
+        <a class="wall-art-card" href="/collections/posters-with-hangers">
+          <span class="wall-art-card__swatch wall-art-card__swatch--magenta" aria-hidden="true"></span>
+          <span class="wall-art-card__title">Posters with hangers</span>
+          <span class="wall-art-card__desc">Casual wood hanger style</span>
+          <span class="wall-art-card__cta muted">Coming soon</span>
+        </a>
+        <a class="wall-art-card" href="/collections/foam-prints">
+          <span class="wall-art-card__swatch wall-art-card__swatch--blue" aria-hidden="true"></span>
+          <span class="wall-art-card__title">Foam prints</span>
+          <span class="wall-art-card__desc">Lightweight board prints</span>
+          <span class="wall-art-card__cta muted">Coming soon</span>
+        </a>
+        <a class="wall-art-card" href="/collections/wood-prints">
+          <span class="wall-art-card__swatch wall-art-card__swatch--mint" aria-hidden="true"></span>
+          <span class="wall-art-card__title">Wood prints</span>
+          <span class="wall-art-card__desc">Natural wood grain finish</span>
+          <span class="wall-art-card__cta muted">Coming soon</span>
+        </a>
+      </div>
+    </div>
+
+  {% else %}
+    <header class="collection-hero">
+      <div class="collection-hero__bg" aria-hidden="true"></div>
+      <div class="page-width collection-hero__inner">
+        <p class="collection-hero__eyebrow">Shop</p>
+        <h1 class="collection-hero__title">{{ collection.title }}</h1>
+        {% if collection.description != blank %}
+          <div class="collection-hero__lead rte">{{ collection.description }}</div>
+        {% endif %}
+      </div>
+    </header>
+
+    <div class="page-width collection-body">
+      {% paginate collection.products by 24 %}
+        <div class="product-grid">
+          {% for product in collection.products %}
+            {% render 'product-card', product: product %}
+          {% else %}
+            <p class="muted">No products in this collection yet. Publish from Gelato → Shopify.</p>
+          {% endfor %}
+        </div>
+        {{ paginate | default_pagination }}
+      {% endpaginate %}
+    </div>
+  {% endif %}
+</section>
+
+{% schema %}
+{
+  "name": "Collection",
+  "settings": [],
+  "templates": ["collection"]
+}
+{% endschema %}

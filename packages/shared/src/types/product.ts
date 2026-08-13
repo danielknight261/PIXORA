@@ -7,6 +7,7 @@ export type Product = {
   description: string | null;
   categoryId: string;
   category: ProductCategory | string;
+  categorySlug?: string | null;
   basePrice: number;
   imageUrl: string | null;
   active: boolean;
@@ -21,6 +22,7 @@ export type Design = {
   name: string;
   canvasData: Record<string, unknown>;
   previewUrl: string | null;
+  uploadId: string | null;
   createdAt: string;
   updatedAt: string;
 };

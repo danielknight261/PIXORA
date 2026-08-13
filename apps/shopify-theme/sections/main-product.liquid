@@ -1,0 +1,486 @@
+{%- liquid
+  assign current_variant = product.selected_or_first_available_variant
+  assign size_option_index = nil
+  assign orientation_option_index = nil
+  assign thickness_option_index = nil
+  for option in product.options_with_values
+    assign opt_down = option.name | downcase
+    if opt_down == 'size' or opt_down contains 'size'
+      assign size_option_index = forloop.index0
+    endif
+    if opt_down == 'orientation' or opt_down contains 'orientation'
+      assign orientation_option_index = forloop.index0
+    endif
+    if opt_down == 'thickness' or opt_down contains 'thickness' or opt_down contains 'depth' or opt_down contains 'wrap'
+      assign thickness_option_index = forloop.index0
+    endif
+  endfor
+  assign is_variant_picker = false
+  if size_option_index != nil and orientation_option_index != nil
+    assign is_variant_picker = true
+  endif
+  assign is_poster = false
+  assign handle_down = product.handle | downcase
+  assign title_down = product.title | downcase
+  if handle_down contains 'poster' or title_down contains 'poster'
+    assign is_poster = true
+  endif
+  assign size_count = 0
+  if size_option_index != nil
+    assign size_count = product.options_with_values[size_option_index].values.size
+  endif
+-%}
+
+<section class="main-product{% if is_variant_picker %} main-product--flush{% endif %}" data-section-id="{{ section.id }}">
+  {% render 'gelato-customization' %}
+
+  {% if is_variant_picker %}
+    <div class="pb-canvas" id="Product-{{ section.id }}" data-canvas-picker data-section="{{ section.id }}">
+      <div class="pb-canvas__hero">
+        <div class="page-width pb-canvas__hero-inner">
+          <nav class="pb-canvas__crumbs" aria-label="Breadcrumb">
+            <a href="/">Home</a>
+            <span>/</span>
+            <a href="/collections/wall-art">Wall art</a>
+            <span>/</span>
+            {% if is_poster %}
+              <a href="/collections/posters">Posters</a>
+              <span>/</span>
+              <span>{{ product.title }}</span>
+            {% else %}
+              <span>Canvas prints</span>
+            {% endif %}
+          </nav>
+          <h1 class="pb-canvas__title">
+            {% if is_poster %}
+              {{ product.title }}
+            {% else %}
+              Canvas prints
+            {% endif %}
+          </h1>
+          <p class="pb-canvas__subtitle">
+            {% if is_poster %}
+              Pick orientation and size
+              {%- if size_count > 0 %} · {{ size_count }} sizes{% endif -%}.
+              Then personalize with your photo.
+            {% else %}
+              Pick orientation, wrap and size
+              {%- if size_count > 0 %} · {{ size_count }} sizes{% endif -%}.
+              Then personalize with your photo.
+            {% endif %}
+          </p>
+        </div>
+      </div>
+
+      <div class="page-width pb-canvas__layout">
+        <div class="pb-canvas__media">
+          <div class="pb-canvas__media-frame" data-product-media>
+            {% if current_variant.featured_media %}
+              {% assign media = current_variant.featured_media %}
+            {% else %}
+              {% assign media = product.featured_media %}
+            {% endif %}
+            {% if media %}
+              {{
+                media
+                | image_url: width: 1400
+                | image_tag:
+                  class: 'product__image',
+                  alt: media.alt | default: product.title,
+                  data-product-image: true
+              }}
+            {% else %}
+              <div class="pb-canvas__media-empty" data-product-image-fallback>
+                <p class="pb-canvas__media-empty-title">Your design preview</p>
+                <p class="pb-canvas__media-empty-copy muted">
+                  Choose size, then use <strong>Personalize design</strong> to upload your photo and see the live mockup here.
+                </p>
+              </div>
+            {% endif %}
+          </div>
+        </div>
+
+        <div class="pb-canvas__panel">
+          {% form 'product', product, id: 'product-form', class: 'pb-canvas__form' %}
+            <input type="hidden" name="id" value="{{ current_variant.id }}" data-variant-id>
+            <input type="hidden" name="quantity" value="1">
+
+            <div class="pb-canvas__step">
+              <p class="pb-canvas__label">Orientation</p>
+              <div class="pb-canvas__orient" role="radiogroup" aria-label="Orientation">
+                <button type="button" class="pb-orient" data-orient="portrait" aria-pressed="false">Portrait</button>
+                <button type="button" class="pb-orient" data-orient="landscape" aria-pressed="false">Landscape</button>
+                <button type="button" class="pb-orient" data-orient="square" aria-pressed="false">Square</button>
+              </div>
+            </div>
+
+            {% if thickness_option_index != nil %}
+              <div class="pb-canvas__step">
+                <p class="pb-canvas__label">Wrap</p>
+                <div class="pb-canvas__thick" role="radiogroup" aria-label="Thickness">
+                  <button type="button" class="pb-thick" data-thickness="slim" aria-pressed="false">
+                    <strong>Slim</strong>
+                    <span>~2 cm</span>
+                  </button>
+                  <button type="button" class="pb-thick" data-thickness="thick" aria-pressed="false">
+                    <strong>Thick</strong>
+                    <span>~4 cm</span>
+                  </button>
+                </div>
+              </div>
+            {% endif %}
+
+            <div class="pb-canvas__step pb-canvas__sizes-wrap">
+              <div class="pb-canvas__sizes-head">
+                <span>Size</span>
+                <span class="muted" data-size-hint></span>
+              </div>
+              <div class="pb-size-list" data-size-grid role="listbox" aria-label="Size"></div>
+            </div>
+
+            <div class="pb-canvas__buybox">
+              <div>
+                <p class="pb-canvas__price" data-product-price>{{ current_variant.price | money }}</p>
+                <p class="pb-canvas__selection muted" data-selection-summary></p>
+              </div>
+              <div class="pb-canvas__actions">
+                <button
+                  type="submit"
+                  name="add"
+                  class="button button--primary btn-addtocart pb-canvas__cta"
+                  data-add-to-cart
+                  {% if current_variant.available == false %}disabled{% endif %}
+                >
+                  {% if current_variant.available %}
+                    Add to cart
+                  {% else %}
+                    Sold out
+                  {% endif %}
+                </button>
+              </div>
+            </div>
+            <p class="pb-canvas__vat muted">
+              Use <strong>Personalize design</strong> to upload your photo and see the live mockup, then add to cart.
+            </p>
+            <input
+              type="hidden"
+              name="properties[Personalized print]"
+              value="We have your uploaded image and will print from the mockup you created — not the stock product photo."
+            >
+          {% endform %}
+
+          <script type="application/json" data-variant-map>
+            {
+              "sizeOptionIndex": {{ size_option_index }},
+              "orientationOptionIndex": {{ orientation_option_index }},
+              "thicknessOptionIndex": {% if thickness_option_index != nil %}{{ thickness_option_index }}{% else %}null{% endif %},
+              "variants": [
+                {%- for variant in product.variants -%}
+                  {
+                    "id": {{ variant.id | json }},
+                    "available": {{ variant.available | json }},
+                    "price": {{ variant.price | json }},
+                    "priceFormatted": {{ variant.price | money | json }},
+                    "title": {{ variant.title | json }},
+                    "options": {{ variant.options | json }},
+                    "featuredImage": {% if variant.featured_media %}{{ variant.featured_media | image_url: width: 1400 | json }}{% elsif product.featured_media %}{{ product.featured_media | image_url: width: 1400 | json }}{% else %}null{% endif %}
+                  }{% unless forloop.last %},{% endunless %}
+                {%- endfor -%}
+              ]
+            }
+          </script>
+        </div>
+      </div>
+
+      {% if product.description != blank %}
+        <div class="page-width pb-canvas__about">
+          <h2>
+            {% if is_poster %}
+              About this poster
+            {% else %}
+              About these canvas prints
+            {% endif %}
+          </h2>
+          <div class="rte">{{ product.description }}</div>
+        </div>
+      {% endif %}
+
+      <div class="page-width pb-canvas__features">
+        <article>
+          <h3>Fully customise your print</h3>
+          <p>Use Personalize design to upload your photo, preview on a live mockup, then add to cart. We print and ship to your door.</p>
+        </article>
+        {% if is_poster %}
+          <article>
+            <h3>Premium paper finish</h3>
+            <p>This finish is selected on the posters page — more paper options coming soon as separate products.</p>
+          </article>
+        {% else %}
+          <article>
+            <h3>Slim or thick wrap</h3>
+            <p>Choose a modern slim edge (~2 cm) or a deeper gallery wrap (~4 cm) for every size.</p>
+          </article>
+        {% endif %}
+        <article>
+          <h3>Many sizes &amp; formats</h3>
+          <p>Portrait, landscape and square options across {{ size_count }} sizes — pick what fits your wall.</p>
+        </article>
+      </div>
+    </div>
+
+  {% else %}
+    <div class="page-width product" id="Product-{{ section.id }}">
+      <div class="product__media">
+        <div class="product__media-frame" data-product-media>
+          {% if current_variant.featured_media %}
+            {% assign media = current_variant.featured_media %}
+          {% else %}
+            {% assign media = product.featured_media %}
+          {% endif %}
+          {% if media %}
+            {{ media | image_url: width: 1400 | image_tag: class: 'product__image', alt: media.alt | default: product.title }}
+          {% else %}
+            <div class="product-card__placeholder product__image">{{ product.title | slice: 0 }}</div>
+          {% endif %}
+        </div>
+      </div>
+      <div class="product__info">
+        <h1 class="product__title">{{ product.title }}</h1>
+        <p class="product__price">{{ current_variant.price | money }}</p>
+        {% if product.description != blank %}
+          <div class="product__description rte">{{ product.description }}</div>
+        {% endif %}
+        {% form 'product', product, id: 'product-form', class: 'product-form' %}
+          <input type="hidden" name="id" value="{{ current_variant.id }}">
+          {% unless product.has_only_default_variant %}
+            <div class="product-form__variants">
+              {% for option in product.options_with_values %}
+                <label class="field-label" for="Option-{{ section.id }}-{{ forloop.index0 }}">{{ option.name }}</label>
+                <select id="Option-{{ section.id }}-{{ forloop.index0 }}" name="options[{{ option.name | escape }}]" class="field-select">
+                  {% for value in option.values %}
+                    <option value="{{ value | escape }}" {% if option.selected_value == value %}selected{% endif %}>{{ value }}</option>
+                  {% endfor %}
+                </select>
+              {% endfor %}
+            </div>
+          {% endunless %}
+          <button type="submit" name="add" class="button button--primary btn-addtocart" {% if current_variant.available == false %}disabled{% endif %}>
+            {% if current_variant.available %}Add to cart{% else %}Sold out{% endif %}
+          </button>
+        {% endform %}
+      </div>
+    </div>
+  {% endif %}
+</section>
+
+{% if is_variant_picker %}
+  <script>
+    (function () {
+      var root = document.getElementById('Product-{{ section.id }}');
+      if (!root) return;
+      var mapEl = root.querySelector('[data-variant-map]');
+      if (!mapEl) return;
+
+      var data = JSON.parse(mapEl.textContent);
+      var sizeIdx = data.sizeOptionIndex;
+      var orientIdx = data.orientationOptionIndex;
+      var thickIdx = data.thicknessOptionIndex;
+      var variants = data.variants || [];
+
+      var idInput = root.querySelector('[data-variant-id]');
+      var priceEl = root.querySelector('[data-product-price]');
+      var imageEl = root.querySelector('[data-product-image]');
+      var addBtn = root.querySelector('[data-add-to-cart]');
+      var sizeGrid = root.querySelector('[data-size-grid]');
+      var sizeHint = root.querySelector('[data-size-hint]');
+      var summary = root.querySelector('[data-selection-summary]');
+      var orientBtns = root.querySelectorAll('[data-orient]');
+      var thickBtns = root.querySelectorAll('[data-thickness]');
+
+      function parseSquare(sizeLabel) {
+        var m = String(sizeLabel).match(/(\d+(?:\.\d+)?)\s*[x×]\s*(\d+(?:\.\d+)?)/i);
+        if (!m) return false;
+        return Number(m[1]) === Number(m[2]);
+      }
+      function orientKey(raw) {
+        var v = String(raw || '').toLowerCase();
+        if (v.indexOf('horiz') !== -1 || v.indexOf('land') !== -1) return 'landscape';
+        if (v.indexOf('vert') !== -1 || v.indexOf('port') !== -1) return 'portrait';
+        return v;
+      }
+      function thicknessKey(raw) {
+        var v = String(raw || '').toLowerCase();
+        if (v.indexOf('thick') !== -1) return 'thick';
+        if (v.indexOf('slim') !== -1 || v.indexOf('thin') !== -1) return 'slim';
+        return v || 'slim';
+      }
+      function shortSize(label) {
+        var cm = String(label).match(/(\d+(?:\.\d+)?\s*[x×]\s*\d+(?:\.\d+)?)\s*cm/i);
+        if (cm) return cm[1].replace(/\s+/g, '') + ' cm';
+        var inch = String(label).match(/(\d+(?:\.\d+)?\s*[x×]\s*\d+(?:\.\d+)?)\s*(?:\"|″|in)/i);
+        if (inch) return inch[1].replace(/\s+/g, '') + '″';
+        return label;
+      }
+      var classified = variants.map(function (variant) {
+        var size = variant.options[sizeIdx];
+        return {
+          size: size,
+          orient: orientKey(variant.options[orientIdx]),
+          thickness: thickIdx == null ? 'slim' : thicknessKey(variant.options[thickIdx]),
+          square: parseSquare(size),
+          variant: variant
+        };
+      });
+
+      var state = { mode: 'portrait', thickness: thickBtns.length ? 'slim' : null, size: null };
+
+      function sizesForMode(mode, thickness) {
+        var seen = {}, list = [];
+        classified.forEach(function (c) {
+          if (thickness && c.thickness !== thickness) return;
+          if (mode === 'square') { if (!c.square) return; }
+          else if (mode === 'portrait') { if (c.square || c.orient !== 'portrait') return; }
+          else if (mode === 'landscape') { if (c.square || c.orient !== 'landscape') return; }
+          if (!seen[c.size]) { seen[c.size] = true; list.push(c.size); }
+        });
+        return list.sort(function (a, b) {
+          var ma = String(a).match(/(\d+(?:\.\d+)?)\s*[x×]\s*(\d+(?:\.\d+)?)/i);
+          var mb = String(b).match(/(\d+(?:\.\d+)?)\s*[x×]\s*(\d+(?:\.\d+)?)/i);
+          return ((ma ? Number(ma[1]) * Number(ma[2]) : 0) - (mb ? Number(mb[1]) * Number(mb[2]) : 0));
+        });
+      }
+
+      function findVariant(mode, size, thickness) {
+        var matches = classified.filter(function (c) {
+          if (c.size !== size) return false;
+          if (thickness && c.thickness !== thickness) return false;
+          if (mode === 'square') return c.square;
+          if (mode === 'portrait') return !c.square && c.orient === 'portrait';
+          if (mode === 'landscape') return !c.square && c.orient === 'landscape';
+          return false;
+        });
+        if (!matches.length) return null;
+        if (mode === 'square') {
+          var vert = matches.find(function (c) { return c.orient === 'portrait'; });
+          return (vert || matches[0]).variant;
+        }
+        return matches[0].variant;
+      }
+
+      function applyVariant(variant) {
+        if (!variant) return;
+        if (idInput) idInput.value = variant.id;
+        if (priceEl) priceEl.textContent = variant.priceFormatted;
+        if (imageEl && variant.featuredImage) { imageEl.src = variant.featuredImage; imageEl.srcset = ''; }
+        if (addBtn) {
+          addBtn.disabled = !variant.available;
+          addBtn.textContent = variant.available ? 'Add to cart' : 'Sold out';
+        }
+        if (summary) summary.textContent = shortSize(state.size) + (state.thickness ? ' · ' + state.thickness : '');
+        try {
+          var url = new URL(window.location.href);
+          url.searchParams.set('variant', variant.id);
+          window.history.replaceState({}, '', url.toString());
+        } catch (e) {}
+      }
+
+      function syncSelection() {
+        var sizes = sizesForMode(state.mode, state.thickness);
+        if (!sizes.length) {
+          state.size = null;
+          sizeGrid.innerHTML = '<p class="muted">No sizes for this combination.</p>';
+          if (sizeHint) sizeHint.textContent = '';
+          return;
+        }
+        if (!state.size || sizes.indexOf(state.size) === -1) state.size = sizes[0];
+        if (sizeHint) sizeHint.textContent = sizes.length + ' sizes';
+        renderSizes(sizes);
+        applyVariant(findVariant(state.mode, state.size, state.thickness));
+      }
+
+      function renderSizes(sizes) {
+        sizeGrid.innerHTML = '';
+        sizes.forEach(function (size) {
+          var v = findVariant(state.mode, size, state.thickness);
+          var btn = document.createElement('button');
+          btn.type = 'button';
+          btn.className = 'pb-size' + (state.size === size ? ' is-selected' : '');
+          btn.setAttribute('role', 'option');
+          btn.setAttribute('aria-selected', state.size === size ? 'true' : 'false');
+          btn.innerHTML =
+            '<span class="pb-size__copy"><strong>' + shortSize(size) + '</strong><span>' + size + '</span></span>' +
+            '<span class="pb-size__price">' + (v ? v.priceFormatted : '') + '</span>';
+          btn.addEventListener('click', function () {
+            state.size = size;
+            renderSizes(sizes);
+            applyVariant(findVariant(state.mode, size, state.thickness));
+          });
+          sizeGrid.appendChild(btn);
+        });
+      }
+
+      orientBtns.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          state.mode = btn.getAttribute('data-orient');
+          orientBtns.forEach(function (b) {
+            var on = b === btn;
+            b.classList.toggle('is-selected', on);
+            b.setAttribute('aria-pressed', on ? 'true' : 'false');
+          });
+          syncSelection();
+        });
+      });
+      thickBtns.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          state.thickness = btn.getAttribute('data-thickness');
+          thickBtns.forEach(function (b) {
+            var on = b === btn;
+            b.classList.toggle('is-selected', on);
+            b.setAttribute('aria-pressed', on ? 'true' : 'false');
+          });
+          syncSelection();
+        });
+      });
+
+      var currentId = idInput ? Number(idInput.value) : null;
+      var params = new URLSearchParams(window.location.search);
+      var paramOrient = (params.get('orientation') || '').toLowerCase();
+      var paramThick = (params.get('thickness') || '').toLowerCase();
+      var paramSize = params.get('size');
+      var current = classified.find(function (c) { return c.variant.id === currentId; }) || classified[0];
+
+      if (paramOrient === 'portrait' || paramOrient === 'landscape' || paramOrient === 'square') state.mode = paramOrient;
+      else if (current) {
+        if (current.square) state.mode = 'square';
+        else if (current.orient === 'landscape') state.mode = 'landscape';
+        else state.mode = 'portrait';
+      }
+      if (thickBtns.length) {
+        if (paramThick === 'slim' || paramThick === 'thick') state.thickness = paramThick;
+        else state.thickness = (current && current.thickness) || 'slim';
+      }
+      if (paramSize) state.size = paramSize;
+      else if (current) state.size = current.size;
+
+      orientBtns.forEach(function (b) {
+        var on = b.getAttribute('data-orient') === state.mode;
+        b.classList.toggle('is-selected', on);
+        b.setAttribute('aria-pressed', on ? 'true' : 'false');
+      });
+      thickBtns.forEach(function (b) {
+        var on = b.getAttribute('data-thickness') === state.thickness;
+        b.classList.toggle('is-selected', on);
+        b.setAttribute('aria-pressed', on ? 'true' : 'false');
+      });
+      syncSelection();
+    })();
+  </script>
+{% endif %}
+
+{% schema %}
+{
+  "name": "Product information",
+  "settings": [],
+  "templates": ["product"]
+}
+{% endschema %}

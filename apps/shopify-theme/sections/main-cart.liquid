@@ -1,0 +1,133 @@
+<section class="main-cart page-width">
+  <h1 class="section-title">Your cart</h1>
+
+  {% if cart.item_count == 0 %}
+    <p class="muted">Your cart is empty.</p>
+    <a class="button button--primary" href="/collections/wall-art">Continue shopping</a>
+  {% else %}
+    <form action="{{ routes.cart_url }}" method="post" id="cart">
+      <table class="cart-table">
+        <thead>
+          <tr>
+            <th>Product</th>
+            <th>Quantity</th>
+            <th>Total</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for item in cart.items %}
+            {%- liquid
+              assign is_personalized = false
+              assign upload_name = blank
+
+              for property in item.properties
+                assign key_down = property.first | downcase
+                assign val = property.last | default: ''
+
+                if key_down == 'personalized print' or key_down contains 'customization' or key_down contains 'gelato' or key_down contains 'personal'
+                  assign is_personalized = true
+                endif
+
+                if val contains '.png' or val contains '.jpg' or val contains '.jpeg' or val contains '.webp' or val contains '.gif'
+                  unless val contains 'http'
+                    assign upload_name = val
+                    assign is_personalized = true
+                  endunless
+                endif
+              endfor
+            -%}
+            <tr class="cart-row" data-line-key="{{ item.key }}">
+              <td class="cart-row__product">
+                <div class="cart-item">
+                  <a class="cart-item__media" href="{{ item.url }}">
+                    {% if item.image %}
+                      {{
+                        item.image
+                        | image_url: width: 320
+                        | image_tag: loading: 'lazy', alt: item.product.title, class: 'cart-item__image'
+                      }}
+                    {% elsif item.product.featured_media %}
+                      {{
+                        item.product.featured_media
+                        | image_url: width: 320
+                        | image_tag: loading: 'lazy', alt: item.product.title, class: 'cart-item__image'
+                      }}
+                    {% else %}
+                      <span class="cart-item__placeholder" aria-hidden="true">{{ item.product.title | slice: 0 }}</span>
+                    {% endif %}
+                  </a>
+
+                  <div class="cart-item__info">
+                    <a class="cart-item__title" href="{{ item.url }}">{{ item.product.title }}</a>
+                    {% unless item.product.has_only_default_variant %}
+                      <div class="muted">{{ item.variant.title }}</div>
+                    {% endunless %}
+                    {% if is_personalized or upload_name != blank %}
+                      <div class="cart-item__design-label">Personalized — we’ll print from your mockup</div>
+                    {% endif %}
+                    {% if upload_name != blank %}
+                      <div class="cart-item__upload-name muted">Your photo: {{ upload_name }}</div>
+                    {% endif %}
+                    {% if item.properties.size > 0 %}
+                      <ul class="cart-item__props" data-cart-props>
+                        {% for property in item.properties %}
+                          {% assign first_char = property.first | slice: 0 %}
+                          {% assign key_down = property.first | downcase %}
+                          {% assign val = property.last %}
+                          {% unless first_char == '_' %}
+                            {% if val != blank %}
+                              {% unless key_down == 'personalized print' or key_down == 'design preview' %}
+                                {% if val contains 'http' %}
+                                  {%- comment -%} Hide raw/broken image URLs {%- endcomment -%}
+                                {% else %}
+                                  <li>
+                                    <span>{{ property.first }}:</span>
+                                    {{ val }}
+                                  </li>
+                                {% endif %}
+                              {% endunless %}
+                            {% endif %}
+                          {% endunless %}
+                        {% endfor %}
+                      </ul>
+                    {% endif %}
+                    <a class="cart-item__remove" href="{{ item.url_to_remove }}">Remove</a>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <input
+                  type="number"
+                  name="updates[]"
+                  value="{{ item.quantity }}"
+                  min="0"
+                  class="field-input"
+                  aria-label="Quantity for {{ item.product.title }}"
+                >
+              </td>
+              <td>{{ item.final_line_price | money }}</td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+      <div class="cart-footer">
+        <p class="cart-footer__total"><strong>Subtotal:</strong> {{ cart.total_price | money }}</p>
+        <button type="submit" name="update" class="button">Update cart</button>
+        <button type="submit" name="checkout" class="button button--primary">Checkout</button>
+      </div>
+      <div class="cart-reassure">
+        <strong>Your design is saved.</strong>
+        We have your uploaded image and will print from the mockup you created.
+        Checkout may still show the stock product photo — that does not affect your print.
+      </div>
+    </form>
+  {% endif %}
+</section>
+
+{% schema %}
+{
+  "name": "Cart",
+  "settings": [],
+  "templates": ["cart"]
+}
+{% endschema %}

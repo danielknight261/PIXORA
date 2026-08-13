@@ -1,4 +1,5 @@
 import type { Design } from "@pixora/shared";
+import { mapDesign } from "../mappers/print-templates";
 import type { PixoraSupabaseClient } from "../types/client";
 
 export async function getDesigns(
@@ -15,41 +16,35 @@ export async function getDesigns(
     throw new Error(error.message);
   }
 
-  return (data ?? []).map((row) => ({
-    id: row.id,
-    userId: row.user_id,
-    productId: row.product_id,
-    name: row.name,
-    canvasData: (row.canvas_data as Record<string, unknown>) ?? {},
-    previewUrl: row.preview_url,
-    createdAt: row.created_at,
-    updatedAt: row.updated_at,
-  }));
+  return (data ?? []).map((row) => mapDesign(row));
 }
 
 export async function getDesignById(
   supabase: PixoraSupabaseClient,
   designId: string,
+  userId?: string,
 ): Promise<Design | null> {
-  const { data, error } = await supabase
-    .from("designs")
-    .select("*")
-    .eq("id", designId)
-    .single();
+  let query = supabase.from("designs").select("*").eq("id", designId);
+
+  if (userId) {
+    query = query.eq("user_id", userId);
+  }
+
+  const { data, error } = await query.single();
 
   if (error) {
     if (error.code === "PGRST116") return null;
     throw new Error(error.message);
   }
 
-  return {
-    id: data.id,
-    userId: data.user_id,
-    productId: data.product_id,
-    name: data.name,
-    canvasData: (data.canvas_data as Record<string, unknown>) ?? {},
-    previewUrl: data.preview_url,
-    createdAt: data.created_at,
-    updatedAt: data.updated_at,
-  };
+  return mapDesign(data);
 }
+
+export async function getDesignByIdForUser(
+  supabase: PixoraSupabaseClient,
+  designId: string,
+  userId: string,
+): Promise<Design | null> {
+  return getDesignById(supabase, designId, userId);
+}
+

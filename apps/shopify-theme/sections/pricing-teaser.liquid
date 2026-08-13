@@ -1,0 +1,165 @@
+<section class="pricing-teaser" id="pricing">
+  <div class="page-width">
+    {% if section.settings.eyebrow != blank %}
+      <p class="pricing-teaser__eyebrow">{{ section.settings.eyebrow }}</p>
+    {% endif %}
+    {% if section.settings.heading != blank %}
+      <h2 class="pricing-teaser__heading">{{ section.settings.heading }}</h2>
+    {% endif %}
+    {% if section.settings.text != blank %}
+      <p class="pricing-teaser__intro">{{ section.settings.text }}</p>
+    {% endif %}
+
+    <div class="pricing-teaser__grid">
+      {% for block in section.blocks %}
+        <article class="pricing-card pricing-card--{{ block.settings.accent | default: 'cyan' }}" {{ block.shopify_attributes }}>
+          <p class="pricing-card__label">{{ block.settings.label }}</p>
+          <h3 class="pricing-card__title">{{ block.settings.title }}</h3>
+          <p class="pricing-card__price">
+            <span class="pricing-card__from">From</span>
+            {{ block.settings.price }}
+          </p>
+          {% if block.settings.note != blank %}
+            <p class="pricing-card__note">{{ block.settings.note }}</p>
+          {% endif %}
+          {% if block.settings.link != blank and block.settings.button_label != blank %}
+            <a class="button button--primary pricing-card__cta" href="{{ block.settings.link }}">
+              {{ block.settings.button_label }}
+            </a>
+          {% endif %}
+        </article>
+      {% endfor %}
+    </div>
+
+    {% if section.settings.footnote != blank %}
+      <p class="pricing-teaser__footnote">{{ section.settings.footnote }}</p>
+    {% endif %}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Pricing teaser",
+  "settings": [
+    {
+      "type": "text",
+      "id": "eyebrow",
+      "label": "Eyebrow",
+      "default": "Transparent pricing"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Great print quality, clear prices"
+    },
+    {
+      "type": "textarea",
+      "id": "text",
+      "label": "Intro",
+      "default": "No hidden fees on the product price. Shipping is calculated at checkout based on size and destination."
+    },
+    {
+      "type": "text",
+      "id": "footnote",
+      "label": "Footnote",
+      "default": "Prices shown are starting points — final price depends on size, finish, and options."
+    }
+  ],
+  "blocks": [
+    {
+      "type": "price_card",
+      "name": "Price card",
+      "settings": [
+        {
+          "type": "text",
+          "id": "label",
+          "label": "Label",
+          "default": "Wall art"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Canvas prints"
+        },
+        {
+          "type": "text",
+          "id": "price",
+          "label": "Price",
+          "default": "£14.99"
+        },
+        {
+          "type": "text",
+          "id": "note",
+          "label": "Note",
+          "default": "Multiple sizes & orientations"
+        },
+        {
+          "type": "text",
+          "id": "button_label",
+          "label": "Button label",
+          "default": "Shop canvas"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Link"
+        },
+        {
+          "type": "select",
+          "id": "accent",
+          "label": "Accent",
+          "options": [
+            { "value": "blue", "label": "Blue" },
+            { "value": "magenta", "label": "Magenta" },
+            { "value": "cyan", "label": "Cyan" },
+            { "value": "mint", "label": "Mint" }
+          ],
+          "default": "blue"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Pricing teaser",
+      "blocks": [
+        {
+          "type": "price_card",
+          "settings": {
+            "label": "Wall art",
+            "title": "Canvas prints",
+            "price": "£14.99",
+            "note": "Gallery wraps, ready to hang",
+            "button_label": "Shop canvas",
+            "accent": "blue"
+          }
+        },
+        {
+          "type": "price_card",
+          "settings": {
+            "label": "Home & gifts",
+            "title": "Personalised mugs",
+            "price": "£11.99",
+            "note": "Dishwasher-friendly ceramics",
+            "button_label": "Shop mugs",
+            "accent": "magenta"
+          }
+        },
+        {
+          "type": "price_card",
+          "settings": {
+            "label": "Coming soon",
+            "title": "More wall art",
+            "price": "—",
+            "note": "Framed, metal & acrylic on the way",
+            "button_label": "Browse all",
+            "accent": "mint"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

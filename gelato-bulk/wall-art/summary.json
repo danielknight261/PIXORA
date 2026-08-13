@@ -1,0 +1,56 @@
+[
+  {
+    "handle": "canvas-prints",
+    "catalogUid": "canvas",
+    "total": 704,
+    "used": 208
+  },
+  {
+    "handle": "framed-canvas",
+    "catalogUid": "framed-canvas",
+    "total": 702,
+    "used": 702
+  },
+  {
+    "handle": "framed-prints",
+    "catalogUid": "framed-posters",
+    "total": 5100,
+    "used": 5100
+  },
+  {
+    "handle": "aluminum-prints",
+    "catalogUid": "metallic",
+    "total": 288,
+    "used": 288
+  },
+  {
+    "handle": "acrylic-prints",
+    "catalogUid": "acrylic",
+    "total": 144,
+    "used": 144
+  },
+  {
+    "handle": "posters",
+    "catalogUid": "posters",
+    "total": 1863,
+    "used": 1863
+  },
+  {
+    "handle": "posters-with-hangers",
+    "catalogUid": "poster-hangers",
+    "total": 2044,
+    "used": 2044
+  },
+  {
+    "handle": "foam-prints",
+    "catalogUid": "foam-print-product",
+    "total": 144,
+    "used": 144
+  },
+  {
+    "handle": "wood-prints",
+    "catalogUid": "wood-prints",
+    "total": 144,
+    "used": 144
+  }
+]

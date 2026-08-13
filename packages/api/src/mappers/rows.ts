@@ -2,6 +2,7 @@ import type { ProductCategory, OrderStatus } from "@pixora/shared";
 
 type CategoryRow = {
   name: string;
+  slug?: string;
 };
 
 type ProductRow = {
@@ -57,6 +58,7 @@ export function mapProduct(row: ProductRow) {
     description: row.description,
     categoryId: row.category_id,
     category: (category?.name ?? "Photo Prints") as ProductCategory | string,
+    categorySlug: category?.slug ?? null,
     basePrice: row.base_price,
     imageUrl: row.image_url,
     active: row.active,

@@ -1,26 +1,11 @@
 import type { Metadata } from "next";
-import { Inter, Poppins } from "next/font/google";
-import { Providers } from "./providers";
+import { env } from "@/env";
 import "./globals.css";
 
-const poppins = Poppins({
-  variable: "--font-poppins",
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-});
-
-const inter = Inter({
-  variable: "--font-inter",
-  subsets: ["latin"],
-});
-
 export const metadata: Metadata = {
-  title: {
-    default: "Pixora — Turn Moments Into Keepsakes",
-    template: "%s | Pixora",
-  },
-  description:
-    "Create personalised photo products — canvas prints, mugs, calendars, and more.",
+  title: "Pixora has moved",
+  description: "Shop Pixora on Shopify with Gelato personalization.",
+  robots: { index: false, follow: true },
 };
 
 export default function RootLayout({
@@ -28,11 +13,15 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const storeUrl = env.NEXT_PUBLIC_SHOPIFY_STORE_URL;
+
   return (
     <html lang="en">
-      <body className={`${poppins.variable} ${inter.variable} antialiased`}>
-        <Providers>{children}</Providers>
-      </body>
+      <head>
+        <meta httpEquiv="refresh" content={`0;url=${storeUrl}`} />
+        <link rel="canonical" href={storeUrl} />
+      </head>
+      <body>{children}</body>
     </html>
   );
 }

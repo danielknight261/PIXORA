@@ -1,0 +1,17 @@
+{
+    "current":  {
+                    "color_light":  "#F3F7FB",
+                    "brand_tagline":  "Turn Moments Into Keepsakes",
+                    "color_accent":  "#12C4A0",
+                    "color_dark":  "#0B1220",
+                    "supabase_url":  "https://recmiweyycnvvlglatrb.supabase.co",
+                    "color_border":  "#D2DCE8",
+                    "brand_name":  "Pixora",
+                    "color_primary":  "#E11D6E",
+                    "supabase_anon_key":  "",
+                    "color_secondary":  "#2F6BFF",
+                    "color_brand_nav":  "#00A8C4",
+                    "color_muted":  "#5A6578",
+                    "color_brand_nav_hover":  "#00C2DE"
+                }
+}

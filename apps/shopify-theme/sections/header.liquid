@@ -1,0 +1,144 @@
+{%- comment -%}
+  Pixora studio header — Wall art focused (canvas goes straight to product).
+{%- endcomment -%}
+<header class="site-header">
+  <div class="site-header__utility">
+    <div class="page-width site-header__utility-inner">
+      <a class="site-header__logo" href="{{ routes.root_url }}">
+        <span class="site-header__mark" aria-hidden="true"></span>
+        {% if settings.logo != blank %}
+          {{ settings.logo | image_url: width: 200 | image_tag: alt: settings.brand_name, class: 'site-header__logo-img' }}
+        {% else %}
+          <span class="site-header__brand">{{ settings.brand_name | default: 'Pixora' }}</span>
+        {% endif %}
+      </a>
+
+      <div class="site-header__actions">
+        <a class="site-header__util-link" href="{{ settings.help_link | default: '/pages/contact' }}">
+          <span class="site-header__util-label">Help</span>
+        </a>
+        <a class="site-header__util-link" href="{{ routes.account_url }}">
+          <span class="site-header__util-label">
+            {% if customer %}Account{% else %}Sign in{% endif %}
+          </span>
+        </a>
+        <a class="site-header__basket" href="{{ routes.cart_url }}">
+          <svg class="site-header__icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+          </svg>
+          <span class="site-header__util-label">Basket</span>
+          {% if cart.item_count > 0 %}
+            <span class="site-header__badge">{{ cart.item_count }}</span>
+          {% endif %}
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="site-header__categories site-header__categories--desktop">
+    <nav class="page-width site-header__categories-inner" aria-label="Shop categories">
+      <div class="site-header__cat">
+        <a class="site-header__cat-link site-header__cat-link--wall" href="/collections/wall-art">
+          Wall art
+          <svg class="site-header__chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </a>
+        <div class="site-header__panel site-header__panel--wide" role="menu">
+          <p class="site-header__panel-kicker">Print for your walls</p>
+          <div class="site-header__panel-grid site-header__panel-grid--3">
+            <a class="site-header__tile" href="/products/canvas-20x20-cm-8x8">
+              <span class="site-header__swatch site-header__swatch--blue" aria-hidden="true"></span>
+              <span class="site-header__tile-copy">
+                <span class="site-header__tile-title">Canvas prints</span>
+                <span class="site-header__tile-desc">Choose size &amp; personalize</span>
+              </span>
+            </a>
+            <a class="site-header__tile" href="/collections/framed-canvas">
+              <span class="site-header__swatch site-header__swatch--cyan" aria-hidden="true"></span>
+              <span class="site-header__tile-copy">
+                <span class="site-header__tile-title">Framed canvas</span>
+                <span class="site-header__tile-desc">Canvas in a tray frame</span>
+              </span>
+            </a>
+            <a class="site-header__tile" href="/collections/framed-prints">
+              <span class="site-header__swatch site-header__swatch--mint" aria-hidden="true"></span>
+              <span class="site-header__tile-copy">
+                <span class="site-header__tile-title">Framed prints</span>
+                <span class="site-header__tile-desc">Wood &amp; metal frames</span>
+              </span>
+            </a>
+            <a class="site-header__tile" href="/collections/aluminum-prints">
+              <span class="site-header__swatch site-header__swatch--slate" aria-hidden="true"></span>
+              <span class="site-header__tile-copy">
+                <span class="site-header__tile-title">Metal / aluminium</span>
+                <span class="site-header__tile-desc">Sleek metal panels</span>
+              </span>
+            </a>
+            <a class="site-header__tile" href="/collections/acrylic-prints">
+              <span class="site-header__swatch site-header__swatch--cyan" aria-hidden="true"></span>
+              <span class="site-header__tile-copy">
+                <span class="site-header__tile-title">Acrylic prints</span>
+                <span class="site-header__tile-desc">Glossy, vivid colour</span>
+              </span>
+            </a>
+            <a class="site-header__tile" href="/collections/posters">
+              <span class="site-header__swatch site-header__swatch--rose" aria-hidden="true"></span>
+              <span class="site-header__tile-copy">
+                <span class="site-header__tile-title">Posters</span>
+                <span class="site-header__tile-desc">Choose finish &amp; personalize</span>
+              </span>
+            </a>
+            <a class="site-header__tile" href="/collections/posters-with-hangers">
+              <span class="site-header__swatch site-header__swatch--magenta" aria-hidden="true"></span>
+              <span class="site-header__tile-copy">
+                <span class="site-header__tile-title">Posters with hangers</span>
+                <span class="site-header__tile-desc">Casual wood hanger style</span>
+              </span>
+            </a>
+            <a class="site-header__tile" href="/collections/foam-prints">
+              <span class="site-header__swatch site-header__swatch--blue" aria-hidden="true"></span>
+              <span class="site-header__tile-copy">
+                <span class="site-header__tile-title">Foam prints</span>
+                <span class="site-header__tile-desc">Lightweight board prints</span>
+              </span>
+            </a>
+            <a class="site-header__tile" href="/collections/wood-prints">
+              <span class="site-header__swatch site-header__swatch--mint" aria-hidden="true"></span>
+              <span class="site-header__tile-copy">
+                <span class="site-header__tile-title">Wood prints</span>
+                <span class="site-header__tile-desc">Natural wood grain finish</span>
+              </span>
+            </a>
+            <a class="site-header__tile site-header__tile--all" href="/collections/wall-art">
+              <span class="site-header__swatch site-header__swatch--teal" aria-hidden="true"></span>
+              <span class="site-header__tile-copy">
+                <span class="site-header__tile-title">All wall art</span>
+                <span class="site-header__tile-desc">Browse every wall product</span>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <a class="site-header__shop-all" href="/products/canvas-20x20-cm-8x8">Canvas prints</a>
+    </nav>
+  </div>
+
+  <div class="site-header__categories site-header__categories--mobile">
+    <nav class="page-width site-header__categories-inner" aria-label="Shop categories">
+      <a class="site-header__chip site-header__chip--blue" href="/collections/wall-art">Wall art</a>
+      <a class="site-header__chip site-header__chip--teal" href="/products/canvas-20x20-cm-8x8">Canvas</a>
+      <a class="site-header__chip site-header__chip--rose" href="/collections/posters">Posters</a>
+    </nav>
+  </div>
+
+  <div class="site-header__spectrum" aria-hidden="true"></div>
+</header>
+
+{% schema %}
+{
+  "name": "Header",
+  "settings": []
+}
+{% endschema %}

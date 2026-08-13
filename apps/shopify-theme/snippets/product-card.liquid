@@ -1,0 +1,45 @@
+{%- liquid
+  assign show_options = emphasize_options | default: false
+  assign variant_count = product.variants.size
+  assign has_size = false
+  assign has_orientation = false
+  for option in product.options_with_values
+    assign opt = option.name | downcase
+    if opt == 'size' or opt contains 'size'
+      assign has_size = true
+    endif
+    if opt == 'orientation' or opt contains 'orientation'
+      assign has_orientation = true
+    endif
+  endfor
+-%}
+
+<a class="product-card{% if show_options %} product-card--featured{% endif %}" href="{{ product.url }}">
+  <div class="product-card__media">
+    {% if product.featured_media %}
+      {{
+        product.featured_media
+        | image_url: width: 800
+        | image_tag: loading: 'lazy', alt: product.featured_media.alt | default: product.title
+      }}
+    {% else %}
+      <div class="product-card__placeholder">{{ product.title | slice: 0 }}</div>
+    {% endif %}
+    {% if show_options and has_orientation %}
+      <div class="product-card__badges" aria-hidden="true">
+        <span>Portrait</span>
+        <span>Landscape</span>
+        <span>Square</span>
+      </div>
+    {% endif %}
+  </div>
+  <div class="product-card__info">
+    <h3 class="product-card__title">{{ product.title }}</h3>
+    <p class="product-card__price">{% render 'price', product: product %}</p>
+    {% if show_options and has_size %}
+      <p class="product-card__meta">
+        {% if variant_count > 1 %}{{ variant_count }} sizes &amp; orientations · {% endif %}Personalize
+      </p>
+    {% endif %}
+  </div>
+</a>

@@ -1,0 +1,367 @@
+{%- comment -%}
+  Photobox-style canvas chooser: all options visible, then continue to product + personalize.
+{%- endcomment -%}
+
+{%- liquid
+  assign canvas_product = all_products['canvas-20x20-cm-8x8']
+
+  if canvas_product == blank
+    assign canvas_product = collection.products.first
+  endif
+
+  if canvas_product == blank
+    for p in collection.products limit: 20
+      if p.variants.size > 1
+        assign canvas_product = p
+        break
+      endif
+    endfor
+  endif
+
+  assign size_idx = blank
+  assign orient_idx = blank
+  assign thick_idx = blank
+
+  if canvas_product != blank
+    for option in canvas_product.options_with_values
+      assign opt = option.name | downcase
+      if opt == 'size' or opt contains 'size'
+        assign size_idx = forloop.index0
+      endif
+      if opt == 'orientation' or opt contains 'orientation'
+        assign orient_idx = forloop.index0
+      endif
+      if opt == 'thickness' or opt contains 'thickness' or opt contains 'depth' or opt contains 'wrap'
+        assign thick_idx = forloop.index0
+      endif
+    endfor
+
+    if size_idx == blank or orient_idx == blank
+      for opt_name in canvas_product.options
+        assign opt = opt_name | downcase
+        if size_idx == blank and opt contains 'size'
+          assign size_idx = forloop.index0
+        endif
+        if orient_idx == blank and opt contains 'orient'
+          assign orient_idx = forloop.index0
+        endif
+        if thick_idx == blank and opt contains 'thick'
+          assign thick_idx = forloop.index0
+        endif
+      endfor
+    endif
+  endif
+-%}
+
+{% if canvas_product == blank or size_idx == blank or orient_idx == blank %}
+  <div class="canvas-chooser-fallback">
+    <p class="muted">Open the canvas product to choose size and personalize.</p>
+    {% if canvas_product != blank %}
+      <a class="button button--primary" href="{{ canvas_product.url }}">Continue to personalize</a>
+    {% else %}
+      <a class="button button--primary" href="/products/canvas-20x20-cm-8x8">Continue to personalize</a>
+    {% endif %}
+  </div>
+{% else %}
+
+  <div
+    class="canvas-chooser"
+    id="CanvasChooser"
+    data-product-url="{{ canvas_product.url }}"
+  >
+    <div class="canvas-chooser__panel">
+      <div class="canvas-chooser__heading">
+        <h2>1. Thickness</h2>
+        <p class="muted">Slim for a modern flush look, thick for a gallery wrap.</p>
+      </div>
+      <div class="canvas-thickness" role="radiogroup" aria-label="Thickness">
+        <button type="button" class="canvas-thickness__btn is-selected" data-choose-thickness="slim" aria-pressed="true">
+          <span class="canvas-thickness__bar canvas-thickness__bar--slim" aria-hidden="true"></span>
+          <span class="canvas-thickness__copy">
+            <strong>Slim</strong>
+            <span>~2 cm wrap</span>
+          </span>
+        </button>
+        <button type="button" class="canvas-thickness__btn" data-choose-thickness="thick" aria-pressed="false">
+          <span class="canvas-thickness__bar canvas-thickness__bar--thick" aria-hidden="true"></span>
+          <span class="canvas-thickness__copy">
+            <strong>Thick</strong>
+            <span>~4 cm gallery wrap</span>
+          </span>
+        </button>
+      </div>
+    </div>
+
+    <div class="canvas-chooser__panel">
+      <div class="canvas-chooser__heading">
+        <h2>2. Orientation</h2>
+        <p class="muted">Portrait, landscape, or square — all options shown.</p>
+      </div>
+      <div class="canvas-orient" role="radiogroup" aria-label="Orientation">
+        <button type="button" class="canvas-orient__btn is-selected" data-choose-orient="portrait" aria-pressed="true">
+          <span class="canvas-orient__icon canvas-orient__icon--portrait" aria-hidden="true"></span>
+          <span class="canvas-orient__label">Portrait</span>
+        </button>
+        <button type="button" class="canvas-orient__btn" data-choose-orient="landscape" aria-pressed="false">
+          <span class="canvas-orient__icon canvas-orient__icon--landscape" aria-hidden="true"></span>
+          <span class="canvas-orient__label">Landscape</span>
+        </button>
+        <button type="button" class="canvas-orient__btn" data-choose-orient="square" aria-pressed="false">
+          <span class="canvas-orient__icon canvas-orient__icon--square" aria-hidden="true"></span>
+          <span class="canvas-orient__label">Square</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="canvas-chooser__panel">
+      <div class="canvas-chooser__heading">
+        <h2>3. Size</h2>
+        <p class="muted" data-chooser-size-hint>All matching sizes for your selection</p>
+      </div>
+      <div class="canvas-sizes canvas-sizes--chooser" data-chooser-sizes role="listbox" aria-label="Size"></div>
+    </div>
+
+    <div class="canvas-chooser__cta">
+      <div>
+        <p class="canvas-chooser__summary" data-chooser-summary></p>
+        <p class="muted canvas-chooser__cta-note">Next: personalize with your photo on the product page.</p>
+      </div>
+      <a class="button button--primary" href="{{ canvas_product.url }}" data-chooser-continue>
+        Continue to personalize
+      </a>
+    </div>
+
+    <script type="application/json" data-chooser-map>
+      {
+        "productUrl": {{ canvas_product.url | json }},
+        "sizeOptionIndex": {{ size_idx }},
+        "orientationOptionIndex": {{ orient_idx }},
+        "thicknessOptionIndex": {% if thick_idx != nil %}{{ thick_idx }}{% else %}null{% endif %},
+        "variants": [
+          {%- for variant in canvas_product.variants -%}
+            {
+              "id": {{ variant.id | json }},
+              "available": {{ variant.available | json }},
+              "price": {{ variant.price | json }},
+              "priceFormatted": {{ variant.price | money | json }},
+              "title": {{ variant.title | json }},
+              "options": {{ variant.options | json }}
+            }{% unless forloop.last %},{% endunless %}
+          {%- endfor -%}
+        ]
+      }
+    </script>
+  </div>
+
+  <script>
+    (function () {
+      var root = document.getElementById('CanvasChooser');
+      if (!root) return;
+      var mapEl = root.querySelector('[data-chooser-map]');
+      if (!mapEl) return;
+      var data = JSON.parse(mapEl.textContent);
+      var sizeIdx = data.sizeOptionIndex;
+      var orientIdx = data.orientationOptionIndex;
+      var thickIdx = data.thicknessOptionIndex;
+      var variants = data.variants || [];
+      var sizeGrid = root.querySelector('[data-chooser-sizes]');
+      var sizeHint = root.querySelector('[data-chooser-size-hint]');
+      var summary = root.querySelector('[data-chooser-summary]');
+      var continueBtn = root.querySelector('[data-chooser-continue]');
+      var thickBtns = root.querySelectorAll('[data-choose-thickness]');
+      var orientBtns = root.querySelectorAll('[data-choose-orient]');
+
+      function parseSquare(sizeLabel) {
+        var m = String(sizeLabel).match(/(\d+(?:\.\d+)?)\s*[x×]\s*(\d+(?:\.\d+)?)/i);
+        if (!m) return false;
+        return Number(m[1]) === Number(m[2]);
+      }
+      function orientKey(raw) {
+        var v = String(raw || '').toLowerCase();
+        if (v.indexOf('horiz') !== -1 || v.indexOf('land') !== -1) return 'landscape';
+        if (v.indexOf('vert') !== -1 || v.indexOf('port') !== -1) return 'portrait';
+        return v;
+      }
+      function thicknessKey(raw) {
+        var v = String(raw || '').toLowerCase();
+        if (v.indexOf('thick') !== -1) return 'thick';
+        if (v.indexOf('slim') !== -1 || v.indexOf('thin') !== -1) return 'slim';
+        return v || 'slim';
+      }
+      function shortSize(label) {
+        var inch = String(label).match(/(\d+(?:\.\d+)?\s*[x×]\s*\d+(?:\.\d+)?)\s*(?:\"|″|in)/i);
+        if (inch) return inch[1].replace(/\s+/g, '') + '″';
+        var cm = String(label).match(/(\d+(?:\.\d+)?\s*[x×]\s*\d+(?:\.\d+)?)\s*cm/i);
+        if (cm) return cm[1].replace(/\s+/g, '') + ' cm';
+        return label;
+      }
+      function sizeShape(label, mode) {
+        var m = String(label).match(/(\d+(?:\.\d+)?)\s*[x×]\s*(\d+(?:\.\d+)?)/i);
+        var w = 36;
+        var h = 36;
+        if (m) {
+          var a = Number(m[1]);
+          var b = Number(m[2]);
+          var max = Math.max(a, b) || 1;
+          if (mode === 'landscape') {
+            w = 44;
+            h = Math.max(18, Math.round((Math.min(a, b) / max) * 44));
+          } else if (mode === 'portrait') {
+            h = 44;
+            w = Math.max(18, Math.round((Math.min(a, b) / max) * 44));
+          } else {
+            w = 34;
+            h = 34;
+          }
+        }
+        return { w: w, h: h };
+      }
+
+      var classified = variants.map(function (variant) {
+        var size = variant.options[sizeIdx];
+        return {
+          size: size,
+          orient: orientKey(variant.options[orientIdx]),
+          thickness:
+            thickIdx === null || thickIdx === undefined
+              ? 'slim'
+              : thicknessKey(variant.options[thickIdx]),
+          square: parseSquare(size),
+          variant: variant
+        };
+      });
+
+      var state = { mode: 'portrait', thickness: 'slim', size: null };
+
+      function sizesFor(mode, thickness) {
+        var seen = {};
+        var list = [];
+        classified.forEach(function (c) {
+          if (thickness && c.thickness !== thickness) return;
+          if (mode === 'square') {
+            if (!c.square) return;
+          } else if (mode === 'portrait') {
+            if (c.square || c.orient !== 'portrait') return;
+          } else if (mode === 'landscape') {
+            if (c.square || c.orient !== 'landscape') return;
+          }
+          if (!seen[c.size]) {
+            seen[c.size] = true;
+            list.push(c.size);
+          }
+        });
+        return list.sort(function (a, b) {
+          var ma = String(a).match(/(\d+(?:\.\d+)?)\s*[x×]\s*(\d+(?:\.\d+)?)/i);
+          var mb = String(b).match(/(\d+(?:\.\d+)?)\s*[x×]\s*(\d+(?:\.\d+)?)/i);
+          var aa = ma ? Number(ma[1]) * Number(ma[2]) : 0;
+          var bb = mb ? Number(mb[1]) * Number(mb[2]) : 0;
+          return aa - bb;
+        });
+      }
+
+      function findVariant(mode, size, thickness) {
+        var matches = classified.filter(function (c) {
+          if (c.size !== size) return false;
+          if (thickness && c.thickness !== thickness) return false;
+          if (mode === 'square') return c.square;
+          if (mode === 'portrait') return !c.square && c.orient === 'portrait';
+          if (mode === 'landscape') return !c.square && c.orient === 'landscape';
+          return false;
+        });
+        if (!matches.length) return null;
+        if (mode === 'square') {
+          var vert = matches.find(function (c) {
+            return c.orient === 'portrait';
+          });
+          return (vert || matches[0]).variant;
+        }
+        return matches[0].variant;
+      }
+
+      function updateContinue(variant) {
+        var url = new URL(data.productUrl, window.location.origin);
+        url.searchParams.set('orientation', state.mode);
+        if (state.thickness) url.searchParams.set('thickness', state.thickness);
+        if (state.size) url.searchParams.set('size', state.size);
+        if (variant) url.searchParams.set('variant', variant.id);
+        continueBtn.href = url.pathname + url.search;
+        summary.textContent = variant
+          ? variant.title + ' · from ' + variant.priceFormatted
+          : 'Select a size to continue';
+      }
+
+      function render() {
+        var sizes = sizesFor(state.mode, state.thickness);
+        if (!sizes.length) {
+          state.size = null;
+          sizeGrid.innerHTML = '<p class="muted">No sizes for this combination.</p>';
+          sizeHint.textContent = '0 sizes';
+          updateContinue(null);
+          return;
+        }
+        if (!state.size || sizes.indexOf(state.size) === -1) state.size = sizes[0];
+        sizeHint.textContent = sizes.length + ' sizes available';
+        sizeGrid.innerHTML = '';
+        sizes.forEach(function (size) {
+          var v = findVariant(state.mode, size, state.thickness);
+          var shape = sizeShape(size, state.mode);
+          var btn = document.createElement('button');
+          btn.type = 'button';
+          btn.className = 'canvas-size canvas-size--visual' + (state.size === size ? ' is-selected' : '');
+          btn.setAttribute('role', 'option');
+          btn.setAttribute('aria-selected', state.size === size ? 'true' : 'false');
+          btn.innerHTML =
+            '<span class="canvas-size__shape" style="width:' +
+            shape.w +
+            'px;height:' +
+            shape.h +
+            'px" aria-hidden="true"></span>' +
+            '<span class="canvas-size__label">' +
+            shortSize(size) +
+            '</span>' +
+            '<span class="canvas-size__full">' +
+            size +
+            '</span>' +
+            (v ? '<span class="canvas-size__price">' + v.priceFormatted + '</span>' : '');
+          btn.addEventListener('click', function () {
+            state.size = size;
+            render();
+          });
+          btn.addEventListener('dblclick', function () {
+            state.size = size;
+            var variant = findVariant(state.mode, size, state.thickness);
+            updateContinue(variant);
+            window.location.href = continueBtn.href;
+          });
+          sizeGrid.appendChild(btn);
+        });
+        updateContinue(findVariant(state.mode, state.size, state.thickness));
+      }
+
+      thickBtns.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          state.thickness = btn.getAttribute('data-choose-thickness');
+          thickBtns.forEach(function (b) {
+            var on = b === btn;
+            b.classList.toggle('is-selected', on);
+            b.setAttribute('aria-pressed', on ? 'true' : 'false');
+          });
+          render();
+        });
+      });
+      orientBtns.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          state.mode = btn.getAttribute('data-choose-orient');
+          orientBtns.forEach(function (b) {
+            var on = b === btn;
+            b.classList.toggle('is-selected', on);
+            b.setAttribute('aria-pressed', on ? 'true' : 'false');
+          });
+          render();
+        });
+      });
+
+      render();
+    })();
+  </script>
+{% endif %}

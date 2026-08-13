@@ -9,6 +9,14 @@ export {
 } from "./prodigi/client";
 export {
   createGelatoClient,
+  GelatoApiError,
+  type GelatoCatalog,
+  type GelatoClient,
+  type GelatoOrderFile,
   type GelatoOrderRequest,
   type GelatoOrderResponse,
+  type GelatoProduct,
+  type GelatoProductSearchRequest,
+  type GelatoProductSearchResponse,
+  type GelatoShippingAddress,
 } from "./gelato/client";

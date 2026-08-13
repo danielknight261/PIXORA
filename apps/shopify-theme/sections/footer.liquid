@@ -1,0 +1,66 @@
+<footer class="site-footer">
+  <div class="page-width site-footer__top">
+    <div class="site-footer__brand-block">
+      <p class="site-footer__brand">{{ settings.brand_name | default: shop.name }}</p>
+      <p class="site-footer__tagline">
+        {{ settings.brand_tagline | default: 'Turn Moments Into Keepsakes' }}.
+        Create personalised photo products with live preview and premium print quality.
+      </p>
+    </div>
+
+    <div class="site-footer__columns">
+      <div class="site-footer__col">
+        <h3 class="site-footer__heading">Shop</h3>
+        <ul class="site-footer__list">
+          <li><a href="/collections/wall-art">Wall art</a></li>
+          <li><a href="/products/canvas-20x20-cm-8x8">Canvas prints</a></li>
+          <li><a href="/collections/posters">Posters</a></li>
+        </ul>
+      </div>
+
+      <div class="site-footer__col">
+        <h3 class="site-footer__heading">Help</h3>
+        <ul class="site-footer__list">
+          <li><a href="{{ settings.help_link | default: '/pages/contact' }}">Customer service</a></li>
+          <li><a href="/pages/shipping">Shipping &amp; delivery</a></li>
+          <li><a href="/pages/faq">FAQs</a></li>
+          <li><a href="{{ routes.account_url }}">Order status</a></li>
+        </ul>
+      </div>
+
+      <div class="site-footer__col">
+        <h3 class="site-footer__heading">Account</h3>
+        <ul class="site-footer__list">
+          <li><a href="{{ routes.account_login_url }}">Sign in</a></li>
+          <li><a href="{{ routes.account_register_url }}">Create account</a></li>
+          <li><a href="{{ routes.account_url }}">My account</a></li>
+          <li><a href="{{ routes.cart_url }}">Basket</a></li>
+        </ul>
+      </div>
+
+      <div class="site-footer__col">
+        <h3 class="site-footer__heading">Legal</h3>
+        <ul class="site-footer__list">
+          <li><a href="/policies/privacy-policy">Privacy policy</a></li>
+          <li><a href="/policies/terms-of-service">Terms of service</a></li>
+          <li><a href="/policies/refund-policy">Refund policy</a></li>
+          <li><a href="/policies/shipping-policy">Shipping policy</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="site-footer__bottom">
+    <div class="page-width site-footer__bottom-inner">
+      <p class="site-footer__copy">&copy; {{ 'now' | date: '%Y' }} {{ shop.name }}. All rights reserved.</p>
+      <p class="site-footer__note">Printed on demand · Premium quality · Delivered to your door</p>
+    </div>
+  </div>
+</footer>
+
+{% schema %}
+{
+  "name": "Footer",
+  "settings": []
+}
+{% endschema %}

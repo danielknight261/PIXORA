@@ -13,7 +13,7 @@ const productSelect = `
   active,
   created_at,
   updated_at,
-  categories ( name )
+  categories ( name, slug )
 `;
 
 export async function getProducts(

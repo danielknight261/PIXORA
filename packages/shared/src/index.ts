@@ -28,11 +28,36 @@ export { productCategories, type ProductCategory } from "./constants/products";
 export { loginSchema, registerSchema, forgotPasswordSchema, type LoginInput, type RegisterInput, type ForgotPasswordInput } from "./schemas/auth";
 export { checkoutSchema, type CheckoutInput } from "./schemas/checkout";
 export { productSchema, type ProductInput } from "./schemas/product";
+export {
+  canvasDataSchema,
+  designInputSchema,
+  designUpdateSchema,
+  mockupPrintAreaSchema,
+  type CanvasData,
+  type DesignInput,
+  type DesignUpdateInput,
+} from "./schemas/design";
 export type { Category } from "./types/category";
 export type { Address } from "./types/address";
 export type { Upload } from "./types/upload";
 export type { Order, OrderItem, OrderStatus, ShippingAddress } from "./types/order";
 export type { Design, Product } from "./types/product";
+export type { DesignWithProduct, SaveDesignState } from "./types/design";
+export type {
+  FulfillmentMapping,
+  FulfillmentProvider,
+  MockupPrintArea,
+  PrintTemplate,
+  ProductVariant,
+  ProductWithTemplate,
+} from "./types/print-template";
+export type {
+  MockupCylinder,
+  MockupPoint,
+  MockupQuad,
+  MockupSpec,
+  MockupWarpMode,
+} from "./types/mockup";
 export type { User, UserProfile } from "./types/user";
 export { formatCurrency, formatDate } from "./utils/format";
 export { validate, type ValidationResult } from "./utils/validation";

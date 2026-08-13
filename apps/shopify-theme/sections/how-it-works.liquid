@@ -1,0 +1,112 @@
+<section class="how-it-works" id="how-it-works">
+  <div class="page-width">
+    {% if section.settings.eyebrow != blank %}
+      <p class="how-it-works__eyebrow">{{ section.settings.eyebrow }}</p>
+    {% endif %}
+    {% if section.settings.heading != blank %}
+      <h2 class="how-it-works__heading">{{ section.settings.heading }}</h2>
+    {% endif %}
+    {% if section.settings.text != blank %}
+      <p class="how-it-works__intro">{{ section.settings.text }}</p>
+    {% endif %}
+
+    <ol class="how-it-works__steps">
+      {% for block in section.blocks %}
+        <li class="how-it-works__step how-it-works__step--{{ block.settings.accent | default: 'cyan' }}" {{ block.shopify_attributes }}>
+          <span class="how-it-works__number" aria-hidden="true">{{ forloop.index }}</span>
+          <h3 class="how-it-works__title">{{ block.settings.title }}</h3>
+          <p class="how-it-works__desc">{{ block.settings.text }}</p>
+        </li>
+      {% endfor %}
+    </ol>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "How it works",
+  "settings": [
+    {
+      "type": "text",
+      "id": "eyebrow",
+      "label": "Eyebrow",
+      "default": "Simple process"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "From photo to keepsake in three steps"
+    },
+    {
+      "type": "textarea",
+      "id": "text",
+      "label": "Intro",
+      "default": "Upload your favourite snap, personalise on a live product mockup, and we print and ship premium quality to your door."
+    }
+  ],
+  "blocks": [
+    {
+      "type": "step",
+      "name": "Step",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Upload your photo"
+        },
+        {
+          "type": "textarea",
+          "id": "text",
+          "label": "Text",
+          "default": "Choose a clear, high-resolution image from your phone or computer."
+        },
+        {
+          "type": "select",
+          "id": "accent",
+          "label": "Accent",
+          "options": [
+            { "value": "cyan", "label": "Cyan" },
+            { "value": "magenta", "label": "Magenta" },
+            { "value": "blue", "label": "Blue" },
+            { "value": "mint", "label": "Mint" }
+          ],
+          "default": "cyan"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "How it works",
+      "blocks": [
+        {
+          "type": "step",
+          "settings": {
+            "title": "Upload your photo",
+            "text": "Pick a favourite moment — phone or desktop, JPG or PNG.",
+            "accent": "cyan"
+          }
+        },
+        {
+          "type": "step",
+          "settings": {
+            "title": "Personalise live",
+            "text": "See your design on a real product mockup before you buy.",
+            "accent": "magenta"
+          }
+        },
+        {
+          "type": "step",
+          "settings": {
+            "title": "We print & ship",
+            "text": "Premium print-on-demand quality, packed and delivered to your door.",
+            "accent": "mint"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

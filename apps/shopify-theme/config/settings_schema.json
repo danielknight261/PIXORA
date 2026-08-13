@@ -1,0 +1,121 @@
+[
+  {
+    "name": "theme_info",
+    "theme_name": "Pixora",
+    "theme_version": "1.3.0",
+    "theme_author": "Pixora",
+    "theme_documentation_url": "https://github.com/pixora",
+    "theme_support_url": "https://github.com/pixora"
+  },
+  {
+    "name": "Colors",
+    "settings": [
+      {
+        "type": "paragraph",
+        "content": "Pixora Print Lab — CMYK-inspired cool palette (magenta, cyan, electric blue, mint). No coral or orange."
+      },
+      {
+        "type": "color",
+        "id": "color_primary",
+        "label": "Primary CTA (magenta ink)",
+        "default": "#E11D6E"
+      },
+      {
+        "type": "color",
+        "id": "color_brand_nav",
+        "label": "Brand (studio cyan)",
+        "default": "#00A8C4"
+      },
+      {
+        "type": "color",
+        "id": "color_brand_nav_hover",
+        "label": "Brand hover",
+        "default": "#00C2DE"
+      },
+      {
+        "type": "color",
+        "id": "color_accent",
+        "label": "Highlight (mint)",
+        "default": "#12C4A0"
+      },
+      {
+        "type": "color",
+        "id": "color_secondary",
+        "label": "Secondary (electric blue)",
+        "default": "#2F6BFF"
+      },
+      {
+        "type": "color",
+        "id": "color_dark",
+        "label": "Ink (text)",
+        "default": "#0B1220"
+      },
+      {
+        "type": "color",
+        "id": "color_light",
+        "label": "Paper (background)",
+        "default": "#F3F7FB"
+      },
+      {
+        "type": "color",
+        "id": "color_muted",
+        "label": "Muted text",
+        "default": "#5A6578"
+      },
+      {
+        "type": "color",
+        "id": "color_border",
+        "label": "Border",
+        "default": "#D2DCE8"
+      }
+    ]
+  },
+  {
+    "name": "Brand",
+    "settings": [
+      {
+        "type": "text",
+        "id": "brand_name",
+        "label": "Brand name",
+        "default": "Pixora"
+      },
+      {
+        "type": "text",
+        "id": "brand_tagline",
+        "label": "Tagline",
+        "default": "Turn Moments Into Keepsakes"
+      },
+      {
+        "type": "image_picker",
+        "id": "logo",
+        "label": "Logo"
+      },
+      {
+        "type": "url",
+        "id": "help_link",
+        "label": "Customer service link"
+      }
+    ]
+  },
+  {
+    "name": "Design previews",
+    "settings": [
+      {
+        "type": "paragraph",
+        "content": "Optional: snapshot personalized mockups to Supabase Storage and show them on the cart page."
+      },
+      {
+        "type": "text",
+        "id": "supabase_url",
+        "label": "Supabase URL",
+        "default": "https://recmiweyycnvvlglatrb.supabase.co"
+      },
+      {
+        "type": "text",
+        "id": "supabase_anon_key",
+        "label": "Supabase anon / publishable key",
+        "info": "Public publishable key only — never the service role key."
+      }
+    ]
+  }
+]

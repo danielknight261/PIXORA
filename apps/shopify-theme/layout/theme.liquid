@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="{{ request.locale.iso_code }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>
+      {{ page_title }}{% if current_tags %} &ndash; tagged "{{ current_tags | join: ', ' }}"{% endif %}{% if current_page != 1 %} &ndash; Page {{ current_page }}{% endif %}{% unless page_title contains shop.name %} &ndash; {{ shop.name }}{% endunless %}
+    </title>
+    {% if page_description %}
+      <meta name="description" content="{{ page_description | escape }}">
+    {% endif %}
+    <link rel="canonical" href="{{ canonical_url }}">
+    {{ content_for_header }}
+    {{ 'base.css' | asset_url | stylesheet_tag }}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    <style>
+      :root {
+        /* Pixora Print Lab — CMYK cool */
+        --color-primary: {{ settings.color_primary }};
+        --color-brand-nav: {{ settings.color_brand_nav }};
+        --color-brand-nav-hover: {{ settings.color_brand_nav_hover }};
+        --color-accent: {{ settings.color_accent }};
+        --color-secondary: {{ settings.color_secondary }};
+        --color-dark: {{ settings.color_dark }};
+        --color-light: {{ settings.color_light }};
+        --color-muted: {{ settings.color_muted }};
+        --color-border: {{ settings.color_border }};
+        --background: {{ settings.color_light }};
+        --foreground: {{ settings.color_dark }};
+        --ink: {{ settings.color_dark }};
+        --paper: {{ settings.color_light }};
+        --surface: #ffffff;
+        --magenta: {{ settings.color_primary }};
+        --cyan: {{ settings.color_brand_nav }};
+        --mint: {{ settings.color_accent }};
+        --electric: {{ settings.color_secondary }};
+      }
+    </style>
+  </head>
+  <body class="template-{{ template.name }}">
+    {% sections 'header-group' %}
+    <main id="MainContent" role="main">
+      {{ content_for_layout }}
+    </main>
+    {% sections 'footer-group' %}
+    <script>
+      window.PIXORA_DESIGN_PREVIEW = {
+        supabaseUrl: {{ settings.supabase_url | json }},
+        anonKey: {{ settings.supabase_anon_key | json }}
+      };
+    </script>
+    <script src="{{ 'design-preview.js' | asset_url }}" defer></script>
+  </body>
+</html>

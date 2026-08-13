@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420" fill="none" role="img" aria-label="Fine art paper poster">
+  <defs>
+    <linearGradient id="artBg" x1="0" y1="0" x2="640" y2="420" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F7F3EE"/>
+      <stop offset="1" stop-color="#EEE7DF"/>
+    </linearGradient>
+    <linearGradient id="artPaper" x1="170" y1="40" x2="470" y2="360" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F8F4EE"/>
+      <stop offset="1" stop-color="#EFE8DF"/>
+    </linearGradient>
+    <linearGradient id="artScene" x1="200" y1="80" x2="440" y2="300" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2F6BFF"/>
+      <stop offset="0.55" stop-color="#00A8C4"/>
+      <stop offset="1" stop-color="#E11D6E"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="420" fill="url(#artBg)"/>
+  <ellipse cx="100" cy="320" rx="150" ry="90" fill="#2F6BFF" opacity="0.1"/>
+  <ellipse cx="560" cy="70" rx="140" ry="90" fill="#12C4A0" opacity="0.12"/>
+  <rect x="178" y="48" width="284" height="318" rx="4" fill="#0B1220" opacity="0.07"/>
+  <rect x="170" y="40" width="284" height="318" rx="4" fill="url(#artPaper)" stroke="#D8CFC3"/>
+  <rect x="190" y="60" width="244" height="248" rx="2" fill="url(#artScene)" opacity="0.88"/>
+  <path d="M190 250c40-30 80-10 122-28s78-40 122-18v104H190V250z" fill="#0B1220" opacity="0.18"/>
+  <circle cx="380" cy="110" r="28" fill="#FFF7E8" opacity="0.85"/>
+  <text x="320" y="395" text-anchor="middle" fill="#5A6578" font-family="Poppins, Arial, sans-serif" font-size="18" font-weight="600">Fine art paper</text>
+</svg>

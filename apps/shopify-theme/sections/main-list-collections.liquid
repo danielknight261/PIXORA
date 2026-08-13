@@ -1,0 +1,23 @@
+<section class="main-list-collections page-width">
+  <h1 class="section-title">Collections</h1>
+  <div class="product-grid">
+    {% for collection in collections %}
+      {% unless collection.handle == 'frontpage' %}
+        <a class="product-card" href="{{ collection.url }}">
+          <div class="product-card__info">
+            <h3 class="product-card__title">{{ collection.title }}</h3>
+            <p class="muted">{{ collection.products_count }} products</p>
+          </div>
+        </a>
+      {% endunless %}
+    {% endfor %}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Collections list",
+  "settings": [],
+  "templates": ["list-collections"]
+}
+{% endschema %}

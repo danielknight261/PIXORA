@@ -208,6 +208,121 @@ export type Database = {
           },
         ];
       };
+      print_templates: {
+        Row: {
+          id: string;
+          product_id: string;
+          name: string;
+          surface_key: string;
+          width_px: number;
+          height_px: number;
+          dpi: number;
+          bleed_px: number;
+          safe_zone_inset_px: number;
+          mockup_image_url: string | null;
+          mockup_print_area: Json | null;
+          metadata: Json;
+        } & TimestampFields;
+        Insert: {
+          id?: string;
+          product_id: string;
+          name: string;
+          surface_key?: string;
+          width_px: number;
+          height_px: number;
+          dpi?: number;
+          bleed_px?: number;
+          safe_zone_inset_px?: number;
+          mockup_image_url?: string | null;
+          mockup_print_area?: Json | null;
+          metadata?: Json;
+          created_at?: string;
+          updated_at?: string;
+        };
+        Update: Partial<Database["public"]["Tables"]["print_templates"]["Insert"]>;
+        Relationships: [
+          {
+            foreignKeyName: "print_templates_product_id_fkey";
+            columns: ["product_id"];
+            referencedRelation: "products";
+            referencedColumns: ["id"];
+          },
+        ];
+      };
+      product_variants: {
+        Row: {
+          id: string;
+          product_id: string;
+          print_template_id: string;
+          slug: string;
+          name: string;
+          price_delta: number;
+          sort_order: number;
+          active: boolean;
+        } & TimestampFields;
+        Insert: {
+          id?: string;
+          product_id: string;
+          print_template_id: string;
+          slug: string;
+          name: string;
+          price_delta?: number;
+          sort_order?: number;
+          active?: boolean;
+          created_at?: string;
+          updated_at?: string;
+        };
+        Update: Partial<Database["public"]["Tables"]["product_variants"]["Insert"]>;
+        Relationships: [
+          {
+            foreignKeyName: "product_variants_product_id_fkey";
+            columns: ["product_id"];
+            referencedRelation: "products";
+            referencedColumns: ["id"];
+          },
+          {
+            foreignKeyName: "product_variants_print_template_id_fkey";
+            columns: ["print_template_id"];
+            referencedRelation: "print_templates";
+            referencedColumns: ["id"];
+          },
+        ];
+      };
+      fulfillment_mappings: {
+        Row: {
+          id: string;
+          variant_id: string;
+          provider: string;
+          provider_product_id: string;
+          provider_variant_id: string;
+          print_area_key: string;
+          raw_payload: Json;
+          synced_at: string;
+        } & TimestampFields;
+        Insert: {
+          id?: string;
+          variant_id: string;
+          provider: string;
+          provider_product_id: string;
+          provider_variant_id: string;
+          print_area_key?: string;
+          raw_payload?: Json;
+          synced_at?: string;
+          created_at?: string;
+          updated_at?: string;
+        };
+        Update: Partial<
+          Database["public"]["Tables"]["fulfillment_mappings"]["Insert"]
+        >;
+        Relationships: [
+          {
+            foreignKeyName: "fulfillment_mappings_variant_id_fkey";
+            columns: ["variant_id"];
+            referencedRelation: "product_variants";
+            referencedColumns: ["id"];
+          },
+        ];
+      };
       orders: {
         Row: {
           id: string;
@@ -302,5 +417,9 @@ export type Product = Database["public"]["Tables"]["products"]["Row"];
 export type Address = Database["public"]["Tables"]["addresses"]["Row"];
 export type Upload = Database["public"]["Tables"]["uploads"]["Row"];
 export type Design = Database["public"]["Tables"]["designs"]["Row"];
+export type PrintTemplate = Database["public"]["Tables"]["print_templates"]["Row"];
+export type ProductVariant = Database["public"]["Tables"]["product_variants"]["Row"];
+export type FulfillmentMapping =
+  Database["public"]["Tables"]["fulfillment_mappings"]["Row"];
 export type Order = Database["public"]["Tables"]["orders"]["Row"];
 export type OrderItem = Database["public"]["Tables"]["order_items"]["Row"];
