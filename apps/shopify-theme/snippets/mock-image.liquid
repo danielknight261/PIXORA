@@ -1,0 +1,31 @@
+{%- comment -%}
+  Resolve a temporary mock image for products/collections without media.
+  Usage: {% render 'mock-image', product: product %}
+  Optional: handle, alt, class, width
+{%- endcomment -%}
+{%- liquid
+  assign p = product
+  assign h = handle | default: p.handle | default: '' | downcase
+  assign mock_alt = alt | default: p.title | default: 'Product mockup'
+  assign mock_class = class | default: ''
+  assign mock_width = width | default: 800
+  assign mock_asset = 'poster-matte.svg'
+
+  if h contains 'fine-art'
+    assign mock_asset = 'poster-fine-art.svg'
+  elsif h contains 'semi-glossy' or h contains 'glossy' or h contains 'classic'
+    assign mock_asset = 'poster-semi-glossy.svg'
+  elsif h contains 'matte' or h contains 'poster'
+    assign mock_asset = 'poster-matte.svg'
+  elsif h contains 'canvas'
+    assign mock_asset = 'poster-matte.svg'
+  endif
+-%}
+<img
+  src="{{ mock_asset | asset_url }}"
+  alt="{{ mock_alt | escape }}"
+  class="{{ mock_class }}"
+  width="{{ mock_width }}"
+  height="{{ mock_width | times: 0.66 | round }}"
+  loading="lazy"
+>

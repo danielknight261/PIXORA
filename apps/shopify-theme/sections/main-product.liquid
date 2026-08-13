@@ -91,9 +91,10 @@
               }}
             {% else %}
               <div class="pb-canvas__media-empty" data-product-image-fallback>
-                <p class="pb-canvas__media-empty-title">Your design preview</p>
+                {% render 'mock-image', product: product, class: 'pb-canvas__media-mock', width: 900 %}
+                <p class="pb-canvas__media-empty-title">Sample mockup</p>
                 <p class="pb-canvas__media-empty-copy muted">
-                  Choose size, then use <strong>Personalize design</strong> to upload your photo and see the live mockup here.
+                  Choose size, then use <strong>Personalize design</strong> to upload your photo and see the live preview.
                 </p>
               </div>
             {% endif %}
@@ -240,7 +241,7 @@
           {% if media %}
             {{ media | image_url: width: 1400 | image_tag: class: 'product__image', alt: media.alt | default: product.title }}
           {% else %}
-            <div class="product-card__placeholder product__image">{{ product.title | slice: 0 }}</div>
+            {% render 'mock-image', product: product, class: 'product__image', width: 900 %}
           {% endif %}
         </div>
       </div>

@@ -23,7 +23,7 @@
         | image_tag: loading: 'lazy', alt: product.featured_media.alt | default: product.title
       }}
     {% else %}
-      <div class="product-card__placeholder">{{ product.title | slice: 0 }}</div>
+      {% render 'mock-image', product: product, class: 'product-card__mock', width: 800 %}
     {% endif %}
     {% if show_options and has_orientation %}
       <div class="product-card__badges" aria-hidden="true">

@@ -43,17 +43,24 @@
       </div>
     </header>
 
+    {%- liquid
+      assign glossy_product = all_products['classic-semi-glossy-paper-poster']
+      assign matte_product = all_products['premium-matte-paper-poster']
+      assign fine_product = all_products['fine-art-poster']
+    -%}
     <div class="page-width collection-body">
       <div class="finish-grid">
         <a class="finish-card" href="/products/classic-semi-glossy-paper-poster">
           <div class="finish-card__media">
-            <img
-              src="{{ 'poster-semi-glossy.svg' | asset_url }}"
-              alt="Classic semi-glossy paper poster mockup"
-              width="640"
-              height="420"
-              loading="lazy"
-            >
+            {% if glossy_product and glossy_product.featured_media %}
+              {{
+                glossy_product.featured_media
+                | image_url: width: 900
+                | image_tag: loading: 'lazy', alt: 'Classic semi-glossy paper poster'
+              }}
+            {% else %}
+              {% render 'mock-image', handle: 'classic-semi-glossy-paper-poster', alt: 'Classic semi-glossy paper poster mockup', width: 900 %}
+            {% endif %}
           </div>
           <div class="finish-card__body">
             <p class="finish-card__eyebrow">Best value</p>
@@ -72,13 +79,15 @@
 
         <a class="finish-card" href="/products/premium-matte-paper-poster">
           <div class="finish-card__media">
-            <img
-              src="{{ 'poster-matte.svg' | asset_url }}"
-              alt="Premium matte paper poster mockup"
-              width="640"
-              height="420"
-              loading="lazy"
-            >
+            {% if matte_product and matte_product.featured_media %}
+              {{
+                matte_product.featured_media
+                | image_url: width: 900
+                | image_tag: loading: 'lazy', alt: 'Premium matte paper poster'
+              }}
+            {% else %}
+              {% render 'mock-image', handle: 'premium-matte-paper-poster', alt: 'Premium matte paper poster mockup', width: 900 %}
+            {% endif %}
           </div>
           <div class="finish-card__body">
             <p class="finish-card__eyebrow">Paper finish</p>
@@ -97,13 +106,15 @@
 
         <a class="finish-card" href="/products/fine-art-poster">
           <div class="finish-card__media">
-            <img
-              src="{{ 'poster-fine-art.svg' | asset_url }}"
-              alt="Fine art paper poster mockup"
-              width="640"
-              height="420"
-              loading="lazy"
-            >
+            {% if fine_product and fine_product.featured_media %}
+              {{
+                fine_product.featured_media
+                | image_url: width: 900
+                | image_tag: loading: 'lazy', alt: 'Fine art paper poster'
+              }}
+            {% else %}
+              {% render 'mock-image', handle: 'fine-art-poster', alt: 'Fine art paper poster mockup', width: 900 %}
+            {% endif %}
           </div>
           <div class="finish-card__body">
             <p class="finish-card__eyebrow">Premium</p>
