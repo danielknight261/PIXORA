@@ -8,7 +8,39 @@
 
   <div class="product-blocks__grid">
     {% for block in section.blocks %}
-      {% assign card_href = block.settings.link | default: routes.collections_url %}
+      {% liquid
+        assign card_href = block.settings.link | default: routes.collections_url
+        assign live_from = blank
+        unless block.settings.coming_soon
+          assign link_path = card_href | split: '?' | first
+          if link_path contains '/products/'
+            assign product_handle = link_path | split: '/products/' | last | split: '/' | first
+            capture live_from
+              render 'from-price', handle: product_handle
+            endcapture
+          elsif link_path contains '/collections/'
+            assign collection_handle = link_path | split: '/collections/' | last | split: '/' | first
+            if collection_handle == 'canvas-prints' or collection_handle == 'canvas'
+              capture live_from
+                render 'from-price', handle: 'canvas-20x20-cm-8x8'
+              endcapture
+            else
+              capture live_from
+                render 'from-price', handle: collection_handle
+              endcapture
+            endif
+          endif
+        endunless
+        assign live_from = live_from | strip
+        assign price_text = blank
+        if block.settings.coming_soon
+          assign price_text = 'Coming soon'
+        elsif live_from != blank
+          assign price_text = live_from
+        elsif block.settings.price_label != blank and block.settings.price_label != 'Coming soon'
+          assign price_text = block.settings.price_label
+        endif
+      %}
       <a
         class="product-block{% if block.settings.coming_soon %} product-block--soon{% endif %}"
         href="{{ card_href }}"
@@ -31,8 +63,8 @@
         </div>
         <div class="product-block__info">
           <h2 class="product-block__title">{{ block.settings.title }}</h2>
-          {% if block.settings.price_label != blank %}
-            <p class="product-block__price">{{ block.settings.price_label }}</p>
+          {% if price_text != blank %}
+            <p class="product-block__price">{{ price_text }}</p>
           {% endif %}
         </div>
       </a>
@@ -163,10 +195,11 @@
         {
           "type": "product_block",
           "settings": {
-            "title": "Framed prints",
-            "price_label": "Coming soon",
+            "title": "Wooden framed prints",
+            "price_label": "From £20.64",
+            "link": "/collections/framed-prints",
             "accent": "mint",
-            "coming_soon": true
+            "coming_soon": false
           }
         },
         {
@@ -191,9 +224,10 @@
           "type": "product_block",
           "settings": {
             "title": "Posters",
-            "price_label": "Coming soon",
+            "price_label": "From £6.18",
+            "link": "/collections/posters",
             "accent": "rose",
-            "coming_soon": true
+            "coming_soon": false
           }
         },
         {

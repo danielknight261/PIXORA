@@ -1,0 +1,44 @@
+# Indexing-only: still @-mentionable, but not auto-indexed.
+# Keeps scratch data and bulk product dumps out of search/context.
+
+# Scratch / one-off Shopify + Gelato work
+downloads/
+gelato-bulk/
+
+# Root temp dumps
+tmp-*.json
+tmp-*.txt
+tmp-*.html
+tmp-*.js
+tmp-*.csv
+
+# Lockfiles and generated noise
+pnpm-lock.yaml
+package-lock.json
+yarn.lock
+**/*.tsbuildinfo
+**/next-env.d.ts
+
+# Large media / binary
+**/*.png
+**/*.jpg
+**/*.jpeg
+**/*.gif
+**/*.webp
+**/*.mp4
+**/*.mov
+**/*.zip
+**/*.tar
+**/*.gz
+**/*.7z
+**/*.pdf
+**/*.woff
+**/*.woff2
+**/*.ttf
+**/*.otf
+**/*.eot
+
+# Common dump / report patterns
+**/*-report.json
+**/*-upload-report.json
+**/variant-media-sample.json

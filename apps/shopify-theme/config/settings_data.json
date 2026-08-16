@@ -1,17 +1,17 @@
 {
-    "current":  {
-                    "color_light":  "#F3F7FB",
-                    "brand_tagline":  "Turn Moments Into Keepsakes",
-                    "color_accent":  "#12C4A0",
-                    "color_dark":  "#0B1220",
-                    "supabase_url":  "https://recmiweyycnvvlglatrb.supabase.co",
-                    "color_border":  "#D2DCE8",
-                    "brand_name":  "Pixora",
-                    "color_primary":  "#E11D6E",
-                    "supabase_anon_key":  "",
-                    "color_secondary":  "#2F6BFF",
-                    "color_brand_nav":  "#00A8C4",
-                    "color_muted":  "#5A6578",
-                    "color_brand_nav_hover":  "#00C2DE"
-                }
+  "current": {
+    "brand_name": "Pixora",
+    "brand_tagline": "Turn Moments Into Keepsakes",
+    "color_primary": "#C45C26",
+    "color_brand_nav": "#12141A",
+    "color_brand_nav_hover": "#1F4B7A",
+    "color_accent": "#1F4B7A",
+    "color_secondary": "#3D4450",
+    "color_dark": "#12141A",
+    "color_light": "#F7F6F3",
+    "color_muted": "#6B7280",
+    "color_border": "#D8DCE3",
+    "supabase_url": "https://recmiweyycnvvlglatrb.supabase.co",
+    "supabase_anon_key": ""
+  }
 }

@@ -12,61 +12,61 @@
     "settings": [
       {
         "type": "paragraph",
-        "content": "Pixora Print Lab — CMYK-inspired cool palette (magenta, cyan, electric blue, mint). No coral or orange."
+        "content": "Studio Ink — warm paper, ink black, copper accent, studio blue. Professional with a creative edge."
       },
       {
         "type": "color",
         "id": "color_primary",
-        "label": "Primary CTA (magenta ink)",
-        "default": "#E11D6E"
+        "label": "Primary CTA (copper)",
+        "default": "#C45C26"
       },
       {
         "type": "color",
         "id": "color_brand_nav",
-        "label": "Brand (studio cyan)",
-        "default": "#00A8C4"
+        "label": "Brand / nav (ink)",
+        "default": "#12141A"
       },
       {
         "type": "color",
         "id": "color_brand_nav_hover",
-        "label": "Brand hover",
-        "default": "#00C2DE"
+        "label": "Brand hover (studio blue)",
+        "default": "#1F4B7A"
       },
       {
         "type": "color",
         "id": "color_accent",
-        "label": "Highlight (mint)",
-        "default": "#12C4A0"
+        "label": "Accent (studio blue)",
+        "default": "#1F4B7A"
       },
       {
         "type": "color",
         "id": "color_secondary",
-        "label": "Secondary (electric blue)",
-        "default": "#2F6BFF"
+        "label": "Secondary (slate)",
+        "default": "#3D4450"
       },
       {
         "type": "color",
         "id": "color_dark",
         "label": "Ink (text)",
-        "default": "#0B1220"
+        "default": "#12141A"
       },
       {
         "type": "color",
         "id": "color_light",
         "label": "Paper (background)",
-        "default": "#F3F7FB"
+        "default": "#F7F6F3"
       },
       {
         "type": "color",
         "id": "color_muted",
         "label": "Muted text",
-        "default": "#5A6578"
+        "default": "#6B7280"
       },
       {
         "type": "color",
         "id": "color_border",
         "label": "Border",
-        "default": "#D2DCE8"
+        "default": "#D8DCE3"
       }
     ]
   },

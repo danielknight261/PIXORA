@@ -1,0 +1,22 @@
+# Secrets / credentials - never send to AI context
+.env
+.env.*
+!.env.example
+**/*.pem
+**/*.key
+**/credentials.json
+**/service-account*.json
+**/*secret*
+**/*token*.json
+
+# Dependencies and local tool state (reinforce for AI)
+node_modules/
+.pnpm-store/
+.turbo/
+.vercel/
+.expo/
+.next/
+dist/
+build/
+out/
+coverage/

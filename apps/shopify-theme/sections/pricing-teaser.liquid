@@ -12,12 +12,38 @@
 
     <div class="pricing-teaser__grid">
       {% for block in section.blocks %}
+        {% liquid
+          assign live_from = blank
+          assign link_path = block.settings.link | default: '' | split: '?' | first
+          if link_path contains '/products/'
+            assign product_handle = link_path | split: '/products/' | last | split: '/' | first
+            capture live_from
+              render 'from-price', handle: product_handle
+            endcapture
+          elsif link_path contains '/collections/'
+            assign collection_handle = link_path | split: '/collections/' | last | split: '/' | first
+            if collection_handle == 'canvas-prints' or collection_handle == 'canvas'
+              capture live_from
+                render 'from-price', handle: 'canvas-20x20-cm-8x8'
+              endcapture
+            else
+              capture live_from
+                render 'from-price', handle: collection_handle
+              endcapture
+            endif
+          endif
+          assign live_from = live_from | strip
+          assign price_amount = block.settings.price
+          if live_from != blank
+            assign price_amount = live_from | remove: 'From ' | strip
+          endif
+        %}
         <article class="pricing-card pricing-card--{{ block.settings.accent | default: 'cyan' }}" {{ block.shopify_attributes }}>
           <p class="pricing-card__label">{{ block.settings.label }}</p>
           <h3 class="pricing-card__title">{{ block.settings.title }}</h3>
           <p class="pricing-card__price">
             <span class="pricing-card__from">From</span>
-            {{ block.settings.price }}
+            {{ price_amount }}
           </p>
           {% if block.settings.note != blank %}
             <p class="pricing-card__note">{{ block.settings.note }}</p>

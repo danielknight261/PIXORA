@@ -3,6 +3,16 @@
   assign is_canvas = false
   assign is_wall_art = false
   assign is_posters = false
+  assign is_framed_prints = false
+  assign is_framed_canvas = false
+  assign is_aluminum = false
+  assign is_foam = false
+  assign is_acrylic = false
+  assign is_wood = false
+  assign is_hangers = false
+  assign is_mugs = false
+  assign is_water_bottles = false
+  assign is_home_gifts = false
   if handle == 'canvas-prints' or handle == 'canvas'
     assign is_canvas = true
   endif
@@ -12,9 +22,39 @@
   if handle == 'posters'
     assign is_posters = true
   endif
+  if handle == 'framed-prints'
+    assign is_framed_prints = true
+  endif
+  if handle == 'framed-canvas'
+    assign is_framed_canvas = true
+  endif
+  if handle == 'aluminum-prints'
+    assign is_aluminum = true
+  endif
+  if handle == 'foam-prints'
+    assign is_foam = true
+  endif
+  if handle == 'acrylic-prints'
+    assign is_acrylic = true
+  endif
+  if handle == 'wood-prints'
+    assign is_wood = true
+  endif
+  if handle == 'posters-with-hangers'
+    assign is_hangers = true
+  endif
+  if handle == 'mugs'
+    assign is_mugs = true
+  endif
+  if handle == 'water-bottles'
+    assign is_water_bottles = true
+  endif
+  if handle == 'home-gifts'
+    assign is_home_gifts = true
+  endif
 -%}
 
-<section class="main-collection{% if is_canvas or is_wall_art or is_posters %} main-collection--canvas{% endif %}">
+<section class="main-collection{% if is_canvas or is_wall_art or is_posters or is_framed_prints or is_framed_canvas or is_aluminum or is_foam or is_acrylic or is_wood or is_hangers or is_mugs or is_water_bottles or is_home_gifts %} main-collection--canvas{% endif %}">
   {% if is_canvas %}
     {%- comment -%} Skip chooser — send shoppers straight to the canvas product PDP. {%- endcomment -%}
     <script>
@@ -23,6 +63,501 @@
     <div class="page-width collection-body" style="padding: 3rem 0;">
       <p class="muted">Taking you to Personalized Canvas Print…</p>
       <a class="button button--primary" href="/products/canvas-20x20-cm-8x8">Continue to canvas</a>
+    </div>
+
+  {% elsif is_framed_canvas %}
+    <script>
+      window.location.replace('/products/framed-canvas');
+    </script>
+    <div class="page-width collection-body" style="padding: 3rem 0;">
+      <p class="muted">Taking you to Framed canvas…</p>
+      <a class="button button--primary" href="/products/framed-canvas">Continue to framed canvas</a>
+    </div>
+
+  {% elsif is_acrylic %}
+    <script>
+      window.location.replace('/products/acrylic-print');
+    </script>
+    <div class="page-width collection-body" style="padding: 3rem 0;">
+      <p class="muted">Taking you to Acrylic print…</p>
+      <a class="button button--primary" href="/products/acrylic-print">Continue to acrylic print</a>
+    </div>
+
+  {% elsif is_wood %}
+    <script>
+      window.location.replace('/products/wood-prints');
+    </script>
+    <div class="page-width collection-body" style="padding: 3rem 0;">
+      <p class="muted">Taking you to Wood prints…</p>
+      <a class="button button--primary" href="/products/wood-prints">Continue to wood prints</a>
+    </div>
+
+  {% elsif is_hangers %}
+    <script>
+      window.location.replace('/products/premium-matte-paper-poster-with-hanger');
+    </script>
+    <div class="page-width collection-body" style="padding: 3rem 0;">
+      <p class="muted">Taking you to Poster with hanger…</p>
+      <a class="button button--primary" href="/products/premium-matte-paper-poster-with-hanger">Continue to poster with hanger</a>
+    </div>
+
+  {% elsif is_water_bottles %}
+    <script>
+      window.location.replace('/products/white-17oz-stainless-steel-water-bottle');
+    </script>
+    <div class="page-width collection-body" style="padding: 3rem 0;">
+      <p class="muted">Taking you to Water bottle…</p>
+      <a class="button button--primary" href="/products/white-17oz-stainless-steel-water-bottle">Continue to water bottle</a>
+    </div>
+
+  {% elsif is_mugs %}
+    <header class="collection-hero collection-hero--compact">
+      <div class="collection-hero__bg" aria-hidden="true"></div>
+      <div class="page-width collection-hero__inner">
+        <nav class="pb-canvas__crumbs" aria-label="Breadcrumb">
+          <a href="/">Home</a>
+          <span>/</span>
+          <a href="/collections/home-gifts">Home &amp; gifts</a>
+          <span>/</span>
+          <span>Mugs</span>
+        </nav>
+        <h1 class="collection-hero__title">Personalised mugs</h1>
+        <p class="collection-hero__lead">
+          Ceramic, enamel, porcelain, magic and travel mugs — pick a style, then personalize with your photo.
+        </p>
+      </div>
+    </header>
+    <div class="page-width collection-body">
+      <div class="finish-grid">
+        {% for product in collection.products %}
+          {%- liquid
+            assign h = product.handle | downcase
+            assign eyebrow = 'Mug'
+            assign short_title = product.title
+            assign desc = 'Personalize with your photo.'
+            assign cta = 'Personalize'
+            if h == 'white-11oz-ceramic-mug'
+              assign eyebrow = '11 oz · Classic white'
+              assign short_title = 'White Ceramic Mug'
+              assign desc = 'Everyday white ceramic — our best-value classic mug.'
+            elsif h == 'white-15oz-ceramic-mug'
+              assign eyebrow = '15 oz · Classic white'
+              assign short_title = 'White Ceramic Mug'
+              assign desc = 'Larger white ceramic — more room for your design.'
+            elsif h == 'white-11oz-ceramic-mug-with-color-inside'
+              assign eyebrow = '11 oz · Colour inside'
+              assign short_title = 'Mug with Colour Inside'
+              assign desc = 'White exterior with a coloured interior — 6 colour options.'
+              assign cta = 'Choose colour'
+            elsif h == '11oz-ceramic-mug'
+              assign eyebrow = '11 oz · Coloured'
+              assign short_title = 'Ceramic Mug'
+              assign desc = 'Coloured ceramic mug — pick your colour, then personalize.'
+              assign cta = 'Choose colour'
+            elsif h == 'white-12oz-enamel-mug'
+              assign eyebrow = '12 oz · Enamel'
+              assign short_title = 'Enamel Mug'
+              assign desc = 'Durable enamel camp-style mug — great for outdoors and gifts.'
+            elsif h == 'white-latte-17oz-ceramic-mug'
+              assign eyebrow = '17 oz · Latte'
+              assign short_title = 'Latte Ceramic Mug'
+              assign desc = 'Wide latte mug — perfect for coffee art and big designs.'
+            elsif h == 'magic-11oz-ceramic-mug'
+              assign eyebrow = '11 oz · Magic'
+              assign short_title = 'Magic Ceramic Mug'
+              assign desc = 'Heat-reveal magic mug — your design appears with a hot drink.'
+            elsif h == 'white-10oz-porcelain-slim-mug'
+              assign eyebrow = '10 oz · Porcelain slim'
+              assign short_title = 'Porcelain Slim Mug'
+              assign desc = 'Slim porcelain silhouette — elegant everyday mug.'
+            elsif h == 'white-15oz-stainless-steel-travel-mug'
+              assign eyebrow = '15 oz · Travel'
+              assign short_title = 'Stainless Steel Travel Mug'
+              assign desc = 'Takeaway travel mug — personalize for the commute.'
+            endif
+          -%}
+          <a class="finish-card" href="{{ product.url }}">
+            <div class="finish-card__media">
+              {% if product.featured_media %}
+                {{
+                  product.featured_media
+                  | image_url: width: 900
+                  | image_tag: loading: 'lazy', alt: product.title
+                }}
+              {% else %}
+                {% render 'mock-image', handle: product.handle, alt: product.title, width: 900 %}
+              {% endif %}
+            </div>
+            <div class="finish-card__body">
+              <p class="finish-card__eyebrow">{{ eyebrow }}</p>
+              <h2 class="finish-card__title">{{ short_title }}</h2>
+              <p class="finish-card__price">From {{ product.price_min | money }}</p>
+              <p class="finish-card__desc">{{ desc }}</p>
+              <ul class="finish-card__meta">
+                <li>{% if product.variants.size > 1 %}{{ product.variants.size }} options{% else %}Ready to print{% endif %}</li>
+                <li>Personalize</li>
+              </ul>
+              <span class="finish-card__cta">{{ cta }}</span>
+            </div>
+          </a>
+        {% else %}
+          <p class="muted">No mugs in this collection yet.</p>
+        {% endfor %}
+      </div>
+    </div>
+
+  {% elsif is_home_gifts %}
+    <header class="collection-hero">
+      <div class="collection-hero__bg" aria-hidden="true"></div>
+      <div class="page-width collection-hero__inner">
+        <p class="collection-hero__eyebrow">Shop</p>
+        <h1 class="collection-hero__title">Home &amp; gifts</h1>
+        <p class="collection-hero__lead">
+          Personalised mugs, bottles and more — everyday keepsakes they’ll actually use.
+        </p>
+      </div>
+    </header>
+    {%- liquid
+      assign mugs_collection = collections['mugs']
+      assign bottle_product = all_products['white-17oz-stainless-steel-water-bottle']
+      capture mugs_from
+        render 'from-price', collection: mugs_collection
+      endcapture
+      capture bottle_from
+        render 'from-price', product: bottle_product
+      endcapture
+      assign mugs_from = mugs_from | strip
+      assign bottle_from = bottle_from | strip
+    -%}
+    <div class="page-width collection-body">
+      <div class="wall-art-grid">
+        <a class="wall-art-card wall-art-card--live" href="/collections/mugs">
+          <span class="wall-art-card__swatch wall-art-card__swatch--magenta" aria-hidden="true"></span>
+          <span class="wall-art-card__title">Mugs</span>
+          {% if mugs_from != blank %}<span class="wall-art-card__price">{{ mugs_from }}</span>{% endif %}
+          <span class="wall-art-card__desc">Classic &amp; colour-inside ceramics</span>
+          <span class="wall-art-card__cta">Choose mug →</span>
+        </a>
+        <a class="wall-art-card wall-art-card--live" href="/products/white-17oz-stainless-steel-water-bottle">
+          <span class="wall-art-card__swatch wall-art-card__swatch--slate" aria-hidden="true"></span>
+          <span class="wall-art-card__title">Water bottles</span>
+          {% if bottle_from != blank %}<span class="wall-art-card__price">{{ bottle_from }}</span>{% endif %}
+          <span class="wall-art-card__desc">17 oz stainless steel · personalize</span>
+          <span class="wall-art-card__cta">Personalize →</span>
+        </a>
+      </div>
+    </div>
+
+  {% elsif is_framed_prints %}
+    <header class="collection-hero collection-hero--compact">
+      <div class="collection-hero__bg" aria-hidden="true"></div>
+      <div class="page-width collection-hero__inner">
+        <nav class="pb-canvas__crumbs" aria-label="Breadcrumb">
+          <a href="/">Home</a>
+          <span>/</span>
+          <a href="/collections/wall-art">Wall art</a>
+          <span>/</span>
+          <span>Framed prints</span>
+        </nav>
+        <h1 class="collection-hero__title">Framed prints</h1>
+        <p class="collection-hero__lead">
+          Wooden or metal frames — pick a finish, then choose size, colour and assembly where available.
+        </p>
+      </div>
+    </header>
+
+    {%- liquid
+      assign classic_framed = all_products['classic-semi-glossy-paper-wooden-framed-poster-bestseller-1']
+      if classic_framed == blank
+        assign classic_framed = all_products['classic-semi-glossy-paper-wooden-framed-poster-bestseller']
+      endif
+      assign premium_framed = all_products['premium-semi-glossy-paper-wooden-framed-poster-premium-1']
+      if premium_framed == blank
+        assign premium_framed = all_products['premium-semi-glossy-paper-wooden-framed-poster-premium']
+      endif
+      assign fine_framed = all_products['fine-art-framed-poster']
+    -%}
+    <div class="page-width collection-body">
+      <div class="finish-grid">
+        <a class="finish-card" href="{{ classic_framed.url | default: '/products/classic-semi-glossy-paper-wooden-framed-poster-bestseller-1' }}">
+          <div class="finish-card__media">
+            {% if classic_framed and classic_framed.featured_media %}
+              {{
+                classic_framed.featured_media
+                | image_url: width: 900
+                | image_tag: loading: 'lazy', alt: 'Classic semi-glossy wooden framed print'
+              }}
+            {% else %}
+              {% render 'mock-image', handle: 'classic-semi-glossy-paper-wooden-framed-poster-bestseller-1', alt: 'Classic semi-glossy wooden framed print mockup', width: 900 %}
+            {% endif %}
+          </div>
+          <div class="finish-card__body">
+            <p class="finish-card__eyebrow">Wooden frame · Best value</p>
+            <h2 class="finish-card__title">Classic Semi-Glossy</h2>
+            {% if classic_framed %}
+              <p class="finish-card__price">From {{ classic_framed.price_min | money }}</p>
+            {% endif %}
+            <p class="finish-card__desc">
+              Everyday wooden framed print on classic semi-glossy paper — four wood-frame colours, ready-to-hang or flat pack.
+            </p>
+            <ul class="finish-card__meta">
+              <li>Wooden frame</li>
+              <li>4 colours</li>
+              <li>Personalize</li>
+            </ul>
+            <span class="finish-card__cta">Choose frame &amp; size</span>
+          </div>
+        </a>
+
+        <a class="finish-card" href="{{ premium_framed.url | default: '/products/premium-semi-glossy-paper-wooden-framed-poster-premium-1' }}">
+          <div class="finish-card__media">
+            {% if premium_framed and premium_framed.featured_media %}
+              {{
+                premium_framed.featured_media
+                | image_url: width: 900
+                | image_tag: loading: 'lazy', alt: 'Premium semi-glossy wooden framed print'
+              }}
+            {% else %}
+              {% render 'mock-image', handle: 'premium-semi-glossy-paper-wooden-framed-poster-premium-1', alt: 'Premium semi-glossy wooden framed print mockup', width: 900 %}
+            {% endif %}
+          </div>
+          <div class="finish-card__body">
+            <p class="finish-card__eyebrow">Wooden frame · Semi-glossy</p>
+            <h2 class="finish-card__title">Premium Semi-Glossy</h2>
+            {% if premium_framed %}
+              <p class="finish-card__price">From {{ premium_framed.price_min | money }}</p>
+            {% endif %}
+            <p class="finish-card__desc">
+              Higher-grade semi-glossy paper in a wooden frame — vivid colour with a polished finish.
+            </p>
+            <ul class="finish-card__meta">
+              <li>Wooden frame</li>
+              <li>4 colours</li>
+              <li>Personalize</li>
+            </ul>
+            <span class="finish-card__cta">Choose frame &amp; size</span>
+          </div>
+        </a>
+
+        <a class="finish-card" href="/products/fine-art-framed-poster">
+          <div class="finish-card__media">
+            {% if fine_framed and fine_framed.featured_media %}
+              {{
+                fine_framed.featured_media
+                | image_url: width: 900
+                | image_tag: loading: 'lazy', alt: 'Fine art wooden framed print'
+              }}
+            {% else %}
+              {% render 'mock-image', handle: 'fine-art-framed-poster', alt: 'Fine art wooden framed print mockup', width: 900 %}
+            {% endif %}
+          </div>
+          <div class="finish-card__body">
+            <p class="finish-card__eyebrow">Wooden frame · Gallery</p>
+            <h2 class="finish-card__title">Fine Art</h2>
+            {% if fine_framed %}
+              <p class="finish-card__price">From {{ fine_framed.price_min | money }}</p>
+            {% endif %}
+            <p class="finish-card__desc">
+              Gallery-grade fine art paper in a wooden frame — white, wood, dark wood or black.
+            </p>
+            <ul class="finish-card__meta">
+              <li>Wooden frame</li>
+              <li>4 colours</li>
+              <li>Personalize</li>
+            </ul>
+            <span class="finish-card__cta">Choose frame &amp; size</span>
+          </div>
+        </a>
+
+        {%- assign metal_framed = all_products['classic-semi-glossy-paper-metal-framed-poster'] -%}
+        <a class="finish-card" href="{{ metal_framed.url | default: '/products/classic-semi-glossy-paper-metal-framed-poster' }}">
+          <div class="finish-card__media">
+            {% if metal_framed and metal_framed.featured_media %}
+              {{
+                metal_framed.featured_media
+                | image_url: width: 900
+                | image_tag: loading: 'lazy', alt: 'Classic semi-glossy metal framed poster'
+              }}
+            {% else %}
+              {% render 'mock-image', handle: 'classic-semi-glossy-paper-metal-framed-poster', alt: 'Metal framed poster mockup', width: 900 %}
+            {% endif %}
+          </div>
+          <div class="finish-card__body">
+            <p class="finish-card__eyebrow">Metal frame</p>
+            <h2 class="finish-card__title">Classic Semi-Glossy Metal</h2>
+            {% if metal_framed %}
+              <p class="finish-card__price">From {{ metal_framed.price_min | money }}</p>
+            {% endif %}
+            <p class="finish-card__desc">
+              Classic semi-glossy paper in a sleek metal frame — orientation and size, ready to personalize.
+            </p>
+            <ul class="finish-card__meta">
+              <li>Metal frame</li>
+              <li>Orientation &amp; size</li>
+              <li>Personalize</li>
+            </ul>
+            <span class="finish-card__cta">Choose size</span>
+          </div>
+        </a>
+      </div>
+    </div>
+
+  {% elsif is_aluminum %}
+    <header class="collection-hero collection-hero--compact">
+      <div class="collection-hero__bg" aria-hidden="true"></div>
+      <div class="page-width collection-hero__inner">
+        <nav class="pb-canvas__crumbs" aria-label="Breadcrumb">
+          <a href="/">Home</a>
+          <span>/</span>
+          <a href="/collections/wall-art">Wall art</a>
+          <span>/</span>
+          <span>Metal / aluminium</span>
+        </nav>
+        <h1 class="collection-hero__title">Metal / aluminium prints</h1>
+        <p class="collection-hero__lead">
+          Sleek aluminium panels — choose a finish, then orientation and size.
+        </p>
+      </div>
+    </header>
+    {%- liquid
+      assign aluminum = all_products['aluminum-print']
+      assign brushed = all_products['brushed-aluminum-print']
+    -%}
+    <div class="page-width collection-body">
+      <div class="finish-grid">
+        <a class="finish-card" href="{{ aluminum.url | default: '/products/aluminum-print' }}">
+          <div class="finish-card__media">
+            {% if aluminum and aluminum.featured_media %}
+              {{ aluminum.featured_media | image_url: width: 900 | image_tag: loading: 'lazy', alt: 'Aluminum print' }}
+            {% else %}
+              {% render 'mock-image', handle: 'aluminum-print', alt: 'Aluminum print mockup', width: 900 %}
+            {% endif %}
+          </div>
+          <div class="finish-card__body">
+            <p class="finish-card__eyebrow">Aluminium</p>
+            <h2 class="finish-card__title">Aluminum Print</h2>
+            {% if aluminum %}<p class="finish-card__price">From {{ aluminum.price_min | money }}</p>{% endif %}
+            <p class="finish-card__desc">Smooth aluminium panel with vivid colour — orientation and size.</p>
+            <ul class="finish-card__meta">
+              <li>Metal panel</li>
+              <li>36 sizes</li>
+              <li>Personalize</li>
+            </ul>
+            <span class="finish-card__cta">Choose size</span>
+          </div>
+        </a>
+        <a class="finish-card" href="{{ brushed.url | default: '/products/brushed-aluminum-print' }}">
+          <div class="finish-card__media">
+            {% if brushed and brushed.featured_media %}
+              {{ brushed.featured_media | image_url: width: 900 | image_tag: loading: 'lazy', alt: 'Brushed aluminum print' }}
+            {% else %}
+              {% render 'mock-image', handle: 'brushed-aluminum-print', alt: 'Brushed aluminum print mockup', width: 900 %}
+            {% endif %}
+          </div>
+          <div class="finish-card__body">
+            <p class="finish-card__eyebrow">Brushed aluminium</p>
+            <h2 class="finish-card__title">Brushed Aluminum Print</h2>
+            {% if brushed %}<p class="finish-card__price">From {{ brushed.price_min | money }}</p>{% endif %}
+            <p class="finish-card__desc">Brushed metal texture for a premium, gallery look.</p>
+            <ul class="finish-card__meta">
+              <li>Brushed finish</li>
+              <li>36 sizes</li>
+              <li>Personalize</li>
+            </ul>
+            <span class="finish-card__cta">Choose size</span>
+          </div>
+        </a>
+      </div>
+    </div>
+
+  {% elsif is_foam %}
+    <header class="collection-hero collection-hero--compact">
+      <div class="collection-hero__bg" aria-hidden="true"></div>
+      <div class="page-width collection-hero__inner">
+        <nav class="pb-canvas__crumbs" aria-label="Breadcrumb">
+          <a href="/">Home</a>
+          <span>/</span>
+          <a href="/collections/wall-art">Wall art</a>
+          <span>/</span>
+          <span>Foam prints</span>
+        </nav>
+        <h1 class="collection-hero__title">Foam prints</h1>
+        <p class="collection-hero__lead">
+          Lightweight foam board — portrait, landscape or square, with optional edge colour.
+        </p>
+      </div>
+    </header>
+    {%- liquid
+      assign foam_portrait = all_products['foam-portrait']
+      assign foam_landscape = all_products['foam-landscape']
+      assign foam_square = all_products['foam-square']
+    -%}
+    <div class="page-width collection-body">
+      <div class="finish-grid">
+        <a class="finish-card" href="{{ foam_portrait.url | default: '/products/foam-portrait' }}">
+          <div class="finish-card__media">
+            {% if foam_portrait and foam_portrait.featured_media %}
+              {{ foam_portrait.featured_media | image_url: width: 900 | image_tag: loading: 'lazy', alt: 'Foam portrait' }}
+            {% else %}
+              {% render 'mock-image', handle: 'foam-portrait', alt: 'Foam portrait mockup', width: 900 %}
+            {% endif %}
+          </div>
+          <div class="finish-card__body">
+            <p class="finish-card__eyebrow">Portrait</p>
+            <h2 class="finish-card__title">Foam Portrait</h2>
+            {% if foam_portrait %}<p class="finish-card__price">From {{ foam_portrait.price_min | money }}</p>{% endif %}
+            <p class="finish-card__desc">Vertical foam board with black or white edges.</p>
+            <ul class="finish-card__meta">
+              <li>Portrait</li>
+              <li>Edge colour</li>
+              <li>Personalize</li>
+            </ul>
+            <span class="finish-card__cta">Choose size</span>
+          </div>
+        </a>
+        <a class="finish-card" href="{{ foam_landscape.url | default: '/products/foam-landscape' }}">
+          <div class="finish-card__media">
+            {% if foam_landscape and foam_landscape.featured_media %}
+              {{ foam_landscape.featured_media | image_url: width: 900 | image_tag: loading: 'lazy', alt: 'Foam landscape' }}
+            {% else %}
+              {% render 'mock-image', handle: 'foam-landscape', alt: 'Foam landscape mockup', width: 900 %}
+            {% endif %}
+          </div>
+          <div class="finish-card__body">
+            <p class="finish-card__eyebrow">Landscape</p>
+            <h2 class="finish-card__title">Foam Landscape</h2>
+            {% if foam_landscape %}<p class="finish-card__price">From {{ foam_landscape.price_min | money }}</p>{% endif %}
+            <p class="finish-card__desc">Horizontal foam board with black or white edges.</p>
+            <ul class="finish-card__meta">
+              <li>Landscape</li>
+              <li>Edge colour</li>
+              <li>Personalize</li>
+            </ul>
+            <span class="finish-card__cta">Choose size</span>
+          </div>
+        </a>
+        <a class="finish-card" href="{{ foam_square.url | default: '/products/foam-square' }}">
+          <div class="finish-card__media">
+            {% if foam_square and foam_square.featured_media %}
+              {{ foam_square.featured_media | image_url: width: 900 | image_tag: loading: 'lazy', alt: 'Foam square' }}
+            {% else %}
+              {% render 'mock-image', handle: 'foam-square', alt: 'Foam square mockup', width: 900 %}
+            {% endif %}
+          </div>
+          <div class="finish-card__body">
+            <p class="finish-card__eyebrow">Square</p>
+            <h2 class="finish-card__title">Foam Square</h2>
+            {% if foam_square %}<p class="finish-card__price">From {{ foam_square.price_min | money }}</p>{% endif %}
+            <p class="finish-card__desc">Square foam board — pick your size and personalize.</p>
+            <ul class="finish-card__meta">
+              <li>Square</li>
+              <li>3 sizes</li>
+              <li>Personalize</li>
+            </ul>
+            <span class="finish-card__cta">Choose size</span>
+          </div>
+        </a>
+      </div>
     </div>
 
   {% elsif is_posters %}
@@ -65,6 +600,9 @@
           <div class="finish-card__body">
             <p class="finish-card__eyebrow">Best value</p>
             <h2 class="finish-card__title">Classic Semi-Glossy</h2>
+            {% if glossy_product %}
+              <p class="finish-card__price">From {{ glossy_product.price_min | money }}</p>
+            {% endif %}
             <p class="finish-card__desc">
               Bright, budget-friendly semi-glossy paper with vivid colour and a light sheen — a great everyday poster option.
             </p>
@@ -92,6 +630,9 @@
           <div class="finish-card__body">
             <p class="finish-card__eyebrow">Paper finish</p>
             <h2 class="finish-card__title">Premium Matte Paper</h2>
+            {% if matte_product %}
+              <p class="finish-card__price">From {{ matte_product.price_min | money }}</p>
+            {% endif %}
             <p class="finish-card__desc">
               Soft, non-reflective matte stock that keeps colours rich without glare — great for photos and everyday wall art.
             </p>
@@ -119,6 +660,9 @@
           <div class="finish-card__body">
             <p class="finish-card__eyebrow">Premium</p>
             <h2 class="finish-card__title">Fine Art Poster</h2>
+            {% if fine_product %}
+              <p class="finish-card__price">From {{ fine_product.price_min | money }}</p>
+            {% endif %}
             <p class="finish-card__desc">
               Gallery-grade fine art paper with a textured, museum-style feel — ideal when you want a more premium print.
             </p>
@@ -134,6 +678,53 @@
     </div>
 
   {% elsif is_wall_art %}
+    {%- liquid
+      assign canvas_product = all_products['canvas-20x20-cm-8x8']
+      assign framed_canvas_product = all_products['framed-canvas']
+      assign framed_collection = collections['framed-prints']
+      assign posters_collection = collections['posters']
+      assign aluminum_collection = collections['aluminum-prints']
+      assign acrylic_product = all_products['acrylic-print']
+      assign hangers_product = all_products['premium-matte-paper-poster-with-hanger']
+      assign foam_collection = collections['foam-prints']
+      assign wood_product = all_products['wood-prints']
+      capture canvas_from
+        render 'from-price', product: canvas_product
+      endcapture
+      capture framed_canvas_from
+        render 'from-price', product: framed_canvas_product
+      endcapture
+      capture framed_from
+        render 'from-price', collection: framed_collection
+      endcapture
+      capture posters_from
+        render 'from-price', collection: posters_collection
+      endcapture
+      capture aluminum_from
+        render 'from-price', collection: aluminum_collection
+      endcapture
+      capture acrylic_from
+        render 'from-price', product: acrylic_product
+      endcapture
+      capture hangers_from
+        render 'from-price', product: hangers_product
+      endcapture
+      capture foam_from
+        render 'from-price', collection: foam_collection
+      endcapture
+      capture wood_from
+        render 'from-price', product: wood_product
+      endcapture
+      assign canvas_from = canvas_from | strip
+      assign framed_canvas_from = framed_canvas_from | strip
+      assign framed_from = framed_from | strip
+      assign posters_from = posters_from | strip
+      assign aluminum_from = aluminum_from | strip
+      assign acrylic_from = acrylic_from | strip
+      assign hangers_from = hangers_from | strip
+      assign foam_from = foam_from | strip
+      assign wood_from = wood_from | strip
+    -%}
     <header class="collection-hero">
       <div class="collection-hero__bg" aria-hidden="true"></div>
       <div class="page-width collection-hero__inner">
@@ -150,56 +741,83 @@
         <a class="wall-art-card wall-art-card--live" href="/products/canvas-20x20-cm-8x8">
           <span class="wall-art-card__swatch wall-art-card__swatch--blue" aria-hidden="true"></span>
           <span class="wall-art-card__title">Canvas prints</span>
+          {% if canvas_from != blank %}
+            <span class="wall-art-card__price">{{ canvas_from }}</span>
+          {% endif %}
           <span class="wall-art-card__desc">26 sizes · slim &amp; thick · personalize</span>
           <span class="wall-art-card__cta">Choose size →</span>
         </a>
-        <a class="wall-art-card" href="/collections/framed-canvas">
+        <a class="wall-art-card wall-art-card--live" href="/products/framed-canvas">
           <span class="wall-art-card__swatch wall-art-card__swatch--cyan" aria-hidden="true"></span>
           <span class="wall-art-card__title">Framed canvas</span>
-          <span class="wall-art-card__desc">Canvas in a tray frame</span>
-          <span class="wall-art-card__cta muted">Coming soon</span>
+          {% if framed_canvas_from != blank %}
+            <span class="wall-art-card__price">{{ framed_canvas_from }}</span>
+          {% endif %}
+          <span class="wall-art-card__desc">Tray frame · 3 colours · personalize</span>
+          <span class="wall-art-card__cta">Choose frame →</span>
         </a>
-        <a class="wall-art-card" href="/collections/framed-prints">
+        <a class="wall-art-card wall-art-card--live" href="/collections/framed-prints">
           <span class="wall-art-card__swatch wall-art-card__swatch--mint" aria-hidden="true"></span>
           <span class="wall-art-card__title">Framed prints</span>
-          <span class="wall-art-card__desc">Wood &amp; metal frames</span>
-          <span class="wall-art-card__cta muted">Coming soon</span>
+          {% if framed_from != blank %}
+            <span class="wall-art-card__price">{{ framed_from }}</span>
+          {% endif %}
+          <span class="wall-art-card__desc">Wood &amp; metal frames · personalize</span>
+          <span class="wall-art-card__cta">Choose finish →</span>
         </a>
-        <a class="wall-art-card" href="/collections/aluminum-prints">
+        <a class="wall-art-card wall-art-card--live" href="/collections/aluminum-prints">
           <span class="wall-art-card__swatch wall-art-card__swatch--slate" aria-hidden="true"></span>
           <span class="wall-art-card__title">Metal / aluminium</span>
-          <span class="wall-art-card__desc">Sleek metal panels</span>
-          <span class="wall-art-card__cta muted">Coming soon</span>
+          {% if aluminum_from != blank %}
+            <span class="wall-art-card__price">{{ aluminum_from }}</span>
+          {% endif %}
+          <span class="wall-art-card__desc">Smooth &amp; brushed panels</span>
+          <span class="wall-art-card__cta">Choose finish →</span>
         </a>
-        <a class="wall-art-card" href="/collections/acrylic-prints">
+        <a class="wall-art-card wall-art-card--live" href="/products/acrylic-print">
           <span class="wall-art-card__swatch wall-art-card__swatch--cyan" aria-hidden="true"></span>
           <span class="wall-art-card__title">Acrylic prints</span>
+          {% if acrylic_from != blank %}
+            <span class="wall-art-card__price">{{ acrylic_from }}</span>
+          {% endif %}
           <span class="wall-art-card__desc">Glossy, vivid colour</span>
-          <span class="wall-art-card__cta muted">Coming soon</span>
+          <span class="wall-art-card__cta">Choose size →</span>
         </a>
         <a class="wall-art-card wall-art-card--live" href="/collections/posters">
           <span class="wall-art-card__swatch wall-art-card__swatch--rose" aria-hidden="true"></span>
           <span class="wall-art-card__title">Posters</span>
+          {% if posters_from != blank %}
+            <span class="wall-art-card__price">{{ posters_from }}</span>
+          {% endif %}
           <span class="wall-art-card__desc">Paper finishes · many sizes · personalize</span>
           <span class="wall-art-card__cta">Choose finish →</span>
         </a>
-        <a class="wall-art-card" href="/collections/posters-with-hangers">
+        <a class="wall-art-card wall-art-card--live" href="/products/premium-matte-paper-poster-with-hanger">
           <span class="wall-art-card__swatch wall-art-card__swatch--magenta" aria-hidden="true"></span>
           <span class="wall-art-card__title">Posters with hangers</span>
-          <span class="wall-art-card__desc">Casual wood hanger style</span>
-          <span class="wall-art-card__cta muted">Coming soon</span>
+          {% if hangers_from != blank %}
+            <span class="wall-art-card__price">{{ hangers_from }}</span>
+          {% endif %}
+          <span class="wall-art-card__desc">Matte paper · hanger colours</span>
+          <span class="wall-art-card__cta">Choose hanger →</span>
         </a>
-        <a class="wall-art-card" href="/collections/foam-prints">
+        <a class="wall-art-card wall-art-card--live" href="/collections/foam-prints">
           <span class="wall-art-card__swatch wall-art-card__swatch--blue" aria-hidden="true"></span>
           <span class="wall-art-card__title">Foam prints</span>
-          <span class="wall-art-card__desc">Lightweight board prints</span>
-          <span class="wall-art-card__cta muted">Coming soon</span>
+          {% if foam_from != blank %}
+            <span class="wall-art-card__price">{{ foam_from }}</span>
+          {% endif %}
+          <span class="wall-art-card__desc">Portrait · landscape · square</span>
+          <span class="wall-art-card__cta">Choose style →</span>
         </a>
-        <a class="wall-art-card" href="/collections/wood-prints">
+        <a class="wall-art-card wall-art-card--live" href="/products/wood-prints">
           <span class="wall-art-card__swatch wall-art-card__swatch--mint" aria-hidden="true"></span>
           <span class="wall-art-card__title">Wood prints</span>
-          <span class="wall-art-card__desc">Natural wood grain finish</span>
-          <span class="wall-art-card__cta muted">Coming soon</span>
+          {% if wood_from != blank %}
+            <span class="wall-art-card__price">{{ wood_from }}</span>
+          {% endif %}
+          <span class="wall-art-card__desc">Natural grain · 10 &amp; 20 mm</span>
+          <span class="wall-art-card__cta">Choose size →</span>
         </a>
       </div>
     </div>

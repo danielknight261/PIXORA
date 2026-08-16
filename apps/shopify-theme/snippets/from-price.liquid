@@ -1,0 +1,38 @@
+{%- comment -%}
+  Outputs "From £X" from a product and/or by scanning a collection.
+  Accepts: product, collection, and/or handle (product handle, else collection handle).
+{%- endcomment -%}
+{%- liquid
+  assign min_cents = blank
+
+  if product != blank
+    assign min_cents = product.price_min
+  endif
+
+  if min_cents == blank and collection != blank
+    for p in collection.products
+      if min_cents == blank or p.price_min < min_cents
+        assign min_cents = p.price_min
+      endif
+    endfor
+  endif
+
+  if min_cents == blank and handle != blank
+    assign resolved_product = all_products[handle]
+    if resolved_product != blank
+      assign min_cents = resolved_product.price_min
+    else
+      assign resolved_collection = collections[handle]
+      if resolved_collection != blank
+        for p in resolved_collection.products
+          if min_cents == blank or p.price_min < min_cents
+            assign min_cents = p.price_min
+          endif
+        endfor
+      endif
+    endif
+  endif
+-%}
+{%- if min_cents != blank -%}
+  From {{ min_cents | money }}
+{%- endif -%}

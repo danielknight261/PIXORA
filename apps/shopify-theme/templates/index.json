@@ -7,7 +7,7 @@
           "type": "product_block",
           "settings": {
             "title": "Canvas prints",
-            "price_label": "From £14.99",
+            "price_label": "From £19.76",
             "link": "/collections/canvas-prints",
             "accent": "blue",
             "coming_soon": false
@@ -17,80 +17,80 @@
           "type": "product_block",
           "settings": {
             "title": "Framed canvas",
-            "price_label": "Coming soon",
+            "price_label": "From £36.98",
             "link": "/collections/framed-canvas",
             "accent": "cyan",
-            "coming_soon": true
+            "coming_soon": false
           }
         },
         "framed": {
           "type": "product_block",
           "settings": {
             "title": "Framed prints",
-            "price_label": "Coming soon",
+            "price_label": "From £21.46",
             "link": "/collections/framed-prints",
             "accent": "mint",
-            "coming_soon": true
+            "coming_soon": false
           }
         },
         "aluminum": {
           "type": "product_block",
           "settings": {
             "title": "Metal / aluminium prints",
-            "price_label": "Coming soon",
+            "price_label": "From £24.44",
             "link": "/collections/aluminum-prints",
             "accent": "slate",
-            "coming_soon": true
+            "coming_soon": false
           }
         },
         "acrylic": {
           "type": "product_block",
           "settings": {
             "title": "Acrylic prints",
-            "price_label": "Coming soon",
-            "link": "/collections/acrylic-prints",
+            "price_label": "From £35.72",
+            "link": "/products/acrylic-print",
             "accent": "cyan",
-            "coming_soon": true
+            "coming_soon": false
           }
         },
         "posters": {
           "type": "product_block",
           "settings": {
             "title": "Posters",
-            "price_label": "Coming soon",
+            "price_label": "From £6.18",
             "link": "/collections/posters",
             "accent": "rose",
-            "coming_soon": true
+            "coming_soon": false
           }
         },
         "posters_hangers": {
           "type": "product_block",
           "settings": {
             "title": "Posters with hangers",
-            "price_label": "Coming soon",
-            "link": "/collections/posters-with-hangers",
+            "price_label": "From £21.02",
+            "link": "/products/premium-matte-paper-poster-with-hanger",
             "accent": "magenta",
-            "coming_soon": true
+            "coming_soon": false
           }
         },
         "foam": {
           "type": "product_block",
           "settings": {
             "title": "Foam prints",
-            "price_label": "Coming soon",
+            "price_label": "From £18.80",
             "link": "/collections/foam-prints",
             "accent": "blue",
-            "coming_soon": true
+            "coming_soon": false
           }
         },
         "wood": {
           "type": "product_block",
           "settings": {
             "title": "Wood prints",
-            "price_label": "Coming soon",
-            "link": "/collections/wood-prints",
+            "price_label": "From £31.96",
+            "link": "/products/wood-prints",
             "accent": "mint",
-            "coming_soon": true
+            "coming_soon": false
           }
         },
         "photo_prints": {
@@ -117,7 +117,7 @@
           "type": "product_block",
           "settings": {
             "title": "Personalised mugs",
-            "price_label": "From £11.99",
+            "price_label": "From £7.38",
             "link": "/collections/mugs",
             "accent": "magenta",
             "coming_soon": false
@@ -296,7 +296,7 @@
           "settings": {
             "label": "Wall art",
             "title": "Canvas prints",
-            "price": "£14.99",
+            "price": "£19.76",
             "note": "Gallery wraps, ready to hang",
             "button_label": "Shop canvas",
             "link": "/collections/canvas-prints",
@@ -306,25 +306,25 @@
         "p2": {
           "type": "price_card",
           "settings": {
-            "label": "Home & gifts",
-            "title": "Personalised mugs",
-            "price": "£11.99",
-            "note": "Dishwasher-friendly ceramics",
-            "button_label": "Shop mugs",
-            "link": "/collections/mugs",
-            "accent": "magenta"
+            "label": "Wall art",
+            "title": "Wooden framed prints",
+            "price": "£20.64",
+            "note": "Wooden frames · 3 paper finishes",
+            "button_label": "Shop wooden frames",
+            "link": "/collections/framed-prints",
+            "accent": "mint"
           }
         },
         "p3": {
           "type": "price_card",
           "settings": {
-            "label": "Photo printing",
-            "title": "Photo prints",
-            "price": "£0.13",
-            "note": "Standard sizes & enlargements",
-            "button_label": "Browse prints",
-            "link": "/collections/photo-printing",
-            "accent": "mint"
+            "label": "Wall art",
+            "title": "Posters",
+            "price": "£6.18",
+            "note": "Matte, fine art & semi-glossy",
+            "button_label": "Shop posters",
+            "link": "/collections/posters",
+            "accent": "rose"
           }
         }
       },

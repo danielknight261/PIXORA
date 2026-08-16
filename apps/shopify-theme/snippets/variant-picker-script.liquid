@@ -1,0 +1,442 @@
+<script>
+  (function () {
+    var root = document.getElementById('Product-{{ section_id }}');
+    if (!root) return;
+    var mapEl = root.querySelector('[data-variant-map]');
+    if (!mapEl) return;
+
+    function boot(data) {
+      var sizeIdx = data.sizeOptionIndex;
+      var orientIdx = data.orientationOptionIndex;
+      var combinedIdx = data.combinedOptionIndex;
+      var thickIdx = data.thicknessOptionIndex;
+      var frameIdx = data.frameOptionIndex;
+      var assemblyIdx = data.assemblyOptionIndex;
+      var hangerIdx = data.hangerOptionIndex;
+      var colorIdx = data.colorOptionIndex;
+      var fixedOrient = data.fixedOrient || null;
+      var variants = data.variants || [];
+      var galleryMap = data.galleryMap || {};
+
+      var idInput = root.querySelector('[data-variant-id]');
+      var priceEl = root.querySelector('[data-product-price]');
+      var imageEl = root.querySelector('[data-product-image]') || root.querySelector('[data-product-media] img');
+      var addBtn = root.querySelector('[data-add-to-cart]');
+      var sizeGrid = root.querySelector('[data-size-grid]');
+      var sizeHint = root.querySelector('[data-size-hint]');
+      var summary = root.querySelector('[data-selection-summary]');
+      var orientBtns = root.querySelectorAll('[data-orient]');
+      var thickBtns = root.querySelectorAll('[data-thickness]');
+      var frameBtns = root.querySelectorAll('[data-frame]');
+      var assemblyBtns = root.querySelectorAll('[data-assembly]');
+      var hangerBtns = root.querySelectorAll('[data-hanger]');
+      var colorBtns = root.querySelectorAll('[data-color]');
+      var prevBtn = root.querySelector('[data-gallery-prev]');
+      var nextBtn = root.querySelector('[data-gallery-next]');
+      var dotsEl = root.querySelector('[data-gallery-dots]');
+      var galleryState = { images: [], index: 0 };
+
+      function parseSquare(sizeLabel) {
+        var m = String(sizeLabel).match(/(\d+(?:\.\d+)?)\s*[x×]\s*(\d+(?:\.\d+)?)/i);
+        if (!m) return false;
+        return Number(m[1]) === Number(m[2]);
+      }
+      function orientKey(raw) {
+        var v = String(raw || '').toLowerCase();
+        if (v.indexOf('horiz') !== -1 || v.indexOf('land') !== -1) return 'landscape';
+        if (v.indexOf('vert') !== -1 || v.indexOf('port') !== -1) return 'portrait';
+        if (v === 'square') return 'square';
+        return v;
+      }
+      function thicknessKey(raw) {
+        var v = String(raw || '').toLowerCase();
+        if (v.indexOf('thick') !== -1) return 'thick';
+        if (v.indexOf('slim') !== -1 || v.indexOf('thin') !== -1) return 'slim';
+        if (/\b10\b/.test(v) || v.indexOf('10mm') !== -1 || v.indexOf('10 mm') !== -1) return '10mm';
+        if (/\b20\b/.test(v) || v.indexOf('20mm') !== -1 || v.indexOf('20 mm') !== -1) return '20mm';
+        return v.replace(/\s+/g, '') || 'slim';
+      }
+      function frameKey(raw) {
+        var v = String(raw || '').toLowerCase();
+        if (v.indexOf('white') !== -1) return 'white';
+        if (v.indexOf('dark') !== -1) return 'dark-wood';
+        if (v.indexOf('wood') !== -1 || v.indexOf('natural') !== -1) return 'wood';
+        if (v.indexOf('black') !== -1) return 'black';
+        return v.replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '') || 'frame';
+      }
+      function assemblyKey(raw) {
+        var v = String(raw || '').toLowerCase();
+        if (v.indexOf('ready') !== -1 || (v.indexOf('hang') !== -1 && v.indexOf('not') === -1 && v.indexOf('hanger') === -1)) return 'ready';
+        if (v.indexOf('not') !== -1 || v.indexOf('flat') !== -1 || v.indexOf('unassembled') !== -1) return 'flat';
+        return v.replace(/\s+/g, '-') || 'ready';
+      }
+      function colorKey(raw) {
+        var v = String(raw || '').toLowerCase().trim();
+        if (v.indexOf('white') !== -1) return 'white';
+        if (v.indexOf('black') !== -1) return 'black';
+        return v.replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '') || 'color';
+      }
+      function parseCombined(raw) {
+        var s = String(raw || '');
+        var m = s.match(/^(vertical|horizontal|portrait|landscape)\s*[-–—]\s*(.+)$/i);
+        if (m) return { orient: orientKey(m[1]), size: m[2].trim() };
+        return { orient: orientKey(s), size: s };
+      }
+      function shortSize(label) {
+        var cm = String(label).match(/(\d+(?:\.\d+)?\s*[x×]\s*\d+(?:\.\d+)?)\s*cm/i);
+        if (cm) return cm[1].replace(/\s+/g, '') + ' cm';
+        var inch = String(label).match(/(\d+(?:\.\d+)?\s*[x×]\s*\d+(?:\.\d+)?)\s*(?:\"|″|in)/i);
+        if (inch) return inch[1].replace(/\s+/g, '') + '″';
+        return label;
+      }
+      function btnSummary(btns, keyAttr, value) {
+        if (!value) return '';
+        var btn = Array.prototype.find.call(btns, function (b) {
+          return b.getAttribute(keyAttr) === value;
+        });
+        if (btn) return btn.getAttribute(keyAttr + '-label') || btn.getAttribute('data-' + keyAttr.replace('data-', '') + '-label') || btn.textContent.trim();
+        return value;
+      }
+
+      var classified = variants.map(function (variant) {
+        var size;
+        var orient;
+        if (combinedIdx != null) {
+          var parsed = parseCombined(variant.options[combinedIdx]);
+          size = parsed.size;
+          orient = parsed.orient;
+        } else {
+          size = sizeIdx != null ? variant.options[sizeIdx] : (variant.options[0] || '');
+          if (orientIdx != null) {
+            orient = orientKey(variant.options[orientIdx]);
+          } else if (fixedOrient && fixedOrient !== 'square') {
+            orient = fixedOrient;
+          } else if (fixedOrient === 'square' || parseSquare(size)) {
+            orient = 'portrait';
+          } else {
+            orient = 'portrait';
+          }
+        }
+        var square = parseSquare(size) || fixedOrient === 'square';
+        return {
+          size: size,
+          orient: orient,
+          thickness: thickIdx == null ? null : thicknessKey(variant.options[thickIdx]),
+          frame: frameIdx == null ? null : frameKey(variant.options[frameIdx]),
+          assembly: assemblyIdx == null ? null : assemblyKey(variant.options[assemblyIdx]),
+          hanger: hangerIdx == null ? null : frameKey(variant.options[hangerIdx]),
+          color: colorIdx == null ? null : colorKey(variant.options[colorIdx]),
+          square: square,
+          variant: variant
+        };
+      });
+
+      var state = {
+        mode: fixedOrient || 'portrait',
+        thickness: thickBtns.length ? (thickBtns[0].getAttribute('data-thickness') || null) : null,
+        frame: frameBtns.length ? (frameBtns[0].getAttribute('data-frame') || null) : null,
+        assembly: assemblyBtns.length ? (assemblyBtns[0].getAttribute('data-assembly') || null) : null,
+        hanger: hangerBtns.length ? (hangerBtns[0].getAttribute('data-hanger') || null) : null,
+        color: colorBtns.length ? (colorBtns[0].getAttribute('data-color') || null) : null,
+        size: null
+      };
+
+      function matchesFilters(c, thickness, frame, assembly, hanger, color) {
+        if (thickness && c.thickness !== thickness) return false;
+        if (frame && c.frame !== frame) return false;
+        if (assembly && c.assembly !== assembly) return false;
+        if (hanger && c.hanger !== hanger) return false;
+        if (color && c.color !== color) return false;
+        return true;
+      }
+
+      function matchesMode(c, mode) {
+        if (mode === 'square') return c.square;
+        if (mode === 'portrait') return !c.square && c.orient === 'portrait';
+        if (mode === 'landscape') return !c.square && c.orient === 'landscape';
+        return true;
+      }
+
+      function sizesForMode(mode, thickness, frame, assembly, hanger, color) {
+        var seen = {}, list = [];
+        classified.forEach(function (c) {
+          if (!matchesFilters(c, thickness, frame, assembly, hanger, color)) return;
+          if (!matchesMode(c, mode)) return;
+          if (!seen[c.size]) { seen[c.size] = true; list.push(c.size); }
+        });
+        return list.sort(function (a, b) {
+          var ma = String(a).match(/(\d+(?:\.\d+)?)\s*[x×]\s*(\d+(?:\.\d+)?)/i);
+          var mb = String(b).match(/(\d+(?:\.\d+)?)\s*[x×]\s*(\d+(?:\.\d+)?)/i);
+          return ((ma ? Number(ma[1]) * Number(ma[2]) : 0) - (mb ? Number(mb[1]) * Number(mb[2]) : 0));
+        });
+      }
+
+      function findVariant(mode, size, thickness, frame, assembly, hanger, color) {
+        var matches = classified.filter(function (c) {
+          if (c.size !== size) return false;
+          if (!matchesFilters(c, thickness, frame, assembly, hanger, color)) return false;
+          return matchesMode(c, mode);
+        });
+        if (!matches.length) return null;
+        if (mode === 'square') {
+          var vert = matches.find(function (c) { return c.orient === 'portrait'; });
+          return (vert || matches[0]).variant;
+        }
+        return matches[0].variant;
+      }
+
+      function imagesForVariant(variant) {
+        if (!variant) return [];
+        var fromMap = galleryMap[String(variant.id)];
+        if (fromMap && fromMap.length) return fromMap.slice();
+        if (variant.featuredImage) return [variant.featuredImage];
+        return [];
+      }
+
+      function renderDots() {
+        if (!dotsEl) return;
+        dotsEl.innerHTML = '';
+        if (galleryState.images.length < 2) {
+          dotsEl.hidden = true;
+          return;
+        }
+        dotsEl.hidden = false;
+        galleryState.images.forEach(function (_, i) {
+          var dot = document.createElement('button');
+          dot.type = 'button';
+          dot.className = 'pb-gallery__dot' + (i === galleryState.index ? ' is-active' : '');
+          dot.setAttribute('aria-label', 'Image ' + (i + 1));
+          dot.addEventListener('click', function () {
+            showGalleryImage(i);
+          });
+          dotsEl.appendChild(dot);
+        });
+      }
+
+      function preloadImages(urls) {
+        (urls || []).forEach(function (src) {
+          if (!src) return;
+          var img = new Image();
+          img.src = src;
+        });
+      }
+
+      function showGalleryImage(index) {
+        if (!galleryState.images.length || !imageEl) return;
+        galleryState.index = (index + galleryState.images.length) % galleryState.images.length;
+        imageEl.src = galleryState.images[galleryState.index];
+        imageEl.srcset = '';
+        var multi = galleryState.images.length > 1;
+        if (prevBtn) prevBtn.hidden = !multi;
+        if (nextBtn) nextBtn.hidden = !multi;
+        renderDots();
+      }
+
+      function thicknessSummaryLabel() {
+        if (!state.thickness) return '';
+        var btn = Array.prototype.find.call(thickBtns, function (b) {
+          return b.getAttribute('data-thickness') === state.thickness;
+        });
+        if (btn) return btn.getAttribute('data-thickness-label') || btn.textContent.trim();
+        return state.thickness;
+      }
+
+      function applyVariant(variant) {
+        if (!variant) return;
+        if (idInput) idInput.value = variant.id;
+        if (priceEl) priceEl.textContent = variant.priceFormatted;
+        galleryState.images = imagesForVariant(variant);
+        preloadImages(galleryState.images);
+        showGalleryImage(0);
+        if (addBtn) {
+          addBtn.disabled = !variant.available;
+          addBtn.textContent = variant.available ? 'Add to cart' : 'Sold out';
+        }
+        if (summary) {
+          var bits = [shortSize(state.size)];
+          if (state.thickness) bits.push(thicknessSummaryLabel());
+          if (state.frame) bits.push(btnSummary(frameBtns, 'data-frame', state.frame) || state.frame);
+          if (state.hanger) bits.push(btnSummary(hangerBtns, 'data-hanger', state.hanger) || state.hanger);
+          if (state.color) bits.push(btnSummary(colorBtns, 'data-color', state.color) || state.color);
+          if (state.assembly) bits.push(btnSummary(assemblyBtns, 'data-assembly', state.assembly) || state.assembly);
+          summary.textContent = bits.join(' · ');
+        }
+        try {
+          var url = new URL(window.location.href);
+          url.searchParams.set('variant', variant.id);
+          window.history.replaceState({}, '', url.toString());
+        } catch (e) {}
+      }
+
+      function syncSelection() {
+        if (!sizeGrid) return;
+        var sizes = sizesForMode(state.mode, state.thickness, state.frame, state.assembly, state.hanger, state.color);
+        if (!sizes.length) {
+          state.size = null;
+          sizeGrid.innerHTML = '<p class="muted">No sizes for this combination.</p>';
+          if (sizeHint) sizeHint.textContent = '';
+          return;
+        }
+        if (!state.size || sizes.indexOf(state.size) === -1) state.size = sizes[0];
+        if (sizeHint) sizeHint.textContent = sizes.length + ' sizes';
+        renderSizes(sizes);
+        applyVariant(findVariant(state.mode, state.size, state.thickness, state.frame, state.assembly, state.hanger, state.color));
+      }
+
+      function renderSizes(sizes) {
+        sizeGrid.innerHTML = '';
+        sizes.forEach(function (size) {
+          var v = findVariant(state.mode, size, state.thickness, state.frame, state.assembly, state.hanger, state.color);
+          var btn = document.createElement('button');
+          btn.type = 'button';
+          btn.className = 'pb-size' + (state.size === size ? ' is-selected' : '');
+          btn.setAttribute('role', 'option');
+          btn.setAttribute('aria-selected', state.size === size ? 'true' : 'false');
+          btn.innerHTML =
+            '<span class="pb-size__copy"><strong>' + shortSize(size) + '</strong><span>' + size + '</span></span>' +
+            '<span class="pb-size__price">' + (v ? v.priceFormatted : '') + '</span>';
+          btn.addEventListener('click', function () {
+            state.size = size;
+            renderSizes(sizes);
+            applyVariant(findVariant(state.mode, size, state.thickness, state.frame, state.assembly, state.hanger, state.color));
+          });
+          sizeGrid.appendChild(btn);
+        });
+      }
+
+      function bindToggle(btns, attr, stateKey) {
+        btns.forEach(function (btn) {
+          btn.addEventListener('click', function () {
+            state[stateKey] = btn.getAttribute(attr);
+            btns.forEach(function (b) {
+              var on = b === btn;
+              b.classList.toggle('is-selected', on);
+              b.setAttribute('aria-pressed', on ? 'true' : 'false');
+            });
+            syncSelection();
+          });
+        });
+      }
+
+      orientBtns.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          state.mode = btn.getAttribute('data-orient');
+          orientBtns.forEach(function (b) {
+            var on = b === btn;
+            b.classList.toggle('is-selected', on);
+            b.setAttribute('aria-pressed', on ? 'true' : 'false');
+          });
+          syncSelection();
+        });
+      });
+      bindToggle(thickBtns, 'data-thickness', 'thickness');
+      bindToggle(frameBtns, 'data-frame', 'frame');
+      bindToggle(assemblyBtns, 'data-assembly', 'assembly');
+      bindToggle(hangerBtns, 'data-hanger', 'hanger');
+      bindToggle(colorBtns, 'data-color', 'color');
+
+      if (prevBtn) prevBtn.addEventListener('click', function () { showGalleryImage(galleryState.index - 1); });
+      if (nextBtn) nextBtn.addEventListener('click', function () { showGalleryImage(galleryState.index + 1); });
+
+      var currentId = idInput ? Number(idInput.value) : null;
+      var params = new URLSearchParams(window.location.search);
+      var paramOrient = (params.get('orientation') || '').toLowerCase();
+      var paramThick = (params.get('thickness') || '').toLowerCase().replace(/\s+/g, '');
+      var paramFrame = (params.get('frame') || '').toLowerCase();
+      var paramAssembly = (params.get('assembly') || '').toLowerCase();
+      var paramHanger = (params.get('hanger') || '').toLowerCase();
+      var paramColor = (params.get('color') || '').toLowerCase();
+      var paramSize = params.get('size');
+      var current = classified.find(function (c) { return c.variant.id === currentId; }) || classified[0];
+
+      if (fixedOrient) {
+        state.mode = fixedOrient;
+      } else if (paramOrient === 'portrait' || paramOrient === 'landscape' || paramOrient === 'square') {
+        state.mode = paramOrient;
+      } else if (current) {
+        if (current.square) state.mode = 'square';
+        else if (current.orient === 'landscape') state.mode = 'landscape';
+        else state.mode = 'portrait';
+      }
+
+      if (thickBtns.length) {
+        var thickKeys = Array.prototype.map.call(thickBtns, function (b) { return b.getAttribute('data-thickness'); });
+        if (paramThick && thickKeys.indexOf(paramThick) !== -1) state.thickness = paramThick;
+        else if (current && current.thickness && thickKeys.indexOf(current.thickness) !== -1) state.thickness = current.thickness;
+        else state.thickness = thickKeys[0];
+      }
+      if (frameBtns.length) {
+        var frameKeys = Array.prototype.map.call(frameBtns, function (b) { return b.getAttribute('data-frame'); });
+        if (paramFrame && frameKeys.indexOf(paramFrame) !== -1) state.frame = paramFrame;
+        else if (current && current.frame) state.frame = current.frame;
+        else state.frame = frameKeys[0];
+      }
+      if (assemblyBtns.length) {
+        var assemblyKeys = Array.prototype.map.call(assemblyBtns, function (b) { return b.getAttribute('data-assembly'); });
+        if (paramAssembly && assemblyKeys.indexOf(paramAssembly) !== -1) state.assembly = paramAssembly;
+        else if (current && current.assembly) state.assembly = current.assembly;
+        else state.assembly = assemblyKeys[0];
+      }
+      if (hangerBtns.length) {
+        var hangerKeys = Array.prototype.map.call(hangerBtns, function (b) { return b.getAttribute('data-hanger'); });
+        if (paramHanger && hangerKeys.indexOf(paramHanger) !== -1) state.hanger = paramHanger;
+        else if (current && current.hanger) state.hanger = current.hanger;
+        else state.hanger = hangerKeys[0];
+      }
+      if (colorBtns.length) {
+        var colorKeys = Array.prototype.map.call(colorBtns, function (b) { return b.getAttribute('data-color'); });
+        if (paramColor && colorKeys.indexOf(paramColor) !== -1) state.color = paramColor;
+        else if (current && current.color) state.color = current.color;
+        else state.color = colorKeys[0];
+      }
+      if (paramSize) state.size = paramSize;
+      else if (current) state.size = current.size;
+
+      orientBtns.forEach(function (b) {
+        var on = b.getAttribute('data-orient') === state.mode;
+        b.classList.toggle('is-selected', on);
+        b.setAttribute('aria-pressed', on ? 'true' : 'false');
+      });
+      thickBtns.forEach(function (b) {
+        var on = b.getAttribute('data-thickness') === state.thickness;
+        b.classList.toggle('is-selected', on);
+        b.setAttribute('aria-pressed', on ? 'true' : 'false');
+      });
+      frameBtns.forEach(function (b) {
+        var on = b.getAttribute('data-frame') === state.frame;
+        b.classList.toggle('is-selected', on);
+        b.setAttribute('aria-pressed', on ? 'true' : 'false');
+      });
+      assemblyBtns.forEach(function (b) {
+        var on = b.getAttribute('data-assembly') === state.assembly;
+        b.classList.toggle('is-selected', on);
+        b.setAttribute('aria-pressed', on ? 'true' : 'false');
+      });
+      hangerBtns.forEach(function (b) {
+        var on = b.getAttribute('data-hanger') === state.hanger;
+        b.classList.toggle('is-selected', on);
+        b.setAttribute('aria-pressed', on ? 'true' : 'false');
+      });
+      colorBtns.forEach(function (b) {
+        var on = b.getAttribute('data-color') === state.color;
+        b.classList.toggle('is-selected', on);
+        b.setAttribute('aria-pressed', on ? 'true' : 'false');
+      });
+
+      syncSelection();
+    }
+
+    var data = JSON.parse(mapEl.textContent);
+    if (data.variantMapUrl) {
+      fetch(data.variantMapUrl)
+        .then(function (res) { return res.json(); })
+        .then(function (payload) {
+          if (payload && payload.variants && payload.variants.length) data.variants = payload.variants;
+          boot(data);
+        })
+        .catch(function () { boot(data); });
+    } else {
+      boot(data);
+    }
+  })();
+</script>

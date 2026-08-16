@@ -1,6 +1,52 @@
 {%- comment -%}
   Pixora studio header — category mega menus for wall art, gifts, photo printing, occasions.
 {%- endcomment -%}
+{%- liquid
+  capture header_canvas_from
+    render 'from-price', handle: 'canvas-20x20-cm-8x8'
+  endcapture
+  capture header_posters_from
+    render 'from-price', handle: 'posters'
+  endcapture
+  capture header_framed_canvas_from
+    render 'from-price', handle: 'framed-canvas'
+  endcapture
+  capture header_framed_from
+    render 'from-price', handle: 'framed-prints'
+  endcapture
+  capture header_aluminum_from
+    render 'from-price', handle: 'aluminum-prints'
+  endcapture
+  capture header_acrylic_from
+    render 'from-price', handle: 'acrylic-print'
+  endcapture
+  capture header_foam_from
+    render 'from-price', handle: 'foam-prints'
+  endcapture
+  capture header_wood_from
+    render 'from-price', handle: 'wood-prints'
+  endcapture
+  capture header_hangers_from
+    render 'from-price', handle: 'premium-matte-paper-poster-with-hanger'
+  endcapture
+  capture header_mugs_from
+    render 'from-price', handle: 'mugs'
+  endcapture
+  capture header_bottle_from
+    render 'from-price', handle: 'white-17oz-stainless-steel-water-bottle'
+  endcapture
+  assign header_canvas_from = header_canvas_from | strip
+  assign header_posters_from = header_posters_from | strip
+  assign header_framed_canvas_from = header_framed_canvas_from | strip
+  assign header_framed_from = header_framed_from | strip
+  assign header_aluminum_from = header_aluminum_from | strip
+  assign header_acrylic_from = header_acrylic_from | strip
+  assign header_foam_from = header_foam_from | strip
+  assign header_wood_from = header_wood_from | strip
+  assign header_hangers_from = header_hangers_from | strip
+  assign header_mugs_from = header_mugs_from | strip
+  assign header_bottle_from = header_bottle_from | strip
+-%}
 <header class="site-header">
   <div class="site-header__utility">
     <div class="page-width site-header__utility-inner">
@@ -51,56 +97,63 @@
               <span class="site-header__swatch site-header__swatch--blue" aria-hidden="true"></span>
               <span class="site-header__tile-copy">
                 <span class="site-header__tile-title">Canvas prints</span>
-                <span class="site-header__tile-desc">Sizes, wraps &amp; personalize</span>
+                <span class="site-header__tile-desc">{% if header_canvas_from != blank %}{{ header_canvas_from }}{% else %}Sizes, wraps &amp; personalize{% endif %}</span>
               </span>
             </a>
             <a class="site-header__tile" href="/collections/posters">
               <span class="site-header__swatch site-header__swatch--rose" aria-hidden="true"></span>
               <span class="site-header__tile-copy">
                 <span class="site-header__tile-title">Posters</span>
-                <span class="site-header__tile-desc">Matte, fine art &amp; semi-glossy</span>
+                <span class="site-header__tile-desc">{% if header_posters_from != blank %}{{ header_posters_from }} · 3 finishes{% else %}Matte, fine art &amp; semi-glossy{% endif %}</span>
               </span>
             </a>
             <a class="site-header__tile" href="/collections/framed-canvas">
               <span class="site-header__swatch site-header__swatch--cyan" aria-hidden="true"></span>
               <span class="site-header__tile-copy">
                 <span class="site-header__tile-title">Framed canvas</span>
-                <span class="site-header__tile-desc">Coming soon</span>
+                <span class="site-header__tile-desc">{% if header_framed_canvas_from != blank %}{{ header_framed_canvas_from }} · tray frame{% else %}Tray frame · 3 colours{% endif %}</span>
               </span>
             </a>
             <a class="site-header__tile" href="/collections/framed-prints">
               <span class="site-header__swatch site-header__swatch--mint" aria-hidden="true"></span>
               <span class="site-header__tile-copy">
                 <span class="site-header__tile-title">Framed prints</span>
-                <span class="site-header__tile-desc">Coming soon</span>
+                <span class="site-header__tile-desc">{% if header_framed_from != blank %}{{ header_framed_from }} · wood &amp; metal{% else %}Wood &amp; metal frames{% endif %}</span>
               </span>
             </a>
             <a class="site-header__tile" href="/collections/aluminum-prints">
               <span class="site-header__swatch site-header__swatch--slate" aria-hidden="true"></span>
               <span class="site-header__tile-copy">
                 <span class="site-header__tile-title">Metal / aluminium</span>
-                <span class="site-header__tile-desc">Coming soon</span>
+                <span class="site-header__tile-desc">{% if header_aluminum_from != blank %}{{ header_aluminum_from }}{% else %}Smooth &amp; brushed{% endif %}</span>
               </span>
             </a>
-            <a class="site-header__tile" href="/collections/acrylic-prints">
+            <a class="site-header__tile" href="/products/acrylic-print">
               <span class="site-header__swatch site-header__swatch--cyan" aria-hidden="true"></span>
               <span class="site-header__tile-copy">
                 <span class="site-header__tile-title">Acrylic prints</span>
-                <span class="site-header__tile-desc">Coming soon</span>
+                <span class="site-header__tile-desc">{% if header_acrylic_from != blank %}{{ header_acrylic_from }}{% else %}Glossy, vivid colour{% endif %}</span>
+              </span>
+            </a>
+            <a class="site-header__tile" href="/products/premium-matte-paper-poster-with-hanger">
+              <span class="site-header__swatch site-header__swatch--magenta" aria-hidden="true"></span>
+              <span class="site-header__tile-copy">
+                <span class="site-header__tile-title">Posters with hangers</span>
+                <span class="site-header__tile-desc">{% if header_hangers_from != blank %}{{ header_hangers_from }}{% else %}Matte · hanger colours{% endif %}</span>
               </span>
             </a>
             <a class="site-header__tile" href="/collections/foam-prints">
               <span class="site-header__swatch site-header__swatch--blue" aria-hidden="true"></span>
               <span class="site-header__tile-copy">
                 <span class="site-header__tile-title">Foam prints</span>
-                <span class="site-header__tile-desc">Coming soon</span>
+                <span class="site-header__tile-desc">{% if header_foam_from != blank %}{{ header_foam_from }}{% else %}Portrait · landscape · square{% endif %}</span>
               </span>
             </a>
-            <a class="site-header__tile" href="/collections/wood-prints">
+            <a class="site-header__tile" href="/products/wood-prints">
               <span class="site-header__swatch site-header__swatch--mint" aria-hidden="true"></span>
               <span class="site-header__tile-copy">
                 <span class="site-header__tile-title">Wood prints</span>
-                <span class="site-header__tile-desc">Coming soon</span>
+                <span class="site-header__tile-desc">{% if header_wood_from != blank %}{{ header_wood_from }}{% else %}Natural grain · thickness{% endif %}</span>
               </span>
             </a>
             <a class="site-header__tile site-header__tile--all" href="/collections/wall-art">
@@ -126,7 +179,14 @@
               <span class="site-header__swatch site-header__swatch--magenta" aria-hidden="true"></span>
               <span class="site-header__tile-copy">
                 <span class="site-header__tile-title">Mugs</span>
-                <span class="site-header__tile-desc">Coming soon</span>
+                <span class="site-header__tile-desc">{% if header_mugs_from != blank %}{{ header_mugs_from }}{% else %}Ceramic · personalize{% endif %}</span>
+              </span>
+            </a>
+            <a class="site-header__tile" href="/products/white-17oz-stainless-steel-water-bottle">
+              <span class="site-header__swatch site-header__swatch--slate" aria-hidden="true"></span>
+              <span class="site-header__tile-copy">
+                <span class="site-header__tile-title">Water bottles</span>
+                <span class="site-header__tile-desc">{% if header_bottle_from != blank %}{{ header_bottle_from }}{% else %}Stainless steel{% endif %}</span>
               </span>
             </a>
             <a class="site-header__tile" href="/collections/cushions">
@@ -194,7 +254,7 @@
               <span class="site-header__swatch site-header__swatch--rose" aria-hidden="true"></span>
               <span class="site-header__tile-copy">
                 <span class="site-header__tile-title">Posters</span>
-                <span class="site-header__tile-desc">Live now</span>
+                <span class="site-header__tile-desc">{% if header_posters_from != blank %}{{ header_posters_from }}{% else %}Live now{% endif %}</span>
               </span>
             </a>
           </div>

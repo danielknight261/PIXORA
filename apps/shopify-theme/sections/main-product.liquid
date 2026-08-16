@@ -3,31 +3,163 @@
   assign size_option_index = nil
   assign orientation_option_index = nil
   assign thickness_option_index = nil
+  assign frame_option_index = nil
+  assign combined_option_index = nil
+  assign assembly_option_index = nil
+  assign hanger_option_index = nil
+  assign color_option_index = nil
   for option in product.options_with_values
     assign opt_down = option.name | downcase
-    if opt_down == 'size' or opt_down contains 'size'
+    if opt_down contains 'orientation' and opt_down contains 'size'
+      assign combined_option_index = forloop.index0
+    elsif opt_down == 'size' or opt_down contains 'size'
       assign size_option_index = forloop.index0
-    endif
-    if opt_down == 'orientation' or opt_down contains 'orientation'
+    elsif opt_down == 'orientation' or opt_down contains 'orientation'
       assign orientation_option_index = forloop.index0
     endif
     if opt_down == 'thickness' or opt_down contains 'thickness' or opt_down contains 'depth' or opt_down contains 'wrap'
       assign thickness_option_index = forloop.index0
     endif
+    if opt_down == 'frame' or opt_down == 'frame colour' or opt_down == 'frame color'
+      assign frame_option_index = forloop.index0
+    endif
+    if opt_down == 'assembly' or opt_down contains 'assembly'
+      assign assembly_option_index = forloop.index0
+    endif
+    if opt_down contains 'hanger'
+      assign hanger_option_index = forloop.index0
+    endif
+    if opt_down == 'color' or opt_down == 'colour'
+      assign color_option_index = forloop.index0
+    endif
   endfor
   assign is_variant_picker = false
-  if size_option_index != nil and orientation_option_index != nil
+  if combined_option_index != nil
+    assign is_variant_picker = true
+  elsif size_option_index != nil
     assign is_variant_picker = true
   endif
-  assign is_poster = false
   assign handle_down = product.handle | downcase
   assign title_down = product.title | downcase
-  if handle_down contains 'poster' or title_down contains 'poster'
-    assign is_poster = true
+  assign fixed_orient = blank
+  if handle_down contains 'foam-portrait'
+    assign fixed_orient = 'portrait'
+  elsif handle_down contains 'foam-landscape'
+    assign fixed_orient = 'landscape'
+  elsif handle_down contains 'foam-square'
+    assign fixed_orient = 'square'
+  endif
+  assign is_framed = false
+  if frame_option_index != nil or handle_down contains 'framed'
+    assign is_framed = true
+  endif
+  assign is_poster = false
+  if is_framed == false
+    if handle_down contains 'poster' or title_down contains 'poster'
+      assign is_poster = true
+    endif
+  endif
+  assign is_framed_canvas = false
+  if handle_down == 'framed-canvas' or title_down == 'framed canvas'
+    assign is_framed_canvas = true
+  endif
+  assign is_metal_framed = false
+  if handle_down contains 'metal-framed'
+    assign is_metal_framed = true
+  endif
+  assign is_wooden_framed = false
+  if is_framed_canvas == false and is_metal_framed == false
+    if is_framed and handle_down contains 'wooden'
+      assign is_wooden_framed = true
+    elsif is_framed and handle_down contains 'fine-art-framed'
+      assign is_wooden_framed = true
+    endif
+  endif
+  assign is_hanger = false
+  if hanger_option_index != nil or handle_down contains 'hanger'
+    assign is_hanger = true
+  endif
+  assign category_label = 'Wall art'
+  assign category_url = '/collections/wall-art'
+  if is_framed_canvas
+    assign category_label = 'Framed canvas'
+    assign category_url = '/collections/framed-canvas'
+  elsif is_metal_framed
+    assign category_label = 'Metal framed prints'
+    assign category_url = '/collections/framed-prints'
+  elsif is_wooden_framed
+    assign category_label = 'Wooden framed prints'
+    assign category_url = '/collections/framed-prints'
+  elsif is_framed
+    assign category_label = 'Framed prints'
+    assign category_url = '/collections/framed-prints'
+  elsif is_hanger
+    assign category_label = 'Posters with hangers'
+    assign category_url = '/collections/posters-with-hangers'
+  elsif is_poster
+    assign category_label = 'Posters'
+    assign category_url = '/collections/posters'
+  elsif handle_down contains 'acrylic'
+    assign category_label = 'Acrylic prints'
+    assign category_url = '/collections/acrylic-prints'
+  elsif handle_down contains 'aluminum' or handle_down contains 'aluminium'
+    assign category_label = 'Metal / aluminium'
+    assign category_url = '/collections/aluminum-prints'
+  elsif handle_down contains 'wood-print' or handle_down == 'wood-prints'
+    assign category_label = 'Wood prints'
+    assign category_url = '/collections/wood-prints'
+  elsif handle_down contains 'foam'
+    assign category_label = 'Foam prints'
+    assign category_url = '/collections/foam-prints'
+  elsif handle_down contains 'canvas'
+    assign category_label = 'Canvas prints'
+    assign category_url = '/collections/canvas-prints'
+  endif
+  assign display_title = product.title
+  if is_framed_canvas
+    assign display_title = 'Framed canvas'
+  elsif handle_down contains 'classic-semi-glossy-paper-wooden-framed'
+    assign display_title = 'Classic Semi-Glossy Wooden Framed Print'
+  elsif handle_down contains 'premium-semi-glossy-paper-wooden-framed'
+    assign display_title = 'Premium Semi-Glossy Wooden Framed Print'
+  elsif handle_down == 'fine-art-framed-poster'
+    assign display_title = 'Fine Art Wooden Framed Print'
+  elsif is_metal_framed
+    assign display_title = 'Classic Semi-Glossy Metal Framed Print'
+  elsif handle_down == 'premium-matte-paper-poster-with-hanger'
+    assign display_title = 'Premium Matte Poster with Hanger'
+  elsif handle_down == 'aluminum-print'
+    assign display_title = 'Aluminum print'
+  elsif handle_down == 'brushed-aluminum-print'
+    assign display_title = 'Brushed aluminum print'
+  elsif handle_down == 'acrylic-print'
+    assign display_title = 'Acrylic print'
+  elsif handle_down == 'wood-prints'
+    assign display_title = 'Wood print'
+  elsif handle_down == 'foam-portrait'
+    assign display_title = 'Foam print · Portrait'
+  elsif handle_down == 'foam-landscape'
+    assign display_title = 'Foam print · Landscape'
+  elsif handle_down == 'foam-square'
+    assign display_title = 'Foam print · Square'
   endif
   assign size_count = 0
-  if size_option_index != nil
+  if combined_option_index != nil
+    assign size_count = product.options_with_values[combined_option_index].values.size | divided_by: 2
+  elsif size_option_index != nil
     assign size_count = product.options_with_values[size_option_index].values.size
+  endif
+  assign variant_map_asset = blank
+  if handle_down == 'premium-semi-glossy-paper-wooden-framed-poster-premium-1'
+    assign variant_map_asset = 'framed-premium-variants.json'
+  elsif handle_down == 'classic-semi-glossy-paper-wooden-framed-poster-bestseller-1'
+    assign variant_map_asset = 'framed-classic-variants.json'
+  endif
+  assign show_orient_ui = false
+  if fixed_orient == blank
+    if combined_option_index != nil or orientation_option_index != nil
+      assign show_orient_ui = true
+    endif
   endif
 -%}
 
@@ -43,61 +175,80 @@
             <span>/</span>
             <a href="/collections/wall-art">Wall art</a>
             <span>/</span>
-            {% if is_poster %}
-              <a href="/collections/posters">Posters</a>
-              <span>/</span>
-              <span>{{ product.title }}</span>
-            {% else %}
-              <span>Canvas prints</span>
-            {% endif %}
+            <a href="{{ category_url }}">{{ category_label }}</a>
+            <span>/</span>
+            <span>{{ display_title }}</span>
           </nav>
-          <h1 class="pb-canvas__title">
-            {% if is_poster %}
-              {{ product.title }}
-            {% else %}
-              Canvas prints
-            {% endif %}
-          </h1>
+          <h1 class="pb-canvas__title">{{ display_title }}</h1>
           <p class="pb-canvas__subtitle">
-            {% if is_poster %}
+            {% if is_hanger %}
+              Poster with hanger — pick hanger colour, orientation and size
+            {% elsif is_metal_framed %}
+              Metal framed print — pick orientation and size
+            {% elsif is_framed_canvas %}
+              Canvas in a tray frame — pick frame colour, orientation and size
+            {% elsif is_wooden_framed %}
+              Wooden framed print — pick frame colour, orientation and size
+              {%- if assembly_option_index != nil %} · assembly{% endif -%}
+            {% elsif fixed_orient != blank %}
+              Foam board print — pick size
+              {%- if color_option_index != nil %} and edge colour{% endif -%}
+            {% elsif handle_down contains 'wood-print' %}
+              Wood print — pick thickness, orientation and size
+            {% elsif handle_down contains 'acrylic' %}
+              Acrylic print — pick orientation and size
+            {% elsif handle_down contains 'aluminum' or handle_down contains 'aluminium' %}
+              Metal print — pick orientation and size
+            {% elsif is_poster %}
               Pick orientation and size
-              {%- if size_count > 0 %} · {{ size_count }} sizes{% endif -%}.
-              Then personalize with your photo.
+            {% elsif is_framed %}
+              Pick options and size
             {% else %}
-              Pick orientation, wrap and size
-              {%- if size_count > 0 %} · {{ size_count }} sizes{% endif -%}.
-              Then personalize with your photo.
+              Pick orientation and size
+              {%- if thickness_option_index != nil %} · thickness{% endif -%}
             {% endif %}
+            {%- if size_count > 0 %} · {{ size_count }} sizes{% endif -%}
+            {%- if product.price_varies %} · from {{ product.price_min | money }}{% endif -%}.
+            Then personalize with your photo.
           </p>
         </div>
       </div>
 
       <div class="page-width pb-canvas__layout">
         <div class="pb-canvas__media">
-          <div class="pb-canvas__media-frame" data-product-media>
-            {% if current_variant.featured_media %}
-              {% assign media = current_variant.featured_media %}
-            {% else %}
-              {% assign media = product.featured_media %}
-            {% endif %}
-            {% if media %}
-              {{
-                media
-                | image_url: width: 1400
-                | image_tag:
-                  class: 'product__image',
-                  alt: media.alt | default: product.title,
-                  data-product-image: true
-              }}
-            {% else %}
-              <div class="pb-canvas__media-empty" data-product-image-fallback>
-                {% render 'mock-image', product: product, class: 'pb-canvas__media-mock', width: 900 %}
-                <p class="pb-canvas__media-empty-title">Sample mockup</p>
-                <p class="pb-canvas__media-empty-copy muted">
-                  Choose size, then use <strong>Personalize design</strong> to upload your photo and see the live preview.
-                </p>
-              </div>
-            {% endif %}
+          <div class="pb-canvas__gallery" data-product-gallery>
+            <div class="pb-canvas__media-frame" data-product-media>
+              {% if current_variant.featured_media %}
+                {% assign media = current_variant.featured_media %}
+              {% else %}
+                {% assign media = product.featured_media %}
+              {% endif %}
+              {% if media %}
+                <img
+                  class="product__image"
+                  src="{{ media | image_url: width: 1100 }}"
+                  alt="{{ media.alt | default: product.title | escape }}"
+                  width="1100"
+                  height="1100"
+                  data-product-image
+                >
+              {% else %}
+                <div class="pb-canvas__media-empty" data-product-image-fallback>
+                  {% render 'mock-image', product: product, class: 'pb-canvas__media-mock', width: 900 %}
+                  <p class="pb-canvas__media-empty-title">Sample mockup</p>
+                  <p class="pb-canvas__media-empty-copy muted">
+                    Choose size, then use <strong>Personalize design</strong> to upload your photo and see the live preview.
+                  </p>
+                </div>
+              {% endif %}
+            </div>
+            <button type="button" class="pb-gallery__nav pb-gallery__nav--prev" data-gallery-prev aria-label="Previous image" hidden>
+              <span aria-hidden="true">‹</span>
+            </button>
+            <button type="button" class="pb-gallery__nav pb-gallery__nav--next" data-gallery-next aria-label="Next image" hidden>
+              <span aria-hidden="true">›</span>
+            </button>
+            <div class="pb-gallery__dots" data-gallery-dots hidden></div>
           </div>
         </div>
 
@@ -106,27 +257,152 @@
             <input type="hidden" name="id" value="{{ current_variant.id }}" data-variant-id>
             <input type="hidden" name="quantity" value="1">
 
-            <div class="pb-canvas__step">
-              <p class="pb-canvas__label">Orientation</p>
-              <div class="pb-canvas__orient" role="radiogroup" aria-label="Orientation">
-                <button type="button" class="pb-orient" data-orient="portrait" aria-pressed="false">Portrait</button>
-                <button type="button" class="pb-orient" data-orient="landscape" aria-pressed="false">Landscape</button>
-                <button type="button" class="pb-orient" data-orient="square" aria-pressed="false">Square</button>
+            {% if show_orient_ui %}
+              <div class="pb-canvas__step">
+                <p class="pb-canvas__label">Orientation</p>
+                <div class="pb-canvas__orient" role="radiogroup" aria-label="Orientation">
+                  <button type="button" class="pb-orient" data-orient="portrait" aria-pressed="false">Portrait</button>
+                  <button type="button" class="pb-orient" data-orient="landscape" aria-pressed="false">Landscape</button>
+                  <button type="button" class="pb-orient" data-orient="square" aria-pressed="false">Square</button>
+                </div>
               </div>
-            </div>
+            {% elsif fixed_orient != blank %}
+              <input type="hidden" data-fixed-orient value="{{ fixed_orient }}">
+            {% endif %}
 
             {% if thickness_option_index != nil %}
               <div class="pb-canvas__step">
-                <p class="pb-canvas__label">Wrap</p>
+                <p class="pb-canvas__label">{% if handle_down contains 'wood' %}Thickness{% else %}Wrap{% endif %}</p>
                 <div class="pb-canvas__thick" role="radiogroup" aria-label="Thickness">
-                  <button type="button" class="pb-thick" data-thickness="slim" aria-pressed="false">
-                    <strong>Slim</strong>
-                    <span>~2 cm</span>
-                  </button>
-                  <button type="button" class="pb-thick" data-thickness="thick" aria-pressed="false">
-                    <strong>Thick</strong>
-                    <span>~4 cm</span>
-                  </button>
+                  {% for value in product.options_with_values[thickness_option_index].values %}
+                    {% assign thick_down = value | downcase %}
+                    {% assign thick_key = value | handleize %}
+                    {% if thick_down contains 'thick' %}
+                      {% assign thick_key = 'thick' %}
+                    {% elsif thick_down contains 'slim' or thick_down contains 'thin' %}
+                      {% assign thick_key = 'slim' %}
+                    {% elsif thick_down contains '10' %}
+                      {% assign thick_key = '10mm' %}
+                    {% elsif thick_down contains '20' %}
+                      {% assign thick_key = '20mm' %}
+                    {% endif %}
+                    <button type="button" class="pb-thick" data-thickness="{{ thick_key }}" data-thickness-label="{{ value | escape }}" aria-pressed="false">
+                      <strong>{{ value }}</strong>
+                      <span>{% if thick_key == 'slim' %}~2 cm{% elsif thick_key == 'thick' %}~4 cm{% else %}Thickness{% endif %}</span>
+                    </button>
+                  {% endfor %}
+                </div>
+              </div>
+            {% endif %}
+
+            {% if frame_option_index != nil %}
+              <div class="pb-canvas__step">
+                <p class="pb-canvas__label">Frame colour</p>
+                <div class="pb-canvas__frames" role="radiogroup" aria-label="Frame colour">
+                  {% for value in product.options_with_values[frame_option_index].values %}
+                    {% assign frame_down = value | downcase %}
+                    {% assign frame_key = 'frame' %}
+                    {% if frame_down contains 'white' %}
+                      {% assign frame_key = 'white' %}
+                    {% elsif frame_down contains 'dark' %}
+                      {% assign frame_key = 'dark-wood' %}
+                    {% elsif frame_down contains 'wood' %}
+                      {% assign frame_key = 'wood' %}
+                    {% elsif frame_down contains 'black' %}
+                      {% assign frame_key = 'black' %}
+                    {% else %}
+                      {% assign frame_key = value | handleize %}
+                    {% endif %}
+                    <button
+                      type="button"
+                      class="pb-frame"
+                      data-frame="{{ frame_key }}"
+                      data-frame-label="{{ value | escape }}"
+                      aria-pressed="false"
+                    >
+                      <span class="pb-frame__swatch pb-frame__swatch--{{ frame_key }}" aria-hidden="true"></span>
+                      <span class="pb-frame__label">{{ value | remove: ' frame' | remove: ' Frame' }}</span>
+                    </button>
+                  {% endfor %}
+                </div>
+              </div>
+            {% endif %}
+
+            {% if hanger_option_index != nil %}
+              <div class="pb-canvas__step">
+                <p class="pb-canvas__label">Hanger colour</p>
+                <div class="pb-canvas__frames" role="radiogroup" aria-label="Hanger colour">
+                  {% for value in product.options_with_values[hanger_option_index].values %}
+                    {% assign hanger_down = value | downcase %}
+                    {% assign hanger_key = value | handleize %}
+                    {% if hanger_down contains 'white' %}
+                      {% assign hanger_key = 'white' %}
+                    {% elsif hanger_down contains 'dark' %}
+                      {% assign hanger_key = 'dark-wood' %}
+                    {% elsif hanger_down contains 'natural' or hanger_down contains 'wood' %}
+                      {% assign hanger_key = 'wood' %}
+                    {% elsif hanger_down contains 'black' %}
+                      {% assign hanger_key = 'black' %}
+                    {% endif %}
+                    <button
+                      type="button"
+                      class="pb-frame"
+                      data-hanger="{{ hanger_key }}"
+                      data-hanger-label="{{ value | escape }}"
+                      aria-pressed="false"
+                    >
+                      <span class="pb-frame__swatch pb-frame__swatch--{{ hanger_key }}" aria-hidden="true"></span>
+                      <span class="pb-frame__label">{{ value | remove: ' wall hanger' | remove: ' Wall hanger' | remove: ' Wall Hanger' }}</span>
+                    </button>
+                  {% endfor %}
+                </div>
+              </div>
+            {% endif %}
+
+            {% if color_option_index != nil %}
+              <div class="pb-canvas__step">
+                <p class="pb-canvas__label">Edge colour</p>
+                <div class="pb-canvas__frames" role="radiogroup" aria-label="Edge colour">
+                  {% for value in product.options_with_values[color_option_index].values %}
+                    {% assign color_key = value | handleize %}
+                    <button
+                      type="button"
+                      class="pb-frame"
+                      data-color="{{ color_key }}"
+                      data-color-label="{{ value | escape }}"
+                      aria-pressed="false"
+                    >
+                      <span class="pb-frame__swatch pb-frame__swatch--{{ color_key }}" aria-hidden="true"></span>
+                      <span class="pb-frame__label">{{ value | capitalize }}</span>
+                    </button>
+                  {% endfor %}
+                </div>
+              </div>
+            {% endif %}
+
+            {% if assembly_option_index != nil %}
+              <div class="pb-canvas__step">
+                <p class="pb-canvas__label">Assembly</p>
+                <div class="pb-canvas__thick" role="radiogroup" aria-label="Assembly">
+                  {% for value in product.options_with_values[assembly_option_index].values %}
+                    {% assign assembly_down = value | downcase %}
+                    {% assign assembly_key = value | handleize %}
+                    {% if assembly_down contains 'ready' %}
+                      {% assign assembly_key = 'ready' %}
+                    {% elsif assembly_down contains 'not' or assembly_down contains 'unassembled' %}
+                      {% assign assembly_key = 'flat' %}
+                    {% endif %}
+                    <button
+                      type="button"
+                      class="pb-thick"
+                      data-assembly="{{ assembly_key }}"
+                      data-assembly-label="{{ value | escape }}"
+                      aria-pressed="false"
+                    >
+                      <strong>{% if assembly_key == 'ready' %}Ready to hang{% else %}Flat pack{% endif %}</strong>
+                      <span>{{ value }}</span>
+                    </button>
+                  {% endfor %}
                 </div>
               </div>
             {% endif %}
@@ -141,6 +417,9 @@
 
             <div class="pb-canvas__buybox">
               <div>
+                {% if product.price_varies %}
+                  <p class="pb-canvas__from">From {{ product.price_min | money }}</p>
+                {% endif %}
                 <p class="pb-canvas__price" data-product-price>{{ current_variant.price | money }}</p>
                 <p class="pb-canvas__selection muted" data-selection-summary></p>
               </div>
@@ -172,9 +451,17 @@
 
           <script type="application/json" data-variant-map>
             {
-              "sizeOptionIndex": {{ size_option_index }},
-              "orientationOptionIndex": {{ orientation_option_index }},
+              "sizeOptionIndex": {% if size_option_index != nil %}{{ size_option_index }}{% else %}null{% endif %},
+              "orientationOptionIndex": {% if orientation_option_index != nil %}{{ orientation_option_index }}{% else %}null{% endif %},
+              "combinedOptionIndex": {% if combined_option_index != nil %}{{ combined_option_index }}{% else %}null{% endif %},
               "thicknessOptionIndex": {% if thickness_option_index != nil %}{{ thickness_option_index }}{% else %}null{% endif %},
+              "frameOptionIndex": {% if frame_option_index != nil %}{{ frame_option_index }}{% else %}null{% endif %},
+              "assemblyOptionIndex": {% if assembly_option_index != nil %}{{ assembly_option_index }}{% else %}null{% endif %},
+              "hangerOptionIndex": {% if hanger_option_index != nil %}{{ hanger_option_index }}{% else %}null{% endif %},
+              "colorOptionIndex": {% if color_option_index != nil %}{{ color_option_index }}{% else %}null{% endif %},
+              "fixedOrient": {% if fixed_orient != blank %}{{ fixed_orient | json }}{% else %}null{% endif %},
+              "variantMapUrl": {% if variant_map_asset != blank %}{{ variant_map_asset | asset_url | json }}{% else %}null{% endif %},
+              "galleryMap": {% if handle_down contains 'canvas' and handle_down != 'framed-canvas' %}{% render 'canvas-variant-gallery-data' %}{% else %}{}{% endif %},
               "variants": [
                 {%- for variant in product.variants -%}
                   {
@@ -184,7 +471,7 @@
                     "priceFormatted": {{ variant.price | money | json }},
                     "title": {{ variant.title | json }},
                     "options": {{ variant.options | json }},
-                    "featuredImage": {% if variant.featured_media %}{{ variant.featured_media | image_url: width: 1400 | json }}{% elsif product.featured_media %}{{ product.featured_media | image_url: width: 1400 | json }}{% else %}null{% endif %}
+                    "featuredImage": {% if variant.featured_media %}{{ variant.featured_media | image_url: width: 1100 | json }}{% elsif product.featured_media %}{{ product.featured_media | image_url: width: 1100 | json }}{% else %}null{% endif %}
                   }{% unless forloop.last %},{% endunless %}
                 {%- endfor -%}
               ]
@@ -196,7 +483,13 @@
       {% if product.description != blank %}
         <div class="page-width pb-canvas__about">
           <h2>
-            {% if is_poster %}
+            {% if is_framed_canvas %}
+              About this framed canvas
+            {% elsif is_wooden_framed %}
+              About this wooden framed print
+            {% elsif is_framed %}
+              About this framed print
+            {% elsif is_poster %}
               About this poster
             {% else %}
               About these canvas prints
@@ -211,7 +504,22 @@
           <h3>Fully customise your print</h3>
           <p>Use Personalize design to upload your photo, preview on a live mockup, then add to cart. We print and ship to your door.</p>
         </article>
-        {% if is_poster %}
+        {% if is_framed_canvas %}
+          <article>
+            <h3>Tray frame · three colours</h3>
+            <p>Wood, dark wood or black tray frames that give your canvas a clean gallery finish.</p>
+          </article>
+        {% elsif is_wooden_framed %}
+          <article>
+            <h3>Wooden frame · four colours</h3>
+            <p>White, wood, dark wood or black wooden frames — metal framed prints coming soon as a separate range.</p>
+          </article>
+        {% elsif is_framed %}
+          <article>
+            <h3>Four frame colours</h3>
+            <p>White, wood, dark wood or black — match your room and let the print take centre stage.</p>
+          </article>
+        {% elsif is_poster %}
           <article>
             <h3>Premium paper finish</h3>
             <p>This finish is selected on the posters page — more paper options coming soon as separate products.</p>
@@ -230,6 +538,25 @@
     </div>
 
   {% else %}
+    {%- liquid
+      assign is_mug = false
+      assign is_bottle = false
+      if handle_down contains 'mug'
+        assign is_mug = true
+      endif
+      if handle_down contains 'bottle'
+        assign is_bottle = true
+      endif
+      assign gift_crumb_label = 'Home & gifts'
+      assign gift_crumb_url = '/collections/home-gifts'
+      if is_mug
+        assign gift_crumb_label = 'Mugs'
+        assign gift_crumb_url = '/collections/mugs'
+      elsif is_bottle
+        assign gift_crumb_label = 'Water bottles'
+        assign gift_crumb_url = '/collections/water-bottles'
+      endif
+    -%}
     <div class="page-width product" id="Product-{{ section.id }}">
       <div class="product__media">
         <div class="product__media-frame" data-product-media>
@@ -239,243 +566,152 @@
             {% assign media = product.featured_media %}
           {% endif %}
           {% if media %}
-            {{ media | image_url: width: 1400 | image_tag: class: 'product__image', alt: media.alt | default: product.title }}
+            <img
+              class="product__image"
+              src="{{ media | image_url: width: 1400 }}"
+              alt="{{ media.alt | default: product.title | escape }}"
+              width="{{ media.width }}"
+              height="{{ media.height }}"
+              data-product-image
+            >
           {% else %}
             {% render 'mock-image', product: product, class: 'product__image', width: 900 %}
           {% endif %}
         </div>
       </div>
       <div class="product__info">
+        <nav class="pb-canvas__crumbs" aria-label="Breadcrumb">
+          <a href="/">Home</a>
+          <span>/</span>
+          <a href="/collections/home-gifts">Home &amp; gifts</a>
+          <span>/</span>
+          <a href="{{ gift_crumb_url }}">{{ gift_crumb_label }}</a>
+          <span>/</span>
+          <span>{{ product.title }}</span>
+        </nav>
         <h1 class="product__title">{{ product.title }}</h1>
-        <p class="product__price">{{ current_variant.price | money }}</p>
+        <p class="product__price" data-product-price>{{ current_variant.price | money }}</p>
         {% if product.description != blank %}
           <div class="product__description rte">{{ product.description }}</div>
         {% endif %}
         {% form 'product', product, id: 'product-form', class: 'product-form' %}
-          <input type="hidden" name="id" value="{{ current_variant.id }}">
+          <input type="hidden" name="id" value="{{ current_variant.id }}" data-variant-id>
           {% unless product.has_only_default_variant %}
-            <div class="product-form__variants">
-              {% for option in product.options_with_values %}
-                <label class="field-label" for="Option-{{ section.id }}-{{ forloop.index0 }}">{{ option.name }}</label>
-                <select id="Option-{{ section.id }}-{{ forloop.index0 }}" name="options[{{ option.name | escape }}]" class="field-select">
-                  {% for value in option.values %}
-                    <option value="{{ value | escape }}" {% if option.selected_value == value %}selected{% endif %}>{{ value }}</option>
+            {% if color_option_index != nil and is_mug %}
+              <div class="pb-canvas__step product-form__color">
+                <p class="pb-canvas__label">{% if handle_down contains 'color-inside' %}Inside colour{% else %}Colour{% endif %}</p>
+                <div class="pb-canvas__frames" role="radiogroup" aria-label="{% if handle_down contains 'color-inside' %}Inside colour{% else %}Colour{% endif %}" data-gift-color>
+                  {% for value in product.options_with_values[color_option_index].values %}
+                    {% assign color_down = value | downcase %}
+                    {% assign color_key = value | handleize %}
+                    {% if color_down contains 'yellow' %}
+                      {% assign color_key = 'yellow' %}
+                    {% elsif color_down contains 'pink' %}
+                      {% assign color_key = 'pink' %}
+                    {% elsif color_down contains 'green' %}
+                      {% assign color_key = 'green' %}
+                    {% elsif color_down contains 'red' %}
+                      {% assign color_key = 'red' %}
+                    {% elsif color_down contains 'black' %}
+                      {% assign color_key = 'black' %}
+                    {% elsif color_down contains 'blue' %}
+                      {% assign color_key = 'blue' %}
+                    {% elsif color_down contains 'white' %}
+                      {% assign color_key = 'white' %}
+                    {% endif %}
+                    <button
+                      type="button"
+                      class="pb-frame{% if product.options_with_values[color_option_index].selected_value == value %} is-selected{% endif %}"
+                      data-gift-color-value="{{ value | escape }}"
+                      aria-pressed="{% if product.options_with_values[color_option_index].selected_value == value %}true{% else %}false{% endif %}"
+                    >
+                      <span class="pb-frame__swatch pb-frame__swatch--{{ color_key }}" aria-hidden="true"></span>
+                      <span class="pb-frame__label">{{ value | remove: 'Ceramic ' }}</span>
+                    </button>
+                  {% endfor %}
+                </div>
+                <select name="options[{{ product.options_with_values[color_option_index].name | escape }}]" class="visually-hidden" data-gift-color-select aria-hidden="true" tabindex="-1">
+                  {% for value in product.options_with_values[color_option_index].values %}
+                    <option value="{{ value | escape }}" {% if product.options_with_values[color_option_index].selected_value == value %}selected{% endif %}>{{ value }}</option>
                   {% endfor %}
                 </select>
-              {% endfor %}
-            </div>
+              </div>
+            {% else %}
+              <div class="product-form__variants">
+                {% for option in product.options_with_values %}
+                  <label class="field-label" for="Option-{{ section.id }}-{{ forloop.index0 }}">{{ option.name }}</label>
+                  <select id="Option-{{ section.id }}-{{ forloop.index0 }}" name="options[{{ option.name | escape }}]" class="field-select">
+                    {% for value in option.values %}
+                      <option value="{{ value | escape }}" {% if option.selected_value == value %}selected{% endif %}>{{ value }}</option>
+                    {% endfor %}
+                  </select>
+                {% endfor %}
+              </div>
+            {% endif %}
           {% endunless %}
-          <button type="submit" name="add" class="button button--primary btn-addtocart" {% if current_variant.available == false %}disabled{% endif %}>
+          <button type="submit" name="add" class="button button--primary btn-addtocart" data-add-to-cart {% if current_variant.available == false %}disabled{% endif %}>
             {% if current_variant.available %}Add to cart{% else %}Sold out{% endif %}
           </button>
         {% endform %}
       </div>
     </div>
+    {% if color_option_index != nil and is_mug %}
+      <script type="application/json" data-gift-variants>
+        [
+          {%- for variant in product.variants -%}
+            {
+              "id": {{ variant.id | json }},
+              "available": {{ variant.available | json }},
+              "priceFormatted": {{ variant.price | money | json }},
+              "options": {{ variant.options | json }},
+              "featuredImage": {% if variant.featured_media %}{{ variant.featured_media | image_url: width: 1100 | json }}{% elsif product.featured_media %}{{ product.featured_media | image_url: width: 1100 | json }}{% else %}null{% endif %}
+            }{% unless forloop.last %},{% endunless %}
+          {%- endfor -%}
+        ]
+      </script>
+      <script>
+        (function () {
+          var root = document.getElementById('Product-{{ section.id }}');
+          if (!root) return;
+          var mapEl = document.querySelector('[data-gift-variants]');
+          if (!mapEl) return;
+          var variants = JSON.parse(mapEl.textContent);
+          var select = root.querySelector('[data-gift-color-select]');
+          var idInput = root.querySelector('[data-variant-id]');
+          var priceEl = root.querySelector('[data-product-price]');
+          var imageEl = root.querySelector('[data-product-image]') || root.querySelector('.product__image');
+          var addBtn = root.querySelector('[data-add-to-cart]');
+          var btns = root.querySelectorAll('[data-gift-color-value]');
+          function apply(value) {
+            if (select) select.value = value;
+            var v = variants.find(function (x) { return x.options[0] === value; }) || variants[0];
+            if (!v) return;
+            if (idInput) idInput.value = v.id;
+            if (priceEl) priceEl.textContent = v.priceFormatted;
+            if (imageEl && v.featuredImage) { imageEl.src = v.featuredImage; imageEl.srcset = ''; }
+            if (addBtn) {
+              addBtn.disabled = !v.available;
+              addBtn.textContent = v.available ? 'Add to cart' : 'Sold out';
+            }
+            btns.forEach(function (b) {
+              var on = b.getAttribute('data-gift-color-value') === value;
+              b.classList.toggle('is-selected', on);
+              b.setAttribute('aria-pressed', on ? 'true' : 'false');
+            });
+          }
+          btns.forEach(function (btn) {
+            btn.addEventListener('click', function () {
+              apply(btn.getAttribute('data-gift-color-value'));
+            });
+          });
+        })();
+      </script>
+    {% endif %}
   {% endif %}
 </section>
 
 {% if is_variant_picker %}
-  <script>
-    (function () {
-      var root = document.getElementById('Product-{{ section.id }}');
-      if (!root) return;
-      var mapEl = root.querySelector('[data-variant-map]');
-      if (!mapEl) return;
-
-      var data = JSON.parse(mapEl.textContent);
-      var sizeIdx = data.sizeOptionIndex;
-      var orientIdx = data.orientationOptionIndex;
-      var thickIdx = data.thicknessOptionIndex;
-      var variants = data.variants || [];
-
-      var idInput = root.querySelector('[data-variant-id]');
-      var priceEl = root.querySelector('[data-product-price]');
-      var imageEl = root.querySelector('[data-product-image]');
-      var addBtn = root.querySelector('[data-add-to-cart]');
-      var sizeGrid = root.querySelector('[data-size-grid]');
-      var sizeHint = root.querySelector('[data-size-hint]');
-      var summary = root.querySelector('[data-selection-summary]');
-      var orientBtns = root.querySelectorAll('[data-orient]');
-      var thickBtns = root.querySelectorAll('[data-thickness]');
-
-      function parseSquare(sizeLabel) {
-        var m = String(sizeLabel).match(/(\d+(?:\.\d+)?)\s*[x×]\s*(\d+(?:\.\d+)?)/i);
-        if (!m) return false;
-        return Number(m[1]) === Number(m[2]);
-      }
-      function orientKey(raw) {
-        var v = String(raw || '').toLowerCase();
-        if (v.indexOf('horiz') !== -1 || v.indexOf('land') !== -1) return 'landscape';
-        if (v.indexOf('vert') !== -1 || v.indexOf('port') !== -1) return 'portrait';
-        return v;
-      }
-      function thicknessKey(raw) {
-        var v = String(raw || '').toLowerCase();
-        if (v.indexOf('thick') !== -1) return 'thick';
-        if (v.indexOf('slim') !== -1 || v.indexOf('thin') !== -1) return 'slim';
-        return v || 'slim';
-      }
-      function shortSize(label) {
-        var cm = String(label).match(/(\d+(?:\.\d+)?\s*[x×]\s*\d+(?:\.\d+)?)\s*cm/i);
-        if (cm) return cm[1].replace(/\s+/g, '') + ' cm';
-        var inch = String(label).match(/(\d+(?:\.\d+)?\s*[x×]\s*\d+(?:\.\d+)?)\s*(?:\"|″|in)/i);
-        if (inch) return inch[1].replace(/\s+/g, '') + '″';
-        return label;
-      }
-      var classified = variants.map(function (variant) {
-        var size = variant.options[sizeIdx];
-        return {
-          size: size,
-          orient: orientKey(variant.options[orientIdx]),
-          thickness: thickIdx == null ? 'slim' : thicknessKey(variant.options[thickIdx]),
-          square: parseSquare(size),
-          variant: variant
-        };
-      });
-
-      var state = { mode: 'portrait', thickness: thickBtns.length ? 'slim' : null, size: null };
-
-      function sizesForMode(mode, thickness) {
-        var seen = {}, list = [];
-        classified.forEach(function (c) {
-          if (thickness && c.thickness !== thickness) return;
-          if (mode === 'square') { if (!c.square) return; }
-          else if (mode === 'portrait') { if (c.square || c.orient !== 'portrait') return; }
-          else if (mode === 'landscape') { if (c.square || c.orient !== 'landscape') return; }
-          if (!seen[c.size]) { seen[c.size] = true; list.push(c.size); }
-        });
-        return list.sort(function (a, b) {
-          var ma = String(a).match(/(\d+(?:\.\d+)?)\s*[x×]\s*(\d+(?:\.\d+)?)/i);
-          var mb = String(b).match(/(\d+(?:\.\d+)?)\s*[x×]\s*(\d+(?:\.\d+)?)/i);
-          return ((ma ? Number(ma[1]) * Number(ma[2]) : 0) - (mb ? Number(mb[1]) * Number(mb[2]) : 0));
-        });
-      }
-
-      function findVariant(mode, size, thickness) {
-        var matches = classified.filter(function (c) {
-          if (c.size !== size) return false;
-          if (thickness && c.thickness !== thickness) return false;
-          if (mode === 'square') return c.square;
-          if (mode === 'portrait') return !c.square && c.orient === 'portrait';
-          if (mode === 'landscape') return !c.square && c.orient === 'landscape';
-          return false;
-        });
-        if (!matches.length) return null;
-        if (mode === 'square') {
-          var vert = matches.find(function (c) { return c.orient === 'portrait'; });
-          return (vert || matches[0]).variant;
-        }
-        return matches[0].variant;
-      }
-
-      function applyVariant(variant) {
-        if (!variant) return;
-        if (idInput) idInput.value = variant.id;
-        if (priceEl) priceEl.textContent = variant.priceFormatted;
-        if (imageEl && variant.featuredImage) { imageEl.src = variant.featuredImage; imageEl.srcset = ''; }
-        if (addBtn) {
-          addBtn.disabled = !variant.available;
-          addBtn.textContent = variant.available ? 'Add to cart' : 'Sold out';
-        }
-        if (summary) summary.textContent = shortSize(state.size) + (state.thickness ? ' · ' + state.thickness : '');
-        try {
-          var url = new URL(window.location.href);
-          url.searchParams.set('variant', variant.id);
-          window.history.replaceState({}, '', url.toString());
-        } catch (e) {}
-      }
-
-      function syncSelection() {
-        var sizes = sizesForMode(state.mode, state.thickness);
-        if (!sizes.length) {
-          state.size = null;
-          sizeGrid.innerHTML = '<p class="muted">No sizes for this combination.</p>';
-          if (sizeHint) sizeHint.textContent = '';
-          return;
-        }
-        if (!state.size || sizes.indexOf(state.size) === -1) state.size = sizes[0];
-        if (sizeHint) sizeHint.textContent = sizes.length + ' sizes';
-        renderSizes(sizes);
-        applyVariant(findVariant(state.mode, state.size, state.thickness));
-      }
-
-      function renderSizes(sizes) {
-        sizeGrid.innerHTML = '';
-        sizes.forEach(function (size) {
-          var v = findVariant(state.mode, size, state.thickness);
-          var btn = document.createElement('button');
-          btn.type = 'button';
-          btn.className = 'pb-size' + (state.size === size ? ' is-selected' : '');
-          btn.setAttribute('role', 'option');
-          btn.setAttribute('aria-selected', state.size === size ? 'true' : 'false');
-          btn.innerHTML =
-            '<span class="pb-size__copy"><strong>' + shortSize(size) + '</strong><span>' + size + '</span></span>' +
-            '<span class="pb-size__price">' + (v ? v.priceFormatted : '') + '</span>';
-          btn.addEventListener('click', function () {
-            state.size = size;
-            renderSizes(sizes);
-            applyVariant(findVariant(state.mode, size, state.thickness));
-          });
-          sizeGrid.appendChild(btn);
-        });
-      }
-
-      orientBtns.forEach(function (btn) {
-        btn.addEventListener('click', function () {
-          state.mode = btn.getAttribute('data-orient');
-          orientBtns.forEach(function (b) {
-            var on = b === btn;
-            b.classList.toggle('is-selected', on);
-            b.setAttribute('aria-pressed', on ? 'true' : 'false');
-          });
-          syncSelection();
-        });
-      });
-      thickBtns.forEach(function (btn) {
-        btn.addEventListener('click', function () {
-          state.thickness = btn.getAttribute('data-thickness');
-          thickBtns.forEach(function (b) {
-            var on = b === btn;
-            b.classList.toggle('is-selected', on);
-            b.setAttribute('aria-pressed', on ? 'true' : 'false');
-          });
-          syncSelection();
-        });
-      });
-
-      var currentId = idInput ? Number(idInput.value) : null;
-      var params = new URLSearchParams(window.location.search);
-      var paramOrient = (params.get('orientation') || '').toLowerCase();
-      var paramThick = (params.get('thickness') || '').toLowerCase();
-      var paramSize = params.get('size');
-      var current = classified.find(function (c) { return c.variant.id === currentId; }) || classified[0];
-
-      if (paramOrient === 'portrait' || paramOrient === 'landscape' || paramOrient === 'square') state.mode = paramOrient;
-      else if (current) {
-        if (current.square) state.mode = 'square';
-        else if (current.orient === 'landscape') state.mode = 'landscape';
-        else state.mode = 'portrait';
-      }
-      if (thickBtns.length) {
-        if (paramThick === 'slim' || paramThick === 'thick') state.thickness = paramThick;
-        else state.thickness = (current && current.thickness) || 'slim';
-      }
-      if (paramSize) state.size = paramSize;
-      else if (current) state.size = current.size;
-
-      orientBtns.forEach(function (b) {
-        var on = b.getAttribute('data-orient') === state.mode;
-        b.classList.toggle('is-selected', on);
-        b.setAttribute('aria-pressed', on ? 'true' : 'false');
-      });
-      thickBtns.forEach(function (b) {
-        var on = b.getAttribute('data-thickness') === state.thickness;
-        b.classList.toggle('is-selected', on);
-        b.setAttribute('aria-pressed', on ? 'true' : 'false');
-      });
-      syncSelection();
-    })();
-  </script>
+  {% render 'variant-picker-script', section_id: section.id %}
 {% endif %}
 
 {% schema %}
