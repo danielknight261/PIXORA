@@ -23,7 +23,15 @@
         | image_tag: loading: 'lazy', alt: product.featured_media.alt | default: product.title
       }}
     {% else %}
-      {% render 'mock-image', product: product, class: 'product-card__mock', width: 800 %}
+      {% capture card_thumb %}
+        {% render 'category-thumb', handle: product.handle, alt: product.title, class: 'product-card__mock', width: 800 %}
+      {% endcapture %}
+      {% assign card_thumb = card_thumb | strip %}
+      {% if card_thumb != blank %}
+        {{ card_thumb }}
+      {% else %}
+        {% render 'mock-image', product: product, class: 'product-card__mock', width: 800 %}
+      {% endif %}
     {% endif %}
     {% if show_options and has_orientation %}
       <div class="product-card__badges" aria-hidden="true">

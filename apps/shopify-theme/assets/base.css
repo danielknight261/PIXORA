@@ -1165,6 +1165,38 @@ img {
   transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
 
+.wall-art-card--photo {
+  padding: 0 0 1.15rem;
+  overflow: hidden;
+}
+
+.wall-art-card__media {
+  display: block;
+  aspect-ratio: 1;
+  margin: 0 0 0.75rem;
+  background:
+    radial-gradient(circle at 20% 20%, rgb(31 75 122 / 0.14), transparent 48%),
+    radial-gradient(circle at 80% 75%, rgb(196 92 38 / 0.12), transparent 42%),
+    #eef2f7;
+  overflow: hidden;
+}
+
+.wall-art-card__media img,
+.wall-art-card__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.wall-art-card--photo .wall-art-card__title,
+.wall-art-card--photo .wall-art-card__price,
+.wall-art-card--photo .wall-art-card__desc,
+.wall-art-card--photo .wall-art-card__cta {
+  padding-left: 1.15rem;
+  padding-right: 1.15rem;
+}
+
 .wall-art-card:hover {
   transform: translateY(-2px);
   box-shadow: var(--shadow-card-hover);

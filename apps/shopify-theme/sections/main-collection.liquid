@@ -71,7 +71,16 @@
 -%}
 
 <section class="main-collection{% if is_canvas or is_wall_art or is_posters or is_framed_prints or is_framed_canvas or is_aluminum or is_foam or is_acrylic or is_wood or is_hangers or is_mugs or is_water_bottles or is_home_gifts or is_phone_cases or is_tote_bags or is_prodigi_hub %} main-collection--canvas{% endif %}">
-  {% if is_canvas %}
+  {% if handle == 'frontpage' %}
+    <script>
+      window.location.replace({{ routes.root_url | json }});
+    </script>
+    <div class="page-width collection-body" style="padding: 3rem 0;">
+      <p class="muted">Taking you to the shop…</p>
+      <a class="button button--primary" href="{{ routes.root_url }}">{{ 'general.continue_shopping' | t }}</a>
+    </div>
+
+  {% elsif is_canvas %}
     {%- comment -%} Skip chooser — send shoppers straight to the canvas product PDP. {%- endcomment -%}
     <script>
       window.location.replace('/products/canvas-20x20-cm-8x8');
@@ -539,85 +548,85 @@
     -%}
     <div class="page-width collection-body">
       <div class="wall-art-grid">
-        <a class="wall-art-card wall-art-card--live" href="/collections/mugs">
-          <span class="wall-art-card__swatch wall-art-card__swatch--magenta" aria-hidden="true"></span>
+        <a class="wall-art-card wall-art-card--live wall-art-card--photo" href="/collections/mugs">
+          <span class="wall-art-card__media" aria-hidden="true">{% render 'category-thumb', handle: 'mugs', alt: 'Mugs', class: 'wall-art-card__img', width: 640 %}</span>
           <span class="wall-art-card__title">Mugs</span>
           {% if mugs_from != blank %}<span class="wall-art-card__price">{{ mugs_from }}</span>{% endif %}
           <span class="wall-art-card__desc">Classic &amp; colour-inside ceramics</span>
           <span class="wall-art-card__cta">Choose mug →</span>
         </a>
-        <a class="wall-art-card wall-art-card--live" href="/products/white-17oz-stainless-steel-water-bottle">
-          <span class="wall-art-card__swatch wall-art-card__swatch--slate" aria-hidden="true"></span>
+        <a class="wall-art-card wall-art-card--live wall-art-card--photo" href="/products/white-17oz-stainless-steel-water-bottle">
+          <span class="wall-art-card__media" aria-hidden="true">{% render 'category-thumb', handle: 'white-17oz-stainless-steel-water-bottle', alt: 'Water bottles', class: 'wall-art-card__img', width: 640 %}</span>
           <span class="wall-art-card__title">Water bottles</span>
           {% if bottle_from != blank %}<span class="wall-art-card__price">{{ bottle_from }}</span>{% endif %}
           <span class="wall-art-card__desc">17 oz stainless steel · personalize</span>
           <span class="wall-art-card__cta">{{ 'general.personalise' | t }} →</span>
         </a>
-        <a class="wall-art-card wall-art-card--live" href="/collections/phone-cases">
-          <span class="wall-art-card__swatch wall-art-card__swatch--cyan" aria-hidden="true"></span>
+        <a class="wall-art-card wall-art-card--live wall-art-card--photo" href="/collections/phone-cases">
+          <span class="wall-art-card__media" aria-hidden="true">{% render 'category-thumb', handle: 'phone-cases', alt: 'Phone cases', class: 'wall-art-card__img', width: 640 %}</span>
           <span class="wall-art-card__title">Phone cases</span>
           {% if cases_from != blank %}<span class="wall-art-card__price">{{ cases_from }}</span>{% endif %}
           <span class="wall-art-card__desc">Apple &amp; Samsung · multiple styles</span>
           <span class="wall-art-card__cta">Choose case →</span>
         </a>
-        <a class="wall-art-card wall-art-card--live" href="/collections/tote-bags">
-          <span class="wall-art-card__swatch wall-art-card__swatch--rose" aria-hidden="true"></span>
+        <a class="wall-art-card wall-art-card--live wall-art-card--photo" href="/collections/tote-bags">
+          <span class="wall-art-card__media" aria-hidden="true">{% render 'category-thumb', handle: 'tote-bags', alt: 'Tote bags', class: 'wall-art-card__img', width: 640 %}</span>
           <span class="wall-art-card__title">Tote bags</span>
           {% if totes_from != blank %}<span class="wall-art-card__price">{{ totes_from }}</span>{% endif %}
           <span class="wall-art-card__desc">Classic &amp; premium · personalize</span>
           <span class="wall-art-card__cta">Choose tote →</span>
         </a>
-        <a class="wall-art-card wall-art-card--live" href="/collections/stickers">
-          <span class="wall-art-card__swatch wall-art-card__swatch--mint" aria-hidden="true"></span>
+        <a class="wall-art-card wall-art-card--live wall-art-card--photo" href="/collections/stickers">
+          <span class="wall-art-card__media" aria-hidden="true">{% render 'category-thumb', handle: 'stickers', alt: 'Stickers', class: 'wall-art-card__img', width: 640 %}</span>
           <span class="wall-art-card__title">Stickers</span>
           {% if stickers_from != blank %}<span class="wall-art-card__price">{{ stickers_from }}</span>{% endif %}
           <span class="wall-art-card__desc">Kiss-cut vinyl · matt or gloss</span>
           <span class="wall-art-card__cta">Choose size →</span>
         </a>
-        <a class="wall-art-card wall-art-card--live" href="/collections/tattoos">
-          <span class="wall-art-card__swatch wall-art-card__swatch--rose" aria-hidden="true"></span>
+        <a class="wall-art-card wall-art-card--live wall-art-card--photo" href="/collections/tattoos">
+          <span class="wall-art-card__media" aria-hidden="true">{% render 'category-thumb', handle: 'tattoos', alt: 'Temporary tattoos', class: 'wall-art-card__img', width: 640 %}</span>
           <span class="wall-art-card__title">Temporary tattoos</span>
           {% if tattoos_from != blank %}<span class="wall-art-card__price">{{ tattoos_from }}</span>{% endif %}
           <span class="wall-art-card__desc">Skin-safe · five sizes</span>
           <span class="wall-art-card__cta">{{ 'general.personalise' | t }} →</span>
         </a>
-        <a class="wall-art-card wall-art-card--live" href="/collections/magnets">
-          <span class="wall-art-card__swatch wall-art-card__swatch--slate" aria-hidden="true"></span>
+        <a class="wall-art-card wall-art-card--live wall-art-card--photo" href="/collections/magnets">
+          <span class="wall-art-card__media" aria-hidden="true">{% render 'category-thumb', handle: 'magnets', alt: 'Magnets', class: 'wall-art-card__img', width: 640 %}</span>
           <span class="wall-art-card__title">Magnets</span>
           {% if magnets_from != blank %}<span class="wall-art-card__price">{{ magnets_from }}</span>{% endif %}
           <span class="wall-art-card__desc">Photo fridge magnets</span>
           <span class="wall-art-card__cta">{{ 'general.personalise' | t }} →</span>
         </a>
-        <a class="wall-art-card wall-art-card--live" href="/collections/photo-tiles">
-          <span class="wall-art-card__swatch wall-art-card__swatch--cyan" aria-hidden="true"></span>
+        <a class="wall-art-card wall-art-card--live wall-art-card--photo" href="/collections/photo-tiles">
+          <span class="wall-art-card__media" aria-hidden="true">{% render 'category-thumb', handle: 'photo-tiles', alt: 'Photo tiles', class: 'wall-art-card__img', width: 640 %}</span>
           <span class="wall-art-card__title">Photo tiles</span>
           {% if tiles_from != blank %}<span class="wall-art-card__price">{{ tiles_from }}</span>{% endif %}
           <span class="wall-art-card__desc">Restickable framed tiles</span>
           <span class="wall-art-card__cta">{{ 'general.personalise' | t }} →</span>
         </a>
-        <a class="wall-art-card wall-art-card--live" href="/collections/cushions">
-          <span class="wall-art-card__swatch wall-art-card__swatch--magenta" aria-hidden="true"></span>
+        <a class="wall-art-card wall-art-card--live wall-art-card--photo" href="/collections/cushions">
+          <span class="wall-art-card__media" aria-hidden="true">{% render 'category-thumb', handle: 'cushions', alt: 'Cushions', class: 'wall-art-card__img', width: 640 %}</span>
           <span class="wall-art-card__title">Cushions</span>
           {% if cushions_from != blank %}<span class="wall-art-card__price">{{ cushions_from }}</span>{% endif %}
           <span class="wall-art-card__desc">Faux suede · photo print</span>
           <span class="wall-art-card__cta">{{ 'general.personalise' | t }} →</span>
         </a>
-        <a class="wall-art-card wall-art-card--live" href="/collections/acrylic-prisms">
-          <span class="wall-art-card__swatch wall-art-card__swatch--blue" aria-hidden="true"></span>
+        <a class="wall-art-card wall-art-card--live wall-art-card--photo" href="/collections/acrylic-prisms">
+          <span class="wall-art-card__media" aria-hidden="true">{% render 'category-thumb', handle: 'acrylic-prisms', alt: 'Acrylic prisms', class: 'wall-art-card__img', width: 640 %}</span>
           <span class="wall-art-card__title">Acrylic prisms</span>
           {% if prisms_from != blank %}<span class="wall-art-card__price">{{ prisms_from }}</span>{% endif %}
           <span class="wall-art-card__desc">Desk photo blocks · 1″ acrylic</span>
           <span class="wall-art-card__cta">{{ 'general.personalise' | t }} →</span>
         </a>
-        <a class="wall-art-card wall-art-card--live" href="/collections/jigsaws">
-          <span class="wall-art-card__swatch wall-art-card__swatch--mint" aria-hidden="true"></span>
+        <a class="wall-art-card wall-art-card--live wall-art-card--photo" href="/collections/jigsaws">
+          <span class="wall-art-card__media" aria-hidden="true">{% render 'category-thumb', handle: 'jigsaws', alt: 'Jigsaws', class: 'wall-art-card__img', width: 640 %}</span>
           <span class="wall-art-card__title">Jigsaws</span>
           {% if jigsaws_from != blank %}<span class="wall-art-card__price">{{ jigsaws_from }}</span>{% endif %}
           <span class="wall-art-card__desc">30 to 1000 pieces · tin</span>
           <span class="wall-art-card__cta">{{ 'general.personalise' | t }} →</span>
         </a>
-        <a class="wall-art-card wall-art-card--live" href="/collections/towels">
-          <span class="wall-art-card__swatch wall-art-card__swatch--cyan" aria-hidden="true"></span>
+        <a class="wall-art-card wall-art-card--live wall-art-card--photo" href="/collections/towels">
+          <span class="wall-art-card__media" aria-hidden="true">{% render 'category-thumb', handle: 'towels', alt: 'Towels', class: 'wall-art-card__img', width: 640 %}</span>
           <span class="wall-art-card__title">Towels</span>
           {% if towels_from != blank %}<span class="wall-art-card__price">{{ towels_from }}</span>{% endif %}
           <span class="wall-art-card__desc">Beach &amp; hand towels</span>
@@ -1121,8 +1130,8 @@
 
     <div class="page-width collection-body">
       <div class="wall-art-grid">
-        <a class="wall-art-card wall-art-card--live" href="/products/canvas-20x20-cm-8x8">
-          <span class="wall-art-card__swatch wall-art-card__swatch--blue" aria-hidden="true"></span>
+        <a class="wall-art-card wall-art-card--live wall-art-card--photo" href="/products/canvas-20x20-cm-8x8">
+          <span class="wall-art-card__media" aria-hidden="true">{% render 'category-thumb', handle: 'canvas-20x20-cm-8x8', alt: 'Canvas prints', class: 'wall-art-card__img', width: 640 %}</span>
           <span class="wall-art-card__title">Canvas prints</span>
           {% if canvas_from != blank %}
             <span class="wall-art-card__price">{{ canvas_from }}</span>
@@ -1130,8 +1139,8 @@
           <span class="wall-art-card__desc">26 sizes · slim &amp; thick · personalize</span>
           <span class="wall-art-card__cta">Choose size →</span>
         </a>
-        <a class="wall-art-card wall-art-card--live" href="/products/framed-canvas">
-          <span class="wall-art-card__swatch wall-art-card__swatch--cyan" aria-hidden="true"></span>
+        <a class="wall-art-card wall-art-card--live wall-art-card--photo" href="/products/framed-canvas">
+          <span class="wall-art-card__media" aria-hidden="true">{% render 'category-thumb', handle: 'framed-canvas', alt: 'Framed canvas', class: 'wall-art-card__img', width: 640 %}</span>
           <span class="wall-art-card__title">Framed canvas</span>
           {% if framed_canvas_from != blank %}
             <span class="wall-art-card__price">{{ framed_canvas_from }}</span>
@@ -1139,8 +1148,8 @@
           <span class="wall-art-card__desc">Tray frame · 3 colours · personalize</span>
           <span class="wall-art-card__cta">Choose frame →</span>
         </a>
-        <a class="wall-art-card wall-art-card--live" href="/collections/framed-prints">
-          <span class="wall-art-card__swatch wall-art-card__swatch--mint" aria-hidden="true"></span>
+        <a class="wall-art-card wall-art-card--live wall-art-card--photo" href="/collections/framed-prints">
+          <span class="wall-art-card__media" aria-hidden="true">{% render 'category-thumb', handle: 'framed-prints', alt: 'Framed prints', class: 'wall-art-card__img', width: 640 %}</span>
           <span class="wall-art-card__title">Framed prints</span>
           {% if framed_from != blank %}
             <span class="wall-art-card__price">{{ framed_from }}</span>
@@ -1148,8 +1157,8 @@
           <span class="wall-art-card__desc">Wood &amp; metal frames · personalize</span>
           <span class="wall-art-card__cta">Choose finish →</span>
         </a>
-        <a class="wall-art-card wall-art-card--live" href="/collections/photo-tiles">
-          <span class="wall-art-card__swatch wall-art-card__swatch--rose" aria-hidden="true"></span>
+        <a class="wall-art-card wall-art-card--live wall-art-card--photo" href="/collections/photo-tiles">
+          <span class="wall-art-card__media" aria-hidden="true">{% render 'category-thumb', handle: 'photo-tiles', alt: 'Photo tiles', class: 'wall-art-card__img', width: 640 %}</span>
           <span class="wall-art-card__title">Photo tiles</span>
           {% if tiles_from != blank %}
             <span class="wall-art-card__price">{{ tiles_from }}</span>
@@ -1157,8 +1166,8 @@
           <span class="wall-art-card__desc">Restickable framed tiles</span>
           <span class="wall-art-card__cta">{{ 'general.personalise' | t }} →</span>
         </a>
-        <a class="wall-art-card wall-art-card--live" href="/collections/aluminum-prints">
-          <span class="wall-art-card__swatch wall-art-card__swatch--slate" aria-hidden="true"></span>
+        <a class="wall-art-card wall-art-card--live wall-art-card--photo" href="/collections/aluminum-prints">
+          <span class="wall-art-card__media" aria-hidden="true">{% render 'category-thumb', handle: 'aluminum-prints', alt: 'Metal / aluminium', class: 'wall-art-card__img', width: 640 %}</span>
           <span class="wall-art-card__title">Metal / aluminium</span>
           {% if aluminum_from != blank %}
             <span class="wall-art-card__price">{{ aluminum_from }}</span>
@@ -1166,8 +1175,8 @@
           <span class="wall-art-card__desc">Smooth &amp; brushed panels</span>
           <span class="wall-art-card__cta">Choose finish →</span>
         </a>
-        <a class="wall-art-card wall-art-card--live" href="/products/acrylic-print">
-          <span class="wall-art-card__swatch wall-art-card__swatch--cyan" aria-hidden="true"></span>
+        <a class="wall-art-card wall-art-card--live wall-art-card--photo" href="/products/acrylic-print">
+          <span class="wall-art-card__media" aria-hidden="true">{% render 'category-thumb', handle: 'acrylic-print', alt: 'Acrylic prints', class: 'wall-art-card__img', width: 640 %}</span>
           <span class="wall-art-card__title">Acrylic prints</span>
           {% if acrylic_from != blank %}
             <span class="wall-art-card__price">{{ acrylic_from }}</span>
@@ -1175,8 +1184,8 @@
           <span class="wall-art-card__desc">Glossy, vivid colour</span>
           <span class="wall-art-card__cta">Choose size →</span>
         </a>
-        <a class="wall-art-card wall-art-card--live" href="/collections/posters">
-          <span class="wall-art-card__swatch wall-art-card__swatch--rose" aria-hidden="true"></span>
+        <a class="wall-art-card wall-art-card--live wall-art-card--photo" href="/collections/posters">
+          <span class="wall-art-card__media" aria-hidden="true">{% render 'category-thumb', handle: 'posters', alt: 'Posters', class: 'wall-art-card__img', width: 640 %}</span>
           <span class="wall-art-card__title">Posters</span>
           {% if posters_from != blank %}
             <span class="wall-art-card__price">{{ posters_from }}</span>
@@ -1184,8 +1193,8 @@
           <span class="wall-art-card__desc">Paper finishes · many sizes · personalize</span>
           <span class="wall-art-card__cta">Choose finish →</span>
         </a>
-        <a class="wall-art-card wall-art-card--live" href="/products/premium-matte-paper-poster-with-hanger">
-          <span class="wall-art-card__swatch wall-art-card__swatch--magenta" aria-hidden="true"></span>
+        <a class="wall-art-card wall-art-card--live wall-art-card--photo" href="/products/premium-matte-paper-poster-with-hanger">
+          <span class="wall-art-card__media" aria-hidden="true">{% render 'category-thumb', handle: 'premium-matte-paper-poster-with-hanger', alt: 'Posters with hangers', class: 'wall-art-card__img', width: 640 %}</span>
           <span class="wall-art-card__title">Posters with hangers</span>
           {% if hangers_from != blank %}
             <span class="wall-art-card__price">{{ hangers_from }}</span>
@@ -1193,8 +1202,8 @@
           <span class="wall-art-card__desc">Matte paper · hanger colours</span>
           <span class="wall-art-card__cta">Choose hanger →</span>
         </a>
-        <a class="wall-art-card wall-art-card--live" href="/collections/foam-prints">
-          <span class="wall-art-card__swatch wall-art-card__swatch--blue" aria-hidden="true"></span>
+        <a class="wall-art-card wall-art-card--live wall-art-card--photo" href="/collections/foam-prints">
+          <span class="wall-art-card__media" aria-hidden="true">{% render 'category-thumb', handle: 'foam-prints', alt: 'Foam prints', class: 'wall-art-card__img', width: 640 %}</span>
           <span class="wall-art-card__title">Foam prints</span>
           {% if foam_from != blank %}
             <span class="wall-art-card__price">{{ foam_from }}</span>
@@ -1202,8 +1211,8 @@
           <span class="wall-art-card__desc">Portrait · landscape · square</span>
           <span class="wall-art-card__cta">Choose style →</span>
         </a>
-        <a class="wall-art-card wall-art-card--live" href="/products/wood-prints">
-          <span class="wall-art-card__swatch wall-art-card__swatch--mint" aria-hidden="true"></span>
+        <a class="wall-art-card wall-art-card--live wall-art-card--photo" href="/products/wood-prints">
+          <span class="wall-art-card__media" aria-hidden="true">{% render 'category-thumb', handle: 'wood-prints', alt: 'Wood prints', class: 'wall-art-card__img', width: 640 %}</span>
           <span class="wall-art-card__title">Wood prints</span>
           {% if wood_from != blank %}
             <span class="wall-art-card__price">{{ wood_from }}</span>

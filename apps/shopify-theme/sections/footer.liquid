@@ -59,7 +59,7 @@
 
   <div class="site-footer__bottom">
     <div class="page-width site-footer__bottom-inner">
-      <p class="site-footer__copy">&copy; {{ 'now' | date: '%Y' }} {{ shop.name }}. {{ 'footer.rights' | t }}</p>
+      <p class="site-footer__copy">&copy; {{ 'now' | date: '%Y' }} {{ settings.brand_name | default: shop.name }}. {{ 'footer.rights' | t }}</p>
       <div class="site-footer__locale">
         {% render 'localization-form', unique: 'footer' %}
       </div>
