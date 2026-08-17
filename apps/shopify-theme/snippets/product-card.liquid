@@ -38,7 +38,7 @@
     <p class="product-card__price">{% render 'price', product: product %}</p>
     {% if show_options and has_size %}
       <p class="product-card__meta">
-        {% if variant_count > 1 %}{{ variant_count }} sizes &amp; orientations · {% endif %}Personalize
+        {% if variant_count > 1 %}{{ variant_count }} sizes &amp; orientations · {% endif %}{{ 'general.personalise' | t }}
       </p>
     {% endif %}
   </div>

@@ -43,7 +43,7 @@
   assign title_down = product.title | downcase
   assign is_sticker = false
   assign is_prodigi = false
-  if product.tags contains 'prodigi'
+  if product.tags contains 'prodigi' or product.tags contains 'printful'
     assign is_prodigi = true
     assign is_variant_picker = false
   endif
@@ -444,9 +444,9 @@
                   {% if current_variant.available == false %}disabled{% endif %}
                 >
                   {% if current_variant.available %}
-                    Add to cart
+                    {{ 'products.add_to_cart' | t }}
                   {% else %}
-                    Sold out
+                    {{ 'products.sold_out' | t }}
                   {% endif %}
                 </button>
               </div>
@@ -456,7 +456,7 @@
             </p>
             <input
               type="hidden"
-              name="properties[Personalized print]"
+              name="properties[Personalised print]"
               value="We have your uploaded image and will print from the mockup you created — not the stock product photo."
             >
           {% endform %}
@@ -618,6 +618,14 @@
         assign gift_crumb_label = 'Jigsaws'
         assign gift_crumb_url = '/collections/jigsaws'
         assign prodigi_caption = 'Jigsaw in a metal tin'
+      elsif handle_down contains 'hand-towel'
+        assign gift_crumb_label = 'Towels'
+        assign gift_crumb_url = '/collections/towels'
+        assign prodigi_caption = 'Sublimation hand towel · 28″ × 16″'
+      elsif handle_down contains 'towel'
+        assign gift_crumb_label = 'Towels'
+        assign gift_crumb_url = '/collections/towels'
+        assign prodigi_caption = 'All-over sublimation beach towel'
       endif
     -%}
     <div class="page-width product{% if is_prodigi_gift %} product--sticker{% endif %}" id="Product-{{ section.id }}">
@@ -658,7 +666,7 @@
         <h1 class="product__title">{{ product.title }}</h1>
         <p class="product__price" data-product-price>{{ current_variant.price | money }}</p>
         {% if is_prodigi_gift %}
-          <p class="product__lead">Upload your photo as a JPG or PNG. We’ll mock up your design and confirm it with you before we dispatch.</p>
+          <p class="product__lead">{{ 'products.lead' | t }}</p>
         {% endif %}
         {% if product.description != blank %}
           <div class="product__description rte">{{ product.description }}</div>
@@ -720,7 +728,7 @@
           {% endunless %}
           {% if is_prodigi_gift %}
             <div class="prodigi-upload" data-sticker-upload>
-              <label class="field-label" for="ProdigiArtwork-{{ section.id }}">Your photo</label>
+              <label class="field-label" for="ProdigiArtwork-{{ section.id }}">{{ 'products.your_photo' | t }}</label>
               <input
                 id="ProdigiArtwork-{{ section.id }}"
                 class="prodigi-upload__input"
@@ -731,13 +739,13 @@
                 required
               >
               <p class="pb-canvas__vat muted">
-                We’ll mock up your design and confirm it with you before we dispatch — we won’t print the stock product photo.
+                {{ 'products.upload_confirm' | t }}
               </p>
               <p class="prodigi-upload__status" data-sticker-status hidden></p>
               <input type="hidden" name="properties[Artwork name]" value="" data-sticker-filename>
               <input
                 type="hidden"
-                name="properties[Personalized print]"
+                name="properties[Personalised print]"
                 value="We’ll mock up your design and confirm it with you before dispatch — not the stock product photo."
               >
             </div>
@@ -751,9 +759,9 @@
             {% if current_variant.available == false or is_prodigi_gift %}disabled{% endif %}
           >
             {% if current_variant.available %}
-              Add to cart
+              {{ 'products.add_to_cart' | t }}
             {% else %}
-              Sold out
+              {{ 'products.sold_out' | t }}
             {% endif %}
           </button>
         {% endform %}
@@ -799,15 +807,15 @@
             if (addBtn && addBtn.hasAttribute('data-sticker-gate')) {
               if (!v.available) {
                 addBtn.disabled = true;
-                addBtn.textContent = 'Sold out';
+                addBtn.textContent = (window.PIXORA_I18N && window.PIXORA_I18N.soldOut) || 'Sold out';
               } else {
                 var ready = addBtn.getAttribute('data-sticker-ready') === 'true';
                 addBtn.disabled = !ready;
-                addBtn.textContent = 'Add to cart';
+                addBtn.textContent = (window.PIXORA_I18N && window.PIXORA_I18N.addToCart) || 'Add to cart';
               }
             } else if (addBtn) {
               addBtn.disabled = !v.available;
-              addBtn.textContent = v.available ? 'Add to cart' : 'Sold out';
+              addBtn.textContent = v.available ? ((window.PIXORA_I18N && window.PIXORA_I18N.addToCart) || 'Add to cart') : ((window.PIXORA_I18N && window.PIXORA_I18N.soldOut) || 'Sold out');
             }
             btns.forEach(function (b) {
               var on = b.getAttribute('data-gift-color-value') === value;
@@ -868,15 +876,15 @@
             if (addBtn && addBtn.hasAttribute('data-sticker-gate')) {
               if (!v.available) {
                 addBtn.disabled = true;
-                addBtn.textContent = 'Sold out';
+                addBtn.textContent = (window.PIXORA_I18N && window.PIXORA_I18N.soldOut) || 'Sold out';
               } else {
                 var ready = addBtn.getAttribute('data-sticker-ready') === 'true';
                 addBtn.disabled = !ready;
-                addBtn.textContent = 'Add to cart';
+                addBtn.textContent = (window.PIXORA_I18N && window.PIXORA_I18N.addToCart) || 'Add to cart';
               }
             } else if (addBtn) {
               addBtn.disabled = !v.available;
-              addBtn.textContent = v.available ? 'Add to cart' : 'Sold out';
+              addBtn.textContent = v.available ? ((window.PIXORA_I18N && window.PIXORA_I18N.addToCart) || 'Add to cart') : ((window.PIXORA_I18N && window.PIXORA_I18N.soldOut) || 'Sold out');
             }
           }
           selects.forEach(function (s) { s.addEventListener('change', apply); });

@@ -113,6 +113,41 @@ img {
   gap: 0.35rem;
 }
 
+.localization {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  margin-right: 0.25rem;
+}
+
+.localization__select {
+  font: inherit;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--color-muted);
+  background: var(--paper);
+  border: 1px solid var(--color-border);
+  border-radius: 0.55rem;
+  padding: 0.38rem 0.45rem;
+  max-width: 9.5rem;
+  cursor: pointer;
+}
+
+.localization__select:hover,
+.localization__select:focus {
+  color: var(--color-brand-nav);
+  border-color: var(--color-brand-nav);
+  outline: none;
+}
+
+@media (max-width: 639px) {
+  .localization__select {
+    max-width: 5.75rem;
+    font-size: 0.72rem;
+    padding: 0.32rem 0.3rem;
+  }
+}
+
 .site-header__util-link {
   display: inline-flex;
   align-items: center;
@@ -2415,11 +2450,14 @@ body.pixora-qv-open {
   align-items: center;
 }
 
-.site-footer__copy,
-.site-footer__note {
-  margin: 0;
-  font-size: 0.85rem;
-  color: rgb(255 255 255 / 0.55);
+.site-footer .localization__select {
+  background: transparent;
+  color: rgb(255 255 255 / 0.85);
+  border-color: rgb(255 255 255 / 0.25);
+}
+
+.site-footer .localization__select option {
+  color: #12141a;
 }
 
 /* ——— Trust / process / pricing homepage ——— */
@@ -2785,4 +2823,78 @@ body.pixora-qv-open {
 }
 
 /* gallery-nav-v2 */
+
+/* ——— Contact page ——— */
+
+.contact-page__grid {
+  display: grid;
+  gap: 2.5rem;
+  padding: 2.5rem 0 3.5rem;
+}
+
+@media (min-width: 900px) {
+  .contact-page__grid {
+    grid-template-columns: minmax(16rem, 0.85fr) minmax(0, 1.2fr);
+    gap: 3.5rem;
+    align-items: start;
+  }
+}
+
+.contact-page__aside {
+  padding: 1.5rem 1.6rem;
+  background: #fff;
+  border: 1px solid var(--color-border);
+  border-radius: 1rem;
+}
+
+.contact-page__aside-title {
+  font-family: var(--font-heading, inherit);
+  font-size: 1.25rem;
+  line-height: 1.25;
+  margin: 0 0 0.65rem;
+  color: var(--color-dark);
+}
+
+.contact-page__aside p {
+  margin: 0 0 0.85rem;
+  color: var(--color-muted);
+  line-height: 1.55;
+}
+
+.contact-page__aside a {
+  color: var(--color-accent);
+  font-weight: 600;
+}
+
+.contact-page__intro {
+  margin: 0 0 1.5rem;
+}
+
+.contact-form .field-input {
+  max-width: none;
+  margin-bottom: 1.15rem;
+}
+
+.contact-form__message {
+  min-height: 10rem;
+  resize: vertical;
+}
+
+.contact-form__success {
+  margin: 0 0 1.25rem;
+  padding: 0.9rem 1rem;
+  border-radius: 0.85rem;
+  background: #eef6ee;
+  border: 1px solid #c5e0c5;
+  color: var(--color-dark);
+}
+
+.contact-form__errors {
+  margin: 0 0 1.25rem;
+  color: #8a2b2b;
+}
+
+.contact-form .button {
+  margin-top: 0.25rem;
+}
 

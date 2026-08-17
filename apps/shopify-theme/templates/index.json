@@ -205,6 +205,16 @@
             "coming_soon": false
           }
         },
+        "towels": {
+          "type": "product_block",
+          "settings": {
+            "title": "Towels",
+            "price_label": "From £14.95",
+            "link": "/collections/towels",
+            "accent": "cyan",
+            "coming_soon": false
+          }
+        },
         "cards": {
           "type": "product_block",
           "settings": {
@@ -246,6 +256,7 @@
         "cushions",
         "acrylic_prisms",
         "jigsaws",
+        "towels",
         "cards",
         "calendars"
       ],

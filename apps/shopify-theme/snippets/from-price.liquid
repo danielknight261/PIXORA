@@ -47,5 +47,5 @@
   endif
 -%}
 {%- if min_cents != blank -%}
-  From {{ min_cents | money }}
+  {{ 'general.from' | t }} {{ min_cents | money }}
 {%- endif -%}

@@ -1,0 +1,23 @@
+{
+  "general": {
+    "personalise": "Personalize",
+    "personalised": "Personalized"
+  },
+  "header": {
+    "aluminium": "Metal / aluminum",
+    "fallback_canvas": "Sizes, wraps & personalize",
+    "fallback_framed_canvas": "Tray frame · 3 colors",
+    "fallback_acrylic": "Glossy, vivid color",
+    "fallback_hangers": "Matte · hanger colors",
+    "fallback_mugs": "Ceramic · personalize"
+  },
+  "footer": {
+    "tagline": "Create personalized photo products with live preview and premium print quality."
+  },
+  "cart": {
+    "personalised_label": "Personalized — we’ll print from your mockup"
+  },
+  "products": {
+    "upload_confirm": "We’ll mock up your design and confirm it with you before we dispatch — we won’t print the stock product photo."
+  }
+}

@@ -14,6 +14,8 @@
 
   if (form) form.setAttribute('enctype', 'multipart/form-data');
 
+  var i18n = window.PIXORA_I18N || {};
+
   function setReady(ready) {
     if (!addBtn) return;
     addBtn.setAttribute('data-sticker-ready', ready ? 'true' : 'false');
@@ -22,7 +24,7 @@
       return;
     }
     addBtn.disabled = !ready;
-    addBtn.textContent = 'Add to cart';
+    addBtn.textContent = i18n.addToCart || 'Add to cart';
   }
 
   function onFile() {
@@ -44,7 +46,7 @@
       if (filenameInput) filenameInput.value = '';
       if (statusEl) {
         statusEl.hidden = false;
-        statusEl.textContent = 'Please upload a JPG or PNG.';
+        statusEl.textContent = i18n.uploadType || 'Please upload a JPG or PNG.';
       }
       setReady(false);
       return;
@@ -55,7 +57,7 @@
       if (filenameInput) filenameInput.value = '';
       if (statusEl) {
         statusEl.hidden = false;
-        statusEl.textContent = 'That file is too large. Please use a photo under 15 MB.';
+        statusEl.textContent = i18n.fileTooLarge || 'That file is too large. Please use a photo under 15 MB.';
       }
       setReady(false);
       return;
@@ -64,7 +66,10 @@
     if (filenameInput) filenameInput.value = file.name;
     if (statusEl) {
       statusEl.hidden = false;
-      statusEl.textContent = file.name + ' attached. We’ll mock up and confirm before dispatch.';
+      statusEl.textContent = (i18n.fileAttached || '__FILENAME__ attached. We’ll mock up and confirm before dispatch.').replace(
+        '__FILENAME__',
+        file.name
+      );
     }
     setReady(true);
   }

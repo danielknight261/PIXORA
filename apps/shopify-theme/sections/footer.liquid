@@ -4,54 +4,54 @@
       <p class="site-footer__brand">{{ settings.brand_name | default: shop.name }}</p>
       <p class="site-footer__tagline">
         {{ settings.brand_tagline | default: 'Turn Moments Into Keepsakes' }}.
-        Create personalised photo products with live preview and premium print quality.
+        {{ 'footer.tagline' | t }}
       </p>
     </div>
 
     <div class="site-footer__columns">
       <div class="site-footer__col">
-        <h3 class="site-footer__heading">Shop</h3>
+        <h3 class="site-footer__heading">{{ 'general.shop' | t }}</h3>
         <ul class="site-footer__list">
-          <li><a href="/collections/wall-art">Wall art</a></li>
-          <li><a href="/collections/posters">Posters</a></li>
-          <li><a href="/collections/home-gifts">Home &amp; gifts</a></li>
-          <li><a href="/collections/mugs">Mugs</a></li>
-          <li><a href="/collections/phone-cases">Phone cases</a></li>
-          <li><a href="/collections/tote-bags">Tote bags</a></li>
-          <li><a href="/collections/stickers">Stickers</a></li>
-          <li><a href="/collections/acrylic-prisms">Acrylic prisms</a></li>
-          <li><a href="/collections/tattoos">Temporary tattoos</a></li>
-          <li><a href="/collections/occasions">Occasions</a></li>
+          <li><a href="{{ collections['wall-art'].url | default: '/collections/wall-art' }}">{{ 'header.wall_art' | t }}</a></li>
+          <li><a href="{{ collections['posters'].url | default: '/collections/posters' }}">{{ 'header.posters' | t }}</a></li>
+          <li><a href="{{ collections['home-gifts'].url | default: '/collections/home-gifts' }}">{{ 'header.home_gifts' | t }}</a></li>
+          <li><a href="{{ collections['mugs'].url | default: '/collections/mugs' }}">{{ 'header.mugs' | t }}</a></li>
+          <li><a href="{{ collections['phone-cases'].url | default: '/collections/phone-cases' }}">{{ 'header.phone_cases' | t }}</a></li>
+          <li><a href="{{ collections['tote-bags'].url | default: '/collections/tote-bags' }}">{{ 'header.totes' | t }}</a></li>
+          <li><a href="{{ collections['stickers'].url | default: '/collections/stickers' }}">{{ 'header.stickers' | t }}</a></li>
+          <li><a href="{{ collections['acrylic-prisms'].url | default: '/collections/acrylic-prisms' }}">{{ 'header.prisms' | t }}</a></li>
+          <li><a href="{{ collections['towels'].url | default: '/collections/towels' }}">{{ 'header.towels' | t }}</a></li>
+          <li><a href="{{ collections['tattoos'].url | default: '/collections/tattoos' }}">{{ 'header.tattoos' | t }}</a></li>
+          <li><a href="{{ collections['occasions'].url | default: '/collections/occasions' }}">{{ 'header.occasions' | t }}</a></li>
         </ul>
       </div>
 
       <div class="site-footer__col">
-        <h3 class="site-footer__heading">Help</h3>
+        <h3 class="site-footer__heading">{{ 'general.help' | t }}</h3>
         <ul class="site-footer__list">
-          <li><a href="{{ settings.help_link | default: '/pages/contact' }}">Customer service</a></li>
-          <li><a href="/pages/shipping">Shipping &amp; delivery</a></li>
-          <li><a href="/pages/faq">FAQs</a></li>
-          <li><a href="{{ routes.account_url }}">Order status</a></li>
+          <li><a href="{{ settings.help_link | default: '/pages/contact' }}">{{ 'footer.customer_service' | t }}</a></li>
+          <li><a href="/pages/shipping">{{ 'footer.shipping_delivery' | t }}</a></li>
+          <li><a href="/pages/faq">{{ 'footer.faqs' | t }}</a></li>
+          <li><a href="{{ routes.account_url }}">{{ 'general.your_orders' | t }}</a></li>
         </ul>
       </div>
 
       <div class="site-footer__col">
-        <h3 class="site-footer__heading">Account</h3>
+        <h3 class="site-footer__heading">{{ 'general.account' | t }}</h3>
         <ul class="site-footer__list">
-          <li><a href="{{ routes.account_login_url }}">Sign in</a></li>
-          <li><a href="{{ routes.account_register_url }}">Create account</a></li>
-          <li><a href="{{ routes.account_url }}">My account</a></li>
-          <li><a href="{{ routes.cart_url }}">Basket</a></li>
+          <li><a href="{{ routes.account_login_url }}">{{ 'general.sign_in' | t }}</a></li>
+          <li><a href="{{ routes.account_url }}">{{ 'general.your_orders' | t }}</a></li>
+          <li><a href="{{ routes.cart_url }}">{{ 'general.basket' | t }}</a></li>
         </ul>
       </div>
 
       <div class="site-footer__col">
-        <h3 class="site-footer__heading">Legal</h3>
+        <h3 class="site-footer__heading">{{ 'footer.legal' | t }}</h3>
         <ul class="site-footer__list">
-          <li><a href="/policies/privacy-policy">Privacy policy</a></li>
-          <li><a href="/policies/terms-of-service">Terms of service</a></li>
-          <li><a href="/policies/refund-policy">Refund policy</a></li>
-          <li><a href="/policies/shipping-policy">Shipping policy</a></li>
+          <li><a href="/policies/privacy-policy">{{ 'footer.privacy' | t }}</a></li>
+          <li><a href="/policies/terms-of-service">{{ 'footer.terms' | t }}</a></li>
+          <li><a href="/policies/refund-policy">{{ 'footer.refund' | t }}</a></li>
+          <li><a href="/policies/shipping-policy">{{ 'footer.shipping_policy' | t }}</a></li>
         </ul>
       </div>
     </div>
@@ -59,8 +59,11 @@
 
   <div class="site-footer__bottom">
     <div class="page-width site-footer__bottom-inner">
-      <p class="site-footer__copy">&copy; {{ 'now' | date: '%Y' }} {{ shop.name }}. All rights reserved.</p>
-      <p class="site-footer__note">Printed on demand · Premium quality · Delivered to your door</p>
+      <p class="site-footer__copy">&copy; {{ 'now' | date: '%Y' }} {{ shop.name }}. {{ 'footer.rights' | t }}</p>
+      <div class="site-footer__locale">
+        {% render 'localization-form', unique: 'footer' %}
+      </div>
+      <p class="site-footer__note">{{ 'footer.note' | t }}</p>
     </div>
   </div>
 </footer>

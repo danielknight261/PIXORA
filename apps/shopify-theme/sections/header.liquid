@@ -62,6 +62,9 @@
   capture header_jigsaws_from
     render 'from-price', handle: 'jigsaws'
   endcapture
+  capture header_towels_from
+    render 'from-price', handle: 'towels'
+  endcapture
   assign header_canvas_from = header_canvas_from | strip
   assign header_posters_from = header_posters_from | strip
   assign header_framed_canvas_from = header_framed_canvas_from | strip
@@ -82,6 +85,7 @@
   assign header_cushions_from = header_cushions_from | strip
   assign header_prisms_from = header_prisms_from | strip
   assign header_jigsaws_from = header_jigsaws_from | strip
+  assign header_towels_from = header_towels_from | strip
 -%}
 <header class="site-header">
   <div class="site-header__utility">
@@ -96,12 +100,13 @@
       </a>
 
       <div class="site-header__actions">
+        {% render 'localization-form', unique: 'header' %}
         <a class="site-header__util-link" href="{{ settings.help_link | default: '/pages/contact' }}">
-          <span class="site-header__util-label">Help</span>
+          <span class="site-header__util-label">{{ 'general.help' | t }}</span>
         </a>
         <a class="site-header__util-link" href="{{ routes.account_url }}">
           <span class="site-header__util-label">
-            {% if customer %}Account{% else %}Sign in{% endif %}
+            {% if customer %}{{ 'general.your_orders' | t }}{% else %}{{ 'general.sign_in' | t }}{% endif %}
           </span>
         </a>
         <a class="site-header__basket" href="{{ routes.cart_url }}">
@@ -110,7 +115,7 @@
             <circle cx="20" cy="21" r="1"></circle>
             <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
           </svg>
-          <span class="site-header__util-label">Basket</span>
+          <span class="site-header__util-label">{{ 'general.basket' | t }}</span>
           {% if cart.item_count > 0 %}
             <span class="site-header__badge">{{ cart.item_count }}</span>
           {% endif %}
@@ -120,90 +125,90 @@
   </div>
 
   <div class="site-header__categories site-header__categories--desktop">
-    <nav class="page-width site-header__categories-inner" aria-label="Shop categories">
+    <nav class="page-width site-header__categories-inner" aria-label="{{ 'header.shop_categories' | t }}">
       <div class="site-header__cat">
-        <a class="site-header__cat-link site-header__cat-link--wall" href="/collections/wall-art">
-          Wall art
+        <a class="site-header__cat-link site-header__cat-link--wall" href="{{ collections['wall-art'].url | default: '/collections/wall-art' }}">
+          {{ 'header.wall_art' | t }}
           <svg class="site-header__chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
         </a>
         <div class="site-header__panel site-header__panel--wide" role="menu">
-          <p class="site-header__panel-kicker">Print for your walls</p>
+          <p class="site-header__panel-kicker">{{ 'header.print_for_walls' | t }}</p>
           <div class="site-header__panel-grid site-header__panel-grid--3">
             <a class="site-header__tile" href="/products/canvas-20x20-cm-8x8">
               <span class="site-header__swatch site-header__swatch--blue" aria-hidden="true">{% render 'category-thumb', handle: 'canvas-20x20-cm-8x8', alt: 'Canvas prints', class: 'site-header__thumb', width: 160 %}</span>
               <span class="site-header__tile-copy">
-                <span class="site-header__tile-title">Canvas prints</span>
-                <span class="site-header__tile-desc">{% if header_canvas_from != blank %}{{ header_canvas_from }}{% else %}Sizes, wraps &amp; personalize{% endif %}</span>
+                <span class="site-header__tile-title">{{ 'header.canvas' | t }}</span>
+                <span class="site-header__tile-desc">{% if header_canvas_from != blank %}{{ header_canvas_from }}{% else %}{{ 'header.fallback_canvas' | t }}{% endif %}</span>
               </span>
             </a>
             <a class="site-header__tile" href="/collections/posters">
               <span class="site-header__swatch site-header__swatch--rose" aria-hidden="true">{% render 'category-thumb', handle: 'posters', alt: 'Posters', class: 'site-header__thumb', width: 160 %}</span>
               <span class="site-header__tile-copy">
-                <span class="site-header__tile-title">Posters</span>
-                <span class="site-header__tile-desc">{% if header_posters_from != blank %}{{ header_posters_from }} · 3 finishes{% else %}Matte, fine art &amp; semi-glossy{% endif %}</span>
+                <span class="site-header__tile-title">{{ 'header.posters' | t }}</span>
+                <span class="site-header__tile-desc">{% if header_posters_from != blank %}{{ header_posters_from }} · 3 finishes{% else %}{{ 'header.fallback_posters' | t }}{% endif %}</span>
               </span>
             </a>
             <a class="site-header__tile" href="/collections/framed-canvas">
               <span class="site-header__swatch site-header__swatch--cyan" aria-hidden="true">{% render 'category-thumb', handle: 'framed-canvas', alt: 'Framed canvas', class: 'site-header__thumb', width: 160 %}</span>
               <span class="site-header__tile-copy">
-                <span class="site-header__tile-title">Framed canvas</span>
-                <span class="site-header__tile-desc">{% if header_framed_canvas_from != blank %}{{ header_framed_canvas_from }} · tray frame{% else %}Tray frame · 3 colours{% endif %}</span>
+                <span class="site-header__tile-title">{{ 'header.framed_canvas' | t }}</span>
+                <span class="site-header__tile-desc">{% if header_framed_canvas_from != blank %}{{ header_framed_canvas_from }} · tray frame{% else %}{{ 'header.fallback_framed_canvas' | t }}{% endif %}</span>
               </span>
             </a>
             <a class="site-header__tile" href="/collections/framed-prints">
               <span class="site-header__swatch site-header__swatch--mint" aria-hidden="true">{% render 'category-thumb', handle: 'framed-prints', alt: 'Framed prints', class: 'site-header__thumb', width: 160 %}</span>
               <span class="site-header__tile-copy">
-                <span class="site-header__tile-title">Framed prints</span>
-                <span class="site-header__tile-desc">{% if header_framed_from != blank %}{{ header_framed_from }} · wood &amp; metal{% else %}Wood &amp; metal frames{% endif %}</span>
+                <span class="site-header__tile-title">{{ 'header.framed_prints' | t }}</span>
+                <span class="site-header__tile-desc">{% if header_framed_from != blank %}{{ header_framed_from }} · wood &amp; metal{% else %}{{ 'header.fallback_framed' | t }}{% endif %}</span>
               </span>
             </a>
             <a class="site-header__tile" href="/collections/aluminum-prints">
               <span class="site-header__swatch site-header__swatch--slate" aria-hidden="true">{% render 'category-thumb', handle: 'aluminum-prints', alt: 'Metal / aluminium', class: 'site-header__thumb', width: 160 %}</span>
               <span class="site-header__tile-copy">
-                <span class="site-header__tile-title">Metal / aluminium</span>
-                <span class="site-header__tile-desc">{% if header_aluminum_from != blank %}{{ header_aluminum_from }}{% else %}Smooth &amp; brushed{% endif %}</span>
+                <span class="site-header__tile-title">{{ 'header.aluminium' | t }}</span>
+                <span class="site-header__tile-desc">{% if header_aluminum_from != blank %}{{ header_aluminum_from }}{% else %}{{ 'header.fallback_aluminium' | t }}{% endif %}</span>
               </span>
             </a>
             <a class="site-header__tile" href="/products/acrylic-print">
               <span class="site-header__swatch site-header__swatch--cyan" aria-hidden="true">{% render 'category-thumb', handle: 'acrylic-print', alt: 'Acrylic prints', class: 'site-header__thumb', width: 160 %}</span>
               <span class="site-header__tile-copy">
-                <span class="site-header__tile-title">Acrylic prints</span>
-                <span class="site-header__tile-desc">{% if header_acrylic_from != blank %}{{ header_acrylic_from }}{% else %}Glossy, vivid colour{% endif %}</span>
+                <span class="site-header__tile-title">{{ 'header.acrylic' | t }}</span>
+                <span class="site-header__tile-desc">{% if header_acrylic_from != blank %}{{ header_acrylic_from }}{% else %}{{ 'header.fallback_acrylic' | t }}{% endif %}</span>
               </span>
             </a>
             <a class="site-header__tile" href="/products/premium-matte-paper-poster-with-hanger">
               <span class="site-header__swatch site-header__swatch--magenta" aria-hidden="true">{% render 'category-thumb', handle: 'premium-matte-paper-poster-with-hanger', alt: 'Posters with hangers', class: 'site-header__thumb', width: 160 %}</span>
               <span class="site-header__tile-copy">
-                <span class="site-header__tile-title">Posters with hangers</span>
-                <span class="site-header__tile-desc">{% if header_hangers_from != blank %}{{ header_hangers_from }}{% else %}Matte · hanger colours{% endif %}</span>
+                <span class="site-header__tile-title">{{ 'header.hangers' | t }}</span>
+                <span class="site-header__tile-desc">{% if header_hangers_from != blank %}{{ header_hangers_from }}{% else %}{{ 'header.fallback_hangers' | t }}{% endif %}</span>
               </span>
             </a>
             <a class="site-header__tile" href="/collections/foam-prints">
               <span class="site-header__swatch site-header__swatch--blue" aria-hidden="true">{% render 'category-thumb', handle: 'foam-prints', alt: 'Foam prints', class: 'site-header__thumb', width: 160 %}</span>
               <span class="site-header__tile-copy">
-                <span class="site-header__tile-title">Foam prints</span>
-                <span class="site-header__tile-desc">{% if header_foam_from != blank %}{{ header_foam_from }}{% else %}Portrait · landscape · square{% endif %}</span>
+                <span class="site-header__tile-title">{{ 'header.foam' | t }}</span>
+                <span class="site-header__tile-desc">{% if header_foam_from != blank %}{{ header_foam_from }}{% else %}{{ 'header.fallback_foam' | t }}{% endif %}</span>
               </span>
             </a>
             <a class="site-header__tile" href="/products/wood-prints">
               <span class="site-header__swatch site-header__swatch--mint" aria-hidden="true">{% render 'category-thumb', handle: 'wood-prints', alt: 'Wood prints', class: 'site-header__thumb', width: 160 %}</span>
               <span class="site-header__tile-copy">
-                <span class="site-header__tile-title">Wood prints</span>
-                <span class="site-header__tile-desc">{% if header_wood_from != blank %}{{ header_wood_from }}{% else %}Natural grain · thickness{% endif %}</span>
+                <span class="site-header__tile-title">{{ 'header.wood' | t }}</span>
+                <span class="site-header__tile-desc">{% if header_wood_from != blank %}{{ header_wood_from }}{% else %}{{ 'header.fallback_wood' | t }}{% endif %}</span>
               </span>
             </a>
             <a class="site-header__tile" href="/collections/photo-tiles">
               <span class="site-header__swatch site-header__swatch--rose" aria-hidden="true">{% render 'category-thumb', handle: 'photo-tiles', alt: 'Photo tiles', class: 'site-header__thumb', width: 160 %}</span>
               <span class="site-header__tile-copy">
-                <span class="site-header__tile-title">Photo tiles</span>
-                <span class="site-header__tile-desc">{% if header_tiles_from != blank %}{{ header_tiles_from }}{% else %}Restickable frames{% endif %}</span>
+                <span class="site-header__tile-title">{{ 'header.photo_tiles' | t }}</span>
+                <span class="site-header__tile-desc">{% if header_tiles_from != blank %}{{ header_tiles_from }}{% else %}{{ 'header.fallback_tiles' | t }}{% endif %}</span>
               </span>
             </a>
             <a class="site-header__tile site-header__tile--all" href="/collections/wall-art">
               <span class="site-header__swatch site-header__swatch--teal" aria-hidden="true"></span>
               <span class="site-header__tile-copy">
-                <span class="site-header__tile-title">All wall art</span>
-                <span class="site-header__tile-desc">Browse every wall product</span>
+                <span class="site-header__tile-title">{{ 'header.all_wall_art' | t }}</span>
+                <span class="site-header__tile-desc">{{ 'header.browse_wall' | t }}</span>
               </span>
             </a>
           </div>
@@ -211,88 +216,95 @@
       </div>
 
       <div class="site-header__cat">
-        <a class="site-header__cat-link site-header__cat-link--gifts" href="/collections/home-gifts">
-          Home &amp; gifts
+        <a class="site-header__cat-link site-header__cat-link--gifts" href="{{ collections['home-gifts'].url | default: '/collections/home-gifts' }}">
+          {{ 'header.home_gifts' | t }}
           <svg class="site-header__chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
         </a>
         <div class="site-header__panel site-header__panel--wide" role="menu">
-          <p class="site-header__panel-kicker">Gifts they’ll keep</p>
+          <p class="site-header__panel-kicker">{{ 'header.gifts_they_keep' | t }}</p>
           <div class="site-header__panel-grid site-header__panel-grid--3">
             <a class="site-header__tile" href="/collections/mugs">
               <span class="site-header__swatch site-header__swatch--magenta" aria-hidden="true">{% render 'category-thumb', handle: 'mugs', alt: 'Mugs', class: 'site-header__thumb', width: 160 %}</span>
               <span class="site-header__tile-copy">
-                <span class="site-header__tile-title">Mugs</span>
-                <span class="site-header__tile-desc">{% if header_mugs_from != blank %}{{ header_mugs_from }}{% else %}Ceramic · personalize{% endif %}</span>
+                <span class="site-header__tile-title">{{ 'header.mugs' | t }}</span>
+                <span class="site-header__tile-desc">{% if header_mugs_from != blank %}{{ header_mugs_from }}{% else %}{{ 'header.fallback_mugs' | t }}{% endif %}</span>
               </span>
             </a>
             <a class="site-header__tile" href="/products/white-17oz-stainless-steel-water-bottle">
               <span class="site-header__swatch site-header__swatch--slate" aria-hidden="true">{% render 'category-thumb', handle: 'white-17oz-stainless-steel-water-bottle', alt: 'Water bottles', class: 'site-header__thumb', width: 160 %}</span>
               <span class="site-header__tile-copy">
-                <span class="site-header__tile-title">Water bottles</span>
-                <span class="site-header__tile-desc">{% if header_bottle_from != blank %}{{ header_bottle_from }}{% else %}Stainless steel{% endif %}</span>
+                <span class="site-header__tile-title">{{ 'header.bottles' | t }}</span>
+                <span class="site-header__tile-desc">{% if header_bottle_from != blank %}{{ header_bottle_from }}{% else %}{{ 'header.fallback_bottles' | t }}{% endif %}</span>
               </span>
             </a>
             <a class="site-header__tile" href="/collections/phone-cases">
               <span class="site-header__swatch site-header__swatch--cyan" aria-hidden="true">{% render 'category-thumb', handle: 'phone-cases', alt: 'Phone cases', class: 'site-header__thumb', width: 160 %}</span>
               <span class="site-header__tile-copy">
-                <span class="site-header__tile-title">Phone cases</span>
-                <span class="site-header__tile-desc">{% if header_cases_from != blank %}{{ header_cases_from }}{% else %}Apple &amp; Samsung{% endif %}</span>
+                <span class="site-header__tile-title">{{ 'header.phone_cases' | t }}</span>
+                <span class="site-header__tile-desc">{% if header_cases_from != blank %}{{ header_cases_from }}{% else %}{{ 'header.fallback_cases' | t }}{% endif %}</span>
               </span>
             </a>
             <a class="site-header__tile" href="/collections/tote-bags">
               <span class="site-header__swatch site-header__swatch--rose" aria-hidden="true">{% render 'category-thumb', handle: 'tote-bags', alt: 'Tote bags', class: 'site-header__thumb', width: 160 %}</span>
               <span class="site-header__tile-copy">
-                <span class="site-header__tile-title">Tote bags</span>
-                <span class="site-header__tile-desc">{% if header_totes_from != blank %}{{ header_totes_from }}{% else %}Classic &amp; premium{% endif %}</span>
+                <span class="site-header__tile-title">{{ 'header.totes' | t }}</span>
+                <span class="site-header__tile-desc">{% if header_totes_from != blank %}{{ header_totes_from }}{% else %}{{ 'header.fallback_totes' | t }}{% endif %}</span>
               </span>
             </a>
             <a class="site-header__tile" href="/collections/stickers">
               <span class="site-header__swatch site-header__swatch--mint" aria-hidden="true">{% render 'category-thumb', handle: 'stickers', alt: 'Stickers', class: 'site-header__thumb', width: 160 %}</span>
               <span class="site-header__tile-copy">
-                <span class="site-header__tile-title">Stickers</span>
-                <span class="site-header__tile-desc">{% if header_stickers_from != blank %}{{ header_stickers_from }}{% else %}Kiss-cut vinyl{% endif %}</span>
+                <span class="site-header__tile-title">{{ 'header.stickers' | t }}</span>
+                <span class="site-header__tile-desc">{% if header_stickers_from != blank %}{{ header_stickers_from }}{% else %}{{ 'header.fallback_stickers' | t }}{% endif %}</span>
               </span>
             </a>
             <a class="site-header__tile" href="/collections/tattoos">
               <span class="site-header__swatch site-header__swatch--rose" aria-hidden="true">{% render 'category-thumb', handle: 'tattoos', alt: 'Temporary tattoos', class: 'site-header__thumb', width: 160 %}</span>
               <span class="site-header__tile-copy">
-                <span class="site-header__tile-title">Temporary tattoos</span>
-                <span class="site-header__tile-desc">{% if header_tattoos_from != blank %}{{ header_tattoos_from }}{% else %}Skin-safe{% endif %}</span>
+                <span class="site-header__tile-title">{{ 'header.tattoos' | t }}</span>
+                <span class="site-header__tile-desc">{% if header_tattoos_from != blank %}{{ header_tattoos_from }}{% else %}{{ 'header.fallback_tattoos' | t }}{% endif %}</span>
               </span>
             </a>
             <a class="site-header__tile" href="/collections/magnets">
               <span class="site-header__swatch site-header__swatch--slate" aria-hidden="true">{% render 'category-thumb', handle: 'magnets', alt: 'Magnets', class: 'site-header__thumb', width: 160 %}</span>
               <span class="site-header__tile-copy">
-                <span class="site-header__tile-title">Magnets</span>
-                <span class="site-header__tile-desc">{% if header_magnets_from != blank %}{{ header_magnets_from }}{% else %}Photo fridge magnets{% endif %}</span>
+                <span class="site-header__tile-title">{{ 'header.magnets' | t }}</span>
+                <span class="site-header__tile-desc">{% if header_magnets_from != blank %}{{ header_magnets_from }}{% else %}{{ 'header.fallback_magnets' | t }}{% endif %}</span>
               </span>
             </a>
             <a class="site-header__tile" href="/collections/cushions">
               <span class="site-header__swatch site-header__swatch--magenta" aria-hidden="true">{% render 'category-thumb', handle: 'cushions', alt: 'Cushions', class: 'site-header__thumb', width: 160 %}</span>
               <span class="site-header__tile-copy">
-                <span class="site-header__tile-title">Cushions</span>
-                <span class="site-header__tile-desc">{% if header_cushions_from != blank %}{{ header_cushions_from }}{% else %}Faux suede{% endif %}</span>
+                <span class="site-header__tile-title">{{ 'header.cushions' | t }}</span>
+                <span class="site-header__tile-desc">{% if header_cushions_from != blank %}{{ header_cushions_from }}{% else %}{{ 'header.fallback_cushions' | t }}{% endif %}</span>
               </span>
             </a>
             <a class="site-header__tile" href="/collections/acrylic-prisms">
               <span class="site-header__swatch site-header__swatch--blue" aria-hidden="true">{% render 'category-thumb', handle: 'acrylic-prisms', alt: 'Acrylic prisms', class: 'site-header__thumb', width: 160 %}</span>
               <span class="site-header__tile-copy">
-                <span class="site-header__tile-title">Acrylic prisms</span>
-                <span class="site-header__tile-desc">{% if header_prisms_from != blank %}{{ header_prisms_from }}{% else %}Desk photo blocks{% endif %}</span>
+                <span class="site-header__tile-title">{{ 'header.prisms' | t }}</span>
+                <span class="site-header__tile-desc">{% if header_prisms_from != blank %}{{ header_prisms_from }}{% else %}{{ 'header.fallback_prisms' | t }}{% endif %}</span>
               </span>
             </a>
             <a class="site-header__tile" href="/collections/jigsaws">
               <span class="site-header__swatch site-header__swatch--cyan" aria-hidden="true">{% render 'category-thumb', handle: 'jigsaws', alt: 'Jigsaws', class: 'site-header__thumb', width: 160 %}</span>
               <span class="site-header__tile-copy">
-                <span class="site-header__tile-title">Jigsaws</span>
-                <span class="site-header__tile-desc">{% if header_jigsaws_from != blank %}{{ header_jigsaws_from }}{% else %}Puzzle in a tin{% endif %}</span>
+                <span class="site-header__tile-title">{{ 'header.jigsaws' | t }}</span>
+                <span class="site-header__tile-desc">{% if header_jigsaws_from != blank %}{{ header_jigsaws_from }}{% else %}{{ 'header.fallback_jigsaws' | t }}{% endif %}</span>
+              </span>
+            </a>
+            <a class="site-header__tile" href="/collections/towels">
+              <span class="site-header__swatch site-header__swatch--mint" aria-hidden="true">{% render 'category-thumb', handle: 'towels', alt: 'Towels', class: 'site-header__thumb', width: 160 %}</span>
+              <span class="site-header__tile-copy">
+                <span class="site-header__tile-title">{{ 'header.towels' | t }}</span>
+                <span class="site-header__tile-desc">{% if header_towels_from != blank %}{{ header_towels_from }}{% else %}{{ 'header.fallback_towels' | t }}{% endif %}</span>
               </span>
             </a>
             <a class="site-header__tile site-header__tile--all" href="/collections/home-gifts">
               <span class="site-header__swatch site-header__swatch--teal" aria-hidden="true"></span>
               <span class="site-header__tile-copy">
-                <span class="site-header__tile-title">All home &amp; gifts</span>
-                <span class="site-header__tile-desc">Browse gift products</span>
+                <span class="site-header__tile-title">{{ 'header.all_home_gifts' | t }}</span>
+                <span class="site-header__tile-desc">{{ 'header.browse_gifts' | t }}</span>
               </span>
             </a>
           </div>
@@ -300,25 +312,25 @@
       </div>
 
       <div class="site-header__cat">
-        <a class="site-header__cat-link site-header__cat-link--prints" href="/collections/posters">
-          Paper prints
+        <a class="site-header__cat-link site-header__cat-link--prints" href="{{ collections['posters'].url | default: '/collections/posters' }}">
+          {{ 'header.paper_prints' | t }}
           <svg class="site-header__chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
         </a>
         <div class="site-header__panel site-header__panel--narrow" role="menu">
-          <p class="site-header__panel-kicker">Paper &amp; posters</p>
+          <p class="site-header__panel-kicker">{{ 'header.paper_and_posters' | t }}</p>
           <div class="site-header__panel-list">
             <a class="site-header__tile" href="/collections/posters">
               <span class="site-header__swatch site-header__swatch--rose" aria-hidden="true">{% render 'category-thumb', handle: 'posters', alt: 'Posters', class: 'site-header__thumb', width: 160 %}</span>
               <span class="site-header__tile-copy">
-                <span class="site-header__tile-title">Posters</span>
-                <span class="site-header__tile-desc">{% if header_posters_from != blank %}{{ header_posters_from }}{% else %}Live now{% endif %}</span>
+                <span class="site-header__tile-title">{{ 'header.posters' | t }}</span>
+                <span class="site-header__tile-desc">{% if header_posters_from != blank %}{{ header_posters_from }}{% else %}{{ 'header.live_now' | t }}{% endif %}</span>
               </span>
             </a>
             <a class="site-header__tile" href="/products/premium-matte-paper-poster-with-hanger">
               <span class="site-header__swatch site-header__swatch--magenta" aria-hidden="true">{% render 'category-thumb', handle: 'premium-matte-paper-poster-with-hanger', alt: 'Posters with hangers', class: 'site-header__thumb', width: 160 %}</span>
               <span class="site-header__tile-copy">
-                <span class="site-header__tile-title">Posters with hangers</span>
-                <span class="site-header__tile-desc">{% if header_hangers_from != blank %}{{ header_hangers_from }}{% else %}Matte · hanger colours{% endif %}</span>
+                <span class="site-header__tile-title">{{ 'header.hangers' | t }}</span>
+                <span class="site-header__tile-desc">{% if header_hangers_from != blank %}{{ header_hangers_from }}{% else %}{{ 'header.fallback_hangers' | t }}{% endif %}</span>
               </span>
             </a>
           </div>
@@ -326,25 +338,25 @@
       </div>
 
       <div class="site-header__cat">
-        <a class="site-header__cat-link site-header__cat-link--cards" href="/collections/occasions">
-          Occasions
+        <a class="site-header__cat-link site-header__cat-link--cards" href="{{ collections['occasions'].url | default: '/collections/occasions' }}">
+          {{ 'header.occasions' | t }}
           <svg class="site-header__chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
         </a>
         <div class="site-header__panel site-header__panel--narrow" role="menu">
-          <p class="site-header__panel-kicker">Celebrate with photos</p>
+          <p class="site-header__panel-kicker">{{ 'header.celebrate' | t }}</p>
           <div class="site-header__panel-list">
             <a class="site-header__tile" href="/collections/cards">
               <span class="site-header__swatch site-header__swatch--magenta" aria-hidden="true"></span>
               <span class="site-header__tile-copy">
-                <span class="site-header__tile-title">Greeting cards</span>
-                <span class="site-header__tile-desc">Coming soon</span>
+                <span class="site-header__tile-title">{{ 'header.cards' | t }}</span>
+                <span class="site-header__tile-desc">{{ 'general.coming_soon' | t }}</span>
               </span>
             </a>
             <a class="site-header__tile" href="/collections/calendars">
               <span class="site-header__swatch site-header__swatch--mint" aria-hidden="true"></span>
               <span class="site-header__tile-copy">
-                <span class="site-header__tile-title">Calendars</span>
-                <span class="site-header__tile-desc">Coming soon</span>
+                <span class="site-header__tile-title">{{ 'header.calendars' | t }}</span>
+                <span class="site-header__tile-desc">{{ 'general.coming_soon' | t }}</span>
               </span>
             </a>
           </div>
@@ -354,11 +366,11 @@
   </div>
 
   <div class="site-header__categories site-header__categories--mobile">
-    <nav class="page-width site-header__categories-inner" aria-label="Shop categories">
-      <a class="site-header__chip site-header__chip--blue" href="/collections/wall-art">Wall art</a>
-      <a class="site-header__chip site-header__chip--rose" href="/collections/posters">Posters</a>
-      <a class="site-header__chip site-header__chip--magenta" href="/collections/home-gifts">Gifts</a>
-      <a class="site-header__chip site-header__chip--teal" href="/collections/occasions">Occasions</a>
+    <nav class="page-width site-header__categories-inner" aria-label="{{ 'header.shop_categories' | t }}">
+      <a class="site-header__chip site-header__chip--blue" href="{{ collections['wall-art'].url | default: '/collections/wall-art' }}">{{ 'header.wall_art' | t }}</a>
+      <a class="site-header__chip site-header__chip--rose" href="{{ collections['posters'].url | default: '/collections/posters' }}">{{ 'header.posters' | t }}</a>
+      <a class="site-header__chip site-header__chip--magenta" href="{{ collections['home-gifts'].url | default: '/collections/home-gifts' }}">{{ 'header.gifts' | t }}</a>
+      <a class="site-header__chip site-header__chip--teal" href="{{ collections['occasions'].url | default: '/collections/occasions' }}">{{ 'header.occasions' | t }}</a>
     </nav>
   </div>
 

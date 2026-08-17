@@ -50,6 +50,18 @@
         supabaseUrl: {{ settings.supabase_url | json }},
         anonKey: {{ settings.supabase_anon_key | json }}
       };
+      window.PIXORA_I18N = {
+        addToCart: {{ 'products.add_to_cart' | t | json }},
+        soldOut: {{ 'products.sold_out' | t | json }},
+        uploadType: {{ 'products.upload_type' | t | json }},
+        fileTooLarge: {{ 'products.file_too_large' | t | json }},
+        fileAttached: {{ 'products.file_attached' | t | json }}
+      };
+      document.addEventListener('change', function (e) {
+        if (e.target && e.target.matches('[data-localization-select]') && e.target.form) {
+          e.target.form.submit();
+        }
+      });
     </script>
     <script src="{{ 'design-preview.js' | asset_url }}" defer></script>
     <script src="{{ 'sticker-preview.js' | asset_url }}" defer></script>

@@ -1,0 +1,88 @@
+<section class="main-page contact-page">
+  <header class="page-hero">
+    <div class="page-width page-hero__inner">
+      <p class="page-hero__eyebrow">{{ 'contact.eyebrow' | t }}</p>
+      <h1 class="page-hero__title">{{ page.title }}</h1>
+      <p class="page-hero__lead">{{ 'contact.lead' | t }}</p>
+    </div>
+  </header>
+
+  <div class="page-width contact-page__grid">
+    <aside class="contact-page__aside">
+      <h2 class="contact-page__aside-title">{{ 'contact.aside_title' | t }}</h2>
+      <p>{{ 'contact.aside_body' | t }}</p>
+      <p class="muted">{{ 'contact.chat_note' | t }}</p>
+      <p>
+        <a href="{{ routes.account_url }}">{{ 'general.your_orders' | t }}</a>
+        ·
+        <a href="/pages/shipping">{{ 'footer.shipping_delivery' | t }}</a>
+      </p>
+    </aside>
+
+    <div class="contact-page__form-wrap">
+      {% if page.content != blank %}
+        <div class="rte contact-page__intro">{{ page.content }}</div>
+      {% endif %}
+
+      {% form 'contact', class: 'contact-form' %}
+        {% if form.posted_successfully? %}
+          <p class="contact-form__success" role="status">{{ 'contact.success' | t }}</p>
+        {% endif %}
+        {% if form.errors %}
+          <div class="contact-form__errors" role="alert">
+            {{ form.errors | default_errors }}
+          </div>
+        {% endif %}
+
+        <label class="field-label" for="ContactName-{{ section.id }}">{{ 'contact.name' | t }}</label>
+        <input
+          class="field-input"
+          type="text"
+          name="contact[name]"
+          id="ContactName-{{ section.id }}"
+          autocomplete="name"
+          value="{% if form.name %}{{ form.name }}{% elsif customer %}{{ customer.name }}{% endif %}"
+        >
+
+        <label class="field-label" for="ContactEmail-{{ section.id }}">{{ 'contact.email' | t }}</label>
+        <input
+          class="field-input"
+          type="email"
+          name="contact[email]"
+          id="ContactEmail-{{ section.id }}"
+          autocomplete="email"
+          required
+          value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}"
+        >
+
+        <label class="field-label" for="ContactOrder-{{ section.id }}">{{ 'contact.order' | t }}</label>
+        <input
+          class="field-input"
+          type="text"
+          name="contact[{{ 'contact.order' | t }}]"
+          id="ContactOrder-{{ section.id }}"
+          autocomplete="off"
+        >
+
+        <label class="field-label" for="ContactBody-{{ section.id }}">{{ 'contact.message' | t }}</label>
+        <textarea
+          class="field-input contact-form__message"
+          name="contact[body]"
+          id="ContactBody-{{ section.id }}"
+          rows="6"
+          required
+        >{{ form.body }}</textarea>
+
+        <button type="submit" class="button button--primary">{{ 'contact.submit' | t }}</button>
+      {% endform %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Contact",
+  "settings": [],
+  "templates": ["page"]
+}
+{% endschema %}

@@ -1,9 +1,9 @@
 /**
  * Strip broken Design preview / Supabase URLs from cart lines.
- * Keep Personalized print reassurance for checkout.
+ * Keep Personalised print reassurance for checkout.
  */
 (function () {
-  var PRINT_NOTE_KEY = 'Personalized print';
+  var PRINT_NOTE_KEY = 'Personalised print';
   var PRINT_NOTE_VALUE =
     "We have your uploaded image and will print from the mockup you created — not the stock product photo.";
 
@@ -31,6 +31,7 @@
         k.indexOf('gelato') !== -1 ||
         k.indexOf('personal') !== -1 ||
         k === 'personalized print' ||
+        k === 'personalised print' ||
         k === 'artwork' ||
         k === 'artwork name' ||
         looksLikeFilename(val)
@@ -48,6 +49,7 @@
       var key = keys[i];
       var val = properties[key];
       if (key.toLowerCase() === 'design preview') continue;
+      if (key.toLowerCase() === 'personalized print' || key.toLowerCase() === 'personalised print') continue;
       if (isBrokenPreviewUrl(val)) continue;
       props[key] = val;
     }

@@ -1,17 +1,17 @@
 <section class="main-cart page-width">
-  <h1 class="section-title">Your cart</h1>
+  <h1 class="section-title">{{ 'cart.title' | t }}</h1>
 
   {% if cart.item_count == 0 %}
-    <p class="muted">Your cart is empty.</p>
-    <a class="button button--primary" href="/collections/wall-art">Continue shopping</a>
+    <p class="muted">{{ 'cart.empty' | t }}</p>
+    <a class="button button--primary" href="{{ collections['wall-art'].url | default: '/collections/wall-art' }}">{{ 'general.continue_shopping' | t }}</a>
   {% else %}
     <form action="{{ routes.cart_url }}" method="post" id="cart">
       <table class="cart-table">
         <thead>
           <tr>
-            <th>Product</th>
-            <th>Quantity</th>
-            <th>Total</th>
+            <th>{{ 'cart.product' | t }}</th>
+            <th>{{ 'cart.quantity' | t }}</th>
+            <th>{{ 'cart.total' | t }}</th>
           </tr>
         </thead>
         <tbody>
@@ -70,10 +70,10 @@
                       <div class="muted">{{ item.variant.title }}</div>
                     {% endunless %}
                     {% if is_personalized or upload_name != blank %}
-                      <div class="cart-item__design-label">Personalized — we’ll print from your mockup</div>
+                      <div class="cart-item__design-label">{{ 'cart.personalised_label' | t }}</div>
                     {% endif %}
                     {% if upload_name != blank %}
-                      <div class="cart-item__upload-name muted">Your photo: {{ upload_name }}</div>
+                      <div class="cart-item__upload-name muted">{{ 'cart.your_photo' | t }} {{ upload_name }}</div>
                     {% endif %}
                     {% if item.properties.size > 0 %}
                       <ul class="cart-item__props" data-cart-props>
@@ -83,7 +83,7 @@
                           {% assign val = property.last %}
                           {% unless first_char == '_' %}
                             {% if val != blank %}
-                              {% unless key_down == 'personalized print' or key_down == 'design preview' or key_down == 'artwork' or key_down == 'artwork name' %}
+                              {% unless key_down == 'personalized print' or key_down == 'personalised print' or key_down == 'design preview' or key_down == 'artwork' or key_down == 'artwork name' %}
                                 {% if val contains 'http' %}
                                   {%- comment -%} Hide raw/broken image URLs {%- endcomment -%}
                                 {% else %}
@@ -98,7 +98,7 @@
                         {% endfor %}
                       </ul>
                     {% endif %}
-                    <a class="cart-item__remove" href="{{ item.url_to_remove }}">Remove</a>
+                    <a class="cart-item__remove" href="{{ item.url_to_remove }}">{{ 'cart.remove' | t }}</a>
                   </div>
                 </div>
               </td>
@@ -109,7 +109,7 @@
                   value="{{ item.quantity }}"
                   min="0"
                   class="field-input"
-                  aria-label="Quantity for {{ item.product.title }}"
+                  aria-label="{{ 'cart.quantity_for' | t: title: item.product.title }}"
                 >
               </td>
               <td>{{ item.final_line_price | money }}</td>
@@ -118,14 +118,13 @@
         </tbody>
       </table>
       <div class="cart-footer">
-        <p class="cart-footer__total"><strong>Subtotal:</strong> {{ cart.total_price | money }}</p>
-        <button type="submit" name="update" class="button">Update cart</button>
-        <button type="submit" name="checkout" class="button button--primary">Checkout</button>
+        <p class="cart-footer__total"><strong>{{ 'cart.subtotal' | t }}</strong> {{ cart.total_price | money }}</p>
+        <button type="submit" name="update" class="button">{{ 'cart.update' | t }}</button>
+        <button type="submit" name="checkout" class="button button--primary">{{ 'cart.checkout' | t }}</button>
       </div>
       <div class="cart-reassure">
-        <strong>Your design is saved.</strong>
-        We have your uploaded image and will print from the mockup you created.
-        Checkout may still show the stock product photo — that does not affect your print.
+        <strong>{{ 'cart.saved_title' | t }}</strong>
+        {{ 'cart.saved_body' | t }}
       </div>
     </form>
   {% endif %}
