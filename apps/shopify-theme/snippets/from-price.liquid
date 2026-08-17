@@ -1,34 +1,47 @@
 {%- comment -%}
-  Outputs "From £X" from a product and/or by scanning a collection.
-  Accepts: product, collection, and/or handle (product handle, else collection handle).
+  Outputs "From £X" using the cheapest price — never the first item in a list.
+  Accepts: product, collection, and/or handle (collection handle first, else product).
 {%- endcomment -%}
 {%- liquid
   assign min_cents = blank
 
-  if product != blank
+  if collection != blank
+    if collection.price_min != blank
+      assign min_cents = collection.price_min
+    else
+      for p in collection.products
+        assign p_min = p.price_min | plus: 0
+        assign cur_min = min_cents | default: 999999999 | plus: 0
+        if min_cents == blank or p_min < cur_min
+          assign min_cents = p.price_min
+        endif
+      endfor
+    endif
+  endif
+
+  if min_cents == blank and product != blank
     assign min_cents = product.price_min
   endif
 
-  if min_cents == blank and collection != blank
-    for p in collection.products
-      if min_cents == blank or p.price_min < min_cents
-        assign min_cents = p.price_min
-      endif
-    endfor
-  endif
-
   if min_cents == blank and handle != blank
-    assign resolved_product = all_products[handle]
-    if resolved_product != blank
-      assign min_cents = resolved_product.price_min
-    else
-      assign resolved_collection = collections[handle]
-      if resolved_collection != blank
+    assign resolved_collection = collections[handle]
+    if resolved_collection != blank
+      if resolved_collection.price_min != blank
+        assign min_cents = resolved_collection.price_min
+      else
         for p in resolved_collection.products
-          if min_cents == blank or p.price_min < min_cents
+          assign p_min = p.price_min | plus: 0
+          assign cur_min = min_cents | default: 999999999 | plus: 0
+          if min_cents == blank or p_min < cur_min
             assign min_cents = p.price_min
           endif
         endfor
+      endif
+    endif
+    if min_cents == blank
+      assign resolved_product = all_products[handle]
+      if resolved_product != blank
+        assign min_cents = resolved_product.price_min
       endif
     endif
   endif

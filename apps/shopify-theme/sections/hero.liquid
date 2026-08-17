@@ -1,13 +1,34 @@
 <section class="hero">
   <div class="page-width hero__inner">
-    <p class="hero__eyebrow">{{ section.settings.eyebrow }}</p>
-    <h1 class="hero__title">{{ section.settings.heading }}</h1>
-    <p class="hero__text">{{ section.settings.text }}</p>
-    {% if section.settings.button_label != blank %}
-      <a class="button button--primary" href="{{ section.settings.button_link }}">
-        {{ section.settings.button_label }}
-      </a>
-    {% endif %}
+    <div class="hero__copy">
+      {% if section.settings.eyebrow != blank %}
+        <p class="hero__eyebrow">{{ section.settings.eyebrow }}</p>
+      {% endif %}
+      <h1 class="hero__title">{{ section.settings.heading }}</h1>
+      {% if section.settings.text != blank %}
+        <p class="hero__text">{{ section.settings.text }}</p>
+      {% endif %}
+      {% if section.settings.button_label != blank or section.settings.button_label_2 != blank %}
+        <div class="hero__actions">
+          {% if section.settings.button_label != blank %}
+            <a class="button button--primary" href="{{ section.settings.button_link | default: '/collections/wall-art' }}">
+              {{ section.settings.button_label }}
+            </a>
+          {% endif %}
+          {% if section.settings.button_label_2 != blank %}
+            <a class="button button--secondary" href="{{ section.settings.button_link_2 | default: '/collections/home-gifts' }}">
+              {{ section.settings.button_label_2 }}
+            </a>
+          {% endif %}
+        </div>
+      {% endif %}
+    </div>
+    <div class="hero__collage" aria-hidden="true">
+      {% render 'category-thumb', handle: 'canvas-20x20-cm-8x8', alt: 'Canvas print', class: 'hero__collage-img', width: 480 %}
+      {% render 'category-thumb', handle: 'mugs', alt: 'Personalised mug', class: 'hero__collage-img', width: 480 %}
+      {% render 'category-thumb', handle: 'posters', alt: 'Poster', class: 'hero__collage-img', width: 480 %}
+      {% render 'category-thumb', handle: 'classic-semi-glossy-paper-wooden-framed-poster-bestseller', alt: 'Framed print', class: 'hero__collage-img', width: 480 %}
+    </div>
   </div>
 </section>
 
@@ -19,30 +40,41 @@
       "type": "text",
       "id": "eyebrow",
       "label": "Eyebrow",
-      "default": "Photo personalization"
+      "default": "Personalised photo printing"
     },
     {
       "type": "text",
       "id": "heading",
       "label": "Heading",
-      "default": "Turn Moments Into Keepsakes"
+      "default": "Turn your photos into keepsakes"
     },
     {
       "type": "textarea",
       "id": "text",
       "label": "Text",
-      "default": "Upload your photos. Preview on real Gelato products. Canvas, mugs, and more — printed and shipped for you."
+      "default": "Upload a favourite photo, preview it on the product, and we’ll print and deliver premium quality to your door."
     },
     {
       "type": "text",
       "id": "button_label",
-      "label": "Button label",
-      "default": "Shop products"
+      "label": "Primary button",
+      "default": "Shop wall art"
     },
     {
       "type": "url",
       "id": "button_link",
-      "label": "Button link"
+      "label": "Primary button link"
+    },
+    {
+      "type": "text",
+      "id": "button_label_2",
+      "label": "Secondary button",
+      "default": "Shop gifts"
+    },
+    {
+      "type": "url",
+      "id": "button_link_2",
+      "label": "Secondary button link"
     }
   ],
   "presets": [{ "name": "Hero" }]

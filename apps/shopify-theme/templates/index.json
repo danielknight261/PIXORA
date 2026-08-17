@@ -1,5 +1,17 @@
 {
   "sections": {
+    "hero": {
+      "type": "hero",
+      "settings": {
+        "eyebrow": "Personalised photo printing",
+        "heading": "Turn your photos into keepsakes",
+        "text": "Upload a favourite photo, preview it on the product, and we’ll print and deliver premium quality to your door.",
+        "button_label": "Shop wall art",
+        "button_link": "/collections/wall-art",
+        "button_label_2": "Shop gifts",
+        "button_link_2": "/collections/home-gifts"
+      }
+    },
     "product_blocks": {
       "type": "product-blocks",
       "blocks": {
@@ -93,26 +105,6 @@
             "coming_soon": false
           }
         },
-        "photo_prints": {
-          "type": "product_block",
-          "settings": {
-            "title": "Photo prints",
-            "price_label": "Coming soon",
-            "link": "/collections/photo-prints",
-            "accent": "cyan",
-            "coming_soon": true
-          }
-        },
-        "enlargements": {
-          "type": "product_block",
-          "settings": {
-            "title": "Photo enlargements",
-            "price_label": "Coming soon",
-            "link": "/collections/photo-enlargements",
-            "accent": "blue",
-            "coming_soon": true
-          }
-        },
         "mugs": {
           "type": "product_block",
           "settings": {
@@ -123,44 +115,24 @@
             "coming_soon": false
           }
         },
-        "cushions": {
+        "phone_cases": {
           "type": "product_block",
           "settings": {
-            "title": "Cushions",
-            "price_label": "Coming soon",
-            "link": "/collections/cushions",
-            "accent": "mint",
-            "coming_soon": true
-          }
-        },
-        "photo_blocks": {
-          "type": "product_block",
-          "settings": {
-            "title": "Photo blocks",
-            "price_label": "Coming soon",
-            "link": "/collections/photo-blocks",
-            "accent": "blue",
-            "coming_soon": true
-          }
-        },
-        "magnets": {
-          "type": "product_block",
-          "settings": {
-            "title": "Magnets",
-            "price_label": "Coming soon",
-            "link": "/collections/magnets",
+            "title": "Phone cases",
+            "price_label": "From £14.42",
+            "link": "/collections/phone-cases",
             "accent": "cyan",
-            "coming_soon": true
+            "coming_soon": false
           }
         },
-        "jigsaws": {
+        "tote_bags": {
           "type": "product_block",
           "settings": {
-            "title": "Jigsaws",
-            "price_label": "Coming soon",
-            "link": "/collections/jigsaws",
-            "accent": "rose",
-            "coming_soon": true
+            "title": "Tote bags",
+            "price_label": "From £19.96",
+            "link": "/collections/tote-bags",
+            "accent": "blue",
+            "coming_soon": false
           }
         },
         "cards": {
@@ -182,16 +154,6 @@
             "accent": "mint",
             "coming_soon": true
           }
-        },
-        "photo_books": {
-          "type": "product_block",
-          "settings": {
-            "title": "Photo books",
-            "price_label": "Coming soon",
-            "link": "/collections/photo-books",
-            "accent": "magenta",
-            "coming_soon": true
-          }
         }
       },
       "block_order": [
@@ -204,20 +166,15 @@
         "posters_hangers",
         "foam",
         "wood",
-        "photo_prints",
-        "enlargements",
         "mugs",
-        "cushions",
-        "photo_blocks",
-        "magnets",
-        "jigsaws",
+        "phone_cases",
+        "tote_bags",
         "cards",
-        "calendars",
-        "photo_books"
+        "calendars"
       ],
       "settings": {
-        "heading": "Photo products",
-        "text": "Print life's best moments with Pixora — wall art, gifts, photo prints, cards, calendars and photo books. Personalise with live mockups, then we print and ship.",
+        "heading": "Shop photo products",
+        "text": "Wall art, posters, mugs, phone cases and tote bags — personalise with a live mockup, then we print and ship.",
         "footer_heading": "",
         "footer_text": ""
       }
@@ -287,55 +244,7 @@
         "heading": "From photo to keepsake in three steps",
         "text": "Upload your favourite snap, personalise on a live product mockup, and we print and ship premium quality to your door."
       }
-    },
-    "pricing_teaser": {
-      "type": "pricing-teaser",
-      "blocks": {
-        "p1": {
-          "type": "price_card",
-          "settings": {
-            "label": "Wall art",
-            "title": "Canvas prints",
-            "price": "£19.76",
-            "note": "Gallery wraps, ready to hang",
-            "button_label": "Shop canvas",
-            "link": "/collections/canvas-prints",
-            "accent": "blue"
-          }
-        },
-        "p2": {
-          "type": "price_card",
-          "settings": {
-            "label": "Wall art",
-            "title": "Wooden framed prints",
-            "price": "£20.64",
-            "note": "Wooden frames · 3 paper finishes",
-            "button_label": "Shop wooden frames",
-            "link": "/collections/framed-prints",
-            "accent": "mint"
-          }
-        },
-        "p3": {
-          "type": "price_card",
-          "settings": {
-            "label": "Wall art",
-            "title": "Posters",
-            "price": "£6.18",
-            "note": "Matte, fine art & semi-glossy",
-            "button_label": "Shop posters",
-            "link": "/collections/posters",
-            "accent": "rose"
-          }
-        }
-      },
-      "block_order": ["p1", "p2", "p3"],
-      "settings": {
-        "eyebrow": "Transparent pricing",
-        "heading": "Great print quality, clear prices",
-        "text": "No hidden fees on the product price. Shipping is calculated at checkout based on size and destination.",
-        "footnote": "Prices shown are starting points — final price depends on size, finish, and options."
-      }
     }
   },
-  "order": ["product_blocks", "trust_strip", "how_it_works", "pricing_teaser"]
+  "order": ["hero", "product_blocks", "trust_strip", "how_it_works"]
 }

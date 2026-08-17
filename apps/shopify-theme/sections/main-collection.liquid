@@ -13,6 +13,8 @@
   assign is_mugs = false
   assign is_water_bottles = false
   assign is_home_gifts = false
+  assign is_phone_cases = false
+  assign is_tote_bags = false
   if handle == 'canvas-prints' or handle == 'canvas'
     assign is_canvas = true
   endif
@@ -52,9 +54,15 @@
   if handle == 'home-gifts'
     assign is_home_gifts = true
   endif
+  if handle == 'phone-cases'
+    assign is_phone_cases = true
+  endif
+  if handle == 'tote-bags'
+    assign is_tote_bags = true
+  endif
 -%}
 
-<section class="main-collection{% if is_canvas or is_wall_art or is_posters or is_framed_prints or is_framed_canvas or is_aluminum or is_foam or is_acrylic or is_wood or is_hangers or is_mugs or is_water_bottles or is_home_gifts %} main-collection--canvas{% endif %}">
+<section class="main-collection{% if is_canvas or is_wall_art or is_posters or is_framed_prints or is_framed_canvas or is_aluminum or is_foam or is_acrylic or is_wood or is_hangers or is_mugs or is_water_bottles or is_home_gifts or is_phone_cases or is_tote_bags %} main-collection--canvas{% endif %}">
   {% if is_canvas %}
     {%- comment -%} Skip chooser — send shoppers straight to the canvas product PDP. {%- endcomment -%}
     <script>
@@ -206,6 +214,155 @@
       </div>
     </div>
 
+  {% elsif is_phone_cases %}
+    <header class="collection-hero collection-hero--compact">
+      <div class="collection-hero__bg" aria-hidden="true"></div>
+      <div class="page-width collection-hero__inner">
+        <nav class="pb-canvas__crumbs" aria-label="Breadcrumb">
+          <a href="/">Home</a>
+          <span>/</span>
+          <a href="/collections/home-gifts">Home &amp; gifts</a>
+          <span>/</span>
+          <span>Phone cases</span>
+        </nav>
+        <h1 class="collection-hero__title">Phone cases</h1>
+        <p class="collection-hero__lead">
+          Flexi, slim, clear, bio and tough cases for Apple and Samsung — pick a style and model, then personalize.
+        </p>
+      </div>
+    </header>
+    <div class="page-width collection-body">
+      <div class="finish-grid">
+        {% for product in collection.products %}
+          {%- liquid
+            assign h = product.handle | downcase
+            assign eyebrow = 'Phone case'
+            assign short_title = product.title | capitalize
+            assign desc = 'Personalize with your photo or design.'
+            assign brand = 'Apple & Samsung'
+            if h contains 'apple'
+              assign brand = 'Apple'
+            elsif h contains 'samsung' or h == 'tough-case'
+              assign brand = 'Samsung'
+            endif
+            if h contains 'flexi'
+              assign eyebrow = brand | append: ' · Flexi'
+              assign short_title = 'Flexi case'
+              assign desc = 'Flexible protective case — slim feel with everyday protection.'
+            elsif h contains 'slim'
+              assign eyebrow = brand | append: ' · Slim'
+              assign short_title = 'Slim case'
+              assign desc = 'Sleek slim profile that keeps your phone pocket-friendly.'
+            elsif h contains 'clear'
+              assign eyebrow = brand | append: ' · Clear'
+              assign short_title = 'Clear case'
+              assign desc = 'See-through case that shows your phone colour and your design.'
+            elsif h contains 'bio'
+              assign eyebrow = 'Apple · Bio'
+              assign short_title = 'Bio case'
+              assign desc = 'Biodegradable case — personalize with a greener finish.'
+            elsif h contains 'tough'
+              assign eyebrow = brand | append: ' · Tough'
+              assign short_title = 'Tough case'
+              assign desc = 'Extra protection for drops — tough shell with your design.'
+            endif
+          -%}
+          <a class="finish-card" href="{{ product.url }}">
+            <div class="finish-card__media">
+              {% if product.featured_media %}
+                {{
+                  product.featured_media
+                  | image_url: width: 900
+                  | image_tag: loading: 'lazy', alt: product.title
+                }}
+              {% else %}
+                {% render 'mock-image', handle: product.handle, alt: product.title, width: 900 %}
+              {% endif %}
+            </div>
+            <div class="finish-card__body">
+              <p class="finish-card__eyebrow">{{ eyebrow }}</p>
+              <h2 class="finish-card__title">{{ short_title }}</h2>
+              <p class="finish-card__price">From {{ product.price_min | money }}</p>
+              <p class="finish-card__desc">{{ desc }}</p>
+              <ul class="finish-card__meta">
+                <li>{{ product.variants.size }} models</li>
+                <li>{{ brand }}</li>
+                <li>Personalize</li>
+              </ul>
+              <span class="finish-card__cta">Choose model</span>
+            </div>
+          </a>
+        {% else %}
+          <p class="muted">No phone cases in this collection yet.</p>
+        {% endfor %}
+      </div>
+    </div>
+
+  {% elsif is_tote_bags %}
+    <header class="collection-hero collection-hero--compact">
+      <div class="collection-hero__bg" aria-hidden="true"></div>
+      <div class="page-width collection-hero__inner">
+        <nav class="pb-canvas__crumbs" aria-label="Breadcrumb">
+          <a href="/">Home</a>
+          <span>/</span>
+          <a href="/collections/home-gifts">Home &amp; gifts</a>
+          <span>/</span>
+          <span>Tote bags</span>
+        </nav>
+        <h1 class="collection-hero__title">Tote bags</h1>
+        <p class="collection-hero__lead">
+          Classic and premium personalised totes — pick a colour, then add your photo or design.
+        </p>
+      </div>
+    </header>
+    <div class="page-width collection-body">
+      <div class="finish-grid">
+        {% for product in collection.products %}
+          {%- liquid
+            assign h = product.handle | downcase
+            assign eyebrow = 'Tote bag'
+            assign short_title = product.title
+            assign desc = 'Personalize with your photo or design.'
+            if h contains 'premium'
+              assign eyebrow = 'Premium'
+              assign short_title = 'Premium Tote Bag'
+              assign desc = 'Higher-spec tote — a polished everyday carry.'
+            elsif h contains 'classic'
+              assign eyebrow = 'Classic'
+              assign short_title = 'Classic Tote Bag'
+              assign desc = 'Everyday canvas-style tote with colour options.'
+            endif
+          -%}
+          <a class="finish-card" href="{{ product.url }}">
+            <div class="finish-card__media">
+              {% if product.featured_media %}
+                {{
+                  product.featured_media
+                  | image_url: width: 900
+                  | image_tag: loading: 'lazy', alt: product.title
+                }}
+              {% else %}
+                {% render 'mock-image', handle: product.handle, alt: product.title, width: 900 %}
+              {% endif %}
+            </div>
+            <div class="finish-card__body">
+              <p class="finish-card__eyebrow">{{ eyebrow }}</p>
+              <h2 class="finish-card__title">{{ short_title }}</h2>
+              <p class="finish-card__price">From {{ product.price_min | money }}</p>
+              <p class="finish-card__desc">{{ desc }}</p>
+              <ul class="finish-card__meta">
+                <li>{% if product.variants.size > 1 %}{{ product.variants.size }} colours{% else %}Ready to print{% endif %}</li>
+                <li>Personalize</li>
+              </ul>
+              <span class="finish-card__cta">{% if product.variants.size > 1 %}Choose colour{% else %}Personalize{% endif %}</span>
+            </div>
+          </a>
+        {% else %}
+          <p class="muted">No tote bags in this collection yet.</p>
+        {% endfor %}
+      </div>
+    </div>
+
   {% elsif is_home_gifts %}
     <header class="collection-hero">
       <div class="collection-hero__bg" aria-hidden="true"></div>
@@ -213,21 +370,31 @@
         <p class="collection-hero__eyebrow">Shop</p>
         <h1 class="collection-hero__title">Home &amp; gifts</h1>
         <p class="collection-hero__lead">
-          Personalised mugs, bottles and more — everyday keepsakes they’ll actually use.
+          Personalised mugs, bottles, phone cases, tote bags and more — everyday keepsakes they’ll actually use.
         </p>
       </div>
     </header>
     {%- liquid
       assign mugs_collection = collections['mugs']
       assign bottle_product = all_products['white-17oz-stainless-steel-water-bottle']
+      assign cases_collection = collections['phone-cases']
+      assign totes_collection = collections['tote-bags']
       capture mugs_from
         render 'from-price', collection: mugs_collection
       endcapture
       capture bottle_from
         render 'from-price', product: bottle_product
       endcapture
+      capture cases_from
+        render 'from-price', collection: cases_collection
+      endcapture
+      capture totes_from
+        render 'from-price', collection: totes_collection
+      endcapture
       assign mugs_from = mugs_from | strip
       assign bottle_from = bottle_from | strip
+      assign cases_from = cases_from | strip
+      assign totes_from = totes_from | strip
     -%}
     <div class="page-width collection-body">
       <div class="wall-art-grid">
@@ -244,6 +411,20 @@
           {% if bottle_from != blank %}<span class="wall-art-card__price">{{ bottle_from }}</span>{% endif %}
           <span class="wall-art-card__desc">17 oz stainless steel · personalize</span>
           <span class="wall-art-card__cta">Personalize →</span>
+        </a>
+        <a class="wall-art-card wall-art-card--live" href="/collections/phone-cases">
+          <span class="wall-art-card__swatch wall-art-card__swatch--cyan" aria-hidden="true"></span>
+          <span class="wall-art-card__title">Phone cases</span>
+          {% if cases_from != blank %}<span class="wall-art-card__price">{{ cases_from }}</span>{% endif %}
+          <span class="wall-art-card__desc">Apple &amp; Samsung · multiple styles</span>
+          <span class="wall-art-card__cta">Choose case →</span>
+        </a>
+        <a class="wall-art-card wall-art-card--live" href="/collections/tote-bags">
+          <span class="wall-art-card__swatch wall-art-card__swatch--rose" aria-hidden="true"></span>
+          <span class="wall-art-card__title">Tote bags</span>
+          {% if totes_from != blank %}<span class="wall-art-card__price">{{ totes_from }}</span>{% endif %}
+          <span class="wall-art-card__desc">Classic &amp; premium · personalize</span>
+          <span class="wall-art-card__cta">Choose tote →</span>
         </a>
       </div>
     </div>

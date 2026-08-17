@@ -1,16 +1,24 @@
-<section class="main-list-collections page-width">
-  <h1 class="section-title">Collections</h1>
-  <div class="product-grid">
-    {% for collection in collections %}
-      {% unless collection.handle == 'frontpage' %}
-        <a class="product-card" href="{{ collection.url }}">
-          <div class="product-card__info">
-            <h3 class="product-card__title">{{ collection.title }}</h3>
-            <p class="muted">{{ collection.products_count }} products</p>
-          </div>
-        </a>
-      {% endunless %}
-    {% endfor %}
+<section class="main-list-collections">
+  <header class="page-hero">
+    <div class="page-width page-hero__inner">
+      <p class="page-hero__eyebrow">Shop</p>
+      <h1 class="page-hero__title">Collections</h1>
+      <p class="page-hero__lead">Browse every Pixora photo product — wall art, gifts, posters and more.</p>
+    </div>
+  </header>
+  <div class="page-width collection-body">
+    <div class="product-grid">
+      {% for collection in collections %}
+        {% unless collection.handle == 'frontpage' %}
+          <a class="product-card" href="{{ collection.url }}">
+            <div class="product-card__info">
+              <h3 class="product-card__title">{{ collection.title }}</h3>
+              <p class="muted">{{ collection.products_count }} products</p>
+            </div>
+          </a>
+        {% endunless %}
+      {% endfor %}
+    </div>
   </div>
 </section>
 

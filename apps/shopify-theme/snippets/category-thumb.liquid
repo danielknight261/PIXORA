@@ -1,0 +1,73 @@
+{%- comment -%}
+  Outputs the featured image of a product, or the cheapest product in a collection that has a photo.
+  Params: handle, alt, class, width
+{%- endcomment -%}
+{%- liquid
+  assign thumb_product = blank
+  assign lookup = handle
+
+  if lookup == 'canvas-prints' or lookup == 'canvas'
+    assign lookup = 'canvas-20x20-cm-8x8'
+  elsif lookup == 'framed-prints'
+    assign lookup = 'classic-semi-glossy-paper-wooden-framed-poster-bestseller'
+  elsif lookup == 'framed-canvas'
+    assign lookup = 'framed-canvas'
+  elsif lookup == 'acrylic-prints'
+    assign lookup = 'acrylic-print'
+  elsif lookup == 'posters-with-hangers'
+    assign lookup = 'premium-matte-paper-poster-with-hanger'
+  endif
+
+  assign resolved_product = all_products[lookup]
+  if resolved_product != blank and resolved_product.featured_media == blank and resolved_product.featured_image == blank
+    assign alt_lookup = lookup | append: '-1'
+    assign resolved_product = all_products[alt_lookup]
+  endif
+
+  if resolved_product != blank
+    if resolved_product.featured_media or resolved_product.featured_image
+      assign thumb_product = resolved_product
+    endif
+  endif
+  if thumb_product == blank
+    assign resolved_collection = collections[handle]
+    if resolved_collection == blank
+      assign resolved_collection = collections[lookup]
+    endif
+    if resolved_collection != blank
+      assign min_cents = blank
+      for p in resolved_collection.products
+        if p.featured_media or p.featured_image
+          assign p_min = p.price_min | plus: 0
+          assign cur_min = min_cents | default: 999999999 | plus: 0
+          if min_cents == blank or p_min < cur_min
+            assign min_cents = p.price_min
+            assign thumb_product = p
+          endif
+        endif
+      endfor
+    endif
+  endif
+
+  assign thumb_media = blank
+  if thumb_product != blank
+    if thumb_product.featured_media
+      assign thumb_media = thumb_product.featured_media
+    elsif thumb_product.featured_image
+      assign thumb_media = thumb_product.featured_image
+    endif
+  endif
+
+  assign thumb_width = width | default: 800 | plus: 0
+-%}
+{%- if thumb_media != blank -%}
+  {{
+    thumb_media
+    | image_url: width: thumb_width
+    | image_tag:
+      class: class,
+      alt: alt,
+      loading: 'lazy',
+      widths: '160, 320, 480, 800'
+  }}
+{%- endif -%}

@@ -541,11 +541,19 @@
     {%- liquid
       assign is_mug = false
       assign is_bottle = false
+      assign is_phone_case = false
+      assign is_tote = false
       if handle_down contains 'mug'
         assign is_mug = true
       endif
       if handle_down contains 'bottle'
         assign is_bottle = true
+      endif
+      if handle_down contains 'case'
+        assign is_phone_case = true
+      endif
+      if handle_down contains 'tote'
+        assign is_tote = true
       endif
       assign gift_crumb_label = 'Home & gifts'
       assign gift_crumb_url = '/collections/home-gifts'
@@ -555,6 +563,12 @@
       elsif is_bottle
         assign gift_crumb_label = 'Water bottles'
         assign gift_crumb_url = '/collections/water-bottles'
+      elsif is_phone_case
+        assign gift_crumb_label = 'Phone cases'
+        assign gift_crumb_url = '/collections/phone-cases'
+      elsif is_tote
+        assign gift_crumb_label = 'Tote bags'
+        assign gift_crumb_url = '/collections/tote-bags'
       endif
     -%}
     <div class="page-width product" id="Product-{{ section.id }}">
@@ -597,7 +611,7 @@
         {% form 'product', product, id: 'product-form', class: 'product-form' %}
           <input type="hidden" name="id" value="{{ current_variant.id }}" data-variant-id>
           {% unless product.has_only_default_variant %}
-            {% if color_option_index != nil and is_mug %}
+            {% if color_option_index != nil and is_mug or color_option_index != nil and is_tote %}
               <div class="pb-canvas__step product-form__color">
                 <p class="pb-canvas__label">{% if handle_down contains 'color-inside' %}Inside colour{% else %}Colour{% endif %}</p>
                 <div class="pb-canvas__frames" role="radiogroup" aria-label="{% if handle_down contains 'color-inside' %}Inside colour{% else %}Colour{% endif %}" data-gift-color>
@@ -640,7 +654,7 @@
               <div class="product-form__variants">
                 {% for option in product.options_with_values %}
                   <label class="field-label" for="Option-{{ section.id }}-{{ forloop.index0 }}">{{ option.name }}</label>
-                  <select id="Option-{{ section.id }}-{{ forloop.index0 }}" name="options[{{ option.name | escape }}]" class="field-select">
+                  <select id="Option-{{ section.id }}-{{ forloop.index0 }}" name="options[{{ option.name | escape }}]" class="field-select" data-option-select data-option-index="{{ forloop.index0 }}">
                     {% for value in option.values %}
                       <option value="{{ value | escape }}" {% if option.selected_value == value %}selected{% endif %}>{{ value }}</option>
                     {% endfor %}
@@ -655,7 +669,7 @@
         {% endform %}
       </div>
     </div>
-    {% if color_option_index != nil and is_mug %}
+    {% if color_option_index != nil and is_mug or color_option_index != nil and is_tote %}
       <script type="application/json" data-gift-variants>
         [
           {%- for variant in product.variants -%}
@@ -704,6 +718,54 @@
               apply(btn.getAttribute('data-gift-color-value'));
             });
           });
+        })();
+      </script>
+    {% elsif product.has_only_default_variant == false %}
+      <script type="application/json" data-gift-variants>
+        [
+          {%- for variant in product.variants -%}
+            {
+              "id": {{ variant.id | json }},
+              "available": {{ variant.available | json }},
+              "priceFormatted": {{ variant.price | money | json }},
+              "options": {{ variant.options | json }},
+              "featuredImage": {% if variant.featured_media %}{{ variant.featured_media | image_url: width: 1100 | json }}{% elsif product.featured_media %}{{ product.featured_media | image_url: width: 1100 | json }}{% else %}null{% endif %}
+            }{% unless forloop.last %},{% endunless %}
+          {%- endfor -%}
+        ]
+      </script>
+      <script>
+        (function () {
+          var root = document.getElementById('Product-{{ section.id }}');
+          if (!root) return;
+          var mapEl = document.querySelector('[data-gift-variants]');
+          if (!mapEl) return;
+          var variants = JSON.parse(mapEl.textContent);
+          var selects = root.querySelectorAll('[data-option-select]');
+          var idInput = root.querySelector('[data-variant-id]');
+          var priceEl = root.querySelector('[data-product-price]');
+          var imageEl = root.querySelector('[data-product-image]') || root.querySelector('.product__image');
+          var addBtn = root.querySelector('[data-add-to-cart]');
+          function currentOptions() {
+            var opts = [];
+            selects.forEach(function (s) { opts.push(s.value); });
+            return opts;
+          }
+          function apply() {
+            var opts = currentOptions();
+            var v = variants.find(function (x) {
+              return opts.every(function (o, i) { return x.options[i] === o; });
+            }) || variants[0];
+            if (!v) return;
+            if (idInput) idInput.value = v.id;
+            if (priceEl) priceEl.textContent = v.priceFormatted;
+            if (imageEl && v.featuredImage) { imageEl.src = v.featuredImage; imageEl.srcset = ''; }
+            if (addBtn) {
+              addBtn.disabled = !v.available;
+              addBtn.textContent = v.available ? 'Add to cart' : 'Sold out';
+            }
+          }
+          selects.forEach(function (s) { s.addEventListener('change', apply); });
         })();
       </script>
     {% endif %}

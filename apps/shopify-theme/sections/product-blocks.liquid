@@ -1,6 +1,6 @@
 <section class="product-blocks page-width">
   {% if section.settings.heading != blank %}
-    <h1 class="product-blocks__heading">{{ section.settings.heading }}</h1>
+    <h2 class="product-blocks__heading">{{ section.settings.heading }}</h2>
   {% endif %}
   {% if section.settings.text != blank %}
     <p class="product-blocks__intro">{{ section.settings.text }}</p>
@@ -11,16 +11,20 @@
       {% liquid
         assign card_href = block.settings.link | default: routes.collections_url
         assign live_from = blank
+        assign thumb_handle = blank
         unless block.settings.coming_soon
           assign link_path = card_href | split: '?' | first
           if link_path contains '/products/'
             assign product_handle = link_path | split: '/products/' | last | split: '/' | first
+            assign thumb_handle = product_handle
             capture live_from
               render 'from-price', handle: product_handle
             endcapture
           elsif link_path contains '/collections/'
             assign collection_handle = link_path | split: '/collections/' | last | split: '/' | first
+            assign thumb_handle = collection_handle
             if collection_handle == 'canvas-prints' or collection_handle == 'canvas'
+              assign thumb_handle = 'canvas-20x20-cm-8x8'
               capture live_from
                 render 'from-price', handle: 'canvas-20x20-cm-8x8'
               endcapture
@@ -40,6 +44,12 @@
         elsif block.settings.price_label != blank and block.settings.price_label != 'Coming soon'
           assign price_text = block.settings.price_label
         endif
+        capture thumb_html
+          if thumb_handle != blank
+            render 'category-thumb', handle: thumb_handle, alt: block.settings.title, class: 'product-block__img', width: 800
+          endif
+        endcapture
+        assign thumb_html = thumb_html | strip
       %}
       <a
         class="product-block{% if block.settings.coming_soon %} product-block--soon{% endif %}"
@@ -47,12 +57,14 @@
         {{ block.shopify_attributes }}
       >
         <div
-          class="product-block__media product-block__media--{{ block.settings.accent | default: 'blue' }}"
+          class="product-block__media product-block__media--{{ block.settings.accent | default: 'blue' }}{% if thumb_html != blank or block.settings.image != blank %} product-block__media--photo{% endif %}"
           {% if block.settings.image != blank %}
             style="background-image: url({{ block.settings.image | image_url: width: 800 }})"
           {% endif %}
         >
-          {% if block.settings.image == blank %}
+          {% if block.settings.image == blank and thumb_html != blank %}
+            {{ thumb_html }}
+          {% elsif block.settings.image == blank %}
             <span class="product-block__glyph" aria-hidden="true">
               {{ block.settings.title | slice: 0 | upcase }}
             </span>
@@ -186,16 +198,7 @@
         {
           "type": "product_block",
           "settings": {
-            "title": "Photo prints",
-            "price_label": "Coming soon",
-            "accent": "cyan",
-            "coming_soon": true
-          }
-        },
-        {
-          "type": "product_block",
-          "settings": {
-            "title": "Wooden framed prints",
+            "title": "Framed prints",
             "price_label": "From £20.64",
             "link": "/collections/framed-prints",
             "accent": "mint",
@@ -205,17 +208,9 @@
         {
           "type": "product_block",
           "settings": {
-            "title": "Metal prints",
+            "title": "Greeting cards",
             "price_label": "Coming soon",
-            "accent": "slate",
-            "coming_soon": true
-          }
-        },
-        {
-          "type": "product_block",
-          "settings": {
-            "title": "Cards",
-            "price_label": "Coming soon",
+            "link": "/collections/cards",
             "accent": "rose",
             "coming_soon": true
           }
@@ -233,9 +228,10 @@
         {
           "type": "product_block",
           "settings": {
-            "title": "Cushions",
+            "title": "Phone cases",
             "price_label": "Coming soon",
-            "accent": "mint",
+            "link": "/collections/phone-cases",
+            "accent": "cyan",
             "coming_soon": true
           }
         }
