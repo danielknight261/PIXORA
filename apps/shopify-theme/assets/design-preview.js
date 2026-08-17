@@ -31,6 +31,8 @@
         k.indexOf('gelato') !== -1 ||
         k.indexOf('personal') !== -1 ||
         k === 'personalized print' ||
+        k === 'artwork' ||
+        k === 'artwork name' ||
         looksLikeFilename(val)
       ) {
         return true;
@@ -118,6 +120,7 @@
   function wireProductPage() {
     var form = document.getElementById('product-form');
     if (!form) return;
+    if (form.querySelector('[data-sticker-file]')) return;
     ensurePrintNoteInput(form);
     form.addEventListener(
       'submit',

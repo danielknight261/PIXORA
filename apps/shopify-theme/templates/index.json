@@ -135,6 +135,76 @@
             "coming_soon": false
           }
         },
+        "stickers": {
+          "type": "product_block",
+          "settings": {
+            "title": "Stickers",
+            "price_label": "From £3.95",
+            "link": "/collections/stickers",
+            "accent": "mint",
+            "coming_soon": false
+          }
+        },
+        "tattoos": {
+          "type": "product_block",
+          "settings": {
+            "title": "Temporary tattoos",
+            "price_label": "From £5.95",
+            "link": "/collections/tattoos",
+            "accent": "rose",
+            "coming_soon": false
+          }
+        },
+        "magnets": {
+          "type": "product_block",
+          "settings": {
+            "title": "Magnets",
+            "price_label": "From £5.95",
+            "link": "/collections/magnets",
+            "accent": "slate",
+            "coming_soon": false
+          }
+        },
+        "photo_tiles": {
+          "type": "product_block",
+          "settings": {
+            "title": "Photo tiles",
+            "price_label": "From £11.95",
+            "link": "/collections/photo-tiles",
+            "accent": "cyan",
+            "coming_soon": false
+          }
+        },
+        "cushions": {
+          "type": "product_block",
+          "settings": {
+            "title": "Cushions",
+            "price_label": "From £19.95",
+            "link": "/collections/cushions",
+            "accent": "magenta",
+            "coming_soon": false
+          }
+        },
+        "acrylic_prisms": {
+          "type": "product_block",
+          "settings": {
+            "title": "Acrylic prisms",
+            "price_label": "From £12.95",
+            "link": "/collections/acrylic-prisms",
+            "accent": "blue",
+            "coming_soon": false
+          }
+        },
+        "jigsaws": {
+          "type": "product_block",
+          "settings": {
+            "title": "Jigsaws",
+            "price_label": "From £19.95",
+            "link": "/collections/jigsaws",
+            "accent": "mint",
+            "coming_soon": false
+          }
+        },
         "cards": {
           "type": "product_block",
           "settings": {
@@ -169,6 +239,13 @@
         "mugs",
         "phone_cases",
         "tote_bags",
+        "stickers",
+        "tattoos",
+        "magnets",
+        "photo_tiles",
+        "cushions",
+        "acrylic_prisms",
+        "jigsaws",
         "cards",
         "calendars"
       ],

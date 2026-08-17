@@ -41,6 +41,16 @@
   endif
   assign handle_down = product.handle | downcase
   assign title_down = product.title | downcase
+  assign is_sticker = false
+  assign is_prodigi = false
+  if product.tags contains 'prodigi'
+    assign is_prodigi = true
+    assign is_variant_picker = false
+  endif
+  if handle_down contains 'sticker'
+    assign is_sticker = true
+    assign is_variant_picker = false
+  endif
   assign fixed_orient = blank
   if handle_down contains 'foam-portrait'
     assign fixed_orient = 'portrait'
@@ -164,7 +174,9 @@
 -%}
 
 <section class="main-product{% if is_variant_picker %} main-product--flush{% endif %}" data-section-id="{{ section.id }}">
-  {% render 'gelato-customization' %}
+  {% unless is_prodigi or is_sticker %}
+    {% render 'gelato-customization' %}
+  {% endunless %}
 
   {% if is_variant_picker %}
     <div class="pb-canvas" id="Product-{{ section.id }}" data-canvas-picker data-section="{{ section.id }}">
@@ -543,6 +555,8 @@
       assign is_bottle = false
       assign is_phone_case = false
       assign is_tote = false
+      assign is_sticker_gift = false
+      assign is_prodigi_gift = false
       if handle_down contains 'mug'
         assign is_mug = true
       endif
@@ -555,8 +569,15 @@
       if handle_down contains 'tote'
         assign is_tote = true
       endif
+      if handle_down contains 'sticker'
+        assign is_sticker_gift = true
+      endif
+      if is_prodigi or is_sticker_gift
+        assign is_prodigi_gift = true
+      endif
       assign gift_crumb_label = 'Home & gifts'
       assign gift_crumb_url = '/collections/home-gifts'
+      assign prodigi_caption = product.title
       if is_mug
         assign gift_crumb_label = 'Mugs'
         assign gift_crumb_url = '/collections/mugs'
@@ -569,9 +590,37 @@
       elsif is_tote
         assign gift_crumb_label = 'Tote bags'
         assign gift_crumb_url = '/collections/tote-bags'
+      elsif is_sticker_gift
+        assign gift_crumb_label = 'Stickers'
+        assign gift_crumb_url = '/collections/stickers'
+        assign prodigi_caption = 'Kiss-cut vinyl · white backing'
+      elsif handle_down contains 'tattoo'
+        assign gift_crumb_label = 'Temporary tattoos'
+        assign gift_crumb_url = '/collections/tattoos'
+        assign prodigi_caption = 'Skin-safe waterslide tattoo'
+      elsif handle_down contains 'magnet'
+        assign gift_crumb_label = 'Magnets'
+        assign gift_crumb_url = '/collections/magnets'
+        assign prodigi_caption = 'Photo fridge magnet'
+      elsif handle_down contains 'tile'
+        assign gift_crumb_label = 'Photo tiles'
+        assign gift_crumb_url = '/collections/photo-tiles'
+        assign prodigi_caption = 'Restickable framed photo tile'
+      elsif handle_down contains 'cushion'
+        assign gift_crumb_label = 'Cushions'
+        assign gift_crumb_url = '/collections/cushions'
+        assign prodigi_caption = 'Faux suede photo cushion'
+      elsif handle_down contains 'prism'
+        assign gift_crumb_label = 'Acrylic prisms'
+        assign gift_crumb_url = '/collections/acrylic-prisms'
+        assign prodigi_caption = 'Freestanding acrylic photo block'
+      elsif handle_down contains 'jigsaw'
+        assign gift_crumb_label = 'Jigsaws'
+        assign gift_crumb_url = '/collections/jigsaws'
+        assign prodigi_caption = 'Jigsaw in a metal tin'
       endif
     -%}
-    <div class="page-width product" id="Product-{{ section.id }}">
+    <div class="page-width product{% if is_prodigi_gift %} product--sticker{% endif %}" id="Product-{{ section.id }}">
       <div class="product__media">
         <div class="product__media-frame" data-product-media>
           {% if current_variant.featured_media %}
@@ -592,6 +641,9 @@
             {% render 'mock-image', product: product, class: 'product__image', width: 900 %}
           {% endif %}
         </div>
+        {% if is_prodigi_gift %}
+          <p class="product__media-caption muted">{{ prodigi_caption }}</p>
+        {% endif %}
       </div>
       <div class="product__info">
         <nav class="pb-canvas__crumbs" aria-label="Breadcrumb">
@@ -605,6 +657,9 @@
         </nav>
         <h1 class="product__title">{{ product.title }}</h1>
         <p class="product__price" data-product-price>{{ current_variant.price | money }}</p>
+        {% if is_prodigi_gift %}
+          <p class="product__lead">Upload your photo as a JPG or PNG. We’ll mock up your design and confirm it with you before we dispatch.</p>
+        {% endif %}
         {% if product.description != blank %}
           <div class="product__description rte">{{ product.description }}</div>
         {% endif %}
@@ -663,8 +718,43 @@
               </div>
             {% endif %}
           {% endunless %}
-          <button type="submit" name="add" class="button button--primary btn-addtocart" data-add-to-cart {% if current_variant.available == false %}disabled{% endif %}>
-            {% if current_variant.available %}Add to cart{% else %}Sold out{% endif %}
+          {% if is_prodigi_gift %}
+            <div class="prodigi-upload" data-sticker-upload>
+              <label class="field-label" for="ProdigiArtwork-{{ section.id }}">Your photo</label>
+              <input
+                id="ProdigiArtwork-{{ section.id }}"
+                class="prodigi-upload__input"
+                type="file"
+                name="properties[Artwork]"
+                accept="image/jpeg,image/png"
+                data-sticker-file
+                required
+              >
+              <p class="pb-canvas__vat muted">
+                We’ll mock up your design and confirm it with you before we dispatch — we won’t print the stock product photo.
+              </p>
+              <p class="prodigi-upload__status" data-sticker-status hidden></p>
+              <input type="hidden" name="properties[Artwork name]" value="" data-sticker-filename>
+              <input
+                type="hidden"
+                name="properties[Personalized print]"
+                value="We’ll mock up your design and confirm it with you before dispatch — not the stock product photo."
+              >
+            </div>
+          {% endif %}
+          <button
+            type="submit"
+            name="add"
+            class="button button--primary btn-addtocart"
+            data-add-to-cart
+            {% if is_prodigi_gift %}data-sticker-gate data-sticker-ready="false"{% endif %}
+            {% if current_variant.available == false or is_prodigi_gift %}disabled{% endif %}
+          >
+            {% if current_variant.available %}
+              Add to cart
+            {% else %}
+              Sold out
+            {% endif %}
           </button>
         {% endform %}
       </div>
@@ -702,8 +792,20 @@
             if (!v) return;
             if (idInput) idInput.value = v.id;
             if (priceEl) priceEl.textContent = v.priceFormatted;
-            if (imageEl && v.featuredImage) { imageEl.src = v.featuredImage; imageEl.srcset = ''; }
-            if (addBtn) {
+            if (imageEl && v.featuredImage && !root.querySelector('[data-sticker-preview]')) {
+              imageEl.src = v.featuredImage;
+              imageEl.srcset = '';
+            }
+            if (addBtn && addBtn.hasAttribute('data-sticker-gate')) {
+              if (!v.available) {
+                addBtn.disabled = true;
+                addBtn.textContent = 'Sold out';
+              } else {
+                var ready = addBtn.getAttribute('data-sticker-ready') === 'true';
+                addBtn.disabled = !ready;
+                addBtn.textContent = 'Add to cart';
+              }
+            } else if (addBtn) {
               addBtn.disabled = !v.available;
               addBtn.textContent = v.available ? 'Add to cart' : 'Sold out';
             }
@@ -759,8 +861,20 @@
             if (!v) return;
             if (idInput) idInput.value = v.id;
             if (priceEl) priceEl.textContent = v.priceFormatted;
-            if (imageEl && v.featuredImage) { imageEl.src = v.featuredImage; imageEl.srcset = ''; }
-            if (addBtn) {
+            if (imageEl && v.featuredImage && !root.querySelector('[data-sticker-preview]')) {
+              imageEl.src = v.featuredImage;
+              imageEl.srcset = '';
+            }
+            if (addBtn && addBtn.hasAttribute('data-sticker-gate')) {
+              if (!v.available) {
+                addBtn.disabled = true;
+                addBtn.textContent = 'Sold out';
+              } else {
+                var ready = addBtn.getAttribute('data-sticker-ready') === 'true';
+                addBtn.disabled = !ready;
+                addBtn.textContent = 'Add to cart';
+              }
+            } else if (addBtn) {
               addBtn.disabled = !v.available;
               addBtn.textContent = v.available ? 'Add to cart' : 'Sold out';
             }

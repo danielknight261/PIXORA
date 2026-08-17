@@ -2758,5 +2758,31 @@ body.pixora-qv-open {
   font-size: 0.85rem;
 }
 
+.prodigi-upload {
+  display: grid;
+  gap: 0.45rem;
+}
+
+.prodigi-upload__input {
+  width: 100%;
+  max-width: 100%;
+  font: inherit;
+}
+
+.prodigi-upload__status {
+  margin: 0;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--color-dark);
+}
+
+.product--sticker .field-select {
+  max-width: 100%;
+}
+
+.product--sticker [data-add-to-cart]:disabled {
+  opacity: 0.72;
+}
+
 /* gallery-nav-v2 */
 

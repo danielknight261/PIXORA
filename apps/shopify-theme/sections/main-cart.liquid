@@ -28,6 +28,13 @@
                   assign is_personalized = true
                 endif
 
+                if key_down == 'artwork' or key_down == 'artwork name'
+                  assign is_personalized = true
+                  if key_down == 'artwork name' and val != blank
+                    assign upload_name = val
+                  endif
+                endif
+
                 if val contains '.png' or val contains '.jpg' or val contains '.jpeg' or val contains '.webp' or val contains '.gif'
                   unless val contains 'http'
                     assign upload_name = val
@@ -76,7 +83,7 @@
                           {% assign val = property.last %}
                           {% unless first_char == '_' %}
                             {% if val != blank %}
-                              {% unless key_down == 'personalized print' or key_down == 'design preview' %}
+                              {% unless key_down == 'personalized print' or key_down == 'design preview' or key_down == 'artwork' or key_down == 'artwork name' %}
                                 {% if val contains 'http' %}
                                   {%- comment -%} Hide raw/broken image URLs {%- endcomment -%}
                                 {% else %}

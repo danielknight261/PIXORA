@@ -15,6 +15,8 @@
   assign is_home_gifts = false
   assign is_phone_cases = false
   assign is_tote_bags = false
+  assign is_stickers = false
+  assign is_prodigi_hub = false
   if handle == 'canvas-prints' or handle == 'canvas'
     assign is_canvas = true
   endif
@@ -60,9 +62,15 @@
   if handle == 'tote-bags'
     assign is_tote_bags = true
   endif
+  if handle == 'stickers'
+    assign is_stickers = true
+  endif
+  if handle == 'stickers' or handle == 'tattoos' or handle == 'magnets' or handle == 'photo-tiles' or handle == 'cushions' or handle == 'acrylic-prisms' or handle == 'jigsaws'
+    assign is_prodigi_hub = true
+  endif
 -%}
 
-<section class="main-collection{% if is_canvas or is_wall_art or is_posters or is_framed_prints or is_framed_canvas or is_aluminum or is_foam or is_acrylic or is_wood or is_hangers or is_mugs or is_water_bottles or is_home_gifts or is_phone_cases or is_tote_bags %} main-collection--canvas{% endif %}">
+<section class="main-collection{% if is_canvas or is_wall_art or is_posters or is_framed_prints or is_framed_canvas or is_aluminum or is_foam or is_acrylic or is_wood or is_hangers or is_mugs or is_water_bottles or is_home_gifts or is_phone_cases or is_tote_bags or is_prodigi_hub %} main-collection--canvas{% endif %}">
   {% if is_canvas %}
     {%- comment -%} Skip chooser — send shoppers straight to the canvas product PDP. {%- endcomment -%}
     <script>
@@ -363,6 +371,96 @@
       </div>
     </div>
 
+  {% elsif is_prodigi_hub %}
+    {%- liquid
+      assign hub_parent_label = 'Home & gifts'
+      assign hub_parent_url = '/collections/home-gifts'
+      assign hub_eyebrow = 'Personalize'
+      assign hub_desc = collection.description | strip_html | truncate: 140
+      assign hub_cta = 'Personalize'
+      if handle == 'photo-tiles'
+        assign hub_parent_label = 'Wall art'
+        assign hub_parent_url = '/collections/wall-art'
+      endif
+      if handle == 'stickers'
+        assign hub_eyebrow = 'Kiss-cut'
+        assign hub_desc = 'Waterproof vinyl, cut to your artwork. Indoor or outdoor.'
+        assign hub_cta = 'Choose size'
+      elsif handle == 'tattoos'
+        assign hub_eyebrow = 'Skin-safe'
+        assign hub_desc = 'Waterslide tattoos in five sizes. Lasts up to a week.'
+      elsif handle == 'magnets'
+        assign hub_eyebrow = 'Fridge'
+        assign hub_desc = 'Silver halide photo magnets on a strong magnetic backing.'
+      elsif handle == 'photo-tiles'
+        assign hub_eyebrow = 'Restickable'
+        assign hub_desc = 'Lightweight framed tiles — hang without tools, move up to five times.'
+      elsif handle == 'cushions'
+        assign hub_eyebrow = 'Home'
+        assign hub_desc = 'Faux suede throw cushions with a single-sided photo print.'
+      elsif handle == 'acrylic-prisms'
+        assign hub_eyebrow = 'Desk'
+        assign hub_desc = 'Freestanding acrylic blocks — back mount or transparent background.'
+      elsif handle == 'jigsaws'
+        assign hub_eyebrow = 'Games'
+        assign hub_desc = 'Dye-sublimation jigsaws in a metal tin, 30 to 1000 pieces.'
+      endif
+    -%}
+    <header class="collection-hero collection-hero--compact">
+      <div class="collection-hero__bg" aria-hidden="true"></div>
+      <div class="page-width collection-hero__inner">
+        <nav class="pb-canvas__crumbs" aria-label="Breadcrumb">
+          <a href="/">Home</a>
+          <span>/</span>
+          <a href="{{ hub_parent_url }}">{{ hub_parent_label }}</a>
+          <span>/</span>
+          <span>{{ collection.title }}</span>
+        </nav>
+        <h1 class="collection-hero__title">{{ collection.title }}</h1>
+        <p class="collection-hero__lead">
+          {% if collection.description != blank %}
+            {{ collection.description | strip_html }}
+          {% else %}
+            Personalise with your photo, then we print and ship.
+          {% endif %}
+        </p>
+      </div>
+    </header>
+    <div class="page-width collection-body">
+      <div class="finish-grid">
+        {% for product in collection.products %}
+          <a class="finish-card" href="{{ product.url }}">
+            <div class="finish-card__media">
+              {% if product.featured_media %}
+                {{
+                  product.featured_media
+                  | image_url: width: 900
+                  | image_tag: loading: 'lazy', alt: product.title
+                }}
+              {% else %}
+                {% render 'mock-image', handle: product.handle, alt: product.title, width: 900 %}
+              {% endif %}
+            </div>
+            <div class="finish-card__body">
+              <p class="finish-card__eyebrow">{{ hub_eyebrow }}</p>
+              <h2 class="finish-card__title">{{ product.title }}</h2>
+              <p class="finish-card__price">From {{ product.price_min | money }}</p>
+              <p class="finish-card__desc">{{ hub_desc }}</p>
+              <ul class="finish-card__meta">
+                {% if product.variants.size > 1 %}
+                  <li>{{ product.variants.size }} options</li>
+                {% endif %}
+                <li>Personalize</li>
+              </ul>
+              <span class="finish-card__cta">{{ hub_cta }}</span>
+            </div>
+          </a>
+        {% else %}
+          <p class="muted">Nothing in this collection yet.</p>
+        {% endfor %}
+      </div>
+    </div>
+
   {% elsif is_home_gifts %}
     <header class="collection-hero">
       <div class="collection-hero__bg" aria-hidden="true"></div>
@@ -370,7 +468,7 @@
         <p class="collection-hero__eyebrow">Shop</p>
         <h1 class="collection-hero__title">Home &amp; gifts</h1>
         <p class="collection-hero__lead">
-          Personalised mugs, bottles, phone cases, tote bags and more — everyday keepsakes they’ll actually use.
+          Personalised mugs, bottles, phone cases, tote bags, stickers, tattoos and more — everyday keepsakes they’ll actually use.
         </p>
       </div>
     </header>
@@ -379,6 +477,13 @@
       assign bottle_product = all_products['white-17oz-stainless-steel-water-bottle']
       assign cases_collection = collections['phone-cases']
       assign totes_collection = collections['tote-bags']
+      assign stickers_collection = collections['stickers']
+      assign tattoos_collection = collections['tattoos']
+      assign magnets_collection = collections['magnets']
+      assign tiles_collection = collections['photo-tiles']
+      assign cushions_collection = collections['cushions']
+      assign prisms_collection = collections['acrylic-prisms']
+      assign jigsaws_collection = collections['jigsaws']
       capture mugs_from
         render 'from-price', collection: mugs_collection
       endcapture
@@ -391,10 +496,38 @@
       capture totes_from
         render 'from-price', collection: totes_collection
       endcapture
+      capture stickers_from
+        render 'from-price', collection: stickers_collection
+      endcapture
+      capture tattoos_from
+        render 'from-price', collection: tattoos_collection
+      endcapture
+      capture magnets_from
+        render 'from-price', collection: magnets_collection
+      endcapture
+      capture tiles_from
+        render 'from-price', collection: tiles_collection
+      endcapture
+      capture cushions_from
+        render 'from-price', collection: cushions_collection
+      endcapture
+      capture prisms_from
+        render 'from-price', collection: prisms_collection
+      endcapture
+      capture jigsaws_from
+        render 'from-price', collection: jigsaws_collection
+      endcapture
       assign mugs_from = mugs_from | strip
       assign bottle_from = bottle_from | strip
       assign cases_from = cases_from | strip
       assign totes_from = totes_from | strip
+      assign stickers_from = stickers_from | strip
+      assign tattoos_from = tattoos_from | strip
+      assign magnets_from = magnets_from | strip
+      assign tiles_from = tiles_from | strip
+      assign cushions_from = cushions_from | strip
+      assign prisms_from = prisms_from | strip
+      assign jigsaws_from = jigsaws_from | strip
     -%}
     <div class="page-width collection-body">
       <div class="wall-art-grid">
@@ -425,6 +558,55 @@
           {% if totes_from != blank %}<span class="wall-art-card__price">{{ totes_from }}</span>{% endif %}
           <span class="wall-art-card__desc">Classic &amp; premium · personalize</span>
           <span class="wall-art-card__cta">Choose tote →</span>
+        </a>
+        <a class="wall-art-card wall-art-card--live" href="/collections/stickers">
+          <span class="wall-art-card__swatch wall-art-card__swatch--mint" aria-hidden="true"></span>
+          <span class="wall-art-card__title">Stickers</span>
+          {% if stickers_from != blank %}<span class="wall-art-card__price">{{ stickers_from }}</span>{% endif %}
+          <span class="wall-art-card__desc">Kiss-cut vinyl · matt or gloss</span>
+          <span class="wall-art-card__cta">Choose size →</span>
+        </a>
+        <a class="wall-art-card wall-art-card--live" href="/collections/tattoos">
+          <span class="wall-art-card__swatch wall-art-card__swatch--rose" aria-hidden="true"></span>
+          <span class="wall-art-card__title">Temporary tattoos</span>
+          {% if tattoos_from != blank %}<span class="wall-art-card__price">{{ tattoos_from }}</span>{% endif %}
+          <span class="wall-art-card__desc">Skin-safe · five sizes</span>
+          <span class="wall-art-card__cta">Personalize →</span>
+        </a>
+        <a class="wall-art-card wall-art-card--live" href="/collections/magnets">
+          <span class="wall-art-card__swatch wall-art-card__swatch--slate" aria-hidden="true"></span>
+          <span class="wall-art-card__title">Magnets</span>
+          {% if magnets_from != blank %}<span class="wall-art-card__price">{{ magnets_from }}</span>{% endif %}
+          <span class="wall-art-card__desc">Photo fridge magnets</span>
+          <span class="wall-art-card__cta">Personalize →</span>
+        </a>
+        <a class="wall-art-card wall-art-card--live" href="/collections/photo-tiles">
+          <span class="wall-art-card__swatch wall-art-card__swatch--cyan" aria-hidden="true"></span>
+          <span class="wall-art-card__title">Photo tiles</span>
+          {% if tiles_from != blank %}<span class="wall-art-card__price">{{ tiles_from }}</span>{% endif %}
+          <span class="wall-art-card__desc">Restickable framed tiles</span>
+          <span class="wall-art-card__cta">Personalize →</span>
+        </a>
+        <a class="wall-art-card wall-art-card--live" href="/collections/cushions">
+          <span class="wall-art-card__swatch wall-art-card__swatch--magenta" aria-hidden="true"></span>
+          <span class="wall-art-card__title">Cushions</span>
+          {% if cushions_from != blank %}<span class="wall-art-card__price">{{ cushions_from }}</span>{% endif %}
+          <span class="wall-art-card__desc">Faux suede · photo print</span>
+          <span class="wall-art-card__cta">Personalize →</span>
+        </a>
+        <a class="wall-art-card wall-art-card--live" href="/collections/acrylic-prisms">
+          <span class="wall-art-card__swatch wall-art-card__swatch--blue" aria-hidden="true"></span>
+          <span class="wall-art-card__title">Acrylic prisms</span>
+          {% if prisms_from != blank %}<span class="wall-art-card__price">{{ prisms_from }}</span>{% endif %}
+          <span class="wall-art-card__desc">Desk photo blocks · 1″ acrylic</span>
+          <span class="wall-art-card__cta">Personalize →</span>
+        </a>
+        <a class="wall-art-card wall-art-card--live" href="/collections/jigsaws">
+          <span class="wall-art-card__swatch wall-art-card__swatch--mint" aria-hidden="true"></span>
+          <span class="wall-art-card__title">Jigsaws</span>
+          {% if jigsaws_from != blank %}<span class="wall-art-card__price">{{ jigsaws_from }}</span>{% endif %}
+          <span class="wall-art-card__desc">30 to 1000 pieces · tin</span>
+          <span class="wall-art-card__cta">Personalize →</span>
         </a>
       </div>
     </div>
@@ -869,6 +1051,7 @@
       assign hangers_product = all_products['premium-matte-paper-poster-with-hanger']
       assign foam_collection = collections['foam-prints']
       assign wood_product = all_products['wood-prints']
+      assign tiles_collection = collections['photo-tiles']
       capture canvas_from
         render 'from-price', product: canvas_product
       endcapture
@@ -896,6 +1079,9 @@
       capture wood_from
         render 'from-price', product: wood_product
       endcapture
+      capture tiles_from
+        render 'from-price', collection: tiles_collection
+      endcapture
       assign canvas_from = canvas_from | strip
       assign framed_canvas_from = framed_canvas_from | strip
       assign framed_from = framed_from | strip
@@ -905,6 +1091,7 @@
       assign hangers_from = hangers_from | strip
       assign foam_from = foam_from | strip
       assign wood_from = wood_from | strip
+      assign tiles_from = tiles_from | strip
     -%}
     <header class="collection-hero">
       <div class="collection-hero__bg" aria-hidden="true"></div>
@@ -945,6 +1132,15 @@
           {% endif %}
           <span class="wall-art-card__desc">Wood &amp; metal frames · personalize</span>
           <span class="wall-art-card__cta">Choose finish →</span>
+        </a>
+        <a class="wall-art-card wall-art-card--live" href="/collections/photo-tiles">
+          <span class="wall-art-card__swatch wall-art-card__swatch--rose" aria-hidden="true"></span>
+          <span class="wall-art-card__title">Photo tiles</span>
+          {% if tiles_from != blank %}
+            <span class="wall-art-card__price">{{ tiles_from }}</span>
+          {% endif %}
+          <span class="wall-art-card__desc">Restickable framed tiles</span>
+          <span class="wall-art-card__cta">Personalize →</span>
         </a>
         <a class="wall-art-card wall-art-card--live" href="/collections/aluminum-prints">
           <span class="wall-art-card__swatch wall-art-card__swatch--slate" aria-hidden="true"></span>

@@ -41,6 +41,27 @@
   capture header_totes_from
     render 'from-price', handle: 'tote-bags'
   endcapture
+  capture header_stickers_from
+    render 'from-price', handle: 'stickers'
+  endcapture
+  capture header_tattoos_from
+    render 'from-price', handle: 'tattoos'
+  endcapture
+  capture header_magnets_from
+    render 'from-price', handle: 'magnets'
+  endcapture
+  capture header_tiles_from
+    render 'from-price', handle: 'photo-tiles'
+  endcapture
+  capture header_cushions_from
+    render 'from-price', handle: 'cushions'
+  endcapture
+  capture header_prisms_from
+    render 'from-price', handle: 'acrylic-prisms'
+  endcapture
+  capture header_jigsaws_from
+    render 'from-price', handle: 'jigsaws'
+  endcapture
   assign header_canvas_from = header_canvas_from | strip
   assign header_posters_from = header_posters_from | strip
   assign header_framed_canvas_from = header_framed_canvas_from | strip
@@ -54,6 +75,13 @@
   assign header_bottle_from = header_bottle_from | strip
   assign header_cases_from = header_cases_from | strip
   assign header_totes_from = header_totes_from | strip
+  assign header_stickers_from = header_stickers_from | strip
+  assign header_tattoos_from = header_tattoos_from | strip
+  assign header_magnets_from = header_magnets_from | strip
+  assign header_tiles_from = header_tiles_from | strip
+  assign header_cushions_from = header_cushions_from | strip
+  assign header_prisms_from = header_prisms_from | strip
+  assign header_jigsaws_from = header_jigsaws_from | strip
 -%}
 <header class="site-header">
   <div class="site-header__utility">
@@ -164,6 +192,13 @@
                 <span class="site-header__tile-desc">{% if header_wood_from != blank %}{{ header_wood_from }}{% else %}Natural grain · thickness{% endif %}</span>
               </span>
             </a>
+            <a class="site-header__tile" href="/collections/photo-tiles">
+              <span class="site-header__swatch site-header__swatch--rose" aria-hidden="true">{% render 'category-thumb', handle: 'photo-tiles', alt: 'Photo tiles', class: 'site-header__thumb', width: 160 %}</span>
+              <span class="site-header__tile-copy">
+                <span class="site-header__tile-title">Photo tiles</span>
+                <span class="site-header__tile-desc">{% if header_tiles_from != blank %}{{ header_tiles_from }}{% else %}Restickable frames{% endif %}</span>
+              </span>
+            </a>
             <a class="site-header__tile site-header__tile--all" href="/collections/wall-art">
               <span class="site-header__swatch site-header__swatch--teal" aria-hidden="true"></span>
               <span class="site-header__tile-copy">
@@ -209,6 +244,48 @@
               <span class="site-header__tile-copy">
                 <span class="site-header__tile-title">Tote bags</span>
                 <span class="site-header__tile-desc">{% if header_totes_from != blank %}{{ header_totes_from }}{% else %}Classic &amp; premium{% endif %}</span>
+              </span>
+            </a>
+            <a class="site-header__tile" href="/collections/stickers">
+              <span class="site-header__swatch site-header__swatch--mint" aria-hidden="true">{% render 'category-thumb', handle: 'stickers', alt: 'Stickers', class: 'site-header__thumb', width: 160 %}</span>
+              <span class="site-header__tile-copy">
+                <span class="site-header__tile-title">Stickers</span>
+                <span class="site-header__tile-desc">{% if header_stickers_from != blank %}{{ header_stickers_from }}{% else %}Kiss-cut vinyl{% endif %}</span>
+              </span>
+            </a>
+            <a class="site-header__tile" href="/collections/tattoos">
+              <span class="site-header__swatch site-header__swatch--rose" aria-hidden="true">{% render 'category-thumb', handle: 'tattoos', alt: 'Temporary tattoos', class: 'site-header__thumb', width: 160 %}</span>
+              <span class="site-header__tile-copy">
+                <span class="site-header__tile-title">Temporary tattoos</span>
+                <span class="site-header__tile-desc">{% if header_tattoos_from != blank %}{{ header_tattoos_from }}{% else %}Skin-safe{% endif %}</span>
+              </span>
+            </a>
+            <a class="site-header__tile" href="/collections/magnets">
+              <span class="site-header__swatch site-header__swatch--slate" aria-hidden="true">{% render 'category-thumb', handle: 'magnets', alt: 'Magnets', class: 'site-header__thumb', width: 160 %}</span>
+              <span class="site-header__tile-copy">
+                <span class="site-header__tile-title">Magnets</span>
+                <span class="site-header__tile-desc">{% if header_magnets_from != blank %}{{ header_magnets_from }}{% else %}Photo fridge magnets{% endif %}</span>
+              </span>
+            </a>
+            <a class="site-header__tile" href="/collections/cushions">
+              <span class="site-header__swatch site-header__swatch--magenta" aria-hidden="true">{% render 'category-thumb', handle: 'cushions', alt: 'Cushions', class: 'site-header__thumb', width: 160 %}</span>
+              <span class="site-header__tile-copy">
+                <span class="site-header__tile-title">Cushions</span>
+                <span class="site-header__tile-desc">{% if header_cushions_from != blank %}{{ header_cushions_from }}{% else %}Faux suede{% endif %}</span>
+              </span>
+            </a>
+            <a class="site-header__tile" href="/collections/acrylic-prisms">
+              <span class="site-header__swatch site-header__swatch--blue" aria-hidden="true">{% render 'category-thumb', handle: 'acrylic-prisms', alt: 'Acrylic prisms', class: 'site-header__thumb', width: 160 %}</span>
+              <span class="site-header__tile-copy">
+                <span class="site-header__tile-title">Acrylic prisms</span>
+                <span class="site-header__tile-desc">{% if header_prisms_from != blank %}{{ header_prisms_from }}{% else %}Desk photo blocks{% endif %}</span>
+              </span>
+            </a>
+            <a class="site-header__tile" href="/collections/jigsaws">
+              <span class="site-header__swatch site-header__swatch--cyan" aria-hidden="true">{% render 'category-thumb', handle: 'jigsaws', alt: 'Jigsaws', class: 'site-header__thumb', width: 160 %}</span>
+              <span class="site-header__tile-copy">
+                <span class="site-header__tile-title">Jigsaws</span>
+                <span class="site-header__tile-desc">{% if header_jigsaws_from != blank %}{{ header_jigsaws_from }}{% else %}Puzzle in a tin{% endif %}</span>
               </span>
             </a>
             <a class="site-header__tile site-header__tile--all" href="/collections/home-gifts">
