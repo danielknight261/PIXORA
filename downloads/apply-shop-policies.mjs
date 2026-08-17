@@ -1,5 +1,5 @@
 /**
- * Publish Pixora legal policies and register FR/DE/ES/IT/NL translations.
+ * Publish HappySnaps legal policies and register FR/DE/ES/IT/NL translations.
  */
 import fs from "node:fs";
 import path from "node:path";

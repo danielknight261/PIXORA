@@ -4,7 +4,7 @@
       "type": "download-file",
       "settings": {
         "heading": "Canvas variants CSV",
-        "text": "Download the Pixora canvas slim + thick variant list (Size, Orientation, Thickness, Product UIDs).",
+        "text": "Download the canvas slim + thick variant list (Size, Orientation, Thickness, Product UIDs).",
         "button_label": "Download CSV"
       }
     }

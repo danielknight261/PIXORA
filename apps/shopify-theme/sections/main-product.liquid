@@ -727,11 +727,11 @@
             {% endif %}
           {% endunless %}
           {% if is_prodigi_gift %}
-            <div class="prodigi-upload" data-sticker-upload>
-              <label class="field-label" for="ProdigiArtwork-{{ section.id }}">{{ 'products.your_photo' | t }}</label>
+            <div class="photo-upload" data-sticker-upload>
+              <label class="field-label" for="ArtworkUpload-{{ section.id }}">{{ 'products.your_photo' | t }}</label>
               <input
-                id="ProdigiArtwork-{{ section.id }}"
-                class="prodigi-upload__input"
+                id="ArtworkUpload-{{ section.id }}"
+                class="photo-upload__input"
                 type="file"
                 name="properties[Artwork]"
                 accept="image/jpeg,image/png"
@@ -741,7 +741,7 @@
               <p class="pb-canvas__vat muted">
                 {{ 'products.upload_confirm' | t }}
               </p>
-              <p class="prodigi-upload__status" data-sticker-status hidden></p>
+              <p class="photo-upload__status" data-sticker-status hidden></p>
               <input type="hidden" name="properties[Artwork name]" value="" data-sticker-filename>
               <input
                 type="hidden"
@@ -807,15 +807,15 @@
             if (addBtn && addBtn.hasAttribute('data-sticker-gate')) {
               if (!v.available) {
                 addBtn.disabled = true;
-                addBtn.textContent = (window.PIXORA_I18N && window.PIXORA_I18N.soldOut) || 'Sold out';
+                addBtn.textContent = (window.STORE_I18N && window.STORE_I18N.soldOut) || 'Sold out';
               } else {
                 var ready = addBtn.getAttribute('data-sticker-ready') === 'true';
                 addBtn.disabled = !ready;
-                addBtn.textContent = (window.PIXORA_I18N && window.PIXORA_I18N.addToCart) || 'Add to cart';
+                addBtn.textContent = (window.STORE_I18N && window.STORE_I18N.addToCart) || 'Add to cart';
               }
             } else if (addBtn) {
               addBtn.disabled = !v.available;
-              addBtn.textContent = v.available ? ((window.PIXORA_I18N && window.PIXORA_I18N.addToCart) || 'Add to cart') : ((window.PIXORA_I18N && window.PIXORA_I18N.soldOut) || 'Sold out');
+              addBtn.textContent = v.available ? ((window.STORE_I18N && window.STORE_I18N.addToCart) || 'Add to cart') : ((window.STORE_I18N && window.STORE_I18N.soldOut) || 'Sold out');
             }
             btns.forEach(function (b) {
               var on = b.getAttribute('data-gift-color-value') === value;
@@ -876,15 +876,15 @@
             if (addBtn && addBtn.hasAttribute('data-sticker-gate')) {
               if (!v.available) {
                 addBtn.disabled = true;
-                addBtn.textContent = (window.PIXORA_I18N && window.PIXORA_I18N.soldOut) || 'Sold out';
+                addBtn.textContent = (window.STORE_I18N && window.STORE_I18N.soldOut) || 'Sold out';
               } else {
                 var ready = addBtn.getAttribute('data-sticker-ready') === 'true';
                 addBtn.disabled = !ready;
-                addBtn.textContent = (window.PIXORA_I18N && window.PIXORA_I18N.addToCart) || 'Add to cart';
+                addBtn.textContent = (window.STORE_I18N && window.STORE_I18N.addToCart) || 'Add to cart';
               }
             } else if (addBtn) {
               addBtn.disabled = !v.available;
-              addBtn.textContent = v.available ? ((window.PIXORA_I18N && window.PIXORA_I18N.addToCart) || 'Add to cart') : ((window.PIXORA_I18N && window.PIXORA_I18N.soldOut) || 'Sold out');
+              addBtn.textContent = v.available ? ((window.STORE_I18N && window.STORE_I18N.addToCart) || 'Add to cart') : ((window.STORE_I18N && window.STORE_I18N.soldOut) || 'Sold out');
             }
           }
           selects.forEach(function (s) { s.addEventListener('change', apply); });

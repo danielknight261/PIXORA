@@ -1,5 +1,5 @@
 /**
- * Prodigi PDP: require a JPG/PNG upload. No live mockup overlay.
+ * Gift PDP: require a JPG/PNG upload. No live mockup overlay.
  */
 (function () {
   var fileInput = document.querySelector('[data-sticker-file]');
@@ -14,7 +14,7 @@
 
   if (form) form.setAttribute('enctype', 'multipart/form-data');
 
-  var i18n = window.PIXORA_I18N || {};
+  var i18n = window.STORE_I18N || {};
 
   function setReady(ready) {
     if (!addBtn) return;

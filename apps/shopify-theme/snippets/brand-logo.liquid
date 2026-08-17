@@ -1,0 +1,13 @@
+{% assign logo_alt = settings.brand_name | default: 'HappySnaps' %}
+{% if settings.logo != blank %}
+  {{ settings.logo | image_url: width: 160 | image_tag: alt: logo_alt, class: logo_class, loading: 'eager' }}
+{% else %}
+  <img
+    src="{{ 'happysnaps-logo.png' | asset_url }}"
+    alt="{{ logo_alt }}"
+    class="{{ logo_class }}"
+    width="80"
+    height="80"
+    loading="eager"
+  >
+{% endif %}

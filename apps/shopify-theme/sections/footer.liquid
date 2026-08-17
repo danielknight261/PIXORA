@@ -1,7 +1,10 @@
 <footer class="site-footer">
   <div class="page-width site-footer__top">
     <div class="site-footer__brand-block">
-      <p class="site-footer__brand">{{ settings.brand_name | default: shop.name }}</p>
+      <a class="site-footer__logo" href="{{ routes.root_url }}">
+        {% render 'brand-logo', logo_class: 'site-footer__logo-img' %}
+        <span class="site-footer__brand">{{ settings.brand_name | default: shop.name }}</span>
+      </a>
       <p class="site-footer__tagline">
         {{ settings.brand_tagline | default: 'Turn Moments Into Keepsakes' }}.
         {{ 'footer.tagline' | t }}

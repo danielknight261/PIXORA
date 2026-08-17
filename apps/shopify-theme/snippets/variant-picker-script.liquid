@@ -250,7 +250,7 @@
         showGalleryImage(0);
         if (addBtn) {
           addBtn.disabled = !variant.available;
-          addBtn.textContent = variant.available ? ((window.PIXORA_I18N && window.PIXORA_I18N.addToCart) || 'Add to cart') : ((window.PIXORA_I18N && window.PIXORA_I18N.soldOut) || 'Sold out');
+          addBtn.textContent = variant.available ? ((window.STORE_I18N && window.STORE_I18N.addToCart) || 'Add to cart') : ((window.STORE_I18N && window.STORE_I18N.soldOut) || 'Sold out');
         }
         if (summary) {
           var bits = [shortSize(state.size)];

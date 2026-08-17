@@ -1,5 +1,5 @@
 {%- comment -%}
-  Pixora studio header — category mega menus for wall art, gifts, paper prints, occasions.
+  Store header — category mega menus for wall art, gifts, paper prints, occasions.
 {%- endcomment -%}
 {%- liquid
   capture header_canvas_from
@@ -91,12 +91,8 @@
   <div class="site-header__utility">
     <div class="page-width site-header__utility-inner">
       <a class="site-header__logo" href="{{ routes.root_url }}">
-        <span class="site-header__mark" aria-hidden="true"></span>
-        {% if settings.logo != blank %}
-          {{ settings.logo | image_url: width: 200 | image_tag: alt: settings.brand_name, class: 'site-header__logo-img' }}
-        {% else %}
-          <span class="site-header__brand">{{ settings.brand_name | default: 'Pixora' }}</span>
-        {% endif %}
+        {% render 'brand-logo', logo_class: 'site-header__logo-img' %}
+        <span class="site-header__brand">{{ settings.brand_name | default: 'HappySnaps' }}</span>
       </a>
 
       <div class="site-header__actions">

@@ -9,7 +9,8 @@
     {% if page_description %}
       <meta name="description" content="{{ page_description | escape }}">
     {% endif %}
-    <link rel="canonical" href="{{ canonical_url }}">
+    <link rel="icon" href="{{ 'happysnaps-logo.png' | asset_url }}" type="image/png">
+    <link rel="apple-touch-icon" href="{{ 'happysnaps-logo.png' | asset_url }}">
     {{ content_for_header }}
     {{ 'base.css' | asset_url | stylesheet_tag }}
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,7 +18,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
       :root {
-        /* Pixora Studio Ink */
+        /* Studio Ink */
         --color-primary: {{ settings.color_primary }};
         --color-brand-nav: {{ settings.color_brand_nav }};
         --color-brand-nav-hover: {{ settings.color_brand_nav_hover }};
@@ -46,11 +47,11 @@
     </main>
     {% sections 'footer-group' %}
     <script>
-      window.PIXORA_DESIGN_PREVIEW = {
+      window.STORE_DESIGN_PREVIEW = {
         supabaseUrl: {{ settings.supabase_url | json }},
         anonKey: {{ settings.supabase_anon_key | json }}
       };
-      window.PIXORA_I18N = {
+      window.STORE_I18N = {
         addToCart: {{ 'products.add_to_cart' | t | json }},
         soldOut: {{ 'products.sold_out' | t | json }},
         uploadType: {{ 'products.upload_type' | t | json }},

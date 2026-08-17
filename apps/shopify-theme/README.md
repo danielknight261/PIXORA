@@ -1,27 +1,20 @@
-# Pixora Shopify Theme
+# HappySnaps Shopify Theme
 
-Liquid theme for the Pixora storefront (Shopify + Gelato Personalization Studio).
+Liquid theme for the HappySnaps storefront.
 
 ## Brand
 
-- Primary: `#2563EB`
-- Dark: `#0F172A`
-- Light: `#F8FAFC`
-- Accent: `#60A5FA`
 - Tagline: Turn Moments Into Keepsakes
 
-## Gelato hooks
+## Designer hook
 
-- `snippets/gelato-customization.liquid` — required `data-gelato-customization` marker
-- Product form Add to Cart uses class `btn-addtocart` for Gelato Personalizer
+- `snippets/gelato-customization.liquid` — required `data-gelato-customization` marker (do not remove)
+- Product form Add to Cart uses class `btn-addtocart`
 
 ## Develop
 
 ```bash
-# From repo root — set your store
 cd apps/shopify-theme
 shopify theme dev --store YOUR-STORE.myshopify.com
 shopify theme push --store YOUR-STORE.myshopify.com
 ```
-
-See [docs/shopify-gelato-migration.md](../../docs/shopify-gelato-migration.md).

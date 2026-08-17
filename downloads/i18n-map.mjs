@@ -83,7 +83,7 @@ const EXACT = {
   "White 15oz Ceramic Mug": ["Mug céramique blanc 15 oz", "Weiße Keramiktasse 15 oz", "Taza cerámica blanca 15 oz", "Tazza ceramica bianca 15 oz", "Witte keramische mok 15 oz"],
   "White 11oz Ceramic Mug": ["Mug céramique blanc 11 oz", "Weiße Keramiktasse 11 oz", "Taza cerámica blanca 11 oz", "Tazza ceramica bianca 11 oz", "Witte keramische mok 11 oz"],
   "Magic 11oz Ceramic Mug": ["Mug magique 11 oz", "Magic-Tasse 11 oz", "Taza mágica 11 oz", "Tazza magica 11 oz", "Magische mok 11 oz"],
-  "Canvas Prints | Pixora": ["Toiles | Pixora", "Leinwanddrucke | Pixora", "Lienzos | Pixora", "Tele | Pixora", "Canvas prints | Pixora"],
+  "Canvas Prints | HappySnaps": ["Toiles | HappySnaps", "Leinwanddrucke | HappySnaps", "Lienzos | HappySnaps", "Tele | HappySnaps", "Canvas prints | HappySnaps"],
   "Metal / aluminium prints": ["Impressions métal / aluminium", "Metall- / Aluminiumdrucke", "Impresiones metal / aluminio", "Stampe metallo / alluminio", "Metaal- / aluminiumdrukken"],
   "Personalized Canvas Print": ["Toile personnalisée", "Personalisierter Leinwanddruck", "Lienzo personalizado", "Tela personalizzata", "Gepersonaliseerde canvasprint"],
   "Premium Matte Paper Poster": ["Poster papier mat premium", "Premium-Mattpapier-Poster", "Póster papel mate premium", "Poster carta opaca premium", "Premium mat papier poster"],
@@ -93,11 +93,11 @@ const EXACT = {
   "Classic Semi-Glossy Paper Poster": ["Poster papier semi-brillant classique", "Klassisches Semiglanz-Poster", "Póster papel satinado clásico", "Poster carta semilucida classica", "Klassiek halfglanzend papierposter"],
   "White 15oz Stainless Steel Travel Mug": ["Mug isotherme inox blanc 15 oz", "Weißer Edelstahl-Thermobecher 15 oz", "Mug de viaje acero blanco 15 oz", "Mug da viaggio acciaio bianco 15 oz", "Witte RVS reisbeker 15 oz"],
   "Premium Matte Paper Poster with Hanger": ["Poster papier mat premium avec barre", "Premium-Mattpapier-Poster mit Aufhänger", "Póster papel mate premium con colgador", "Poster carta opaca premium con asta", "Premium mat poster met ophanglat"],
-  "Personalised framed prints from Pixora": ["Impressions encadrées personnalisées Pixora", "Personalisierte gerahmte Drucke von Pixora", "Láminas enmarcadas personalizadas de Pixora", "Stampe incorniciate personalizzate Pixora", "Gepersonaliseerde ingelijste prints van Pixora"],
+  "Personalised framed prints from HappySnaps": ["Impressions encadrées personnalisées HappySnaps", "Personalisierte gerahmte Drucke von HappySnaps", "Láminas enmarcadas personalizadas de HappySnaps", "Stampe incorniciate personalizzate HappySnaps", "Gepersonaliseerde ingelijste prints van HappySnaps"],
   "White 17oz Stainless Steel Water Bottle": ["Gourde inox blanche 17 oz", "Weiße Edelstahlflasche 17 oz", "Botella de acero blanca 17 oz", "Borraccia acciaio bianca 17 oz", "Witte RVS drinkfles 17 oz"],
   "White 11oz Ceramic Mug with Color Inside": ["Mug céramique blanc 11 oz intérieur couleur", "Weiße Keramiktasse 11 oz mit Innenfarbe", "Taza cerámica blanca 11 oz interior de color", "Tazza ceramica bianca 11 oz interno colorato", "Witte keramische mok 11 oz met kleur binnenin"],
   "Classic Semi-Glossy Paper Metal Framed Poster": ["Poster semi-brillant classique cadre métal", "Klassisches Semiglanz-Poster mit Metallrahmen", "Póster satinado clásico con marco de metal", "Poster semilucido classico con cornice metallo", "Klassiek halfglanzend poster met metalen lijst"],
-  "Personalised framed canvas prints from Pixora": ["Toiles encadrées personnalisées Pixora", "Personalisierte gerahmte Leinwände von Pixora", "Lienzos enmarcados personalizados de Pixora", "Tele incorniciate personalizzate Pixora", "Gepersonaliseerde ingelijste canvassen van Pixora"],
+  "Personalised framed canvas prints from HappySnaps": ["Toiles encadrées personnalisées HappySnaps", "Personalisierte gerahmte Leinwände von HappySnaps", "Lienzos enmarcados personalizados de HappySnaps", "Tele incorniciate personalizzate HappySnaps", "Gepersonaliseerde ingelijste canvassen van HappySnaps"],
   "Premium Semi-Glossy Paper Wooden Framed Poster Premium": ["Poster semi-brillant premium cadre bois", "Premium-Semiglanz-Poster mit Holzrahmen", "Póster satinado premium con marco de madera", "Poster semilucido premium con cornice legno", "Premium halfglanzend poster met houten lijst"],
   "Classic Semi-Glossy Paper Wooden Framed Poster Bestseller": ["Poster semi-brillant classique cadre bois — best-seller", "Bestseller: Semiglanz-Poster mit Holzrahmen", "Póster satinado clásico con marco de madera — más vendido", "Poster semilucido classico con cornice legno — bestseller", "Klassiek halfglanzend poster met houten lijst — bestseller"],
   Vertical: ["Vertical", "Hochformat", "Vertical", "Verticale", "Staand"],
@@ -117,13 +117,13 @@ const EXACT = {
 
 const PHRASES = [
   [
-    "Personalised canvas prints from Pixora. Upload your photo, preview it on a live product mockup, and we print and ship gallery-quality canvas to your door.",
+    "Personalised canvas prints from HappySnaps. Upload your photo, preview it on a live product mockup, and we print and ship gallery-quality canvas to your door.",
     [
-      "Toiles personnalisées Pixora. Envoyez votre photo, prévisualisez-la sur un mockup, puis nous imprimons et livrons une toile de qualité galerie.",
-      "Personalisierte Leinwanddrucke von Pixora. Laden Sie Ihr Foto hoch, sehen Sie die Vorschau am Produkt und wir drucken und liefern Galeriequalität.",
-      "Lienzos personalizados de Pixora. Sube tu foto, previsualízala en el producto y la imprimimos y enviamos con calidad de galería.",
-      "Tele personalizzate Pixora. Carica la tua foto, vedi l’anteprima sul prodotto e stampiamo e spediamo qualità da galleria.",
-      "Gepersonaliseerde canvasprints van Pixora. Upload je foto, bekijk de preview op het product, wij drukken en verzenden galerijkwaliteit.",
+      "Toiles personnalisées HappySnaps. Envoyez votre photo, prévisualisez-la sur un mockup, puis nous imprimons et livrons une toile de qualité galerie.",
+      "Personalisierte Leinwanddrucke von HappySnaps. Laden Sie Ihr Foto hoch, sehen Sie die Vorschau am Produkt und wir drucken und liefern Galeriequalität.",
+      "Lienzos personalizados de HappySnaps. Sube tu foto, previsualízala en el producto y la imprimimos y enviamos con calidad de galería.",
+      "Tele personalizzate HappySnaps. Carica la tua foto, vedi l’anteprima sul prodotto e stampiamo e spediamo qualità da galleria.",
+      "Gepersonaliseerde canvasprints van HappySnaps. Upload je foto, bekijk de preview op het product, wij drukken en verzenden galerijkwaliteit.",
     ],
   ],
   [
@@ -544,7 +544,7 @@ export const SHIPPING_TITLE = "Shipping & delivery";
 
 export const SHIPPING_HTML = {
   en: `<h2>How delivery works</h2>
-<p>Every Pixora order is printed after you buy it, then shipped to your door. Times below are typical, not guaranteed — busy periods can add a few days. Checkout shows the shipping rate for your address.</p>
+<p>Every HappySnaps order is printed after you buy it, then shipped to your door. Times below are typical, not guaranteed — busy periods can add a few days. Checkout shows the shipping rate for your address.</p>
 <h3>Wall art, posters, mugs, bottles, phone cases and tote bags</h3>
 <p>Printed close to you. Production is usually 1–3 business days, then shipping:</p>
 <ul>
@@ -562,7 +562,7 @@ export const SHIPPING_HTML = {
 <p>You can check out as a guest — no account needed. After you pay, we email you a link to view the order. When it ships, a second email includes tracking.</p>
 <p>To see all your orders in one place, use <strong>Sign in</strong> in the header. We’ll send a code to your email — no password. At checkout you can also choose to save your details for next time.</p>`,
   fr: `<h2>Comment fonctionne la livraison</h2>
-<p>Chaque commande Pixora est imprimée après votre achat, puis envoyée chez vous. Les délais ci-dessous sont indicatifs, non garantis — les périodes chargées peuvent ajouter quelques jours. Le paiement affiche le tarif pour votre adresse.</p>
+<p>Chaque commande HappySnaps est imprimée après votre achat, puis envoyée chez vous. Les délais ci-dessous sont indicatifs, non garantis — les périodes chargées peuvent ajouter quelques jours. Le paiement affiche le tarif pour votre adresse.</p>
 <h3>Déco murale, posters, mugs, gourdes, coques et tote bags</h3>
 <p>Imprimé près de chez vous. Production généralement 1–3 jours ouvrés, puis expédition :</p>
 <ul>
@@ -580,7 +580,7 @@ export const SHIPPING_HTML = {
 <p>Vous pouvez payer en invité — pas besoin de compte. Après le paiement, nous envoyons un lien pour voir la commande. À l’expédition, un second e-mail contient le suivi.</p>
 <p>Pour voir toutes vos commandes, utilisez <strong>Connexion</strong> dans l’en-tête. Nous envoyons un code par e-mail — pas de mot de passe. Au paiement, vous pouvez aussi enregistrer vos coordonnées pour la prochaine fois.</p>`,
   de: `<h2>So funktioniert die Lieferung</h2>
-<p>Jede Pixora-Bestellung wird nach dem Kauf gedruckt und zu Ihnen geschickt. Die Zeiten sind Richtwerte, keine Garantie — in Stoßzeiten kann es länger dauern. An der Kasse sehen Sie den Versandpreis für Ihre Adresse.</p>
+<p>Jede HappySnaps-Bestellung wird nach dem Kauf gedruckt und zu Ihnen geschickt. Die Zeiten sind Richtwerte, keine Garantie — in Stoßzeiten kann es länger dauern. An der Kasse sehen Sie den Versandpreis für Ihre Adresse.</p>
 <h3>Wandkunst, Poster, Tassen, Flaschen, Handyhüllen und Stoffbeutel</h3>
 <p>Nah bei Ihnen gedruckt. Produktion meist 1–3 Werktage, danach Versand:</p>
 <ul>
@@ -598,7 +598,7 @@ export const SHIPPING_HTML = {
 <p>Sie können als Gast bezahlen — kein Konto nötig. Nach der Zahlung senden wir einen Link zur Bestellung. Beim Versand folgt eine zweite E-Mail mit Tracking.</p>
 <p>Alle Bestellungen sehen Sie unter <strong>Anmelden</strong> in der Kopfzeile. Wir schicken einen Code per E-Mail — kein Passwort. An der Kasse können Sie Ihre Daten für das nächste Mal speichern.</p>`,
   es: `<h2>Cómo funciona el envío</h2>
-<p>Cada pedido de Pixora se imprime después de comprarlo y se envía a tu puerta. Los plazos son orientativos, no garantizados: en temporadas altas pueden sumarse unos días. El pago muestra la tarifa para tu dirección.</p>
+<p>Cada pedido de HappySnaps se imprime después de comprarlo y se envía a tu puerta. Los plazos son orientativos, no garantizados: en temporadas altas pueden sumarse unos días. El pago muestra la tarifa para tu dirección.</p>
 <h3>Arte de pared, pósters, tazas, botellas, fundas y tote bags</h3>
 <p>Impreso cerca de ti. Producción habitual de 1–3 días laborables y luego envío:</p>
 <ul>
@@ -616,7 +616,7 @@ export const SHIPPING_HTML = {
 <p>Puedes pagar como invitado, sin cuenta. Tras el pago te enviamos un enlace para ver el pedido. Al enviarse, un segundo correo incluye el seguimiento.</p>
 <p>Para ver todos tus pedidos, usa <strong>Iniciar sesión</strong> en la cabecera. Te enviamos un código por correo, sin contraseña. En el pago también puedes guardar tus datos para la próxima vez.</p>`,
   it: `<h2>Come funziona la spedizione</h2>
-<p>Ogni ordine Pixora viene stampato dopo l’acquisto e spedito a casa tua. I tempi sono indicativi, non garantiti — nei periodi di punta possono allungarsi. Il checkout mostra la tariffa per il tuo indirizzo.</p>
+<p>Ogni ordine HappySnaps viene stampato dopo l’acquisto e spedito a casa tua. I tempi sono indicativi, non garantiti — nei periodi di punta possono allungarsi. Il checkout mostra la tariffa per il tuo indirizzo.</p>
 <h3>Arte da parete, poster, tazze, borracce, cover e tote bag</h3>
 <p>Stampati vicino a te. Produzione di solito 1–3 giorni lavorativi, poi spedizione:</p>
 <ul>
@@ -634,7 +634,7 @@ export const SHIPPING_HTML = {
 <p>Puoi pagare come ospite, senza account. Dopo il pagamento ti inviamo un link per vedere l’ordine. Alla spedizione una seconda email include il tracking.</p>
 <p>Per vedere tutti gli ordini usa <strong>Accedi</strong> in alto. Ti inviamo un codice via email — niente password. Al checkout puoi anche salvare i dati per la prossima volta.</p>`,
   nl: `<h2>Hoe verzending werkt</h2>
-<p>Elke Pixora-bestelling wordt na aankoop gedrukt en naar je deur gestuurd. De tijden zijn richtlijnen, geen garantie — in drukke periodes kan het langer duren. Bij het afrekenen zie je het tarief voor je adres.</p>
+<p>Elke HappySnaps-bestelling wordt na aankoop gedrukt en naar je deur gestuurd. De tijden zijn richtlijnen, geen garantie — in drukke periodes kan het langer duren. Bij het afrekenen zie je het tarief voor je adres.</p>
 <h3>Wandkunst, posters, mokken, flessen, hoesjes en tote bags</h3>
 <p>Dichtbij jou gedrukt. Productie meestal 1–3 werkdagen, daarna verzending:</p>
 <ul>

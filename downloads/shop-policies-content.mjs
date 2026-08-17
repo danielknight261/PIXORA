@@ -5,7 +5,7 @@ const CONTACT_LINK = `<a href="${CONTACT_PAGE}">Contact</a>`;
 export const POLICIES = {
   PRIVACY_POLICY: {
     en: `<h2>Who we are</h2>
-<p>Pixora (“we”, “us”) sells personalised photo products from the United Kingdom. This policy explains how we collect, use and share personal information when you visit our store or place an order.</p>
+<p>HappySnaps (“we”, “us”) sells personalised photo products from the United Kingdom. This policy explains how we collect, use and share personal information when you visit our store or place an order.</p>
 <p>Contact: ${CONTACT_LINK}<br>${CONTACT_ADDRESS}</p>
 <h2>Information we collect</h2>
 <ul>
@@ -36,7 +36,7 @@ export const POLICIES = {
 <p>This store is not intended for children. We do not knowingly collect personal information from children.</p>
 <p>We may update this policy from time to time. The latest version is always on this page.</p>`,
     fr: `<h2>Qui nous sommes</h2>
-<p>Pixora (« nous ») vend des produits photo personnalisés depuis le Royaume-Uni. Cette politique explique comment nous collectons, utilisons et partageons vos informations lorsque vous visitez la boutique ou passez commande.</p>
+<p>HappySnaps (« nous ») vend des produits photo personnalisés depuis le Royaume-Uni. Cette politique explique comment nous collectons, utilisons et partageons vos informations lorsque vous visitez la boutique ou passez commande.</p>
 <p>Contact : ${CONTACT_LINK}<br>${CONTACT_ADDRESS}</p>
 <h2>Informations collectées</h2>
 <ul>
@@ -67,7 +67,7 @@ export const POLICIES = {
 <p>Cette boutique n’est pas destinée aux enfants. Nous ne collectons pas sciemment leurs données.</p>
 <p>Nous pouvons mettre à jour cette politique. La version en vigueur est toujours sur cette page.</p>`,
     de: `<h2>Wer wir sind</h2>
-<p>Pixora („wir“) verkauft personalisierte Fotoprodukte aus dem Vereinigten Königreich. Diese Erklärung beschreibt, wie wir personenbezogene Daten erheben, nutzen und weitergeben, wenn Sie unseren Shop besuchen oder bestellen.</p>
+<p>HappySnaps („wir“) verkauft personalisierte Fotoprodukte aus dem Vereinigten Königreich. Diese Erklärung beschreibt, wie wir personenbezogene Daten erheben, nutzen und weitergeben, wenn Sie unseren Shop besuchen oder bestellen.</p>
 <p>Kontakt: ${CONTACT_LINK}<br>${CONTACT_ADDRESS}</p>
 <h2>Welche Daten wir erheben</h2>
 <ul>
@@ -98,7 +98,7 @@ export const POLICIES = {
 <p>Dieser Shop richtet sich nicht an Kinder. Wir erheben wissentlich keine Daten von Kindern.</p>
 <p>Wir können diese Erklärung aktualisieren. Die aktuelle Fassung steht immer auf dieser Seite.</p>`,
     es: `<h2>Quiénes somos</h2>
-<p>Pixora («nosotros») vende productos fotográficos personalizados desde el Reino Unido. Esta política explica cómo recogemos, usamos y compartimos datos personales cuando visitas la tienda o haces un pedido.</p>
+<p>HappySnaps («nosotros») vende productos fotográficos personalizados desde el Reino Unido. Esta política explica cómo recogemos, usamos y compartimos datos personales cuando visitas la tienda o haces un pedido.</p>
 <p>Contacto: ${CONTACT_LINK}<br>${CONTACT_ADDRESS}</p>
 <h2>Datos que recogemos</h2>
 <ul>
@@ -129,7 +129,7 @@ export const POLICIES = {
 <p>Esta tienda no está dirigida a menores. No recogemos a sabiendas sus datos.</p>
 <p>Podemos actualizar esta política. La versión vigente está siempre en esta página.</p>`,
     it: `<h2>Chi siamo</h2>
-<p>Pixora («noi») vende prodotti fotografici personalizzati dal Regno Unito. Questa informativa spiega come raccogliamo, usiamo e condividiamo i dati personali quando visiti il negozio o ordini.</p>
+<p>HappySnaps («noi») vende prodotti fotografici personalizzati dal Regno Unito. Questa informativa spiega come raccogliamo, usiamo e condividiamo i dati personali quando visiti il negozio o ordini.</p>
 <p>Contatto: ${CONTACT_LINK}<br>${CONTACT_ADDRESS}</p>
 <h2>Dati che raccogliamo</h2>
 <ul>
@@ -160,7 +160,7 @@ export const POLICIES = {
 <p>Questo negozio non è destinato ai minori. Non raccogliamo consapevolmente i loro dati.</p>
 <p>Possiamo aggiornare questa informativa. La versione attuale è sempre su questa pagina.</p>`,
     nl: `<h2>Wie wij zijn</h2>
-<p>Pixora («wij») verkoopt gepersonaliseerde fotoproducten vanuit het Verenigd Koninkrijk. Dit beleid legt uit hoe we persoonsgegevens verzamelen, gebruiken en delen als je de winkel bezoekt of bestelt.</p>
+<p>HappySnaps («wij») verkoopt gepersonaliseerde fotoproducten vanuit het Verenigd Koninkrijk. Dit beleid legt uit hoe we persoonsgegevens verzamelen, gebruiken en delen als je de winkel bezoekt of bestelt.</p>
 <p>Contact: ${CONTACT_LINK}<br>${CONTACT_ADDRESS}</p>
 <h2>Welke gegevens we verzamelen</h2>
 <ul>
@@ -193,7 +193,7 @@ export const POLICIES = {
   },
   TERMS_OF_SERVICE: {
     en: `<h2>About these terms</h2>
-<p>These terms apply when you use the Pixora website or buy from us. By placing an order you agree to them. Pixora is based in the United Kingdom. Contact: ${CONTACT_LINK}, ${CONTACT_ADDRESS}.</p>
+<p>These terms apply when you use the HappySnaps website or buy from us. By placing an order you agree to them. HappySnaps is based in the United Kingdom. Contact: ${CONTACT_LINK}, ${CONTACT_ADDRESS}.</p>
 <h2>Our products</h2>
 <p>We sell personalised photo products printed after you order. Colours on screen may differ slightly from the printed item. You are responsible for the quality, crop and content of the file you upload.</p>
 <h2>Your artwork</h2>
@@ -210,7 +210,7 @@ export const POLICIES = {
 <p>These terms are governed by the laws of England and Wales. If you live in the UK or EU you also keep any mandatory consumer protections of your country.</p>
 <p>We may update these terms. The version on this page applies to new orders.</p>`,
     fr: `<h2>Objet</h2>
-<p>Ces conditions s’appliquent lorsque vous utilisez le site Pixora ou achetez chez nous. Passer commande vaut acceptation. Pixora est établi au Royaume-Uni. Contact : ${CONTACT_LINK}, ${CONTACT_ADDRESS}.</p>
+<p>Ces conditions s’appliquent lorsque vous utilisez le site HappySnaps ou achetez chez nous. Passer commande vaut acceptation. HappySnaps est établi au Royaume-Uni. Contact : ${CONTACT_LINK}, ${CONTACT_ADDRESS}.</p>
 <h2>Nos produits</h2>
 <p>Nous vendons des produits photo personnalisés, imprimés après commande. Les couleurs à l’écran peuvent légèrement différer de l’imprimé. Vous êtes responsable de la qualité, du recadrage et du contenu du fichier envoyé.</p>
 <h2>Vos visuels</h2>
@@ -227,7 +227,7 @@ export const POLICIES = {
 <p>Le droit anglais et gallois s’applique. Si vous résidez au Royaume-Uni ou dans l’UE, vous conservez les protections impératives de votre pays.</p>
 <p>Nous pouvons mettre à jour ces conditions. La version de cette page s’applique aux nouvelles commandes.</p>`,
     de: `<h2>Geltung</h2>
-<p>Diese Bedingungen gelten, wenn Sie die Pixora-Website nutzen oder bei uns kaufen. Mit der Bestellung stimmen Sie zu. Pixora hat Sitz im Vereinigten Königreich. Kontakt: ${CONTACT_LINK}, ${CONTACT_ADDRESS}.</p>
+<p>Diese Bedingungen gelten, wenn Sie die HappySnaps-Website nutzen oder bei uns kaufen. Mit der Bestellung stimmen Sie zu. HappySnaps hat Sitz im Vereinigten Königreich. Kontakt: ${CONTACT_LINK}, ${CONTACT_ADDRESS}.</p>
 <h2>Unsere Produkte</h2>
 <p>Wir verkaufen personalisierte Fotoprodukte, die nach der Bestellung gedruckt werden. Bildschirmfarben können vom Druck leicht abweichen. Sie sind für Qualität, Zuschnitt und Inhalt der hochgeladenen Datei verantwortlich.</p>
 <h2>Ihre Dateien</h2>
@@ -244,7 +244,7 @@ export const POLICIES = {
 <p>Es gilt das Recht von England und Wales. Wohnen Sie im Vereinigten Königreich oder in der EU, behalten Sie zwingende Verbraucherschutzrechte Ihres Landes.</p>
 <p>Wir können diese Bedingungen aktualisieren. Für neue Bestellungen gilt die Fassung auf dieser Seite.</p>`,
     es: `<h2>Estas condiciones</h2>
-<p>Se aplican al usar el sitio de Pixora o comprar con nosotros. Al pedir, las aceptas. Pixora está en el Reino Unido. Contacto: ${CONTACT_LINK}, ${CONTACT_ADDRESS}.</p>
+<p>Se aplican al usar el sitio de HappySnaps o comprar con nosotros. Al pedir, las aceptas. HappySnaps está en el Reino Unido. Contacto: ${CONTACT_LINK}, ${CONTACT_ADDRESS}.</p>
 <h2>Nuestros productos</h2>
 <p>Vendemos productos fotográficos personalizados impresos tras el pedido. El color en pantalla puede variar un poco del impreso. Eres responsable de la calidad, el recorte y el contenido del archivo.</p>
 <h2>Tu archivo</h2>
@@ -261,7 +261,7 @@ export const POLICIES = {
 <p>Rige el derecho de Inglaterra y Gales. Si vives en el Reino Unido o la UE, conservas las protecciones imperativas de tu país.</p>
 <p>Podemos actualizar estas condiciones. La versión de esta página rige los pedidos nuevos.</p>`,
     it: `<h2>Queste condizioni</h2>
-<p>Si applicano quando usi il sito Pixora o acquisti da noi. Con l’ordine le accetti. Pixora ha sede nel Regno Unito. Contatto: ${CONTACT_LINK}, ${CONTACT_ADDRESS}.</p>
+<p>Si applicano quando usi il sito HappySnaps o acquisti da noi. Con l’ordine le accetti. HappySnaps ha sede nel Regno Unito. Contatto: ${CONTACT_LINK}, ${CONTACT_ADDRESS}.</p>
 <h2>I nostri prodotti</h2>
 <p>Vendiamo prodotti fotografici personalizzati stampati dopo l’ordine. I colori a schermo possono differire leggermente dalla stampa. Sei responsabile di qualità, ritaglio e contenuto del file caricato.</p>
 <h2>I tuoi file</h2>
@@ -278,7 +278,7 @@ export const POLICIES = {
 <p>Si applica il diritto di Inghilterra e Galles. Se vivi nel Regno Unito o nell’UE restano le tutele inderogabili del tuo Paese.</p>
 <p>Possiamo aggiornare queste condizioni. Per i nuovi ordini vale la versione di questa pagina.</p>`,
     nl: `<h2>Deze voorwaarden</h2>
-<p>Ze gelden als je de Pixora-site gebruikt of bij ons koopt. Met een bestelling ga je akkoord. Pixora is gevestigd in het Verenigd Koninkrijk. Contact: ${CONTACT_LINK}, ${CONTACT_ADDRESS}.</p>
+<p>Ze gelden als je de HappySnaps-site gebruikt of bij ons koopt. Met een bestelling ga je akkoord. HappySnaps is gevestigd in het Verenigd Koninkrijk. Contact: ${CONTACT_LINK}, ${CONTACT_ADDRESS}.</p>
 <h2>Onze producten</h2>
 <p>We verkopen gepersonaliseerde fotoproducten die na je bestelling worden gedrukt. Kleuren op scherm kunnen licht afwijken van de print. Jij bent verantwoordelijk voor kwaliteit, uitsnede en inhoud van het bestand.</p>
 <h2>Jouw artwork</h2>
@@ -297,7 +297,7 @@ export const POLICIES = {
   },
   REFUND_POLICY: {
     en: `<h2>Personalised products</h2>
-<p>Pixora items are made to your photo and specification after you order. Under UK and EU consumer rules, goods made to a customer’s specification are generally not returnable for a change of mind. Please check size, crop and preview carefully before you pay.</p>
+<p>HappySnaps items are made to your photo and specification after you order. Under UK and EU consumer rules, goods made to a customer’s specification are generally not returnable for a change of mind. Please check size, crop and preview carefully before you pay.</p>
 <h2>If something is wrong</h2>
 <p>You still have legal rights if an item is faulty, damaged in transit, or not as described. Contact us within 14 days of delivery via ${CONTACT_LINK} with your order number and photos of the issue. We will offer a reprint or refund as appropriate.</p>
 <h2>What we need</h2>
@@ -314,7 +314,7 @@ export const POLICIES = {
 <p>Approved refunds go back to the original payment method. Timing depends on your bank or card provider.</p>
 <p>These terms do not affect your statutory rights.</p>`,
     fr: `<h2>Produits personnalisés</h2>
-<p>Les articles Pixora sont fabriqués selon votre photo et vos choix après commande. Au Royaume-Uni et dans l’UE, les biens faits sur mesure ne sont en général pas retournables pour un simple changement d’avis. Vérifiez format, recadrage et aperçu avant de payer.</p>
+<p>Les articles HappySnaps sont fabriqués selon votre photo et vos choix après commande. Au Royaume-Uni et dans l’UE, les biens faits sur mesure ne sont en général pas retournables pour un simple changement d’avis. Vérifiez format, recadrage et aperçu avant de payer.</p>
 <h2>Si un problème survient</h2>
 <p>Vous conservez vos droits si l’article est défectueux, endommagé à la livraison ou non conforme. Contactez-nous sous 14 jours après réception via ${CONTACT_LINK} avec le numéro de commande et des photos. Nous proposons une réimpression ou un remboursement selon le cas.</p>
 <h2>Ce dont nous avons besoin</h2>
@@ -331,7 +331,7 @@ export const POLICIES = {
 <p>Ils sont versés sur le moyen de paiement d’origine. Les délais dépendent de votre banque ou carte.</p>
 <p>Ces conditions n’affectent pas vos droits légaux.</p>`,
     de: `<h2>Personalisierte Produkte</h2>
-<p>Pixora-Artikel werden nach der Bestellung nach Ihrem Foto und Ihren Angaben gefertigt. Im Vereinigten Königreich und in der EU sind Waren nach Kundenspezifikation in der Regel nicht wegen bloßer Meinungsänderung rückgabefähig. Prüfen Sie Größe, Zuschnitt und Vorschau vor der Zahlung.</p>
+<p>HappySnaps-Artikel werden nach der Bestellung nach Ihrem Foto und Ihren Angaben gefertigt. Im Vereinigten Königreich und in der EU sind Waren nach Kundenspezifikation in der Regel nicht wegen bloßer Meinungsänderung rückgabefähig. Prüfen Sie Größe, Zuschnitt und Vorschau vor der Zahlung.</p>
 <h2>Wenn etwas nicht stimmt</h2>
 <p>Bei Mangel, Transportschaden oder Abweichung von der Beschreibung behalten Sie Ihre Rechte. Melden Sie sich innerhalb von 14 Tagen nach Lieferung über ${CONTACT_LINK} mit Bestellnummer und Fotos. Wir bieten Nachdruck oder Erstattung an.</p>
 <h2>Was wir brauchen</h2>
@@ -348,7 +348,7 @@ export const POLICIES = {
 <p>Genehmigte Beträge gehen an die ursprüngliche Zahlungsart. Die Dauer hängt von Bank oder Kartenanbieter ab.</p>
 <p>Ihre gesetzlichen Rechte bleiben unberührt.</p>`,
     es: `<h2>Productos personalizados</h2>
-<p>Los artículos Pixora se fabrican con tu foto y tus opciones después del pedido. En el Reino Unido y la UE, los bienes hechos a medida no suelen devolverse por un cambio de opinión. Revisa tamaño, recorte y vista previa antes de pagar.</p>
+<p>Los artículos HappySnaps se fabrican con tu foto y tus opciones después del pedido. En el Reino Unido y la UE, los bienes hechos a medida no suelen devolverse por un cambio de opinión. Revisa tamaño, recorte y vista previa antes de pagar.</p>
 <h2>Si hay un problema</h2>
 <p>Conservas tus derechos si el artículo es defectuoso, llega dañado o no coincide con la descripción. Escríbenos en 14 días desde la entrega a través de ${CONTACT_LINK} con el número de pedido y fotos. Ofreceremos reimpresión o reembolso según corresponda.</p>
 <h2>Qué necesitamos</h2>
@@ -365,7 +365,7 @@ export const POLICIES = {
 <p>Van al método de pago original. El plazo depende de tu banco o tarjeta.</p>
 <p>Esto no afecta tus derechos legales.</p>`,
     it: `<h2>Prodotti personalizzati</h2>
-<p>Gli articoli Pixora sono realizzati con la tua foto e le tue scelte dopo l’ordine. Nel Regno Unito e nell’UE i beni fatti su specifica del cliente di solito non si restituiscono per un ripensamento. Controlla formato, ritaglio e anteprima prima di pagare.</p>
+<p>Gli articoli HappySnaps sono realizzati con la tua foto e le tue scelte dopo l’ordine. Nel Regno Unito e nell’UE i beni fatti su specifica del cliente di solito non si restituiscono per un ripensamento. Controlla formato, ritaglio e anteprima prima di pagare.</p>
 <h2>Se c’è un problema</h2>
 <p>Restano i tuoi diritti se l’articolo è difettoso, danneggiato in consegna o non conforme. Contattaci entro 14 giorni dalla consegna tramite ${CONTACT_LINK} con numero d’ordine e foto. Offriremo ristampa o rimborso a seconda dei casi.</p>
 <h2>Cosa ci serve</h2>
@@ -382,7 +382,7 @@ export const POLICIES = {
 <p>Tornano sul metodo di pagamento originale. I tempi dipendono dalla banca o dalla carta.</p>
 <p>Queste condizioni non pregiudicano i tuoi diritti di legge.</p>`,
     nl: `<h2>Gepersonaliseerde producten</h2>
-<p>Pixora-items worden na je bestelling gemaakt volgens jouw foto en keuzes. In het VK en de EU zijn goederen op specificatie van de klant meestal niet retourneerbaar bij bedenken. Controleer maat, uitsnede en preview vóór je betaalt.</p>
+<p>HappySnaps-items worden na je bestelling gemaakt volgens jouw foto en keuzes. In het VK en de EU zijn goederen op specificatie van de klant meestal niet retourneerbaar bij bedenken. Controleer maat, uitsnede en preview vóór je betaalt.</p>
 <h2>Als er iets mis is</h2>
 <p>Je houdt wettelijke rechten bij een defect, schade in transport of een product dat niet overeenkomt met de beschrijving. Neem binnen 14 dagen na levering contact op via ${CONTACT_LINK} met ordernummer en foto’s. We bieden een herdruk of terugbetaling waar passend.</p>
 <h2>Wat we nodig hebben</h2>
@@ -401,7 +401,7 @@ export const POLICIES = {
   },
   SHIPPING_POLICY: {
     en: `<h2>How shipping works</h2>
-<p>Every Pixora order is printed after you buy it, then shipped to your door. Times below are typical, not guaranteed. Busy periods can add a few days. Checkout shows the shipping rate for your address.</p>
+<p>Every HappySnaps order is printed after you buy it, then shipped to your door. Times below are typical, not guaranteed. Busy periods can add a few days. Checkout shows the shipping rate for your address.</p>
 <h2>Wall art, posters, mugs, bottles, phone cases and tote bags</h2>
 <p>Printed close to you. Production is usually 1–3 business days, then shipping:</p>
 <ul>
@@ -418,7 +418,7 @@ export const POLICIES = {
 <p>You will get a tracking email when the order ships. International orders may be subject to customs duties or import tax, which the recipient pays. We cannot control carrier or customs delays.</p>
 <p>Questions: ${CONTACT_LINK}.</p>`,
     fr: `<h2>Livraison</h2>
-<p>Chaque commande Pixora est imprimée après achat, puis envoyée chez vous. Les délais ci-dessous sont indicatifs, non garantis. Les périodes chargées peuvent ajouter quelques jours. Le paiement affiche le tarif pour votre adresse.</p>
+<p>Chaque commande HappySnaps est imprimée après achat, puis envoyée chez vous. Les délais ci-dessous sont indicatifs, non garantis. Les périodes chargées peuvent ajouter quelques jours. Le paiement affiche le tarif pour votre adresse.</p>
 <h2>Déco murale, posters, mugs, gourdes, coques et tote bags</h2>
 <p>Imprimé près de chez vous. Production généralement 1–3 jours ouvrés, puis expédition :</p>
 <ul>
@@ -435,7 +435,7 @@ export const POLICIES = {
 <p>Vous recevez un e-mail de suivi à l’expédition. Les commandes internationales peuvent être soumises à des droits ou taxes d’importation, à la charge du destinataire. Nous ne maîtrisons pas les retards transporteur ou douane.</p>
 <p>Questions : ${CONTACT_LINK}.</p>`,
     de: `<h2>Versand</h2>
-<p>Jede Pixora-Bestellung wird nach dem Kauf gedruckt und geliefert. Die Zeiten sind Richtwerte, keine Garantie. In Stoßzeiten kann es länger dauern. An der Kasse sehen Sie den Versandpreis für Ihre Adresse.</p>
+<p>Jede HappySnaps-Bestellung wird nach dem Kauf gedruckt und geliefert. Die Zeiten sind Richtwerte, keine Garantie. In Stoßzeiten kann es länger dauern. An der Kasse sehen Sie den Versandpreis für Ihre Adresse.</p>
 <h2>Wandkunst, Poster, Tassen, Flaschen, Handyhüllen und Stoffbeutel</h2>
 <p>Nah bei Ihnen gedruckt. Produktion meist 1–3 Werktage, danach Versand:</p>
 <ul>
@@ -452,7 +452,7 @@ export const POLICIES = {
 <p>Sie erhalten eine Tracking-E-Mail beim Versand. Internationale Sendungen können Zoll oder Einfuhrsteuer unterliegen, die der Empfänger zahlt. Carrier- und Zollverzögerungen können wir nicht steuern.</p>
 <p>Fragen: ${CONTACT_LINK}.</p>`,
     es: `<h2>Envío</h2>
-<p>Cada pedido de Pixora se imprime después de comprarlo y se envía a tu puerta. Los plazos son orientativos, no garantizados. En temporadas altas pueden sumarse unos días. El pago muestra la tarifa para tu dirección.</p>
+<p>Cada pedido de HappySnaps se imprime después de comprarlo y se envía a tu puerta. Los plazos son orientativos, no garantizados. En temporadas altas pueden sumarse unos días. El pago muestra la tarifa para tu dirección.</p>
 <h2>Arte de pared, pósters, tazas, botellas, fundas y tote bags</h2>
 <p>Impreso cerca de ti. Producción habitual de 1–3 días laborables y luego envío:</p>
 <ul>
@@ -469,7 +469,7 @@ export const POLICIES = {
 <p>Recibirás un correo de seguimiento al enviarse. Los envíos internacionales pueden tener aranceles o impuestos de importación a cargo del destinatario. No controlamos retrasos del transportista o de aduanas.</p>
 <p>Preguntas: ${CONTACT_LINK}.</p>`,
     it: `<h2>Spedizione</h2>
-<p>Ogni ordine Pixora viene stampato dopo l’acquisto e spedito a casa tua. I tempi sono indicativi, non garantiti. Nei periodi di punta possono allungarsi. Il checkout mostra la tariffa per il tuo indirizzo.</p>
+<p>Ogni ordine HappySnaps viene stampato dopo l’acquisto e spedito a casa tua. I tempi sono indicativi, non garantiti. Nei periodi di punta possono allungarsi. Il checkout mostra la tariffa per il tuo indirizzo.</p>
 <h2>Arte da parete, poster, tazze, borracce, cover e tote bag</h2>
 <p>Stampati vicino a te. Produzione di solito 1–3 giorni lavorativi, poi spedizione:</p>
 <ul>
@@ -486,7 +486,7 @@ export const POLICIES = {
 <p>Riceverai un’email di tracking alla spedizione. Gli ordini internazionali possono essere soggetti a dazi o imposte di importazione a carico del destinatario. Non controlliamo i ritardi del corriere o della dogana.</p>
 <p>Domande: ${CONTACT_LINK}.</p>`,
     nl: `<h2>Verzending</h2>
-<p>Elke Pixora-bestelling wordt na aankoop gedrukt en naar je deur gestuurd. De tijden zijn richtlijnen, geen garantie. In drukke periodes kan het langer duren. Bij het afrekenen zie je het tarief voor je adres.</p>
+<p>Elke HappySnaps-bestelling wordt na aankoop gedrukt en naar je deur gestuurd. De tijden zijn richtlijnen, geen garantie. In drukke periodes kan het langer duren. Bij het afrekenen zie je het tarief voor je adres.</p>
 <h2>Wandkunst, posters, mokken, flessen, hoesjes en tote bags</h2>
 <p>Dichtbij jou gedrukt. Productie meestal 1–3 werkdagen, daarna verzending:</p>
 <ul>

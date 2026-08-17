@@ -55,7 +55,7 @@ img {
   margin-inline: auto;
 }
 
-/* ——— Pixora header ——— */
+/* ——— Header ——— */
 
 .site-header {
   position: sticky;
@@ -85,16 +85,12 @@ img {
   flex-shrink: 0;
 }
 
-.site-header__mark {
-  width: 0.65rem;
-  height: 0.65rem;
-  border-radius: 0.15rem;
-  background: var(--art-magenta);
-}
-
 .site-header__logo-img {
-  height: 2rem;
-  width: auto;
+  height: 2.5rem;
+  width: 2.5rem;
+  object-fit: contain;
+  display: block;
+  flex-shrink: 0;
 }
 
 .site-header__brand {
@@ -2097,7 +2093,7 @@ img {
   line-height: 1.4;
 }
 
-/* Keep Gelato Personalize; hide extra Upload image controls */
+/* Keep designer Personalize; hide extra Upload image controls */
 .pb-canvas button[class*="upload" i],
 .pb-canvas a[class*="upload" i],
 .pb-canvas [class*="UploadImage"],
@@ -2108,7 +2104,7 @@ img {
   display: none !important;
 }
 
-/* Style Gelato Personalize near the buy box when injected */
+/* Style Personalize near the buy box when injected */
 .pb-canvas [class*="personalize" i],
 .pb-canvas button[class*="Personalize"],
 .main-product button[class*="gelato" i] {
@@ -2242,7 +2238,7 @@ img {
   cursor: pointer;
 }
 
-.pixora-qv {
+.quick-view {
   position: fixed;
   inset: 0;
   z-index: 9999;
@@ -2251,17 +2247,17 @@ img {
   padding: 1rem;
 }
 
-.pixora-qv[hidden] {
+.quick-view[hidden] {
   display: none !important;
 }
 
-.pixora-qv__backdrop {
+.quick-view__backdrop {
   position: absolute;
   inset: 0;
   background: rgb(11 18 32 / 0.72);
 }
 
-.pixora-qv__dialog {
+.quick-view__dialog {
   position: relative;
   z-index: 1;
   width: min(92vw, 36rem);
@@ -2273,7 +2269,7 @@ img {
   box-shadow: 0 20px 50px rgb(0 0 0 / 0.35);
 }
 
-.pixora-qv__close {
+.quick-view__close {
   position: absolute;
   top: 0.4rem;
   right: 0.55rem;
@@ -2285,7 +2281,7 @@ img {
   color: var(--color-dark);
 }
 
-.pixora-qv__image {
+.quick-view__image {
   width: 100%;
   max-height: 70vh;
   object-fit: contain;
@@ -2293,13 +2289,13 @@ img {
   background: #eef2f7;
 }
 
-.pixora-qv__caption {
+.quick-view__caption {
   margin: 0.75rem 0 0;
   font-size: 0.9rem;
   color: var(--color-muted);
 }
 
-body.pixora-qv-open {
+body.quick-view-open {
   overflow: hidden;
 }
 
@@ -2409,6 +2405,22 @@ body.pixora-qv-open {
     gap: 3rem;
     align-items: start;
   }
+}
+
+.site-footer__logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: inherit;
+  text-decoration: none;
+}
+
+.site-footer__logo-img {
+  height: 3rem;
+  width: 3rem;
+  object-fit: contain;
+  display: block;
+  flex-shrink: 0;
 }
 
 .site-footer__brand {
@@ -2828,18 +2840,18 @@ body.pixora-qv-open {
   font-size: 0.85rem;
 }
 
-.prodigi-upload {
+.photo-upload {
   display: grid;
   gap: 0.45rem;
 }
 
-.prodigi-upload__input {
+.photo-upload__input {
   width: 100%;
   max-width: 100%;
   font: inherit;
 }
 
-.prodigi-upload__status {
+.photo-upload__status {
   margin: 0;
   font-size: 0.88rem;
   font-weight: 600;
