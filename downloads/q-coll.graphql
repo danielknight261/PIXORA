@@ -1,0 +1,8 @@
+query {
+  collection(id: "gid://shopify/Collection/687120449880") {
+    handle
+    products(first: 5) {
+      nodes { id handle title options { name } }
+    }
+  }
+}

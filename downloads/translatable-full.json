@@ -1,0 +1,2921 @@
+{
+  "resources": [
+    {
+      "type": "PRODUCT",
+      "resourceId": "gid://shopify/Product/15928489378136",
+      "fields": [
+        {
+          "key": "title",
+          "value": "Personalized Canvas Print",
+          "digest": "5c928cbd352b9956433efd4c76d1c81e6d931bccc900bb89798c5d37795e3f04",
+          "locale": "en"
+        },
+        {
+          "key": "body_html",
+          "value": "<p>Personalised canvas prints from Pixora. Upload your photo, preview it on a live product mockup, and we print and ship gallery-quality canvas to your door.</p>\n<ul>\n<li>\n<strong>Canvas:</strong> FSC-certified wood stretcher bars, cotton-polyester blend (300–350gsm)</li>\n<li>\n<strong>Thickness:</strong> Slim (~2cm) or Thick (~4cm) gallery wrap</li>\n<li>\n<strong>Sizes:</strong> 26 cm/inch options in portrait, landscape, and square</li>\n<li>\n<strong>Hanging kit:</strong> Included (varies by country)</li>\n</ul>\n<p>Printed and shipped on demand. No minimum order.</p>\n<div data-gelato-customization=\"1\"></div>",
+          "digest": "58bcc359da0ed9615d6dce7db44e6c4bc84a3b0b6b3ce499b0629b748419f1b0",
+          "locale": "en"
+        },
+        {
+          "key": "product_type",
+          "value": "Print Material",
+          "digest": "8685f5408e944f94fd8a8052883a0e9bd71651e6982f84b295e471af99e71f95",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "PRODUCT",
+      "resourceId": "gid://shopify/Product/15933319512408",
+      "fields": [
+        {
+          "key": "title",
+          "value": "Premium Matte Paper Poster",
+          "digest": "7092753727251bdca72594349c99dc99efb57715031fc370068e56e6d29ebadc",
+          "locale": "en"
+        },
+        {
+          "key": "body_html",
+          "value": "<p>Our premium matte paper is heavier-weight, white, and features a smooth, uncoated finish that feels luxuriously soft to the touch:</p>\n<ul>\n    <li>\n<strong>Paper Finishing:</strong> Matte, smooth, non-reflective surface.</li>\n    <li>\n<strong>Paper Weight:</strong> 200 gsm (80 lb), thickness: 0.26 mm (10.3 mils).</li>\n    <li>\n<strong>Sustainable Paper:</strong> FSC-certified or equivalent paper for sustainability.</li>\n    <li>\n<strong>Available Sizes:</strong> 29 sizes in inches (US&amp;CA) and cms (rest of the world).</li>\n</ul>\n<p>Learn about paper types and their unique textures and finishes <a href=\"https://support.gelato.com/en/articles/8996279-what-paper-types-do-you-support?\" target=\"_blank\">here</a>.</p>\n<p>No minimum orders, printed and shipped on demand.</p>\n<div data-gelato-customization=\"1\"></div>",
+          "digest": "373cfadc077b0c7d7bcc45fcfb59a81d219ed430115ea480384614228d5a3122",
+          "locale": "en"
+        },
+        {
+          "key": "product_type",
+          "value": "Print Material",
+          "digest": "8685f5408e944f94fd8a8052883a0e9bd71651e6982f84b295e471af99e71f95",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "PRODUCT",
+      "resourceId": "gid://shopify/Product/15933333274968",
+      "fields": [
+        {
+          "key": "title",
+          "value": "Premium Matte Paper Poster",
+          "digest": "7092753727251bdca72594349c99dc99efb57715031fc370068e56e6d29ebadc",
+          "locale": "en"
+        },
+        {
+          "key": "body_html",
+          "value": "<p>Our premium matte paper is heavier-weight, white, and features a smooth, uncoated finish that feels luxuriously soft to the touch:</p>\n<ul>\n    <li>\n<strong>Paper Finishing:</strong> Matte, smooth, non-reflective surface.</li>\n    <li>\n<strong>Paper Weight:</strong> 200 gsm (80 lb), thickness: 0.26 mm (10.3 mils).</li>\n    <li>\n<strong>Sustainable Paper:</strong> FSC-certified or equivalent paper for sustainability.</li>\n    <li>\n<strong>Available Sizes:</strong> 29 sizes in inches (US&amp;CA) and cms (rest of the world).</li>\n</ul>\n<p>Learn about paper types and their unique textures and finishes <a href=\"https://support.gelato.com/en/articles/8996279-what-paper-types-do-you-support?\" target=\"_blank\">here</a>.</p>\n<p>No minimum orders, printed and shipped on demand.</p>\n<div data-gelato-customization=\"1\"></div>",
+          "digest": "373cfadc077b0c7d7bcc45fcfb59a81d219ed430115ea480384614228d5a3122",
+          "locale": "en"
+        },
+        {
+          "key": "product_type",
+          "value": "Print Material",
+          "digest": "8685f5408e944f94fd8a8052883a0e9bd71651e6982f84b295e471af99e71f95",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "PRODUCT",
+      "resourceId": "gid://shopify/Product/15933348086104",
+      "fields": [
+        {
+          "key": "title",
+          "value": "Fine Art Poster",
+          "digest": "d386695731bce1effc183d1bc81f5f827038803f6c55858095fd5263aa3bca2e",
+          "locale": "en"
+        },
+        {
+          "key": "body_html",
+          "value": "<p>Discover our Fine Art Posters - Iconic artworks with vivid colors using giclée fine art 12-color printing technology. Perfect for art lovers and designers alike.</p>\n<ul>\n<li>\n<strong>Color Vibrancy:</strong> Our 12-color fine art printing technology delivers vivid, accurate colors with stunning depth, far beyond standard 4-color inkjet printing technology.</li>\n<li>\n<strong>Paper Finishing:</strong> Smooth matte finish for a clean, glare-free display.</li>\n<li>\n<strong>Paper Weight:</strong> 200 gsm (80 lb), thickness: 0.26 mm (10.3 mils).</li>\n<li>\n<strong>Available Sizes:</strong> Offered in a variety of sizes to fit any space or frame.</li>\n<li>\n<strong>Eco-Friendly Materials:</strong> Printed on environmentally conscious, FSC-certified paper.</li>\n</ul>\n<p>No minimum orders, printed and shipped on demand to guarantee freshness and customization for every order.</p>\n<div data-gelato-customization=\"1\"></div>",
+          "digest": "bfd3fe279e273b3c661f1c89fd70623f45743fa6a1d749c3618903d7b119e96d",
+          "locale": "en"
+        },
+        {
+          "key": "product_type",
+          "value": "Print Material",
+          "digest": "8685f5408e944f94fd8a8052883a0e9bd71651e6982f84b295e471af99e71f95",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "PRODUCT",
+      "resourceId": "gid://shopify/Product/15933359161688",
+      "fields": [
+        {
+          "key": "title",
+          "value": "Classic Semi-Glossy Paper Poster",
+          "digest": "7c75c583f66582da02fca0dd5f750adba0cef809e1fba8839de918fadd070967",
+          "locale": "en"
+        },
+        {
+          "key": "body_html",
+          "value": "<p>Experience art that feels silky to the touch with our high-quality, lighter-weight, classic semi-glossy paper:</p>\n<ul>\n    <li>\n<strong>Paper Finishing:</strong> Semi-glossy, enhances colors with a subtle shine.</li>\n    <li>\n<strong>Paper Weight:</strong> 170 gsm (65 lb), thickness: 0.19 mm (7.5 mils), sturdy and durable.</li>\n    <li>\n<strong>Sustainable Paper:</strong> FSC-certified or equivalent for sustainability.</li>\n    <li>\n<strong>Available Sizes:</strong> 29 sizes in inches (US&amp;CA) and cms (rest of the world).</li>\n</ul>\n<p>Learn about paper types and their unique textures and finishes <a href=\"https://support.gelato.com/en/articles/8996279-what-paper-types-do-you-support?\" target=\"_blank\">here</a>.</p>\n<p>No minimum orders, printed and shipped on demand.</p>\n<div data-gelato-customization=\"1\"></div>",
+          "digest": "70b3613d95b2f3a03df7cdcf87709ae996d50ba223f898724cf69ec99ebd11a7",
+          "locale": "en"
+        },
+        {
+          "key": "product_type",
+          "value": "Print Material",
+          "digest": "8685f5408e944f94fd8a8052883a0e9bd71651e6982f84b295e471af99e71f95",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "PRODUCT",
+      "resourceId": "gid://shopify/Product/15937938129240",
+      "fields": [
+        {
+          "key": "title",
+          "value": "Fine Art Framed Poster",
+          "digest": "9ab369b8141461bbe42e1b9c393e2588453c647192dcff445bf55b882cd7c584",
+          "locale": "en"
+        },
+        {
+          "key": "body_html",
+          "value": "<p>Discover our Fine Art Wooden Framed Posters - iconic artworks printed on luxurious matte paper with vivid colors using fine art 12-color printing technology. Perfect for adding elegance and lasting quality to any space.</p>\n<ul>\n<li>\n<strong>Color Vibrancy:</strong> Our 12-color fine art printing technology delivers vivid, accurate colors with stunning depth, far beyond standard 4-color inkjet printing technology.</li>\n<li>\n<strong>Frame Material:</strong> Durable pine wood.</li>\n<li>\n<strong>Paper Finishing:</strong> Smooth matte finish for a clean, glare-free display.</li>\n<li>\n<strong>Paper Weight:</strong> 200 gsm (80 lb), thickness: 0.26 mm (10.3 mils).</li>\n<li>\n<strong>Frame Measurements:</strong> 20mm (0.79\") thick, 10-14mm (0.4\"-0.6\") wide.</li>\n<li>\n<strong>Available Sizes:</strong> Offered in a variety of sizes to fit any space or frame.</li>\n<li>\n<strong>Protection:</strong> Shatterproof plexiglass protects the poster.</li>\n<li>\n<strong>Eco-Friendly Materials:</strong> Printed on environmentally conscious, FSC-certified paper and wood.</li>\n<li>\n<strong>Ready-to-hang:</strong> Includes hanging kit, ready to hang directly on the wall.</li>\n</ul>\n<p>No minimum orders, printed and shipped on demand to guarantee freshness and customization for every order.</p>\n<div data-gelato-customization=\"1\"></div>",
+          "digest": "a72539ba5d322f6589c0137c52cc223f514fd6e84056ce5387d936a94f2e02ab",
+          "locale": "en"
+        },
+        {
+          "key": "product_type",
+          "value": "Print Material",
+          "digest": "8685f5408e944f94fd8a8052883a0e9bd71651e6982f84b295e471af99e71f95",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "PRODUCT",
+      "resourceId": "gid://shopify/Product/15937953300824",
+      "fields": [
+        {
+          "key": "title",
+          "value": "Classic Semi-Glossy Paper Wooden Framed Poster Bestseller",
+          "digest": "f1d44645d46f8658cbd8672926e4ff4b36bc5812948ea8437b497b6c9a209b4a",
+          "locale": "en"
+        },
+        {
+          "key": "body_html",
+          "value": "<p>Our sturdy, durable wooden framed posters come ready to hang. Enjoy silky, high-quality art on lightweight, classic semi-gloss paper.</p>\n<ul>\n    <li>\n<strong>Ready-to-hang:</strong> Includes hanging kit, ready to hang directly on the wall.</li>\n    <li>\n<strong>Frame Material:</strong> Durable pine wood.</li>\n    <li>\n<strong>Frame Color:</strong> Black, white (smooth finish), natural, and dark brown wood (visible grain).</li>\n    <li>\n<strong>Frame Measurements:</strong> 20-25mm (0.79\"-0.98\") thick, 10-14mm (0.4\"-0.6\") wide.</li>\n    <li>\n<strong>Paper Weight:</strong> 170 gsm (65 lb), thickness: 0.19 mm (7.5 mils).</li>\n    <li>\n<strong>Paper Finishing:</strong> Semi-glossy, enhances colors with a subtle shine.</li>\n    <li>\n<strong>Protection:</strong> Shatterproof plexiglass protects the poster.</li>\n    <li>\n<strong>Sustainable Paper:</strong> FSC-certified materials or equivalent.</li>\n    <li>\n<strong>Available Sizes:</strong> 15 sizes in inches (US&amp;CA) and cms (rest of the world).</li>\n</ul>\n<p>Learn about paper types and their unique textures and finishes <a href=\"https://support.gelato.com/en/articles/8996279-what-paper-types-do-you-support?\" target=\"_blank\">here</a>.</p>\n<p>No minimum orders, printed and shipped on demand.</p>\n<div data-gelato-customization=\"1\"></div>",
+          "digest": "a4cb7bf9a0b26c34f8cc0c5ebbc11b283eb25ee846d8bfa90a1377707bd2b80d",
+          "locale": "en"
+        },
+        {
+          "key": "product_type",
+          "value": "Print Material",
+          "digest": "8685f5408e944f94fd8a8052883a0e9bd71651e6982f84b295e471af99e71f95",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "PRODUCT",
+      "resourceId": "gid://shopify/Product/15938013233496",
+      "fields": [
+        {
+          "key": "title",
+          "value": "Premium Semi-Glossy Paper Wooden Framed Poster Premium",
+          "digest": "64e900882f2f8f26a3195b167bf6ecfe3592f549f5d1e47f4cf132594c9d006a",
+          "locale": "en"
+        },
+        {
+          "key": "body_html",
+          "value": "<p>Our sturdy, ready-to-hang wooden framed posters feature premium semi-glossy paper that enhances colors with a subtle shine while protecting against fading from light and moisture:</p>\n<ul>\n    <li>\n<strong>Ready-to-hang:</strong> Includes hanging kit, ready to hang directly on the wall.</li>\n    <li>\n<strong>Frame Material:</strong> Durable pine wood.</li>\n    <li>\n<strong>Frame Color:</strong> Black, white (smooth finish), natural, and dark brown wood (visible grain).</li>\n    <li>\n<strong>Frame Measurements:</strong> 20-25mm (0.79\"-0.98\") thick, 10-14mm (0.4\"-0.6\") wide.</li>\n    <li>\n<strong>Paper Weight:</strong> 200 gsm (80 lb), thickness: 0.22 mm (8.7 mils).</li>\n    <li>\n<strong>Paper Finishing:</strong> Semi-glossy, enhances colors with a subtle shine.</li>\n    <li>\n<strong>Protection:</strong> Shatterproof plexiglass protects the poster.</li>\n    <li>\n<strong>Sustainable Paper:</strong> FSC-certified materials or equivalent.</li>\n    <li>\n<strong>Available Sizes:</strong> 15 sizes in inches (US&amp;CA) and cms (rest of the world).</li>\n</ul>\n<p>Learn about paper types and their unique textures and finishes <a href=\"https://support.gelato.com/en/articles/8996279-what-paper-types-do-you-support?\" target=\"_blank\">here</a>.</p>\n<p>No minimum orders, printed and shipped on demand.</p>",
+          "digest": "3320c706d7043a79ca6e6592c456054a86e1647cf85861d71fc20f07a7a188a9",
+          "locale": "en"
+        },
+        {
+          "key": "product_type",
+          "value": "Print Material",
+          "digest": "8685f5408e944f94fd8a8052883a0e9bd71651e6982f84b295e471af99e71f95",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "PRODUCT",
+      "resourceId": "gid://shopify/Product/15938102231384",
+      "fields": [
+        {
+          "key": "title",
+          "value": "Framed Canvas",
+          "digest": "2cf8bbc1ec97bdcec2139c7add416553d389ca75179edd7ef57f1a67a87916e6",
+          "locale": "en"
+        },
+        {
+          "key": "body_html",
+          "value": "<p>Elevate your space with our framed canvas prints, featuring rich texture that adds depth for a captivating art experience:</p>\n<ul>\n    <li>\n<strong>Canvas Material:</strong> FSC-certified wood stretcher bars, cotton-polyester blend (300-350gsm, 350-400 microns).</li>\n    <li>\n<strong>Size Options:</strong> 13 sizes in inches (US&amp;CA) and cms (rest of the world).</li>\n    <li>\n<strong>Frame Colors:</strong> Black, Natural Wood, Dark Brown.</li>\n    <li>\n<strong>Sustainable Wood:</strong> FSC-certified or locally sourced poplar or pine.</li>\n    <li>\n<strong>High-Quality Printing:</strong> Long-lasting, vibrant colors.</li>\n    <li>\n<strong>Hanging Kit:</strong> Included, varies by country.</li>\n    <li>\n<strong>Frame Dimensions:</strong> The width (the front of the frame) is 9 to 14 mm wide (0.35\" to 0.55\"), with thickness varying by region— 42 mm (1.65\") in North America and 32 mm (1.26\") in Europe. A 12 mm (0.45\") gap between the canvas and frame ensures a snug fit.</li>\n    <li>\n<strong>Canvas frame:</strong> Canvas products mounted in the frames are <a href=\"https://support.gelato.com/en/articles/8996211-what-is-the-difference-between-thick-and-slim-canvas\">slim</a>.</li> \n</ul>\n<p>No minimum orders, printed and shipped on demand.</p>\n<div data-gelato-customization=\"1\"></div>",
+          "digest": "627933258a03b269296034e8664d4ecd29807d8b1921a138cccc75630696084b",
+          "locale": "en"
+        },
+        {
+          "key": "product_type",
+          "value": "Print Material",
+          "digest": "8685f5408e944f94fd8a8052883a0e9bd71651e6982f84b295e471af99e71f95",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "PRODUCT",
+      "resourceId": "gid://shopify/Product/15938140602712",
+      "fields": [
+        {
+          "key": "title",
+          "value": "Classic Semi-Glossy Paper Wooden Framed Poster Bestseller",
+          "digest": "f1d44645d46f8658cbd8672926e4ff4b36bc5812948ea8437b497b6c9a209b4a",
+          "locale": "en"
+        },
+        {
+          "key": "body_html",
+          "value": "<p>Our sturdy, durable wooden framed posters come ready to hang. Enjoy silky, high-quality art on lightweight, classic semi-gloss paper.</p>\n<ul>\n    <li>\n<strong>Ready-to-hang:</strong> Includes hanging kit, ready to hang directly on the wall.</li>\n    <li>\n<strong>Frame Material:</strong> Durable pine wood.</li>\n    <li>\n<strong>Frame Color:</strong> Black, white (smooth finish), natural, and dark brown wood (visible grain).</li>\n    <li>\n<strong>Frame Measurements:</strong> 20-25mm (0.79\"-0.98\") thick, 10-14mm (0.4\"-0.6\") wide.</li>\n    <li>\n<strong>Paper Weight:</strong> 170 gsm (65 lb), thickness: 0.19 mm (7.5 mils).</li>\n    <li>\n<strong>Paper Finishing:</strong> Semi-glossy, enhances colors with a subtle shine.</li>\n    <li>\n<strong>Protection:</strong> Shatterproof plexiglass protects the poster.</li>\n    <li>\n<strong>Sustainable Paper:</strong> FSC-certified materials or equivalent.</li>\n    <li>\n<strong>Available Sizes:</strong> 15 sizes in inches (US&amp;CA) and cms (rest of the world).</li>\n</ul>\n<p>Learn about paper types and their unique textures and finishes <a href=\"https://support.gelato.com/en/articles/8996279-what-paper-types-do-you-support?\" target=\"_blank\">here</a>.</p>\n<p>No minimum orders, printed and shipped on demand.</p>\n<div data-gelato-customization=\"1\"></div>",
+          "digest": "a4cb7bf9a0b26c34f8cc0c5ebbc11b283eb25ee846d8bfa90a1377707bd2b80d",
+          "locale": "en"
+        },
+        {
+          "key": "product_type",
+          "value": "Print Material",
+          "digest": "8685f5408e944f94fd8a8052883a0e9bd71651e6982f84b295e471af99e71f95",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "PRODUCT",
+      "resourceId": "gid://shopify/Product/15938184839512",
+      "fields": [
+        {
+          "key": "title",
+          "value": "Classic Semi-Glossy Paper Wooden Framed Poster Bestseller",
+          "digest": "f1d44645d46f8658cbd8672926e4ff4b36bc5812948ea8437b497b6c9a209b4a",
+          "locale": "en"
+        },
+        {
+          "key": "body_html",
+          "value": "<p>Our sturdy, durable wooden framed posters come ready to hang. Enjoy silky, high-quality art on lightweight, classic semi-gloss paper.</p>\n<ul>\n    <li>\n<strong>Ready-to-hang:</strong> Includes hanging kit, ready to hang directly on the wall.</li>\n    <li>\n<strong>Frame Material:</strong> Durable pine wood.</li>\n    <li>\n<strong>Frame Color:</strong> Black, white (smooth finish), natural, and dark brown wood (visible grain).</li>\n    <li>\n<strong>Frame Measurements:</strong> 20-25mm (0.79\"-0.98\") thick, 10-14mm (0.4\"-0.6\") wide.</li>\n    <li>\n<strong>Paper Weight:</strong> 170 gsm (65 lb), thickness: 0.19 mm (7.5 mils).</li>\n    <li>\n<strong>Paper Finishing:</strong> Semi-glossy, enhances colors with a subtle shine.</li>\n    <li>\n<strong>Protection:</strong> Shatterproof plexiglass protects the poster.</li>\n    <li>\n<strong>Sustainable Paper:</strong> FSC-certified materials or equivalent.</li>\n    <li>\n<strong>Available Sizes:</strong> 15 sizes in inches (US&amp;CA) and cms (rest of the world).</li>\n</ul>\n<p>Learn about paper types and their unique textures and finishes <a href=\"https://support.gelato.com/en/articles/8996279-what-paper-types-do-you-support?\" target=\"_blank\">here</a>.</p>\n<p>No minimum orders, printed and shipped on demand.</p>\n<div data-gelato-customization=\"1\"></div>",
+          "digest": "a4cb7bf9a0b26c34f8cc0c5ebbc11b283eb25ee846d8bfa90a1377707bd2b80d",
+          "locale": "en"
+        },
+        {
+          "key": "product_type",
+          "value": "Print Material",
+          "digest": "8685f5408e944f94fd8a8052883a0e9bd71651e6982f84b295e471af99e71f95",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "PRODUCT",
+      "resourceId": "gid://shopify/Product/15938229141848",
+      "fields": [
+        {
+          "key": "title",
+          "value": "Premium Semi-Glossy Paper Wooden Framed Poster Premium",
+          "digest": "64e900882f2f8f26a3195b167bf6ecfe3592f549f5d1e47f4cf132594c9d006a",
+          "locale": "en"
+        },
+        {
+          "key": "body_html",
+          "value": "<p>Our sturdy, ready-to-hang wooden framed posters feature premium semi-glossy paper that enhances colors with a subtle shine while protecting against fading from light and moisture:</p>\n<ul>\n    <li>\n<strong>Ready-to-hang:</strong> Includes hanging kit, ready to hang directly on the wall.</li>\n    <li>\n<strong>Frame Material:</strong> Durable pine wood.</li>\n    <li>\n<strong>Frame Color:</strong> Black, white (smooth finish), natural, and dark brown wood (visible grain).</li>\n    <li>\n<strong>Frame Measurements:</strong> 20-25mm (0.79\"-0.98\") thick, 10-14mm (0.4\"-0.6\") wide.</li>\n    <li>\n<strong>Paper Weight:</strong> 200 gsm (80 lb), thickness: 0.22 mm (8.7 mils).</li>\n    <li>\n<strong>Paper Finishing:</strong> Semi-glossy, enhances colors with a subtle shine.</li>\n    <li>\n<strong>Protection:</strong> Shatterproof plexiglass protects the poster.</li>\n    <li>\n<strong>Sustainable Paper:</strong> FSC-certified materials or equivalent.</li>\n    <li>\n<strong>Available Sizes:</strong> 15 sizes in inches (US&amp;CA) and cms (rest of the world).</li>\n</ul>\n<p>Learn about paper types and their unique textures and finishes <a href=\"https://support.gelato.com/en/articles/8996279-what-paper-types-do-you-support?\" target=\"_blank\">here</a>.</p>\n<p>No minimum orders, printed and shipped on demand.</p>\n<div data-gelato-customization=\"1\"></div>",
+          "digest": "ea4c08ee69df406563d54a60584333c307e426096f5eba633d27320602b8e060",
+          "locale": "en"
+        },
+        {
+          "key": "product_type",
+          "value": "Print Material",
+          "digest": "8685f5408e944f94fd8a8052883a0e9bd71651e6982f84b295e471af99e71f95",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "PRODUCT",
+      "resourceId": "gid://shopify/Product/15938244772184",
+      "fields": [
+        {
+          "key": "title",
+          "value": "Premium Semi-Glossy Paper Wooden Framed Poster Premium",
+          "digest": "64e900882f2f8f26a3195b167bf6ecfe3592f549f5d1e47f4cf132594c9d006a",
+          "locale": "en"
+        },
+        {
+          "key": "body_html",
+          "value": "<p>Our sturdy, ready-to-hang wooden framed posters feature premium semi-glossy paper that enhances colors with a subtle shine while protecting against fading from light and moisture:</p>\n<ul>\n    <li>\n<strong>Ready-to-hang:</strong> Includes hanging kit, ready to hang directly on the wall.</li>\n    <li>\n<strong>Frame Material:</strong> Durable pine wood.</li>\n    <li>\n<strong>Frame Color:</strong> Black, white (smooth finish), natural, and dark brown wood (visible grain).</li>\n    <li>\n<strong>Frame Measurements:</strong> 20-25mm (0.79\"-0.98\") thick, 10-14mm (0.4\"-0.6\") wide.</li>\n    <li>\n<strong>Paper Weight:</strong> 200 gsm (80 lb), thickness: 0.22 mm (8.7 mils).</li>\n    <li>\n<strong>Paper Finishing:</strong> Semi-glossy, enhances colors with a subtle shine.</li>\n    <li>\n<strong>Protection:</strong> Shatterproof plexiglass protects the poster.</li>\n    <li>\n<strong>Sustainable Paper:</strong> FSC-certified materials or equivalent.</li>\n    <li>\n<strong>Available Sizes:</strong> 15 sizes in inches (US&amp;CA) and cms (rest of the world).</li>\n</ul>\n<p>Learn about paper types and their unique textures and finishes <a href=\"https://support.gelato.com/en/articles/8996279-what-paper-types-do-you-support?\" target=\"_blank\">here</a>.</p>\n<p>No minimum orders, printed and shipped on demand.</p>\n<div data-gelato-customization=\"1\"></div>",
+          "digest": "ea4c08ee69df406563d54a60584333c307e426096f5eba633d27320602b8e060",
+          "locale": "en"
+        },
+        {
+          "key": "product_type",
+          "value": "Print Material",
+          "digest": "8685f5408e944f94fd8a8052883a0e9bd71651e6982f84b295e471af99e71f95",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "PRODUCT",
+      "resourceId": "gid://shopify/Product/15939022291288",
+      "fields": [
+        {
+          "key": "title",
+          "value": "Classic Semi-Glossy Paper Metal Framed Poster",
+          "digest": "e0ffe40196bc814f13473b97e17cc7957026e28a12c4f3351a0392729c869cfc",
+          "locale": "en"
+        },
+        {
+          "key": "body_html",
+          "value": "<p>Our sleek aluminum frame with a polished finish complements the silky feel of our high-quality, lightweight semi-glossy paper. The poster and frame ship together, requiring easy assembly with included hardware:</p>\n<ul>\n    <li>\n<strong>Frame Material:</strong> Durable aluminum.</li>\n    <li>\n<strong>Frame Color:</strong> Black.</li>\n    <li>\n<strong>Frame Measurements:</strong> Approximately 20mm (0.8\") thick and 10mm (0.4\") wide.</li>\n    <li>\n<strong>Paper Finishing:</strong> Semi-glossy, enhances colors with a subtle shine.</li>\n    <li>\n<strong>Paper Weight:</strong> 170 gsm (65 lb), thickness: 0.19 mm (7.5 mils).</li>\n    <li>\n<strong>Protection:</strong> Shatterproof plexiglass protects the poster.</li>\n    <li>\n<strong>Sustainable Paper:</strong> FSC-certified materials or equivalent.</li>\n    <li>\n<strong>Available Sizes:</strong> 15 sizes in inches (US&amp;CA) and cms (rest of the world).</li>\n</ul>\n<p>Learn about paper types and their unique textures and finishes <a href=\"https://support.gelato.com/en/articles/8996279-what-paper-types-do-you-support?\" target=\"_blank\">here</a>.</p>\n<p>No minimum orders, printed and shipped on demand.</p>\n<div data-gelato-customization=\"1\"></div>",
+          "digest": "146365c7ad6b20ef7d54a0ab0fee11ae24497fa3cfee4351d962e699f246b5eb",
+          "locale": "en"
+        },
+        {
+          "key": "product_type",
+          "value": "Print Material",
+          "digest": "8685f5408e944f94fd8a8052883a0e9bd71651e6982f84b295e471af99e71f95",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "PRODUCT",
+      "resourceId": "gid://shopify/Product/15942566609240",
+      "fields": [
+        {
+          "key": "title",
+          "value": "Brushed Aluminum Print",
+          "digest": "21b2ae2ed56898a2fa7760a34b21351078dc810c56d2894445ac38468f20d2b5",
+          "locale": "en"
+        },
+        {
+          "key": "body_html",
+          "value": "<p>Printed on brushed silver aluminum for a textured, industrial look. Colors interact with the metallic surface for a unique, artistic effect. Ideal for abstract art, black-and-white photography, and modern spaces:</p>\n<ul>\n    <li>\n<strong>Material:</strong> Brushed silver Aluminum DIBOND® with a metallic finish and horizontal grain for a dynamic look.</li>\n    <li>\n<strong>Thickness:</strong> 3mm (0.12\") for a durable, rigid base.</li>\n    <li>\n<strong>Printing:</strong> Direct print on AluDibond for vivid colors and a matte finish. Unprinted white areas reveal a metallic silver effect.</li>\n    <li>\n<strong>Finish:</strong> Matte, glare-free, ideal for black-and-white designs with a striking brushed silver effect.</li>\n    <li>\n<strong>Hanging Kit:</strong> Included; varies by fulfillment country.</li>\n    <li>\n<strong>Sizes:</strong> 18 sizes in inches (US&amp;CA) and cms (rest of the world).</li>\n</ul>\n<p>No minimum orders, printed and shipped on demand.</p>\n<div data-gelato-customization=\"1\"></div>",
+          "digest": "c52e575f4b0fb960199ab96954f49cae86b9ea8f4db8cbd252e680556d956ba0",
+          "locale": "en"
+        },
+        {
+          "key": "product_type",
+          "value": "Print Material",
+          "digest": "8685f5408e944f94fd8a8052883a0e9bd71651e6982f84b295e471af99e71f95",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "PRODUCT",
+      "resourceId": "gid://shopify/Product/15942721503576",
+      "fields": [
+        {
+          "key": "title",
+          "value": "Premium Matte Paper Poster with Hanger",
+          "digest": "d4e480166fe30d59c872802e23cfddc5064054d48037bcab80661c2e28351399",
+          "locale": "en"
+        },
+        {
+          "key": "body_html",
+          "value": "<p>Magnetic hangers that prevent poster damage and allow easy print changes, offering versatile and durable display options:</p>\n<ul>\n    <li>\n<strong>Hanger Material:</strong> Durable pine wood.</li>\n    <li>\n<strong>Paper Weight:</strong> 200 gsm (80 lb), thickness: 0.22 mm (8.7 mils).</li>\n    <li>\n<strong>Paper Finish:</strong> Matte, smooth uncoated finish with a luxurious feel.</li>\n    <li>\n<strong>Sustainable Paper:</strong> FSC-certified materials or equivalent.</li>\n    <li>\n<strong>Available Sizes:</strong> 29 sizes in inches (US&amp;CA) and cms (rest of the world).</li>\n    <li>\n<strong>Recommended Use:</strong> For indoor display.</li>\n</ul>\n<p>Learn about paper types and their unique textures and finishes <a href=\"https://support.gelato.com/en/articles/8996279-what-paper-types-do-you-support?\" target=\"_blank\">here</a>.</p>\n<p>No minimum orders, printed and shipped on demand.</p>\n<div data-gelato-customization=\"1\"></div>",
+          "digest": "492ee9aa32374c4303d023ccacb64528a777fe16696a3f136604506bd772715a",
+          "locale": "en"
+        },
+        {
+          "key": "product_type",
+          "value": "Print Material",
+          "digest": "8685f5408e944f94fd8a8052883a0e9bd71651e6982f84b295e471af99e71f95",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "PRODUCT",
+      "resourceId": "gid://shopify/Product/15942723928408",
+      "fields": [
+        {
+          "key": "title",
+          "value": "Premium Matte Paper Poster with Hanger",
+          "digest": "d4e480166fe30d59c872802e23cfddc5064054d48037bcab80661c2e28351399",
+          "locale": "en"
+        },
+        {
+          "key": "body_html",
+          "value": "<p>Magnetic hangers that prevent poster damage and allow easy print changes, offering versatile and durable display options:</p>\n<ul>\n    <li>\n<strong>Hanger Material:</strong> Durable pine wood.</li>\n    <li>\n<strong>Paper Weight:</strong> 200 gsm (80 lb), thickness: 0.22 mm (8.7 mils).</li>\n    <li>\n<strong>Paper Finish:</strong> Matte, smooth uncoated finish with a luxurious feel.</li>\n    <li>\n<strong>Sustainable Paper:</strong> FSC-certified materials or equivalent.</li>\n    <li>\n<strong>Available Sizes:</strong> 29 sizes in inches (US&amp;CA) and cms (rest of the world).</li>\n    <li>\n<strong>Recommended Use:</strong> For indoor display.</li>\n</ul>\n<p>Learn about paper types and their unique textures and finishes <a href=\"https://support.gelato.com/en/articles/8996279-what-paper-types-do-you-support?\" target=\"_blank\">here</a>.</p>\n<p>No minimum orders, printed and shipped on demand.</p>\n<div data-gelato-customization=\"1\"></div>",
+          "digest": "492ee9aa32374c4303d023ccacb64528a777fe16696a3f136604506bd772715a",
+          "locale": "en"
+        },
+        {
+          "key": "product_type",
+          "value": "Print Material",
+          "digest": "8685f5408e944f94fd8a8052883a0e9bd71651e6982f84b295e471af99e71f95",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "PRODUCT",
+      "resourceId": "gid://shopify/Product/15942726386008",
+      "fields": [
+        {
+          "key": "title",
+          "value": "Foam Portrait",
+          "digest": "194c2881a18cd72ae662130c1337ad25b301777218738190e75ef27bece0375e",
+          "locale": "en"
+        },
+        {
+          "key": "body_html",
+          "value": "<p>Our popular foam prints are sleek, modern, and super lightweight. Perfect to lift the look of any space - foam prints are versatile, available in various sizes, and will last for years to come.</p>\n\n<p><strong>Features:</strong></p>\n<ul>\n<li>\n<strong>Material:</strong> Solid PVC panel with a protective UV film for a lightweight, durable, and long-lasting print.</li>\n<li>\n<strong>Texture &amp; Finish:</strong> Smooth texture with an intense, natural look and feel, perfect for enhancing any space.</li>\n<li>\n<strong>Color Options:</strong> Available in white and black.</li>\n<li>\n<strong>Thickness:</strong> 5mm (0.2\") for a modern, elegant finish.</li>\n<li>\n<strong>Hanging Kit:</strong> Included with each foam board print; varies by country of fulfillment.</li>\n<li>\n<strong>Available Sizes:</strong> 18 sizes (13 portrait/landscape, 5 square); inches for US/Canada, centimeters elsewhere. Sizes may vary slightly by region.</li>\n<li>\n<strong>Packaging:</strong> Robust packaging ensures the foam board print arrives in pristine condition.</li>\n<li>\n<strong>Printing &amp; Shipping:</strong> Printed and shipped on demand, no minimum order required.</li>\n</ul>",
+          "digest": "f98182d6bead09e0131b55c05fe75c0f33fb2e5eb0b196f9adf6659298976580",
+          "locale": "en"
+        },
+        {
+          "key": "product_type",
+          "value": "Print Material",
+          "digest": "8685f5408e944f94fd8a8052883a0e9bd71651e6982f84b295e471af99e71f95",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "PRODUCT",
+      "resourceId": "gid://shopify/Product/15942727139672",
+      "fields": [
+        {
+          "key": "title",
+          "value": "Wood Prints",
+          "digest": "21ca39ccda52878692aaa656800b37d8b497e69d643f258fc67fe346398737a6",
+          "locale": "en"
+        },
+        {
+          "key": "body_html",
+          "value": "<p>Our wood prints offer a natural, rustic feel with artwork printed on sustainably sourced wood. The wood grain adds warmth and texture, creating unique, matte-finished pieces:</p>\n<ul>\n    <li>\n<strong>Material:</strong> FSC-certified birch wood, showcasing natural grain for a rustic feel.</li>\n    <li>\n<strong>Finish:</strong> Clean edges with edge-to-edge prints for a seamless look.</li>\n    <li>\n<strong>Thickness:</strong> Choose between 10mm (0.4\") or 20mm (0.79\").</li>\n    <li>\n<strong>Printing:</strong> Unprinted white areas reveal the wood grain for added texture.</li>\n    <li>\n<strong>Hanging Kit:</strong> Included; varies by country.</li>\n    <li>\n<strong>Sizes:</strong> 18 options in inches (US&amp;CA) and cms (rest of the world).</li>\n</ul>\n<p>No minimum orders, printed and shipped on demand.</p>\n<div data-gelato-customization=\"1\"></div>",
+          "digest": "2dc54e455d6f82c9348748bf7339e6dac2672d88f87c71b1bb0fa2fd800b430b",
+          "locale": "en"
+        },
+        {
+          "key": "product_type",
+          "value": "Print Material",
+          "digest": "8685f5408e944f94fd8a8052883a0e9bd71651e6982f84b295e471af99e71f95",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "PRODUCT",
+      "resourceId": "gid://shopify/Product/15942728974680",
+      "fields": [
+        {
+          "key": "title",
+          "value": "Foam Landscape",
+          "digest": "8030efcb82c133026d1458d2a6e676f878bdc5d13490d096de8bcb8fe20ed174",
+          "locale": "en"
+        },
+        {
+          "key": "body_html",
+          "value": "<p>Our popular foam prints are sleek, modern, and super lightweight. Perfect to lift the look of any space—foam prints are versatile, available in various sizes, and will last for years to come:</p>\n<ul>\n    <li>\n<strong>Material:</strong> Solid PVC panel with UV film for a lightweight, durable, long-lasting print.</li>\n    <li>\n<strong>Texture &amp; Finish:</strong> Smooth with an intense, natural look, perfect for any space.</li>\n    <li>\n<strong>Color Options:</strong> Available in white or black.</li>\n    <li>\n<strong>Thickness:</strong> 5mm (0.2\") for a modern finish.</li>\n    <li>\n<strong>Hanging Kit:</strong> Included; varies by country.</li>\n    <li>\n<strong>Sizes:</strong> 18 options in inches (US&amp;CA) and cms (rest of the world).</li>\n</ul>\n<p>No minimum orders, printed and shipped on demand.</p>\n<div data-gelato-customization=\"1\"></div>",
+          "digest": "40d95901e957644e6f2d79c9e9293e937fd7e0669d90d0fc188cfbbd6c023f9d",
+          "locale": "en"
+        },
+        {
+          "key": "product_type",
+          "value": "Print Material",
+          "digest": "8685f5408e944f94fd8a8052883a0e9bd71651e6982f84b295e471af99e71f95",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "PRODUCT",
+      "resourceId": "gid://shopify/Product/15942729466200",
+      "fields": [
+        {
+          "key": "title",
+          "value": "Aluminum Print",
+          "digest": "27efd79f64f2e7bedb3aafa8816669496690b3af2bc45217ad8077848ae99d3d",
+          "locale": "en"
+        },
+        {
+          "key": "body_html",
+          "value": "<p>A sleek, smooth aluminum panel with vibrant colors and crisp details. Perfect for modern, minimalist decor or professional spaces. Durable, UV, and moisture-resistant:</p>\n<ul>\n    <li>\n<strong>Material:</strong> Aluminum DIBOND®—strong yet lightweight with two white aluminum layers and a black polyethylene core, ideal for large artwork.</li>\n    <li>\n<strong>Thickness:</strong> 3mm (0.12\") for a durable, rigid base.</li>\n    <li>\n<strong>Printing:</strong> Direct print on DIBOND® for vivid colors and a matte, glare-free finish.</li>\n    <li>\n<strong>Finish:</strong> White-coated with a subtle silky gloss in bright areas.</li>\n    <li>\n<strong>Hanging Kit:</strong> Included; varies by fulfillment country.</li>\n    <li>\n<strong>Sizes:</strong> 18 sizes in inches (US&amp;CA) and cms (rest of the world).</li>\n</ul>\n<p>No minimum orders, printed and shipped on demand.</p>\n<div data-gelato-customization=\"1\"></div>",
+          "digest": "9c9bcf7d24853a4629a6fdf86b7f926577eda4203ce6f61cbf750829b3bd24aa",
+          "locale": "en"
+        },
+        {
+          "key": "product_type",
+          "value": "Print Material",
+          "digest": "8685f5408e944f94fd8a8052883a0e9bd71651e6982f84b295e471af99e71f95",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "PRODUCT",
+      "resourceId": "gid://shopify/Product/15942729957720",
+      "fields": [
+        {
+          "key": "title",
+          "value": "Foam Square",
+          "digest": "0d32e67cf809aebb3c5433a5b6ef454538f9b45a2eb65bc97865b6da98f0f61c",
+          "locale": "en"
+        },
+        {
+          "key": "body_html",
+          "value": "<p>Our popular foam prints are sleek, modern, and super lightweight. Perfect to lift the look of any space - foam prints are versatile, available in various sizes, and will last for years to come.</p>\n\n<p><strong>Features:</strong></p>\n<ul>\n<li>\n<strong>Material:</strong> Solid PVC panel with a protective UV film for a lightweight, durable, and long-lasting print.</li>\n<li>\n<strong>Texture &amp; Finish:</strong> Smooth texture with an intense, natural look and feel, perfect for enhancing any space.</li>\n<li>\n<strong>Color Options:</strong> Available in white and black.</li>\n<li>\n<strong>Thickness:</strong> 5mm (0.2\") for a modern, elegant finish.</li>\n<li>\n<strong>Hanging Kit:</strong> Included with each foam board print; varies by country of fulfillment.</li>\n<li>\n<strong>Available Sizes:</strong> 18 sizes (13 portrait/landscape, 5 square); inches for US/Canada, centimeters elsewhere. Sizes may vary slightly by region.</li>\n<li>\n<strong>Packaging:</strong> Robust packaging ensures the foam board print arrives in pristine condition.</li>\n<li>\n<strong>Printing &amp; Shipping:</strong> Printed and shipped on demand, no minimum order required.</li>\n</ul>\n<div data-gelato-customization=\"1\"></div>",
+          "digest": "80f211bb8d06bcfbed7b388f8330ee7541784e8a63bac8797471ad339e567bc5",
+          "locale": "en"
+        },
+        {
+          "key": "product_type",
+          "value": "Print Material",
+          "digest": "8685f5408e944f94fd8a8052883a0e9bd71651e6982f84b295e471af99e71f95",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "PRODUCT",
+      "resourceId": "gid://shopify/Product/15942730056024",
+      "fields": [
+        {
+          "key": "title",
+          "value": "Acrylic Print",
+          "digest": "bf5d46f254d566caf70a377998121ed40016596ef1d5117ece1bcf89f31fb65c",
+          "locale": "en"
+        },
+        {
+          "key": "body_html",
+          "value": "<p>Acrylic prints offer vibrant, high-resolution images with a glossy, glass-like finish and stunning depth. Durable and scratch-resistant, they’re ideal for luxury home decor, corporate offices, galleries, and modern art displays:</p>\n<ul>\n    <li>\n<strong>Material:</strong> 4mm (0.15\") acrylic for a sleek, vibrant, and durable finish.</li>\n    <li>\n<strong>Design:</strong> Straight-cut corners for a modern look. Transparent backgrounds default to white for optimal presentation.</li>\n    <li>\n<strong>Hanging Kit:</strong> Includes hardware, screws, and screw holes at each corner (14mm (0.55\") from the edge, with an 8mm (0.31\") diameter hole and 15mm (0.6\") screw head).</li>\n    <li>\n<strong>Sizes:</strong> 18 sizes in inches (US&amp;CA) and cms (rest of the world).</li>\n</ul>\n<p>No minimum orders, printed and shipped on demand.</p>\n<div data-gelato-customization=\"1\"></div>",
+          "digest": "8a9a1a5aa3719d0dd30b15c0fcbcec444ac24f2ccacf921ba5ef1145afe37ace",
+          "locale": "en"
+        },
+        {
+          "key": "product_type",
+          "value": "Print Material",
+          "digest": "8685f5408e944f94fd8a8052883a0e9bd71651e6982f84b295e471af99e71f95",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "PRODUCT",
+      "resourceId": "gid://shopify/Product/15942741885272",
+      "fields": [
+        {
+          "key": "title",
+          "value": "White 17oz Stainless Steel Water Bottle",
+          "digest": "8e400021f1bca9103a7fb4960adda299a8f3cce5147ffbbeffec3fa23d47998c",
+          "locale": "en"
+        },
+        {
+          "key": "body_html",
+          "value": "<div>\n  <p> Don’t leave home without this sleek 17oz water bottle to keep you hydrated. It’s made from high-quality stainless steel and has double-wall insulation to keep cold drinks cold and hot drinks hot. It’s elongated neck and thin design allows you to easily carry it or slip it into your bag. Best of all, the leak-proof cap ensures no liquids will spill and the large surface area makes a great canvas for eye-catching designs.\n  <br> - Dimensions: 255 mm (10.03″) tall and 70 mm (2.85″) diameter \n  <br> - Vacuum flask with double-wall construction\n  <br> - Insulation keeps the liquid hot or cold for 6 h\n  <br> - Dishwasher not recommended due to vacuum seal. Hand-wash only.\n  </p>\n</div>\n<div data-gelato-customization=\"1\"></div>",
+          "digest": "0551bc925de5cb1f06bfd9e887c2dbcf794dda6a4978cd171f9ac097ae423873",
+          "locale": "en"
+        },
+        {
+          "key": "product_type",
+          "value": "Print Material",
+          "digest": "8685f5408e944f94fd8a8052883a0e9bd71651e6982f84b295e471af99e71f95",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "PRODUCT",
+      "resourceId": "gid://shopify/Product/15942742376792",
+      "fields": [
+        {
+          "key": "title",
+          "value": "White 11oz Ceramic Mug with Color Inside",
+          "digest": "b4d821cd3382b86f59cbf97937db9226759ebafc734dadb52ff6e3f9b8900279",
+          "locale": "en"
+        },
+        {
+          "key": "body_html",
+          "value": "<div>\n<p>This beautiful ceramic mug is perfect for any event of the day. Your morning coffee, a hot chocolate, or any other hot beverage you enjoy. The mug is glossy white with a colored rim, inside, and handle. The prints come out beautifully and vividly on it. The print retains its quality and luster when used in both microwaves and the dishwasher. </p>\n<p>- Ceramic 11oz mug</p>\n<p>- Dishwasher and microwave safe</p>\n<p>- Colored rim, inside, and handle</p>\n<p>- White print area</p>\n<p>- Mug Height 96mm, Bottom Diameter 80mm</p>\n</div>\n<div data-gelato-customization=\"1\"></div>",
+          "digest": "a1bb36207ed84bac1cec82334a660866027b56804a8ff103158c336192560a63",
+          "locale": "en"
+        },
+        {
+          "key": "product_type",
+          "value": "Print Material",
+          "digest": "8685f5408e944f94fd8a8052883a0e9bd71651e6982f84b295e471af99e71f95",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "PRODUCT",
+      "resourceId": "gid://shopify/Product/15942742802776",
+      "fields": [
+        {
+          "key": "title",
+          "value": "White 15oz Ceramic Mug",
+          "digest": "71785d18d7c3295145d263061a86713ffa4a582e51a831d4f14553a2591ae1da",
+          "locale": "en"
+        },
+        {
+          "key": "body_html",
+          "value": "<div>\n<p>This beautiful ceramic mug is perfect for any event of the day. Your morning coffee, a hot chocolate, or any other hot beverage you enjoy. The mug is glossy white and the prints come out beautifully and vividly on it. The print retains its quality and luster when used in both microwaves and the dishwasher. </p>\n<p>- Ceramic 15oz mug</p>\n<p>- Dishwasher and microwave safe</p>\n<p>- Mug Height 117mm, Bottom Diameter 87mm</p>\n\n</div>\n<div data-gelato-customization=\"1\"></div>",
+          "digest": "0f0ffd7ff5bb526ac74777e9fba6d29318a04782bd0ff4f89041b5dbd9badfb4",
+          "locale": "en"
+        },
+        {
+          "key": "product_type",
+          "value": "Print Material",
+          "digest": "8685f5408e944f94fd8a8052883a0e9bd71651e6982f84b295e471af99e71f95",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "PRODUCT",
+      "resourceId": "gid://shopify/Product/15942746014040",
+      "fields": [
+        {
+          "key": "title",
+          "value": "White 11oz Ceramic Mug",
+          "digest": "75f3bf624d866f87a9c7f7ee4b1f47dba5628c292ed81a8f5d99fcf758a29851",
+          "locale": "en"
+        },
+        {
+          "key": "body_html",
+          "value": "<div>\n  <p>This beautiful ceramic mug is perfect for any event of the day. Your morning coffee, a hot chocolate, or any other hot beverage you enjoy. The mug is glossy white and the prints come out beautifully and vividly on it. The print retains its quality and luster when used in both microwaves and the dishwasher. </p>\n  <p>- Ceramic 11oz mug</p>\n  <p>- Dishwasher and microwave safe</p>\n  <p>- Product safety tests conducted by independent third party laboratories.</p>\n  <p>- Mug Height 96mm, Bottom Diameter 80mm</p>\n</div>\n<div data-gelato-customization=\"1\"></div>",
+          "digest": "5a8759e9bd657ebb6cf238e5a5cf3a1d68168023d82206be838a6dd29ecc4176",
+          "locale": "en"
+        },
+        {
+          "key": "product_type",
+          "value": "Print Material",
+          "digest": "8685f5408e944f94fd8a8052883a0e9bd71651e6982f84b295e471af99e71f95",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "PRODUCT",
+      "resourceId": "gid://shopify/Product/15942783631704",
+      "fields": [
+        {
+          "key": "title",
+          "value": "11oz Ceramic Mug",
+          "digest": "d871d74b0138d2f57345352924a5db57c0bc2e54af73cf3a72eb5f0fea3d03cf",
+          "locale": "en"
+        },
+        {
+          "key": "body_html",
+          "value": "<div>\n<p>This beautiful ceramic mug is perfect for any event of the day. Your morning coffee, a hot chocolate, or any other hot beverage you enjoy. The mug is glossy white with a colored rim, inside, and handle. The prints come out beautifully and vividly on it. The print retains its quality and luster when used in both microwaves and the dishwasher. </p>\n<p>- Ceramic 11oz mug</p>\n<p>- Dishwasher and microwave safe</p>\n<p>- Colored rim, inside, and handle</p>\n<p>- White print area</p>\n<p>- Mug Height 96mm, Bottom Diameter 80mm</p>\n</div>\n<div data-gelato-customization=\"1\"></div>",
+          "digest": "a1bb36207ed84bac1cec82334a660866027b56804a8ff103158c336192560a63",
+          "locale": "en"
+        },
+        {
+          "key": "product_type",
+          "value": "Print Material",
+          "digest": "8685f5408e944f94fd8a8052883a0e9bd71651e6982f84b295e471af99e71f95",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "PRODUCT",
+      "resourceId": "gid://shopify/Product/15942783861080",
+      "fields": [
+        {
+          "key": "title",
+          "value": "White 12oz Enamel Mug",
+          "digest": "1a0184fa8491e9d73bda242eb69acbe12503098f0cd955998ce81de12c050139",
+          "locale": "en"
+        },
+        {
+          "key": "body_html",
+          "value": "<div>\n  <p>This lightweight Enamel mug is perfect for any event of the day, especially for camping. Whether you're on the go, having your morning coffee, or a warm beverage you can easily use this mug. Order a personalized Enamel mug to sell in your store, or for your next hike</p>\n  <p>- Enamel 12oz mug</p>\n  <p>- NOT dishwasher or microwave safe</p>\n  <p>- White coating with a silver rim</p>\n   <p>- Mug Height 80mm, Bottom Diameter 86mm</p>\n</div>\n<div data-gelato-customization=\"1\"></div>",
+          "digest": "3d5fb75207c75e9f8305803f30921a8ad97e3b0c3d03b29bf411e32c3fe486fd",
+          "locale": "en"
+        },
+        {
+          "key": "product_type",
+          "value": "Print Material",
+          "digest": "8685f5408e944f94fd8a8052883a0e9bd71651e6982f84b295e471af99e71f95",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "PRODUCT",
+      "resourceId": "gid://shopify/Product/15942785007960",
+      "fields": [
+        {
+          "key": "title",
+          "value": "White Latte 17oz Ceramic Mug",
+          "digest": "1af774c409a7b735f16471beed61a0a7bea696208912a92fed456b9d84e69fca",
+          "locale": "en"
+        },
+        {
+          "key": "body_html",
+          "value": "<div>\n   <p>This beautiful ceramic latte mug is perfect for any event of the day. Your morning coffee, a hot chocolate, or any other hot beverage you enjoy. The mug is glossy white and the prints come out beautifully and vividly on it. The print retains its quality and luster when used in both microwaves and the dishwasher. </p>\n   <p>- Ceramic 17oz mug</p>\n   <p>- Dishwasher and microwave safe</p>\n   <p>- Large white area for designs</p>\n   <p>- Mug Height 150mm, Top Diameter 88mm, Bottom Diameter 59mm</p>\n</div>\n<div data-gelato-customization=\"1\"></div>",
+          "digest": "13e6c14fb2e524da59218737432088322a96ca0d35244fe21b4a0b8e14156ff4",
+          "locale": "en"
+        },
+        {
+          "key": "product_type",
+          "value": "Print Material",
+          "digest": "8685f5408e944f94fd8a8052883a0e9bd71651e6982f84b295e471af99e71f95",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "PRODUCT",
+      "resourceId": "gid://shopify/Product/15942787760472",
+      "fields": [
+        {
+          "key": "title",
+          "value": "Magic 11oz Ceramic Mug",
+          "digest": "ce33d665994fe4bc99b49226ed8fbfc3d5916acf9bcc764a7a6da946d0b291e8",
+          "locale": "en"
+        },
+        {
+          "key": "body_html",
+          "value": "<div>\n   <p>This mug has a black glossy finish when it's empty. When a hot beverage is added, the mug reveals your beautiful artwork.\n      Perfect for your morning coffee, a hot chocolate, or any other hot beverage you enjoy. The mug is not microwave and dishwasher safe. \n   </p>\n   <p>- Black glossy finish </p>\n   <p>- Reveals the print when exposed to hot liquids </p>\n   <p>- Handwash only</p>\n   <p>- Not microwave safe</p>\n   <p>- Mug Height 96mm, Bottom Diameter 80mm</p>\n</div>\n<div data-gelato-customization=\"1\"></div>",
+          "digest": "dde677a4f8ef229537feaf0544a1fa73699c344a836eff2aebdb679907d83038",
+          "locale": "en"
+        },
+        {
+          "key": "product_type",
+          "value": "Print Material",
+          "digest": "8685f5408e944f94fd8a8052883a0e9bd71651e6982f84b295e471af99e71f95",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "PRODUCT",
+      "resourceId": "gid://shopify/Product/15942829506904",
+      "fields": [
+        {
+          "key": "title",
+          "value": "White 10oz Porcelain Slim Mug",
+          "digest": "b2b403b723c2e14ae1a86147cddbf8ced9caed0d5e65624c7504f1cd08c69cd7",
+          "locale": "en"
+        },
+        {
+          "key": "body_html",
+          "value": "<div>\n  <p>This beautiful slim porcelain mug is perfect for any event of the day. Your morning coffee, a hot chocolate, or any other hot beverage you enjoy. The mug is glossy white and the prints come out beautifully and vividly on it. The print retains its quality and luster when used in both microwaves and the dishwasher.</p>\n  <p>- Porcelain 10oz mug</p>\n  <p>- Dishwasher and microwave safe</p>\n  <p>- Mug Height 104mm, Bottom Diameter 75mm</p>\n  \n</div>\n<div data-gelato-customization=\"1\"></div>",
+          "digest": "11489bb10db5e1502b582a5bd7bb6713e84ba279c9540b98042ee3489679bd9e",
+          "locale": "en"
+        },
+        {
+          "key": "product_type",
+          "value": "Print Material",
+          "digest": "8685f5408e944f94fd8a8052883a0e9bd71651e6982f84b295e471af99e71f95",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "PRODUCT",
+      "resourceId": "gid://shopify/Product/15942829670744",
+      "fields": [
+        {
+          "key": "title",
+          "value": "White 15oz Stainless Steel Travel Mug",
+          "digest": "483f2be87bd325fb35a0bb48c88399cabfbdd662a8b137512cf49ac091e44fc1",
+          "locale": "en"
+        },
+        {
+          "key": "body_html",
+          "value": "<p>This 15oz stainless steel travel mug will keep your drinks at their desired temperature for hours and its leak-proof design means it won’t spill, no matter where you take it.</p>\n<ul>\n<li>180 mm (7.08in) tall including lid, 160 mm tall (6.29in) without lid.</li>\n<li>Bottom diameter of 61 mm (2.4in) and top diameter 84 mm (3.3in).</li>\n</ul>\n<div data-gelato-customization=\"1\"></div>",
+          "digest": "fb99894017645ebfd91579c2dc7e0b721244a42b0687298a7699ee948ebc0e4e",
+          "locale": "en"
+        },
+        {
+          "key": "product_type",
+          "value": "Print Material",
+          "digest": "8685f5408e944f94fd8a8052883a0e9bd71651e6982f84b295e471af99e71f95",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "PRODUCT",
+      "resourceId": "gid://shopify/Product/15942846284120",
+      "fields": [
+        {
+          "key": "title",
+          "value": "Tough case Apple",
+          "digest": "028dbaf33dae811a87ed249093a5dd8cec87a27a77558235ceaa082c41335e79",
+          "locale": "en"
+        },
+        {
+          "key": "body_html",
+          "value": "Ultimate Protection for Your Phone\nThe Tough Case offers double-layered security with a sleek glossy finish. It's the perfect balance between protection and style.\n\n<ul>\n<li>Dual-layer design for maximum durability</li>\n<li>Wraparound print on back and sides</li>\n<li>Precisely aligned openings</li>\n<li>Compatible with wireless charging</li>\n</ul>\n\n<p>We're phasing out cases for Galaxy models and iPhones 11 and earlier to focus on creating cutting-edge designs for the latest iPhone models. <a href=\"https://support.gelato.com/en/articles/9881315-important-product-updates-refreshing-our-phone-case-lineup\" target=\"_blank\">learn more</a>.</p>\n<p>No minimum orders, printed and shipped on demand.</p>\n<div data-gelato-customization=\"1\"></div>",
+          "digest": "03698e922e8377a42fd372774656e0f9c019e8b5cf8e055ceda98068dfe044ff",
+          "locale": "en"
+        },
+        {
+          "key": "product_type",
+          "value": "Print Material",
+          "digest": "8685f5408e944f94fd8a8052883a0e9bd71651e6982f84b295e471af99e71f95",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "PRODUCT",
+      "resourceId": "gid://shopify/Product/15942846546264",
+      "fields": [
+        {
+          "key": "title",
+          "value": "Tough case",
+          "digest": "8934bbb1efb8c89220836b612b627595abe520f01f406c048ccb856704e7a977",
+          "locale": "en"
+        },
+        {
+          "key": "body_html",
+          "value": "Ultimate Protection for Your Phone\nThe Tough Case offers double-layered security with a sleek glossy finish. It's the perfect balance between protection and style.\n\n<ul>\n<li>Dual-layer design for maximum durability</li>\n<li>Wraparound print on back and sides</li>\n<li>Precisely aligned openings</li>\n<li>Compatible with wireless charging</li>\n</ul>\n\n<p>We're phasing out cases for Galaxy models and iPhones 11 and earlier to focus on creating cutting-edge designs for the latest iPhone models. <a href=\"https://support.gelato.com/en/articles/9881315-important-product-updates-refreshing-our-phone-case-lineup\" target=\"_blank\">learn more</a>.</p>\n<p>No minimum orders, printed and shipped on demand.</p>\n<div data-gelato-customization=\"1\"></div>",
+          "digest": "03698e922e8377a42fd372774656e0f9c019e8b5cf8e055ceda98068dfe044ff",
+          "locale": "en"
+        },
+        {
+          "key": "product_type",
+          "value": "Print Material",
+          "digest": "8685f5408e944f94fd8a8052883a0e9bd71651e6982f84b295e471af99e71f95",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "PRODUCT",
+      "resourceId": "gid://shopify/Product/15942846873944",
+      "fields": [
+        {
+          "key": "title",
+          "value": "Flexi case samsung",
+          "digest": "07bf80cab3943dfa4b2d6e85ac7d14ab39f123bc84d124d218ab3284cbe58522",
+          "locale": "en"
+        },
+        {
+          "key": "body_html",
+          "value": "The Flexi Case, is great for displaying your art and designs. It is a transparent case with a modern clear texture. This shell offers good impact resistance.\n\n<ul>\n<li>Flexible and resistant to tear</li>\n<li>Durable protective layer</li>\n<li>Frosty transparent</li>\n<li>Precisely aligned openings</li>\n<li>Wireless charging compatible</li>\n</ul>\n\n<p>We're phasing out cases for Galaxy models and iPhones 11 and earlier to focus on creating cutting-edge designs for the latest iPhone models. <a href=\"https://support.gelato.com/en/articles/9881315-important-product-updates-refreshing-our-phone-case-lineup\" target=\"_blank\">learn more</a>.</p>\n<p>No minimum orders, printed and shipped on demand.</p>",
+          "digest": "87e09e92ab17f5dd95233e406a08ec79b57e4462c60d2b04b2636391c6ec3fca",
+          "locale": "en"
+        },
+        {
+          "key": "product_type",
+          "value": "Print Material",
+          "digest": "8685f5408e944f94fd8a8052883a0e9bd71651e6982f84b295e471af99e71f95",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "PRODUCT",
+      "resourceId": "gid://shopify/Product/15942847988056",
+      "fields": [
+        {
+          "key": "title",
+          "value": "Slim case samsung",
+          "digest": "cdfa464fc4e80b60584400f040b52f3c839a5beae6312ee9a2161922bca7e796",
+          "locale": "en"
+        },
+        {
+          "key": "body_html",
+          "value": "Sleek Aesthetics, Strong Protection\nThe Slim Case combines a super-slim design with robust durability. \n\n<ul>\n<li>Premium quality with a white base</li>\n<li>Wraparound print on back and sides</li>\n<li>Precisely aligned openings</li>\n<li>Compatible with wireless charging</li>\n</ul>\n\n<p>We're phasing out cases for Galaxy models and iPhones 11 and earlier to focus on creating cutting-edge designs for the latest iPhone models. <a href=\"https://support.gelato.com/en/articles/9881315-important-product-updates-refreshing-our-phone-case-lineup\" target=\"_blank\">learn more</a>.</p>\n<p>No minimum orders, printed and shipped on demand.</p>\n<div data-gelato-customization=\"1\"></div>",
+          "digest": "be80b98f6fce73cfd1907cbefd2345a1c826ab3bbfd56561aa245698653678b4",
+          "locale": "en"
+        },
+        {
+          "key": "product_type",
+          "value": "Print Material",
+          "digest": "8685f5408e944f94fd8a8052883a0e9bd71651e6982f84b295e471af99e71f95",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "PRODUCT",
+      "resourceId": "gid://shopify/Product/15942848872792",
+      "fields": [
+        {
+          "key": "title",
+          "value": "Slim case apple",
+          "digest": "3569f53fd917fb8d1ead897bc772cdd1d6793a43eb2607cd12011adc110c9537",
+          "locale": "en"
+        },
+        {
+          "key": "body_html",
+          "value": "Sleek Aesthetics, Strong Protection\nThe Slim Case combines a super-slim design with robust durability. \n\n<ul>\n<li>Premium quality with a white base</li>\n<li>Wraparound print on back and sides</li>\n<li>Precisely aligned openings</li>\n<li>Compatible with wireless charging</li>\n</ul>\n\n<p>We're phasing out cases for Galaxy models and iPhones 11 and earlier to focus on creating cutting-edge designs for the latest iPhone models. <a href=\"https://support.gelato.com/en/articles/9881315-important-product-updates-refreshing-our-phone-case-lineup\" target=\"_blank\">learn more</a>.</p>\n<p>No minimum orders, printed and shipped on demand.</p>\n<div data-gelato-customization=\"1\"></div>",
+          "digest": "be80b98f6fce73cfd1907cbefd2345a1c826ab3bbfd56561aa245698653678b4",
+          "locale": "en"
+        },
+        {
+          "key": "product_type",
+          "value": "Print Material",
+          "digest": "8685f5408e944f94fd8a8052883a0e9bd71651e6982f84b295e471af99e71f95",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "PRODUCT",
+      "resourceId": "gid://shopify/Product/15942851101016",
+      "fields": [
+        {
+          "key": "title",
+          "value": "Clear case apple",
+          "digest": "c8118f465d8ac23a17ce97c35e624645fd3fbe5770c681016458217676b4e573",
+          "locale": "en"
+        },
+        {
+          "key": "body_html",
+          "value": "<p> The Clear Case offers protection in style without compromising functionality. Its slim, transparent design provides impact resistance and scratch-proof durability while remaining ultra-thin. </p>\n\n<ul>\n<li>Transparent and crystal clear</li>\n<li>Lightweight and slim profile</li>\n<li>Precisely aligned openings</li>\n<li>Compatible with wireless charging</li>\n</ul>\n\n<p> We're refreshing our phone case lineup and will bid farewell to Clear Phone cases soon. Don't miss your last chance to grab these designs! <a href=\"https://support.gelato.com/en/articles/9881315-important-product-updates-refreshing-our-phone-case-lineup\" target=\"_blank\">learn more here</a></p>\n\n<div data-gelato-customization=\"1\"></div>",
+          "digest": "97b64902f4f0ec0461dde8f7fc309a7933709fb8e09605df3d6de1e9ed62b892",
+          "locale": "en"
+        },
+        {
+          "key": "product_type",
+          "value": "Print Material",
+          "digest": "8685f5408e944f94fd8a8052883a0e9bd71651e6982f84b295e471af99e71f95",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "PRODUCT",
+      "resourceId": "gid://shopify/Product/15942851199320",
+      "fields": [
+        {
+          "key": "title",
+          "value": "Bio case",
+          "digest": "55e1742136e9141f32ce66c99964eed1a508d1ae89bc60c2648083f2439ab96d",
+          "locale": "en"
+        },
+        {
+          "key": "body_html",
+          "value": "<p>Crafted from 100% biodegradable material in a sleek black color, the bio case is scratch and shock resistant while being eco-conscious. Join the movement towards sustainability with this thoughtfully designed case.</p>\n<ul>\n<li>Made from 100% biodegradable material</li>\n<li>Sleek black base color</li>\n<li>Print area on the back</li>\n<li>Precisely aligned openings</li>\n<li>Compatible with wireless charging</li>\n</ul>\n<p>We're refreshing our phone case lineup and will bid farewell to Bio Phone cases soon. Don't miss your last chance to grab these designs! <a href=\"https://support.gelato.com/en/articles/9881315-important-product-updates-refreshing-our-phone-case-lineup\" target=\"_blank\">learn more here</a></p>\n<div data-gelato-customization=\"1\"></div>",
+          "digest": "9b7adb0f91c41fcf522d7cc4f967d49c797f55363c98e7e02c1b2e5f76ea44fe",
+          "locale": "en"
+        },
+        {
+          "key": "product_type",
+          "value": "Print Material",
+          "digest": "8685f5408e944f94fd8a8052883a0e9bd71651e6982f84b295e471af99e71f95",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "PRODUCT",
+      "resourceId": "gid://shopify/Product/15942851723608",
+      "fields": [
+        {
+          "key": "title",
+          "value": "Flexi case apple",
+          "digest": "06a2a9505feec9ac0b253b2708287b95c87aa9e3335e6a252f52c7d84860df35",
+          "locale": "en"
+        },
+        {
+          "key": "body_html",
+          "value": "The Flexi Case, is great for displaying your art and designs. It is a transparent case with a modern clear texture. This shell offers good impact resistance.\n\n<ul>\n<li>Flexible and resistant to tear</li>\n<li>Durable protective layer</li>\n<li>Frosty transparent</li>\n<li>Precisely aligned openings</li>\n<li>Wireless charging compatible</li>\n</ul>\n\n<p>We're phasing out cases for Galaxy models and iPhones 11 and earlier to focus on creating cutting-edge designs for the latest iPhone models. <a href=\"https://support.gelato.com/en/articles/9881315-important-product-updates-refreshing-our-phone-case-lineup\" target=\"_blank\">learn more</a>.</p>\n<p>No minimum orders, printed and shipped on demand.</p>\n<div data-gelato-customization=\"1\"></div>",
+          "digest": "f06ec55ee0811b7913a77205e7dfc01bdbb4e66d948db47c7775bb68ea070399",
+          "locale": "en"
+        },
+        {
+          "key": "product_type",
+          "value": "Print Material",
+          "digest": "8685f5408e944f94fd8a8052883a0e9bd71651e6982f84b295e471af99e71f95",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "PRODUCT",
+      "resourceId": "gid://shopify/Product/15942868730200",
+      "fields": [
+        {
+          "key": "title",
+          "value": "Classic Tote Bag",
+          "digest": "5f12ae98e8dd419a6086a1534eaaa0563f3b445199c3150427c78687a9eb15a1",
+          "locale": "en"
+        },
+        {
+          "key": "body_html",
+          "value": "<div>\n<p>Cover all your grab and go needs with these long handle tote bags while being eco-conscious. These tote bags feature reinforced stitching on handles for more stability. Your unique designs will stand out on these 100% cotton fabric tote bags. Any whites in your design will be treated as transparent in the printing process for the natural color tote bags. Please keep this in mind to ensure optimal results</p>\n<p>- Reinforced stitching on handles\n<br>- Large printable area for front &amp; back\n<br>- Capacity 10 litres</p>\n<br>- 100% cotton\n<br>- 3 - 5  oz/yard², 100 - 170  g/m²\n<p>This product is made on demand. No minimums.</p>\n</div>\n<br><br>\n<p><strong>Size guide</strong></p>\n\n<br><br>\n<table>\n<tr>\n<td> </td>\n<td><strong>Sizes</strong></td>\n</tr>\n<tr>\n<td><strong>Handle (cm)</strong></td>\n<td>67</td>\n</tr>\n<tr>\n<td><strong>Length (cm)</strong></td>\n<td>42</td>\n</tr>\n<tr>\n<td><strong>Width (cm)</strong></td>\n<td>38</td>\n</tr>\n</table>\n\n\n<br><br>\n<table>\n<tr>\n<td> </td>\n<td><strong>Sizes</strong></td>\n</tr>\n<tr>\n<td><strong>Handle (inches)</strong></td>\n<td>26.4</td>\n</tr>\n<tr>\n<td><strong>Length (inches)</strong></td>\n<td>16.5</td>\n</tr>\n<tr>\n<td><strong>Width (inches)</strong></td>\n<td>15</td>\n</tr>\n</table>\n\n\n<br><br>\n<p><strong>Care instructions</strong></p>\n<table>\n<tr>\n<td>Wash</td>\n<td>Machine wash warm (max 40C or 105F), wash garment inside out with similar colors</td>\n</tr>\n<tr>\n<td>Tumble Dry</td>\n<td>Low</td>\n</tr>\n<tr>\n<td>Bleach</td>\n<td>Only non-chlorine</td>\n</tr>\n<tr>\n<td>Dry clean</td>\n<td>Do not dry clean</td>\n</tr>\n<tr>\n<td>Iron</td>\n<td>Do not iron</td>\n</tr>\n</table>\n<div data-gelato-customization=\"1\"></div>",
+          "digest": "7874907b573be849e44f327ffc1353c147c56d2a2942c0dd1e5f82b6707ad8b1",
+          "locale": "en"
+        },
+        {
+          "key": "product_type",
+          "value": "Print Material",
+          "digest": "8685f5408e944f94fd8a8052883a0e9bd71651e6982f84b295e471af99e71f95",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "PRODUCT",
+      "resourceId": "gid://shopify/Product/15942884688216",
+      "fields": [
+        {
+          "key": "title",
+          "value": "Premium Tote Bag",
+          "digest": "b098b2691bcb20d1e7b3179e9cb8d2829637515f846d49203c25eea54536228a",
+          "locale": "en"
+        },
+        {
+          "key": "body_html",
+          "value": "<div>\n<p>Cover all your grab and go needs with these long handle premium tote bags while being eco-conscious. These premium tote bags feature reinforced stitching on handles for more stability. Your unique designs will stand out on these 100% cotton fabric tote bags. Any whites in your design will be treated as transparent in the printing process for the natural color tote bags. Please keep this in mind to ensure optimal results</p>\n<p>- Reinforced stitching on handles\n<br>- Large printable area for front &amp; back\n<br>- Capacity 10 litres</p>\n<br>- 100% cotton\n<br>- 9.14 - 11.80  oz/yard², 310 - 400 g/m²\n<br>- Lukewarm hand wash only\n<p>This product is made on demand. No minimums.</p>\n</div>\n<br><br>\n<p><strong>Size guide</strong></p>\n\n<br><br>\n<table>\n<tr>\n<td> </td>\n<td><strong>Sizes</strong></td>\n</tr>\n<tr>\n<td><strong>Length (cm)</strong></td>\n<td>2</td>\n</tr>\n<tr>\n<td><strong>Width (cm)</strong></td>\n<td>35.6</td>\n</tr>\n</table>\n\n\n<br><br>\n<table>\n<tr>\n<td> </td>\n<td><strong>Sizes</strong></td>\n</tr>\n<tr>\n<td><strong>Length (inches)</strong></td>\n<td>0.8</td>\n</tr>\n<tr>\n<td><strong>Width (inches)</strong></td>\n<td>14</td>\n</tr>\n</table>\n\n\n<br><br>\n<p><strong>Care instructions</strong></p>\n<table>\n<tr>\n<td>Wash</td>\n<td>Machine wash warm (max 40C or 105F), wash garment inside out with similar colors</td>\n</tr>\n<tr>\n<td>Tumble Dry</td>\n<td>Low</td>\n</tr>\n<tr>\n<td>Bleach</td>\n<td>Only non-chlorine</td>\n</tr>\n<tr>\n<td>Dry clean</td>\n<td>Do not dry clean</td>\n</tr>\n<tr>\n<td>Iron</td>\n<td>Do not iron</td>\n</tr>\n</table>\n<div data-gelato-customization=\"1\"></div>",
+          "digest": "f83d05a427ccb36b0796f204653945e81c9388bc743bc13220d5b4ec77f972a5",
+          "locale": "en"
+        },
+        {
+          "key": "product_type",
+          "value": "Print Material",
+          "digest": "8685f5408e944f94fd8a8052883a0e9bd71651e6982f84b295e471af99e71f95",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "PRODUCT",
+      "resourceId": "gid://shopify/Product/15943306051928",
+      "fields": [
+        {
+          "key": "title",
+          "value": "Kiss-cut stickers",
+          "digest": "dfb9f1eb30353d2c5e0590e7d4657c76dcde41ea08dd081ecf1773ceaf587f58",
+          "locale": "en"
+        },
+        {
+          "key": "body_html",
+          "value": "<p>Personalised kiss-cut vinyl stickers — cut to the shape of your design. Waterproof, removable, and available in matt or gloss.</p>\n<ul>\n<li>Premium white vinyl</li>\n<li>Indoor or outdoor (up to 18 months)</li>\n<li>Four sizes from 8×10 cm to 36×36 cm</li>\n<li>Matt or gloss finish</li>\n</ul>\n<p>Upload your photo or artwork after checkout. Printed on demand and shipped in plain packaging.</p>",
+          "digest": "3467652b48b3a7d381a9cef5eef6c6421c1b65bf224a049078a2897b6ebc026c",
+          "locale": "en"
+        },
+        {
+          "key": "product_type",
+          "value": "Stickers",
+          "digest": "dbf9cbbe0d379b63413340aa4637e03670be1b5af170d61dbfc9ebff23561804",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "PRODUCT",
+      "resourceId": "gid://shopify/Product/15943381549400",
+      "fields": [
+        {
+          "key": "title",
+          "value": "Temporary tattoos",
+          "digest": "9f61ae5552443ac07e7b0c79d970feba4d92c8cdba2e1387a59ccb6f25c4f152",
+          "locale": "en"
+        },
+        {
+          "key": "body_html",
+          "value": "<p>Personalised temporary tattoos printed on skin-safe waterslide film. Easy to apply, lasts up to a week, and removes with baby oil.</p>\n<ul>\n<li>Five sizes from 5×7.5 cm to 30×30 cm</li>\n<li>Certified for toys and cosmetics in the UK, EU, US, Canada and Australia</li>\n<li>Not recommended for children under 3</li>\n</ul>\n<p>Use Personalize design to upload a JPG or PNG. We’ll print from your artwork — not the stock photo.</p>",
+          "digest": "505726e6f881dec87dae5495bed21457ffaad3870ee84f51daf999706755bea3",
+          "locale": "en"
+        },
+        {
+          "key": "product_type",
+          "value": "Temporary tattoos",
+          "digest": "9f61ae5552443ac07e7b0c79d970feba4d92c8cdba2e1387a59ccb6f25c4f152",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "PRODUCT",
+      "resourceId": "gid://shopify/Product/15943381647704",
+      "fields": [
+        {
+          "key": "title",
+          "value": "Fridge magnets",
+          "digest": "b0ea646721068c5857d62f0a0aafc8801e148d5a89db725457744eea7616b34c",
+          "locale": "en"
+        },
+        {
+          "key": "body_html",
+          "value": "<p>Personalised fridge magnets printed with silver halide and sealed onto a powerful magnetic substrate.</p>\n<ul>\n<li>Single-image magnets in 10×10 cm and 15×15 cm</li>\n<li>0.6 mm thick magnetic backing</li>\n<li>Ideal everyday gift</li>\n</ul>\n<p>Use Personalize design to upload a JPG or PNG. We’ll print from your artwork — not the stock photo.</p>",
+          "digest": "4c0c22c70b4727208fea566aeff78dec6ce4619804771529121068aa2a88688f",
+          "locale": "en"
+        },
+        {
+          "key": "product_type",
+          "value": "Magnets",
+          "digest": "5333907e38f7634202aa338590822447f0c5100f7dd487505f9ca7f453556d5a",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "PRODUCT",
+      "resourceId": "gid://shopify/Product/15943381778776",
+      "fields": [
+        {
+          "key": "title",
+          "value": "Framed photo tiles",
+          "digest": "33886fcf91a3ffd55654ee200363b0d2a7818e628df0978b0a7f2f6048a3aa99",
+          "locale": "en"
+        },
+        {
+          "key": "body_html",
+          "value": "<p>Super-lightweight stick-on photo tiles with a recycled-content plastic frame. Reposition up to five times with no wall residue.</p>\n<ul>\n<li>Three sizes: 13×18 cm, 20×20 cm and 20×25 cm</li>\n<li>Black or white frame</li>\n<li>Giclée photographic print · 1.7 cm frame depth</li>\n</ul>\n<p>Use Personalize design to upload a JPG or PNG. We’ll print from your artwork — not the stock photo.</p>",
+          "digest": "4ebd2bba9837c48132fb7b2c2bf1510729af9113165297c479473555f6391429",
+          "locale": "en"
+        },
+        {
+          "key": "product_type",
+          "value": "Photo tiles",
+          "digest": "b741fc740027f7afcd220e8b6bf0d19dae979f7f0b0b67c0d9aab3fba8efaee0",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "PRODUCT",
+      "resourceId": "gid://shopify/Product/15943381975384",
+      "fields": [
+        {
+          "key": "title",
+          "value": "Photo cushions",
+          "digest": "762a2304e7dcf0fea1114c90ae7c60cf509f18064ef1fb1fb737705197a669d1",
+          "locale": "en"
+        },
+        {
+          "key": "body_html",
+          "value": "<p>Personalised faux suede cushions, printed with dye sublimation and finished with a zip cover and fibre fill.</p>\n<ul>\n<li>Square sizes from 30×30 cm to 61×61 cm</li>\n<li>Single-sided print, stone reverse</li>\n<li>Wash cover at 30°C</li>\n</ul>\n<p>Use Personalize design to upload a JPG or PNG. We’ll print from your artwork — not the stock photo.</p>",
+          "digest": "e45d6089aa3fdf1fbfc270f79296e57d6334c90488b43e13fe99a88302ff6a5e",
+          "locale": "en"
+        },
+        {
+          "key": "product_type",
+          "value": "Cushions",
+          "digest": "700d6969b5a492a8b847d55b36ce17ff3563fb384ea7acb2d4bdd1a5fa71811a",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "PRODUCT",
+      "resourceId": "gid://shopify/Product/15943382303064",
+      "fields": [
+        {
+          "key": "title",
+          "value": "Jigsaw puzzles",
+          "digest": "c5d91d40f0ce5cfa61d0edb2a0997faa26165582f7a5dee70bad27ddb0c6f089",
+          "locale": "en"
+        },
+        {
+          "key": "body_html",
+          "value": "<p>Personalised jigsaw puzzles in a metal tin. Your photo is printed on the puzzle and on the tin lid.</p>\n<ul>\n<li>30, 110, 252, 500 or 1000 pieces</li>\n<li>Dye sublimation print</li>\n<li>Ships in a keepsake tin</li>\n</ul>\n<p>Use Personalize design to upload a JPG or PNG. We’ll print from your artwork — not the stock photo.</p>",
+          "digest": "d3eae98e2c57698c709c5eba82ce669d78ce2aed42658d3cd1f297f6be8e99f7",
+          "locale": "en"
+        },
+        {
+          "key": "product_type",
+          "value": "Jigsaws",
+          "digest": "70175342324e3e9616aa45c04f265d780c403aeb68e2ffbfc7a47ca426d5fa0f",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "PRODUCT",
+      "resourceId": "gid://shopify/Product/15943393378648",
+      "fields": [
+        {
+          "key": "title",
+          "value": "Acrylic photo prism",
+          "digest": "1a829cdce28f5a7aaf4e6fa80ee0286216dc47a712dcd08c20b2cee529fe9e0c",
+          "locale": "en"
+        },
+        {
+          "key": "body_html",
+          "value": "<p>Personalised freestanding acrylic prism — one-inch thick with diamond-polished edges. Perfect for desks and shelves.</p>\n<ul>\n<li>Back mount or transparent background</li>\n<li>Square and rectangular sizes</li>\n<li>Giclée print · ships in protective packaging</li>\n</ul>\n<p>Upload a JPG or PNG. For transparent prisms, use PNG — white areas will not show. We’ll mock up and confirm before dispatch.</p>",
+          "digest": "43546151e676e277ab57217a0c527ad7464803ce32de302143768923a4a8f2b0",
+          "locale": "en"
+        },
+        {
+          "key": "product_type",
+          "value": "Acrylic prism",
+          "digest": "408e425db89a66c24a7904101102a9bc5af9b757bb1bd6fc41df0411120390df",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "PRODUCT",
+      "resourceId": "gid://shopify/Product/15943409402200",
+      "fields": [
+        {
+          "key": "title",
+          "value": "Beach towel",
+          "digest": "8014720c977e8ac4697ae09b139b6ab56a57ef3b1d16b7d9075e455e5ca7a428",
+          "locale": "en"
+        },
+        {
+          "key": "body_html",
+          "value": "<p>A personalised beach towel with your photo printed edge-to-edge on one side. The reverse is terry fabric so it stays absorbent.</p>\n<ul>\n<li>Two sizes: 30″ × 60″ (76 × 152 cm) and 36″ × 72″ (91 × 183 cm)</li>\n<li>Cotton-poly blend · sublimation print</li>\n<li>Soft printed face, absorbent terry reverse</li>\n</ul>\n<p>Upload a JPG or PNG. We’ll mock up and confirm before dispatch — we won’t print the stock photo.</p>",
+          "digest": "30823787a3170ab01183e18ba8d31aa2fdc90e69d46921227ba2103260fa8232",
+          "locale": "en"
+        },
+        {
+          "key": "product_type",
+          "value": "Towel",
+          "digest": "98b1e42f9fe86573d443cea6366103573ae20908b218c322b53cca2585192a09",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "PRODUCT",
+      "resourceId": "gid://shopify/Product/15943418380632",
+      "fields": [
+        {
+          "key": "title",
+          "value": "Hand towel",
+          "digest": "f42d04bdb6da8a9802c4aa83f2659e3014e3a22394f1e15583e51cac57d384db",
+          "locale": "en"
+        },
+        {
+          "key": "body_html",
+          "value": "<p>A personalised hand towel with a vibrant sublimation print on the front and soft absorbent cotton on the back.</p>\n<ul>\n<li>One size: 28″ × 16″ (71 × 41 cm)</li>\n<li>52% polyester, 48% cotton · 400 g/m²</li>\n<li>Machine wash cold — do not bleach, iron, dry clean or tumble dry hot</li>\n</ul>\n<p>Upload a JPG or PNG. We’ll mock up and confirm before dispatch — we won’t print the stock photo.</p>",
+          "digest": "db224906e61a33b21ff07b92b6038752f3f31c41a874933fbf84996c7afc67b5",
+          "locale": "en"
+        },
+        {
+          "key": "product_type",
+          "value": "Towel",
+          "digest": "98b1e42f9fe86573d443cea6366103573ae20908b218c322b53cca2585192a09",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "COLLECTION",
+      "resourceId": "gid://shopify/Collection/687064154456",
+      "fields": [
+        {
+          "key": "title",
+          "value": "Home page",
+          "digest": "11d58b08de98e05930a7f73b5f5d75367e4a58ac27335a420d55583cb16ad1ff",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "COLLECTION",
+      "resourceId": "gid://shopify/Collection/687120449880",
+      "fields": [
+        {
+          "key": "title",
+          "value": "Canvas Prints",
+          "digest": "d66269df65baacdc601000e2f02ca0f95533fd6379bed045f3d4e19dd32bf6db",
+          "locale": "en"
+        },
+        {
+          "key": "body_html",
+          "value": "<p>Personalised canvas prints made for your photos. Pick <strong>portrait</strong>, <strong>landscape</strong>, or <strong>square</strong>, choose <strong>slim</strong> or <strong>thick</strong> wrap, then select from 26 sizes and upload your image for a live product preview.</p><ul>\n<li>Gallery-quality canvas on FSC-certified stretcher bars</li>\n<li>Slim (~2cm) and thick (~4cm) wrap</li>\n<li>104 size / orientation / thickness combinations</li>\n<li>Printed and shipped on demand</li>\n</ul>",
+          "digest": "91e2ee52ad1be8d969ca08d405b8b4701480fc2f00dff3a47e22971848aca751",
+          "locale": "en"
+        },
+        {
+          "key": "meta_title",
+          "value": "Canvas Prints | Pixora",
+          "digest": "b9b66d2b9052632bc0819013982da4a0f94f5f470e535560759e7a9e05aac1d9",
+          "locale": "en"
+        },
+        {
+          "key": "meta_description",
+          "value": "Personalised canvas prints — portrait, landscape, square, slim and thick wrap, 26 sizes.",
+          "digest": "5f16f68b51ab6135d2cfd065c81294935e9c0d274d05a846903119a86eee415e",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "COLLECTION",
+      "resourceId": "gid://shopify/Collection/687165833560",
+      "fields": [
+        {
+          "key": "title",
+          "value": "Wall art",
+          "digest": "b75eb0d1d0e234630cf9eec9d8f06b7816756e652a6ee01a5e846dd9b76d1e55",
+          "locale": "en"
+        },
+        {
+          "key": "body_html",
+          "value": "<p>Canvas, framed prints, metal, acrylic, posters and more.</p>",
+          "digest": "c1031fd397f225f732d2d32c477b3284c6a7f9e605d5cd7a403ec9d5c283d392",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "COLLECTION",
+      "resourceId": "gid://shopify/Collection/687346418008",
+      "fields": [
+        {
+          "key": "title",
+          "value": "Posters",
+          "digest": "1c73841afe314825ac68cc3e1fb33869c3682c5b47bfc1cc1fd569fd21844664",
+          "locale": "en"
+        },
+        {
+          "key": "body_html",
+          "value": "<p>Paper posters in multiple finishes. Pick a finish, then choose size and personalize.</p>",
+          "digest": "9d64ecfebcba95c18946bb4906bbc04b6798043ae8a9a820ccdd9b9d8a42da1c",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "COLLECTION",
+      "resourceId": "gid://shopify/Collection/687480537432",
+      "fields": [
+        {
+          "key": "title",
+          "value": "Framed prints",
+          "digest": "743283c6e9a154770ef076b369a20511e6686f249a568c2cfae9ab747946f708",
+          "locale": "en"
+        },
+        {
+          "key": "body_html",
+          "value": "<p>Personalised framed prints - choose frame colour, size and orientation, then upload your photo.</p>",
+          "digest": "d5e933a9f0454c129965d74f0fae8befbd62a546875952d00fa61733b76b1c2d",
+          "locale": "en"
+        },
+        {
+          "key": "meta_title",
+          "value": "Framed prints",
+          "digest": "743283c6e9a154770ef076b369a20511e6686f249a568c2cfae9ab747946f708",
+          "locale": "en"
+        },
+        {
+          "key": "meta_description",
+          "value": "Personalised framed prints from Pixora",
+          "digest": "0010bcd18b2dc7210ae561b7e783e97471d8a32f6b8e91b7d22fee8d85b6d3aa",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "COLLECTION",
+      "resourceId": "gid://shopify/Collection/687501934936",
+      "fields": [
+        {
+          "key": "title",
+          "value": "Framed canvas",
+          "digest": "d10b7ad1f702c27a8c3671bfe797518d1090be14e9356b81b371c6f9b3e71093",
+          "locale": "en"
+        },
+        {
+          "key": "body_html",
+          "value": "<p>Canvas prints in a tray frame - choose frame colour, orientation and size, then personalize.</p>",
+          "digest": "f7b4ac7ef97b48099e66080c1e191c9c13f4c9b64e8c47f18d0ca6bf25b12e7e",
+          "locale": "en"
+        },
+        {
+          "key": "meta_title",
+          "value": "Framed canvas",
+          "digest": "d10b7ad1f702c27a8c3671bfe797518d1090be14e9356b81b371c6f9b3e71093",
+          "locale": "en"
+        },
+        {
+          "key": "meta_description",
+          "value": "Personalised framed canvas prints from Pixora",
+          "digest": "3300d7b059351e2d5f3eb1a2838f8ea310913b336b1c403f1615288d9768ef81",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "COLLECTION",
+      "resourceId": "gid://shopify/Collection/687579169112",
+      "fields": [
+        {
+          "key": "title",
+          "value": "Acrylic prints",
+          "digest": "65446071ba6dd1bf093daedaca03a841b077e28bd52ae389dd7f862ecefccdb3",
+          "locale": "en"
+        },
+        {
+          "key": "body_html",
+          "value": "<p>Glossy acrylic wall prints — choose orientation and size, then personalize.</p>",
+          "digest": "b22718e0c4de2ea725a32499956666b4a3c98235fed99aaf4ed34f71f789b7b5",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "COLLECTION",
+      "resourceId": "gid://shopify/Collection/687579201880",
+      "fields": [
+        {
+          "key": "title",
+          "value": "Metal / aluminium prints",
+          "digest": "80fd16906af2a2585f6e56b5cc9c3fdb534a87efab8308e485fa424890008199",
+          "locale": "en"
+        },
+        {
+          "key": "body_html",
+          "value": "<p>Aluminum and brushed aluminum prints — vivid metal wall art.</p>",
+          "digest": "4ba6fe1928b688cd55b7b6abfdea78bbb491dac14f82379842ab3b8a03959f48",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "COLLECTION",
+      "resourceId": "gid://shopify/Collection/687579234648",
+      "fields": [
+        {
+          "key": "title",
+          "value": "Wood prints",
+          "digest": "0b0a79d23cc998eadd9159ca7144c584154a83e5b564de89875341ff783d5817",
+          "locale": "en"
+        },
+        {
+          "key": "body_html",
+          "value": "<p>Natural wood grain prints — choose thickness, orientation and size.</p>",
+          "digest": "55aa43528646bb8ec8d17c04583d229acc8184858ddeff8f4a8f8c51a1c7a589",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "COLLECTION",
+      "resourceId": "gid://shopify/Collection/687579267416",
+      "fields": [
+        {
+          "key": "title",
+          "value": "Foam prints",
+          "digest": "b50f1fc2e5848bc2b7917e45fc29141bad6cf9c4d5ceefb0d645fbc839418843",
+          "locale": "en"
+        },
+        {
+          "key": "body_html",
+          "value": "<p>Lightweight foam board prints — portrait, landscape or square.</p>",
+          "digest": "2361bcae734ed7d7e81f98659f6ce0092b22222a8ce748b830e7b7359397db47",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "COLLECTION",
+      "resourceId": "gid://shopify/Collection/687579300184",
+      "fields": [
+        {
+          "key": "title",
+          "value": "Posters with hangers",
+          "digest": "958bdbd2cc95dbb6e192cf892cd534958bfe7a1bae6798df6da0010e93c0905b",
+          "locale": "en"
+        },
+        {
+          "key": "body_html",
+          "value": "<p>Posters with wood hangers — pick hanger colour, orientation and size.</p>",
+          "digest": "8c852268cd82f0040a845f2fa4672dd7b6b7f87cfd80d40ad93639ef0bacb578",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "COLLECTION",
+      "resourceId": "gid://shopify/Collection/687580512600",
+      "fields": [
+        {
+          "key": "title",
+          "value": "Mugs",
+          "digest": "27011f181b1bebe16828d6d57343f546d83feaf2fd477e8d7ccc4c6b6036945b",
+          "locale": "en"
+        },
+        {
+          "key": "body_html",
+          "value": "<p>Personalised ceramic mugs — classic white or colour-inside styles.</p>",
+          "digest": "99955cc71ab799fdc367bf4bfce2772078936db053bebef996fef2b975e72c04",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "COLLECTION",
+      "resourceId": "gid://shopify/Collection/687580545368",
+      "fields": [
+        {
+          "key": "title",
+          "value": "Water bottles",
+          "digest": "3cf1cb8c8fcc8b3773fa81ac4123ae621c7764f8f8099d3b526e5daaef4830b2",
+          "locale": "en"
+        },
+        {
+          "key": "body_html",
+          "value": "<p>Personalised stainless steel water bottles — print your photo or design.</p>",
+          "digest": "f1e547595da79f2d911f3ca78c6263fbd72024ebad110e7d66bee9dbe41ce049",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "COLLECTION",
+      "resourceId": "gid://shopify/Collection/687580578136",
+      "fields": [
+        {
+          "key": "title",
+          "value": "Home & gifts",
+          "digest": "7755a0fec1ebc3976c918e7ec95f05c2e0b5083e82cf49a5815f518f895cc901",
+          "locale": "en"
+        },
+        {
+          "key": "body_html",
+          "value": "<p>Personalised mugs, bottles and more — gifts they’ll use every day.</p>",
+          "digest": "27cdf7ef6cb39890b94c15aaae5a5c4793a81f07b9a97d8a655889c9cea43abb",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "COLLECTION",
+      "resourceId": "gid://shopify/Collection/687708537176",
+      "fields": [
+        {
+          "key": "title",
+          "value": "Phone cases",
+          "digest": "6dab945e50c0bca618c0494094a1814f099193d5ee063dfcbc11acf79ff539b5",
+          "locale": "en"
+        },
+        {
+          "key": "body_html",
+          "value": "<p>Personalised phone cases for Apple and Samsung — pick a style and model, then personalize.</p>",
+          "digest": "205f30f068e92738979564cf96134c0fd624f4b327817224a18ee673a3e3ddf1",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "COLLECTION",
+      "resourceId": "gid://shopify/Collection/687708864856",
+      "fields": [
+        {
+          "key": "title",
+          "value": "Tote bags",
+          "digest": "bba545ab17d368cf9e470c857271f7c43736a5669caa7ee3ea29f6af2ea78333",
+          "locale": "en"
+        },
+        {
+          "key": "body_html",
+          "value": "<p>Personalised tote bags — classic and premium styles with colour options.</p>",
+          "digest": "ecb769037b4d12a9869428b959951d6dddda9f7dcd7002936a0978a3e565df10",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "COLLECTION",
+      "resourceId": "gid://shopify/Collection/687721775448",
+      "fields": [
+        {
+          "key": "title",
+          "value": "Stickers",
+          "digest": "dbf9cbbe0d379b63413340aa4637e03670be1b5af170d61dbfc9ebff23561804",
+          "locale": "en"
+        },
+        {
+          "key": "body_html",
+          "value": "<p>Personalised kiss-cut vinyl stickers — cut to your design, matt or gloss, four sizes.</p>",
+          "digest": "a89d20ce2e2e2dd75a3140d627b5249da334b9fe301f186dc2a2cd751256e2fc",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "COLLECTION",
+      "resourceId": "gid://shopify/Collection/687723970904",
+      "fields": [
+        {
+          "key": "title",
+          "value": "Temporary tattoos",
+          "digest": "9f61ae5552443ac07e7b0c79d970feba4d92c8cdba2e1387a59ccb6f25c4f152",
+          "locale": "en"
+        },
+        {
+          "key": "body_html",
+          "value": "<p>Skin-safe waterslide tattoos in five sizes — personalise with your photo or design.</p>",
+          "digest": "551a542a6924df3edcb49074aa18994bf2cffc5a8c507a55364ecdb5c62a84cb",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "COLLECTION",
+      "resourceId": "gid://shopify/Collection/687724003672",
+      "fields": [
+        {
+          "key": "title",
+          "value": "Magnets",
+          "digest": "5333907e38f7634202aa338590822447f0c5100f7dd487505f9ca7f453556d5a",
+          "locale": "en"
+        },
+        {
+          "key": "body_html",
+          "value": "<p>Silver halide photo fridge magnets — a single photo on a strong magnetic backing.</p>",
+          "digest": "769ccd24fa244268a29f260f1739e805a5ce654e641d2f85d4e8e8c474f50336",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "COLLECTION",
+      "resourceId": "gid://shopify/Collection/687724036440",
+      "fields": [
+        {
+          "key": "title",
+          "value": "Photo tiles",
+          "digest": "b741fc740027f7afcd220e8b6bf0d19dae979f7f0b0b67c0d9aab3fba8efaee0",
+          "locale": "en"
+        },
+        {
+          "key": "body_html",
+          "value": "<p>Lightweight restickable framed photo tiles — hang without tools, move up to five times.</p>",
+          "digest": "34f86abde5310e84b353f2e8cb4440289588445eb7a47c37262aea098ff94e2c",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "COLLECTION",
+      "resourceId": "gid://shopify/Collection/687724069208",
+      "fields": [
+        {
+          "key": "title",
+          "value": "Cushions",
+          "digest": "700d6969b5a492a8b847d55b36ce17ff3563fb384ea7acb2d4bdd1a5fa71811a",
+          "locale": "en"
+        },
+        {
+          "key": "body_html",
+          "value": "<p>Faux suede throw cushions with a single-sided photo print and fibre fill.</p>",
+          "digest": "8889797b44071f6d075c223558cf5a749dfbc29c6ce85edd874ef51308ad3867",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "COLLECTION",
+      "resourceId": "gid://shopify/Collection/687724233048",
+      "fields": [
+        {
+          "key": "title",
+          "value": "Jigsaws",
+          "digest": "70175342324e3e9616aa45c04f265d780c403aeb68e2ffbfc7a47ca426d5fa0f",
+          "locale": "en"
+        },
+        {
+          "key": "body_html",
+          "value": "<p>Dye-sublimation jigsaws in a metal tin — 30 to 1000 pieces, with your photo on the puzzle and the lid.</p>",
+          "digest": "36494fc610a92b45692beb2831f029ea9b4d2008a4103a55c588f39a0ccb46df",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "COLLECTION",
+      "resourceId": "gid://shopify/Collection/687725412696",
+      "fields": [
+        {
+          "key": "title",
+          "value": "Acrylic prisms",
+          "digest": "8c74c366ba651e8e122cb33e54100e3734362facbe196657c6528338652df979",
+          "locale": "en"
+        },
+        {
+          "key": "body_html",
+          "value": "<p>Freestanding acrylic photo blocks for desk or shelf — back mount or transparent background.</p>",
+          "digest": "d7fa77e4eb351f6c71fab142969c29fbc52bee4b1bb23c74268417db69644bbc",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "COLLECTION",
+      "resourceId": "gid://shopify/Collection/687726133592",
+      "fields": [
+        {
+          "key": "title",
+          "value": "Towels",
+          "digest": "a17ff248249657ee8549337b0d02017a2d896e4a775950a86eb95593accc1973",
+          "locale": "en"
+        },
+        {
+          "key": "body_html",
+          "value": "<p>Personalised sublimation towels — beach and hand sizes. Print your photo on a soft cotton-poly blend.</p>",
+          "digest": "daada219dbc3af2c2e8e3553b3848c02e1d032e7e47a3501ae43399b950fb321",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "PAGE",
+      "resourceId": "gid://shopify/Page/165073125720",
+      "fields": [
+        {
+          "key": "title",
+          "value": "Contact",
+          "digest": "2b5c3d26721ae9c350cf3009318b626f0fc8a90b4a2ac0ca8099c05aa849282e",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "PAGE",
+      "resourceId": "gid://shopify/Page/165232738648",
+      "fields": [
+        {
+          "key": "title",
+          "value": "Your Privacy Choices",
+          "digest": "001864d2932255db0a3819bc170a979c88acd17878ac849c0cf1c16994f309a4",
+          "locale": "en"
+        },
+        {
+          "key": "body_html",
+          "value": "<link rel=\"stylesheet\" type=\"text/css\" href=\"https://cdn.shopify.com/shopifycloud/privacy-banner/data-sale-opt-out.css\">\n<meta charset=\"utf-8\"> <p>As described in our Privacy Policy, we collect personal information from your interactions with us and our website, including through cookies and similar technologies. We may also share this personal information with third parties, including advertising partners. We do this in order to show you ads on other websites that are more relevant to your interests and for other reasons outlined in our privacy policy.</p> <p>Sharing of personal information for targeted advertising based on your interaction on different websites may be considered \"sales\", \"sharing\", or \"targeted advertising\" under certain U.S. state privacy laws. Depending on where you live, you may have the right to opt out of these activities. If you would like to exercise this opt-out right, please follow the instructions below.</p> <p>If you visit our website with the Global Privacy Control opt-out preference signal enabled, depending on where you are, we will treat this as a request to opt-out of activity that may be considered a “sale” or “sharing” of personal information or other uses that may be considered targeted advertising for the device and browser you used to visit our website.</p>\n<div id=\"pc--optOutFormContainer\" data-not-applicable='To opt out of the \"sale\" or \"sharing\" of your personal information collected using cookies and other device-based identifiers as described above, you must be browsing from one of the applicable US states referred to above.' data-description='If you would like to opt out of activity that may be considered a \"sale\" or \"share,\" or \"targeted advertising\", please submit your email.' data-email-label='Email' data-success='Opted-out successfully' data-error='A problem occurred, try submitting your email again' data-form-description='By clicking “opt out“, the browser on this device will be opted out of sharing personal data. If you select the checkbox and enter an email, the related customer account will also be opted out.' data-form-email-label='Email' data-form-opt-out-account-label=\"Don't share data from my account (optional)\" data-form-button-text='Opt out' data-form-opted-out='The browser on this device is opted out' data-form-success='You have successfully opted out' data-form-error='A problem occurred, please try again' ></div>\n<script src=\"https://cdn.shopify.com/shopifycloud/privacy-banner/data-sale-opt-out.js\" defer></script> <script src=\"https://js.hcaptcha.com/1/api.js?onload=optOutOnLoad\" defer></script>",
+          "digest": "d838b0bb906e1e75161a5eab266166475ce416f2fc6dad1247116df30b5be31d",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "PRODUCT_OPTION",
+      "resourceId": "gid://shopify/ProductOption/18477954171224",
+      "fields": [
+        {
+          "key": "name",
+          "value": "Orientation",
+          "digest": "e3d11242200fe8f2f21c2e5334ba0e0a7aa4dcd2a4533f92f4ec921fa9ff16a4",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "PRODUCT_OPTION",
+      "resourceId": "gid://shopify/ProductOption/18478157660504",
+      "fields": [
+        {
+          "key": "name",
+          "value": "Size",
+          "digest": "1af851907331c0ed99e7c63b4e55df808bc5fc4c990a1cf80ca8c0f76daf1f3b",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "PRODUCT_OPTION",
+      "resourceId": "gid://shopify/ProductOption/18478454931800",
+      "fields": [
+        {
+          "key": "name",
+          "value": "Thickness",
+          "digest": "7b5944144275ea10a17c903d2d06c015e34740dab2ea4930aeb7573b43bb635e",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "PRODUCT_OPTION",
+      "resourceId": "gid://shopify/ProductOption/18483077874008",
+      "fields": [
+        {
+          "key": "name",
+          "value": "Orientation",
+          "digest": "e3d11242200fe8f2f21c2e5334ba0e0a7aa4dcd2a4533f92f4ec921fa9ff16a4",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "PRODUCT_OPTION",
+      "resourceId": "gid://shopify/ProductOption/18483077906776",
+      "fields": [
+        {
+          "key": "name",
+          "value": "Size",
+          "digest": "1af851907331c0ed99e7c63b4e55df808bc5fc4c990a1cf80ca8c0f76daf1f3b",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "PRODUCT_OPTION",
+      "resourceId": "gid://shopify/ProductOption/18483093012824",
+      "fields": [
+        {
+          "key": "name",
+          "value": "Orientation",
+          "digest": "e3d11242200fe8f2f21c2e5334ba0e0a7aa4dcd2a4533f92f4ec921fa9ff16a4",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "PRODUCT_OPTION",
+      "resourceId": "gid://shopify/ProductOption/18483093045592",
+      "fields": [
+        {
+          "key": "name",
+          "value": "Size",
+          "digest": "1af851907331c0ed99e7c63b4e55df808bc5fc4c990a1cf80ca8c0f76daf1f3b",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "PRODUCT_OPTION",
+      "resourceId": "gid://shopify/ProductOption/18483108905304",
+      "fields": [
+        {
+          "key": "name",
+          "value": "Orientation",
+          "digest": "e3d11242200fe8f2f21c2e5334ba0e0a7aa4dcd2a4533f92f4ec921fa9ff16a4",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "PRODUCT_OPTION",
+      "resourceId": "gid://shopify/ProductOption/18483108938072",
+      "fields": [
+        {
+          "key": "name",
+          "value": "Size",
+          "digest": "1af851907331c0ed99e7c63b4e55df808bc5fc4c990a1cf80ca8c0f76daf1f3b",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "PRODUCT_OPTION",
+      "resourceId": "gid://shopify/ProductOption/18483122766168",
+      "fields": [
+        {
+          "key": "name",
+          "value": "Orientation",
+          "digest": "e3d11242200fe8f2f21c2e5334ba0e0a7aa4dcd2a4533f92f4ec921fa9ff16a4",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "PRODUCT_OPTION",
+      "resourceId": "gid://shopify/ProductOption/18483122798936",
+      "fields": [
+        {
+          "key": "name",
+          "value": "Size",
+          "digest": "1af851907331c0ed99e7c63b4e55df808bc5fc4c990a1cf80ca8c0f76daf1f3b",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "PRODUCT_OPTION",
+      "resourceId": "gid://shopify/ProductOption/18488263377240",
+      "fields": [
+        {
+          "key": "name",
+          "value": "Orientation",
+          "digest": "e3d11242200fe8f2f21c2e5334ba0e0a7aa4dcd2a4533f92f4ec921fa9ff16a4",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "PRODUCT_OPTION",
+      "resourceId": "gid://shopify/ProductOption/18488263410008",
+      "fields": [
+        {
+          "key": "name",
+          "value": "Size",
+          "digest": "1af851907331c0ed99e7c63b4e55df808bc5fc4c990a1cf80ca8c0f76daf1f3b",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "PRODUCT_OPTION",
+      "resourceId": "gid://shopify/ProductOption/18488263442776",
+      "fields": [
+        {
+          "key": "name",
+          "value": "Frame",
+          "digest": "d0b50e064a4f8d9438c977e05a087f07815802c0055005c7f913181729464607",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "PRODUCT_OPTION",
+      "resourceId": "gid://shopify/ProductOption/18488279597400",
+      "fields": [
+        {
+          "key": "name",
+          "value": "Orientation",
+          "digest": "e3d11242200fe8f2f21c2e5334ba0e0a7aa4dcd2a4533f92f4ec921fa9ff16a4",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "PRODUCT_OPTION",
+      "resourceId": "gid://shopify/ProductOption/18488279630168",
+      "fields": [
+        {
+          "key": "name",
+          "value": "Size",
+          "digest": "1af851907331c0ed99e7c63b4e55df808bc5fc4c990a1cf80ca8c0f76daf1f3b",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "PRODUCT_OPTION",
+      "resourceId": "gid://shopify/ProductOption/18488279662936",
+      "fields": [
+        {
+          "key": "name",
+          "value": "Frame",
+          "digest": "d0b50e064a4f8d9438c977e05a087f07815802c0055005c7f913181729464607",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "PRODUCT_OPTION",
+      "resourceId": "gid://shopify/ProductOption/18488340578648",
+      "fields": [
+        {
+          "key": "name",
+          "value": "Orientation",
+          "digest": "e3d11242200fe8f2f21c2e5334ba0e0a7aa4dcd2a4533f92f4ec921fa9ff16a4",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "PRODUCT_OPTION",
+      "resourceId": "gid://shopify/ProductOption/18488340611416",
+      "fields": [
+        {
+          "key": "name",
+          "value": "Size",
+          "digest": "1af851907331c0ed99e7c63b4e55df808bc5fc4c990a1cf80ca8c0f76daf1f3b",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "PRODUCT_OPTION",
+      "resourceId": "gid://shopify/ProductOption/18488340644184",
+      "fields": [
+        {
+          "key": "name",
+          "value": "Frame",
+          "digest": "d0b50e064a4f8d9438c977e05a087f07815802c0055005c7f913181729464607",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "PRODUCT_OPTION",
+      "resourceId": "gid://shopify/ProductOption/18488449499480",
+      "fields": [
+        {
+          "key": "name",
+          "value": "Orientation",
+          "digest": "e3d11242200fe8f2f21c2e5334ba0e0a7aa4dcd2a4533f92f4ec921fa9ff16a4",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "PRODUCT_OPTION",
+      "resourceId": "gid://shopify/ProductOption/18488449532248",
+      "fields": [
+        {
+          "key": "name",
+          "value": "Size",
+          "digest": "1af851907331c0ed99e7c63b4e55df808bc5fc4c990a1cf80ca8c0f76daf1f3b",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "PRODUCT_OPTION",
+      "resourceId": "gid://shopify/ProductOption/18488449565016",
+      "fields": [
+        {
+          "key": "name",
+          "value": "Frame",
+          "digest": "d0b50e064a4f8d9438c977e05a087f07815802c0055005c7f913181729464607",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "PRODUCT_OPTION",
+      "resourceId": "gid://shopify/ProductOption/18488487739736",
+      "fields": [
+        {
+          "key": "name",
+          "value": "Orientation - Size",
+          "digest": "47b71e197c1db5bdd86a61fa1d4d6dc4b3d49df27499389409036b74d2f6fbd6",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "PRODUCT_OPTION",
+      "resourceId": "gid://shopify/ProductOption/18488487772504",
+      "fields": [
+        {
+          "key": "name",
+          "value": "Frame",
+          "digest": "d0b50e064a4f8d9438c977e05a087f07815802c0055005c7f913181729464607",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "PRODUCT_OPTION",
+      "resourceId": "gid://shopify/ProductOption/18488487805272",
+      "fields": [
+        {
+          "key": "name",
+          "value": "Assembly",
+          "digest": "44e7d4b248469d73fded51deae7a7855ffed503a0c85ba86db249880ac84abc6",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "PRODUCT_OPTION",
+      "resourceId": "gid://shopify/ProductOption/18488532500824",
+      "fields": [
+        {
+          "key": "name",
+          "value": "Orientation - Size",
+          "digest": "47b71e197c1db5bdd86a61fa1d4d6dc4b3d49df27499389409036b74d2f6fbd6",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "PRODUCT_OPTION",
+      "resourceId": "gid://shopify/ProductOption/18488532533592",
+      "fields": [
+        {
+          "key": "name",
+          "value": "Frame",
+          "digest": "d0b50e064a4f8d9438c977e05a087f07815802c0055005c7f913181729464607",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "PRODUCT_OPTION",
+      "resourceId": "gid://shopify/ProductOption/18488532566360",
+      "fields": [
+        {
+          "key": "name",
+          "value": "Assembly",
+          "digest": "44e7d4b248469d73fded51deae7a7855ffed503a0c85ba86db249880ac84abc6",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "PRODUCT_OPTION",
+      "resourceId": "gid://shopify/ProductOption/18488576704856",
+      "fields": [
+        {
+          "key": "name",
+          "value": "Orientation - Size",
+          "digest": "47b71e197c1db5bdd86a61fa1d4d6dc4b3d49df27499389409036b74d2f6fbd6",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "PRODUCT_OPTION",
+      "resourceId": "gid://shopify/ProductOption/18488576737624",
+      "fields": [
+        {
+          "key": "name",
+          "value": "Frame",
+          "digest": "d0b50e064a4f8d9438c977e05a087f07815802c0055005c7f913181729464607",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "PRODUCT_OPTION",
+      "resourceId": "gid://shopify/ProductOption/18488576770392",
+      "fields": [
+        {
+          "key": "name",
+          "value": "Assembly",
+          "digest": "44e7d4b248469d73fded51deae7a7855ffed503a0c85ba86db249880ac84abc6",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "PRODUCT_OPTION",
+      "resourceId": "gid://shopify/ProductOption/18488592728408",
+      "fields": [
+        {
+          "key": "name",
+          "value": "Orientation - Size",
+          "digest": "47b71e197c1db5bdd86a61fa1d4d6dc4b3d49df27499389409036b74d2f6fbd6",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "PRODUCT_OPTION",
+      "resourceId": "gid://shopify/ProductOption/18488592761176",
+      "fields": [
+        {
+          "key": "name",
+          "value": "Frame",
+          "digest": "d0b50e064a4f8d9438c977e05a087f07815802c0055005c7f913181729464607",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "PRODUCT_OPTION",
+      "resourceId": "gid://shopify/ProductOption/18488592793944",
+      "fields": [
+        {
+          "key": "name",
+          "value": "Assembly",
+          "digest": "44e7d4b248469d73fded51deae7a7855ffed503a0c85ba86db249880ac84abc6",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "PRODUCT_OPTION",
+      "resourceId": "gid://shopify/ProductOption/18489474089304",
+      "fields": [
+        {
+          "key": "name",
+          "value": "Orientation",
+          "digest": "e3d11242200fe8f2f21c2e5334ba0e0a7aa4dcd2a4533f92f4ec921fa9ff16a4",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "PRODUCT_OPTION",
+      "resourceId": "gid://shopify/ProductOption/18489474122072",
+      "fields": [
+        {
+          "key": "name",
+          "value": "Size",
+          "digest": "1af851907331c0ed99e7c63b4e55df808bc5fc4c990a1cf80ca8c0f76daf1f3b",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "PRODUCT_OPTION",
+      "resourceId": "gid://shopify/ProductOption/18493435478360",
+      "fields": [
+        {
+          "key": "name",
+          "value": "Orientation",
+          "digest": "e3d11242200fe8f2f21c2e5334ba0e0a7aa4dcd2a4533f92f4ec921fa9ff16a4",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "PRODUCT_OPTION",
+      "resourceId": "gid://shopify/ProductOption/18493435511128",
+      "fields": [
+        {
+          "key": "name",
+          "value": "Size",
+          "digest": "1af851907331c0ed99e7c63b4e55df808bc5fc4c990a1cf80ca8c0f76daf1f3b",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "PRODUCT_OPTION",
+      "resourceId": "gid://shopify/ProductOption/18493627367768",
+      "fields": [
+        {
+          "key": "name",
+          "value": "Orientation",
+          "digest": "e3d11242200fe8f2f21c2e5334ba0e0a7aa4dcd2a4533f92f4ec921fa9ff16a4",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "PRODUCT_OPTION",
+      "resourceId": "gid://shopify/ProductOption/18493627400536",
+      "fields": [
+        {
+          "key": "name",
+          "value": "Size",
+          "digest": "1af851907331c0ed99e7c63b4e55df808bc5fc4c990a1cf80ca8c0f76daf1f3b",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "PRODUCT_OPTION",
+      "resourceId": "gid://shopify/ProductOption/18493627433304",
+      "fields": [
+        {
+          "key": "name",
+          "value": "Wall Hanger Color",
+          "digest": "500abaf022eaf0f209b565fee8608a80f30db2a13efa8367ff82bd2edc08fd7e",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "PRODUCT_OPTION",
+      "resourceId": "gid://shopify/ProductOption/18493630087512",
+      "fields": [
+        {
+          "key": "name",
+          "value": "Orientation",
+          "digest": "e3d11242200fe8f2f21c2e5334ba0e0a7aa4dcd2a4533f92f4ec921fa9ff16a4",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "PRODUCT_OPTION",
+      "resourceId": "gid://shopify/ProductOption/18493630120280",
+      "fields": [
+        {
+          "key": "name",
+          "value": "Size",
+          "digest": "1af851907331c0ed99e7c63b4e55df808bc5fc4c990a1cf80ca8c0f76daf1f3b",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "PRODUCT_OPTION",
+      "resourceId": "gid://shopify/ProductOption/18493630153048",
+      "fields": [
+        {
+          "key": "name",
+          "value": "Wall Hanger Color",
+          "digest": "500abaf022eaf0f209b565fee8608a80f30db2a13efa8367ff82bd2edc08fd7e",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "PRODUCT_OPTION",
+      "resourceId": "gid://shopify/ProductOption/18493633266008",
+      "fields": [
+        {
+          "key": "name",
+          "value": "Size",
+          "digest": "1af851907331c0ed99e7c63b4e55df808bc5fc4c990a1cf80ca8c0f76daf1f3b",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "PRODUCT_OPTION",
+      "resourceId": "gid://shopify/ProductOption/18493633298776",
+      "fields": [
+        {
+          "key": "name",
+          "value": "Color",
+          "digest": "6b73191a0a4b67420e61d51c9f207c35277eaf18fbbf5beb52a320a23fe09653",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "PRODUCT_OPTION",
+      "resourceId": "gid://shopify/ProductOption/18493634249048",
+      "fields": [
+        {
+          "key": "name",
+          "value": "Orientation",
+          "digest": "e3d11242200fe8f2f21c2e5334ba0e0a7aa4dcd2a4533f92f4ec921fa9ff16a4",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "PRODUCT_OPTION",
+      "resourceId": "gid://shopify/ProductOption/18493634281816",
+      "fields": [
+        {
+          "key": "name",
+          "value": "Size",
+          "digest": "1af851907331c0ed99e7c63b4e55df808bc5fc4c990a1cf80ca8c0f76daf1f3b",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "PRODUCT_OPTION",
+      "resourceId": "gid://shopify/ProductOption/18493634314584",
+      "fields": [
+        {
+          "key": "name",
+          "value": "Thickness",
+          "digest": "7b5944144275ea10a17c903d2d06c015e34740dab2ea4930aeb7573b43bb635e",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "PRODUCT_OPTION",
+      "resourceId": "gid://shopify/ProductOption/18493636346200",
+      "fields": [
+        {
+          "key": "name",
+          "value": "Size",
+          "digest": "1af851907331c0ed99e7c63b4e55df808bc5fc4c990a1cf80ca8c0f76daf1f3b",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "PRODUCT_OPTION",
+      "resourceId": "gid://shopify/ProductOption/18493636378968",
+      "fields": [
+        {
+          "key": "name",
+          "value": "Color",
+          "digest": "6b73191a0a4b67420e61d51c9f207c35277eaf18fbbf5beb52a320a23fe09653",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "PRODUCT_OPTION",
+      "resourceId": "gid://shopify/ProductOption/18493637067096",
+      "fields": [
+        {
+          "key": "name",
+          "value": "Orientation",
+          "digest": "e3d11242200fe8f2f21c2e5334ba0e0a7aa4dcd2a4533f92f4ec921fa9ff16a4",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "PRODUCT_OPTION",
+      "resourceId": "gid://shopify/ProductOption/18493637099864",
+      "fields": [
+        {
+          "key": "name",
+          "value": "Size",
+          "digest": "1af851907331c0ed99e7c63b4e55df808bc5fc4c990a1cf80ca8c0f76daf1f3b",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "PRODUCT_OPTION",
+      "resourceId": "gid://shopify/ProductOption/18493637591384",
+      "fields": [
+        {
+          "key": "name",
+          "value": "Size",
+          "digest": "1af851907331c0ed99e7c63b4e55df808bc5fc4c990a1cf80ca8c0f76daf1f3b",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "PRODUCT_OPTION",
+      "resourceId": "gid://shopify/ProductOption/18493637689688",
+      "fields": [
+        {
+          "key": "name",
+          "value": "Orientation",
+          "digest": "e3d11242200fe8f2f21c2e5334ba0e0a7aa4dcd2a4533f92f4ec921fa9ff16a4",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "PRODUCT_OPTION",
+      "resourceId": "gid://shopify/ProductOption/18493637722456",
+      "fields": [
+        {
+          "key": "name",
+          "value": "Size",
+          "digest": "1af851907331c0ed99e7c63b4e55df808bc5fc4c990a1cf80ca8c0f76daf1f3b",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "PRODUCT_OPTION",
+      "resourceId": "gid://shopify/ProductOption/18493653877080",
+      "fields": [
+        {
+          "key": "name",
+          "value": "Title",
+          "digest": "7e8cd2056da73a7fefb6cd91f4e5d199d08d9058c517b9a2476b1b520324d674",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "PRODUCT_OPTION",
+      "resourceId": "gid://shopify/ProductOption/18493654401368",
+      "fields": [
+        {
+          "key": "name",
+          "value": "Color",
+          "digest": "6b73191a0a4b67420e61d51c9f207c35277eaf18fbbf5beb52a320a23fe09653",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "PRODUCT_OPTION",
+      "resourceId": "gid://shopify/ProductOption/18493654892888",
+      "fields": [
+        {
+          "key": "name",
+          "value": "Title",
+          "digest": "7e8cd2056da73a7fefb6cd91f4e5d199d08d9058c517b9a2476b1b520324d674",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "PRODUCT_OPTION",
+      "resourceId": "gid://shopify/ProductOption/18493659382104",
+      "fields": [
+        {
+          "key": "name",
+          "value": "Title",
+          "digest": "7e8cd2056da73a7fefb6cd91f4e5d199d08d9058c517b9a2476b1b520324d674",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "PRODUCT_OPTION",
+      "resourceId": "gid://shopify/ProductOption/18493706076504",
+      "fields": [
+        {
+          "key": "name",
+          "value": "Color",
+          "digest": "6b73191a0a4b67420e61d51c9f207c35277eaf18fbbf5beb52a320a23fe09653",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "PRODUCT_OPTION",
+      "resourceId": "gid://shopify/ProductOption/18493706338648",
+      "fields": [
+        {
+          "key": "name",
+          "value": "Title",
+          "digest": "7e8cd2056da73a7fefb6cd91f4e5d199d08d9058c517b9a2476b1b520324d674",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "PRODUCT_OPTION",
+      "resourceId": "gid://shopify/ProductOption/18493707682136",
+      "fields": [
+        {
+          "key": "name",
+          "value": "Title",
+          "digest": "7e8cd2056da73a7fefb6cd91f4e5d199d08d9058c517b9a2476b1b520324d674",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "PRODUCT_OPTION",
+      "resourceId": "gid://shopify/ProductOption/18493710762328",
+      "fields": [
+        {
+          "key": "name",
+          "value": "Title",
+          "digest": "7e8cd2056da73a7fefb6cd91f4e5d199d08d9058c517b9a2476b1b520324d674",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "PRODUCT_OPTION",
+      "resourceId": "gid://shopify/ProductOption/18493766435160",
+      "fields": [
+        {
+          "key": "name",
+          "value": "Title",
+          "digest": "7e8cd2056da73a7fefb6cd91f4e5d199d08d9058c517b9a2476b1b520324d674",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "PRODUCT_OPTION",
+      "resourceId": "gid://shopify/ProductOption/18493766697304",
+      "fields": [
+        {
+          "key": "name",
+          "value": "Title",
+          "digest": "7e8cd2056da73a7fefb6cd91f4e5d199d08d9058c517b9a2476b1b520324d674",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "PRODUCT_OPTION",
+      "resourceId": "gid://shopify/ProductOption/18493787308376",
+      "fields": [
+        {
+          "key": "name",
+          "value": "Model",
+          "digest": "5e2c614c23f02239bc03c6c04fcb681950f9e72bf8fdff6be79c79841cbb10c0",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "PRODUCT_OPTION",
+      "resourceId": "gid://shopify/ProductOption/18493787603288",
+      "fields": [
+        {
+          "key": "name",
+          "value": "Model",
+          "digest": "5e2c614c23f02239bc03c6c04fcb681950f9e72bf8fdff6be79c79841cbb10c0",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "PRODUCT_OPTION",
+      "resourceId": "gid://shopify/ProductOption/18493787930968",
+      "fields": [
+        {
+          "key": "name",
+          "value": "Model",
+          "digest": "5e2c614c23f02239bc03c6c04fcb681950f9e72bf8fdff6be79c79841cbb10c0",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "PRODUCT_OPTION",
+      "resourceId": "gid://shopify/ProductOption/18493789274456",
+      "fields": [
+        {
+          "key": "name",
+          "value": "Model",
+          "digest": "5e2c614c23f02239bc03c6c04fcb681950f9e72bf8fdff6be79c79841cbb10c0",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "PRODUCT_OPTION",
+      "resourceId": "gid://shopify/ProductOption/18493790388568",
+      "fields": [
+        {
+          "key": "name",
+          "value": "Model",
+          "digest": "5e2c614c23f02239bc03c6c04fcb681950f9e72bf8fdff6be79c79841cbb10c0",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "PRODUCT_OPTION",
+      "resourceId": "gid://shopify/ProductOption/18493792715096",
+      "fields": [
+        {
+          "key": "name",
+          "value": "Model",
+          "digest": "5e2c614c23f02239bc03c6c04fcb681950f9e72bf8fdff6be79c79841cbb10c0",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "PRODUCT_OPTION",
+      "resourceId": "gid://shopify/ProductOption/18493792813400",
+      "fields": [
+        {
+          "key": "name",
+          "value": "Model",
+          "digest": "5e2c614c23f02239bc03c6c04fcb681950f9e72bf8fdff6be79c79841cbb10c0",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "PRODUCT_OPTION",
+      "resourceId": "gid://shopify/ProductOption/18493793370456",
+      "fields": [
+        {
+          "key": "name",
+          "value": "Model",
+          "digest": "5e2c614c23f02239bc03c6c04fcb681950f9e72bf8fdff6be79c79841cbb10c0",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "PRODUCT_OPTION",
+      "resourceId": "gid://shopify/ProductOption/18493810868568",
+      "fields": [
+        {
+          "key": "name",
+          "value": "Color",
+          "digest": "6b73191a0a4b67420e61d51c9f207c35277eaf18fbbf5beb52a320a23fe09653",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "PRODUCT_OPTION",
+      "resourceId": "gid://shopify/ProductOption/18493827088728",
+      "fields": [
+        {
+          "key": "name",
+          "value": "Color",
+          "digest": "6b73191a0a4b67420e61d51c9f207c35277eaf18fbbf5beb52a320a23fe09653",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "PRODUCT_OPTION",
+      "resourceId": "gid://shopify/ProductOption/18494313824600",
+      "fields": [
+        {
+          "key": "name",
+          "value": "Size",
+          "digest": "1af851907331c0ed99e7c63b4e55df808bc5fc4c990a1cf80ca8c0f76daf1f3b",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "PRODUCT_OPTION",
+      "resourceId": "gid://shopify/ProductOption/18494313857368",
+      "fields": [
+        {
+          "key": "name",
+          "value": "Finish",
+          "digest": "a6c7a84baa6750fce33f7512acd6793e53def1d228b5f2efb8074b42648424fc",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "PRODUCT_OPTION",
+      "resourceId": "gid://shopify/ProductOption/18494418747736",
+      "fields": [
+        {
+          "key": "name",
+          "value": "Size",
+          "digest": "1af851907331c0ed99e7c63b4e55df808bc5fc4c990a1cf80ca8c0f76daf1f3b",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "PRODUCT_OPTION",
+      "resourceId": "gid://shopify/ProductOption/18494418878808",
+      "fields": [
+        {
+          "key": "name",
+          "value": "Size",
+          "digest": "1af851907331c0ed99e7c63b4e55df808bc5fc4c990a1cf80ca8c0f76daf1f3b",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "PRODUCT_OPTION",
+      "resourceId": "gid://shopify/ProductOption/18494419009880",
+      "fields": [
+        {
+          "key": "name",
+          "value": "Size",
+          "digest": "1af851907331c0ed99e7c63b4e55df808bc5fc4c990a1cf80ca8c0f76daf1f3b",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "PRODUCT_OPTION",
+      "resourceId": "gid://shopify/ProductOption/18494419042648",
+      "fields": [
+        {
+          "key": "name",
+          "value": "Frame",
+          "digest": "d0b50e064a4f8d9438c977e05a087f07815802c0055005c7f913181729464607",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "PRODUCT_OPTION",
+      "resourceId": "gid://shopify/ProductOption/18494419337560",
+      "fields": [
+        {
+          "key": "name",
+          "value": "Size",
+          "digest": "1af851907331c0ed99e7c63b4e55df808bc5fc4c990a1cf80ca8c0f76daf1f3b",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "PRODUCT_OPTION",
+      "resourceId": "gid://shopify/ProductOption/18494419861848",
+      "fields": [
+        {
+          "key": "name",
+          "value": "Size",
+          "digest": "1af851907331c0ed99e7c63b4e55df808bc5fc4c990a1cf80ca8c0f76daf1f3b",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "PRODUCT_OPTION",
+      "resourceId": "gid://shopify/ProductOption/18494439260504",
+      "fields": [
+        {
+          "key": "name",
+          "value": "Format",
+          "digest": "2f343666aaa88c44430b12e6ab8a29591a069de76541125e83ff1b5acc367bf2",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "PRODUCT_OPTION",
+      "resourceId": "gid://shopify/ProductOption/18494455972184",
+      "fields": [
+        {
+          "key": "name",
+          "value": "Size",
+          "digest": "1af851907331c0ed99e7c63b4e55df808bc5fc4c990a1cf80ca8c0f76daf1f3b",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "PRODUCT_OPTION",
+      "resourceId": "gid://shopify/ProductOption/18494465048920",
+      "fields": [
+        {
+          "key": "name",
+          "value": "Size",
+          "digest": "1af851907331c0ed99e7c63b4e55df808bc5fc4c990a1cf80ca8c0f76daf1f3b",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "MENU",
+      "resourceId": "gid://shopify/Menu/315568521560",
+      "fields": [
+        {
+          "key": "title",
+          "value": "Main menu",
+          "digest": "45c892de4963e29cfb5b5d42754a589ba11e647c72037d67241c4fc8178457a6",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "MENU",
+      "resourceId": "gid://shopify/Menu/315568554328",
+      "fields": [
+        {
+          "key": "title",
+          "value": "Footer menu",
+          "digest": "357956504457e190bd1aa992def19227ef937bc26dea0aa02d23696e1d97de2a",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "MENU",
+      "resourceId": "gid://shopify/Menu/315568587096",
+      "fields": [
+        {
+          "key": "title",
+          "value": "Customer account main menu",
+          "digest": "6d4e8500576a2991ed749e542318522b34539c64cbbdbf32a6cc3ff130514a5d",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "LINK",
+      "resourceId": "gid://shopify/Link/811896537432",
+      "fields": [
+        {
+          "key": "title",
+          "value": "Home",
+          "digest": "3a78695388b38b5cceefaf6796b0137877514593543b91af2752d5a17e3d736c",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "LINK",
+      "resourceId": "gid://shopify/Link/811896570200",
+      "fields": [
+        {
+          "key": "title",
+          "value": "Catalog",
+          "digest": "3877d14889a9909b9c6ec38d2390599cdc741b73e37505864863ef8e57fb3594",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "LINK",
+      "resourceId": "gid://shopify/Link/811896602968",
+      "fields": [
+        {
+          "key": "title",
+          "value": "Contact",
+          "digest": "2b5c3d26721ae9c350cf3009318b626f0fc8a90b4a2ac0ca8099c05aa849282e",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "LINK",
+      "resourceId": "gid://shopify/Link/811896635736",
+      "fields": [
+        {
+          "key": "title",
+          "value": "Search",
+          "digest": "49c266baaaa70981ea188fa714d5c40cf13830d786a861c9943ae0d26a7f3fe9",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "LINK",
+      "resourceId": "gid://shopify/Link/811896668504",
+      "fields": [
+        {
+          "key": "title",
+          "value": "Orders",
+          "digest": "b7e8acdd522e6190ac9567ad16dff9873cbb78882bbf435b7e189c440a949159",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "LINK",
+      "resourceId": "gid://shopify/Link/811896701272",
+      "fields": [
+        {
+          "key": "title",
+          "value": "Profile",
+          "digest": "d696a35bdd1883da07a8d6c41bb7a3153381b23aa197629ee273479a6eaa5a9c",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "type": "LINK",
+      "resourceId": "gid://shopify/Link/813026148696",
+      "fields": [
+        {
+          "key": "title",
+          "value": "Your Privacy Choices",
+          "digest": "001864d2932255db0a3819bc170a979c88acd17878ac849c0cf1c16994f309a4",
+          "locale": "en"
+        }
+      ]
+    }
+  ],
+  "uniqueCount": 166
+}

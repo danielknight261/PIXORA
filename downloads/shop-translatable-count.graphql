@@ -1,0 +1,25 @@
+query CountTranslatable {
+  products: translatableResources(first: 1, resourceType: PRODUCT) {
+    edges { node { resourceId } }
+    pageInfo { hasNextPage }
+  }
+  collections: translatableResources(first: 1, resourceType: COLLECTION) {
+    edges { node { resourceId } }
+  }
+  pages: translatableResources(first: 1, resourceType: PAGE) {
+    edges { node { resourceId } }
+  }
+  policies: translatableResources(first: 20, resourceType: SHOP_POLICY) {
+    edges {
+      node {
+        resourceId
+        translatableContent {
+          key
+          value
+          digest
+          locale
+        }
+      }
+    }
+  }
+}

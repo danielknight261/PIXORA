@@ -1,0 +1,10 @@
+mutation {
+  collectionCreate(input: {
+    title: "Wall art"
+    handle: "wall-art"
+    descriptionHtml: "<p>Canvas, framed prints, metal, acrylic, posters and more.</p>"
+  }) {
+    collection { id handle }
+    userErrors { field message }
+  }
+}

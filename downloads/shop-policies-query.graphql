@@ -1,0 +1,20 @@
+query ShopInfo {
+  shop {
+    name
+    email
+    billingAddress {
+      address1
+      city
+      zip
+      country
+      phone
+    }
+    contactEmail
+    shopPolicies {
+      id
+      type
+      title
+      url
+    }
+  }
+}

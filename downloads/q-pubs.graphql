@@ -1,0 +1,7 @@
+query {
+  publications(first: 10) { nodes { id name } }
+  collection(id: "gid://shopify/Collection/687120449880") {
+    id title handle
+    products(first: 5) { nodes { id title handle } }
+  }
+}

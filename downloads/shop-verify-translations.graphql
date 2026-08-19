@@ -1,0 +1,11 @@
+query Verify {
+  page: translatableResource(resourceId: "gid://shopify/Page/165233721688") {
+    resourceId
+    translatableContent { key value }
+    translations(locale: "fr") { key value outdated }
+  }
+  product: translatableResource(resourceId: "gid://shopify/Product/15928489378136") {
+    translatableContent { key value }
+    translations(locale: "de") { key value }
+  }
+}

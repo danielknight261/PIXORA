@@ -1,0 +1,44 @@
+query CanvasMedia {
+  productByHandle(handle: "canvas-20x20-cm-8x8") {
+    id
+    title
+    mediaCount {
+      count
+    }
+    media(first: 50) {
+      nodes {
+        ... on MediaImage {
+          id
+          alt
+          image {
+            url
+            width
+            height
+          }
+        }
+      }
+    }
+    options {
+      name
+      values
+    }
+    variants(first: 250) {
+      nodes {
+        id
+        title
+        selectedOptions {
+          name
+          value
+        }
+        media(first: 1) {
+          nodes {
+            ... on MediaImage {
+              id
+              alt
+            }
+          }
+        }
+      }
+    }
+  }
+}

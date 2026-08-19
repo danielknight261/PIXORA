@@ -1,0 +1,21 @@
+query {
+  product(id: "gid://shopify/Product/15928489378136") {
+    id
+    title
+    options { name values }
+    totalVariants
+    variants(first: 50) {
+      nodes {
+        id
+        title
+        availableForSale
+        selectedOptions { name value }
+      }
+    }
+  }
+  collection(id: "gid://shopify/Collection/687120449880") {
+    title
+    handle
+    descriptionHtml
+  }
+}

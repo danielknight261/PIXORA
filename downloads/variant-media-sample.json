@@ -1,0 +1,83 @@
+{
+  "product": {
+    "variants": {
+      "nodes": [
+        {
+          "id": "gid://shopify/ProductVariant/57944931139928",
+          "title": "Vertical / Slim / 20x20 cm / 8x8″",
+          "media": {
+            "nodes": [
+              {
+                "id": "gid://shopify/MediaImage/73150127407448",
+                "alt": "Vertical Slim 8x8 canvas",
+                "image": {
+                  "url": "https://cdn.shopify.com/s/files/1/1006/7256/9688/files/Close-Up-Plain-Gray-0_53ce152a-67d5-4d66-a433-d4cbee4778ab.webp?v=1786624662"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57945651380568",
+          "title": "Vertical / Slim / 20x25 cm / 8x10″",
+          "media": {
+            "nodes": [
+              {
+                "id": "gid://shopify/MediaImage/73150146380120",
+                "alt": "Vertical Slim 8x10 canvas",
+                "image": {
+                  "url": "https://cdn.shopify.com/s/files/1/1006/7256/9688/files/Close-Up-Plain-Gray-0_30dece9a-165c-4d1c-907f-c9a302c33900.webp?v=1786624681"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57945651413336",
+          "title": "Vertical / Slim / 20x30 cm / 8x12″",
+          "media": {
+            "nodes": [
+              {
+                "id": "gid://shopify/MediaImage/73150166171992",
+                "alt": "Vertical Slim 8x12 canvas",
+                "image": {
+                  "url": "https://cdn.shopify.com/s/files/1/1006/7256/9688/files/Close-Up-Plain-Gray-0_c5e23874-437f-45a2-82d3-fe207d65a518.webp?v=1786624701"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57945651446104",
+          "title": "Vertical / Slim / 20x60 cm / 8x24″",
+          "media": {
+            "nodes": [
+              {
+                "id": "gid://shopify/MediaImage/73150182293848",
+                "alt": "Vertical Slim 8x24 canvas",
+                "image": {
+                  "url": "https://cdn.shopify.com/s/files/1/1006/7256/9688/files/Close-Up-Plain-Gray-0_2ca3e501-2ed1-49af-bc08-d6fa53373d2a.webp?v=1786624720"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57945651478872",
+          "title": "Vertical / Slim / 27x35 cm / 11x14″",
+          "media": {
+            "nodes": [
+              {
+                "id": "gid://shopify/MediaImage/73150188945752",
+                "alt": "Vertical Slim 11x14 canvas",
+                "image": {
+                  "url": "https://cdn.shopify.com/s/files/1/1006/7256/9688/files/Close-Up-Plain-Gray-0_81b35ac8-5652-454b-abc6-15b2f5392d36.webp?v=1786624739"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

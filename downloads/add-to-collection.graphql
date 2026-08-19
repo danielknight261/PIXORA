@@ -1,0 +1,6 @@
+mutation {
+  collectionAddProducts(id: "gid://shopify/Collection/687120449880", productIds: ["gid://shopify/Product/15928489378136"]) {
+    collection { id handle productsCount { count } }
+    userErrors { field message }
+  }
+}

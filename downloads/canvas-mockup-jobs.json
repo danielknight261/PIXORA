@@ -1,0 +1,838 @@
+{
+  "jobs": [
+    {
+      "folder": "canvas_200x200-mm-8x8-inch_canvas_wood-fsc-slim_4-0_hor",
+      "variantId": "gid://shopify/ProductVariant/57945652199768",
+      "title": "Horizontal / Slim / 20x20 cm / 8x8″",
+      "img": "c:\\Users\\HughesHub\\Downloads\\f11cc67c-da2f-4e8e-a35c-7bede4bbe9fd\\96379a8a-3182-4a48-8c20-bbb297ad0293\\canvas_200x200-mm-8x8-inch_canvas_wood-fsc-slim_4-0_hor\\Close-Up-Plain-Gray-0.webp",
+      "alt": "Horizontal Slim 8x8 canvas",
+      "filename": "Close-Up-Plain-Gray-0-8x8-Horizontal-Slim.webp"
+    },
+    {
+      "folder": "canvas_200x200-mm-8x8-inch_canvas_wood-fsc-slim_4-0_ver",
+      "variantId": "gid://shopify/ProductVariant/57944931139928",
+      "title": "Vertical / Slim / 20x20 cm / 8x8″",
+      "img": "c:\\Users\\HughesHub\\Downloads\\f11cc67c-da2f-4e8e-a35c-7bede4bbe9fd\\96379a8a-3182-4a48-8c20-bbb297ad0293\\canvas_200x200-mm-8x8-inch_canvas_wood-fsc-slim_4-0_ver\\Close-Up-Plain-Gray-0.webp",
+      "alt": "Vertical Slim 8x8 canvas",
+      "filename": "Close-Up-Plain-Gray-0-8x8-Vertical-Slim.webp"
+    },
+    {
+      "folder": "canvas_200x200-mm-8x8-inch_canvas_wood-fsc-thick_4-0_hor",
+      "variantId": "gid://shopify/ProductVariant/57946537722200",
+      "title": "Horizontal / Thick / 20x20 cm / 8x8″",
+      "img": "c:\\Users\\HughesHub\\Downloads\\f11cc67c-da2f-4e8e-a35c-7bede4bbe9fd\\96379a8a-3182-4a48-8c20-bbb297ad0293\\canvas_200x200-mm-8x8-inch_canvas_wood-fsc-thick_4-0_hor\\Close-Up-Plain-Gray-0.webp",
+      "alt": "Horizontal Thick 8x8 canvas",
+      "filename": "Close-Up-Plain-Gray-0-8x8-Horizontal-Thick.webp"
+    },
+    {
+      "folder": "canvas_200x200-mm-8x8-inch_canvas_wood-fsc-thick_4-0_ver",
+      "variantId": "gid://shopify/ProductVariant/57946536870232",
+      "title": "Vertical / Thick / 20x20 cm / 8x8″",
+      "img": "c:\\Users\\HughesHub\\Downloads\\f11cc67c-da2f-4e8e-a35c-7bede4bbe9fd\\96379a8a-3182-4a48-8c20-bbb297ad0293\\canvas_200x200-mm-8x8-inch_canvas_wood-fsc-thick_4-0_ver\\Close-Up-Plain-Gray-0.webp",
+      "alt": "Vertical Thick 8x8 canvas",
+      "filename": "Close-Up-Plain-Gray-0-8x8-Vertical-Thick.webp"
+    },
+    {
+      "folder": "canvas_200x250-mm-8x10-inch_canvas_wood-fsc-slim_4-0_hor",
+      "variantId": "gid://shopify/ProductVariant/57945652232536",
+      "title": "Horizontal / Slim / 20x25 cm / 8x10″",
+      "img": "c:\\Users\\HughesHub\\Downloads\\f11cc67c-da2f-4e8e-a35c-7bede4bbe9fd\\96379a8a-3182-4a48-8c20-bbb297ad0293\\canvas_200x250-mm-8x10-inch_canvas_wood-fsc-slim_4-0_hor\\Close-Up-Plain-Gray-0.webp",
+      "alt": "Horizontal Slim 8x10 canvas",
+      "filename": "Close-Up-Plain-Gray-0-8x10-Horizontal-Slim.webp"
+    },
+    {
+      "folder": "canvas_200x250-mm-8x10-inch_canvas_wood-fsc-slim_4-0_ver",
+      "variantId": "gid://shopify/ProductVariant/57945651380568",
+      "title": "Vertical / Slim / 20x25 cm / 8x10″",
+      "img": "c:\\Users\\HughesHub\\Downloads\\f11cc67c-da2f-4e8e-a35c-7bede4bbe9fd\\96379a8a-3182-4a48-8c20-bbb297ad0293\\canvas_200x250-mm-8x10-inch_canvas_wood-fsc-slim_4-0_ver\\Close-Up-Plain-Gray-0.webp",
+      "alt": "Vertical Slim 8x10 canvas",
+      "filename": "Close-Up-Plain-Gray-0-8x10-Vertical-Slim.webp"
+    },
+    {
+      "folder": "canvas_200x250-mm-8x10-inch_canvas_wood-fsc-thick_4-0_hor",
+      "variantId": "gid://shopify/ProductVariant/57946537754968",
+      "title": "Horizontal / Thick / 20x25 cm / 8x10″",
+      "img": "c:\\Users\\HughesHub\\Downloads\\f11cc67c-da2f-4e8e-a35c-7bede4bbe9fd\\96379a8a-3182-4a48-8c20-bbb297ad0293\\canvas_200x250-mm-8x10-inch_canvas_wood-fsc-thick_4-0_hor\\Close-Up-Plain-Gray-0.webp",
+      "alt": "Horizontal Thick 8x10 canvas",
+      "filename": "Close-Up-Plain-Gray-0-8x10-Horizontal-Thick.webp"
+    },
+    {
+      "folder": "canvas_200x250-mm-8x10-inch_canvas_wood-fsc-thick_4-0_ver",
+      "variantId": "gid://shopify/ProductVariant/57946536903000",
+      "title": "Vertical / Thick / 20x25 cm / 8x10″",
+      "img": "c:\\Users\\HughesHub\\Downloads\\f11cc67c-da2f-4e8e-a35c-7bede4bbe9fd\\96379a8a-3182-4a48-8c20-bbb297ad0293\\canvas_200x250-mm-8x10-inch_canvas_wood-fsc-thick_4-0_ver\\Close-Up-Plain-Gray-0.webp",
+      "alt": "Vertical Thick 8x10 canvas",
+      "filename": "Close-Up-Plain-Gray-0-8x10-Vertical-Thick.webp"
+    },
+    {
+      "folder": "canvas_200x300-mm-8x12-inch_canvas_wood-fsc-slim_4-0_hor",
+      "variantId": "gid://shopify/ProductVariant/57945652265304",
+      "title": "Horizontal / Slim / 20x30 cm / 8x12″",
+      "img": "c:\\Users\\HughesHub\\Downloads\\f11cc67c-da2f-4e8e-a35c-7bede4bbe9fd\\96379a8a-3182-4a48-8c20-bbb297ad0293\\canvas_200x300-mm-8x12-inch_canvas_wood-fsc-slim_4-0_hor\\Close-Up-Plain-Gray-0.webp",
+      "alt": "Horizontal Slim 8x12 canvas",
+      "filename": "Close-Up-Plain-Gray-0-8x12-Horizontal-Slim.webp"
+    },
+    {
+      "folder": "canvas_200x300-mm-8x12-inch_canvas_wood-fsc-slim_4-0_ver",
+      "variantId": "gid://shopify/ProductVariant/57945651413336",
+      "title": "Vertical / Slim / 20x30 cm / 8x12″",
+      "img": "c:\\Users\\HughesHub\\Downloads\\f11cc67c-da2f-4e8e-a35c-7bede4bbe9fd\\96379a8a-3182-4a48-8c20-bbb297ad0293\\canvas_200x300-mm-8x12-inch_canvas_wood-fsc-slim_4-0_ver\\Close-Up-Plain-Gray-0.webp",
+      "alt": "Vertical Slim 8x12 canvas",
+      "filename": "Close-Up-Plain-Gray-0-8x12-Vertical-Slim.webp"
+    },
+    {
+      "folder": "canvas_200x300-mm-8x12-inch_canvas_wood-fsc-thick_4-0_hor",
+      "variantId": "gid://shopify/ProductVariant/57946537787736",
+      "title": "Horizontal / Thick / 20x30 cm / 8x12″",
+      "img": "c:\\Users\\HughesHub\\Downloads\\f11cc67c-da2f-4e8e-a35c-7bede4bbe9fd\\96379a8a-3182-4a48-8c20-bbb297ad0293\\canvas_200x300-mm-8x12-inch_canvas_wood-fsc-thick_4-0_hor\\Close-Up-Plain-Gray-0.webp",
+      "alt": "Horizontal Thick 8x12 canvas",
+      "filename": "Close-Up-Plain-Gray-0-8x12-Horizontal-Thick.webp"
+    },
+    {
+      "folder": "canvas_200x300-mm-8x12-inch_canvas_wood-fsc-thick_4-0_ver",
+      "variantId": "gid://shopify/ProductVariant/57946536935768",
+      "title": "Vertical / Thick / 20x30 cm / 8x12″",
+      "img": "c:\\Users\\HughesHub\\Downloads\\f11cc67c-da2f-4e8e-a35c-7bede4bbe9fd\\96379a8a-3182-4a48-8c20-bbb297ad0293\\canvas_200x300-mm-8x12-inch_canvas_wood-fsc-thick_4-0_ver\\Close-Up-Plain-Gray-0.webp",
+      "alt": "Vertical Thick 8x12 canvas",
+      "filename": "Close-Up-Plain-Gray-0-8x12-Vertical-Thick.webp"
+    },
+    {
+      "folder": "canvas_200x600-mm-8x24-inch_canvas_wood-fsc-slim_4-0_hor",
+      "variantId": "gid://shopify/ProductVariant/57945652298072",
+      "title": "Horizontal / Slim / 20x60 cm / 8x24″",
+      "img": "c:\\Users\\HughesHub\\Downloads\\f11cc67c-da2f-4e8e-a35c-7bede4bbe9fd\\96379a8a-3182-4a48-8c20-bbb297ad0293\\canvas_200x600-mm-8x24-inch_canvas_wood-fsc-slim_4-0_hor\\Close-Up-Plain-Gray-0.webp",
+      "alt": "Horizontal Slim 8x24 canvas",
+      "filename": "Close-Up-Plain-Gray-0-8x24-Horizontal-Slim.webp"
+    },
+    {
+      "folder": "canvas_200x600-mm-8x24-inch_canvas_wood-fsc-slim_4-0_ver",
+      "variantId": "gid://shopify/ProductVariant/57945651446104",
+      "title": "Vertical / Slim / 20x60 cm / 8x24″",
+      "img": "c:\\Users\\HughesHub\\Downloads\\f11cc67c-da2f-4e8e-a35c-7bede4bbe9fd\\96379a8a-3182-4a48-8c20-bbb297ad0293\\canvas_200x600-mm-8x24-inch_canvas_wood-fsc-slim_4-0_ver\\Close-Up-Plain-Gray-0.webp",
+      "alt": "Vertical Slim 8x24 canvas",
+      "filename": "Close-Up-Plain-Gray-0-8x24-Vertical-Slim.webp"
+    },
+    {
+      "folder": "canvas_200x600-mm-8x24-inch_canvas_wood-fsc-thick_4-0_hor",
+      "variantId": "gid://shopify/ProductVariant/57946537820504",
+      "title": "Horizontal / Thick / 20x60 cm / 8x24″",
+      "img": "c:\\Users\\HughesHub\\Downloads\\f11cc67c-da2f-4e8e-a35c-7bede4bbe9fd\\96379a8a-3182-4a48-8c20-bbb297ad0293\\canvas_200x600-mm-8x24-inch_canvas_wood-fsc-thick_4-0_hor\\Close-Up-Plain-Gray-0.webp",
+      "alt": "Horizontal Thick 8x24 canvas",
+      "filename": "Close-Up-Plain-Gray-0-8x24-Horizontal-Thick.webp"
+    },
+    {
+      "folder": "canvas_200x600-mm-8x24-inch_canvas_wood-fsc-thick_4-0_ver",
+      "variantId": "gid://shopify/ProductVariant/57946536968536",
+      "title": "Vertical / Thick / 20x60 cm / 8x24″",
+      "img": "c:\\Users\\HughesHub\\Downloads\\f11cc67c-da2f-4e8e-a35c-7bede4bbe9fd\\96379a8a-3182-4a48-8c20-bbb297ad0293\\canvas_200x600-mm-8x24-inch_canvas_wood-fsc-thick_4-0_ver\\Close-Up-Plain-Gray-0.webp",
+      "alt": "Vertical Thick 8x24 canvas",
+      "filename": "Close-Up-Plain-Gray-0-8x24-Vertical-Thick.webp"
+    },
+    {
+      "folder": "canvas_270x350-mm-11x14-inch_canvas_wood-fsc-slim_4-0_hor",
+      "variantId": "gid://shopify/ProductVariant/57945652330840",
+      "title": "Horizontal / Slim / 27x35 cm / 11x14″",
+      "img": "c:\\Users\\HughesHub\\Downloads\\f11cc67c-da2f-4e8e-a35c-7bede4bbe9fd\\96379a8a-3182-4a48-8c20-bbb297ad0293\\canvas_270x350-mm-11x14-inch_canvas_wood-fsc-slim_4-0_hor\\Close-Up-Plain-Gray-0.webp",
+      "alt": "Horizontal Slim 11x14 canvas",
+      "filename": "Close-Up-Plain-Gray-0-11x14-Horizontal-Slim.webp"
+    },
+    {
+      "folder": "canvas_270x350-mm-11x14-inch_canvas_wood-fsc-slim_4-0_ver",
+      "variantId": "gid://shopify/ProductVariant/57945651478872",
+      "title": "Vertical / Slim / 27x35 cm / 11x14″",
+      "img": "c:\\Users\\HughesHub\\Downloads\\f11cc67c-da2f-4e8e-a35c-7bede4bbe9fd\\96379a8a-3182-4a48-8c20-bbb297ad0293\\canvas_270x350-mm-11x14-inch_canvas_wood-fsc-slim_4-0_ver\\Close-Up-Plain-Gray-0.webp",
+      "alt": "Vertical Slim 11x14 canvas",
+      "filename": "Close-Up-Plain-Gray-0-11x14-Vertical-Slim.webp"
+    },
+    {
+      "folder": "canvas_270x350-mm-11x14-inch_canvas_wood-fsc-thick_4-0_hor",
+      "variantId": "gid://shopify/ProductVariant/57946537853272",
+      "title": "Horizontal / Thick / 27x35 cm / 11x14″",
+      "img": "c:\\Users\\HughesHub\\Downloads\\f11cc67c-da2f-4e8e-a35c-7bede4bbe9fd\\96379a8a-3182-4a48-8c20-bbb297ad0293\\canvas_270x350-mm-11x14-inch_canvas_wood-fsc-thick_4-0_hor\\Close-Up-Plain-Gray-0.webp",
+      "alt": "Horizontal Thick 11x14 canvas",
+      "filename": "Close-Up-Plain-Gray-0-11x14-Horizontal-Thick.webp"
+    },
+    {
+      "folder": "canvas_270x350-mm-11x14-inch_canvas_wood-fsc-thick_4-0_ver",
+      "variantId": "gid://shopify/ProductVariant/57946537001304",
+      "title": "Vertical / Thick / 27x35 cm / 11x14″",
+      "img": "c:\\Users\\HughesHub\\Downloads\\f11cc67c-da2f-4e8e-a35c-7bede4bbe9fd\\96379a8a-3182-4a48-8c20-bbb297ad0293\\canvas_270x350-mm-11x14-inch_canvas_wood-fsc-thick_4-0_ver\\Close-Up-Plain-Gray-0.webp",
+      "alt": "Vertical Thick 11x14 canvas",
+      "filename": "Close-Up-Plain-Gray-0-11x14-Vertical-Thick.webp"
+    },
+    {
+      "folder": "canvas_300x1000-mm-12x40-inch_canvas_wood-fsc-slim_4-0_hor",
+      "variantId": "gid://shopify/ProductVariant/57945652527448",
+      "title": "Horizontal / Slim / 30x100 cm / 12x40″",
+      "img": "c:\\Users\\HughesHub\\Downloads\\f11cc67c-da2f-4e8e-a35c-7bede4bbe9fd\\96379a8a-3182-4a48-8c20-bbb297ad0293\\canvas_300x1000-mm-12x40-inch_canvas_wood-fsc-slim_4-0_hor\\Close-Up-Plain-Gray-0.webp",
+      "alt": "Horizontal Slim 12x40 canvas",
+      "filename": "Close-Up-Plain-Gray-0-12x40-Horizontal-Slim.webp"
+    },
+    {
+      "folder": "canvas_300x1000-mm-12x40-inch_canvas_wood-fsc-slim_4-0_ver",
+      "variantId": "gid://shopify/ProductVariant/57945651675480",
+      "title": "Vertical / Slim / 30x100 cm / 12x40″",
+      "img": "c:\\Users\\HughesHub\\Downloads\\f11cc67c-da2f-4e8e-a35c-7bede4bbe9fd\\96379a8a-3182-4a48-8c20-bbb297ad0293\\canvas_300x1000-mm-12x40-inch_canvas_wood-fsc-slim_4-0_ver\\Close-Up-Plain-Gray-0.webp",
+      "alt": "Vertical Slim 12x40 canvas",
+      "filename": "Close-Up-Plain-Gray-0-12x40-Vertical-Slim.webp"
+    },
+    {
+      "folder": "canvas_300x1000-mm-12x40-inch_canvas_wood-fsc-thick_4-0_hor",
+      "variantId": "gid://shopify/ProductVariant/57946538049880",
+      "title": "Horizontal / Thick / 30x100 cm / 12x40″",
+      "img": "c:\\Users\\HughesHub\\Downloads\\f11cc67c-da2f-4e8e-a35c-7bede4bbe9fd\\96379a8a-3182-4a48-8c20-bbb297ad0293\\canvas_300x1000-mm-12x40-inch_canvas_wood-fsc-thick_4-0_hor\\Close-Up-Plain-Gray-0.webp",
+      "alt": "Horizontal Thick 12x40 canvas",
+      "filename": "Close-Up-Plain-Gray-0-12x40-Horizontal-Thick.webp"
+    },
+    {
+      "folder": "canvas_300x1000-mm-12x40-inch_canvas_wood-fsc-thick_4-0_ver",
+      "variantId": "gid://shopify/ProductVariant/57946537197912",
+      "title": "Vertical / Thick / 30x100 cm / 12x40″",
+      "img": "c:\\Users\\HughesHub\\Downloads\\f11cc67c-da2f-4e8e-a35c-7bede4bbe9fd\\96379a8a-3182-4a48-8c20-bbb297ad0293\\canvas_300x1000-mm-12x40-inch_canvas_wood-fsc-thick_4-0_ver\\Close-Up-Plain-Gray-0.webp",
+      "alt": "Vertical Thick 12x40 canvas",
+      "filename": "Close-Up-Plain-Gray-0-12x40-Vertical-Thick.webp"
+    },
+    {
+      "folder": "canvas_300x300-mm-12x12-inch_canvas_wood-fsc-slim_4-0_hor",
+      "variantId": "gid://shopify/ProductVariant/57945652363608",
+      "title": "Horizontal / Slim / 30x30 cm / 12x12″",
+      "img": "c:\\Users\\HughesHub\\Downloads\\f11cc67c-da2f-4e8e-a35c-7bede4bbe9fd\\96379a8a-3182-4a48-8c20-bbb297ad0293\\canvas_300x300-mm-12x12-inch_canvas_wood-fsc-slim_4-0_hor\\Close-Up-Plain-Gray-0.webp",
+      "alt": "Horizontal Slim 12x12 canvas",
+      "filename": "Close-Up-Plain-Gray-0-12x12-Horizontal-Slim.webp"
+    },
+    {
+      "folder": "canvas_300x300-mm-12x12-inch_canvas_wood-fsc-slim_4-0_ver",
+      "variantId": "gid://shopify/ProductVariant/57945651511640",
+      "title": "Vertical / Slim / 30x30 cm / 12x12″",
+      "img": "c:\\Users\\HughesHub\\Downloads\\f11cc67c-da2f-4e8e-a35c-7bede4bbe9fd\\96379a8a-3182-4a48-8c20-bbb297ad0293\\canvas_300x300-mm-12x12-inch_canvas_wood-fsc-slim_4-0_ver\\Close-Up-Plain-Gray-0.webp",
+      "alt": "Vertical Slim 12x12 canvas",
+      "filename": "Close-Up-Plain-Gray-0-12x12-Vertical-Slim.webp"
+    },
+    {
+      "folder": "canvas_300x300-mm-12x12-inch_canvas_wood-fsc-thick_4-0_hor",
+      "variantId": "gid://shopify/ProductVariant/57946537886040",
+      "title": "Horizontal / Thick / 30x30 cm / 12x12″",
+      "img": "c:\\Users\\HughesHub\\Downloads\\f11cc67c-da2f-4e8e-a35c-7bede4bbe9fd\\96379a8a-3182-4a48-8c20-bbb297ad0293\\canvas_300x300-mm-12x12-inch_canvas_wood-fsc-thick_4-0_hor\\Close-Up-Plain-Gray-0.webp",
+      "alt": "Horizontal Thick 12x12 canvas",
+      "filename": "Close-Up-Plain-Gray-0-12x12-Horizontal-Thick.webp"
+    },
+    {
+      "folder": "canvas_300x300-mm-12x12-inch_canvas_wood-fsc-thick_4-0_ver",
+      "variantId": "gid://shopify/ProductVariant/57946537034072",
+      "title": "Vertical / Thick / 30x30 cm / 12x12″",
+      "img": "c:\\Users\\HughesHub\\Downloads\\f11cc67c-da2f-4e8e-a35c-7bede4bbe9fd\\96379a8a-3182-4a48-8c20-bbb297ad0293\\canvas_300x300-mm-12x12-inch_canvas_wood-fsc-thick_4-0_ver\\Close-Up-Plain-Gray-0.webp",
+      "alt": "Vertical Thick 12x12 canvas",
+      "filename": "Close-Up-Plain-Gray-0-12x12-Vertical-Thick.webp"
+    },
+    {
+      "folder": "canvas_300x400-mm-12x16-inch_canvas_wood-fsc-slim_4-0_hor",
+      "variantId": "gid://shopify/ProductVariant/57945652396376",
+      "title": "Horizontal / Slim / 30x40 cm / 12x16″",
+      "img": "c:\\Users\\HughesHub\\Downloads\\f11cc67c-da2f-4e8e-a35c-7bede4bbe9fd\\96379a8a-3182-4a48-8c20-bbb297ad0293\\canvas_300x400-mm-12x16-inch_canvas_wood-fsc-slim_4-0_hor\\Close-Up-Plain-Gray-0.webp",
+      "alt": "Horizontal Slim 12x16 canvas",
+      "filename": "Close-Up-Plain-Gray-0-12x16-Horizontal-Slim.webp"
+    },
+    {
+      "folder": "canvas_300x400-mm-12x16-inch_canvas_wood-fsc-slim_4-0_ver",
+      "variantId": "gid://shopify/ProductVariant/57945651544408",
+      "title": "Vertical / Slim / 30x40 cm / 12x16″",
+      "img": "c:\\Users\\HughesHub\\Downloads\\f11cc67c-da2f-4e8e-a35c-7bede4bbe9fd\\96379a8a-3182-4a48-8c20-bbb297ad0293\\canvas_300x400-mm-12x16-inch_canvas_wood-fsc-slim_4-0_ver\\Close-Up-Plain-Gray-0.webp",
+      "alt": "Vertical Slim 12x16 canvas",
+      "filename": "Close-Up-Plain-Gray-0-12x16-Vertical-Slim.webp"
+    },
+    {
+      "folder": "canvas_300x400-mm-12x16-inch_canvas_wood-fsc-thick_4-0_hor",
+      "variantId": "gid://shopify/ProductVariant/57946537918808",
+      "title": "Horizontal / Thick / 30x40 cm / 12x16″",
+      "img": "c:\\Users\\HughesHub\\Downloads\\f11cc67c-da2f-4e8e-a35c-7bede4bbe9fd\\96379a8a-3182-4a48-8c20-bbb297ad0293\\canvas_300x400-mm-12x16-inch_canvas_wood-fsc-thick_4-0_hor\\Close-Up-Plain-Gray-0.webp",
+      "alt": "Horizontal Thick 12x16 canvas",
+      "filename": "Close-Up-Plain-Gray-0-12x16-Horizontal-Thick.webp"
+    },
+    {
+      "folder": "canvas_300x400-mm-12x16-inch_canvas_wood-fsc-thick_4-0_ver",
+      "variantId": "gid://shopify/ProductVariant/57946537066840",
+      "title": "Vertical / Thick / 30x40 cm / 12x16″",
+      "img": "c:\\Users\\HughesHub\\Downloads\\f11cc67c-da2f-4e8e-a35c-7bede4bbe9fd\\96379a8a-3182-4a48-8c20-bbb297ad0293\\canvas_300x400-mm-12x16-inch_canvas_wood-fsc-thick_4-0_ver\\Close-Up-Plain-Gray-0.webp",
+      "alt": "Vertical Thick 12x16 canvas",
+      "filename": "Close-Up-Plain-Gray-0-12x16-Vertical-Thick.webp"
+    },
+    {
+      "folder": "canvas_300x450-mm-12x18-inch_canvas_wood-fsc-slim_4-0_hor",
+      "variantId": "gid://shopify/ProductVariant/57945652429144",
+      "title": "Horizontal / Slim / 30x45 cm / 12x18″",
+      "img": "c:\\Users\\HughesHub\\Downloads\\f11cc67c-da2f-4e8e-a35c-7bede4bbe9fd\\96379a8a-3182-4a48-8c20-bbb297ad0293\\canvas_300x450-mm-12x18-inch_canvas_wood-fsc-slim_4-0_hor\\Close-Up-Plain-Gray-0.webp",
+      "alt": "Horizontal Slim 12x18 canvas",
+      "filename": "Close-Up-Plain-Gray-0-12x18-Horizontal-Slim.webp"
+    },
+    {
+      "folder": "canvas_300x450-mm-12x18-inch_canvas_wood-fsc-slim_4-0_ver",
+      "variantId": "gid://shopify/ProductVariant/57945651577176",
+      "title": "Vertical / Slim / 30x45 cm / 12x18″",
+      "img": "c:\\Users\\HughesHub\\Downloads\\f11cc67c-da2f-4e8e-a35c-7bede4bbe9fd\\96379a8a-3182-4a48-8c20-bbb297ad0293\\canvas_300x450-mm-12x18-inch_canvas_wood-fsc-slim_4-0_ver\\Close-Up-Plain-Gray-0.webp",
+      "alt": "Vertical Slim 12x18 canvas",
+      "filename": "Close-Up-Plain-Gray-0-12x18-Vertical-Slim.webp"
+    },
+    {
+      "folder": "canvas_300x450-mm-12x18-inch_canvas_wood-fsc-thick_4-0_hor",
+      "variantId": "gid://shopify/ProductVariant/57946537951576",
+      "title": "Horizontal / Thick / 30x45 cm / 12x18″",
+      "img": "c:\\Users\\HughesHub\\Downloads\\f11cc67c-da2f-4e8e-a35c-7bede4bbe9fd\\96379a8a-3182-4a48-8c20-bbb297ad0293\\canvas_300x450-mm-12x18-inch_canvas_wood-fsc-thick_4-0_hor\\Close-Up-Plain-Gray-0.webp",
+      "alt": "Horizontal Thick 12x18 canvas",
+      "filename": "Close-Up-Plain-Gray-0-12x18-Horizontal-Thick.webp"
+    },
+    {
+      "folder": "canvas_300x450-mm-12x18-inch_canvas_wood-fsc-thick_4-0_ver",
+      "variantId": "gid://shopify/ProductVariant/57946537099608",
+      "title": "Vertical / Thick / 30x45 cm / 12x18″",
+      "img": "c:\\Users\\HughesHub\\Downloads\\f11cc67c-da2f-4e8e-a35c-7bede4bbe9fd\\96379a8a-3182-4a48-8c20-bbb297ad0293\\canvas_300x450-mm-12x18-inch_canvas_wood-fsc-thick_4-0_ver\\Close-Up-Plain-Gray-0.webp",
+      "alt": "Vertical Thick 12x18 canvas",
+      "filename": "Close-Up-Plain-Gray-0-12x18-Vertical-Thick.webp"
+    },
+    {
+      "folder": "canvas_300x600-mm-12x24-inch_canvas_wood-fsc-slim_4-0_hor",
+      "variantId": "gid://shopify/ProductVariant/57945652461912",
+      "title": "Horizontal / Slim / 30x60 cm / 12x24″",
+      "img": "c:\\Users\\HughesHub\\Downloads\\f11cc67c-da2f-4e8e-a35c-7bede4bbe9fd\\96379a8a-3182-4a48-8c20-bbb297ad0293\\canvas_300x600-mm-12x24-inch_canvas_wood-fsc-slim_4-0_hor\\Close-Up-Plain-Gray-0.webp",
+      "alt": "Horizontal Slim 12x24 canvas",
+      "filename": "Close-Up-Plain-Gray-0-12x24-Horizontal-Slim.webp"
+    },
+    {
+      "folder": "canvas_300x600-mm-12x24-inch_canvas_wood-fsc-slim_4-0_ver",
+      "variantId": "gid://shopify/ProductVariant/57945651609944",
+      "title": "Vertical / Slim / 30x60 cm / 12x24″",
+      "img": "c:\\Users\\HughesHub\\Downloads\\f11cc67c-da2f-4e8e-a35c-7bede4bbe9fd\\96379a8a-3182-4a48-8c20-bbb297ad0293\\canvas_300x600-mm-12x24-inch_canvas_wood-fsc-slim_4-0_ver\\Close-Up-Plain-Gray-0.webp",
+      "alt": "Vertical Slim 12x24 canvas",
+      "filename": "Close-Up-Plain-Gray-0-12x24-Vertical-Slim.webp"
+    },
+    {
+      "folder": "canvas_300x600-mm-12x24-inch_canvas_wood-fsc-thick_4-0_hor",
+      "variantId": "gid://shopify/ProductVariant/57946537984344",
+      "title": "Horizontal / Thick / 30x60 cm / 12x24″",
+      "img": "c:\\Users\\HughesHub\\Downloads\\f11cc67c-da2f-4e8e-a35c-7bede4bbe9fd\\96379a8a-3182-4a48-8c20-bbb297ad0293\\canvas_300x600-mm-12x24-inch_canvas_wood-fsc-thick_4-0_hor\\Close-Up-Plain-Gray-0.webp",
+      "alt": "Horizontal Thick 12x24 canvas",
+      "filename": "Close-Up-Plain-Gray-0-12x24-Horizontal-Thick.webp"
+    },
+    {
+      "folder": "canvas_300x600-mm-12x24-inch_canvas_wood-fsc-thick_4-0_ver",
+      "variantId": "gid://shopify/ProductVariant/57946537132376",
+      "title": "Vertical / Thick / 30x60 cm / 12x24″",
+      "img": "c:\\Users\\HughesHub\\Downloads\\f11cc67c-da2f-4e8e-a35c-7bede4bbe9fd\\96379a8a-3182-4a48-8c20-bbb297ad0293\\canvas_300x600-mm-12x24-inch_canvas_wood-fsc-thick_4-0_ver\\Close-Up-Plain-Gray-0.webp",
+      "alt": "Vertical Thick 12x24 canvas",
+      "filename": "Close-Up-Plain-Gray-0-12x24-Vertical-Thick.webp"
+    },
+    {
+      "folder": "canvas_300x900-mm-12x36-inch_canvas_wood-fsc-slim_4-0_hor",
+      "variantId": "gid://shopify/ProductVariant/57945652494680",
+      "title": "Horizontal / Slim / 30x90 cm / 12x36″",
+      "img": "c:\\Users\\HughesHub\\Downloads\\f11cc67c-da2f-4e8e-a35c-7bede4bbe9fd\\96379a8a-3182-4a48-8c20-bbb297ad0293\\canvas_300x900-mm-12x36-inch_canvas_wood-fsc-slim_4-0_hor\\Close-Up-Plain-Gray-0.webp",
+      "alt": "Horizontal Slim 12x36 canvas",
+      "filename": "Close-Up-Plain-Gray-0-12x36-Horizontal-Slim.webp"
+    },
+    {
+      "folder": "canvas_300x900-mm-12x36-inch_canvas_wood-fsc-slim_4-0_ver",
+      "variantId": "gid://shopify/ProductVariant/57945651642712",
+      "title": "Vertical / Slim / 30x90 cm / 12x36″",
+      "img": "c:\\Users\\HughesHub\\Downloads\\f11cc67c-da2f-4e8e-a35c-7bede4bbe9fd\\96379a8a-3182-4a48-8c20-bbb297ad0293\\canvas_300x900-mm-12x36-inch_canvas_wood-fsc-slim_4-0_ver\\Close-Up-Plain-Gray-0.webp",
+      "alt": "Vertical Slim 12x36 canvas",
+      "filename": "Close-Up-Plain-Gray-0-12x36-Vertical-Slim.webp"
+    },
+    {
+      "folder": "canvas_300x900-mm-12x36-inch_canvas_wood-fsc-thick_4-0_hor",
+      "variantId": "gid://shopify/ProductVariant/57946538017112",
+      "title": "Horizontal / Thick / 30x90 cm / 12x36″",
+      "img": "c:\\Users\\HughesHub\\Downloads\\f11cc67c-da2f-4e8e-a35c-7bede4bbe9fd\\96379a8a-3182-4a48-8c20-bbb297ad0293\\canvas_300x900-mm-12x36-inch_canvas_wood-fsc-thick_4-0_hor\\Close-Up-Plain-Gray-0.webp",
+      "alt": "Horizontal Thick 12x36 canvas",
+      "filename": "Close-Up-Plain-Gray-0-12x36-Horizontal-Thick.webp"
+    },
+    {
+      "folder": "canvas_300x900-mm-12x36-inch_canvas_wood-fsc-thick_4-0_ver",
+      "variantId": "gid://shopify/ProductVariant/57946537165144",
+      "title": "Vertical / Thick / 30x90 cm / 12x36″",
+      "img": "c:\\Users\\HughesHub\\Downloads\\f11cc67c-da2f-4e8e-a35c-7bede4bbe9fd\\96379a8a-3182-4a48-8c20-bbb297ad0293\\canvas_300x900-mm-12x36-inch_canvas_wood-fsc-thick_4-0_ver\\Close-Up-Plain-Gray-0.webp",
+      "alt": "Vertical Thick 12x36 canvas",
+      "filename": "Close-Up-Plain-Gray-0-12x36-Vertical-Thick.webp"
+    },
+    {
+      "folder": "canvas_400x400-mm-16x16-inch_canvas_wood-fsc-slim_4-0_hor",
+      "variantId": "gid://shopify/ProductVariant/57945652560216",
+      "title": "Horizontal / Slim / 40x40 cm / 16x16″",
+      "img": "c:\\Users\\HughesHub\\Downloads\\f11cc67c-da2f-4e8e-a35c-7bede4bbe9fd\\96379a8a-3182-4a48-8c20-bbb297ad0293\\canvas_400x400-mm-16x16-inch_canvas_wood-fsc-slim_4-0_hor\\Close-Up-Plain-Gray-0.webp",
+      "alt": "Horizontal Slim 16x16 canvas",
+      "filename": "Close-Up-Plain-Gray-0-16x16-Horizontal-Slim.webp"
+    },
+    {
+      "folder": "canvas_400x400-mm-16x16-inch_canvas_wood-fsc-slim_4-0_ver",
+      "variantId": "gid://shopify/ProductVariant/57945651708248",
+      "title": "Vertical / Slim / 40x40 cm / 16x16″",
+      "img": "c:\\Users\\HughesHub\\Downloads\\f11cc67c-da2f-4e8e-a35c-7bede4bbe9fd\\96379a8a-3182-4a48-8c20-bbb297ad0293\\canvas_400x400-mm-16x16-inch_canvas_wood-fsc-slim_4-0_ver\\Close-Up-Plain-Gray-0.webp",
+      "alt": "Vertical Slim 16x16 canvas",
+      "filename": "Close-Up-Plain-Gray-0-16x16-Vertical-Slim.webp"
+    },
+    {
+      "folder": "canvas_400x400-mm-16x16-inch_canvas_wood-fsc-thick_4-0_hor",
+      "variantId": "gid://shopify/ProductVariant/57946538082648",
+      "title": "Horizontal / Thick / 40x40 cm / 16x16″",
+      "img": "c:\\Users\\HughesHub\\Downloads\\f11cc67c-da2f-4e8e-a35c-7bede4bbe9fd\\96379a8a-3182-4a48-8c20-bbb297ad0293\\canvas_400x400-mm-16x16-inch_canvas_wood-fsc-thick_4-0_hor\\Close-Up-Plain-Gray-0.webp",
+      "alt": "Horizontal Thick 16x16 canvas",
+      "filename": "Close-Up-Plain-Gray-0-16x16-Horizontal-Thick.webp"
+    },
+    {
+      "folder": "canvas_400x400-mm-16x16-inch_canvas_wood-fsc-thick_4-0_ver",
+      "variantId": "gid://shopify/ProductVariant/57946537230680",
+      "title": "Vertical / Thick / 40x40 cm / 16x16″",
+      "img": "c:\\Users\\HughesHub\\Downloads\\f11cc67c-da2f-4e8e-a35c-7bede4bbe9fd\\96379a8a-3182-4a48-8c20-bbb297ad0293\\canvas_400x400-mm-16x16-inch_canvas_wood-fsc-thick_4-0_ver\\Close-Up-Plain-Gray-0.webp",
+      "alt": "Vertical Thick 16x16 canvas",
+      "filename": "Close-Up-Plain-Gray-0-16x16-Vertical-Thick.webp"
+    },
+    {
+      "folder": "canvas_400x500-mm-16x20-inch_canvas_wood-fsc-slim_4-0_hor",
+      "variantId": "gid://shopify/ProductVariant/57945652592984",
+      "title": "Horizontal / Slim / 40x50 cm / 16x20″",
+      "img": "c:\\Users\\HughesHub\\Downloads\\f11cc67c-da2f-4e8e-a35c-7bede4bbe9fd\\96379a8a-3182-4a48-8c20-bbb297ad0293\\canvas_400x500-mm-16x20-inch_canvas_wood-fsc-slim_4-0_hor\\Close-Up-Plain-Gray-0.webp",
+      "alt": "Horizontal Slim 16x20 canvas",
+      "filename": "Close-Up-Plain-Gray-0-16x20-Horizontal-Slim.webp"
+    },
+    {
+      "folder": "canvas_400x500-mm-16x20-inch_canvas_wood-fsc-slim_4-0_ver",
+      "variantId": "gid://shopify/ProductVariant/57945651741016",
+      "title": "Vertical / Slim / 40x50 cm / 16x20″",
+      "img": "c:\\Users\\HughesHub\\Downloads\\f11cc67c-da2f-4e8e-a35c-7bede4bbe9fd\\96379a8a-3182-4a48-8c20-bbb297ad0293\\canvas_400x500-mm-16x20-inch_canvas_wood-fsc-slim_4-0_ver\\Close-Up-Plain-Gray-0.webp",
+      "alt": "Vertical Slim 16x20 canvas",
+      "filename": "Close-Up-Plain-Gray-0-16x20-Vertical-Slim.webp"
+    },
+    {
+      "folder": "canvas_400x500-mm-16x20-inch_canvas_wood-fsc-thick_4-0_hor",
+      "variantId": "gid://shopify/ProductVariant/57946538115416",
+      "title": "Horizontal / Thick / 40x50 cm / 16x20″",
+      "img": "c:\\Users\\HughesHub\\Downloads\\f11cc67c-da2f-4e8e-a35c-7bede4bbe9fd\\96379a8a-3182-4a48-8c20-bbb297ad0293\\canvas_400x500-mm-16x20-inch_canvas_wood-fsc-thick_4-0_hor\\Close-Up-Plain-Gray-0.webp",
+      "alt": "Horizontal Thick 16x20 canvas",
+      "filename": "Close-Up-Plain-Gray-0-16x20-Horizontal-Thick.webp"
+    },
+    {
+      "folder": "canvas_400x500-mm-16x20-inch_canvas_wood-fsc-thick_4-0_ver",
+      "variantId": "gid://shopify/ProductVariant/57946537263448",
+      "title": "Vertical / Thick / 40x50 cm / 16x20″",
+      "img": "c:\\Users\\HughesHub\\Downloads\\f11cc67c-da2f-4e8e-a35c-7bede4bbe9fd\\96379a8a-3182-4a48-8c20-bbb297ad0293\\canvas_400x500-mm-16x20-inch_canvas_wood-fsc-thick_4-0_ver\\Close-Up-Plain-Gray-0.webp",
+      "alt": "Vertical Thick 16x20 canvas",
+      "filename": "Close-Up-Plain-Gray-0-16x20-Vertical-Thick.webp"
+    },
+    {
+      "folder": "canvas_400x600-mm-16x24-inch_canvas_wood-fsc-slim_4-0_hor",
+      "variantId": "gid://shopify/ProductVariant/57945652625752",
+      "title": "Horizontal / Slim / 40x60 cm / 16x24″",
+      "img": "c:\\Users\\HughesHub\\Downloads\\f11cc67c-da2f-4e8e-a35c-7bede4bbe9fd\\96379a8a-3182-4a48-8c20-bbb297ad0293\\canvas_400x600-mm-16x24-inch_canvas_wood-fsc-slim_4-0_hor\\Close-Up-Plain-Gray-0.webp",
+      "alt": "Horizontal Slim 16x24 canvas",
+      "filename": "Close-Up-Plain-Gray-0-16x24-Horizontal-Slim.webp"
+    },
+    {
+      "folder": "canvas_400x600-mm-16x24-inch_canvas_wood-fsc-slim_4-0_ver",
+      "variantId": "gid://shopify/ProductVariant/57945651773784",
+      "title": "Vertical / Slim / 40x60 cm / 16x24″",
+      "img": "c:\\Users\\HughesHub\\Downloads\\f11cc67c-da2f-4e8e-a35c-7bede4bbe9fd\\96379a8a-3182-4a48-8c20-bbb297ad0293\\canvas_400x600-mm-16x24-inch_canvas_wood-fsc-slim_4-0_ver\\Close-Up-Plain-Gray-0.webp",
+      "alt": "Vertical Slim 16x24 canvas",
+      "filename": "Close-Up-Plain-Gray-0-16x24-Vertical-Slim.webp"
+    },
+    {
+      "folder": "canvas_400x600-mm-16x24-inch_canvas_wood-fsc-thick_4-0_hor",
+      "variantId": "gid://shopify/ProductVariant/57946538148184",
+      "title": "Horizontal / Thick / 40x60 cm / 16x24″",
+      "img": "c:\\Users\\HughesHub\\Downloads\\f11cc67c-da2f-4e8e-a35c-7bede4bbe9fd\\96379a8a-3182-4a48-8c20-bbb297ad0293\\canvas_400x600-mm-16x24-inch_canvas_wood-fsc-thick_4-0_hor\\Close-Up-Plain-Gray-0.webp",
+      "alt": "Horizontal Thick 16x24 canvas",
+      "filename": "Close-Up-Plain-Gray-0-16x24-Horizontal-Thick.webp"
+    },
+    {
+      "folder": "canvas_400x600-mm-16x24-inch_canvas_wood-fsc-thick_4-0_ver",
+      "variantId": "gid://shopify/ProductVariant/57946537296216",
+      "title": "Vertical / Thick / 40x60 cm / 16x24″",
+      "img": "c:\\Users\\HughesHub\\Downloads\\f11cc67c-da2f-4e8e-a35c-7bede4bbe9fd\\96379a8a-3182-4a48-8c20-bbb297ad0293\\canvas_400x600-mm-16x24-inch_canvas_wood-fsc-thick_4-0_ver\\Close-Up-Plain-Gray-0.webp",
+      "alt": "Vertical Thick 16x24 canvas",
+      "filename": "Close-Up-Plain-Gray-0-16x24-Vertical-Thick.webp"
+    },
+    {
+      "folder": "canvas_400x800-mm-16x32-inch_canvas_wood-fsc-slim_4-0_hor",
+      "variantId": "gid://shopify/ProductVariant/57945652658520",
+      "title": "Horizontal / Slim / 40x80 cm / 16x32″",
+      "img": "c:\\Users\\HughesHub\\Downloads\\f11cc67c-da2f-4e8e-a35c-7bede4bbe9fd\\96379a8a-3182-4a48-8c20-bbb297ad0293\\canvas_400x800-mm-16x32-inch_canvas_wood-fsc-slim_4-0_hor\\Close-Up-Plain-Gray-0.webp",
+      "alt": "Horizontal Slim 16x32 canvas",
+      "filename": "Close-Up-Plain-Gray-0-16x32-Horizontal-Slim.webp"
+    },
+    {
+      "folder": "canvas_400x800-mm-16x32-inch_canvas_wood-fsc-slim_4-0_ver",
+      "variantId": "gid://shopify/ProductVariant/57945651806552",
+      "title": "Vertical / Slim / 40x80 cm / 16x32″",
+      "img": "c:\\Users\\HughesHub\\Downloads\\f11cc67c-da2f-4e8e-a35c-7bede4bbe9fd\\96379a8a-3182-4a48-8c20-bbb297ad0293\\canvas_400x800-mm-16x32-inch_canvas_wood-fsc-slim_4-0_ver\\Close-Up-Plain-Gray-0.webp",
+      "alt": "Vertical Slim 16x32 canvas",
+      "filename": "Close-Up-Plain-Gray-0-16x32-Vertical-Slim.webp"
+    },
+    {
+      "folder": "canvas_400x800-mm-16x32-inch_canvas_wood-fsc-thick_4-0_hor",
+      "variantId": "gid://shopify/ProductVariant/57946538180952",
+      "title": "Horizontal / Thick / 40x80 cm / 16x32″",
+      "img": "c:\\Users\\HughesHub\\Downloads\\f11cc67c-da2f-4e8e-a35c-7bede4bbe9fd\\96379a8a-3182-4a48-8c20-bbb297ad0293\\canvas_400x800-mm-16x32-inch_canvas_wood-fsc-thick_4-0_hor\\Close-Up-Plain-Gray-0.webp",
+      "alt": "Horizontal Thick 16x32 canvas",
+      "filename": "Close-Up-Plain-Gray-0-16x32-Horizontal-Thick.webp"
+    },
+    {
+      "folder": "canvas_400x800-mm-16x32-inch_canvas_wood-fsc-thick_4-0_ver",
+      "variantId": "gid://shopify/ProductVariant/57946537328984",
+      "title": "Vertical / Thick / 40x80 cm / 16x32″",
+      "img": "c:\\Users\\HughesHub\\Downloads\\f11cc67c-da2f-4e8e-a35c-7bede4bbe9fd\\96379a8a-3182-4a48-8c20-bbb297ad0293\\canvas_400x800-mm-16x32-inch_canvas_wood-fsc-thick_4-0_ver\\Close-Up-Plain-Gray-0.webp",
+      "alt": "Vertical Thick 16x32 canvas",
+      "filename": "Close-Up-Plain-Gray-0-16x32-Vertical-Thick.webp"
+    },
+    {
+      "folder": "canvas_450x600-mm-18x24-inch_canvas_wood-fsc-slim_4-0_hor",
+      "variantId": "gid://shopify/ProductVariant/57945652691288",
+      "title": "Horizontal / Slim / 45x60 cm / 18x24″",
+      "img": "c:\\Users\\HughesHub\\Downloads\\f11cc67c-da2f-4e8e-a35c-7bede4bbe9fd\\96379a8a-3182-4a48-8c20-bbb297ad0293\\canvas_450x600-mm-18x24-inch_canvas_wood-fsc-slim_4-0_hor\\Close-Up-Plain-Gray-0.webp",
+      "alt": "Horizontal Slim 18x24 canvas",
+      "filename": "Close-Up-Plain-Gray-0-18x24-Horizontal-Slim.webp"
+    },
+    {
+      "folder": "canvas_450x600-mm-18x24-inch_canvas_wood-fsc-slim_4-0_ver",
+      "variantId": "gid://shopify/ProductVariant/57945651839320",
+      "title": "Vertical / Slim / 45x60 cm / 18x24″",
+      "img": "c:\\Users\\HughesHub\\Downloads\\f11cc67c-da2f-4e8e-a35c-7bede4bbe9fd\\96379a8a-3182-4a48-8c20-bbb297ad0293\\canvas_450x600-mm-18x24-inch_canvas_wood-fsc-slim_4-0_ver\\Close-Up-Plain-Gray-0.webp",
+      "alt": "Vertical Slim 18x24 canvas",
+      "filename": "Close-Up-Plain-Gray-0-18x24-Vertical-Slim.webp"
+    },
+    {
+      "folder": "canvas_450x600-mm-18x24-inch_canvas_wood-fsc-thick_4-0_hor",
+      "variantId": "gid://shopify/ProductVariant/57946538213720",
+      "title": "Horizontal / Thick / 45x60 cm / 18x24″",
+      "img": "c:\\Users\\HughesHub\\Downloads\\f11cc67c-da2f-4e8e-a35c-7bede4bbe9fd\\96379a8a-3182-4a48-8c20-bbb297ad0293\\canvas_450x600-mm-18x24-inch_canvas_wood-fsc-thick_4-0_hor\\Close-Up-Plain-Gray-0.webp",
+      "alt": "Horizontal Thick 18x24 canvas",
+      "filename": "Close-Up-Plain-Gray-0-18x24-Horizontal-Thick.webp"
+    },
+    {
+      "folder": "canvas_450x600-mm-18x24-inch_canvas_wood-fsc-thick_4-0_ver",
+      "variantId": "gid://shopify/ProductVariant/57946537361752",
+      "title": "Vertical / Thick / 45x60 cm / 18x24″",
+      "img": "c:\\Users\\HughesHub\\Downloads\\f11cc67c-da2f-4e8e-a35c-7bede4bbe9fd\\96379a8a-3182-4a48-8c20-bbb297ad0293\\canvas_450x600-mm-18x24-inch_canvas_wood-fsc-thick_4-0_ver\\Close-Up-Plain-Gray-0.webp",
+      "alt": "Vertical Thick 18x24 canvas",
+      "filename": "Close-Up-Plain-Gray-0-18x24-Vertical-Thick.webp"
+    },
+    {
+      "folder": "canvas_500x1000-mm-20x40-inch_canvas_wood-fsc-slim_4-0_hor",
+      "variantId": "gid://shopify/ProductVariant/57945652855128",
+      "title": "Horizontal / Slim / 50x100 cm / 20x40″",
+      "img": "c:\\Users\\HughesHub\\Downloads\\f11cc67c-da2f-4e8e-a35c-7bede4bbe9fd\\96379a8a-3182-4a48-8c20-bbb297ad0293\\canvas_500x1000-mm-20x40-inch_canvas_wood-fsc-slim_4-0_hor\\Close-Up-Plain-Gray-0.webp",
+      "alt": "Horizontal Slim 20x40 canvas",
+      "filename": "Close-Up-Plain-Gray-0-20x40-Horizontal-Slim.webp"
+    },
+    {
+      "folder": "canvas_500x1000-mm-20x40-inch_canvas_wood-fsc-slim_4-0_ver",
+      "variantId": "gid://shopify/ProductVariant/57945652003160",
+      "title": "Vertical / Slim / 50x100 cm / 20x40″",
+      "img": "c:\\Users\\HughesHub\\Downloads\\f11cc67c-da2f-4e8e-a35c-7bede4bbe9fd\\96379a8a-3182-4a48-8c20-bbb297ad0293\\canvas_500x1000-mm-20x40-inch_canvas_wood-fsc-slim_4-0_ver\\Close-Up-Plain-Gray-0.webp",
+      "alt": "Vertical Slim 20x40 canvas",
+      "filename": "Close-Up-Plain-Gray-0-20x40-Vertical-Slim.webp"
+    },
+    {
+      "folder": "canvas_500x1000-mm-20x40-inch_canvas_wood-fsc-thick_4-0_hor",
+      "variantId": "gid://shopify/ProductVariant/57946538377560",
+      "title": "Horizontal / Thick / 50x100 cm / 20x40″",
+      "img": "c:\\Users\\HughesHub\\Downloads\\f11cc67c-da2f-4e8e-a35c-7bede4bbe9fd\\96379a8a-3182-4a48-8c20-bbb297ad0293\\canvas_500x1000-mm-20x40-inch_canvas_wood-fsc-thick_4-0_hor\\Close-Up-Plain-Gray-0.webp",
+      "alt": "Horizontal Thick 20x40 canvas",
+      "filename": "Close-Up-Plain-Gray-0-20x40-Horizontal-Thick.webp"
+    },
+    {
+      "folder": "canvas_500x1000-mm-20x40-inch_canvas_wood-fsc-thick_4-0_ver",
+      "variantId": "gid://shopify/ProductVariant/57946537525592",
+      "title": "Vertical / Thick / 50x100 cm / 20x40″",
+      "img": "c:\\Users\\HughesHub\\Downloads\\f11cc67c-da2f-4e8e-a35c-7bede4bbe9fd\\96379a8a-3182-4a48-8c20-bbb297ad0293\\canvas_500x1000-mm-20x40-inch_canvas_wood-fsc-thick_4-0_ver\\Close-Up-Plain-Gray-0.webp",
+      "alt": "Vertical Thick 20x40 canvas",
+      "filename": "Close-Up-Plain-Gray-0-20x40-Vertical-Thick.webp"
+    },
+    {
+      "folder": "canvas_500x500-mm-20x20-inch_canvas_wood-fsc-slim_4-0_hor",
+      "variantId": "gid://shopify/ProductVariant/57945652724056",
+      "title": "Horizontal / Slim / 50x50 cm / 20x20″",
+      "img": "c:\\Users\\HughesHub\\Downloads\\f11cc67c-da2f-4e8e-a35c-7bede4bbe9fd\\96379a8a-3182-4a48-8c20-bbb297ad0293\\canvas_500x500-mm-20x20-inch_canvas_wood-fsc-slim_4-0_hor\\Close-Up-Plain-Gray-0.webp",
+      "alt": "Horizontal Slim 20x20 canvas",
+      "filename": "Close-Up-Plain-Gray-0-20x20-Horizontal-Slim.webp"
+    },
+    {
+      "folder": "canvas_500x500-mm-20x20-inch_canvas_wood-fsc-slim_4-0_ver",
+      "variantId": "gid://shopify/ProductVariant/57945651872088",
+      "title": "Vertical / Slim / 50x50 cm / 20x20″",
+      "img": "c:\\Users\\HughesHub\\Downloads\\f11cc67c-da2f-4e8e-a35c-7bede4bbe9fd\\96379a8a-3182-4a48-8c20-bbb297ad0293\\canvas_500x500-mm-20x20-inch_canvas_wood-fsc-slim_4-0_ver\\Close-Up-Plain-Gray-0.webp",
+      "alt": "Vertical Slim 20x20 canvas",
+      "filename": "Close-Up-Plain-Gray-0-20x20-Vertical-Slim.webp"
+    },
+    {
+      "folder": "canvas_500x500-mm-20x20-inch_canvas_wood-fsc-thick_4-0_hor",
+      "variantId": "gid://shopify/ProductVariant/57946538246488",
+      "title": "Horizontal / Thick / 50x50 cm / 20x20″",
+      "img": "c:\\Users\\HughesHub\\Downloads\\f11cc67c-da2f-4e8e-a35c-7bede4bbe9fd\\96379a8a-3182-4a48-8c20-bbb297ad0293\\canvas_500x500-mm-20x20-inch_canvas_wood-fsc-thick_4-0_hor\\Close-Up-Plain-Gray-0.webp",
+      "alt": "Horizontal Thick 20x20 canvas",
+      "filename": "Close-Up-Plain-Gray-0-20x20-Horizontal-Thick.webp"
+    },
+    {
+      "folder": "canvas_500x500-mm-20x20-inch_canvas_wood-fsc-thick_4-0_ver",
+      "variantId": "gid://shopify/ProductVariant/57946537394520",
+      "title": "Vertical / Thick / 50x50 cm / 20x20″",
+      "img": "c:\\Users\\HughesHub\\Downloads\\f11cc67c-da2f-4e8e-a35c-7bede4bbe9fd\\96379a8a-3182-4a48-8c20-bbb297ad0293\\canvas_500x500-mm-20x20-inch_canvas_wood-fsc-thick_4-0_ver\\Close-Up-Plain-Gray-0.webp",
+      "alt": "Vertical Thick 20x20 canvas",
+      "filename": "Close-Up-Plain-Gray-0-20x20-Vertical-Thick.webp"
+    },
+    {
+      "folder": "canvas_500x600-mm-20x24-inch_canvas_wood-fsc-slim_4-0_hor",
+      "variantId": "gid://shopify/ProductVariant/57945652756824",
+      "title": "Horizontal / Slim / 50x60 cm / 20x24″",
+      "img": "c:\\Users\\HughesHub\\Downloads\\f11cc67c-da2f-4e8e-a35c-7bede4bbe9fd\\96379a8a-3182-4a48-8c20-bbb297ad0293\\canvas_500x600-mm-20x24-inch_canvas_wood-fsc-slim_4-0_hor\\Close-Up-Plain-Gray-0.webp",
+      "alt": "Horizontal Slim 20x24 canvas",
+      "filename": "Close-Up-Plain-Gray-0-20x24-Horizontal-Slim.webp"
+    },
+    {
+      "folder": "canvas_500x600-mm-20x24-inch_canvas_wood-fsc-slim_4-0_ver",
+      "variantId": "gid://shopify/ProductVariant/57945651904856",
+      "title": "Vertical / Slim / 50x60 cm / 20x24″",
+      "img": "c:\\Users\\HughesHub\\Downloads\\f11cc67c-da2f-4e8e-a35c-7bede4bbe9fd\\96379a8a-3182-4a48-8c20-bbb297ad0293\\canvas_500x600-mm-20x24-inch_canvas_wood-fsc-slim_4-0_ver\\Close-Up-Plain-Gray-0.webp",
+      "alt": "Vertical Slim 20x24 canvas",
+      "filename": "Close-Up-Plain-Gray-0-20x24-Vertical-Slim.webp"
+    },
+    {
+      "folder": "canvas_500x600-mm-20x24-inch_canvas_wood-fsc-thick_4-0_hor",
+      "variantId": "gid://shopify/ProductVariant/57946538279256",
+      "title": "Horizontal / Thick / 50x60 cm / 20x24″",
+      "img": "c:\\Users\\HughesHub\\Downloads\\f11cc67c-da2f-4e8e-a35c-7bede4bbe9fd\\96379a8a-3182-4a48-8c20-bbb297ad0293\\canvas_500x600-mm-20x24-inch_canvas_wood-fsc-thick_4-0_hor\\Close-Up-Plain-Gray-0.webp",
+      "alt": "Horizontal Thick 20x24 canvas",
+      "filename": "Close-Up-Plain-Gray-0-20x24-Horizontal-Thick.webp"
+    },
+    {
+      "folder": "canvas_500x600-mm-20x24-inch_canvas_wood-fsc-thick_4-0_ver",
+      "variantId": "gid://shopify/ProductVariant/57946537427288",
+      "title": "Vertical / Thick / 50x60 cm / 20x24″",
+      "img": "c:\\Users\\HughesHub\\Downloads\\f11cc67c-da2f-4e8e-a35c-7bede4bbe9fd\\96379a8a-3182-4a48-8c20-bbb297ad0293\\canvas_500x600-mm-20x24-inch_canvas_wood-fsc-thick_4-0_ver\\Close-Up-Plain-Gray-0.webp",
+      "alt": "Vertical Thick 20x24 canvas",
+      "filename": "Close-Up-Plain-Gray-0-20x24-Vertical-Thick.webp"
+    },
+    {
+      "folder": "canvas_500x700-mm-20x28-inch_canvas_wood-fsc-slim_4-0_hor",
+      "variantId": "gid://shopify/ProductVariant/57945652789592",
+      "title": "Horizontal / Slim / 50x70 cm / 20x28″",
+      "img": "c:\\Users\\HughesHub\\Downloads\\f11cc67c-da2f-4e8e-a35c-7bede4bbe9fd\\96379a8a-3182-4a48-8c20-bbb297ad0293\\canvas_500x700-mm-20x28-inch_canvas_wood-fsc-slim_4-0_hor\\Close-Up-Plain-Gray-0.webp",
+      "alt": "Horizontal Slim 20x28 canvas",
+      "filename": "Close-Up-Plain-Gray-0-20x28-Horizontal-Slim.webp"
+    },
+    {
+      "folder": "canvas_500x700-mm-20x28-inch_canvas_wood-fsc-slim_4-0_ver",
+      "variantId": "gid://shopify/ProductVariant/57945651937624",
+      "title": "Vertical / Slim / 50x70 cm / 20x28″",
+      "img": "c:\\Users\\HughesHub\\Downloads\\f11cc67c-da2f-4e8e-a35c-7bede4bbe9fd\\96379a8a-3182-4a48-8c20-bbb297ad0293\\canvas_500x700-mm-20x28-inch_canvas_wood-fsc-slim_4-0_ver\\Close-Up-Plain-Gray-0.webp",
+      "alt": "Vertical Slim 20x28 canvas",
+      "filename": "Close-Up-Plain-Gray-0-20x28-Vertical-Slim.webp"
+    },
+    {
+      "folder": "canvas_500x700-mm-20x28-inch_canvas_wood-fsc-thick_4-0_hor",
+      "variantId": "gid://shopify/ProductVariant/57946538312024",
+      "title": "Horizontal / Thick / 50x70 cm / 20x28″",
+      "img": "c:\\Users\\HughesHub\\Downloads\\f11cc67c-da2f-4e8e-a35c-7bede4bbe9fd\\96379a8a-3182-4a48-8c20-bbb297ad0293\\canvas_500x700-mm-20x28-inch_canvas_wood-fsc-thick_4-0_hor\\Close-Up-Plain-Gray-0.webp",
+      "alt": "Horizontal Thick 20x28 canvas",
+      "filename": "Close-Up-Plain-Gray-0-20x28-Horizontal-Thick.webp"
+    },
+    {
+      "folder": "canvas_500x700-mm-20x28-inch_canvas_wood-fsc-thick_4-0_ver",
+      "variantId": "gid://shopify/ProductVariant/57946537460056",
+      "title": "Vertical / Thick / 50x70 cm / 20x28″",
+      "img": "c:\\Users\\HughesHub\\Downloads\\f11cc67c-da2f-4e8e-a35c-7bede4bbe9fd\\96379a8a-3182-4a48-8c20-bbb297ad0293\\canvas_500x700-mm-20x28-inch_canvas_wood-fsc-thick_4-0_ver\\Close-Up-Plain-Gray-0.webp",
+      "alt": "Vertical Thick 20x28 canvas",
+      "filename": "Close-Up-Plain-Gray-0-20x28-Vertical-Thick.webp"
+    },
+    {
+      "folder": "canvas_500x750-mm-20x30-inch_canvas_wood-fsc-slim_4-0_hor",
+      "variantId": "gid://shopify/ProductVariant/57945652822360",
+      "title": "Horizontal / Slim / 50x75 cm / 20x30″",
+      "img": "c:\\Users\\HughesHub\\Downloads\\f11cc67c-da2f-4e8e-a35c-7bede4bbe9fd\\96379a8a-3182-4a48-8c20-bbb297ad0293\\canvas_500x750-mm-20x30-inch_canvas_wood-fsc-slim_4-0_hor\\Close-Up-Plain-Gray-0.webp",
+      "alt": "Horizontal Slim 20x30 canvas",
+      "filename": "Close-Up-Plain-Gray-0-20x30-Horizontal-Slim.webp"
+    },
+    {
+      "folder": "canvas_500x750-mm-20x30-inch_canvas_wood-fsc-slim_4-0_ver",
+      "variantId": "gid://shopify/ProductVariant/57945651970392",
+      "title": "Vertical / Slim / 50x75 cm / 20x30″",
+      "img": "c:\\Users\\HughesHub\\Downloads\\f11cc67c-da2f-4e8e-a35c-7bede4bbe9fd\\96379a8a-3182-4a48-8c20-bbb297ad0293\\canvas_500x750-mm-20x30-inch_canvas_wood-fsc-slim_4-0_ver\\Close-Up-Plain-Gray-0.webp",
+      "alt": "Vertical Slim 20x30 canvas",
+      "filename": "Close-Up-Plain-Gray-0-20x30-Vertical-Slim.webp"
+    },
+    {
+      "folder": "canvas_500x750-mm-20x30-inch_canvas_wood-fsc-thick_4-0_hor",
+      "variantId": "gid://shopify/ProductVariant/57946538344792",
+      "title": "Horizontal / Thick / 50x75 cm / 20x30″",
+      "img": "c:\\Users\\HughesHub\\Downloads\\f11cc67c-da2f-4e8e-a35c-7bede4bbe9fd\\96379a8a-3182-4a48-8c20-bbb297ad0293\\canvas_500x750-mm-20x30-inch_canvas_wood-fsc-thick_4-0_hor\\Close-Up-Plain-Gray-0.webp",
+      "alt": "Horizontal Thick 20x30 canvas",
+      "filename": "Close-Up-Plain-Gray-0-20x30-Horizontal-Thick.webp"
+    },
+    {
+      "folder": "canvas_500x750-mm-20x30-inch_canvas_wood-fsc-thick_4-0_ver",
+      "variantId": "gid://shopify/ProductVariant/57946537492824",
+      "title": "Vertical / Thick / 50x75 cm / 20x30″",
+      "img": "c:\\Users\\HughesHub\\Downloads\\f11cc67c-da2f-4e8e-a35c-7bede4bbe9fd\\96379a8a-3182-4a48-8c20-bbb297ad0293\\canvas_500x750-mm-20x30-inch_canvas_wood-fsc-thick_4-0_ver\\Close-Up-Plain-Gray-0.webp",
+      "alt": "Vertical Thick 20x30 canvas",
+      "filename": "Close-Up-Plain-Gray-0-20x30-Vertical-Thick.webp"
+    },
+    {
+      "folder": "canvas_600x600-mm-24x24-inch_canvas_wood-fsc-slim_4-0_hor",
+      "variantId": "gid://shopify/ProductVariant/57945652887896",
+      "title": "Horizontal / Slim / 60x60 cm / 24x24″",
+      "img": "c:\\Users\\HughesHub\\Downloads\\f11cc67c-da2f-4e8e-a35c-7bede4bbe9fd\\96379a8a-3182-4a48-8c20-bbb297ad0293\\canvas_600x600-mm-24x24-inch_canvas_wood-fsc-slim_4-0_hor\\Close-Up-Plain-Gray-0.webp",
+      "alt": "Horizontal Slim 24x24 canvas",
+      "filename": "Close-Up-Plain-Gray-0-24x24-Horizontal-Slim.webp"
+    },
+    {
+      "folder": "canvas_600x600-mm-24x24-inch_canvas_wood-fsc-slim_4-0_ver",
+      "variantId": "gid://shopify/ProductVariant/57945652035928",
+      "title": "Vertical / Slim / 60x60 cm / 24x24″",
+      "img": "c:\\Users\\HughesHub\\Downloads\\f11cc67c-da2f-4e8e-a35c-7bede4bbe9fd\\96379a8a-3182-4a48-8c20-bbb297ad0293\\canvas_600x600-mm-24x24-inch_canvas_wood-fsc-slim_4-0_ver\\Close-Up-Plain-Gray-0.webp",
+      "alt": "Vertical Slim 24x24 canvas",
+      "filename": "Close-Up-Plain-Gray-0-24x24-Vertical-Slim.webp"
+    },
+    {
+      "folder": "canvas_600x600-mm-24x24-inch_canvas_wood-fsc-thick_4-0_hor",
+      "variantId": "gid://shopify/ProductVariant/57946538410328",
+      "title": "Horizontal / Thick / 60x60 cm / 24x24″",
+      "img": "c:\\Users\\HughesHub\\Downloads\\f11cc67c-da2f-4e8e-a35c-7bede4bbe9fd\\96379a8a-3182-4a48-8c20-bbb297ad0293\\canvas_600x600-mm-24x24-inch_canvas_wood-fsc-thick_4-0_hor\\Close-Up-Plain-Gray-0.webp",
+      "alt": "Horizontal Thick 24x24 canvas",
+      "filename": "Close-Up-Plain-Gray-0-24x24-Horizontal-Thick.webp"
+    },
+    {
+      "folder": "canvas_600x600-mm-24x24-inch_canvas_wood-fsc-thick_4-0_ver",
+      "variantId": "gid://shopify/ProductVariant/57946537558360",
+      "title": "Vertical / Thick / 60x60 cm / 24x24″",
+      "img": "c:\\Users\\HughesHub\\Downloads\\f11cc67c-da2f-4e8e-a35c-7bede4bbe9fd\\96379a8a-3182-4a48-8c20-bbb297ad0293\\canvas_600x600-mm-24x24-inch_canvas_wood-fsc-thick_4-0_ver\\Close-Up-Plain-Gray-0.webp",
+      "alt": "Vertical Thick 24x24 canvas",
+      "filename": "Close-Up-Plain-Gray-0-24x24-Vertical-Thick.webp"
+    },
+    {
+      "folder": "canvas_600x750-mm-24x30-inch_canvas_wood-fsc-slim_4-0_hor",
+      "variantId": "gid://shopify/ProductVariant/57945652920664",
+      "title": "Horizontal / Slim / 60x75 cm / 24x30″",
+      "img": "c:\\Users\\HughesHub\\Downloads\\f11cc67c-da2f-4e8e-a35c-7bede4bbe9fd\\96379a8a-3182-4a48-8c20-bbb297ad0293\\canvas_600x750-mm-24x30-inch_canvas_wood-fsc-slim_4-0_hor\\Close-Up-Plain-Gray-0.webp",
+      "alt": "Horizontal Slim 24x30 canvas",
+      "filename": "Close-Up-Plain-Gray-0-24x30-Horizontal-Slim.webp"
+    },
+    {
+      "folder": "canvas_600x750-mm-24x30-inch_canvas_wood-fsc-slim_4-0_ver",
+      "variantId": "gid://shopify/ProductVariant/57945652068696",
+      "title": "Vertical / Slim / 60x75 cm / 24x30″",
+      "img": "c:\\Users\\HughesHub\\Downloads\\f11cc67c-da2f-4e8e-a35c-7bede4bbe9fd\\96379a8a-3182-4a48-8c20-bbb297ad0293\\canvas_600x750-mm-24x30-inch_canvas_wood-fsc-slim_4-0_ver\\Close-Up-Plain-Gray-0.webp",
+      "alt": "Vertical Slim 24x30 canvas",
+      "filename": "Close-Up-Plain-Gray-0-24x30-Vertical-Slim.webp"
+    },
+    {
+      "folder": "canvas_600x750-mm-24x30-inch_canvas_wood-fsc-thick_4-0_hor",
+      "variantId": "gid://shopify/ProductVariant/57946538443096",
+      "title": "Horizontal / Thick / 60x75 cm / 24x30″",
+      "img": "c:\\Users\\HughesHub\\Downloads\\f11cc67c-da2f-4e8e-a35c-7bede4bbe9fd\\96379a8a-3182-4a48-8c20-bbb297ad0293\\canvas_600x750-mm-24x30-inch_canvas_wood-fsc-thick_4-0_hor\\Close-Up-Plain-Gray-0.webp",
+      "alt": "Horizontal Thick 24x30 canvas",
+      "filename": "Close-Up-Plain-Gray-0-24x30-Horizontal-Thick.webp"
+    },
+    {
+      "folder": "canvas_600x750-mm-24x30-inch_canvas_wood-fsc-thick_4-0_ver",
+      "variantId": "gid://shopify/ProductVariant/57946537591128",
+      "title": "Vertical / Thick / 60x75 cm / 24x30″",
+      "img": "c:\\Users\\HughesHub\\Downloads\\f11cc67c-da2f-4e8e-a35c-7bede4bbe9fd\\96379a8a-3182-4a48-8c20-bbb297ad0293\\canvas_600x750-mm-24x30-inch_canvas_wood-fsc-thick_4-0_ver\\Close-Up-Plain-Gray-0.webp",
+      "alt": "Vertical Thick 24x30 canvas",
+      "filename": "Close-Up-Plain-Gray-0-24x30-Vertical-Thick.webp"
+    },
+    {
+      "folder": "canvas_600x800-mm-24x32-inch_canvas_wood-fsc-slim_4-0_hor",
+      "variantId": "gid://shopify/ProductVariant/57945652953432",
+      "title": "Horizontal / Slim / 60x80 cm / 24x32″",
+      "img": "c:\\Users\\HughesHub\\Downloads\\f11cc67c-da2f-4e8e-a35c-7bede4bbe9fd\\96379a8a-3182-4a48-8c20-bbb297ad0293\\canvas_600x800-mm-24x32-inch_canvas_wood-fsc-slim_4-0_hor\\Close-Up-Plain-Gray-0.webp",
+      "alt": "Horizontal Slim 24x32 canvas",
+      "filename": "Close-Up-Plain-Gray-0-24x32-Horizontal-Slim.webp"
+    },
+    {
+      "folder": "canvas_600x800-mm-24x32-inch_canvas_wood-fsc-slim_4-0_ver",
+      "variantId": "gid://shopify/ProductVariant/57945652101464",
+      "title": "Vertical / Slim / 60x80 cm / 24x32″",
+      "img": "c:\\Users\\HughesHub\\Downloads\\f11cc67c-da2f-4e8e-a35c-7bede4bbe9fd\\96379a8a-3182-4a48-8c20-bbb297ad0293\\canvas_600x800-mm-24x32-inch_canvas_wood-fsc-slim_4-0_ver\\Close-Up-Plain-Gray-0.webp",
+      "alt": "Vertical Slim 24x32 canvas",
+      "filename": "Close-Up-Plain-Gray-0-24x32-Vertical-Slim.webp"
+    },
+    {
+      "folder": "canvas_600x800-mm-24x32-inch_canvas_wood-fsc-thick_4-0_hor",
+      "variantId": "gid://shopify/ProductVariant/57946538475864",
+      "title": "Horizontal / Thick / 60x80 cm / 24x32″",
+      "img": "c:\\Users\\HughesHub\\Downloads\\f11cc67c-da2f-4e8e-a35c-7bede4bbe9fd\\96379a8a-3182-4a48-8c20-bbb297ad0293\\canvas_600x800-mm-24x32-inch_canvas_wood-fsc-thick_4-0_hor\\Close-Up-Plain-Gray-0.webp",
+      "alt": "Horizontal Thick 24x32 canvas",
+      "filename": "Close-Up-Plain-Gray-0-24x32-Horizontal-Thick.webp"
+    },
+    {
+      "folder": "canvas_600x800-mm-24x32-inch_canvas_wood-fsc-thick_4-0_ver",
+      "variantId": "gid://shopify/ProductVariant/57946537623896",
+      "title": "Vertical / Thick / 60x80 cm / 24x32″",
+      "img": "c:\\Users\\HughesHub\\Downloads\\f11cc67c-da2f-4e8e-a35c-7bede4bbe9fd\\96379a8a-3182-4a48-8c20-bbb297ad0293\\canvas_600x800-mm-24x32-inch_canvas_wood-fsc-thick_4-0_ver\\Close-Up-Plain-Gray-0.webp",
+      "alt": "Vertical Thick 24x32 canvas",
+      "filename": "Close-Up-Plain-Gray-0-24x32-Vertical-Thick.webp"
+    },
+    {
+      "folder": "canvas_600x900-mm-24x36-inch_canvas_wood-fsc-slim_4-0_hor",
+      "variantId": "gid://shopify/ProductVariant/57945652986200",
+      "title": "Horizontal / Slim / 60x90 cm / 24x36″",
+      "img": "c:\\Users\\HughesHub\\Downloads\\f11cc67c-da2f-4e8e-a35c-7bede4bbe9fd\\96379a8a-3182-4a48-8c20-bbb297ad0293\\canvas_600x900-mm-24x36-inch_canvas_wood-fsc-slim_4-0_hor\\Close-Up-Plain-Gray-0.webp",
+      "alt": "Horizontal Slim 24x36 canvas",
+      "filename": "Close-Up-Plain-Gray-0-24x36-Horizontal-Slim.webp"
+    },
+    {
+      "folder": "canvas_600x900-mm-24x36-inch_canvas_wood-fsc-slim_4-0_ver",
+      "variantId": "gid://shopify/ProductVariant/57945652134232",
+      "title": "Vertical / Slim / 60x90 cm / 24x36″",
+      "img": "c:\\Users\\HughesHub\\Downloads\\f11cc67c-da2f-4e8e-a35c-7bede4bbe9fd\\96379a8a-3182-4a48-8c20-bbb297ad0293\\canvas_600x900-mm-24x36-inch_canvas_wood-fsc-slim_4-0_ver\\Close-Up-Plain-Gray-0.webp",
+      "alt": "Vertical Slim 24x36 canvas",
+      "filename": "Close-Up-Plain-Gray-0-24x36-Vertical-Slim.webp"
+    },
+    {
+      "folder": "canvas_600x900-mm-24x36-inch_canvas_wood-fsc-thick_4-0_hor",
+      "variantId": "gid://shopify/ProductVariant/57946538508632",
+      "title": "Horizontal / Thick / 60x90 cm / 24x36″",
+      "img": "c:\\Users\\HughesHub\\Downloads\\f11cc67c-da2f-4e8e-a35c-7bede4bbe9fd\\96379a8a-3182-4a48-8c20-bbb297ad0293\\canvas_600x900-mm-24x36-inch_canvas_wood-fsc-thick_4-0_hor\\Close-Up-Plain-Gray-0.webp",
+      "alt": "Horizontal Thick 24x36 canvas",
+      "filename": "Close-Up-Plain-Gray-0-24x36-Horizontal-Thick.webp"
+    },
+    {
+      "folder": "canvas_600x900-mm-24x36-inch_canvas_wood-fsc-thick_4-0_ver",
+      "variantId": "gid://shopify/ProductVariant/57946537656664",
+      "title": "Vertical / Thick / 60x90 cm / 24x36″",
+      "img": "c:\\Users\\HughesHub\\Downloads\\f11cc67c-da2f-4e8e-a35c-7bede4bbe9fd\\96379a8a-3182-4a48-8c20-bbb297ad0293\\canvas_600x900-mm-24x36-inch_canvas_wood-fsc-thick_4-0_ver\\Close-Up-Plain-Gray-0.webp",
+      "alt": "Vertical Thick 24x36 canvas",
+      "filename": "Close-Up-Plain-Gray-0-24x36-Vertical-Thick.webp"
+    },
+    {
+      "folder": "canvas_700x1000-mm-28x40-inch_canvas_wood-fsc-slim_4-0_hor",
+      "variantId": "gid://shopify/ProductVariant/57945653018968",
+      "title": "Horizontal / Slim / 70x100 cm / 28x40″",
+      "img": "c:\\Users\\HughesHub\\Downloads\\f11cc67c-da2f-4e8e-a35c-7bede4bbe9fd\\96379a8a-3182-4a48-8c20-bbb297ad0293\\canvas_700x1000-mm-28x40-inch_canvas_wood-fsc-slim_4-0_hor\\Close-Up-Plain-Gray-0.webp",
+      "alt": "Horizontal Slim 28x40 canvas",
+      "filename": "Close-Up-Plain-Gray-0-28x40-Horizontal-Slim.webp"
+    },
+    {
+      "folder": "canvas_700x1000-mm-28x40-inch_canvas_wood-fsc-slim_4-0_ver",
+      "variantId": "gid://shopify/ProductVariant/57945652167000",
+      "title": "Vertical / Slim / 70x100 cm / 28x40″",
+      "img": "c:\\Users\\HughesHub\\Downloads\\f11cc67c-da2f-4e8e-a35c-7bede4bbe9fd\\96379a8a-3182-4a48-8c20-bbb297ad0293\\canvas_700x1000-mm-28x40-inch_canvas_wood-fsc-slim_4-0_ver\\Close-Up-Plain-Gray-0.webp",
+      "alt": "Vertical Slim 28x40 canvas",
+      "filename": "Close-Up-Plain-Gray-0-28x40-Vertical-Slim.webp"
+    },
+    {
+      "folder": "canvas_700x1000-mm-28x40-inch_canvas_wood-fsc-thick_4-0_hor",
+      "variantId": "gid://shopify/ProductVariant/57946538541400",
+      "title": "Horizontal / Thick / 70x100 cm / 28x40″",
+      "img": "c:\\Users\\HughesHub\\Downloads\\f11cc67c-da2f-4e8e-a35c-7bede4bbe9fd\\96379a8a-3182-4a48-8c20-bbb297ad0293\\canvas_700x1000-mm-28x40-inch_canvas_wood-fsc-thick_4-0_hor\\Close-Up-Plain-Gray-0.webp",
+      "alt": "Horizontal Thick 28x40 canvas",
+      "filename": "Close-Up-Plain-Gray-0-28x40-Horizontal-Thick.webp"
+    },
+    {
+      "folder": "canvas_700x1000-mm-28x40-inch_canvas_wood-fsc-thick_4-0_ver",
+      "variantId": "gid://shopify/ProductVariant/57946537689432",
+      "title": "Vertical / Thick / 70x100 cm / 28x40″",
+      "img": "c:\\Users\\HughesHub\\Downloads\\f11cc67c-da2f-4e8e-a35c-7bede4bbe9fd\\96379a8a-3182-4a48-8c20-bbb297ad0293\\canvas_700x1000-mm-28x40-inch_canvas_wood-fsc-thick_4-0_ver\\Close-Up-Plain-Gray-0.webp",
+      "alt": "Vertical Thick 28x40 canvas",
+      "filename": "Close-Up-Plain-Gray-0-28x40-Vertical-Thick.webp"
+    }
+  ],
+  "unmatched": [],
+  "missingVariants": []
+}

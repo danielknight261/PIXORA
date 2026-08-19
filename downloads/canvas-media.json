@@ -1,0 +1,3218 @@
+{
+  "productByHandle": {
+    "id": "gid://shopify/Product/15928489378136",
+    "title": "Personalized Canvas Print",
+    "mediaCount": {
+      "count": 104
+    },
+    "media": {
+      "nodes": [
+        {
+          "id": "gid://shopify/MediaImage/73110248128856",
+          "alt": "ac596e28-08e9-4066-9ad4-af35e4ff5d67",
+          "image": {
+            "url": "https://cdn.shopify.com/s/files/1/1006/7256/9688/files/ac596e28-08e9-4066-9ad4-af35e4ff5d67.webp?v=1786542874",
+            "width": 2048,
+            "height": 2048
+          }
+        },
+        {
+          "id": "gid://shopify/MediaImage/73110248161624",
+          "alt": "592883bc-5b59-43f4-9c70-4c0bcded973e",
+          "image": {
+            "url": "https://cdn.shopify.com/s/files/1/1006/7256/9688/files/592883bc-5b59-43f4-9c70-4c0bcded973e.webp?v=1786542874",
+            "width": 2048,
+            "height": 2048
+          }
+        },
+        {
+          "id": "gid://shopify/MediaImage/73110248194392",
+          "alt": "a9070b9a-f73d-450a-9d4a-e0fc5f551e9e",
+          "image": {
+            "url": "https://cdn.shopify.com/s/files/1/1006/7256/9688/files/a9070b9a-f73d-450a-9d4a-e0fc5f551e9e.webp?v=1786542874",
+            "width": 2048,
+            "height": 2048
+          }
+        },
+        {
+          "id": "gid://shopify/MediaImage/73110248227160",
+          "alt": "cf4a4678-6c69-4214-9823-776f11f4e6c3",
+          "image": {
+            "url": "https://cdn.shopify.com/s/files/1/1006/7256/9688/files/cf4a4678-6c69-4214-9823-776f11f4e6c3.webp?v=1786542874",
+            "width": 2048,
+            "height": 2048
+          }
+        },
+        {
+          "id": "gid://shopify/MediaImage/73110248259928",
+          "alt": "b3e48364-7787-435b-804b-0a8798a859e4",
+          "image": {
+            "url": "https://cdn.shopify.com/s/files/1/1006/7256/9688/files/b3e48364-7787-435b-804b-0a8798a859e4.webp?v=1786542874",
+            "width": 2048,
+            "height": 2048
+          }
+        },
+        {
+          "id": "gid://shopify/MediaImage/73110248292696",
+          "alt": "8d1ca7d5-4400-4798-957d-0306c1d83743",
+          "image": {
+            "url": "https://cdn.shopify.com/s/files/1/1006/7256/9688/files/8d1ca7d5-4400-4798-957d-0306c1d83743.webp?v=1786542874",
+            "width": 2048,
+            "height": 2048
+          }
+        },
+        {
+          "id": "gid://shopify/MediaImage/73110248325464",
+          "alt": "0ee0f210-81e8-4b7a-afc4-997719064bbb",
+          "image": {
+            "url": "https://cdn.shopify.com/s/files/1/1006/7256/9688/files/0ee0f210-81e8-4b7a-afc4-997719064bbb.webp?v=1786542874",
+            "width": 2048,
+            "height": 2048
+          }
+        },
+        {
+          "id": "gid://shopify/MediaImage/73110248358232",
+          "alt": "6af07ca8-a9ba-47dd-8029-b14a951505dd",
+          "image": {
+            "url": "https://cdn.shopify.com/s/files/1/1006/7256/9688/files/6af07ca8-a9ba-47dd-8029-b14a951505dd.webp?v=1786542874",
+            "width": 2048,
+            "height": 2048
+          }
+        },
+        {
+          "id": "gid://shopify/MediaImage/73110248391000",
+          "alt": "6172a339-8591-42bb-818b-a6333e788a22",
+          "image": {
+            "url": "https://cdn.shopify.com/s/files/1/1006/7256/9688/files/6172a339-8591-42bb-818b-a6333e788a22.webp?v=1786542874",
+            "width": 2048,
+            "height": 2048
+          }
+        },
+        {
+          "id": "gid://shopify/MediaImage/73110248423768",
+          "alt": "d8275813-12cf-4e31-84bd-27acd0a73274",
+          "image": {
+            "url": "https://cdn.shopify.com/s/files/1/1006/7256/9688/files/d8275813-12cf-4e31-84bd-27acd0a73274.webp?v=1786542874",
+            "width": 2048,
+            "height": 2048
+          }
+        },
+        {
+          "id": "gid://shopify/MediaImage/73110248456536",
+          "alt": "9c474917-08ed-4290-b1b7-d0adfdf5c41d",
+          "image": {
+            "url": "https://cdn.shopify.com/s/files/1/1006/7256/9688/files/9c474917-08ed-4290-b1b7-d0adfdf5c41d.webp?v=1786542874",
+            "width": 2048,
+            "height": 2048
+          }
+        },
+        {
+          "id": "gid://shopify/MediaImage/73110248489304",
+          "alt": "ef414908-fddc-40b0-b63d-dc61f3957419",
+          "image": {
+            "url": "https://cdn.shopify.com/s/files/1/1006/7256/9688/files/ef414908-fddc-40b0-b63d-dc61f3957419.webp?v=1786542874",
+            "width": 2048,
+            "height": 2048
+          }
+        },
+        {
+          "id": "gid://shopify/MediaImage/73110248522072",
+          "alt": "b69fa13d-bf17-4309-9820-97105e8574f7",
+          "image": {
+            "url": "https://cdn.shopify.com/s/files/1/1006/7256/9688/files/b69fa13d-bf17-4309-9820-97105e8574f7.webp?v=1786542874",
+            "width": 2048,
+            "height": 2048
+          }
+        },
+        {
+          "id": "gid://shopify/MediaImage/73110248554840",
+          "alt": "53ad61a6-e97d-4d98-9950-ed9ab551ea95",
+          "image": {
+            "url": "https://cdn.shopify.com/s/files/1/1006/7256/9688/files/53ad61a6-e97d-4d98-9950-ed9ab551ea95.webp?v=1786542874",
+            "width": 2048,
+            "height": 2048
+          }
+        },
+        {
+          "id": "gid://shopify/MediaImage/73110248587608",
+          "alt": "17044510-2d61-43ff-a51c-368dbc11811d",
+          "image": {
+            "url": "https://cdn.shopify.com/s/files/1/1006/7256/9688/files/17044510-2d61-43ff-a51c-368dbc11811d.webp?v=1786542874",
+            "width": 2048,
+            "height": 2048
+          }
+        },
+        {
+          "id": "gid://shopify/MediaImage/73110248620376",
+          "alt": "a267a15f-c39b-41f5-a4a5-6434c56e537b",
+          "image": {
+            "url": "https://cdn.shopify.com/s/files/1/1006/7256/9688/files/a267a15f-c39b-41f5-a4a5-6434c56e537b.webp?v=1786542874",
+            "width": 2048,
+            "height": 2048
+          }
+        },
+        {
+          "id": "gid://shopify/MediaImage/73110248653144",
+          "alt": "0f12aeb0-71ad-4223-abed-ac98e2df832a",
+          "image": {
+            "url": "https://cdn.shopify.com/s/files/1/1006/7256/9688/files/0f12aeb0-71ad-4223-abed-ac98e2df832a.webp?v=1786542874",
+            "width": 2048,
+            "height": 2048
+          }
+        },
+        {
+          "id": "gid://shopify/MediaImage/73110248685912",
+          "alt": "cbd648fb-7321-4162-8a4b-62c8b063f891",
+          "image": {
+            "url": "https://cdn.shopify.com/s/files/1/1006/7256/9688/files/cbd648fb-7321-4162-8a4b-62c8b063f891.webp?v=1786542874",
+            "width": 2048,
+            "height": 2048
+          }
+        },
+        {
+          "id": "gid://shopify/MediaImage/73110248718680",
+          "alt": "86a73b39-4b9a-4ef0-a93a-6b1720d29db5",
+          "image": {
+            "url": "https://cdn.shopify.com/s/files/1/1006/7256/9688/files/86a73b39-4b9a-4ef0-a93a-6b1720d29db5.webp?v=1786542874",
+            "width": 2048,
+            "height": 2048
+          }
+        },
+        {
+          "id": "gid://shopify/MediaImage/73110248751448",
+          "alt": "d7b79054-c8ee-4f54-92b7-b201f2d5f328",
+          "image": {
+            "url": "https://cdn.shopify.com/s/files/1/1006/7256/9688/files/d7b79054-c8ee-4f54-92b7-b201f2d5f328.webp?v=1786542874",
+            "width": 2048,
+            "height": 2048
+          }
+        },
+        {
+          "id": "gid://shopify/MediaImage/73110248784216",
+          "alt": "e44301bd-1991-4632-9778-926957b49aa4",
+          "image": {
+            "url": "https://cdn.shopify.com/s/files/1/1006/7256/9688/files/e44301bd-1991-4632-9778-926957b49aa4.webp?v=1786542874",
+            "width": 2048,
+            "height": 2048
+          }
+        },
+        {
+          "id": "gid://shopify/MediaImage/73110248816984",
+          "alt": "acae6acf-8557-4da4-8e14-81da5e136124",
+          "image": {
+            "url": "https://cdn.shopify.com/s/files/1/1006/7256/9688/files/acae6acf-8557-4da4-8e14-81da5e136124.webp?v=1786542874",
+            "width": 2048,
+            "height": 2048
+          }
+        },
+        {
+          "id": "gid://shopify/MediaImage/73110248849752",
+          "alt": "2d0efc32-87b5-47c3-8020-fb1c5f45d6e8",
+          "image": {
+            "url": "https://cdn.shopify.com/s/files/1/1006/7256/9688/files/2d0efc32-87b5-47c3-8020-fb1c5f45d6e8.webp?v=1786542874",
+            "width": 2048,
+            "height": 2048
+          }
+        },
+        {
+          "id": "gid://shopify/MediaImage/73110248882520",
+          "alt": "d1b288b8-f183-4881-9762-449a74db10ae",
+          "image": {
+            "url": "https://cdn.shopify.com/s/files/1/1006/7256/9688/files/d1b288b8-f183-4881-9762-449a74db10ae.webp?v=1786542874",
+            "width": 2048,
+            "height": 2048
+          }
+        },
+        {
+          "id": "gid://shopify/MediaImage/73110248915288",
+          "alt": "d01c35d2-f240-4126-99ab-5a2e684f94c1",
+          "image": {
+            "url": "https://cdn.shopify.com/s/files/1/1006/7256/9688/files/d01c35d2-f240-4126-99ab-5a2e684f94c1.webp?v=1786542873",
+            "width": 2048,
+            "height": 2048
+          }
+        },
+        {
+          "id": "gid://shopify/MediaImage/73110248948056",
+          "alt": "97e529f2-4853-4a23-86ef-4c29e09a80a3",
+          "image": {
+            "url": "https://cdn.shopify.com/s/files/1/1006/7256/9688/files/97e529f2-4853-4a23-86ef-4c29e09a80a3.webp?v=1786542874",
+            "width": 2048,
+            "height": 2048
+          }
+        },
+        {
+          "id": "gid://shopify/MediaImage/73110248980824",
+          "alt": "8b2d40b5-f7cb-4d00-b3ad-a5e19639965e",
+          "image": {
+            "url": "https://cdn.shopify.com/s/files/1/1006/7256/9688/files/8b2d40b5-f7cb-4d00-b3ad-a5e19639965e.webp?v=1786542874",
+            "width": 2048,
+            "height": 2048
+          }
+        },
+        {
+          "id": "gid://shopify/MediaImage/73110249013592",
+          "alt": "a1f84d90-5354-4467-8ad0-3099eccf2e4c",
+          "image": {
+            "url": "https://cdn.shopify.com/s/files/1/1006/7256/9688/files/a1f84d90-5354-4467-8ad0-3099eccf2e4c.webp?v=1786542874",
+            "width": 2048,
+            "height": 2048
+          }
+        },
+        {
+          "id": "gid://shopify/MediaImage/73110249046360",
+          "alt": "779c27fe-45bc-4680-bcd6-aa3247337428",
+          "image": {
+            "url": "https://cdn.shopify.com/s/files/1/1006/7256/9688/files/779c27fe-45bc-4680-bcd6-aa3247337428.webp?v=1786542874",
+            "width": 2048,
+            "height": 2048
+          }
+        },
+        {
+          "id": "gid://shopify/MediaImage/73110249079128",
+          "alt": "f380cdaf-755c-4c92-a4f1-26716736094b",
+          "image": {
+            "url": "https://cdn.shopify.com/s/files/1/1006/7256/9688/files/f380cdaf-755c-4c92-a4f1-26716736094b.webp?v=1786542874",
+            "width": 2048,
+            "height": 2048
+          }
+        },
+        {
+          "id": "gid://shopify/MediaImage/73110249111896",
+          "alt": "ba213301-df17-4f00-803e-48d733bfd550",
+          "image": {
+            "url": "https://cdn.shopify.com/s/files/1/1006/7256/9688/files/ba213301-df17-4f00-803e-48d733bfd550.webp?v=1786542874",
+            "width": 2048,
+            "height": 2048
+          }
+        },
+        {
+          "id": "gid://shopify/MediaImage/73110249144664",
+          "alt": "90bdb1d1-c112-4820-b436-e3beecec2050",
+          "image": {
+            "url": "https://cdn.shopify.com/s/files/1/1006/7256/9688/files/90bdb1d1-c112-4820-b436-e3beecec2050.webp?v=1786542874",
+            "width": 2048,
+            "height": 2048
+          }
+        },
+        {
+          "id": "gid://shopify/MediaImage/73110249177432",
+          "alt": "e57aa07d-5ac9-413b-ad00-51ea8cde0094",
+          "image": {
+            "url": "https://cdn.shopify.com/s/files/1/1006/7256/9688/files/e57aa07d-5ac9-413b-ad00-51ea8cde0094.webp?v=1786542874",
+            "width": 2048,
+            "height": 2048
+          }
+        },
+        {
+          "id": "gid://shopify/MediaImage/73110249210200",
+          "alt": "da4d0b0c-4417-4f02-bbcd-c3e9ba909844",
+          "image": {
+            "url": "https://cdn.shopify.com/s/files/1/1006/7256/9688/files/da4d0b0c-4417-4f02-bbcd-c3e9ba909844.webp?v=1786542874",
+            "width": 2048,
+            "height": 2048
+          }
+        },
+        {
+          "id": "gid://shopify/MediaImage/73110249242968",
+          "alt": "f93ca6e0-6baa-435b-8eec-158b1a50ef52",
+          "image": {
+            "url": "https://cdn.shopify.com/s/files/1/1006/7256/9688/files/f93ca6e0-6baa-435b-8eec-158b1a50ef52.webp?v=1786542874",
+            "width": 2048,
+            "height": 2048
+          }
+        },
+        {
+          "id": "gid://shopify/MediaImage/73110249275736",
+          "alt": "8ac4f561-6d69-46ee-9c41-146f39ccceb5",
+          "image": {
+            "url": "https://cdn.shopify.com/s/files/1/1006/7256/9688/files/8ac4f561-6d69-46ee-9c41-146f39ccceb5.webp?v=1786542874",
+            "width": 2048,
+            "height": 2048
+          }
+        },
+        {
+          "id": "gid://shopify/MediaImage/73110249308504",
+          "alt": "eaa75d86-ced1-45eb-838c-c4a2892005f5",
+          "image": {
+            "url": "https://cdn.shopify.com/s/files/1/1006/7256/9688/files/eaa75d86-ced1-45eb-838c-c4a2892005f5.webp?v=1786542874",
+            "width": 2048,
+            "height": 2048
+          }
+        },
+        {
+          "id": "gid://shopify/MediaImage/73110249341272",
+          "alt": "ef2076b9-b315-4758-a9f8-2263a85af11c",
+          "image": {
+            "url": "https://cdn.shopify.com/s/files/1/1006/7256/9688/files/ef2076b9-b315-4758-a9f8-2263a85af11c.webp?v=1786542874",
+            "width": 2048,
+            "height": 2048
+          }
+        },
+        {
+          "id": "gid://shopify/MediaImage/73110249374040",
+          "alt": "2a2b3647-c87a-4b7c-88ab-bceff0e534da",
+          "image": {
+            "url": "https://cdn.shopify.com/s/files/1/1006/7256/9688/files/2a2b3647-c87a-4b7c-88ab-bceff0e534da.webp?v=1786542874",
+            "width": 2048,
+            "height": 2048
+          }
+        },
+        {
+          "id": "gid://shopify/MediaImage/73110249406808",
+          "alt": "1704f69c-3ddb-449b-9683-1f7947ed8157",
+          "image": {
+            "url": "https://cdn.shopify.com/s/files/1/1006/7256/9688/files/1704f69c-3ddb-449b-9683-1f7947ed8157.webp?v=1786542874",
+            "width": 2048,
+            "height": 2048
+          }
+        },
+        {
+          "id": "gid://shopify/MediaImage/73110249439576",
+          "alt": "ffcacc87-db65-488a-8422-c5363d388002",
+          "image": {
+            "url": "https://cdn.shopify.com/s/files/1/1006/7256/9688/files/ffcacc87-db65-488a-8422-c5363d388002.webp?v=1786542874",
+            "width": 2048,
+            "height": 2048
+          }
+        },
+        {
+          "id": "gid://shopify/MediaImage/73110249472344",
+          "alt": "81af6647-7811-4b9c-b4f1-6e28a8041f72",
+          "image": {
+            "url": "https://cdn.shopify.com/s/files/1/1006/7256/9688/files/81af6647-7811-4b9c-b4f1-6e28a8041f72.webp?v=1786542874",
+            "width": 2048,
+            "height": 2048
+          }
+        },
+        {
+          "id": "gid://shopify/MediaImage/73110249505112",
+          "alt": "e3d5bd70-641a-468e-b08e-23a4614dbaaa",
+          "image": {
+            "url": "https://cdn.shopify.com/s/files/1/1006/7256/9688/files/e3d5bd70-641a-468e-b08e-23a4614dbaaa.webp?v=1786542874",
+            "width": 2048,
+            "height": 2048
+          }
+        },
+        {
+          "id": "gid://shopify/MediaImage/73110249537880",
+          "alt": "dcf49990-bfaf-4f85-aa92-feca492d45c2",
+          "image": {
+            "url": "https://cdn.shopify.com/s/files/1/1006/7256/9688/files/dcf49990-bfaf-4f85-aa92-feca492d45c2.webp?v=1786542874",
+            "width": 2048,
+            "height": 2048
+          }
+        },
+        {
+          "id": "gid://shopify/MediaImage/73110249570648",
+          "alt": "809e3bb9-acb6-4db4-9809-d2b1ed855811",
+          "image": {
+            "url": "https://cdn.shopify.com/s/files/1/1006/7256/9688/files/809e3bb9-acb6-4db4-9809-d2b1ed855811.webp?v=1786542874",
+            "width": 2048,
+            "height": 2048
+          }
+        },
+        {
+          "id": "gid://shopify/MediaImage/73110249603416",
+          "alt": "27b38a9d-e55e-4d86-ab31-f818e8180ae9",
+          "image": {
+            "url": "https://cdn.shopify.com/s/files/1/1006/7256/9688/files/27b38a9d-e55e-4d86-ab31-f818e8180ae9.webp?v=1786542874",
+            "width": 2048,
+            "height": 2048
+          }
+        },
+        {
+          "id": "gid://shopify/MediaImage/73110249636184",
+          "alt": "50ddb789-1cce-40d3-afdd-44538aab47ec",
+          "image": {
+            "url": "https://cdn.shopify.com/s/files/1/1006/7256/9688/files/50ddb789-1cce-40d3-afdd-44538aab47ec.webp?v=1786542874",
+            "width": 2048,
+            "height": 2048
+          }
+        },
+        {
+          "id": "gid://shopify/MediaImage/73110249668952",
+          "alt": "e69b0da9-402a-4e76-b72f-699d17cd7fdb",
+          "image": {
+            "url": "https://cdn.shopify.com/s/files/1/1006/7256/9688/files/e69b0da9-402a-4e76-b72f-699d17cd7fdb.webp?v=1786542874",
+            "width": 2048,
+            "height": 2048
+          }
+        },
+        {
+          "id": "gid://shopify/MediaImage/73110249701720",
+          "alt": "2066f4cb-6d84-45d3-a51d-27635669efd3",
+          "image": {
+            "url": "https://cdn.shopify.com/s/files/1/1006/7256/9688/files/2066f4cb-6d84-45d3-a51d-27635669efd3.webp?v=1786542874",
+            "width": 2048,
+            "height": 2048
+          }
+        },
+        {
+          "id": "gid://shopify/MediaImage/73110249734488",
+          "alt": "89156a08-606e-4270-ba37-beae7809755b",
+          "image": {
+            "url": "https://cdn.shopify.com/s/files/1/1006/7256/9688/files/89156a08-606e-4270-ba37-beae7809755b.webp?v=1786542874",
+            "width": 2048,
+            "height": 2048
+          }
+        }
+      ]
+    },
+    "options": [
+      {
+        "name": "Orientation",
+        "values": [
+          "Vertical",
+          "Horizontal"
+        ]
+      },
+      {
+        "name": "Thickness",
+        "values": [
+          "Slim",
+          "Thick"
+        ]
+      },
+      {
+        "name": "Size",
+        "values": [
+          "20x20 cm / 8x8″",
+          "20x25 cm / 8x10″",
+          "20x30 cm / 8x12″",
+          "20x60 cm / 8x24″",
+          "27x35 cm / 11x14″",
+          "30x30 cm / 12x12″",
+          "30x40 cm / 12x16″",
+          "30x45 cm / 12x18″",
+          "30x60 cm / 12x24″",
+          "30x90 cm / 12x36″",
+          "30x100 cm / 12x40″",
+          "40x40 cm / 16x16″",
+          "40x50 cm / 16x20″",
+          "40x60 cm / 16x24″",
+          "40x80 cm / 16x32″",
+          "45x60 cm / 18x24″",
+          "50x50 cm / 20x20″",
+          "50x60 cm / 20x24″",
+          "50x70 cm / 20x28″",
+          "50x75 cm / 20x30″",
+          "50x100 cm / 20x40″",
+          "60x60 cm / 24x24″",
+          "60x75 cm / 24x30″",
+          "60x80 cm / 24x32″",
+          "60x90 cm / 24x36″",
+          "70x100 cm / 28x40″"
+        ]
+      }
+    ],
+    "variants": {
+      "nodes": [
+        {
+          "id": "gid://shopify/ProductVariant/57944931139928",
+          "title": "Vertical / Slim / 20x20 cm / 8x8″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Vertical"
+            },
+            {
+              "name": "Thickness",
+              "value": "Slim"
+            },
+            {
+              "name": "Size",
+              "value": "20x20 cm / 8x8″"
+            }
+          ],
+          "media": {
+            "nodes": [
+              {
+                "id": "gid://shopify/MediaImage/73110248128856",
+                "alt": "ac596e28-08e9-4066-9ad4-af35e4ff5d67"
+              }
+            ]
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57945651380568",
+          "title": "Vertical / Slim / 20x25 cm / 8x10″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Vertical"
+            },
+            {
+              "name": "Thickness",
+              "value": "Slim"
+            },
+            {
+              "name": "Size",
+              "value": "20x25 cm / 8x10″"
+            }
+          ],
+          "media": {
+            "nodes": [
+              {
+                "id": "gid://shopify/MediaImage/73110248587608",
+                "alt": "17044510-2d61-43ff-a51c-368dbc11811d"
+              }
+            ]
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57945651413336",
+          "title": "Vertical / Slim / 20x30 cm / 8x12″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Vertical"
+            },
+            {
+              "name": "Thickness",
+              "value": "Slim"
+            },
+            {
+              "name": "Size",
+              "value": "20x30 cm / 8x12″"
+            }
+          ],
+          "media": {
+            "nodes": [
+              {
+                "id": "gid://shopify/MediaImage/73110248653144",
+                "alt": "0f12aeb0-71ad-4223-abed-ac98e2df832a"
+              }
+            ]
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57945651446104",
+          "title": "Vertical / Slim / 20x60 cm / 8x24″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Vertical"
+            },
+            {
+              "name": "Thickness",
+              "value": "Slim"
+            },
+            {
+              "name": "Size",
+              "value": "20x60 cm / 8x24″"
+            }
+          ],
+          "media": {
+            "nodes": [
+              {
+                "id": "gid://shopify/MediaImage/73110248194392",
+                "alt": "a9070b9a-f73d-450a-9d4a-e0fc5f551e9e"
+              }
+            ]
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57945651478872",
+          "title": "Vertical / Slim / 27x35 cm / 11x14″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Vertical"
+            },
+            {
+              "name": "Thickness",
+              "value": "Slim"
+            },
+            {
+              "name": "Size",
+              "value": "27x35 cm / 11x14″"
+            }
+          ],
+          "media": {
+            "nodes": [
+              {
+                "id": "gid://shopify/MediaImage/73110248325464",
+                "alt": "0ee0f210-81e8-4b7a-afc4-997719064bbb"
+              }
+            ]
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57945651511640",
+          "title": "Vertical / Slim / 30x30 cm / 12x12″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Vertical"
+            },
+            {
+              "name": "Thickness",
+              "value": "Slim"
+            },
+            {
+              "name": "Size",
+              "value": "30x30 cm / 12x12″"
+            }
+          ],
+          "media": {
+            "nodes": [
+              {
+                "id": "gid://shopify/MediaImage/73110248358232",
+                "alt": "6af07ca8-a9ba-47dd-8029-b14a951505dd"
+              }
+            ]
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57945651544408",
+          "title": "Vertical / Slim / 30x40 cm / 12x16″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Vertical"
+            },
+            {
+              "name": "Thickness",
+              "value": "Slim"
+            },
+            {
+              "name": "Size",
+              "value": "30x40 cm / 12x16″"
+            }
+          ],
+          "media": {
+            "nodes": [
+              {
+                "id": "gid://shopify/MediaImage/73110248259928",
+                "alt": "b3e48364-7787-435b-804b-0a8798a859e4"
+              }
+            ]
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57945651577176",
+          "title": "Vertical / Slim / 30x45 cm / 12x18″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Vertical"
+            },
+            {
+              "name": "Thickness",
+              "value": "Slim"
+            },
+            {
+              "name": "Size",
+              "value": "30x45 cm / 12x18″"
+            }
+          ],
+          "media": {
+            "nodes": [
+              {
+                "id": "gid://shopify/MediaImage/73110248161624",
+                "alt": "592883bc-5b59-43f4-9c70-4c0bcded973e"
+              }
+            ]
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57945651609944",
+          "title": "Vertical / Slim / 30x60 cm / 12x24″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Vertical"
+            },
+            {
+              "name": "Thickness",
+              "value": "Slim"
+            },
+            {
+              "name": "Size",
+              "value": "30x60 cm / 12x24″"
+            }
+          ],
+          "media": {
+            "nodes": [
+              {
+                "id": "gid://shopify/MediaImage/73110248620376",
+                "alt": "a267a15f-c39b-41f5-a4a5-6434c56e537b"
+              }
+            ]
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57945651642712",
+          "title": "Vertical / Slim / 30x90 cm / 12x36″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Vertical"
+            },
+            {
+              "name": "Thickness",
+              "value": "Slim"
+            },
+            {
+              "name": "Size",
+              "value": "30x90 cm / 12x36″"
+            }
+          ],
+          "media": {
+            "nodes": [
+              {
+                "id": "gid://shopify/MediaImage/73110248292696",
+                "alt": "8d1ca7d5-4400-4798-957d-0306c1d83743"
+              }
+            ]
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57945651675480",
+          "title": "Vertical / Slim / 30x100 cm / 12x40″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Vertical"
+            },
+            {
+              "name": "Thickness",
+              "value": "Slim"
+            },
+            {
+              "name": "Size",
+              "value": "30x100 cm / 12x40″"
+            }
+          ],
+          "media": {
+            "nodes": [
+              {
+                "id": "gid://shopify/MediaImage/73110248489304",
+                "alt": "ef414908-fddc-40b0-b63d-dc61f3957419"
+              }
+            ]
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57945651708248",
+          "title": "Vertical / Slim / 40x40 cm / 16x16″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Vertical"
+            },
+            {
+              "name": "Thickness",
+              "value": "Slim"
+            },
+            {
+              "name": "Size",
+              "value": "40x40 cm / 16x16″"
+            }
+          ],
+          "media": {
+            "nodes": [
+              {
+                "id": "gid://shopify/MediaImage/73110248227160",
+                "alt": "cf4a4678-6c69-4214-9823-776f11f4e6c3"
+              }
+            ]
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57945651741016",
+          "title": "Vertical / Slim / 40x50 cm / 16x20″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Vertical"
+            },
+            {
+              "name": "Thickness",
+              "value": "Slim"
+            },
+            {
+              "name": "Size",
+              "value": "40x50 cm / 16x20″"
+            }
+          ],
+          "media": {
+            "nodes": [
+              {
+                "id": "gid://shopify/MediaImage/73110248554840",
+                "alt": "53ad61a6-e97d-4d98-9950-ed9ab551ea95"
+              }
+            ]
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57945651773784",
+          "title": "Vertical / Slim / 40x60 cm / 16x24″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Vertical"
+            },
+            {
+              "name": "Thickness",
+              "value": "Slim"
+            },
+            {
+              "name": "Size",
+              "value": "40x60 cm / 16x24″"
+            }
+          ],
+          "media": {
+            "nodes": [
+              {
+                "id": "gid://shopify/MediaImage/73110248685912",
+                "alt": "cbd648fb-7321-4162-8a4b-62c8b063f891"
+              }
+            ]
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57945651806552",
+          "title": "Vertical / Slim / 40x80 cm / 16x32″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Vertical"
+            },
+            {
+              "name": "Thickness",
+              "value": "Slim"
+            },
+            {
+              "name": "Size",
+              "value": "40x80 cm / 16x32″"
+            }
+          ],
+          "media": {
+            "nodes": [
+              {
+                "id": "gid://shopify/MediaImage/73110248456536",
+                "alt": "9c474917-08ed-4290-b1b7-d0adfdf5c41d"
+              }
+            ]
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57945651839320",
+          "title": "Vertical / Slim / 45x60 cm / 18x24″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Vertical"
+            },
+            {
+              "name": "Thickness",
+              "value": "Slim"
+            },
+            {
+              "name": "Size",
+              "value": "45x60 cm / 18x24″"
+            }
+          ],
+          "media": {
+            "nodes": [
+              {
+                "id": "gid://shopify/MediaImage/73110248423768",
+                "alt": "d8275813-12cf-4e31-84bd-27acd0a73274"
+              }
+            ]
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57945651872088",
+          "title": "Vertical / Slim / 50x50 cm / 20x20″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Vertical"
+            },
+            {
+              "name": "Thickness",
+              "value": "Slim"
+            },
+            {
+              "name": "Size",
+              "value": "50x50 cm / 20x20″"
+            }
+          ],
+          "media": {
+            "nodes": [
+              {
+                "id": "gid://shopify/MediaImage/73110248751448",
+                "alt": "d7b79054-c8ee-4f54-92b7-b201f2d5f328"
+              }
+            ]
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57945651904856",
+          "title": "Vertical / Slim / 50x60 cm / 20x24″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Vertical"
+            },
+            {
+              "name": "Thickness",
+              "value": "Slim"
+            },
+            {
+              "name": "Size",
+              "value": "50x60 cm / 20x24″"
+            }
+          ],
+          "media": {
+            "nodes": [
+              {
+                "id": "gid://shopify/MediaImage/73110248522072",
+                "alt": "b69fa13d-bf17-4309-9820-97105e8574f7"
+              }
+            ]
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57945651937624",
+          "title": "Vertical / Slim / 50x70 cm / 20x28″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Vertical"
+            },
+            {
+              "name": "Thickness",
+              "value": "Slim"
+            },
+            {
+              "name": "Size",
+              "value": "50x70 cm / 20x28″"
+            }
+          ],
+          "media": {
+            "nodes": [
+              {
+                "id": "gid://shopify/MediaImage/73110248391000",
+                "alt": "6172a339-8591-42bb-818b-a6333e788a22"
+              }
+            ]
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57945651970392",
+          "title": "Vertical / Slim / 50x75 cm / 20x30″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Vertical"
+            },
+            {
+              "name": "Thickness",
+              "value": "Slim"
+            },
+            {
+              "name": "Size",
+              "value": "50x75 cm / 20x30″"
+            }
+          ],
+          "media": {
+            "nodes": [
+              {
+                "id": "gid://shopify/MediaImage/73110248718680",
+                "alt": "86a73b39-4b9a-4ef0-a93a-6b1720d29db5"
+              }
+            ]
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57945652003160",
+          "title": "Vertical / Slim / 50x100 cm / 20x40″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Vertical"
+            },
+            {
+              "name": "Thickness",
+              "value": "Slim"
+            },
+            {
+              "name": "Size",
+              "value": "50x100 cm / 20x40″"
+            }
+          ],
+          "media": {
+            "nodes": [
+              {
+                "id": "gid://shopify/MediaImage/73110249013592",
+                "alt": "a1f84d90-5354-4467-8ad0-3099eccf2e4c"
+              }
+            ]
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57945652035928",
+          "title": "Vertical / Slim / 60x60 cm / 24x24″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Vertical"
+            },
+            {
+              "name": "Thickness",
+              "value": "Slim"
+            },
+            {
+              "name": "Size",
+              "value": "60x60 cm / 24x24″"
+            }
+          ],
+          "media": {
+            "nodes": [
+              {
+                "id": "gid://shopify/MediaImage/73110249144664",
+                "alt": "90bdb1d1-c112-4820-b436-e3beecec2050"
+              }
+            ]
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57945652068696",
+          "title": "Vertical / Slim / 60x75 cm / 24x30″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Vertical"
+            },
+            {
+              "name": "Thickness",
+              "value": "Slim"
+            },
+            {
+              "name": "Size",
+              "value": "60x75 cm / 24x30″"
+            }
+          ],
+          "media": {
+            "nodes": [
+              {
+                "id": "gid://shopify/MediaImage/73110249603416",
+                "alt": "27b38a9d-e55e-4d86-ab31-f818e8180ae9"
+              }
+            ]
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57945652101464",
+          "title": "Vertical / Slim / 60x80 cm / 24x32″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Vertical"
+            },
+            {
+              "name": "Thickness",
+              "value": "Slim"
+            },
+            {
+              "name": "Size",
+              "value": "60x80 cm / 24x32″"
+            }
+          ],
+          "media": {
+            "nodes": [
+              {
+                "id": "gid://shopify/MediaImage/73110249636184",
+                "alt": "50ddb789-1cce-40d3-afdd-44538aab47ec"
+              }
+            ]
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57945652134232",
+          "title": "Vertical / Slim / 60x90 cm / 24x36″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Vertical"
+            },
+            {
+              "name": "Thickness",
+              "value": "Slim"
+            },
+            {
+              "name": "Size",
+              "value": "60x90 cm / 24x36″"
+            }
+          ],
+          "media": {
+            "nodes": [
+              {
+                "id": "gid://shopify/MediaImage/73110249374040",
+                "alt": "2a2b3647-c87a-4b7c-88ab-bceff0e534da"
+              }
+            ]
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57945652167000",
+          "title": "Vertical / Slim / 70x100 cm / 28x40″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Vertical"
+            },
+            {
+              "name": "Thickness",
+              "value": "Slim"
+            },
+            {
+              "name": "Size",
+              "value": "70x100 cm / 28x40″"
+            }
+          ],
+          "media": {
+            "nodes": [
+              {
+                "id": "gid://shopify/MediaImage/73110248980824",
+                "alt": "8b2d40b5-f7cb-4d00-b3ad-a5e19639965e"
+              }
+            ]
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57946536870232",
+          "title": "Vertical / Thick / 20x20 cm / 8x8″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Vertical"
+            },
+            {
+              "name": "Thickness",
+              "value": "Thick"
+            },
+            {
+              "name": "Size",
+              "value": "20x20 cm / 8x8″"
+            }
+          ],
+          "media": {
+            "nodes": [
+              {
+                "id": "gid://shopify/MediaImage/73110249242968",
+                "alt": "f93ca6e0-6baa-435b-8eec-158b1a50ef52"
+              }
+            ]
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57946536903000",
+          "title": "Vertical / Thick / 20x25 cm / 8x10″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Vertical"
+            },
+            {
+              "name": "Thickness",
+              "value": "Thick"
+            },
+            {
+              "name": "Size",
+              "value": "20x25 cm / 8x10″"
+            }
+          ],
+          "media": {
+            "nodes": [
+              {
+                "id": "gid://shopify/MediaImage/73110249308504",
+                "alt": "eaa75d86-ced1-45eb-838c-c4a2892005f5"
+              }
+            ]
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57946536935768",
+          "title": "Vertical / Thick / 20x30 cm / 8x12″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Vertical"
+            },
+            {
+              "name": "Thickness",
+              "value": "Thick"
+            },
+            {
+              "name": "Size",
+              "value": "20x30 cm / 8x12″"
+            }
+          ],
+          "media": {
+            "nodes": [
+              {
+                "id": "gid://shopify/MediaImage/73110249341272",
+                "alt": "ef2076b9-b315-4758-a9f8-2263a85af11c"
+              }
+            ]
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57946536968536",
+          "title": "Vertical / Thick / 20x60 cm / 8x24″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Vertical"
+            },
+            {
+              "name": "Thickness",
+              "value": "Thick"
+            },
+            {
+              "name": "Size",
+              "value": "20x60 cm / 8x24″"
+            }
+          ],
+          "media": {
+            "nodes": [
+              {
+                "id": "gid://shopify/MediaImage/73110249210200",
+                "alt": "da4d0b0c-4417-4f02-bbcd-c3e9ba909844"
+              }
+            ]
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57946537001304",
+          "title": "Vertical / Thick / 27x35 cm / 11x14″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Vertical"
+            },
+            {
+              "name": "Thickness",
+              "value": "Thick"
+            },
+            {
+              "name": "Size",
+              "value": "27x35 cm / 11x14″"
+            }
+          ],
+          "media": {
+            "nodes": [
+              {
+                "id": "gid://shopify/MediaImage/73110248849752",
+                "alt": "2d0efc32-87b5-47c3-8020-fb1c5f45d6e8"
+              }
+            ]
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57946537034072",
+          "title": "Vertical / Thick / 30x30 cm / 12x12″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Vertical"
+            },
+            {
+              "name": "Thickness",
+              "value": "Thick"
+            },
+            {
+              "name": "Size",
+              "value": "30x30 cm / 12x12″"
+            }
+          ],
+          "media": {
+            "nodes": [
+              {
+                "id": "gid://shopify/MediaImage/73110249537880",
+                "alt": "dcf49990-bfaf-4f85-aa92-feca492d45c2"
+              }
+            ]
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57946537066840",
+          "title": "Vertical / Thick / 30x40 cm / 12x16″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Vertical"
+            },
+            {
+              "name": "Thickness",
+              "value": "Thick"
+            },
+            {
+              "name": "Size",
+              "value": "30x40 cm / 12x16″"
+            }
+          ],
+          "media": {
+            "nodes": [
+              {
+                "id": "gid://shopify/MediaImage/73110249111896",
+                "alt": "ba213301-df17-4f00-803e-48d733bfd550"
+              }
+            ]
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57946537099608",
+          "title": "Vertical / Thick / 30x45 cm / 12x18″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Vertical"
+            },
+            {
+              "name": "Thickness",
+              "value": "Thick"
+            },
+            {
+              "name": "Size",
+              "value": "30x45 cm / 12x18″"
+            }
+          ],
+          "media": {
+            "nodes": [
+              {
+                "id": "gid://shopify/MediaImage/73110248816984",
+                "alt": "acae6acf-8557-4da4-8e14-81da5e136124"
+              }
+            ]
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57946537132376",
+          "title": "Vertical / Thick / 30x60 cm / 12x24″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Vertical"
+            },
+            {
+              "name": "Thickness",
+              "value": "Thick"
+            },
+            {
+              "name": "Size",
+              "value": "30x60 cm / 12x24″"
+            }
+          ],
+          "media": {
+            "nodes": [
+              {
+                "id": "gid://shopify/MediaImage/73110249079128",
+                "alt": "f380cdaf-755c-4c92-a4f1-26716736094b"
+              }
+            ]
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57946537165144",
+          "title": "Vertical / Thick / 30x90 cm / 12x36″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Vertical"
+            },
+            {
+              "name": "Thickness",
+              "value": "Thick"
+            },
+            {
+              "name": "Size",
+              "value": "30x90 cm / 12x36″"
+            }
+          ],
+          "media": {
+            "nodes": [
+              {
+                "id": "gid://shopify/MediaImage/73110248882520",
+                "alt": "d1b288b8-f183-4881-9762-449a74db10ae"
+              }
+            ]
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57946537197912",
+          "title": "Vertical / Thick / 30x100 cm / 12x40″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Vertical"
+            },
+            {
+              "name": "Thickness",
+              "value": "Thick"
+            },
+            {
+              "name": "Size",
+              "value": "30x100 cm / 12x40″"
+            }
+          ],
+          "media": {
+            "nodes": [
+              {
+                "id": "gid://shopify/MediaImage/73110248915288",
+                "alt": "d01c35d2-f240-4126-99ab-5a2e684f94c1"
+              }
+            ]
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57946537230680",
+          "title": "Vertical / Thick / 40x40 cm / 16x16″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Vertical"
+            },
+            {
+              "name": "Thickness",
+              "value": "Thick"
+            },
+            {
+              "name": "Size",
+              "value": "40x40 cm / 16x16″"
+            }
+          ],
+          "media": {
+            "nodes": [
+              {
+                "id": "gid://shopify/MediaImage/73110248784216",
+                "alt": "e44301bd-1991-4632-9778-926957b49aa4"
+              }
+            ]
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57946537263448",
+          "title": "Vertical / Thick / 40x50 cm / 16x20″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Vertical"
+            },
+            {
+              "name": "Thickness",
+              "value": "Thick"
+            },
+            {
+              "name": "Size",
+              "value": "40x50 cm / 16x20″"
+            }
+          ],
+          "media": {
+            "nodes": [
+              {
+                "id": "gid://shopify/MediaImage/73110249046360",
+                "alt": "779c27fe-45bc-4680-bcd6-aa3247337428"
+              }
+            ]
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57946537296216",
+          "title": "Vertical / Thick / 40x60 cm / 16x24″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Vertical"
+            },
+            {
+              "name": "Thickness",
+              "value": "Thick"
+            },
+            {
+              "name": "Size",
+              "value": "40x60 cm / 16x24″"
+            }
+          ],
+          "media": {
+            "nodes": [
+              {
+                "id": "gid://shopify/MediaImage/73110249275736",
+                "alt": "8ac4f561-6d69-46ee-9c41-146f39ccceb5"
+              }
+            ]
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57946537328984",
+          "title": "Vertical / Thick / 40x80 cm / 16x32″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Vertical"
+            },
+            {
+              "name": "Thickness",
+              "value": "Thick"
+            },
+            {
+              "name": "Size",
+              "value": "40x80 cm / 16x32″"
+            }
+          ],
+          "media": {
+            "nodes": [
+              {
+                "id": "gid://shopify/MediaImage/73110249570648",
+                "alt": "809e3bb9-acb6-4db4-9809-d2b1ed855811"
+              }
+            ]
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57946537361752",
+          "title": "Vertical / Thick / 45x60 cm / 18x24″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Vertical"
+            },
+            {
+              "name": "Thickness",
+              "value": "Thick"
+            },
+            {
+              "name": "Size",
+              "value": "45x60 cm / 18x24″"
+            }
+          ],
+          "media": {
+            "nodes": [
+              {
+                "id": "gid://shopify/MediaImage/73110249472344",
+                "alt": "81af6647-7811-4b9c-b4f1-6e28a8041f72"
+              }
+            ]
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57946537394520",
+          "title": "Vertical / Thick / 50x50 cm / 20x20″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Vertical"
+            },
+            {
+              "name": "Thickness",
+              "value": "Thick"
+            },
+            {
+              "name": "Size",
+              "value": "50x50 cm / 20x20″"
+            }
+          ],
+          "media": {
+            "nodes": [
+              {
+                "id": "gid://shopify/MediaImage/73110248948056",
+                "alt": "97e529f2-4853-4a23-86ef-4c29e09a80a3"
+              }
+            ]
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57946537427288",
+          "title": "Vertical / Thick / 50x60 cm / 20x24″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Vertical"
+            },
+            {
+              "name": "Thickness",
+              "value": "Thick"
+            },
+            {
+              "name": "Size",
+              "value": "50x60 cm / 20x24″"
+            }
+          ],
+          "media": {
+            "nodes": [
+              {
+                "id": "gid://shopify/MediaImage/73110249505112",
+                "alt": "e3d5bd70-641a-468e-b08e-23a4614dbaaa"
+              }
+            ]
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57946537460056",
+          "title": "Vertical / Thick / 50x70 cm / 20x28″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Vertical"
+            },
+            {
+              "name": "Thickness",
+              "value": "Thick"
+            },
+            {
+              "name": "Size",
+              "value": "50x70 cm / 20x28″"
+            }
+          ],
+          "media": {
+            "nodes": [
+              {
+                "id": "gid://shopify/MediaImage/73110249406808",
+                "alt": "1704f69c-3ddb-449b-9683-1f7947ed8157"
+              }
+            ]
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57946537492824",
+          "title": "Vertical / Thick / 50x75 cm / 20x30″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Vertical"
+            },
+            {
+              "name": "Thickness",
+              "value": "Thick"
+            },
+            {
+              "name": "Size",
+              "value": "50x75 cm / 20x30″"
+            }
+          ],
+          "media": {
+            "nodes": [
+              {
+                "id": "gid://shopify/MediaImage/73110249439576",
+                "alt": "ffcacc87-db65-488a-8422-c5363d388002"
+              }
+            ]
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57946537525592",
+          "title": "Vertical / Thick / 50x100 cm / 20x40″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Vertical"
+            },
+            {
+              "name": "Thickness",
+              "value": "Thick"
+            },
+            {
+              "name": "Size",
+              "value": "50x100 cm / 20x40″"
+            }
+          ],
+          "media": {
+            "nodes": [
+              {
+                "id": "gid://shopify/MediaImage/73110250062168",
+                "alt": "0b65623b-2c95-4831-ab99-ae099a285006"
+              }
+            ]
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57946537558360",
+          "title": "Vertical / Thick / 60x60 cm / 24x24″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Vertical"
+            },
+            {
+              "name": "Thickness",
+              "value": "Thick"
+            },
+            {
+              "name": "Size",
+              "value": "60x60 cm / 24x24″"
+            }
+          ],
+          "media": {
+            "nodes": [
+              {
+                "id": "gid://shopify/MediaImage/73110249177432",
+                "alt": "e57aa07d-5ac9-413b-ad00-51ea8cde0094"
+              }
+            ]
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57946537591128",
+          "title": "Vertical / Thick / 60x75 cm / 24x30″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Vertical"
+            },
+            {
+              "name": "Thickness",
+              "value": "Thick"
+            },
+            {
+              "name": "Size",
+              "value": "60x75 cm / 24x30″"
+            }
+          ],
+          "media": {
+            "nodes": [
+              {
+                "id": "gid://shopify/MediaImage/73110250029400",
+                "alt": "44a01eee-c967-48b9-948b-dae2a28442b2"
+              }
+            ]
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57946537623896",
+          "title": "Vertical / Thick / 60x80 cm / 24x32″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Vertical"
+            },
+            {
+              "name": "Thickness",
+              "value": "Thick"
+            },
+            {
+              "name": "Size",
+              "value": "60x80 cm / 24x32″"
+            }
+          ],
+          "media": {
+            "nodes": [
+              {
+                "id": "gid://shopify/MediaImage/73110249865560",
+                "alt": "712c9f28-8308-49c0-8e3a-93fa631e24a0"
+              }
+            ]
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57946537656664",
+          "title": "Vertical / Thick / 60x90 cm / 24x36″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Vertical"
+            },
+            {
+              "name": "Thickness",
+              "value": "Thick"
+            },
+            {
+              "name": "Size",
+              "value": "60x90 cm / 24x36″"
+            }
+          ],
+          "media": {
+            "nodes": [
+              {
+                "id": "gid://shopify/MediaImage/73110250094936",
+                "alt": "5f21a8fd-3076-4cdd-9a52-98b5e522a8b8"
+              }
+            ]
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57946537689432",
+          "title": "Vertical / Thick / 70x100 cm / 28x40″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Vertical"
+            },
+            {
+              "name": "Thickness",
+              "value": "Thick"
+            },
+            {
+              "name": "Size",
+              "value": "70x100 cm / 28x40″"
+            }
+          ],
+          "media": {
+            "nodes": [
+              {
+                "id": "gid://shopify/MediaImage/73110249767256",
+                "alt": "4d17b89a-72c5-480b-88b9-d9b763e94791"
+              }
+            ]
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57945652199768",
+          "title": "Horizontal / Slim / 20x20 cm / 8x8″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Horizontal"
+            },
+            {
+              "name": "Thickness",
+              "value": "Slim"
+            },
+            {
+              "name": "Size",
+              "value": "20x20 cm / 8x8″"
+            }
+          ],
+          "media": {
+            "nodes": [
+              {
+                "id": "gid://shopify/MediaImage/73110249734488",
+                "alt": "89156a08-606e-4270-ba37-beae7809755b"
+              }
+            ]
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57945652232536",
+          "title": "Horizontal / Slim / 20x25 cm / 8x10″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Horizontal"
+            },
+            {
+              "name": "Thickness",
+              "value": "Slim"
+            },
+            {
+              "name": "Size",
+              "value": "20x25 cm / 8x10″"
+            }
+          ],
+          "media": {
+            "nodes": [
+              {
+                "id": "gid://shopify/MediaImage/73110250226008",
+                "alt": "387cc6f1-6093-40a1-929a-9e71c723d70e"
+              }
+            ]
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57945652265304",
+          "title": "Horizontal / Slim / 20x30 cm / 8x12″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Horizontal"
+            },
+            {
+              "name": "Thickness",
+              "value": "Slim"
+            },
+            {
+              "name": "Size",
+              "value": "20x30 cm / 8x12″"
+            }
+          ],
+          "media": {
+            "nodes": [
+              {
+                "id": "gid://shopify/MediaImage/73110250258776",
+                "alt": "e1fb1f4e-74c2-429a-8286-cbf2b928e016"
+              }
+            ]
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57945652298072",
+          "title": "Horizontal / Slim / 20x60 cm / 8x24″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Horizontal"
+            },
+            {
+              "name": "Thickness",
+              "value": "Slim"
+            },
+            {
+              "name": "Size",
+              "value": "20x60 cm / 8x24″"
+            }
+          ],
+          "media": {
+            "nodes": [
+              {
+                "id": "gid://shopify/MediaImage/73110249996632",
+                "alt": "f5557615-1f72-402c-b3dc-a9e629461701"
+              }
+            ]
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57945652330840",
+          "title": "Horizontal / Slim / 27x35 cm / 11x14″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Horizontal"
+            },
+            {
+              "name": "Thickness",
+              "value": "Slim"
+            },
+            {
+              "name": "Size",
+              "value": "27x35 cm / 11x14″"
+            }
+          ],
+          "media": {
+            "nodes": [
+              {
+                "id": "gid://shopify/MediaImage/73110249832792",
+                "alt": "dc52ae7c-6ffe-4f0d-a032-ed182d5ed591"
+              }
+            ]
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57945652363608",
+          "title": "Horizontal / Slim / 30x30 cm / 12x12″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Horizontal"
+            },
+            {
+              "name": "Thickness",
+              "value": "Slim"
+            },
+            {
+              "name": "Size",
+              "value": "30x30 cm / 12x12″"
+            }
+          ],
+          "media": {
+            "nodes": [
+              {
+                "id": "gid://shopify/MediaImage/73110249898328",
+                "alt": "e60c4db1-890d-4de1-9d0e-c013345edc04"
+              }
+            ]
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57945652396376",
+          "title": "Horizontal / Slim / 30x40 cm / 12x16″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Horizontal"
+            },
+            {
+              "name": "Thickness",
+              "value": "Slim"
+            },
+            {
+              "name": "Size",
+              "value": "30x40 cm / 12x16″"
+            }
+          ],
+          "media": {
+            "nodes": [
+              {
+                "id": "gid://shopify/MediaImage/73110249931096",
+                "alt": "ef0d1410-8a7b-4c46-aeee-bdcfde7e8f46"
+              }
+            ]
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57945652429144",
+          "title": "Horizontal / Slim / 30x45 cm / 12x18″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Horizontal"
+            },
+            {
+              "name": "Thickness",
+              "value": "Slim"
+            },
+            {
+              "name": "Size",
+              "value": "30x45 cm / 12x18″"
+            }
+          ],
+          "media": {
+            "nodes": [
+              {
+                "id": "gid://shopify/MediaImage/73110250291544",
+                "alt": "6c81a7a6-dc50-4114-b2d7-22213d55d461"
+              }
+            ]
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57945652461912",
+          "title": "Horizontal / Slim / 30x60 cm / 12x24″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Horizontal"
+            },
+            {
+              "name": "Thickness",
+              "value": "Slim"
+            },
+            {
+              "name": "Size",
+              "value": "30x60 cm / 12x24″"
+            }
+          ],
+          "media": {
+            "nodes": [
+              {
+                "id": "gid://shopify/MediaImage/73110249701720",
+                "alt": "2066f4cb-6d84-45d3-a51d-27635669efd3"
+              }
+            ]
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57945652494680",
+          "title": "Horizontal / Slim / 30x90 cm / 12x36″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Horizontal"
+            },
+            {
+              "name": "Thickness",
+              "value": "Slim"
+            },
+            {
+              "name": "Size",
+              "value": "30x90 cm / 12x36″"
+            }
+          ],
+          "media": {
+            "nodes": [
+              {
+                "id": "gid://shopify/MediaImage/73110250127704",
+                "alt": "a8c1999f-f755-4ebf-92a8-5081cd5cd859"
+              }
+            ]
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57945652527448",
+          "title": "Horizontal / Slim / 30x100 cm / 12x40″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Horizontal"
+            },
+            {
+              "name": "Thickness",
+              "value": "Slim"
+            },
+            {
+              "name": "Size",
+              "value": "30x100 cm / 12x40″"
+            }
+          ],
+          "media": {
+            "nodes": [
+              {
+                "id": "gid://shopify/MediaImage/73110250193240",
+                "alt": "c42a8aa6-7f5b-4a7e-aeac-2c67e940b8c0"
+              }
+            ]
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57945652560216",
+          "title": "Horizontal / Slim / 40x40 cm / 16x16″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Horizontal"
+            },
+            {
+              "name": "Thickness",
+              "value": "Slim"
+            },
+            {
+              "name": "Size",
+              "value": "40x40 cm / 16x16″"
+            }
+          ],
+          "media": {
+            "nodes": [
+              {
+                "id": "gid://shopify/MediaImage/73110250160472",
+                "alt": "63bf54f1-83d5-4639-9e32-db4dba8b14e0"
+              }
+            ]
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57945652592984",
+          "title": "Horizontal / Slim / 40x50 cm / 16x20″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Horizontal"
+            },
+            {
+              "name": "Thickness",
+              "value": "Slim"
+            },
+            {
+              "name": "Size",
+              "value": "40x50 cm / 16x20″"
+            }
+          ],
+          "media": {
+            "nodes": [
+              {
+                "id": "gid://shopify/MediaImage/73110250324312",
+                "alt": "4cca0534-85cd-4236-b2a5-5e4758946b5a"
+              }
+            ]
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57945652625752",
+          "title": "Horizontal / Slim / 40x60 cm / 16x24″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Horizontal"
+            },
+            {
+              "name": "Thickness",
+              "value": "Slim"
+            },
+            {
+              "name": "Size",
+              "value": "40x60 cm / 16x24″"
+            }
+          ],
+          "media": {
+            "nodes": [
+              {
+                "id": "gid://shopify/MediaImage/73110249668952",
+                "alt": "e69b0da9-402a-4e76-b72f-699d17cd7fdb"
+              }
+            ]
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57945652658520",
+          "title": "Horizontal / Slim / 40x80 cm / 16x32″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Horizontal"
+            },
+            {
+              "name": "Thickness",
+              "value": "Slim"
+            },
+            {
+              "name": "Size",
+              "value": "40x80 cm / 16x32″"
+            }
+          ],
+          "media": {
+            "nodes": [
+              {
+                "id": "gid://shopify/MediaImage/73110249963864",
+                "alt": "fe65ce44-5951-4d13-8ce8-0f36e51f5170"
+              }
+            ]
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57945652691288",
+          "title": "Horizontal / Slim / 45x60 cm / 18x24″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Horizontal"
+            },
+            {
+              "name": "Thickness",
+              "value": "Slim"
+            },
+            {
+              "name": "Size",
+              "value": "45x60 cm / 18x24″"
+            }
+          ],
+          "media": {
+            "nodes": [
+              {
+                "id": "gid://shopify/MediaImage/73110249800024",
+                "alt": "cfdca59f-47d0-4833-bcc6-54b68a7fa5b8"
+              }
+            ]
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57945652724056",
+          "title": "Horizontal / Slim / 50x50 cm / 20x20″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Horizontal"
+            },
+            {
+              "name": "Thickness",
+              "value": "Slim"
+            },
+            {
+              "name": "Size",
+              "value": "50x50 cm / 20x20″"
+            }
+          ],
+          "media": {
+            "nodes": [
+              {
+                "id": "gid://shopify/MediaImage/73110250881368",
+                "alt": "7f43b311-4205-4e91-ab95-61e1bc7205f8"
+              }
+            ]
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57945652756824",
+          "title": "Horizontal / Slim / 50x60 cm / 20x24″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Horizontal"
+            },
+            {
+              "name": "Thickness",
+              "value": "Slim"
+            },
+            {
+              "name": "Size",
+              "value": "50x60 cm / 20x24″"
+            }
+          ],
+          "media": {
+            "nodes": [
+              {
+                "id": "gid://shopify/MediaImage/73110250651992",
+                "alt": "0cca016a-e0c9-4c85-9014-8c061b5f71e5"
+              }
+            ]
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57945652789592",
+          "title": "Horizontal / Slim / 50x70 cm / 20x28″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Horizontal"
+            },
+            {
+              "name": "Thickness",
+              "value": "Slim"
+            },
+            {
+              "name": "Size",
+              "value": "50x70 cm / 20x28″"
+            }
+          ],
+          "media": {
+            "nodes": [
+              {
+                "id": "gid://shopify/MediaImage/73110251274584",
+                "alt": "24c1cc1b-b72e-4a56-ad65-2be0a9c46636"
+              }
+            ]
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57945652822360",
+          "title": "Horizontal / Slim / 50x75 cm / 20x30″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Horizontal"
+            },
+            {
+              "name": "Thickness",
+              "value": "Slim"
+            },
+            {
+              "name": "Size",
+              "value": "50x75 cm / 20x30″"
+            }
+          ],
+          "media": {
+            "nodes": [
+              {
+                "id": "gid://shopify/MediaImage/73110251241816",
+                "alt": "511c8813-3901-46ee-8482-d294a7fa7417"
+              }
+            ]
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57945652855128",
+          "title": "Horizontal / Slim / 50x100 cm / 20x40″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Horizontal"
+            },
+            {
+              "name": "Thickness",
+              "value": "Slim"
+            },
+            {
+              "name": "Size",
+              "value": "50x100 cm / 20x40″"
+            }
+          ],
+          "media": {
+            "nodes": [
+              {
+                "id": "gid://shopify/MediaImage/73110250619224",
+                "alt": "1b355eda-972e-4837-9066-f2250ab876d8"
+              }
+            ]
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57945652887896",
+          "title": "Horizontal / Slim / 60x60 cm / 24x24″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Horizontal"
+            },
+            {
+              "name": "Thickness",
+              "value": "Slim"
+            },
+            {
+              "name": "Size",
+              "value": "60x60 cm / 24x24″"
+            }
+          ],
+          "media": {
+            "nodes": [
+              {
+                "id": "gid://shopify/MediaImage/73110250979672",
+                "alt": "9aa0eeb7-694e-4944-92fe-25ec558a7cb8"
+              }
+            ]
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57945652920664",
+          "title": "Horizontal / Slim / 60x75 cm / 24x30″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Horizontal"
+            },
+            {
+              "name": "Thickness",
+              "value": "Slim"
+            },
+            {
+              "name": "Size",
+              "value": "60x75 cm / 24x30″"
+            }
+          ],
+          "media": {
+            "nodes": [
+              {
+                "id": "gid://shopify/MediaImage/73110250750296",
+                "alt": "f5011013-9eb7-4c88-9286-e3e092c88033"
+              }
+            ]
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57945652953432",
+          "title": "Horizontal / Slim / 60x80 cm / 24x32″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Horizontal"
+            },
+            {
+              "name": "Thickness",
+              "value": "Slim"
+            },
+            {
+              "name": "Size",
+              "value": "60x80 cm / 24x32″"
+            }
+          ],
+          "media": {
+            "nodes": [
+              {
+                "id": "gid://shopify/MediaImage/73110250815832",
+                "alt": "0432b694-0ba9-4cc4-a134-769e0fb2656f"
+              }
+            ]
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57945652986200",
+          "title": "Horizontal / Slim / 60x90 cm / 24x36″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Horizontal"
+            },
+            {
+              "name": "Thickness",
+              "value": "Slim"
+            },
+            {
+              "name": "Size",
+              "value": "60x90 cm / 24x36″"
+            }
+          ],
+          "media": {
+            "nodes": [
+              {
+                "id": "gid://shopify/MediaImage/73110251110744",
+                "alt": "e8b32729-ea22-4865-b904-5237ffdce2ff"
+              }
+            ]
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57945653018968",
+          "title": "Horizontal / Slim / 70x100 cm / 28x40″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Horizontal"
+            },
+            {
+              "name": "Thickness",
+              "value": "Slim"
+            },
+            {
+              "name": "Size",
+              "value": "70x100 cm / 28x40″"
+            }
+          ],
+          "media": {
+            "nodes": [
+              {
+                "id": "gid://shopify/MediaImage/73110250455384",
+                "alt": "8130d170-077f-4e88-b031-75c34b398a77"
+              }
+            ]
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57946537722200",
+          "title": "Horizontal / Thick / 20x20 cm / 8x8″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Horizontal"
+            },
+            {
+              "name": "Thickness",
+              "value": "Thick"
+            },
+            {
+              "name": "Size",
+              "value": "20x20 cm / 8x8″"
+            }
+          ],
+          "media": {
+            "nodes": [
+              {
+                "id": "gid://shopify/MediaImage/73110250488152",
+                "alt": "fcfd8d12-50ac-4874-bbc8-8dcf48abe753"
+              }
+            ]
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57946537754968",
+          "title": "Horizontal / Thick / 20x25 cm / 8x10″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Horizontal"
+            },
+            {
+              "name": "Thickness",
+              "value": "Thick"
+            },
+            {
+              "name": "Size",
+              "value": "20x25 cm / 8x10″"
+            }
+          ],
+          "media": {
+            "nodes": [
+              {
+                "id": "gid://shopify/MediaImage/73110251176280",
+                "alt": "64d5ae33-6de8-41f9-bd94-5c7453aadd92"
+              }
+            ]
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57946537787736",
+          "title": "Horizontal / Thick / 20x30 cm / 8x12″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Horizontal"
+            },
+            {
+              "name": "Thickness",
+              "value": "Thick"
+            },
+            {
+              "name": "Size",
+              "value": "20x30 cm / 8x12″"
+            }
+          ],
+          "media": {
+            "nodes": [
+              {
+                "id": "gid://shopify/MediaImage/73110250520920",
+                "alt": "d0dc77e6-2349-4ec2-bd34-a3d7575bf425"
+              }
+            ]
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57946537820504",
+          "title": "Horizontal / Thick / 20x60 cm / 8x24″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Horizontal"
+            },
+            {
+              "name": "Thickness",
+              "value": "Thick"
+            },
+            {
+              "name": "Size",
+              "value": "20x60 cm / 8x24″"
+            }
+          ],
+          "media": {
+            "nodes": [
+              {
+                "id": "gid://shopify/MediaImage/73110251372888",
+                "alt": "f3bacbf3-3173-4f6d-b15a-487604f4ce66"
+              }
+            ]
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57946537853272",
+          "title": "Horizontal / Thick / 27x35 cm / 11x14″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Horizontal"
+            },
+            {
+              "name": "Thickness",
+              "value": "Thick"
+            },
+            {
+              "name": "Size",
+              "value": "27x35 cm / 11x14″"
+            }
+          ],
+          "media": {
+            "nodes": [
+              {
+                "id": "gid://shopify/MediaImage/73110250783064",
+                "alt": "ce922265-9d4d-4572-a810-c292aff968b1"
+              }
+            ]
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57946537886040",
+          "title": "Horizontal / Thick / 30x30 cm / 12x12″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Horizontal"
+            },
+            {
+              "name": "Thickness",
+              "value": "Thick"
+            },
+            {
+              "name": "Size",
+              "value": "30x30 cm / 12x12″"
+            }
+          ],
+          "media": {
+            "nodes": [
+              {
+                "id": "gid://shopify/MediaImage/73110251209048",
+                "alt": "c1c4ee36-bdc5-42dd-8920-f09357d6059c"
+              }
+            ]
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57946537918808",
+          "title": "Horizontal / Thick / 30x40 cm / 12x16″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Horizontal"
+            },
+            {
+              "name": "Thickness",
+              "value": "Thick"
+            },
+            {
+              "name": "Size",
+              "value": "30x40 cm / 12x16″"
+            }
+          ],
+          "media": {
+            "nodes": [
+              {
+                "id": "gid://shopify/MediaImage/73110250553688",
+                "alt": "8e8e6d02-db98-475d-a4ce-199ccf7cb726"
+              }
+            ]
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57946537951576",
+          "title": "Horizontal / Thick / 30x45 cm / 12x18″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Horizontal"
+            },
+            {
+              "name": "Thickness",
+              "value": "Thick"
+            },
+            {
+              "name": "Size",
+              "value": "30x45 cm / 12x18″"
+            }
+          ],
+          "media": {
+            "nodes": [
+              {
+                "id": "gid://shopify/MediaImage/73110250717528",
+                "alt": "513ce2e1-fe42-4190-812a-dc41fa354333"
+              }
+            ]
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57946537984344",
+          "title": "Horizontal / Thick / 30x60 cm / 12x24″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Horizontal"
+            },
+            {
+              "name": "Thickness",
+              "value": "Thick"
+            },
+            {
+              "name": "Size",
+              "value": "30x60 cm / 12x24″"
+            }
+          ],
+          "media": {
+            "nodes": [
+              {
+                "id": "gid://shopify/MediaImage/73110250684760",
+                "alt": "6f9fd3ce-b764-479f-90b0-46572dcfa331"
+              }
+            ]
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57946538017112",
+          "title": "Horizontal / Thick / 30x90 cm / 12x36″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Horizontal"
+            },
+            {
+              "name": "Thickness",
+              "value": "Thick"
+            },
+            {
+              "name": "Size",
+              "value": "30x90 cm / 12x36″"
+            }
+          ],
+          "media": {
+            "nodes": [
+              {
+                "id": "gid://shopify/MediaImage/73110251307352",
+                "alt": "7336b946-c60b-4796-baa4-c7909b2c71d9"
+              }
+            ]
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57946538049880",
+          "title": "Horizontal / Thick / 30x100 cm / 12x40″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Horizontal"
+            },
+            {
+              "name": "Thickness",
+              "value": "Thick"
+            },
+            {
+              "name": "Size",
+              "value": "30x100 cm / 12x40″"
+            }
+          ],
+          "media": {
+            "nodes": [
+              {
+                "id": "gid://shopify/MediaImage/73110250848600",
+                "alt": "e0f96541-88b2-477f-ae0b-9c5c7f79cecc"
+              }
+            ]
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57946538082648",
+          "title": "Horizontal / Thick / 40x40 cm / 16x16″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Horizontal"
+            },
+            {
+              "name": "Thickness",
+              "value": "Thick"
+            },
+            {
+              "name": "Size",
+              "value": "40x40 cm / 16x16″"
+            }
+          ],
+          "media": {
+            "nodes": [
+              {
+                "id": "gid://shopify/MediaImage/73110251340120",
+                "alt": "90e6f6e1-98b4-49ef-b8ea-57d543375060"
+              }
+            ]
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57946538115416",
+          "title": "Horizontal / Thick / 40x50 cm / 16x20″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Horizontal"
+            },
+            {
+              "name": "Thickness",
+              "value": "Thick"
+            },
+            {
+              "name": "Size",
+              "value": "40x50 cm / 16x20″"
+            }
+          ],
+          "media": {
+            "nodes": [
+              {
+                "id": "gid://shopify/MediaImage/73110251045208",
+                "alt": "4ca26977-7b0e-4658-982b-a5a6cf2434a2"
+              }
+            ]
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57946538148184",
+          "title": "Horizontal / Thick / 40x60 cm / 16x24″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Horizontal"
+            },
+            {
+              "name": "Thickness",
+              "value": "Thick"
+            },
+            {
+              "name": "Size",
+              "value": "40x60 cm / 16x24″"
+            }
+          ],
+          "media": {
+            "nodes": [
+              {
+                "id": "gid://shopify/MediaImage/73110250586456",
+                "alt": "6b34645e-a083-4a8e-a627-fa8f77b974f2"
+              }
+            ]
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57946538180952",
+          "title": "Horizontal / Thick / 40x80 cm / 16x32″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Horizontal"
+            },
+            {
+              "name": "Thickness",
+              "value": "Thick"
+            },
+            {
+              "name": "Size",
+              "value": "40x80 cm / 16x32″"
+            }
+          ],
+          "media": {
+            "nodes": [
+              {
+                "id": "gid://shopify/MediaImage/73110250422616",
+                "alt": "7849a714-3f4d-4c03-9ebf-d7cc401af9af"
+              }
+            ]
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57946538213720",
+          "title": "Horizontal / Thick / 45x60 cm / 18x24″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Horizontal"
+            },
+            {
+              "name": "Thickness",
+              "value": "Thick"
+            },
+            {
+              "name": "Size",
+              "value": "45x60 cm / 18x24″"
+            }
+          ],
+          "media": {
+            "nodes": [
+              {
+                "id": "gid://shopify/MediaImage/73110250914136",
+                "alt": "229fb350-f2dc-43bb-8a58-5dc4c71e0c06"
+              }
+            ]
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57946538246488",
+          "title": "Horizontal / Thick / 50x50 cm / 20x20″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Horizontal"
+            },
+            {
+              "name": "Thickness",
+              "value": "Thick"
+            },
+            {
+              "name": "Size",
+              "value": "50x50 cm / 20x20″"
+            }
+          ],
+          "media": {
+            "nodes": [
+              {
+                "id": "gid://shopify/MediaImage/73110250357080",
+                "alt": "390e7ffc-8bc1-49b6-99e0-ced14cf6f7c3"
+              }
+            ]
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57946538279256",
+          "title": "Horizontal / Thick / 50x60 cm / 20x24″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Horizontal"
+            },
+            {
+              "name": "Thickness",
+              "value": "Thick"
+            },
+            {
+              "name": "Size",
+              "value": "50x60 cm / 20x24″"
+            }
+          ],
+          "media": {
+            "nodes": [
+              {
+                "id": "gid://shopify/MediaImage/73110251012440",
+                "alt": "a6c24a92-4fec-4035-95fe-381a4d8dbf9a"
+              }
+            ]
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57946538312024",
+          "title": "Horizontal / Thick / 50x70 cm / 20x28″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Horizontal"
+            },
+            {
+              "name": "Thickness",
+              "value": "Thick"
+            },
+            {
+              "name": "Size",
+              "value": "50x70 cm / 20x28″"
+            }
+          ],
+          "media": {
+            "nodes": [
+              {
+                "id": "gid://shopify/MediaImage/73110251077976",
+                "alt": "dd7d172a-d1fd-486d-8c95-7cac730ccae5"
+              }
+            ]
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57946538344792",
+          "title": "Horizontal / Thick / 50x75 cm / 20x30″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Horizontal"
+            },
+            {
+              "name": "Thickness",
+              "value": "Thick"
+            },
+            {
+              "name": "Size",
+              "value": "50x75 cm / 20x30″"
+            }
+          ],
+          "media": {
+            "nodes": [
+              {
+                "id": "gid://shopify/MediaImage/73110250389848",
+                "alt": "6cfbe86f-39e7-4d9f-b279-28b8a8baf404"
+              }
+            ]
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57946538377560",
+          "title": "Horizontal / Thick / 50x100 cm / 20x40″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Horizontal"
+            },
+            {
+              "name": "Thickness",
+              "value": "Thick"
+            },
+            {
+              "name": "Size",
+              "value": "50x100 cm / 20x40″"
+            }
+          ],
+          "media": {
+            "nodes": [
+              {
+                "id": "gid://shopify/MediaImage/73110250946904",
+                "alt": "d0537d15-4b2a-4d10-8ecf-c82cdf1bd678"
+              }
+            ]
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57946538410328",
+          "title": "Horizontal / Thick / 60x60 cm / 24x24″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Horizontal"
+            },
+            {
+              "name": "Thickness",
+              "value": "Thick"
+            },
+            {
+              "name": "Size",
+              "value": "60x60 cm / 24x24″"
+            }
+          ],
+          "media": {
+            "nodes": [
+              {
+                "id": "gid://shopify/MediaImage/73110251143512",
+                "alt": "d706964e-3297-4c26-b2cc-96eeb78c9521"
+              }
+            ]
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57946538443096",
+          "title": "Horizontal / Thick / 60x75 cm / 24x30″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Horizontal"
+            },
+            {
+              "name": "Thickness",
+              "value": "Thick"
+            },
+            {
+              "name": "Size",
+              "value": "60x75 cm / 24x30″"
+            }
+          ],
+          "media": {
+            "nodes": [
+              {
+                "id": "gid://shopify/MediaImage/73110251471192",
+                "alt": "aed02582-516c-4302-adc1-a4a7c0f6a77a"
+              }
+            ]
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57946538475864",
+          "title": "Horizontal / Thick / 60x80 cm / 24x32″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Horizontal"
+            },
+            {
+              "name": "Thickness",
+              "value": "Thick"
+            },
+            {
+              "name": "Size",
+              "value": "60x80 cm / 24x32″"
+            }
+          ],
+          "media": {
+            "nodes": [
+              {
+                "id": "gid://shopify/MediaImage/73110251503960",
+                "alt": "986bda38-49f4-4a39-bd33-68149818bbb2"
+              }
+            ]
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57946538508632",
+          "title": "Horizontal / Thick / 60x90 cm / 24x36″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Horizontal"
+            },
+            {
+              "name": "Thickness",
+              "value": "Thick"
+            },
+            {
+              "name": "Size",
+              "value": "60x90 cm / 24x36″"
+            }
+          ],
+          "media": {
+            "nodes": [
+              {
+                "id": "gid://shopify/MediaImage/73110251405656",
+                "alt": "40596877-df3c-4411-b476-09b1f2cfe8bc"
+              }
+            ]
+          }
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57946538541400",
+          "title": "Horizontal / Thick / 70x100 cm / 28x40″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Horizontal"
+            },
+            {
+              "name": "Thickness",
+              "value": "Thick"
+            },
+            {
+              "name": "Size",
+              "value": "70x100 cm / 28x40″"
+            }
+          ],
+          "media": {
+            "nodes": [
+              {
+                "id": "gid://shopify/MediaImage/73110251438424",
+                "alt": "f2415dfe-62a7-4b56-b2b8-405d2301036c"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

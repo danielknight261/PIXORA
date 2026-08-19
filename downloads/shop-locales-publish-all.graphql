@@ -1,0 +1,30 @@
+mutation PublishLocales {
+  enUS: shopLocaleUpdate(locale: "en-US", shopLocale: { published: true }) {
+    shopLocale { locale name published }
+    userErrors { field message }
+  }
+  enCA: shopLocaleUpdate(locale: "en-CA", shopLocale: { published: true }) {
+    shopLocale { locale name published }
+    userErrors { field message }
+  }
+  fr: shopLocaleUpdate(locale: "fr", shopLocale: { published: true }) {
+    shopLocale { locale name published }
+    userErrors { field message }
+  }
+  de: shopLocaleUpdate(locale: "de", shopLocale: { published: true }) {
+    shopLocale { locale name published }
+    userErrors { field message }
+  }
+  es: shopLocaleUpdate(locale: "es", shopLocale: { published: true }) {
+    shopLocale { locale name published }
+    userErrors { field message }
+  }
+  it: shopLocaleUpdate(locale: "it", shopLocale: { published: true }) {
+    shopLocale { locale name published }
+    userErrors { field message }
+  }
+  nl: shopLocaleUpdate(locale: "nl", shopLocale: { published: true }) {
+    shopLocale { locale name published }
+    userErrors { field message }
+  }
+}

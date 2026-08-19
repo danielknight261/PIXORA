@@ -1,0 +1,11 @@
+query {
+  shop {
+    name
+    myshopifyDomain
+    primaryDomain {
+      id
+      host
+      url
+    }
+  }
+}

@@ -1,0 +1,21 @@
+query {
+  product(id: "gid://shopify/Product/15928489378136") {
+    variants(first: 5) {
+      nodes {
+        id
+        title
+        media(first: 5) {
+          nodes {
+            ... on MediaImage {
+              id
+              alt
+              image {
+                url
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

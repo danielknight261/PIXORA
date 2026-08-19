@@ -1,0 +1,14 @@
+query {
+  markets(first: 50, query: "status:ACTIVE OR status:DRAFT") {
+    nodes {
+      id
+      name
+      status
+      primary
+      webPresence {
+        id
+        subfolderSuffix
+      }
+    }
+  }
+}

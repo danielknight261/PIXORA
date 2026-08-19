@@ -1,0 +1,30 @@
+mutation EnableLocales {
+  enUS: shopLocaleEnable(locale: "en-US") {
+    shopLocale { locale name published }
+    userErrors { field message }
+  }
+  enCA: shopLocaleEnable(locale: "en-CA") {
+    shopLocale { locale name published }
+    userErrors { field message }
+  }
+  fr: shopLocaleEnable(locale: "fr") {
+    shopLocale { locale name published }
+    userErrors { field message }
+  }
+  de: shopLocaleEnable(locale: "de") {
+    shopLocale { locale name published }
+    userErrors { field message }
+  }
+  es: shopLocaleEnable(locale: "es") {
+    shopLocale { locale name published }
+    userErrors { field message }
+  }
+  it: shopLocaleEnable(locale: "it") {
+    shopLocale { locale name published }
+    userErrors { field message }
+  }
+  nl: shopLocaleEnable(locale: "nl") {
+    shopLocale { locale name published }
+    userErrors { field message }
+  }
+}

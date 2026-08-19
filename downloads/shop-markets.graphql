@@ -1,0 +1,34 @@
+query {
+  markets(first: 25) {
+    nodes {
+      id
+      name
+      handle
+      status
+      primary
+      webPresence {
+        id
+        domain {
+          host
+        }
+        defaultLocale {
+          locale
+        }
+        alternateLocales {
+          locale
+        }
+        subfolderSuffix
+        rootUrls {
+          locale
+          url
+        }
+      }
+    }
+  }
+  shopLocales {
+    locale
+    name
+    published
+    primary
+  }
+}

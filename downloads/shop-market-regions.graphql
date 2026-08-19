@@ -1,0 +1,20 @@
+query {
+  markets(first: 25) {
+    nodes {
+      id
+      name
+      handle
+      primary
+      status
+      regions(first: 50) {
+        nodes {
+          id
+          name
+          ... on MarketRegionCountry {
+            code
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,34 @@
+mutation CreateNaWebPresence {
+  marketWebPresenceCreate(
+    marketId: "gid://shopify/Market/109765755224"
+    webPresence: {
+      defaultLocale: "en"
+      alternateLocales: ["fr"]
+      subfolderSuffix: "na"
+    }
+  ) {
+    userErrors {
+      field
+      message
+      code
+    }
+    market {
+      id
+      name
+      webPresence {
+        id
+        subfolderSuffix
+        defaultLocale {
+          locale
+        }
+        alternateLocales {
+          locale
+        }
+        rootUrls {
+          locale
+          url
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,6 @@
+query {
+  product(id: "gid://shopify/Product/15928489378136") {
+    id handle title status totalVariants
+    options { name }
+  }
+}

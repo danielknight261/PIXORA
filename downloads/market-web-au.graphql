@@ -1,0 +1,33 @@
+mutation CreateAuWebPresence {
+  marketWebPresenceCreate(
+    marketId: "gid://shopify/Market/109765820760"
+    webPresence: {
+      defaultLocale: "en"
+      subfolderSuffix: "au"
+    }
+  ) {
+    userErrors {
+      field
+      message
+      code
+    }
+    market {
+      id
+      name
+      webPresence {
+        id
+        subfolderSuffix
+        defaultLocale {
+          locale
+        }
+        alternateLocales {
+          locale
+        }
+        rootUrls {
+          locale
+          url
+        }
+      }
+    }
+  }
+}

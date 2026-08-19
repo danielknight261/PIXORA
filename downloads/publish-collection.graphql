@@ -1,0 +1,6 @@
+mutation {
+  publishablePublish(id: "gid://shopify/Collection/687120449880", input: [{publicationId: "gid://shopify/Publication/333315113304"}]) {
+    publishable { ... on Collection { id handle } }
+    userErrors { field message }
+  }
+}

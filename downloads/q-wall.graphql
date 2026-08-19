@@ -1,0 +1,8 @@
+query {
+  collectionByHandle(handle: "wall-art") {
+    id
+    handle
+    title
+  }
+  publications(first: 5) { nodes { id name } }
+}

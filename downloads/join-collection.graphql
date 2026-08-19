@@ -1,0 +1,12 @@
+mutation {
+  productUpdate(product: {
+    id: "gid://shopify/Product/15928489378136"
+    collectionsToJoin: ["gid://shopify/Collection/687120449880"]
+  }) {
+    product {
+      id
+      collections(first: 5) { nodes { handle title } }
+    }
+    userErrors { field message }
+  }
+}

@@ -1,0 +1,15 @@
+query Policies {
+  translatableResources(first: 20, resourceType: SHOP_POLICY) {
+    edges {
+      node {
+        resourceId
+        translatableContent {
+          key
+          value
+          digest
+          locale
+        }
+      }
+    }
+  }
+}

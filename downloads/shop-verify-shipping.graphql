@@ -1,0 +1,7 @@
+query VerifyShipping {
+  page: translatableResource(resourceId: "gid://shopify/Page/165233721688") {
+    translatableContent { key value }
+    fr: translations(locale: "fr") { key value }
+    de: translations(locale: "de") { key value }
+  }
+}

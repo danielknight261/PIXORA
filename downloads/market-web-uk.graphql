@@ -1,0 +1,33 @@
+mutation CreateUkWebPresence {
+  marketWebPresenceCreate(
+    marketId: "gid://shopify/Market/109665223000"
+    webPresence: {
+      defaultLocale: "en"
+      domainId: "gid://shopify/Domain/186560610648"
+    }
+  ) {
+    userErrors {
+      field
+      message
+      code
+    }
+    market {
+      id
+      name
+      webPresence {
+        id
+        subfolderSuffix
+        defaultLocale {
+          locale
+        }
+        alternateLocales {
+          locale
+        }
+        rootUrls {
+          locale
+          url
+        }
+      }
+    }
+  }
+}

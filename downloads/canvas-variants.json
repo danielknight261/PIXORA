@@ -1,0 +1,1881 @@
+{
+  "product": {
+    "id": "gid://shopify/Product/15928489378136",
+    "variants": {
+      "nodes": [
+        {
+          "id": "gid://shopify/ProductVariant/57944931139928",
+          "title": "Vertical / Slim / 20x20 cm / 8x8″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Vertical"
+            },
+            {
+              "name": "Thickness",
+              "value": "Slim"
+            },
+            {
+              "name": "Size",
+              "value": "20x20 cm / 8x8″"
+            }
+          ]
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57945651380568",
+          "title": "Vertical / Slim / 20x25 cm / 8x10″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Vertical"
+            },
+            {
+              "name": "Thickness",
+              "value": "Slim"
+            },
+            {
+              "name": "Size",
+              "value": "20x25 cm / 8x10″"
+            }
+          ]
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57945651413336",
+          "title": "Vertical / Slim / 20x30 cm / 8x12″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Vertical"
+            },
+            {
+              "name": "Thickness",
+              "value": "Slim"
+            },
+            {
+              "name": "Size",
+              "value": "20x30 cm / 8x12″"
+            }
+          ]
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57945651446104",
+          "title": "Vertical / Slim / 20x60 cm / 8x24″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Vertical"
+            },
+            {
+              "name": "Thickness",
+              "value": "Slim"
+            },
+            {
+              "name": "Size",
+              "value": "20x60 cm / 8x24″"
+            }
+          ]
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57945651478872",
+          "title": "Vertical / Slim / 27x35 cm / 11x14″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Vertical"
+            },
+            {
+              "name": "Thickness",
+              "value": "Slim"
+            },
+            {
+              "name": "Size",
+              "value": "27x35 cm / 11x14″"
+            }
+          ]
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57945651511640",
+          "title": "Vertical / Slim / 30x30 cm / 12x12″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Vertical"
+            },
+            {
+              "name": "Thickness",
+              "value": "Slim"
+            },
+            {
+              "name": "Size",
+              "value": "30x30 cm / 12x12″"
+            }
+          ]
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57945651544408",
+          "title": "Vertical / Slim / 30x40 cm / 12x16″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Vertical"
+            },
+            {
+              "name": "Thickness",
+              "value": "Slim"
+            },
+            {
+              "name": "Size",
+              "value": "30x40 cm / 12x16″"
+            }
+          ]
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57945651577176",
+          "title": "Vertical / Slim / 30x45 cm / 12x18″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Vertical"
+            },
+            {
+              "name": "Thickness",
+              "value": "Slim"
+            },
+            {
+              "name": "Size",
+              "value": "30x45 cm / 12x18″"
+            }
+          ]
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57945651609944",
+          "title": "Vertical / Slim / 30x60 cm / 12x24″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Vertical"
+            },
+            {
+              "name": "Thickness",
+              "value": "Slim"
+            },
+            {
+              "name": "Size",
+              "value": "30x60 cm / 12x24″"
+            }
+          ]
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57945651642712",
+          "title": "Vertical / Slim / 30x90 cm / 12x36″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Vertical"
+            },
+            {
+              "name": "Thickness",
+              "value": "Slim"
+            },
+            {
+              "name": "Size",
+              "value": "30x90 cm / 12x36″"
+            }
+          ]
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57945651675480",
+          "title": "Vertical / Slim / 30x100 cm / 12x40″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Vertical"
+            },
+            {
+              "name": "Thickness",
+              "value": "Slim"
+            },
+            {
+              "name": "Size",
+              "value": "30x100 cm / 12x40″"
+            }
+          ]
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57945651708248",
+          "title": "Vertical / Slim / 40x40 cm / 16x16″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Vertical"
+            },
+            {
+              "name": "Thickness",
+              "value": "Slim"
+            },
+            {
+              "name": "Size",
+              "value": "40x40 cm / 16x16″"
+            }
+          ]
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57945651741016",
+          "title": "Vertical / Slim / 40x50 cm / 16x20″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Vertical"
+            },
+            {
+              "name": "Thickness",
+              "value": "Slim"
+            },
+            {
+              "name": "Size",
+              "value": "40x50 cm / 16x20″"
+            }
+          ]
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57945651773784",
+          "title": "Vertical / Slim / 40x60 cm / 16x24″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Vertical"
+            },
+            {
+              "name": "Thickness",
+              "value": "Slim"
+            },
+            {
+              "name": "Size",
+              "value": "40x60 cm / 16x24″"
+            }
+          ]
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57945651806552",
+          "title": "Vertical / Slim / 40x80 cm / 16x32″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Vertical"
+            },
+            {
+              "name": "Thickness",
+              "value": "Slim"
+            },
+            {
+              "name": "Size",
+              "value": "40x80 cm / 16x32″"
+            }
+          ]
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57945651839320",
+          "title": "Vertical / Slim / 45x60 cm / 18x24″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Vertical"
+            },
+            {
+              "name": "Thickness",
+              "value": "Slim"
+            },
+            {
+              "name": "Size",
+              "value": "45x60 cm / 18x24″"
+            }
+          ]
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57945651872088",
+          "title": "Vertical / Slim / 50x50 cm / 20x20″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Vertical"
+            },
+            {
+              "name": "Thickness",
+              "value": "Slim"
+            },
+            {
+              "name": "Size",
+              "value": "50x50 cm / 20x20″"
+            }
+          ]
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57945651904856",
+          "title": "Vertical / Slim / 50x60 cm / 20x24″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Vertical"
+            },
+            {
+              "name": "Thickness",
+              "value": "Slim"
+            },
+            {
+              "name": "Size",
+              "value": "50x60 cm / 20x24″"
+            }
+          ]
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57945651937624",
+          "title": "Vertical / Slim / 50x70 cm / 20x28″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Vertical"
+            },
+            {
+              "name": "Thickness",
+              "value": "Slim"
+            },
+            {
+              "name": "Size",
+              "value": "50x70 cm / 20x28″"
+            }
+          ]
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57945651970392",
+          "title": "Vertical / Slim / 50x75 cm / 20x30″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Vertical"
+            },
+            {
+              "name": "Thickness",
+              "value": "Slim"
+            },
+            {
+              "name": "Size",
+              "value": "50x75 cm / 20x30″"
+            }
+          ]
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57945652003160",
+          "title": "Vertical / Slim / 50x100 cm / 20x40″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Vertical"
+            },
+            {
+              "name": "Thickness",
+              "value": "Slim"
+            },
+            {
+              "name": "Size",
+              "value": "50x100 cm / 20x40″"
+            }
+          ]
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57945652035928",
+          "title": "Vertical / Slim / 60x60 cm / 24x24″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Vertical"
+            },
+            {
+              "name": "Thickness",
+              "value": "Slim"
+            },
+            {
+              "name": "Size",
+              "value": "60x60 cm / 24x24″"
+            }
+          ]
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57945652068696",
+          "title": "Vertical / Slim / 60x75 cm / 24x30″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Vertical"
+            },
+            {
+              "name": "Thickness",
+              "value": "Slim"
+            },
+            {
+              "name": "Size",
+              "value": "60x75 cm / 24x30″"
+            }
+          ]
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57945652101464",
+          "title": "Vertical / Slim / 60x80 cm / 24x32″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Vertical"
+            },
+            {
+              "name": "Thickness",
+              "value": "Slim"
+            },
+            {
+              "name": "Size",
+              "value": "60x80 cm / 24x32″"
+            }
+          ]
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57945652134232",
+          "title": "Vertical / Slim / 60x90 cm / 24x36″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Vertical"
+            },
+            {
+              "name": "Thickness",
+              "value": "Slim"
+            },
+            {
+              "name": "Size",
+              "value": "60x90 cm / 24x36″"
+            }
+          ]
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57945652167000",
+          "title": "Vertical / Slim / 70x100 cm / 28x40″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Vertical"
+            },
+            {
+              "name": "Thickness",
+              "value": "Slim"
+            },
+            {
+              "name": "Size",
+              "value": "70x100 cm / 28x40″"
+            }
+          ]
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57946536870232",
+          "title": "Vertical / Thick / 20x20 cm / 8x8″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Vertical"
+            },
+            {
+              "name": "Thickness",
+              "value": "Thick"
+            },
+            {
+              "name": "Size",
+              "value": "20x20 cm / 8x8″"
+            }
+          ]
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57946536903000",
+          "title": "Vertical / Thick / 20x25 cm / 8x10″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Vertical"
+            },
+            {
+              "name": "Thickness",
+              "value": "Thick"
+            },
+            {
+              "name": "Size",
+              "value": "20x25 cm / 8x10″"
+            }
+          ]
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57946536935768",
+          "title": "Vertical / Thick / 20x30 cm / 8x12″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Vertical"
+            },
+            {
+              "name": "Thickness",
+              "value": "Thick"
+            },
+            {
+              "name": "Size",
+              "value": "20x30 cm / 8x12″"
+            }
+          ]
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57946536968536",
+          "title": "Vertical / Thick / 20x60 cm / 8x24″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Vertical"
+            },
+            {
+              "name": "Thickness",
+              "value": "Thick"
+            },
+            {
+              "name": "Size",
+              "value": "20x60 cm / 8x24″"
+            }
+          ]
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57946537001304",
+          "title": "Vertical / Thick / 27x35 cm / 11x14″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Vertical"
+            },
+            {
+              "name": "Thickness",
+              "value": "Thick"
+            },
+            {
+              "name": "Size",
+              "value": "27x35 cm / 11x14″"
+            }
+          ]
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57946537034072",
+          "title": "Vertical / Thick / 30x30 cm / 12x12″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Vertical"
+            },
+            {
+              "name": "Thickness",
+              "value": "Thick"
+            },
+            {
+              "name": "Size",
+              "value": "30x30 cm / 12x12″"
+            }
+          ]
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57946537066840",
+          "title": "Vertical / Thick / 30x40 cm / 12x16″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Vertical"
+            },
+            {
+              "name": "Thickness",
+              "value": "Thick"
+            },
+            {
+              "name": "Size",
+              "value": "30x40 cm / 12x16″"
+            }
+          ]
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57946537099608",
+          "title": "Vertical / Thick / 30x45 cm / 12x18″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Vertical"
+            },
+            {
+              "name": "Thickness",
+              "value": "Thick"
+            },
+            {
+              "name": "Size",
+              "value": "30x45 cm / 12x18″"
+            }
+          ]
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57946537132376",
+          "title": "Vertical / Thick / 30x60 cm / 12x24″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Vertical"
+            },
+            {
+              "name": "Thickness",
+              "value": "Thick"
+            },
+            {
+              "name": "Size",
+              "value": "30x60 cm / 12x24″"
+            }
+          ]
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57946537165144",
+          "title": "Vertical / Thick / 30x90 cm / 12x36″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Vertical"
+            },
+            {
+              "name": "Thickness",
+              "value": "Thick"
+            },
+            {
+              "name": "Size",
+              "value": "30x90 cm / 12x36″"
+            }
+          ]
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57946537197912",
+          "title": "Vertical / Thick / 30x100 cm / 12x40″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Vertical"
+            },
+            {
+              "name": "Thickness",
+              "value": "Thick"
+            },
+            {
+              "name": "Size",
+              "value": "30x100 cm / 12x40″"
+            }
+          ]
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57946537230680",
+          "title": "Vertical / Thick / 40x40 cm / 16x16″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Vertical"
+            },
+            {
+              "name": "Thickness",
+              "value": "Thick"
+            },
+            {
+              "name": "Size",
+              "value": "40x40 cm / 16x16″"
+            }
+          ]
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57946537263448",
+          "title": "Vertical / Thick / 40x50 cm / 16x20″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Vertical"
+            },
+            {
+              "name": "Thickness",
+              "value": "Thick"
+            },
+            {
+              "name": "Size",
+              "value": "40x50 cm / 16x20″"
+            }
+          ]
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57946537296216",
+          "title": "Vertical / Thick / 40x60 cm / 16x24″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Vertical"
+            },
+            {
+              "name": "Thickness",
+              "value": "Thick"
+            },
+            {
+              "name": "Size",
+              "value": "40x60 cm / 16x24″"
+            }
+          ]
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57946537328984",
+          "title": "Vertical / Thick / 40x80 cm / 16x32″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Vertical"
+            },
+            {
+              "name": "Thickness",
+              "value": "Thick"
+            },
+            {
+              "name": "Size",
+              "value": "40x80 cm / 16x32″"
+            }
+          ]
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57946537361752",
+          "title": "Vertical / Thick / 45x60 cm / 18x24″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Vertical"
+            },
+            {
+              "name": "Thickness",
+              "value": "Thick"
+            },
+            {
+              "name": "Size",
+              "value": "45x60 cm / 18x24″"
+            }
+          ]
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57946537394520",
+          "title": "Vertical / Thick / 50x50 cm / 20x20″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Vertical"
+            },
+            {
+              "name": "Thickness",
+              "value": "Thick"
+            },
+            {
+              "name": "Size",
+              "value": "50x50 cm / 20x20″"
+            }
+          ]
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57946537427288",
+          "title": "Vertical / Thick / 50x60 cm / 20x24″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Vertical"
+            },
+            {
+              "name": "Thickness",
+              "value": "Thick"
+            },
+            {
+              "name": "Size",
+              "value": "50x60 cm / 20x24″"
+            }
+          ]
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57946537460056",
+          "title": "Vertical / Thick / 50x70 cm / 20x28″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Vertical"
+            },
+            {
+              "name": "Thickness",
+              "value": "Thick"
+            },
+            {
+              "name": "Size",
+              "value": "50x70 cm / 20x28″"
+            }
+          ]
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57946537492824",
+          "title": "Vertical / Thick / 50x75 cm / 20x30″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Vertical"
+            },
+            {
+              "name": "Thickness",
+              "value": "Thick"
+            },
+            {
+              "name": "Size",
+              "value": "50x75 cm / 20x30″"
+            }
+          ]
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57946537525592",
+          "title": "Vertical / Thick / 50x100 cm / 20x40″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Vertical"
+            },
+            {
+              "name": "Thickness",
+              "value": "Thick"
+            },
+            {
+              "name": "Size",
+              "value": "50x100 cm / 20x40″"
+            }
+          ]
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57946537558360",
+          "title": "Vertical / Thick / 60x60 cm / 24x24″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Vertical"
+            },
+            {
+              "name": "Thickness",
+              "value": "Thick"
+            },
+            {
+              "name": "Size",
+              "value": "60x60 cm / 24x24″"
+            }
+          ]
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57946537591128",
+          "title": "Vertical / Thick / 60x75 cm / 24x30″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Vertical"
+            },
+            {
+              "name": "Thickness",
+              "value": "Thick"
+            },
+            {
+              "name": "Size",
+              "value": "60x75 cm / 24x30″"
+            }
+          ]
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57946537623896",
+          "title": "Vertical / Thick / 60x80 cm / 24x32″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Vertical"
+            },
+            {
+              "name": "Thickness",
+              "value": "Thick"
+            },
+            {
+              "name": "Size",
+              "value": "60x80 cm / 24x32″"
+            }
+          ]
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57946537656664",
+          "title": "Vertical / Thick / 60x90 cm / 24x36″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Vertical"
+            },
+            {
+              "name": "Thickness",
+              "value": "Thick"
+            },
+            {
+              "name": "Size",
+              "value": "60x90 cm / 24x36″"
+            }
+          ]
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57946537689432",
+          "title": "Vertical / Thick / 70x100 cm / 28x40″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Vertical"
+            },
+            {
+              "name": "Thickness",
+              "value": "Thick"
+            },
+            {
+              "name": "Size",
+              "value": "70x100 cm / 28x40″"
+            }
+          ]
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57945652199768",
+          "title": "Horizontal / Slim / 20x20 cm / 8x8″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Horizontal"
+            },
+            {
+              "name": "Thickness",
+              "value": "Slim"
+            },
+            {
+              "name": "Size",
+              "value": "20x20 cm / 8x8″"
+            }
+          ]
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57945652232536",
+          "title": "Horizontal / Slim / 20x25 cm / 8x10″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Horizontal"
+            },
+            {
+              "name": "Thickness",
+              "value": "Slim"
+            },
+            {
+              "name": "Size",
+              "value": "20x25 cm / 8x10″"
+            }
+          ]
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57945652265304",
+          "title": "Horizontal / Slim / 20x30 cm / 8x12″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Horizontal"
+            },
+            {
+              "name": "Thickness",
+              "value": "Slim"
+            },
+            {
+              "name": "Size",
+              "value": "20x30 cm / 8x12″"
+            }
+          ]
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57945652298072",
+          "title": "Horizontal / Slim / 20x60 cm / 8x24″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Horizontal"
+            },
+            {
+              "name": "Thickness",
+              "value": "Slim"
+            },
+            {
+              "name": "Size",
+              "value": "20x60 cm / 8x24″"
+            }
+          ]
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57945652330840",
+          "title": "Horizontal / Slim / 27x35 cm / 11x14″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Horizontal"
+            },
+            {
+              "name": "Thickness",
+              "value": "Slim"
+            },
+            {
+              "name": "Size",
+              "value": "27x35 cm / 11x14″"
+            }
+          ]
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57945652363608",
+          "title": "Horizontal / Slim / 30x30 cm / 12x12″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Horizontal"
+            },
+            {
+              "name": "Thickness",
+              "value": "Slim"
+            },
+            {
+              "name": "Size",
+              "value": "30x30 cm / 12x12″"
+            }
+          ]
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57945652396376",
+          "title": "Horizontal / Slim / 30x40 cm / 12x16″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Horizontal"
+            },
+            {
+              "name": "Thickness",
+              "value": "Slim"
+            },
+            {
+              "name": "Size",
+              "value": "30x40 cm / 12x16″"
+            }
+          ]
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57945652429144",
+          "title": "Horizontal / Slim / 30x45 cm / 12x18″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Horizontal"
+            },
+            {
+              "name": "Thickness",
+              "value": "Slim"
+            },
+            {
+              "name": "Size",
+              "value": "30x45 cm / 12x18″"
+            }
+          ]
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57945652461912",
+          "title": "Horizontal / Slim / 30x60 cm / 12x24″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Horizontal"
+            },
+            {
+              "name": "Thickness",
+              "value": "Slim"
+            },
+            {
+              "name": "Size",
+              "value": "30x60 cm / 12x24″"
+            }
+          ]
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57945652494680",
+          "title": "Horizontal / Slim / 30x90 cm / 12x36″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Horizontal"
+            },
+            {
+              "name": "Thickness",
+              "value": "Slim"
+            },
+            {
+              "name": "Size",
+              "value": "30x90 cm / 12x36″"
+            }
+          ]
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57945652527448",
+          "title": "Horizontal / Slim / 30x100 cm / 12x40″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Horizontal"
+            },
+            {
+              "name": "Thickness",
+              "value": "Slim"
+            },
+            {
+              "name": "Size",
+              "value": "30x100 cm / 12x40″"
+            }
+          ]
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57945652560216",
+          "title": "Horizontal / Slim / 40x40 cm / 16x16″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Horizontal"
+            },
+            {
+              "name": "Thickness",
+              "value": "Slim"
+            },
+            {
+              "name": "Size",
+              "value": "40x40 cm / 16x16″"
+            }
+          ]
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57945652592984",
+          "title": "Horizontal / Slim / 40x50 cm / 16x20″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Horizontal"
+            },
+            {
+              "name": "Thickness",
+              "value": "Slim"
+            },
+            {
+              "name": "Size",
+              "value": "40x50 cm / 16x20″"
+            }
+          ]
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57945652625752",
+          "title": "Horizontal / Slim / 40x60 cm / 16x24″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Horizontal"
+            },
+            {
+              "name": "Thickness",
+              "value": "Slim"
+            },
+            {
+              "name": "Size",
+              "value": "40x60 cm / 16x24″"
+            }
+          ]
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57945652658520",
+          "title": "Horizontal / Slim / 40x80 cm / 16x32″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Horizontal"
+            },
+            {
+              "name": "Thickness",
+              "value": "Slim"
+            },
+            {
+              "name": "Size",
+              "value": "40x80 cm / 16x32″"
+            }
+          ]
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57945652691288",
+          "title": "Horizontal / Slim / 45x60 cm / 18x24″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Horizontal"
+            },
+            {
+              "name": "Thickness",
+              "value": "Slim"
+            },
+            {
+              "name": "Size",
+              "value": "45x60 cm / 18x24″"
+            }
+          ]
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57945652724056",
+          "title": "Horizontal / Slim / 50x50 cm / 20x20″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Horizontal"
+            },
+            {
+              "name": "Thickness",
+              "value": "Slim"
+            },
+            {
+              "name": "Size",
+              "value": "50x50 cm / 20x20″"
+            }
+          ]
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57945652756824",
+          "title": "Horizontal / Slim / 50x60 cm / 20x24″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Horizontal"
+            },
+            {
+              "name": "Thickness",
+              "value": "Slim"
+            },
+            {
+              "name": "Size",
+              "value": "50x60 cm / 20x24″"
+            }
+          ]
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57945652789592",
+          "title": "Horizontal / Slim / 50x70 cm / 20x28″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Horizontal"
+            },
+            {
+              "name": "Thickness",
+              "value": "Slim"
+            },
+            {
+              "name": "Size",
+              "value": "50x70 cm / 20x28″"
+            }
+          ]
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57945652822360",
+          "title": "Horizontal / Slim / 50x75 cm / 20x30″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Horizontal"
+            },
+            {
+              "name": "Thickness",
+              "value": "Slim"
+            },
+            {
+              "name": "Size",
+              "value": "50x75 cm / 20x30″"
+            }
+          ]
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57945652855128",
+          "title": "Horizontal / Slim / 50x100 cm / 20x40″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Horizontal"
+            },
+            {
+              "name": "Thickness",
+              "value": "Slim"
+            },
+            {
+              "name": "Size",
+              "value": "50x100 cm / 20x40″"
+            }
+          ]
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57945652887896",
+          "title": "Horizontal / Slim / 60x60 cm / 24x24″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Horizontal"
+            },
+            {
+              "name": "Thickness",
+              "value": "Slim"
+            },
+            {
+              "name": "Size",
+              "value": "60x60 cm / 24x24″"
+            }
+          ]
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57945652920664",
+          "title": "Horizontal / Slim / 60x75 cm / 24x30″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Horizontal"
+            },
+            {
+              "name": "Thickness",
+              "value": "Slim"
+            },
+            {
+              "name": "Size",
+              "value": "60x75 cm / 24x30″"
+            }
+          ]
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57945652953432",
+          "title": "Horizontal / Slim / 60x80 cm / 24x32″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Horizontal"
+            },
+            {
+              "name": "Thickness",
+              "value": "Slim"
+            },
+            {
+              "name": "Size",
+              "value": "60x80 cm / 24x32″"
+            }
+          ]
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57945652986200",
+          "title": "Horizontal / Slim / 60x90 cm / 24x36″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Horizontal"
+            },
+            {
+              "name": "Thickness",
+              "value": "Slim"
+            },
+            {
+              "name": "Size",
+              "value": "60x90 cm / 24x36″"
+            }
+          ]
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57945653018968",
+          "title": "Horizontal / Slim / 70x100 cm / 28x40″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Horizontal"
+            },
+            {
+              "name": "Thickness",
+              "value": "Slim"
+            },
+            {
+              "name": "Size",
+              "value": "70x100 cm / 28x40″"
+            }
+          ]
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57946537722200",
+          "title": "Horizontal / Thick / 20x20 cm / 8x8″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Horizontal"
+            },
+            {
+              "name": "Thickness",
+              "value": "Thick"
+            },
+            {
+              "name": "Size",
+              "value": "20x20 cm / 8x8″"
+            }
+          ]
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57946537754968",
+          "title": "Horizontal / Thick / 20x25 cm / 8x10″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Horizontal"
+            },
+            {
+              "name": "Thickness",
+              "value": "Thick"
+            },
+            {
+              "name": "Size",
+              "value": "20x25 cm / 8x10″"
+            }
+          ]
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57946537787736",
+          "title": "Horizontal / Thick / 20x30 cm / 8x12″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Horizontal"
+            },
+            {
+              "name": "Thickness",
+              "value": "Thick"
+            },
+            {
+              "name": "Size",
+              "value": "20x30 cm / 8x12″"
+            }
+          ]
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57946537820504",
+          "title": "Horizontal / Thick / 20x60 cm / 8x24″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Horizontal"
+            },
+            {
+              "name": "Thickness",
+              "value": "Thick"
+            },
+            {
+              "name": "Size",
+              "value": "20x60 cm / 8x24″"
+            }
+          ]
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57946537853272",
+          "title": "Horizontal / Thick / 27x35 cm / 11x14″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Horizontal"
+            },
+            {
+              "name": "Thickness",
+              "value": "Thick"
+            },
+            {
+              "name": "Size",
+              "value": "27x35 cm / 11x14″"
+            }
+          ]
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57946537886040",
+          "title": "Horizontal / Thick / 30x30 cm / 12x12″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Horizontal"
+            },
+            {
+              "name": "Thickness",
+              "value": "Thick"
+            },
+            {
+              "name": "Size",
+              "value": "30x30 cm / 12x12″"
+            }
+          ]
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57946537918808",
+          "title": "Horizontal / Thick / 30x40 cm / 12x16″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Horizontal"
+            },
+            {
+              "name": "Thickness",
+              "value": "Thick"
+            },
+            {
+              "name": "Size",
+              "value": "30x40 cm / 12x16″"
+            }
+          ]
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57946537951576",
+          "title": "Horizontal / Thick / 30x45 cm / 12x18″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Horizontal"
+            },
+            {
+              "name": "Thickness",
+              "value": "Thick"
+            },
+            {
+              "name": "Size",
+              "value": "30x45 cm / 12x18″"
+            }
+          ]
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57946537984344",
+          "title": "Horizontal / Thick / 30x60 cm / 12x24″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Horizontal"
+            },
+            {
+              "name": "Thickness",
+              "value": "Thick"
+            },
+            {
+              "name": "Size",
+              "value": "30x60 cm / 12x24″"
+            }
+          ]
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57946538017112",
+          "title": "Horizontal / Thick / 30x90 cm / 12x36″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Horizontal"
+            },
+            {
+              "name": "Thickness",
+              "value": "Thick"
+            },
+            {
+              "name": "Size",
+              "value": "30x90 cm / 12x36″"
+            }
+          ]
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57946538049880",
+          "title": "Horizontal / Thick / 30x100 cm / 12x40″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Horizontal"
+            },
+            {
+              "name": "Thickness",
+              "value": "Thick"
+            },
+            {
+              "name": "Size",
+              "value": "30x100 cm / 12x40″"
+            }
+          ]
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57946538082648",
+          "title": "Horizontal / Thick / 40x40 cm / 16x16″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Horizontal"
+            },
+            {
+              "name": "Thickness",
+              "value": "Thick"
+            },
+            {
+              "name": "Size",
+              "value": "40x40 cm / 16x16″"
+            }
+          ]
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57946538115416",
+          "title": "Horizontal / Thick / 40x50 cm / 16x20″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Horizontal"
+            },
+            {
+              "name": "Thickness",
+              "value": "Thick"
+            },
+            {
+              "name": "Size",
+              "value": "40x50 cm / 16x20″"
+            }
+          ]
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57946538148184",
+          "title": "Horizontal / Thick / 40x60 cm / 16x24″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Horizontal"
+            },
+            {
+              "name": "Thickness",
+              "value": "Thick"
+            },
+            {
+              "name": "Size",
+              "value": "40x60 cm / 16x24″"
+            }
+          ]
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57946538180952",
+          "title": "Horizontal / Thick / 40x80 cm / 16x32″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Horizontal"
+            },
+            {
+              "name": "Thickness",
+              "value": "Thick"
+            },
+            {
+              "name": "Size",
+              "value": "40x80 cm / 16x32″"
+            }
+          ]
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57946538213720",
+          "title": "Horizontal / Thick / 45x60 cm / 18x24″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Horizontal"
+            },
+            {
+              "name": "Thickness",
+              "value": "Thick"
+            },
+            {
+              "name": "Size",
+              "value": "45x60 cm / 18x24″"
+            }
+          ]
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57946538246488",
+          "title": "Horizontal / Thick / 50x50 cm / 20x20″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Horizontal"
+            },
+            {
+              "name": "Thickness",
+              "value": "Thick"
+            },
+            {
+              "name": "Size",
+              "value": "50x50 cm / 20x20″"
+            }
+          ]
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57946538279256",
+          "title": "Horizontal / Thick / 50x60 cm / 20x24″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Horizontal"
+            },
+            {
+              "name": "Thickness",
+              "value": "Thick"
+            },
+            {
+              "name": "Size",
+              "value": "50x60 cm / 20x24″"
+            }
+          ]
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57946538312024",
+          "title": "Horizontal / Thick / 50x70 cm / 20x28″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Horizontal"
+            },
+            {
+              "name": "Thickness",
+              "value": "Thick"
+            },
+            {
+              "name": "Size",
+              "value": "50x70 cm / 20x28″"
+            }
+          ]
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57946538344792",
+          "title": "Horizontal / Thick / 50x75 cm / 20x30″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Horizontal"
+            },
+            {
+              "name": "Thickness",
+              "value": "Thick"
+            },
+            {
+              "name": "Size",
+              "value": "50x75 cm / 20x30″"
+            }
+          ]
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57946538377560",
+          "title": "Horizontal / Thick / 50x100 cm / 20x40″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Horizontal"
+            },
+            {
+              "name": "Thickness",
+              "value": "Thick"
+            },
+            {
+              "name": "Size",
+              "value": "50x100 cm / 20x40″"
+            }
+          ]
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57946538410328",
+          "title": "Horizontal / Thick / 60x60 cm / 24x24″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Horizontal"
+            },
+            {
+              "name": "Thickness",
+              "value": "Thick"
+            },
+            {
+              "name": "Size",
+              "value": "60x60 cm / 24x24″"
+            }
+          ]
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57946538443096",
+          "title": "Horizontal / Thick / 60x75 cm / 24x30″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Horizontal"
+            },
+            {
+              "name": "Thickness",
+              "value": "Thick"
+            },
+            {
+              "name": "Size",
+              "value": "60x75 cm / 24x30″"
+            }
+          ]
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57946538475864",
+          "title": "Horizontal / Thick / 60x80 cm / 24x32″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Horizontal"
+            },
+            {
+              "name": "Thickness",
+              "value": "Thick"
+            },
+            {
+              "name": "Size",
+              "value": "60x80 cm / 24x32″"
+            }
+          ]
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57946538508632",
+          "title": "Horizontal / Thick / 60x90 cm / 24x36″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Horizontal"
+            },
+            {
+              "name": "Thickness",
+              "value": "Thick"
+            },
+            {
+              "name": "Size",
+              "value": "60x90 cm / 24x36″"
+            }
+          ]
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57946538541400",
+          "title": "Horizontal / Thick / 70x100 cm / 28x40″",
+          "selectedOptions": [
+            {
+              "name": "Orientation",
+              "value": "Horizontal"
+            },
+            {
+              "name": "Thickness",
+              "value": "Thick"
+            },
+            {
+              "name": "Size",
+              "value": "70x100 cm / 28x40″"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

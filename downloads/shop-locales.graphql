@@ -1,0 +1,8 @@
+query {
+  shopLocales {
+    locale
+    name
+    primary
+    published
+  }
+}

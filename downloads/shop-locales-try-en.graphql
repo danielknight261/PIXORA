@@ -1,0 +1,14 @@
+mutation TryEnglishVariants {
+  a: shopLocaleEnable(locale: "en-us") {
+    shopLocale { locale name }
+    userErrors { message }
+  }
+  b: shopLocaleEnable(locale: "en_US") {
+    shopLocale { locale name }
+    userErrors { message }
+  }
+  c: shopLocaleEnable(locale: "en-GB") {
+    shopLocale { locale name }
+    userErrors { message }
+  }
+}

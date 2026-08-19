@@ -1,0 +1,11 @@
+query CustomerAccounts {
+  shop {
+    name
+    customerAccountsV2 {
+      customerAccountsVersion
+      loginRequiredAtCheckout
+      loginLinksVisibleOnStorefrontAndCheckout
+      url
+    }
+  }
+}

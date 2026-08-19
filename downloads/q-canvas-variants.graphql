@@ -1,0 +1,12 @@
+query {
+  product(id: "gid://shopify/Product/15928489378136") {
+    id
+    variants(first: 250) {
+      nodes {
+        id
+        title
+        selectedOptions { name value }
+      }
+    }
+  }
+}

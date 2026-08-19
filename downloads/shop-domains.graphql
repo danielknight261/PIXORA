@@ -1,0 +1,21 @@
+query {
+  shop {
+    name
+    myshopifyDomain
+    primaryDomain {
+      id
+      host
+      url
+    }
+  }
+  domains {
+    id
+    host
+    url
+    localization {
+      defaultLocale
+      alternateLocales
+      country
+    }
+  }
+}

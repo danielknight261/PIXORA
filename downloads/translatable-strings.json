@@ -1,0 +1,998 @@
+[
+  {
+    "key": "title",
+    "count": 1,
+    "chars": 4,
+    "value": "Mugs"
+  },
+  {
+    "key": "name",
+    "count": 27,
+    "chars": 4,
+    "value": "Size"
+  },
+  {
+    "key": "title",
+    "count": 1,
+    "chars": 4,
+    "value": "Home"
+  },
+  {
+    "key": "product_type",
+    "count": 2,
+    "chars": 5,
+    "value": "Towel"
+  },
+  {
+    "key": "name",
+    "count": 9,
+    "chars": 5,
+    "value": "Frame"
+  },
+  {
+    "key": "name",
+    "count": 6,
+    "chars": 5,
+    "value": "Color"
+  },
+  {
+    "key": "name",
+    "count": 8,
+    "chars": 5,
+    "value": "Title"
+  },
+  {
+    "key": "name",
+    "count": 8,
+    "chars": 5,
+    "value": "Model"
+  },
+  {
+    "key": "title",
+    "count": 1,
+    "chars": 6,
+    "value": "Towels"
+  },
+  {
+    "key": "name",
+    "count": 1,
+    "chars": 6,
+    "value": "Finish"
+  },
+  {
+    "key": "name",
+    "count": 1,
+    "chars": 6,
+    "value": "Format"
+  },
+  {
+    "key": "title",
+    "count": 1,
+    "chars": 6,
+    "value": "Search"
+  },
+  {
+    "key": "title",
+    "count": 1,
+    "chars": 6,
+    "value": "Orders"
+  },
+  {
+    "key": "product_type",
+    "count": 2,
+    "chars": 7,
+    "value": "Magnets"
+  },
+  {
+    "key": "product_type",
+    "count": 2,
+    "chars": 7,
+    "value": "Jigsaws"
+  },
+  {
+    "key": "title",
+    "count": 1,
+    "chars": 7,
+    "value": "Posters"
+  },
+  {
+    "key": "title",
+    "count": 2,
+    "chars": 7,
+    "value": "Contact"
+  },
+  {
+    "key": "title",
+    "count": 1,
+    "chars": 7,
+    "value": "Catalog"
+  },
+  {
+    "key": "title",
+    "count": 1,
+    "chars": 7,
+    "value": "Profile"
+  },
+  {
+    "key": "title",
+    "count": 1,
+    "chars": 8,
+    "value": "Bio case"
+  },
+  {
+    "key": "product_type",
+    "count": 2,
+    "chars": 8,
+    "value": "Stickers"
+  },
+  {
+    "key": "product_type",
+    "count": 2,
+    "chars": 8,
+    "value": "Cushions"
+  },
+  {
+    "key": "title",
+    "count": 1,
+    "chars": 8,
+    "value": "Wall art"
+  },
+  {
+    "key": "name",
+    "count": 4,
+    "chars": 8,
+    "value": "Assembly"
+  },
+  {
+    "key": "title",
+    "count": 1,
+    "chars": 9,
+    "value": "Home page"
+  },
+  {
+    "key": "title",
+    "count": 1,
+    "chars": 9,
+    "value": "Tote bags"
+  },
+  {
+    "key": "name",
+    "count": 2,
+    "chars": 9,
+    "value": "Thickness"
+  },
+  {
+    "key": "title",
+    "count": 1,
+    "chars": 9,
+    "value": "Main menu"
+  },
+  {
+    "key": "title",
+    "count": 1,
+    "chars": 10,
+    "value": "Tough case"
+  },
+  {
+    "key": "title",
+    "count": 1,
+    "chars": 10,
+    "value": "Hand towel"
+  },
+  {
+    "key": "title",
+    "count": 1,
+    "chars": 11,
+    "value": "Wood Prints"
+  },
+  {
+    "key": "title",
+    "count": 1,
+    "chars": 11,
+    "value": "Foam Square"
+  },
+  {
+    "key": "product_type",
+    "count": 2,
+    "chars": 11,
+    "value": "Photo tiles"
+  },
+  {
+    "key": "title",
+    "count": 1,
+    "chars": 11,
+    "value": "Beach towel"
+  },
+  {
+    "key": "title",
+    "count": 1,
+    "chars": 11,
+    "value": "Wood prints"
+  },
+  {
+    "key": "title",
+    "count": 1,
+    "chars": 11,
+    "value": "Foam prints"
+  },
+  {
+    "key": "title",
+    "count": 1,
+    "chars": 11,
+    "value": "Phone cases"
+  },
+  {
+    "key": "name",
+    "count": 16,
+    "chars": 11,
+    "value": "Orientation"
+  },
+  {
+    "key": "title",
+    "count": 1,
+    "chars": 11,
+    "value": "Footer menu"
+  },
+  {
+    "key": "title",
+    "count": 1,
+    "chars": 12,
+    "value": "Home & gifts"
+  },
+  {
+    "key": "title",
+    "count": 1,
+    "chars": 13,
+    "value": "Framed Canvas"
+  },
+  {
+    "key": "title",
+    "count": 1,
+    "chars": 13,
+    "value": "Foam Portrait"
+  },
+  {
+    "key": "title",
+    "count": 1,
+    "chars": 13,
+    "value": "Acrylic Print"
+  },
+  {
+    "key": "product_type",
+    "count": 1,
+    "chars": 13,
+    "value": "Acrylic prism"
+  },
+  {
+    "key": "title",
+    "count": 1,
+    "chars": 13,
+    "value": "Canvas Prints"
+  },
+  {
+    "key": "title",
+    "count": 2,
+    "chars": 13,
+    "value": "Framed prints"
+  },
+  {
+    "key": "title",
+    "count": 2,
+    "chars": 13,
+    "value": "Framed canvas"
+  },
+  {
+    "key": "title",
+    "count": 1,
+    "chars": 13,
+    "value": "Water bottles"
+  },
+  {
+    "key": "product_type",
+    "count": 43,
+    "chars": 14,
+    "value": "Print Material"
+  },
+  {
+    "key": "title",
+    "count": 1,
+    "chars": 14,
+    "value": "Foam Landscape"
+  },
+  {
+    "key": "title",
+    "count": 1,
+    "chars": 14,
+    "value": "Aluminum Print"
+  },
+  {
+    "key": "title",
+    "count": 1,
+    "chars": 14,
+    "value": "Fridge magnets"
+  },
+  {
+    "key": "title",
+    "count": 1,
+    "chars": 14,
+    "value": "Photo cushions"
+  },
+  {
+    "key": "title",
+    "count": 1,
+    "chars": 14,
+    "value": "Jigsaw puzzles"
+  },
+  {
+    "key": "title",
+    "count": 1,
+    "chars": 14,
+    "value": "Acrylic prints"
+  },
+  {
+    "key": "title",
+    "count": 1,
+    "chars": 14,
+    "value": "Acrylic prisms"
+  },
+  {
+    "key": "title",
+    "count": 1,
+    "chars": 15,
+    "value": "Fine Art Poster"
+  },
+  {
+    "key": "title",
+    "count": 1,
+    "chars": 15,
+    "value": "Slim case apple"
+  },
+  {
+    "key": "title",
+    "count": 1,
+    "chars": 16,
+    "value": "11oz Ceramic Mug"
+  },
+  {
+    "key": "title",
+    "count": 1,
+    "chars": 16,
+    "value": "Tough case Apple"
+  },
+  {
+    "key": "title",
+    "count": 1,
+    "chars": 16,
+    "value": "Clear case apple"
+  },
+  {
+    "key": "title",
+    "count": 1,
+    "chars": 16,
+    "value": "Flexi case apple"
+  },
+  {
+    "key": "title",
+    "count": 1,
+    "chars": 16,
+    "value": "Classic Tote Bag"
+  },
+  {
+    "key": "title",
+    "count": 1,
+    "chars": 16,
+    "value": "Premium Tote Bag"
+  },
+  {
+    "key": "title",
+    "count": 1,
+    "chars": 17,
+    "value": "Slim case samsung"
+  },
+  {
+    "key": "title",
+    "count": 1,
+    "chars": 17,
+    "value": "Kiss-cut stickers"
+  },
+  {
+    "key": "title",
+    "count": 3,
+    "chars": 17,
+    "value": "Temporary tattoos"
+  },
+  {
+    "key": "name",
+    "count": 2,
+    "chars": 17,
+    "value": "Wall Hanger Color"
+  },
+  {
+    "key": "title",
+    "count": 1,
+    "chars": 18,
+    "value": "Flexi case samsung"
+  },
+  {
+    "key": "title",
+    "count": 1,
+    "chars": 18,
+    "value": "Framed photo tiles"
+  },
+  {
+    "key": "name",
+    "count": 4,
+    "chars": 18,
+    "value": "Orientation - Size"
+  },
+  {
+    "key": "title",
+    "count": 1,
+    "chars": 19,
+    "value": "Acrylic photo prism"
+  },
+  {
+    "key": "title",
+    "count": 1,
+    "chars": 20,
+    "value": "Posters with hangers"
+  },
+  {
+    "key": "title",
+    "count": 2,
+    "chars": 20,
+    "value": "Your Privacy Choices"
+  },
+  {
+    "key": "title",
+    "count": 1,
+    "chars": 21,
+    "value": "White 12oz Enamel Mug"
+  },
+  {
+    "key": "title",
+    "count": 1,
+    "chars": 22,
+    "value": "Fine Art Framed Poster"
+  },
+  {
+    "key": "title",
+    "count": 1,
+    "chars": 22,
+    "value": "Brushed Aluminum Print"
+  },
+  {
+    "key": "title",
+    "count": 1,
+    "chars": 22,
+    "value": "White 15oz Ceramic Mug"
+  },
+  {
+    "key": "title",
+    "count": 1,
+    "chars": 22,
+    "value": "White 11oz Ceramic Mug"
+  },
+  {
+    "key": "title",
+    "count": 1,
+    "chars": 22,
+    "value": "Magic 11oz Ceramic Mug"
+  },
+  {
+    "key": "meta_title",
+    "count": 1,
+    "chars": 22,
+    "value": "Canvas Prints | Pixora"
+  },
+  {
+    "key": "title",
+    "count": 1,
+    "chars": 24,
+    "value": "Metal / aluminium prints"
+  },
+  {
+    "key": "title",
+    "count": 1,
+    "chars": 25,
+    "value": "Personalized Canvas Print"
+  },
+  {
+    "key": "title",
+    "count": 2,
+    "chars": 26,
+    "value": "Premium Matte Paper Poster"
+  },
+  {
+    "key": "title",
+    "count": 1,
+    "chars": 26,
+    "value": "Customer account main menu"
+  },
+  {
+    "key": "title",
+    "count": 1,
+    "chars": 28,
+    "value": "White Latte 17oz Ceramic Mug"
+  },
+  {
+    "key": "title",
+    "count": 1,
+    "chars": 29,
+    "value": "White 10oz Porcelain Slim Mug"
+  },
+  {
+    "key": "title",
+    "count": 1,
+    "chars": 32,
+    "value": "Classic Semi-Glossy Paper Poster"
+  },
+  {
+    "key": "title",
+    "count": 1,
+    "chars": 37,
+    "value": "White 15oz Stainless Steel Travel Mug"
+  },
+  {
+    "key": "title",
+    "count": 2,
+    "chars": 38,
+    "value": "Premium Matte Paper Poster with Hanger"
+  },
+  {
+    "key": "meta_description",
+    "count": 1,
+    "chars": 38,
+    "value": "Personalised framed prints from Pixora"
+  },
+  {
+    "key": "title",
+    "count": 1,
+    "chars": 39,
+    "value": "White 17oz Stainless Steel Water Bottle"
+  },
+  {
+    "key": "title",
+    "count": 1,
+    "chars": 40,
+    "value": "White 11oz Ceramic Mug with Color Inside"
+  },
+  {
+    "key": "title",
+    "count": 1,
+    "chars": 45,
+    "value": "Classic Semi-Glossy Paper Metal Framed Poster"
+  },
+  {
+    "key": "meta_description",
+    "count": 1,
+    "chars": 45,
+    "value": "Personalised framed canvas prints from Pixora"
+  },
+  {
+    "key": "title",
+    "count": 3,
+    "chars": 54,
+    "value": "Premium Semi-Glossy Paper Wooden Framed Poster Premium"
+  },
+  {
+    "key": "title",
+    "count": 3,
+    "chars": 57,
+    "value": "Classic Semi-Glossy Paper Wooden Framed Poster Bestseller"
+  },
+  {
+    "key": "body_html",
+    "count": 1,
+    "chars": 63,
+    "value": "<p>Canvas, framed prints, metal, acrylic, posters and more.</p>"
+  },
+  {
+    "key": "body_html",
+    "count": 1,
+    "chars": 67,
+    "value": "<p>Aluminum and brushed aluminum prints — vivid metal wall art.</p>"
+  },
+  {
+    "key": "body_html",
+    "count": 1,
+    "chars": 69,
+    "value": "<p>Lightweight foam board prints — portrait, landscape or square.</p>"
+  },
+  {
+    "key": "body_html",
+    "count": 1,
+    "chars": 73,
+    "value": "<p>Personalised ceramic mugs — classic white or colour-inside styles.</p>"
+  },
+  {
+    "key": "body_html",
+    "count": 1,
+    "chars": 73,
+    "value": "<p>Personalised mugs, bottles and more — gifts they’ll use every day.</p>"
+  },
+  {
+    "key": "body_html",
+    "count": 1,
+    "chars": 74,
+    "value": "<p>Natural wood grain prints — choose thickness, orientation and size.</p>"
+  },
+  {
+    "key": "body_html",
+    "count": 1,
+    "chars": 76,
+    "value": "<p>Posters with wood hangers — pick hanger colour, orientation and size.</p>"
+  },
+  {
+    "key": "body_html",
+    "count": 1,
+    "chars": 79,
+    "value": "<p>Personalised stainless steel water bottles — print your photo or design.</p>"
+  },
+  {
+    "key": "body_html",
+    "count": 1,
+    "chars": 79,
+    "value": "<p>Personalised tote bags — classic and premium styles with colour options.</p>"
+  },
+  {
+    "key": "body_html",
+    "count": 1,
+    "chars": 80,
+    "value": "<p>Faux suede throw cushions with a single-sided photo print and fibre fill.</p>"
+  },
+  {
+    "key": "body_html",
+    "count": 1,
+    "chars": 82,
+    "value": "<p>Glossy acrylic wall prints — choose orientation and size, then personalize.</p>"
+  },
+  {
+    "key": "meta_description",
+    "count": 1,
+    "chars": 88,
+    "value": "Personalised canvas prints — portrait, landscape, square, slim and thick wrap, 26 sizes."
+  },
+  {
+    "key": "body_html",
+    "count": 1,
+    "chars": 88,
+    "value": "<p>Silver halide photo fridge magnets — a single photo on a strong magnetic backing.</p>"
+  },
+  {
+    "key": "body_html",
+    "count": 1,
+    "chars": 90,
+    "value": "<p>Skin-safe waterslide tattoos in five sizes — personalise with your photo or design.</p>"
+  },
+  {
+    "key": "body_html",
+    "count": 1,
+    "chars": 91,
+    "value": "<p>Paper posters in multiple finishes. Pick a finish, then choose size and personalize.</p>"
+  },
+  {
+    "key": "body_html",
+    "count": 1,
+    "chars": 92,
+    "value": "<p>Personalised kiss-cut vinyl stickers — cut to your design, matt or gloss, four sizes.</p>"
+  },
+  {
+    "key": "body_html",
+    "count": 1,
+    "chars": 94,
+    "value": "<p>Lightweight restickable framed photo tiles — hang without tools, move up to five times.</p>"
+  },
+  {
+    "key": "body_html",
+    "count": 1,
+    "chars": 97,
+    "value": "<p>Personalised phone cases for Apple and Samsung — pick a style and model, then personalize.</p>"
+  },
+  {
+    "key": "body_html",
+    "count": 1,
+    "chars": 98,
+    "value": "<p>Freestanding acrylic photo blocks for desk or shelf — back mount or transparent background.</p>"
+  },
+  {
+    "key": "body_html",
+    "count": 1,
+    "chars": 99,
+    "value": "<p>Canvas prints in a tray frame - choose frame colour, orientation and size, then personalize.</p>"
+  },
+  {
+    "key": "body_html",
+    "count": 1,
+    "chars": 102,
+    "value": "<p>Personalised framed prints - choose frame colour, size and orientation, then upload your photo.</p>"
+  },
+  {
+    "key": "body_html",
+    "count": 1,
+    "chars": 108,
+    "value": "<p>Personalised sublimation towels — beach and hand sizes. Print your photo on a soft cotton-poly blend.</p>"
+  },
+  {
+    "key": "body_html",
+    "count": 1,
+    "chars": 109,
+    "value": "<p>Dye-sublimation jigsaws in a metal tin — 30 to 1000 pieces, with your photo on the puzzle and the lid.</p>"
+  },
+  {
+    "key": "body_html",
+    "count": 1,
+    "chars": 330,
+    "value": "<p>Personalised jigsaw puzzles in a metal tin. Your photo is printed on the puzzle and on the tin lid.</p>\n<ul>\n<li>30, 110, 252, 500 or 1000 pieces</li>\n<li>Dye sublimation print</li>\n<li>Ships in a keepsake tin</li>\n</ul>\n<p>Use Personalize design to upload a JPG or PNG. We’ll print from your artwork — not the stock photo.</p>"
+  },
+  {
+    "key": "body_html",
+    "count": 1,
+    "chars": 349,
+    "value": "<p>Personalised fridge magnets printed with silver halide and sealed onto a powerful magnetic substrate.</p>\n<ul>\n<li>Single-image magnets in 10×10 cm and 15×15 cm</li>\n<li>0.6 mm thick magnetic backing</li>\n<li>Ideal everyday gift</li>\n</ul>\n<p>Use Personalize design to upload a JPG or PNG. We’ll print from your artwork — not the stock photo.</p>"
+  },
+  {
+    "key": "body_html",
+    "count": 1,
+    "chars": 352,
+    "value": "<p>Personalised faux suede cushions, printed with dye sublimation and finished with a zip cover and fibre fill.</p>\n<ul>\n<li>Square sizes from 30×30 cm to 61×61 cm</li>\n<li>Single-sided print, stone reverse</li>\n<li>Wash cover at 30°C</li>\n</ul>\n<p>Use Personalize design to upload a JPG or PNG. We’ll print from your artwork — not the stock photo.</p>"
+  },
+  {
+    "key": "body_html",
+    "count": 1,
+    "chars": 387,
+    "value": "<p>This 15oz stainless steel travel mug will keep your drinks at their desired temperature for hours and its leak-proof design means it won’t spill, no matter where you take it.</p>\n<ul>\n<li>180 mm (7.08in) tall including lid, 160 mm tall (6.29in) without lid.</li>\n<li>Bottom diameter of 61 mm (2.4in) and top diameter 84 mm (3.3in).</li>\n</ul>\n<div data-gelato-customization=\"1\"></div>"
+  },
+  {
+    "key": "body_html",
+    "count": 1,
+    "chars": 392,
+    "value": "<p>Super-lightweight stick-on photo tiles with a recycled-content plastic frame. Reposition up to five times with no wall residue.</p>\n<ul>\n<li>Three sizes: 13×18 cm, 20×20 cm and 20×25 cm</li>\n<li>Black or white frame</li>\n<li>Giclée photographic print · 1.7 cm frame depth</li>\n</ul>\n<p>Use Personalize design to upload a JPG or PNG. We’ll print from your artwork — not the stock photo.</p>"
+  },
+  {
+    "key": "body_html",
+    "count": 1,
+    "chars": 395,
+    "value": "<p>Personalised kiss-cut vinyl stickers — cut to the shape of your design. Waterproof, removable, and available in matt or gloss.</p>\n<ul>\n<li>Premium white vinyl</li>\n<li>Indoor or outdoor (up to 18 months)</li>\n<li>Four sizes from 8×10 cm to 36×36 cm</li>\n<li>Matt or gloss finish</li>\n</ul>\n<p>Upload your photo or artwork after checkout. Printed on demand and shipped in plain packaging.</p>"
+  },
+  {
+    "key": "body_html",
+    "count": 1,
+    "chars": 398,
+    "value": "<p>A personalised hand towel with a vibrant sublimation print on the front and soft absorbent cotton on the back.</p>\n<ul>\n<li>One size: 28″ × 16″ (71 × 41 cm)</li>\n<li>52% polyester, 48% cotton · 400 g/m²</li>\n<li>Machine wash cold — do not bleach, iron, dry clean or tumble dry hot</li>\n</ul>\n<p>Upload a JPG or PNG. We’ll mock up and confirm before dispatch — we won’t print the stock photo.</p>"
+  },
+  {
+    "key": "body_html",
+    "count": 1,
+    "chars": 404,
+    "value": "<p>Personalised freestanding acrylic prism — one-inch thick with diamond-polished edges. Perfect for desks and shelves.</p>\n<ul>\n<li>Back mount or transparent background</li>\n<li>Square and rectangular sizes</li>\n<li>Giclée print · ships in protective packaging</li>\n</ul>\n<p>Upload a JPG or PNG. For transparent prisms, use PNG — white areas will not show. We’ll mock up and confirm before dispatch.</p>"
+  },
+  {
+    "key": "body_html",
+    "count": 1,
+    "chars": 420,
+    "value": "<p>A personalised beach towel with your photo printed edge-to-edge on one side. The reverse is terry fabric so it stays absorbent.</p>\n<ul>\n<li>Two sizes: 30″ × 60″ (76 × 152 cm) and 36″ × 72″ (91 × 183 cm)</li>\n<li>Cotton-poly blend · sublimation print</li>\n<li>Soft printed face, absorbent terry reverse</li>\n</ul>\n<p>Upload a JPG or PNG. We’ll mock up and confirm before dispatch — we won’t print the stock photo.</p>"
+  },
+  {
+    "key": "body_html",
+    "count": 1,
+    "chars": 429,
+    "value": "<p>Personalised temporary tattoos printed on skin-safe waterslide film. Easy to apply, lasts up to a week, and removes with baby oil.</p>\n<ul>\n<li>Five sizes from 5×7.5 cm to 30×30 cm</li>\n<li>Certified for toys and cosmetics in the UK, EU, US, Canada and Australia</li>\n<li>Not recommended for children under 3</li>\n</ul>\n<p>Use Personalize design to upload a JPG or PNG. We’ll print from your artwork — not the stock photo.</p>"
+  },
+  {
+    "key": "body_html",
+    "count": 1,
+    "chars": 484,
+    "value": "<div>\n<p>This beautiful ceramic mug is perfect for any event of the day. Your morning coffee, a hot chocolate, or any other hot beverage you enjoy. The mug is glossy white and the prints come out beautifully and vividly on it. The print retains its quality and luster when used in both microwaves and the dishwasher. </p>\n<p>- Ceramic 15oz mug</p>\n<p>- Dishwasher and microwave safe</p>\n<p>- Mug Height 117mm, Bottom Diameter 87mm</p>\n\n</div>\n<div data-gelato-customization=\"1\"></div>"
+  },
+  {
+    "key": "body_html",
+    "count": 1,
+    "chars": 493,
+    "value": "<p>Personalised canvas prints made for your photos. Pick <strong>portrait</strong>, <strong>landscape</strong>, or <strong>square</strong>, choose <strong>slim</strong> or <strong>thick</strong> wrap, then select from 26 sizes and upload your image for a live product preview.</p><ul>\n<li>Gallery-quality canvas on FSC-certified stretcher bars</li>\n<li>Slim (~2cm) and thick (~4cm) wrap</li>\n<li>104 size / orientation / thickness combinations</li>\n<li>Printed and shipped on demand</li>\n</ul>"
+  },
+  {
+    "key": "body_html",
+    "count": 1,
+    "chars": 495,
+    "value": "<div>\n  <p>This lightweight Enamel mug is perfect for any event of the day, especially for camping. Whether you're on the go, having your morning coffee, or a warm beverage you can easily use this mug. Order a personalized Enamel mug to sell in your store, or for your next hike</p>\n  <p>- Enamel 12oz mug</p>\n  <p>- NOT dishwasher or microwave safe</p>\n  <p>- White coating with a silver rim</p>\n   <p>- Mug Height 80mm, Bottom Diameter 86mm</p>\n</div>\n<div data-gelato-customization=\"1\"></div>"
+  },
+  {
+    "key": "body_html",
+    "count": 1,
+    "chars": 502,
+    "value": "<div>\n  <p>This beautiful slim porcelain mug is perfect for any event of the day. Your morning coffee, a hot chocolate, or any other hot beverage you enjoy. The mug is glossy white and the prints come out beautifully and vividly on it. The print retains its quality and luster when used in both microwaves and the dishwasher.</p>\n  <p>- Porcelain 10oz mug</p>\n  <p>- Dishwasher and microwave safe</p>\n  <p>- Mug Height 104mm, Bottom Diameter 75mm</p>\n  \n</div>\n<div data-gelato-customization=\"1\"></div>"
+  },
+  {
+    "key": "body_html",
+    "count": 1,
+    "chars": 529,
+    "value": "<div>\n   <p>This mug has a black glossy finish when it's empty. When a hot beverage is added, the mug reveals your beautiful artwork.\n      Perfect for your morning coffee, a hot chocolate, or any other hot beverage you enjoy. The mug is not microwave and dishwasher safe. \n   </p>\n   <p>- Black glossy finish </p>\n   <p>- Reveals the print when exposed to hot liquids </p>\n   <p>- Handwash only</p>\n   <p>- Not microwave safe</p>\n   <p>- Mug Height 96mm, Bottom Diameter 80mm</p>\n</div>\n<div data-gelato-customization=\"1\"></div>"
+  },
+  {
+    "key": "body_html",
+    "count": 1,
+    "chars": 561,
+    "value": "<div>\n   <p>This beautiful ceramic latte mug is perfect for any event of the day. Your morning coffee, a hot chocolate, or any other hot beverage you enjoy. The mug is glossy white and the prints come out beautifully and vividly on it. The print retains its quality and luster when used in both microwaves and the dishwasher. </p>\n   <p>- Ceramic 17oz mug</p>\n   <p>- Dishwasher and microwave safe</p>\n   <p>- Large white area for designs</p>\n   <p>- Mug Height 150mm, Top Diameter 88mm, Bottom Diameter 59mm</p>\n</div>\n<div data-gelato-customization=\"1\"></div>"
+  },
+  {
+    "key": "body_html",
+    "count": 1,
+    "chars": 573,
+    "value": "<div>\n  <p>This beautiful ceramic mug is perfect for any event of the day. Your morning coffee, a hot chocolate, or any other hot beverage you enjoy. The mug is glossy white and the prints come out beautifully and vividly on it. The print retains its quality and luster when used in both microwaves and the dishwasher. </p>\n  <p>- Ceramic 11oz mug</p>\n  <p>- Dishwasher and microwave safe</p>\n  <p>- Product safety tests conducted by independent third party laboratories.</p>\n  <p>- Mug Height 96mm, Bottom Diameter 80mm</p>\n</div>\n<div data-gelato-customization=\"1\"></div>"
+  },
+  {
+    "key": "body_html",
+    "count": 2,
+    "chars": 585,
+    "value": "<div>\n<p>This beautiful ceramic mug is perfect for any event of the day. Your morning coffee, a hot chocolate, or any other hot beverage you enjoy. The mug is glossy white with a colored rim, inside, and handle. The prints come out beautifully and vividly on it. The print retains its quality and luster when used in both microwaves and the dishwasher. </p>\n<p>- Ceramic 11oz mug</p>\n<p>- Dishwasher and microwave safe</p>\n<p>- Colored rim, inside, and handle</p>\n<p>- White print area</p>\n<p>- Mug Height 96mm, Bottom Diameter 80mm</p>\n</div>\n<div data-gelato-customization=\"1\"></div>"
+  },
+  {
+    "key": "body_html",
+    "count": 1,
+    "chars": 612,
+    "value": "<p>Personalised canvas prints from Pixora. Upload your photo, preview it on a live product mockup, and we print and ship gallery-quality canvas to your door.</p>\n<ul>\n<li>\n<strong>Canvas:</strong> FSC-certified wood stretcher bars, cotton-polyester blend (300–350gsm)</li>\n<li>\n<strong>Thickness:</strong> Slim (~2cm) or Thick (~4cm) gallery wrap</li>\n<li>\n<strong>Sizes:</strong> 26 cm/inch options in portrait, landscape, and square</li>\n<li>\n<strong>Hanging kit:</strong> Included (varies by country)</li>\n</ul>\n<p>Printed and shipped on demand. No minimum order.</p>\n<div data-gelato-customization=\"1\"></div>"
+  },
+  {
+    "key": "body_html",
+    "count": 2,
+    "chars": 677,
+    "value": "Sleek Aesthetics, Strong Protection\nThe Slim Case combines a super-slim design with robust durability. \n\n<ul>\n<li>Premium quality with a white base</li>\n<li>Wraparound print on back and sides</li>\n<li>Precisely aligned openings</li>\n<li>Compatible with wireless charging</li>\n</ul>\n\n<p>We're phasing out cases for Galaxy models and iPhones 11 and earlier to focus on creating cutting-edge designs for the latest iPhone models. <a href=\"https://support.gelato.com/en/articles/9881315-important-product-updates-refreshing-our-phone-case-lineup\" target=\"_blank\">learn more</a>.</p>\n<p>No minimum orders, printed and shipped on demand.</p>\n<div data-gelato-customization=\"1\"></div>"
+  },
+  {
+    "key": "body_html",
+    "count": 1,
+    "chars": 699,
+    "value": "The Flexi Case, is great for displaying your art and designs. It is a transparent case with a modern clear texture. This shell offers good impact resistance.\n\n<ul>\n<li>Flexible and resistant to tear</li>\n<li>Durable protective layer</li>\n<li>Frosty transparent</li>\n<li>Precisely aligned openings</li>\n<li>Wireless charging compatible</li>\n</ul>\n\n<p>We're phasing out cases for Galaxy models and iPhones 11 and earlier to focus on creating cutting-edge designs for the latest iPhone models. <a href=\"https://support.gelato.com/en/articles/9881315-important-product-updates-refreshing-our-phone-case-lineup\" target=\"_blank\">learn more</a>.</p>\n<p>No minimum orders, printed and shipped on demand.</p>"
+  },
+  {
+    "key": "body_html",
+    "count": 1,
+    "chars": 710,
+    "value": "<p> The Clear Case offers protection in style without compromising functionality. Its slim, transparent design provides impact resistance and scratch-proof durability while remaining ultra-thin. </p>\n\n<ul>\n<li>Transparent and crystal clear</li>\n<li>Lightweight and slim profile</li>\n<li>Precisely aligned openings</li>\n<li>Compatible with wireless charging</li>\n</ul>\n\n<p> We're refreshing our phone case lineup and will bid farewell to Clear Phone cases soon. Don't miss your last chance to grab these designs! <a href=\"https://support.gelato.com/en/articles/9881315-important-product-updates-refreshing-our-phone-case-lineup\" target=\"_blank\">learn more here</a></p>\n\n<div data-gelato-customization=\"1\"></div>"
+  },
+  {
+    "key": "body_html",
+    "count": 1,
+    "chars": 741,
+    "value": "The Flexi Case, is great for displaying your art and designs. It is a transparent case with a modern clear texture. This shell offers good impact resistance.\n\n<ul>\n<li>Flexible and resistant to tear</li>\n<li>Durable protective layer</li>\n<li>Frosty transparent</li>\n<li>Precisely aligned openings</li>\n<li>Wireless charging compatible</li>\n</ul>\n\n<p>We're phasing out cases for Galaxy models and iPhones 11 and earlier to focus on creating cutting-edge designs for the latest iPhone models. <a href=\"https://support.gelato.com/en/articles/9881315-important-product-updates-refreshing-our-phone-case-lineup\" target=\"_blank\">learn more</a>.</p>\n<p>No minimum orders, printed and shipped on demand.</p>\n<div data-gelato-customization=\"1\"></div>"
+  },
+  {
+    "key": "body_html",
+    "count": 1,
+    "chars": 742,
+    "value": "<div>\n  <p> Don’t leave home without this sleek 17oz water bottle to keep you hydrated. It’s made from high-quality stainless steel and has double-wall insulation to keep cold drinks cold and hot drinks hot. It’s elongated neck and thin design allows you to easily carry it or slip it into your bag. Best of all, the leak-proof cap ensures no liquids will spill and the large surface area makes a great canvas for eye-catching designs.\n  <br> - Dimensions: 255 mm (10.03″) tall and 70 mm (2.85″) diameter \n  <br> - Vacuum flask with double-wall construction\n  <br> - Insulation keeps the liquid hot or cold for 6 h\n  <br> - Dishwasher not recommended due to vacuum seal. Hand-wash only.\n  </p>\n</div>\n<div data-gelato-customization=\"1\"></div>"
+  },
+  {
+    "key": "body_html",
+    "count": 2,
+    "chars": 744,
+    "value": "Ultimate Protection for Your Phone\nThe Tough Case offers double-layered security with a sleek glossy finish. It's the perfect balance between protection and style.\n\n<ul>\n<li>Dual-layer design for maximum durability</li>\n<li>Wraparound print on back and sides</li>\n<li>Precisely aligned openings</li>\n<li>Compatible with wireless charging</li>\n</ul>\n\n<p>We're phasing out cases for Galaxy models and iPhones 11 and earlier to focus on creating cutting-edge designs for the latest iPhone models. <a href=\"https://support.gelato.com/en/articles/9881315-important-product-updates-refreshing-our-phone-case-lineup\" target=\"_blank\">learn more</a>.</p>\n<p>No minimum orders, printed and shipped on demand.</p>\n<div data-gelato-customization=\"1\"></div>"
+  },
+  {
+    "key": "body_html",
+    "count": 1,
+    "chars": 760,
+    "value": "<p>Crafted from 100% biodegradable material in a sleek black color, the bio case is scratch and shock resistant while being eco-conscious. Join the movement towards sustainability with this thoughtfully designed case.</p>\n<ul>\n<li>Made from 100% biodegradable material</li>\n<li>Sleek black base color</li>\n<li>Print area on the back</li>\n<li>Precisely aligned openings</li>\n<li>Compatible with wireless charging</li>\n</ul>\n<p>We're refreshing our phone case lineup and will bid farewell to Bio Phone cases soon. Don't miss your last chance to grab these designs! <a href=\"https://support.gelato.com/en/articles/9881315-important-product-updates-refreshing-our-phone-case-lineup\" target=\"_blank\">learn more here</a></p>\n<div data-gelato-customization=\"1\"></div>"
+  },
+  {
+    "key": "body_html",
+    "count": 2,
+    "chars": 826,
+    "value": "<p>Our premium matte paper is heavier-weight, white, and features a smooth, uncoated finish that feels luxuriously soft to the touch:</p>\n<ul>\n    <li>\n<strong>Paper Finishing:</strong> Matte, smooth, non-reflective surface.</li>\n    <li>\n<strong>Paper Weight:</strong> 200 gsm (80 lb), thickness: 0.26 mm (10.3 mils).</li>\n    <li>\n<strong>Sustainable Paper:</strong> FSC-certified or equivalent paper for sustainability.</li>\n    <li>\n<strong>Available Sizes:</strong> 29 sizes in inches (US&amp;CA) and cms (rest of the world).</li>\n</ul>\n<p>Learn about paper types and their unique textures and finishes <a href=\"https://support.gelato.com/en/articles/8996279-what-paper-types-do-you-support?\" target=\"_blank\">here</a>.</p>\n<p>No minimum orders, printed and shipped on demand.</p>\n<div data-gelato-customization=\"1\"></div>"
+  },
+  {
+    "key": "body_html",
+    "count": 1,
+    "chars": 830,
+    "value": "<p>Experience art that feels silky to the touch with our high-quality, lighter-weight, classic semi-glossy paper:</p>\n<ul>\n    <li>\n<strong>Paper Finishing:</strong> Semi-glossy, enhances colors with a subtle shine.</li>\n    <li>\n<strong>Paper Weight:</strong> 170 gsm (65 lb), thickness: 0.19 mm (7.5 mils), sturdy and durable.</li>\n    <li>\n<strong>Sustainable Paper:</strong> FSC-certified or equivalent for sustainability.</li>\n    <li>\n<strong>Available Sizes:</strong> 29 sizes in inches (US&amp;CA) and cms (rest of the world).</li>\n</ul>\n<p>Learn about paper types and their unique textures and finishes <a href=\"https://support.gelato.com/en/articles/8996279-what-paper-types-do-you-support?\" target=\"_blank\">here</a>.</p>\n<p>No minimum orders, printed and shipped on demand.</p>\n<div data-gelato-customization=\"1\"></div>"
+  },
+  {
+    "key": "body_html",
+    "count": 1,
+    "chars": 862,
+    "value": "<p>Our wood prints offer a natural, rustic feel with artwork printed on sustainably sourced wood. The wood grain adds warmth and texture, creating unique, matte-finished pieces:</p>\n<ul>\n    <li>\n<strong>Material:</strong> FSC-certified birch wood, showcasing natural grain for a rustic feel.</li>\n    <li>\n<strong>Finish:</strong> Clean edges with edge-to-edge prints for a seamless look.</li>\n    <li>\n<strong>Thickness:</strong> Choose between 10mm (0.4\") or 20mm (0.79\").</li>\n    <li>\n<strong>Printing:</strong> Unprinted white areas reveal the wood grain for added texture.</li>\n    <li>\n<strong>Hanging Kit:</strong> Included; varies by country.</li>\n    <li>\n<strong>Sizes:</strong> 18 options in inches (US&amp;CA) and cms (rest of the world).</li>\n</ul>\n<p>No minimum orders, printed and shipped on demand.</p>\n<div data-gelato-customization=\"1\"></div>"
+  },
+  {
+    "key": "body_html",
+    "count": 1,
+    "chars": 862,
+    "value": "<p>Our popular foam prints are sleek, modern, and super lightweight. Perfect to lift the look of any space—foam prints are versatile, available in various sizes, and will last for years to come:</p>\n<ul>\n    <li>\n<strong>Material:</strong> Solid PVC panel with UV film for a lightweight, durable, long-lasting print.</li>\n    <li>\n<strong>Texture &amp; Finish:</strong> Smooth with an intense, natural look, perfect for any space.</li>\n    <li>\n<strong>Color Options:</strong> Available in white or black.</li>\n    <li>\n<strong>Thickness:</strong> 5mm (0.2\") for a modern finish.</li>\n    <li>\n<strong>Hanging Kit:</strong> Included; varies by country.</li>\n    <li>\n<strong>Sizes:</strong> 18 options in inches (US&amp;CA) and cms (rest of the world).</li>\n</ul>\n<p>No minimum orders, printed and shipped on demand.</p>\n<div data-gelato-customization=\"1\"></div>"
+  },
+  {
+    "key": "body_html",
+    "count": 1,
+    "chars": 886,
+    "value": "<p>Acrylic prints offer vibrant, high-resolution images with a glossy, glass-like finish and stunning depth. Durable and scratch-resistant, they’re ideal for luxury home decor, corporate offices, galleries, and modern art displays:</p>\n<ul>\n    <li>\n<strong>Material:</strong> 4mm (0.15\") acrylic for a sleek, vibrant, and durable finish.</li>\n    <li>\n<strong>Design:</strong> Straight-cut corners for a modern look. Transparent backgrounds default to white for optimal presentation.</li>\n    <li>\n<strong>Hanging Kit:</strong> Includes hardware, screws, and screw holes at each corner (14mm (0.55\") from the edge, with an 8mm (0.31\") diameter hole and 15mm (0.6\") screw head).</li>\n    <li>\n<strong>Sizes:</strong> 18 sizes in inches (US&amp;CA) and cms (rest of the world).</li>\n</ul>\n<p>No minimum orders, printed and shipped on demand.</p>\n<div data-gelato-customization=\"1\"></div>"
+  },
+  {
+    "key": "body_html",
+    "count": 1,
+    "chars": 925,
+    "value": "<p>A sleek, smooth aluminum panel with vibrant colors and crisp details. Perfect for modern, minimalist decor or professional spaces. Durable, UV, and moisture-resistant:</p>\n<ul>\n    <li>\n<strong>Material:</strong> Aluminum DIBOND®—strong yet lightweight with two white aluminum layers and a black polyethylene core, ideal for large artwork.</li>\n    <li>\n<strong>Thickness:</strong> 3mm (0.12\") for a durable, rigid base.</li>\n    <li>\n<strong>Printing:</strong> Direct print on DIBOND® for vivid colors and a matte, glare-free finish.</li>\n    <li>\n<strong>Finish:</strong> White-coated with a subtle silky gloss in bright areas.</li>\n    <li>\n<strong>Hanging Kit:</strong> Included; varies by fulfillment country.</li>\n    <li>\n<strong>Sizes:</strong> 18 sizes in inches (US&amp;CA) and cms (rest of the world).</li>\n</ul>\n<p>No minimum orders, printed and shipped on demand.</p>\n<div data-gelato-customization=\"1\"></div>"
+  },
+  {
+    "key": "body_html",
+    "count": 1,
+    "chars": 927,
+    "value": "<p>Discover our Fine Art Posters - Iconic artworks with vivid colors using giclée fine art 12-color printing technology. Perfect for art lovers and designers alike.</p>\n<ul>\n<li>\n<strong>Color Vibrancy:</strong> Our 12-color fine art printing technology delivers vivid, accurate colors with stunning depth, far beyond standard 4-color inkjet printing technology.</li>\n<li>\n<strong>Paper Finishing:</strong> Smooth matte finish for a clean, glare-free display.</li>\n<li>\n<strong>Paper Weight:</strong> 200 gsm (80 lb), thickness: 0.26 mm (10.3 mils).</li>\n<li>\n<strong>Available Sizes:</strong> Offered in a variety of sizes to fit any space or frame.</li>\n<li>\n<strong>Eco-Friendly Materials:</strong> Printed on environmentally conscious, FSC-certified paper.</li>\n</ul>\n<p>No minimum orders, printed and shipped on demand to guarantee freshness and customization for every order.</p>\n<div data-gelato-customization=\"1\"></div>"
+  },
+  {
+    "key": "body_html",
+    "count": 2,
+    "chars": 947,
+    "value": "<p>Magnetic hangers that prevent poster damage and allow easy print changes, offering versatile and durable display options:</p>\n<ul>\n    <li>\n<strong>Hanger Material:</strong> Durable pine wood.</li>\n    <li>\n<strong>Paper Weight:</strong> 200 gsm (80 lb), thickness: 0.22 mm (8.7 mils).</li>\n    <li>\n<strong>Paper Finish:</strong> Matte, smooth uncoated finish with a luxurious feel.</li>\n    <li>\n<strong>Sustainable Paper:</strong> FSC-certified materials or equivalent.</li>\n    <li>\n<strong>Available Sizes:</strong> 29 sizes in inches (US&amp;CA) and cms (rest of the world).</li>\n    <li>\n<strong>Recommended Use:</strong> For indoor display.</li>\n</ul>\n<p>Learn about paper types and their unique textures and finishes <a href=\"https://support.gelato.com/en/articles/8996279-what-paper-types-do-you-support?\" target=\"_blank\">here</a>.</p>\n<p>No minimum orders, printed and shipped on demand.</p>\n<div data-gelato-customization=\"1\"></div>"
+  },
+  {
+    "key": "body_html",
+    "count": 1,
+    "chars": 1020,
+    "value": "<p>Printed on brushed silver aluminum for a textured, industrial look. Colors interact with the metallic surface for a unique, artistic effect. Ideal for abstract art, black-and-white photography, and modern spaces:</p>\n<ul>\n    <li>\n<strong>Material:</strong> Brushed silver Aluminum DIBOND® with a metallic finish and horizontal grain for a dynamic look.</li>\n    <li>\n<strong>Thickness:</strong> 3mm (0.12\") for a durable, rigid base.</li>\n    <li>\n<strong>Printing:</strong> Direct print on AluDibond for vivid colors and a matte finish. Unprinted white areas reveal a metallic silver effect.</li>\n    <li>\n<strong>Finish:</strong> Matte, glare-free, ideal for black-and-white designs with a striking brushed silver effect.</li>\n    <li>\n<strong>Hanging Kit:</strong> Included; varies by fulfillment country.</li>\n    <li>\n<strong>Sizes:</strong> 18 sizes in inches (US&amp;CA) and cms (rest of the world).</li>\n</ul>\n<p>No minimum orders, printed and shipped on demand.</p>\n<div data-gelato-customization=\"1\"></div>"
+  },
+  {
+    "key": "body_html",
+    "count": 1,
+    "chars": 1169,
+    "value": "<p>Our popular foam prints are sleek, modern, and super lightweight. Perfect to lift the look of any space - foam prints are versatile, available in various sizes, and will last for years to come.</p>\n\n<p><strong>Features:</strong></p>\n<ul>\n<li>\n<strong>Material:</strong> Solid PVC panel with a protective UV film for a lightweight, durable, and long-lasting print.</li>\n<li>\n<strong>Texture &amp; Finish:</strong> Smooth texture with an intense, natural look and feel, perfect for enhancing any space.</li>\n<li>\n<strong>Color Options:</strong> Available in white and black.</li>\n<li>\n<strong>Thickness:</strong> 5mm (0.2\") for a modern, elegant finish.</li>\n<li>\n<strong>Hanging Kit:</strong> Included with each foam board print; varies by country of fulfillment.</li>\n<li>\n<strong>Available Sizes:</strong> 18 sizes (13 portrait/landscape, 5 square); inches for US/Canada, centimeters elsewhere. Sizes may vary slightly by region.</li>\n<li>\n<strong>Packaging:</strong> Robust packaging ensures the foam board print arrives in pristine condition.</li>\n<li>\n<strong>Printing &amp; Shipping:</strong> Printed and shipped on demand, no minimum order required.</li>\n</ul>"
+  },
+  {
+    "key": "body_html",
+    "count": 1,
+    "chars": 1210,
+    "value": "<p>Our sleek aluminum frame with a polished finish complements the silky feel of our high-quality, lightweight semi-glossy paper. The poster and frame ship together, requiring easy assembly with included hardware:</p>\n<ul>\n    <li>\n<strong>Frame Material:</strong> Durable aluminum.</li>\n    <li>\n<strong>Frame Color:</strong> Black.</li>\n    <li>\n<strong>Frame Measurements:</strong> Approximately 20mm (0.8\") thick and 10mm (0.4\") wide.</li>\n    <li>\n<strong>Paper Finishing:</strong> Semi-glossy, enhances colors with a subtle shine.</li>\n    <li>\n<strong>Paper Weight:</strong> 170 gsm (65 lb), thickness: 0.19 mm (7.5 mils).</li>\n    <li>\n<strong>Protection:</strong> Shatterproof plexiglass protects the poster.</li>\n    <li>\n<strong>Sustainable Paper:</strong> FSC-certified materials or equivalent.</li>\n    <li>\n<strong>Available Sizes:</strong> 15 sizes in inches (US&amp;CA) and cms (rest of the world).</li>\n</ul>\n<p>Learn about paper types and their unique textures and finishes <a href=\"https://support.gelato.com/en/articles/8996279-what-paper-types-do-you-support?\" target=\"_blank\">here</a>.</p>\n<p>No minimum orders, printed and shipped on demand.</p>\n<div data-gelato-customization=\"1\"></div>"
+  },
+  {
+    "key": "body_html",
+    "count": 1,
+    "chars": 1211,
+    "value": "<p>Our popular foam prints are sleek, modern, and super lightweight. Perfect to lift the look of any space - foam prints are versatile, available in various sizes, and will last for years to come.</p>\n\n<p><strong>Features:</strong></p>\n<ul>\n<li>\n<strong>Material:</strong> Solid PVC panel with a protective UV film for a lightweight, durable, and long-lasting print.</li>\n<li>\n<strong>Texture &amp; Finish:</strong> Smooth texture with an intense, natural look and feel, perfect for enhancing any space.</li>\n<li>\n<strong>Color Options:</strong> Available in white and black.</li>\n<li>\n<strong>Thickness:</strong> 5mm (0.2\") for a modern, elegant finish.</li>\n<li>\n<strong>Hanging Kit:</strong> Included with each foam board print; varies by country of fulfillment.</li>\n<li>\n<strong>Available Sizes:</strong> 18 sizes (13 portrait/landscape, 5 square); inches for US/Canada, centimeters elsewhere. Sizes may vary slightly by region.</li>\n<li>\n<strong>Packaging:</strong> Robust packaging ensures the foam board print arrives in pristine condition.</li>\n<li>\n<strong>Printing &amp; Shipping:</strong> Printed and shipped on demand, no minimum order required.</li>\n</ul>\n<div data-gelato-customization=\"1\"></div>"
+  },
+  {
+    "key": "body_html",
+    "count": 1,
+    "chars": 1306,
+    "value": "<p>Elevate your space with our framed canvas prints, featuring rich texture that adds depth for a captivating art experience:</p>\n<ul>\n    <li>\n<strong>Canvas Material:</strong> FSC-certified wood stretcher bars, cotton-polyester blend (300-350gsm, 350-400 microns).</li>\n    <li>\n<strong>Size Options:</strong> 13 sizes in inches (US&amp;CA) and cms (rest of the world).</li>\n    <li>\n<strong>Frame Colors:</strong> Black, Natural Wood, Dark Brown.</li>\n    <li>\n<strong>Sustainable Wood:</strong> FSC-certified or locally sourced poplar or pine.</li>\n    <li>\n<strong>High-Quality Printing:</strong> Long-lasting, vibrant colors.</li>\n    <li>\n<strong>Hanging Kit:</strong> Included, varies by country.</li>\n    <li>\n<strong>Frame Dimensions:</strong> The width (the front of the frame) is 9 to 14 mm wide (0.35\" to 0.55\"), with thickness varying by region— 42 mm (1.65\") in North America and 32 mm (1.26\") in Europe. A 12 mm (0.45\") gap between the canvas and frame ensures a snug fit.</li>\n    <li>\n<strong>Canvas frame:</strong> Canvas products mounted in the frames are <a href=\"https://support.gelato.com/en/articles/8996211-what-is-the-difference-between-thick-and-slim-canvas\">slim</a>.</li> \n</ul>\n<p>No minimum orders, printed and shipped on demand.</p>\n<div data-gelato-customization=\"1\"></div>"
+  },
+  {
+    "key": "body_html",
+    "count": 3,
+    "chars": 1308,
+    "value": "<p>Our sturdy, durable wooden framed posters come ready to hang. Enjoy silky, high-quality art on lightweight, classic semi-gloss paper.</p>\n<ul>\n    <li>\n<strong>Ready-to-hang:</strong> Includes hanging kit, ready to hang directly on the wall.</li>\n    <li>\n<strong>Frame Material:</strong> Durable pine wood.</li>\n    <li>\n<strong>Frame Color:</strong> Black, white (smooth finish), natural, and dark brown wood (visible grain).</li>\n    <li>\n<strong>Frame Measurements:</strong> 20-25mm (0.79\"-0.98\") thick, 10-14mm (0.4\"-0.6\") wide.</li>\n    <li>\n<strong>Paper Weight:</strong> 170 gsm (65 lb), thickness: 0.19 mm (7.5 mils).</li>\n    <li>\n<strong>Paper Finishing:</strong> Semi-glossy, enhances colors with a subtle shine.</li>\n    <li>\n<strong>Protection:</strong> Shatterproof plexiglass protects the poster.</li>\n    <li>\n<strong>Sustainable Paper:</strong> FSC-certified materials or equivalent.</li>\n    <li>\n<strong>Available Sizes:</strong> 15 sizes in inches (US&amp;CA) and cms (rest of the world).</li>\n</ul>\n<p>Learn about paper types and their unique textures and finishes <a href=\"https://support.gelato.com/en/articles/8996279-what-paper-types-do-you-support?\" target=\"_blank\">here</a>.</p>\n<p>No minimum orders, printed and shipped on demand.</p>\n<div data-gelato-customization=\"1\"></div>"
+  },
+  {
+    "key": "body_html",
+    "count": 1,
+    "chars": 1312,
+    "value": "<p>Our sturdy, ready-to-hang wooden framed posters feature premium semi-glossy paper that enhances colors with a subtle shine while protecting against fading from light and moisture:</p>\n<ul>\n    <li>\n<strong>Ready-to-hang:</strong> Includes hanging kit, ready to hang directly on the wall.</li>\n    <li>\n<strong>Frame Material:</strong> Durable pine wood.</li>\n    <li>\n<strong>Frame Color:</strong> Black, white (smooth finish), natural, and dark brown wood (visible grain).</li>\n    <li>\n<strong>Frame Measurements:</strong> 20-25mm (0.79\"-0.98\") thick, 10-14mm (0.4\"-0.6\") wide.</li>\n    <li>\n<strong>Paper Weight:</strong> 200 gsm (80 lb), thickness: 0.22 mm (8.7 mils).</li>\n    <li>\n<strong>Paper Finishing:</strong> Semi-glossy, enhances colors with a subtle shine.</li>\n    <li>\n<strong>Protection:</strong> Shatterproof plexiglass protects the poster.</li>\n    <li>\n<strong>Sustainable Paper:</strong> FSC-certified materials or equivalent.</li>\n    <li>\n<strong>Available Sizes:</strong> 15 sizes in inches (US&amp;CA) and cms (rest of the world).</li>\n</ul>\n<p>Learn about paper types and their unique textures and finishes <a href=\"https://support.gelato.com/en/articles/8996279-what-paper-types-do-you-support?\" target=\"_blank\">here</a>.</p>\n<p>No minimum orders, printed and shipped on demand.</p>"
+  },
+  {
+    "key": "body_html",
+    "count": 1,
+    "chars": 1333,
+    "value": "<p>Discover our Fine Art Wooden Framed Posters - iconic artworks printed on luxurious matte paper with vivid colors using fine art 12-color printing technology. Perfect for adding elegance and lasting quality to any space.</p>\n<ul>\n<li>\n<strong>Color Vibrancy:</strong> Our 12-color fine art printing technology delivers vivid, accurate colors with stunning depth, far beyond standard 4-color inkjet printing technology.</li>\n<li>\n<strong>Frame Material:</strong> Durable pine wood.</li>\n<li>\n<strong>Paper Finishing:</strong> Smooth matte finish for a clean, glare-free display.</li>\n<li>\n<strong>Paper Weight:</strong> 200 gsm (80 lb), thickness: 0.26 mm (10.3 mils).</li>\n<li>\n<strong>Frame Measurements:</strong> 20mm (0.79\") thick, 10-14mm (0.4\"-0.6\") wide.</li>\n<li>\n<strong>Available Sizes:</strong> Offered in a variety of sizes to fit any space or frame.</li>\n<li>\n<strong>Protection:</strong> Shatterproof plexiglass protects the poster.</li>\n<li>\n<strong>Eco-Friendly Materials:</strong> Printed on environmentally conscious, FSC-certified paper and wood.</li>\n<li>\n<strong>Ready-to-hang:</strong> Includes hanging kit, ready to hang directly on the wall.</li>\n</ul>\n<p>No minimum orders, printed and shipped on demand to guarantee freshness and customization for every order.</p>\n<div data-gelato-customization=\"1\"></div>"
+  },
+  {
+    "key": "body_html",
+    "count": 2,
+    "chars": 1354,
+    "value": "<p>Our sturdy, ready-to-hang wooden framed posters feature premium semi-glossy paper that enhances colors with a subtle shine while protecting against fading from light and moisture:</p>\n<ul>\n    <li>\n<strong>Ready-to-hang:</strong> Includes hanging kit, ready to hang directly on the wall.</li>\n    <li>\n<strong>Frame Material:</strong> Durable pine wood.</li>\n    <li>\n<strong>Frame Color:</strong> Black, white (smooth finish), natural, and dark brown wood (visible grain).</li>\n    <li>\n<strong>Frame Measurements:</strong> 20-25mm (0.79\"-0.98\") thick, 10-14mm (0.4\"-0.6\") wide.</li>\n    <li>\n<strong>Paper Weight:</strong> 200 gsm (80 lb), thickness: 0.22 mm (8.7 mils).</li>\n    <li>\n<strong>Paper Finishing:</strong> Semi-glossy, enhances colors with a subtle shine.</li>\n    <li>\n<strong>Protection:</strong> Shatterproof plexiglass protects the poster.</li>\n    <li>\n<strong>Sustainable Paper:</strong> FSC-certified materials or equivalent.</li>\n    <li>\n<strong>Available Sizes:</strong> 15 sizes in inches (US&amp;CA) and cms (rest of the world).</li>\n</ul>\n<p>Learn about paper types and their unique textures and finishes <a href=\"https://support.gelato.com/en/articles/8996279-what-paper-types-do-you-support?\" target=\"_blank\">here</a>.</p>\n<p>No minimum orders, printed and shipped on demand.</p>\n<div data-gelato-customization=\"1\"></div>"
+  },
+  {
+    "key": "body_html",
+    "count": 1,
+    "chars": 1588,
+    "value": "<div>\n<p>Cover all your grab and go needs with these long handle premium tote bags while being eco-conscious. These premium tote bags feature reinforced stitching on handles for more stability. Your unique designs will stand out on these 100% cotton fabric tote bags. Any whites in your design will be treated as transparent in the printing process for the natural color tote bags. Please keep this in mind to ensure optimal results</p>\n<p>- Reinforced stitching on handles\n<br>- Large printable area for front &amp; back\n<br>- Capacity 10 litres</p>\n<br>- 100% cotton\n<br>- 9.14 - 11.80  oz/yard², 310 - 400 g/m²\n<br>- Lukewarm hand wash only\n<p>This product is made on demand. No minimums.</p>\n</div>\n<br><br>\n<p><strong>Size guide</strong></p>\n\n<br><br>\n<table>\n<tr>\n<td> </td>\n<td><strong>Sizes</strong></td>\n</tr>\n<tr>\n<td><strong>Length (cm)</strong></td>\n<td>2</td>\n</tr>\n<tr>\n<td><strong>Width (cm)</strong></td>\n<td>35.6</td>\n</tr>\n</table>\n\n\n<br><br>\n<table>\n<tr>\n<td> </td>\n<td><strong>Sizes</strong></td>\n</tr>\n<tr>\n<td><strong>Length (inches)</strong></td>\n<td>0.8</td>\n</tr>\n<tr>\n<td><strong>Width (inches)</strong></td>\n<td>14</td>\n</tr>\n</table>\n\n\n<br><br>\n<p><strong>Care instructions</strong></p>\n<table>\n<tr>\n<td>Wash</td>\n<td>Machine wash warm (max 40C or 105F), wash garment inside out with similar colors</td>\n</tr>\n<tr>\n<td>Tumble Dry</td>\n<td>Low</td>\n</tr>\n<tr>\n<td>Bleach</td>\n<td>Only non-chlorine</td>\n</tr>\n<tr>\n<td>Dry clean</td>\n<td>Do not dry clean</td>\n</tr>\n<tr>\n<td>Iron</td>\n<td>Do not iron</td>\n</tr>\n</table>\n<div data-gelato-customization=\"1\"></div>"
+  },
+  {
+    "key": "body_html",
+    "count": 1,
+    "chars": 1664,
+    "value": "<div>\n<p>Cover all your grab and go needs with these long handle tote bags while being eco-conscious. These tote bags feature reinforced stitching on handles for more stability. Your unique designs will stand out on these 100% cotton fabric tote bags. Any whites in your design will be treated as transparent in the printing process for the natural color tote bags. Please keep this in mind to ensure optimal results</p>\n<p>- Reinforced stitching on handles\n<br>- Large printable area for front &amp; back\n<br>- Capacity 10 litres</p>\n<br>- 100% cotton\n<br>- 3 - 5  oz/yard², 100 - 170  g/m²\n<p>This product is made on demand. No minimums.</p>\n</div>\n<br><br>\n<p><strong>Size guide</strong></p>\n\n<br><br>\n<table>\n<tr>\n<td> </td>\n<td><strong>Sizes</strong></td>\n</tr>\n<tr>\n<td><strong>Handle (cm)</strong></td>\n<td>67</td>\n</tr>\n<tr>\n<td><strong>Length (cm)</strong></td>\n<td>42</td>\n</tr>\n<tr>\n<td><strong>Width (cm)</strong></td>\n<td>38</td>\n</tr>\n</table>\n\n\n<br><br>\n<table>\n<tr>\n<td> </td>\n<td><strong>Sizes</strong></td>\n</tr>\n<tr>\n<td><strong>Handle (inches)</strong></td>\n<td>26.4</td>\n</tr>\n<tr>\n<td><strong>Length (inches)</strong></td>\n<td>16.5</td>\n</tr>\n<tr>\n<td><strong>Width (inches)</strong></td>\n<td>15</td>\n</tr>\n</table>\n\n\n<br><br>\n<p><strong>Care instructions</strong></p>\n<table>\n<tr>\n<td>Wash</td>\n<td>Machine wash warm (max 40C or 105F), wash garment inside out with similar colors</td>\n</tr>\n<tr>\n<td>Tumble Dry</td>\n<td>Low</td>\n</tr>\n<tr>\n<td>Bleach</td>\n<td>Only non-chlorine</td>\n</tr>\n<tr>\n<td>Dry clean</td>\n<td>Do not dry clean</td>\n</tr>\n<tr>\n<td>Iron</td>\n<td>Do not iron</td>\n</tr>\n</table>\n<div data-gelato-customization=\"1\"></div>"
+  },
+  {
+    "key": "body_html",
+    "count": 1,
+    "chars": 2602,
+    "value": "<link rel=\"stylesheet\" type=\"text/css\" href=\"https://cdn.shopify.com/shopifycloud/privacy-banner/data-sale-opt-out.css\">\n<meta charset=\"utf-8\"> <p>As described in our Privacy Policy, we collect personal information from your interactions with us and our website, including through cookies and similar technologies. We may also share this personal information with third parties, including advertising partners. We do this in order to show you ads on other websites that are more relevant to your interests and for other reasons outlined in our privacy policy.</p> <p>Sharing of personal information for targeted advertising based on your interaction on different websites may be considered \"sales\", \"sharing\", or \"targeted advertising\" under certain U.S. state privacy laws. Depending on where you live, you may have the right to opt out of these activities. If you would like to exercise this opt-out right, please follow the instructions below.</p> <p>If you visit our website with the Global Privacy Control opt-out preference signal enabled, depending on where you are, we will treat this as a request to opt-out of activity that may be considered a “sale” or “sharing” of personal information or other uses that may be considered targeted advertising for the device and browser you used to visit our website.</p>\n<div id=\"pc--optOutFormContainer\" data-not-applicable='To opt out of the \"sale\" or \"sharing\" of your personal information collected using cookies and other device-based identifiers as described above, you must be browsing from one of the applicable US states referred to above.' data-description='If you would like to opt out of activity that may be considered a \"sale\" or \"share,\" or \"targeted advertising\", please submit your email.' data-email-label='Email' data-success='Opted-out successfully' data-error='A problem occurred, try submitting your email again' data-form-description='By clicking “opt out“, the browser on this device will be opted out of sharing personal data. If you select the checkbox and enter an email, the related customer account will also be opted out.' data-form-email-label='Email' data-form-opt-out-account-label=\"Don't share data from my account (optional)\" data-form-button-text='Opt out' data-form-opted-out='The browser on this device is opted out' data-form-success='You have successfully opted out' data-form-error='A problem occurred, please try again' ></div>\n<script src=\"https://cdn.shopify.com/shopifycloud/privacy-banner/data-sale-opt-out.js\" defer></script> <script src=\"https://js.hcaptcha.com/1/api.js?onload=optOutOnLoad\" defer></script>"
+  }
+]

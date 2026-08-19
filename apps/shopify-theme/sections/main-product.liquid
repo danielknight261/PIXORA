@@ -479,7 +479,7 @@
               "colorOptionIndex": {% if color_option_index != nil %}{{ color_option_index }}{% else %}null{% endif %},
               "fixedOrient": {% if fixed_orient != blank %}{{ fixed_orient | json }}{% else %}null{% endif %},
               "variantMapUrl": {% if variant_map_asset != blank %}{{ variant_map_asset | asset_url | json }}{% else %}null{% endif %},
-              "galleryMap": {% if handle_down contains 'canvas' and handle_down != 'framed-canvas' %}{% render 'canvas-variant-gallery-data' %}{% elsif handle_down == 'premium-matte-paper-poster' %}{% render 'matte-poster-gallery-data' %}{% else %}{% render 'variant-gallery-map' %}{% endif %},
+              "galleryMap": {% if handle_down contains 'canvas' and handle_down != 'framed-canvas' %}{% render 'canvas-variant-gallery-data' %}{% elsif handle_down == 'premium-matte-paper-poster' %}{% render 'matte-poster-gallery-data' %}{% elsif handle_down == 'classic-semi-glossy-paper-poster' %}{% render 'semi-glossy-poster-gallery-data' %}{% elsif handle_down == 'fine-art-poster' %}{% render 'fine-art-poster-gallery-data' %}{% else %}{% render 'variant-gallery-map' %}{% endif %},
               "variants": [
                 {%- for variant in product.variants -%}
                   {

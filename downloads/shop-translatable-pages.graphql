@@ -1,0 +1,15 @@
+query Pages {
+  translatableResources(first: 50, resourceType: PAGE) {
+    edges {
+      node {
+        resourceId
+        translatableContent {
+          key
+          value
+          digest
+          locale
+        }
+      }
+    }
+  }
+}

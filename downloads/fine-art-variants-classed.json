@@ -1,0 +1,971 @@
+[
+  {
+    "id": "57953097777496",
+    "gid": "gid://shopify/ProductVariant/57953097777496",
+    "title": "Vertical / 13x18 cm / 5x7″",
+    "sku": "75a28f83-bcc0-42c8-a363-2dd5ae657788",
+    "price": "12.06",
+    "options": [
+      {
+        "name": "Orientation",
+        "value": "Vertical"
+      },
+      {
+        "name": "Size",
+        "value": "13x18 cm / 5x7″"
+      }
+    ],
+    "orient": "portrait",
+    "size": "13x18 cm / 5x7″"
+  },
+  {
+    "id": "57953097810264",
+    "gid": "gid://shopify/ProductVariant/57953097810264",
+    "title": "Vertical / 15x20 cm / 6x8″",
+    "sku": "f9147ef6-ab89-4b74-9c90-1485075fcd11",
+    "price": "12.43",
+    "options": [
+      {
+        "name": "Orientation",
+        "value": "Vertical"
+      },
+      {
+        "name": "Size",
+        "value": "15x20 cm / 6x8″"
+      }
+    ],
+    "orient": "portrait",
+    "size": "15x20 cm / 6x8″"
+  },
+  {
+    "id": "57953097843032",
+    "gid": "gid://shopify/ProductVariant/57953097843032",
+    "title": "Vertical / 20x25 cm / 8x10″",
+    "sku": "1cfe314c-eaf7-4968-ab99-5ba96210412a",
+    "price": "12.61",
+    "options": [
+      {
+        "name": "Orientation",
+        "value": "Vertical"
+      },
+      {
+        "name": "Size",
+        "value": "20x25 cm / 8x10″"
+      }
+    ],
+    "orient": "portrait",
+    "size": "20x25 cm / 8x10″"
+  },
+  {
+    "id": "57953097875800",
+    "gid": "gid://shopify/ProductVariant/57953097875800",
+    "title": "Vertical / 20x50 cm / 8x20″",
+    "sku": "a89904fb-a276-469d-bd17-fe7c1a0cdc4d",
+    "price": "13.91",
+    "options": [
+      {
+        "name": "Orientation",
+        "value": "Vertical"
+      },
+      {
+        "name": "Size",
+        "value": "20x50 cm / 8x20″"
+      }
+    ],
+    "orient": "portrait",
+    "size": "20x50 cm / 8x20″"
+  },
+  {
+    "id": "57953097908568",
+    "gid": "gid://shopify/ProductVariant/57953097908568",
+    "title": "Vertical / 21x29.7 cm / 8x12\"",
+    "sku": "694a7e55-1a56-4d62-8177-6faaa3edf4da",
+    "price": "12.80",
+    "options": [
+      {
+        "name": "Orientation",
+        "value": "Vertical"
+      },
+      {
+        "name": "Size",
+        "value": "21x29.7 cm / 8x12\""
+      }
+    ],
+    "orient": "portrait",
+    "size": "21x29.7 cm / 8x12\""
+  },
+  {
+    "id": "57953097941336",
+    "gid": "gid://shopify/ProductVariant/57953097941336",
+    "title": "Vertical / 25x25 cm / 10x10″",
+    "sku": "b929493a-609a-4166-9458-c03ff6edcd60",
+    "price": "13.17",
+    "options": [
+      {
+        "name": "Orientation",
+        "value": "Vertical"
+      },
+      {
+        "name": "Size",
+        "value": "25x25 cm / 10x10″"
+      }
+    ],
+    "orient": "square",
+    "size": "25x25 cm / 10x10″"
+  },
+  {
+    "id": "57953097974104",
+    "gid": "gid://shopify/ProductVariant/57953097974104",
+    "title": "Vertical / 25x60 cm / 10x24″",
+    "sku": "1276dd00-ed7b-4e06-890a-1998a99d08ae",
+    "price": "16.51",
+    "options": [
+      {
+        "name": "Orientation",
+        "value": "Vertical"
+      },
+      {
+        "name": "Size",
+        "value": "25x60 cm / 10x24″"
+      }
+    ],
+    "orient": "portrait",
+    "size": "25x60 cm / 10x24″"
+  },
+  {
+    "id": "57953098006872",
+    "gid": "gid://shopify/ProductVariant/57953098006872",
+    "title": "Vertical / 27x35 cm / 11x14″",
+    "sku": "3df3d8ab-e3d9-408f-ba97-9c8137659cdc",
+    "price": "13.73",
+    "options": [
+      {
+        "name": "Orientation",
+        "value": "Vertical"
+      },
+      {
+        "name": "Size",
+        "value": "27x35 cm / 11x14″"
+      }
+    ],
+    "orient": "portrait",
+    "size": "27x35 cm / 11x14″"
+  },
+  {
+    "id": "57953098039640",
+    "gid": "gid://shopify/ProductVariant/57953098039640",
+    "title": "Vertical / 28x43  cm / XL (11x17″)",
+    "sku": "46bdbbd1-3531-4443-9b0e-29cc40548905",
+    "price": "15.40",
+    "options": [
+      {
+        "name": "Orientation",
+        "value": "Vertical"
+      },
+      {
+        "name": "Size",
+        "value": "28x43  cm / XL (11x17″)"
+      }
+    ],
+    "orient": "portrait",
+    "size": "28x43  cm / XL (11x17″)"
+  },
+  {
+    "id": "57953098072408",
+    "gid": "gid://shopify/ProductVariant/57953098072408",
+    "title": "Vertical / A3 (29.7 x 42  cm)",
+    "sku": "b04859db-660c-4d94-8177-7cccf36881d6",
+    "price": "15.77",
+    "options": [
+      {
+        "name": "Orientation",
+        "value": "Vertical"
+      },
+      {
+        "name": "Size",
+        "value": "A3 (29.7 x 42  cm)"
+      }
+    ],
+    "orient": "portrait",
+    "size": "A3 (29.7 x 42  cm)"
+  },
+  {
+    "id": "57953098105176",
+    "gid": "gid://shopify/ProductVariant/57953098105176",
+    "title": "Vertical / 30x30 cm / 12x12″",
+    "sku": "2d967a1d-45cc-46e1-8c59-14d1fd1c4a1d",
+    "price": "13.36",
+    "options": [
+      {
+        "name": "Orientation",
+        "value": "Vertical"
+      },
+      {
+        "name": "Size",
+        "value": "30x30 cm / 12x12″"
+      }
+    ],
+    "orient": "square",
+    "size": "30x30 cm / 12x12″"
+  },
+  {
+    "id": "57953098137944",
+    "gid": "gid://shopify/ProductVariant/57953098137944",
+    "title": "Vertical / 30x40 cm / 12x16″",
+    "sku": "9db3348c-f415-4d3c-945f-98bda50b8f18",
+    "price": "14.47",
+    "options": [
+      {
+        "name": "Orientation",
+        "value": "Vertical"
+      },
+      {
+        "name": "Size",
+        "value": "30x40 cm / 12x16″"
+      }
+    ],
+    "orient": "portrait",
+    "size": "30x40 cm / 12x16″"
+  },
+  {
+    "id": "57953098170712",
+    "gid": "gid://shopify/ProductVariant/57953098170712",
+    "title": "Vertical / 30x45 cm / 12x18″",
+    "sku": "c8dd9859-a2b9-4a7a-86d6-9d1555a883e9",
+    "price": "16.14",
+    "options": [
+      {
+        "name": "Orientation",
+        "value": "Vertical"
+      },
+      {
+        "name": "Size",
+        "value": "30x45 cm / 12x18″"
+      }
+    ],
+    "orient": "portrait",
+    "size": "30x45 cm / 12x18″"
+  },
+  {
+    "id": "57953098203480",
+    "gid": "gid://shopify/ProductVariant/57953098203480",
+    "title": "Vertical / 35x35 cm / 14x14″",
+    "sku": "0ea89066-d18b-4b96-b8e2-edd9a87a889d",
+    "price": "15.59",
+    "options": [
+      {
+        "name": "Orientation",
+        "value": "Vertical"
+      },
+      {
+        "name": "Size",
+        "value": "35x35 cm / 14x14″"
+      }
+    ],
+    "orient": "square",
+    "size": "35x35 cm / 14x14″"
+  },
+  {
+    "id": "57953098236248",
+    "gid": "gid://shopify/ProductVariant/57953098236248",
+    "title": "Vertical / 40x40 cm / 16x16″",
+    "sku": "621c25dc-f262-4248-bac0-9cc66e168835",
+    "price": "16.70",
+    "options": [
+      {
+        "name": "Orientation",
+        "value": "Vertical"
+      },
+      {
+        "name": "Size",
+        "value": "40x40 cm / 16x16″"
+      }
+    ],
+    "orient": "square",
+    "size": "40x40 cm / 16x16″"
+  },
+  {
+    "id": "57953098269016",
+    "gid": "gid://shopify/ProductVariant/57953098269016",
+    "title": "Vertical / 40x50 cm / 16x20″",
+    "sku": "b68eae6d-c81b-488c-a199-216d9c109233",
+    "price": "17.44",
+    "options": [
+      {
+        "name": "Orientation",
+        "value": "Vertical"
+      },
+      {
+        "name": "Size",
+        "value": "40x50 cm / 16x20″"
+      }
+    ],
+    "orient": "portrait",
+    "size": "40x50 cm / 16x20″"
+  },
+  {
+    "id": "57953098301784",
+    "gid": "gid://shopify/ProductVariant/57953098301784",
+    "title": "Vertical / 40x60 cm / 16x24″",
+    "sku": "14262586-3969-49c6-a13f-5e779a959fee",
+    "price": "18.56",
+    "options": [
+      {
+        "name": "Orientation",
+        "value": "Vertical"
+      },
+      {
+        "name": "Size",
+        "value": "40x60 cm / 16x24″"
+      }
+    ],
+    "orient": "portrait",
+    "size": "40x60 cm / 16x24″"
+  },
+  {
+    "id": "57953098334552",
+    "gid": "gid://shopify/ProductVariant/57953098334552",
+    "title": "Vertical / A2 (42 x 59.4  cm)",
+    "sku": "d41b7c5f-f848-44cc-b29d-484707bd8379",
+    "price": "18.93",
+    "options": [
+      {
+        "name": "Orientation",
+        "value": "Vertical"
+      },
+      {
+        "name": "Size",
+        "value": "A2 (42 x 59.4  cm)"
+      }
+    ],
+    "orient": "portrait",
+    "size": "A2 (42 x 59.4  cm)"
+  },
+  {
+    "id": "57953098367320",
+    "gid": "gid://shopify/ProductVariant/57953098367320",
+    "title": "Vertical / 45x45 cm / 18x18″",
+    "sku": "63885125-73f6-4755-8ecc-5ff4faecf618",
+    "price": "18.19",
+    "options": [
+      {
+        "name": "Orientation",
+        "value": "Vertical"
+      },
+      {
+        "name": "Size",
+        "value": "45x45 cm / 18x18″"
+      }
+    ],
+    "orient": "square",
+    "size": "45x45 cm / 18x18″"
+  },
+  {
+    "id": "57953098400088",
+    "gid": "gid://shopify/ProductVariant/57953098400088",
+    "title": "Vertical / 45x60 cm / 18x24″",
+    "sku": "7f48bdd7-a3e4-4ec8-9647-1ed210eaefb9",
+    "price": "19.86",
+    "options": [
+      {
+        "name": "Orientation",
+        "value": "Vertical"
+      },
+      {
+        "name": "Size",
+        "value": "45x60 cm / 18x24″"
+      }
+    ],
+    "orient": "portrait",
+    "size": "45x60 cm / 18x24″"
+  },
+  {
+    "id": "57953098432856",
+    "gid": "gid://shopify/ProductVariant/57953098432856",
+    "title": "Vertical / 50x50 cm / 20x20″",
+    "sku": "457489d1-4c56-4356-8212-5cfeeba17c8d",
+    "price": "19.49",
+    "options": [
+      {
+        "name": "Orientation",
+        "value": "Vertical"
+      },
+      {
+        "name": "Size",
+        "value": "50x50 cm / 20x20″"
+      }
+    ],
+    "orient": "square",
+    "size": "50x50 cm / 20x20″"
+  },
+  {
+    "id": "57953098465624",
+    "gid": "gid://shopify/ProductVariant/57953098465624",
+    "title": "Vertical / 50x70 cm / 20x28″",
+    "sku": "eef33a1b-69ca-425c-8fd5-c59d8cfe4050",
+    "price": "20.79",
+    "options": [
+      {
+        "name": "Orientation",
+        "value": "Vertical"
+      },
+      {
+        "name": "Size",
+        "value": "50x70 cm / 20x28″"
+      }
+    ],
+    "orient": "portrait",
+    "size": "50x70 cm / 20x28″"
+  },
+  {
+    "id": "57953098498392",
+    "gid": "gid://shopify/ProductVariant/57953098498392",
+    "title": "Vertical / A1 (59.4 x 84.1  cm)",
+    "sku": "01406920-443d-492a-b7e6-5eab93dbaa87",
+    "price": "25.06",
+    "options": [
+      {
+        "name": "Orientation",
+        "value": "Vertical"
+      },
+      {
+        "name": "Size",
+        "value": "A1 (59.4 x 84.1  cm)"
+      }
+    ],
+    "orient": "portrait",
+    "size": "A1 (59.4 x 84.1  cm)"
+  },
+  {
+    "id": "57953098531160",
+    "gid": "gid://shopify/ProductVariant/57953098531160",
+    "title": "Vertical / 60x80 cm / 24x32″",
+    "sku": "d1d1b9b0-72bd-43c6-8bf2-e8a372edca12",
+    "price": "24.13",
+    "options": [
+      {
+        "name": "Orientation",
+        "value": "Vertical"
+      },
+      {
+        "name": "Size",
+        "value": "60x80 cm / 24x32″"
+      }
+    ],
+    "orient": "portrait",
+    "size": "60x80 cm / 24x32″"
+  },
+  {
+    "id": "57953098563928",
+    "gid": "gid://shopify/ProductVariant/57953098563928",
+    "title": "Vertical / 60x90 cm / 24x36″",
+    "sku": "7d436194-9b48-471a-8682-3a3ede26f8e3",
+    "price": "25.61",
+    "options": [
+      {
+        "name": "Orientation",
+        "value": "Vertical"
+      },
+      {
+        "name": "Size",
+        "value": "60x90 cm / 24x36″"
+      }
+    ],
+    "orient": "portrait",
+    "size": "60x90 cm / 24x36″"
+  },
+  {
+    "id": "57953098596696",
+    "gid": "gid://shopify/ProductVariant/57953098596696",
+    "title": "Vertical / 70x70 cm / 28x28″",
+    "sku": "1e13d16d-db5f-4147-a0fa-b987dcee7f89",
+    "price": "24.69",
+    "options": [
+      {
+        "name": "Orientation",
+        "value": "Vertical"
+      },
+      {
+        "name": "Size",
+        "value": "70x70 cm / 28x28″"
+      }
+    ],
+    "orient": "square",
+    "size": "70x70 cm / 28x28″"
+  },
+  {
+    "id": "57953098629464",
+    "gid": "gid://shopify/ProductVariant/57953098629464",
+    "title": "Vertical / 70x100 cm / 28x40″",
+    "sku": "bc649bba-0c0a-4d82-bd0a-3471ac6d835d",
+    "price": "26.17",
+    "options": [
+      {
+        "name": "Orientation",
+        "value": "Vertical"
+      },
+      {
+        "name": "Size",
+        "value": "70x100 cm / 28x40″"
+      }
+    ],
+    "orient": "portrait",
+    "size": "70x100 cm / 28x40″"
+  },
+  {
+    "id": "57953098662232",
+    "gid": "gid://shopify/ProductVariant/57953098662232",
+    "title": "Vertical / 75x100 cm / 30x40″",
+    "sku": "0dd15a85-66c9-42b9-903b-9d4dfdd89677",
+    "price": "26.73",
+    "options": [
+      {
+        "name": "Orientation",
+        "value": "Vertical"
+      },
+      {
+        "name": "Size",
+        "value": "75x100 cm / 30x40″"
+      }
+    ],
+    "orient": "portrait",
+    "size": "75x100 cm / 30x40″"
+  },
+  {
+    "id": "57953098695000",
+    "gid": "gid://shopify/ProductVariant/57953098695000",
+    "title": "Vertical / A0 (84.1 x 118.9  cm)",
+    "sku": "513f6c41-e7b8-4cd4-ba46-7b7834a71c8a",
+    "price": "27.10",
+    "options": [
+      {
+        "name": "Orientation",
+        "value": "Vertical"
+      },
+      {
+        "name": "Size",
+        "value": "A0 (84.1 x 118.9  cm)"
+      }
+    ],
+    "orient": "portrait",
+    "size": "A0 (84.1 x 118.9  cm)"
+  },
+  {
+    "id": "57953098727768",
+    "gid": "gid://shopify/ProductVariant/57953098727768",
+    "title": "Horizontal / 13x18 cm / 5x7″",
+    "sku": "7ff24b57-2356-44b6-8816-7ddda69b600a",
+    "price": "12.06",
+    "options": [
+      {
+        "name": "Orientation",
+        "value": "Horizontal"
+      },
+      {
+        "name": "Size",
+        "value": "13x18 cm / 5x7″"
+      }
+    ],
+    "orient": "landscape",
+    "size": "13x18 cm / 5x7″"
+  },
+  {
+    "id": "57953098760536",
+    "gid": "gid://shopify/ProductVariant/57953098760536",
+    "title": "Horizontal / 15x20 cm / 6x8″",
+    "sku": "3d42ed26-bf7e-46c1-a58d-2446dbcd399a",
+    "price": "12.43",
+    "options": [
+      {
+        "name": "Orientation",
+        "value": "Horizontal"
+      },
+      {
+        "name": "Size",
+        "value": "15x20 cm / 6x8″"
+      }
+    ],
+    "orient": "landscape",
+    "size": "15x20 cm / 6x8″"
+  },
+  {
+    "id": "57953098793304",
+    "gid": "gid://shopify/ProductVariant/57953098793304",
+    "title": "Horizontal / 20x25 cm / 8x10″",
+    "sku": "10dbab47-b38a-47f5-aad3-643357165c15",
+    "price": "12.61",
+    "options": [
+      {
+        "name": "Orientation",
+        "value": "Horizontal"
+      },
+      {
+        "name": "Size",
+        "value": "20x25 cm / 8x10″"
+      }
+    ],
+    "orient": "landscape",
+    "size": "20x25 cm / 8x10″"
+  },
+  {
+    "id": "57953098826072",
+    "gid": "gid://shopify/ProductVariant/57953098826072",
+    "title": "Horizontal / 20x50 cm / 8x20″",
+    "sku": "4edd6108-fd47-4f21-8cd2-cf5e83299e2c",
+    "price": "13.91",
+    "options": [
+      {
+        "name": "Orientation",
+        "value": "Horizontal"
+      },
+      {
+        "name": "Size",
+        "value": "20x50 cm / 8x20″"
+      }
+    ],
+    "orient": "landscape",
+    "size": "20x50 cm / 8x20″"
+  },
+  {
+    "id": "57953098858840",
+    "gid": "gid://shopify/ProductVariant/57953098858840",
+    "title": "Horizontal / 21x29.7 cm / 8x12\"",
+    "sku": "3322b6d6-b9a8-4e7a-9849-d3cc1664e049",
+    "price": "12.80",
+    "options": [
+      {
+        "name": "Orientation",
+        "value": "Horizontal"
+      },
+      {
+        "name": "Size",
+        "value": "21x29.7 cm / 8x12\""
+      }
+    ],
+    "orient": "landscape",
+    "size": "21x29.7 cm / 8x12\""
+  },
+  {
+    "id": "57953098924376",
+    "gid": "gid://shopify/ProductVariant/57953098924376",
+    "title": "Horizontal / 25x60 cm / 10x24″",
+    "sku": "0ceb820d-1a4d-4136-95be-9782f96e23f5",
+    "price": "16.51",
+    "options": [
+      {
+        "name": "Orientation",
+        "value": "Horizontal"
+      },
+      {
+        "name": "Size",
+        "value": "25x60 cm / 10x24″"
+      }
+    ],
+    "orient": "landscape",
+    "size": "25x60 cm / 10x24″"
+  },
+  {
+    "id": "57953098957144",
+    "gid": "gid://shopify/ProductVariant/57953098957144",
+    "title": "Horizontal / 27x35 cm / 11x14″",
+    "sku": "1566ee4f-1441-413a-bc1c-377c460a3f74",
+    "price": "13.73",
+    "options": [
+      {
+        "name": "Orientation",
+        "value": "Horizontal"
+      },
+      {
+        "name": "Size",
+        "value": "27x35 cm / 11x14″"
+      }
+    ],
+    "orient": "landscape",
+    "size": "27x35 cm / 11x14″"
+  },
+  {
+    "id": "57953098989912",
+    "gid": "gid://shopify/ProductVariant/57953098989912",
+    "title": "Horizontal / 28x43  cm / XL (11x17″)",
+    "sku": "240b8605-32e6-424f-9a6c-7239fa377297",
+    "price": "15.40",
+    "options": [
+      {
+        "name": "Orientation",
+        "value": "Horizontal"
+      },
+      {
+        "name": "Size",
+        "value": "28x43  cm / XL (11x17″)"
+      }
+    ],
+    "orient": "landscape",
+    "size": "28x43  cm / XL (11x17″)"
+  },
+  {
+    "id": "57953099022680",
+    "gid": "gid://shopify/ProductVariant/57953099022680",
+    "title": "Horizontal / A3 (29.7 x 42  cm)",
+    "sku": "0e67ff05-60f4-4703-8daa-888a11d05944",
+    "price": "15.77",
+    "options": [
+      {
+        "name": "Orientation",
+        "value": "Horizontal"
+      },
+      {
+        "name": "Size",
+        "value": "A3 (29.7 x 42  cm)"
+      }
+    ],
+    "orient": "landscape",
+    "size": "A3 (29.7 x 42  cm)"
+  },
+  {
+    "id": "57953099088216",
+    "gid": "gid://shopify/ProductVariant/57953099088216",
+    "title": "Horizontal / 30x40 cm / 12x16″",
+    "sku": "d5525111-08ce-4314-823a-ed6f1339f1b5",
+    "price": "14.47",
+    "options": [
+      {
+        "name": "Orientation",
+        "value": "Horizontal"
+      },
+      {
+        "name": "Size",
+        "value": "30x40 cm / 12x16″"
+      }
+    ],
+    "orient": "landscape",
+    "size": "30x40 cm / 12x16″"
+  },
+  {
+    "id": "57953099120984",
+    "gid": "gid://shopify/ProductVariant/57953099120984",
+    "title": "Horizontal / 30x45 cm / 12x18″",
+    "sku": "76ab2421-de7b-4686-9218-07dab3b6eab7",
+    "price": "16.14",
+    "options": [
+      {
+        "name": "Orientation",
+        "value": "Horizontal"
+      },
+      {
+        "name": "Size",
+        "value": "30x45 cm / 12x18″"
+      }
+    ],
+    "orient": "landscape",
+    "size": "30x45 cm / 12x18″"
+  },
+  {
+    "id": "57953099219288",
+    "gid": "gid://shopify/ProductVariant/57953099219288",
+    "title": "Horizontal / 40x50 cm / 16x20″",
+    "sku": "1771d043-378f-479c-a12c-fbeacadc495b",
+    "price": "17.44",
+    "options": [
+      {
+        "name": "Orientation",
+        "value": "Horizontal"
+      },
+      {
+        "name": "Size",
+        "value": "40x50 cm / 16x20″"
+      }
+    ],
+    "orient": "landscape",
+    "size": "40x50 cm / 16x20″"
+  },
+  {
+    "id": "57953099252056",
+    "gid": "gid://shopify/ProductVariant/57953099252056",
+    "title": "Horizontal / 40x60 cm / 16x24″",
+    "sku": "38408cf9-3c39-41f2-bf14-1fbb69301749",
+    "price": "18.56",
+    "options": [
+      {
+        "name": "Orientation",
+        "value": "Horizontal"
+      },
+      {
+        "name": "Size",
+        "value": "40x60 cm / 16x24″"
+      }
+    ],
+    "orient": "landscape",
+    "size": "40x60 cm / 16x24″"
+  },
+  {
+    "id": "57953099284824",
+    "gid": "gid://shopify/ProductVariant/57953099284824",
+    "title": "Horizontal / A2 (42 x 59.4  cm)",
+    "sku": "d67396c0-5913-41a8-8c8e-2ed494e73679",
+    "price": "18.93",
+    "options": [
+      {
+        "name": "Orientation",
+        "value": "Horizontal"
+      },
+      {
+        "name": "Size",
+        "value": "A2 (42 x 59.4  cm)"
+      }
+    ],
+    "orient": "landscape",
+    "size": "A2 (42 x 59.4  cm)"
+  },
+  {
+    "id": "57953099350360",
+    "gid": "gid://shopify/ProductVariant/57953099350360",
+    "title": "Horizontal / 45x60 cm / 18x24″",
+    "sku": "c715c4c2-2826-42bf-9df9-2b33e4afd9a4",
+    "price": "19.86",
+    "options": [
+      {
+        "name": "Orientation",
+        "value": "Horizontal"
+      },
+      {
+        "name": "Size",
+        "value": "45x60 cm / 18x24″"
+      }
+    ],
+    "orient": "landscape",
+    "size": "45x60 cm / 18x24″"
+  },
+  {
+    "id": "57953099415896",
+    "gid": "gid://shopify/ProductVariant/57953099415896",
+    "title": "Horizontal / 50x70 cm / 20x28″",
+    "sku": "cae948e2-2179-4223-882b-d6f0b4ad18f0",
+    "price": "20.79",
+    "options": [
+      {
+        "name": "Orientation",
+        "value": "Horizontal"
+      },
+      {
+        "name": "Size",
+        "value": "50x70 cm / 20x28″"
+      }
+    ],
+    "orient": "landscape",
+    "size": "50x70 cm / 20x28″"
+  },
+  {
+    "id": "57953099448664",
+    "gid": "gid://shopify/ProductVariant/57953099448664",
+    "title": "Horizontal / A1 (59.4 x 84.1  cm)",
+    "sku": "0dada32c-082c-4086-8865-de97dc7377b7",
+    "price": "25.06",
+    "options": [
+      {
+        "name": "Orientation",
+        "value": "Horizontal"
+      },
+      {
+        "name": "Size",
+        "value": "A1 (59.4 x 84.1  cm)"
+      }
+    ],
+    "orient": "landscape",
+    "size": "A1 (59.4 x 84.1  cm)"
+  },
+  {
+    "id": "57953099481432",
+    "gid": "gid://shopify/ProductVariant/57953099481432",
+    "title": "Horizontal / 60x80 cm / 24x32″",
+    "sku": "74089c0a-f4b2-4763-90b5-6947b1700072",
+    "price": "24.13",
+    "options": [
+      {
+        "name": "Orientation",
+        "value": "Horizontal"
+      },
+      {
+        "name": "Size",
+        "value": "60x80 cm / 24x32″"
+      }
+    ],
+    "orient": "landscape",
+    "size": "60x80 cm / 24x32″"
+  },
+  {
+    "id": "57953099514200",
+    "gid": "gid://shopify/ProductVariant/57953099514200",
+    "title": "Horizontal / 60x90 cm / 24x36″",
+    "sku": "b052b62d-154e-4b18-b0a1-40b559a62105",
+    "price": "25.61",
+    "options": [
+      {
+        "name": "Orientation",
+        "value": "Horizontal"
+      },
+      {
+        "name": "Size",
+        "value": "60x90 cm / 24x36″"
+      }
+    ],
+    "orient": "landscape",
+    "size": "60x90 cm / 24x36″"
+  },
+  {
+    "id": "57953099579736",
+    "gid": "gid://shopify/ProductVariant/57953099579736",
+    "title": "Horizontal / 70x100 cm / 28x40″",
+    "sku": "1ed1aa12-d637-49d5-8ae7-a6c09a2de8f2",
+    "price": "26.17",
+    "options": [
+      {
+        "name": "Orientation",
+        "value": "Horizontal"
+      },
+      {
+        "name": "Size",
+        "value": "70x100 cm / 28x40″"
+      }
+    ],
+    "orient": "landscape",
+    "size": "70x100 cm / 28x40″"
+  },
+  {
+    "id": "57953099612504",
+    "gid": "gid://shopify/ProductVariant/57953099612504",
+    "title": "Horizontal / 75x100 cm / 30x40″",
+    "sku": "1d67d7c6-8571-42aa-9dd2-d61b9019b6c6",
+    "price": "26.73",
+    "options": [
+      {
+        "name": "Orientation",
+        "value": "Horizontal"
+      },
+      {
+        "name": "Size",
+        "value": "75x100 cm / 30x40″"
+      }
+    ],
+    "orient": "landscape",
+    "size": "75x100 cm / 30x40″"
+  },
+  {
+    "id": "57953099645272",
+    "gid": "gid://shopify/ProductVariant/57953099645272",
+    "title": "Horizontal / A0 (84.1 x 118.9  cm)",
+    "sku": "50ba14a9-b9c0-4d3a-84c3-45e3bfc359b5",
+    "price": "27.10",
+    "options": [
+      {
+        "name": "Orientation",
+        "value": "Horizontal"
+      },
+      {
+        "name": "Size",
+        "value": "A0 (84.1 x 118.9  cm)"
+      }
+    ],
+    "orient": "landscape",
+    "size": "A0 (84.1 x 118.9  cm)"
+  }
+]

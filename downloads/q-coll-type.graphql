@@ -1,0 +1,9 @@
+query {
+  collection(id: "gid://shopify/Collection/687120449880") {
+    id
+    handle
+    title
+    ruleSet { appliedDisjunctively rules { column relation condition } }
+    productsCount { count }
+  }
+}
