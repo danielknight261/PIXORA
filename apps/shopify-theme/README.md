@@ -1,6 +1,6 @@
-# SnapzDaddy Shopify Theme
+# Snapp Daddy Shopify Theme
 
-Liquid theme for the SnapzDaddy storefront.
+Liquid theme for the Snapp Daddy storefront (`snappdaddy.com`).
 
 ## Brand
 

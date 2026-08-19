@@ -1,4 +1,4 @@
-{% assign logo_alt = settings.brand_name | default: 'SnapzDaddy' %}
+{% assign logo_alt = settings.brand_name | default: 'Snapp Daddy' %}
 {% if settings.logo != blank %}
   {{ settings.logo | image_url: width: 160 | image_tag: alt: logo_alt, class: logo_class, loading: 'eager' }}
 {% else %}
