@@ -229,7 +229,7 @@
       <div class="page-width pb-canvas__layout">
         <div class="pb-canvas__media">
           <div class="pb-canvas__gallery" data-product-gallery>
-            <div class="pb-canvas__media-frame" data-product-media>
+            <div class="pb-canvas__media-frame{% if is_poster %} pb-canvas__media-frame--poster{% endif %}" data-product-media>
               {% if current_variant.featured_media %}
                 {% assign media = current_variant.featured_media %}
               {% else %}
@@ -240,8 +240,13 @@
                   class="product__image"
                   src="{{ media | image_url: width: 1100 }}"
                   alt="{{ media.alt | default: product.title | escape }}"
-                  width="1100"
-                  height="1100"
+                  {% if is_poster %}
+                    width="{{ media.width | default: 1100 }}"
+                    height="{{ media.height | default: 1100 }}"
+                  {% else %}
+                    width="1100"
+                    height="1100"
+                  {% endif %}
                   data-product-image
                 >
               {% else %}
@@ -261,6 +266,7 @@
               <span aria-hidden="true">›</span>
             </button>
             <div class="pb-gallery__dots" data-gallery-dots hidden></div>
+            <div class="pb-gallery__thumbs" data-gallery-thumbs hidden></div>
           </div>
         </div>
 
@@ -473,7 +479,7 @@
               "colorOptionIndex": {% if color_option_index != nil %}{{ color_option_index }}{% else %}null{% endif %},
               "fixedOrient": {% if fixed_orient != blank %}{{ fixed_orient | json }}{% else %}null{% endif %},
               "variantMapUrl": {% if variant_map_asset != blank %}{{ variant_map_asset | asset_url | json }}{% else %}null{% endif %},
-              "galleryMap": {% if handle_down contains 'canvas' and handle_down != 'framed-canvas' %}{% render 'canvas-variant-gallery-data' %}{% else %}{}{% endif %},
+              "galleryMap": {% if handle_down contains 'canvas' and handle_down != 'framed-canvas' %}{% render 'canvas-variant-gallery-data' %}{% elsif handle_down == 'premium-matte-paper-poster' %}{% render 'matte-poster-gallery-data' %}{% else %}{% render 'variant-gallery-map' %}{% endif %},
               "variants": [
                 {%- for variant in product.variants -%}
                   {

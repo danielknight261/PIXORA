@@ -5,7 +5,7 @@ import { brand, productCategories } from "@pixora/shared";
 export default function HomeScreen() {
   return (
     <ScrollView contentContainerStyle={styles.container}>
-      <Text style={styles.brand}>Pixora</Text>
+      <Text style={styles.brand}>{brand.name}</Text>
       <Text style={styles.tagline}>{brand.tagline}</Text>
       <Text style={styles.subtitle}>
         Browse products and personalise your keepsakes on the go.

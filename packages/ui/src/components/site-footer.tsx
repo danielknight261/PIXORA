@@ -73,7 +73,7 @@ export function SiteFooter({
         <div className="grid gap-12 sm:grid-cols-2 lg:grid-cols-4">
           <div className="space-y-4">
             <p className="font-heading text-2xl font-semibold tracking-tight">
-              Pixora
+              {brand.name}
             </p>
             <p className="text-sm leading-relaxed text-muted-foreground">
               {brand.tagline}. Create personalised photo products with live
@@ -86,7 +86,7 @@ export function SiteFooter({
         </div>
         <div className="mt-12 border-t pt-8">
           <p className="text-center text-sm text-muted-foreground">
-            © {year} Pixora. All rights reserved.
+            © {year} {brand.name}. All rights reserved.
           </p>
         </div>
       </div>

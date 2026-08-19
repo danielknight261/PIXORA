@@ -1,0 +1,30 @@
+{
+{%- for variant in product.variants -%}
+  "{{ variant.id }}": [
+    {%- assign first_out = true -%}
+    {%- if variant.featured_image -%}
+      {{ variant.featured_image | image_url: width: 1100 | json }}
+      {%- assign first_out = false -%}
+    {%- elsif product.featured_image -%}
+      {{ product.featured_image | image_url: width: 1100 | json }}
+      {%- assign first_out = false -%}
+    {%- endif -%}
+    {%- for image in product.images -%}
+      {%- assign belongs = false -%}
+      {%- for iv in image.variants -%}
+        {%- if iv.id == variant.id -%}
+          {%- assign belongs = true -%}
+        {%- endif -%}
+      {%- endfor -%}
+      {%- if belongs -%}
+        {%- if variant.featured_image and image.src == variant.featured_image.src -%}
+        {%- else -%}
+          {%- unless first_out -%},{%- endunless -%}
+          {{ image | image_url: width: 1100 | json }}
+          {%- assign first_out = false -%}
+        {%- endif -%}
+      {%- endif -%}
+    {%- endfor -%}
+  ]{% unless forloop.last %},{% endunless %}
+{%- endfor -%}
+}

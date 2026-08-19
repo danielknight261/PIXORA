@@ -6,7 +6,7 @@ export default function AccountScreen() {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Account</Text>
-      <Text style={styles.subtitle}>Manage your Pixora profile and orders.</Text>
+      <Text style={styles.subtitle}>Manage your SnapzDaddy profile and orders.</Text>
 
       <Link href="/(auth)/login" asChild>
         <Pressable style={styles.button}>

@@ -15,7 +15,7 @@ export async function sendOrderConfirmation(
   orderId: string,
 ): Promise<void> {
   await resend.emails.send({
-    from: "Pixora <orders@pixora.app>",
+    from: "SnapzDaddy <orders@pixora.app>",
     to,
     subject: `Order confirmed — ${orderId}`,
     html: `<p>Thank you for your order! Your order <strong>${orderId}</strong> has been confirmed.</p>`,

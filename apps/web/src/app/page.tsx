@@ -5,7 +5,7 @@ export default function HomePage() {
 
   return (
     <main className="moved">
-      <h1>Pixora has moved</h1>
+      <h1>SnapzDaddy has moved</h1>
       <p>
         Our shop and personalization experience now live on Shopify with Gelato
         product mockups.

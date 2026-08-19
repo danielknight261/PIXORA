@@ -1,4 +1,4 @@
-# Pixora
+# SnapzDaddy
 
 Turn Moments Into Keepsakes — photo personalization, powered by **Shopify + Gelato**.
 
@@ -40,4 +40,4 @@ shopify theme push --store YOUR-STORE.myshopify.com
 - `pnpm dev` — Starts remaining Next apps (web redirects; admin optional)
 - `pnpm build` / `pnpm lint` / `pnpm typecheck`
 
-The Fabric editor and Pixora mockup compositor have been **removed**.
+The Fabric editor and mockup compositor have been **removed**.

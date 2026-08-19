@@ -1,6 +1,6 @@
-# Publish Pixora products via Gelato → Shopify
+# Publish SnapzDaddy products via Gelato → Shopify
 
-Use this after the store is connected and the Pixora theme is pushed.
+Use this after the store is connected and the SnapzDaddy theme is pushed.
 
 ## Collections (create in Shopify Admin)
 

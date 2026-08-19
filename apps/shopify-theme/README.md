@@ -1,6 +1,6 @@
-# HappySnaps Shopify Theme
+# SnapzDaddy Shopify Theme
 
-Liquid theme for the HappySnaps storefront.
+Liquid theme for the SnapzDaddy storefront.
 
 ## Brand
 

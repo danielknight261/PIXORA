@@ -7,7 +7,7 @@ export default function DashboardPage() {
       <div>
         <h1 className="text-3xl font-bold">Dashboard</h1>
         <p className="text-muted-foreground">
-          Overview of Pixora orders, products, and users.
+          Overview of SnapzDaddy orders, products, and users.
         </p>
       </div>
       <div className="grid gap-6 sm:grid-cols-3">

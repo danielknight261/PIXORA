@@ -1,11 +1,11 @@
-# PIXORA
+# SnapzDaddy
 
 Tagline:
 Turn Moments Into Keepsakes
 
 ## Vision
 
-Pixora is a modern photo personalization platform inspired by Snapfish, Photobox and Moonpig.
+SnapzDaddy is a modern photo personalization platform inspired by Snapfish, Photobox and Moonpig.
 
 Users can:
 
@@ -19,14 +19,14 @@ Users can:
 
 All products are fulfilled by third-party print-on-demand providers.
 
-Pixora owns:
+SnapzDaddy owns:
 
 - Customer relationship
 - Frontend
 - Checkout
 - User accounts
 
-Pixora does not own:
+SnapzDaddy does not own:
 
 - Printing equipment
 - Warehouses

@@ -1,13 +1,13 @@
 # Shopify + Gelato Migration Runbook (Option A)
 
-Pixora’s production storefront is **Shopify + Gelato**. The Next.js shop, Fabric editor, and custom mockup engine are retired.
+SnapzDaddy’s production storefront is **Shopify + Gelato**. The Next.js shop, Fabric editor, and custom mockup engine are retired.
 
 ## Phase 1 — Store + Gelato (do this first)
 
 ### 1. Create or open a Shopify store
 
 1. Go to [shopify.com](https://www.shopify.com) → Start free trial / log in.
-2. Store name: **Pixora** (or your brand).
+2. Store name: **SnapzDaddy**.
 3. Note your store URL: `https://YOUR-STORE.myshopify.com`.
 
 ### 2. Install Gelato

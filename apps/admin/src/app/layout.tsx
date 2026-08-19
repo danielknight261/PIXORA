@@ -16,10 +16,10 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: "Pixora Admin",
-    template: "%s | Pixora Admin",
+    default: "SnapzDaddy Admin",
+    template: "%s | SnapzDaddy Admin",
   },
-  description: "Pixora internal admin dashboard",
+  description: "SnapzDaddy internal admin dashboard",
 };
 
 export default function RootLayout({

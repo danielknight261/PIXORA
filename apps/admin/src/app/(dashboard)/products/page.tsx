@@ -4,9 +4,9 @@ export default function AdminProductsPage() {
       <div>
         <h1 className="text-3xl font-bold">Products & fulfillment</h1>
         <p className="mt-2 text-muted-foreground">
-          Pixora commerce moved to <strong>Shopify + Gelato</strong>. Publish
+          SnapzDaddy commerce moved to <strong>Shopify + Gelato</strong>. Publish
           canvas and mug products from the Gelato Shopify app — do not use the
-          old Pixora catalog import.
+          old catalog import.
         </p>
       </div>
 
