@@ -19,5 +19,21 @@
   },
   "products": {
     "upload_confirm": "We’ll mock up your design and confirm it with you before we dispatch — we won’t print the stock product photo."
+  },
+  "chooser": {
+    "continue": "Continue to personalize",
+    "cta_note": "Next: personalize with your photo on the product page.",
+    "fallback": "Open the canvas product to choose size and personalize."
+  },
+  "collection": {
+    "cta_size_personalise": "Choose size & personalize",
+    "mugs_title": "Personalized mugs",
+    "canvas_name": "Personalized Canvas Print",
+    "cta_choose_colour": "Choose color"
+  },
+  "product_page": {
+    "then_personalise": "Then personalize with your photo.",
+    "frame_colour": "Frame color",
+    "hanger_colour": "Hanger color"
   }
 }

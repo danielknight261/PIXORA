@@ -4,6 +4,11 @@
 
 {%- liquid
   assign canvas_product = all_products['canvas-20x20-cm-8x8']
+  assign country_iso = localization.country.iso_code | upcase
+  assign use_inches = false
+  if country_iso == 'US' or country_iso == 'CA'
+    assign use_inches = true
+  endif
 
   if canvas_product == blank
     assign canvas_product = collection.products.first
@@ -55,11 +60,11 @@
 
 {% if canvas_product == blank or size_idx == blank or orient_idx == blank %}
   <div class="canvas-chooser-fallback">
-    <p class="muted">Open the canvas product to choose size and personalize.</p>
+    <p class="muted">{{ 'chooser.fallback' | t }}</p>
     {% if canvas_product != blank %}
-      <a class="button button--primary" href="{{ canvas_product.url }}">Continue to personalize</a>
+      <a class="button button--primary" href="{{ canvas_product.url }}">{{ 'chooser.continue' | t }}</a>
     {% else %}
-      <a class="button button--primary" href="/products/canvas-20x20-cm-8x8">Continue to personalize</a>
+      <a class="button button--primary" href="/products/canvas-20x20-cm-8x8">{{ 'chooser.continue' | t }}</a>
     {% endif %}
   </div>
 {% else %}
@@ -68,25 +73,30 @@
     class="canvas-chooser"
     id="CanvasChooser"
     data-product-url="{{ canvas_product.url }}"
+    data-prefer-inches="{{ use_inches }}"
+    data-i18n-select="{{ 'chooser.select_size' | t | escape }}"
+    data-i18n-from="{{ 'chooser.from_price' | t | escape }}"
+    data-i18n-none="{{ 'chooser.no_sizes' | t | escape }}"
+    data-i18n-available="{{ 'chooser.sizes_available' | t | escape }}"
   >
     <div class="canvas-chooser__panel">
       <div class="canvas-chooser__heading">
-        <h2>1. Thickness</h2>
-        <p class="muted">Slim for a modern flush look, thick for a gallery wrap.</p>
+        <h2>{{ 'chooser.thickness' | t }}</h2>
+        <p class="muted">{{ 'chooser.thickness_help' | t }}</p>
       </div>
-      <div class="canvas-thickness" role="radiogroup" aria-label="Thickness">
+      <div class="canvas-thickness" role="radiogroup" aria-label="{{ 'chooser.thickness_aria' | t }}">
         <button type="button" class="canvas-thickness__btn is-selected" data-choose-thickness="slim" aria-pressed="true">
           <span class="canvas-thickness__bar canvas-thickness__bar--slim" aria-hidden="true"></span>
           <span class="canvas-thickness__copy">
-            <strong>Slim</strong>
-            <span>~2 cm wrap</span>
+            <strong>{{ 'chooser.slim' | t }}</strong>
+            <span>{% if use_inches %}{{ 'chooser.wrap_slim_in' | t }}{% else %}{{ 'chooser.wrap_slim_cm' | t }}{% endif %}</span>
           </span>
         </button>
         <button type="button" class="canvas-thickness__btn" data-choose-thickness="thick" aria-pressed="false">
           <span class="canvas-thickness__bar canvas-thickness__bar--thick" aria-hidden="true"></span>
           <span class="canvas-thickness__copy">
-            <strong>Thick</strong>
-            <span>~4 cm gallery wrap</span>
+            <strong>{{ 'chooser.thick' | t }}</strong>
+            <span>{% if use_inches %}{{ 'chooser.wrap_thick_in' | t }}{% else %}{{ 'chooser.wrap_thick_cm' | t }}{% endif %}</span>
           </span>
         </button>
       </div>
@@ -94,40 +104,40 @@
 
     <div class="canvas-chooser__panel">
       <div class="canvas-chooser__heading">
-        <h2>2. Orientation</h2>
-        <p class="muted">Portrait, landscape, or square — all options shown.</p>
+        <h2>{{ 'chooser.orientation' | t }}</h2>
+        <p class="muted">{{ 'chooser.orientation_help' | t }}</p>
       </div>
-      <div class="canvas-orient" role="radiogroup" aria-label="Orientation">
+      <div class="canvas-orient" role="radiogroup" aria-label="{{ 'chooser.orientation_aria' | t }}">
         <button type="button" class="canvas-orient__btn is-selected" data-choose-orient="portrait" aria-pressed="true">
           <span class="canvas-orient__icon canvas-orient__icon--portrait" aria-hidden="true"></span>
-          <span class="canvas-orient__label">Portrait</span>
+          <span class="canvas-orient__label">{{ 'chooser.portrait' | t }}</span>
         </button>
         <button type="button" class="canvas-orient__btn" data-choose-orient="landscape" aria-pressed="false">
           <span class="canvas-orient__icon canvas-orient__icon--landscape" aria-hidden="true"></span>
-          <span class="canvas-orient__label">Landscape</span>
+          <span class="canvas-orient__label">{{ 'chooser.landscape' | t }}</span>
         </button>
         <button type="button" class="canvas-orient__btn" data-choose-orient="square" aria-pressed="false">
           <span class="canvas-orient__icon canvas-orient__icon--square" aria-hidden="true"></span>
-          <span class="canvas-orient__label">Square</span>
+          <span class="canvas-orient__label">{{ 'chooser.square' | t }}</span>
         </button>
       </div>
     </div>
 
     <div class="canvas-chooser__panel">
       <div class="canvas-chooser__heading">
-        <h2>3. Size</h2>
-        <p class="muted" data-chooser-size-hint>All matching sizes for your selection</p>
+        <h2>{{ 'chooser.size' | t }}</h2>
+        <p class="muted" data-chooser-size-hint>{{ 'chooser.size_hint' | t }}</p>
       </div>
-      <div class="canvas-sizes canvas-sizes--chooser" data-chooser-sizes role="listbox" aria-label="Size"></div>
+      <div class="canvas-sizes canvas-sizes--chooser" data-chooser-sizes role="listbox" aria-label="{{ 'chooser.size_aria' | t }}"></div>
     </div>
 
     <div class="canvas-chooser__cta">
       <div>
         <p class="canvas-chooser__summary" data-chooser-summary></p>
-        <p class="muted canvas-chooser__cta-note">Next: personalize with your photo on the product page.</p>
+        <p class="muted canvas-chooser__cta-note">{{ 'chooser.cta_note' | t }}</p>
       </div>
       <a class="button button--primary" href="{{ canvas_product.url }}" data-chooser-continue>
-        Continue to personalize
+        {{ 'chooser.continue' | t }}
       </a>
     </div>
 
@@ -170,6 +180,11 @@
       var continueBtn = root.querySelector('[data-chooser-continue]');
       var thickBtns = root.querySelectorAll('[data-choose-thickness]');
       var orientBtns = root.querySelectorAll('[data-choose-orient]');
+      var preferInches = root.getAttribute('data-prefer-inches') === 'true';
+      var i18nSelect = root.getAttribute('data-i18n-select') || 'Select a size to continue';
+      var i18nFrom = root.getAttribute('data-i18n-from') || '__TITLE__ · from __PRICE__';
+      var i18nNone = root.getAttribute('data-i18n-none') || 'No sizes for this combination.';
+      var i18nAvailable = root.getAttribute('data-i18n-available') || '__COUNT__ sizes available';
 
       function parseSquare(sizeLabel) {
         var m = String(sizeLabel).match(/(\d+(?:\.\d+)?)\s*[x×]\s*(\d+(?:\.\d+)?)/i);
@@ -190,9 +205,14 @@
       }
       function shortSize(label) {
         var inch = String(label).match(/(\d+(?:\.\d+)?\s*[x×]\s*\d+(?:\.\d+)?)\s*(?:\"|″|in)/i);
-        if (inch) return inch[1].replace(/\s+/g, '') + '″';
         var cm = String(label).match(/(\d+(?:\.\d+)?\s*[x×]\s*\d+(?:\.\d+)?)\s*cm/i);
-        if (cm) return cm[1].replace(/\s+/g, '') + ' cm';
+        if (preferInches) {
+          if (inch) return inch[1].replace(/\s+/g, '') + '″';
+          if (cm) return cm[1].replace(/\s+/g, '') + ' cm';
+        } else {
+          if (cm) return cm[1].replace(/\s+/g, '') + ' cm';
+          if (inch) return inch[1].replace(/\s+/g, '') + '″';
+        }
         return label;
       }
       function sizeShape(label, mode) {
@@ -286,21 +306,21 @@
         if (variant) url.searchParams.set('variant', variant.id);
         continueBtn.href = url.pathname + url.search;
         summary.textContent = variant
-          ? variant.title + ' · from ' + variant.priceFormatted
-          : 'Select a size to continue';
+          ? i18nFrom.replace('__TITLE__', variant.title).replace('__PRICE__', variant.priceFormatted)
+          : i18nSelect;
       }
 
       function render() {
         var sizes = sizesFor(state.mode, state.thickness);
         if (!sizes.length) {
           state.size = null;
-          sizeGrid.innerHTML = '<p class="muted">No sizes for this combination.</p>';
-          sizeHint.textContent = '0 sizes';
+          sizeGrid.innerHTML = '<p class="muted">' + i18nNone + '</p>';
+          sizeHint.textContent = i18nAvailable.replace('__COUNT__', '0');
           updateContinue(null);
           return;
         }
         if (!state.size || sizes.indexOf(state.size) === -1) state.size = sizes[0];
-        sizeHint.textContent = sizes.length + ' sizes available';
+        sizeHint.textContent = i18nAvailable.replace('__COUNT__', String(sizes.length));
         sizeGrid.innerHTML = '';
         sizes.forEach(function (size) {
           var v = findVariant(state.mode, size, state.thickness);

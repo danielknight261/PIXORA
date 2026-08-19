@@ -1,0 +1,52 @@
+<section class="main-page shipping-page">
+  <header class="page-hero">
+    <div class="page-width page-hero__inner">
+      <p class="page-hero__eyebrow">{{ 'delivery.eyebrow' | t }}</p>
+      <h1 class="page-hero__title">{% if page.title != blank %}{{ page.title }}{% else %}{{ 'delivery.heading' | t }}{% endif %}</h1>
+      <p class="page-hero__lead">{{ 'delivery.lead' | t }}</p>
+    </div>
+  </header>
+
+  <div class="page-width shipping-page__body">
+    <div class="shipping-page__promise">
+      {% render 'local-print-promise', class: 'shipping-page__local local-print-promise' %}
+    </div>
+
+    {% if page.content != blank %}
+      <div class="rte shipping-page__intro">{{ page.content }}</div>
+    {% endif %}
+
+    <ul class="shipping-page__points">
+      <li>{{ 'delivery.rates' | t }}</li>
+      <li>{{ 'delivery.not_all_products' | t }}</li>
+      <li>{{ 'delivery.duties' | t }}</li>
+      <li>
+        {%- liquid
+          assign iso = localization.country.iso_code | upcase
+          assign eu_isos = 'AT,BE,BG,HR,CY,CZ,DK,EE,FI,FR,DE,GR,HU,IE,IT,LV,LT,LU,MT,NL,PL,PT,RO,SK,SI,ES,SE,NO,IS,LI,GB' | split: ','
+        -%}
+        {% if eu_isos contains iso %}
+          {{ 'delivery.returns_eu' | t }}
+        {% else %}
+          {{ 'delivery.returns_generic' | t }}
+        {% endif %}
+      </li>
+    </ul>
+
+    <p class="shipping-page__policies">
+      <a href="/policies/shipping-policy">{{ 'footer.shipping_policy' | t }}</a>
+      ·
+      <a href="/policies/refund-policy">{{ 'footer.refund' | t }}</a>
+      ·
+      <a href="{{ settings.help_link | default: '/pages/contact' }}">{{ 'footer.customer_service' | t }}</a>
+    </p>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Shipping",
+  "settings": [],
+  "templates": ["page"]
+}
+{% endschema %}

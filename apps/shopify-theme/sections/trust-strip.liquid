@@ -1,16 +1,43 @@
 <section class="trust-strip">
-  <div class="page-width trust-strip__inner">
+  {%- liquid
+    assign live_delivery_used = false
+    for block in section.blocks
+      assign title_down = block.settings.title | downcase
+      if title_down contains 'printed on demand' or title_down contains 'printed on-demand' or title_down contains 'print on demand'
+        assign live_delivery_used = true
+      endif
+    endfor
+  -%}
+  <div class="page-width trust-strip__inner{% unless live_delivery_used %} trust-strip__inner--plus{% endunless %}">
     {% for block in section.blocks %}
+      {%- liquid
+        assign title_down = block.settings.title | downcase
+        assign is_pod = false
+        if title_down contains 'printed on demand' or title_down contains 'printed on-demand' or title_down contains 'print on demand'
+          assign is_pod = true
+        endif
+      -%}
       <div class="trust-strip__item" {{ block.shopify_attributes }}>
         <span class="trust-strip__dot trust-strip__dot--{{ block.settings.accent | default: 'cyan' }}" aria-hidden="true"></span>
         <div>
-          <p class="trust-strip__title">{{ block.settings.title }}</p>
-          {% if block.settings.text != blank %}
+          <p class="trust-strip__title">{% if is_pod %}{{ 'delivery.title' | t }}{% else %}{{ block.settings.title }}{% endif %}</p>
+          {% if is_pod %}
+            <p class="trust-strip__text">{% render 'local-print-promise', tag: 'span', class: 'local-print-promise' %}</p>
+          {% elsif block.settings.text != blank %}
             <p class="trust-strip__text">{{ block.settings.text }}</p>
           {% endif %}
         </div>
       </div>
     {% endfor %}
+    {% unless live_delivery_used %}
+      <div class="trust-strip__item">
+        <span class="trust-strip__dot trust-strip__dot--mint" aria-hidden="true"></span>
+        <div>
+          <p class="trust-strip__title">{{ 'delivery.title' | t }}</p>
+          <p class="trust-strip__text">{% render 'local-print-promise', tag: 'span', class: 'local-print-promise' %}</p>
+        </div>
+      </div>
+    {% endunless %}
   </div>
 </section>
 

@@ -1,0 +1,23 @@
+{%- comment -%}
+  Country-aware Gelato print promise.
+  Local hub (32 countries) vs EU neighbour vs nearest hub.
+  Optional: class, tag (p|span).
+{%- endcomment -%}
+{%- liquid
+  assign iso = localization.country.iso_code | upcase
+  assign print_isos = 'US,CA,MX,BR,GB,IE,FR,DE,AT,CH,NL,BE,IT,ES,PT,PL,CZ,DK,SE,NO,TR,AE,ZA,AU,NZ,SG,MY,IN,JP,KR,CN' | split: ','
+  assign eu_isos = 'AT,BE,BG,HR,CY,CZ,DK,EE,FI,FR,DE,GR,HU,IE,IT,LV,LT,LU,MT,NL,PL,PT,RO,SK,SI,ES,SE,NO,IS,LI' | split: ','
+  assign wrap_class = class | default: 'local-print-promise'
+  assign wrap_tag = tag | default: 'p'
+  assign days_key = 'delivery.typical_days_hub'
+  assign message_key = 'delivery.nearest_hub'
+  if print_isos contains iso
+    assign days_key = 'delivery.typical_days'
+    assign message_key = 'delivery.local_print'
+  elsif eu_isos contains iso
+    assign days_key = 'delivery.typical_days_eu'
+    assign message_key = 'delivery.printed_in_eu'
+  endif
+  assign days = days_key | t
+-%}
+<{{ wrap_tag }} class="{{ wrap_class }}">{{ message_key | t: country: localization.country.name, days: days }}</{{ wrap_tag }}>

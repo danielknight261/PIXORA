@@ -36,6 +36,7 @@
       var dotsEl = root.querySelector('[data-gallery-dots]');
       var thumbsEl = root.querySelector('[data-gallery-thumbs]');
       var galleryState = { images: [], index: 0 };
+      var preferInches = root.getAttribute('data-prefer-inches') === 'true';
 
       function parseSquare(sizeLabel) {
         var m = String(sizeLabel).match(/(\d+(?:\.\d+)?)\s*[x×]\s*(\d+(?:\.\d+)?)/i);
@@ -84,10 +85,15 @@
         return { orient: orientKey(s), size: s };
       }
       function shortSize(label) {
-        var cm = String(label).match(/(\d+(?:\.\d+)?\s*[x×]\s*\d+(?:\.\d+)?)\s*cm/i);
-        if (cm) return cm[1].replace(/\s+/g, '') + ' cm';
         var inch = String(label).match(/(\d+(?:\.\d+)?\s*[x×]\s*\d+(?:\.\d+)?)\s*(?:\"|″|in)/i);
-        if (inch) return inch[1].replace(/\s+/g, '') + '″';
+        var cm = String(label).match(/(\d+(?:\.\d+)?\s*[x×]\s*\d+(?:\.\d+)?)\s*cm/i);
+        if (preferInches) {
+          if (inch) return inch[1].replace(/\s+/g, '') + '″';
+          if (cm) return cm[1].replace(/\s+/g, '') + ' cm';
+        } else {
+          if (cm) return cm[1].replace(/\s+/g, '') + ' cm';
+          if (inch) return inch[1].replace(/\s+/g, '') + '″';
+        }
         return label;
       }
       function btnSummary(btns, keyAttr, value) {

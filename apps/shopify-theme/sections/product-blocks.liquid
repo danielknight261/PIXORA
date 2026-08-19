@@ -38,7 +38,7 @@
         assign live_from = live_from | strip
         assign price_text = blank
         if block.settings.coming_soon
-          assign price_text = 'Coming soon'
+          assign price_text = 'general.coming_soon' | t
         elsif live_from != blank
           assign price_text = live_from
         elsif block.settings.price_label != blank and block.settings.price_label != 'Coming soon'
@@ -70,7 +70,7 @@
             </span>
           {% endif %}
           {% if block.settings.coming_soon %}
-            <span class="product-block__badge">Coming soon</span>
+            <span class="product-block__badge">{{ 'general.coming_soon' | t }}</span>
           {% endif %}
         </div>
         <div class="product-block__info">

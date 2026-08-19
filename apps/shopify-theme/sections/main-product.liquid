@@ -89,40 +89,40 @@
   if hanger_option_index != nil or handle_down contains 'hanger'
     assign is_hanger = true
   endif
-  assign category_label = 'Wall art'
+  assign category_label = 'header.wall_art' | t
   assign category_url = '/collections/wall-art'
   if is_framed_canvas
-    assign category_label = 'Framed canvas'
+    assign category_label = 'header.framed_canvas' | t
     assign category_url = '/collections/framed-canvas'
   elsif is_metal_framed
-    assign category_label = 'Metal framed prints'
+    assign category_label = 'header.framed_prints' | t
     assign category_url = '/collections/framed-prints'
   elsif is_wooden_framed
-    assign category_label = 'Wooden framed prints'
+    assign category_label = 'header.framed_prints' | t
     assign category_url = '/collections/framed-prints'
   elsif is_framed
-    assign category_label = 'Framed prints'
+    assign category_label = 'header.framed_prints' | t
     assign category_url = '/collections/framed-prints'
   elsif is_hanger
-    assign category_label = 'Posters with hangers'
+    assign category_label = 'header.hangers' | t
     assign category_url = '/collections/posters-with-hangers'
   elsif is_poster
-    assign category_label = 'Posters'
+    assign category_label = 'header.posters' | t
     assign category_url = '/collections/posters'
   elsif handle_down contains 'acrylic'
-    assign category_label = 'Acrylic prints'
+    assign category_label = 'header.acrylic' | t
     assign category_url = '/collections/acrylic-prints'
   elsif handle_down contains 'aluminum' or handle_down contains 'aluminium'
-    assign category_label = 'Metal / aluminium'
+    assign category_label = 'header.aluminium' | t
     assign category_url = '/collections/aluminum-prints'
   elsif handle_down contains 'wood-print' or handle_down == 'wood-prints'
-    assign category_label = 'Wood prints'
+    assign category_label = 'header.wood' | t
     assign category_url = '/collections/wood-prints'
   elsif handle_down contains 'foam'
-    assign category_label = 'Foam prints'
+    assign category_label = 'header.foam' | t
     assign category_url = '/collections/foam-prints'
   elsif handle_down contains 'canvas'
-    assign category_label = 'Canvas prints'
+    assign category_label = 'header.canvas' | t
     assign category_url = '/collections/canvas-prints'
   endif
   assign display_title = product.title
@@ -171,6 +171,11 @@
       assign show_orient_ui = true
     endif
   endif
+  assign country_iso = localization.country.iso_code | upcase
+  assign use_inches = false
+  if country_iso == 'US' or country_iso == 'CA'
+    assign use_inches = true
+  endif
 -%}
 
 <section class="main-product{% if is_variant_picker %} main-product--flush{% endif %}" data-section-id="{{ section.id }}">
@@ -179,13 +184,13 @@
   {% endunless %}
 
   {% if is_variant_picker %}
-    <div class="pb-canvas" id="Product-{{ section.id }}" data-canvas-picker data-section="{{ section.id }}">
+    <div class="pb-canvas" id="Product-{{ section.id }}" data-canvas-picker data-section="{{ section.id }}" data-prefer-inches="{{ use_inches }}">
       <div class="pb-canvas__hero">
         <div class="page-width pb-canvas__hero-inner">
           <nav class="pb-canvas__crumbs" aria-label="Breadcrumb">
-            <a href="/">Home</a>
+            <a href="{{ routes.root_url }}">{{ 'general.home' | t }}</a>
             <span>/</span>
-            <a href="/collections/wall-art">Wall art</a>
+            <a href="/collections/wall-art">{{ 'header.wall_art' | t }}</a>
             <span>/</span>
             <a href="{{ category_url }}">{{ category_label }}</a>
             <span>/</span>
@@ -277,11 +282,11 @@
 
             {% if show_orient_ui %}
               <div class="pb-canvas__step">
-                <p class="pb-canvas__label">Orientation</p>
-                <div class="pb-canvas__orient" role="radiogroup" aria-label="Orientation">
-                  <button type="button" class="pb-orient" data-orient="portrait" aria-pressed="false">Portrait</button>
-                  <button type="button" class="pb-orient" data-orient="landscape" aria-pressed="false">Landscape</button>
-                  <button type="button" class="pb-orient" data-orient="square" aria-pressed="false">Square</button>
+                <p class="pb-canvas__label">{{ 'product_page.orientation' | t }}</p>
+                <div class="pb-canvas__orient" role="radiogroup" aria-label="{{ 'product_page.orientation' | t }}">
+                  <button type="button" class="pb-orient" data-orient="portrait" aria-pressed="false">{{ 'chooser.portrait' | t }}</button>
+                  <button type="button" class="pb-orient" data-orient="landscape" aria-pressed="false">{{ 'chooser.landscape' | t }}</button>
+                  <button type="button" class="pb-orient" data-orient="square" aria-pressed="false">{{ 'chooser.square' | t }}</button>
                 </div>
               </div>
             {% elsif fixed_orient != blank %}
@@ -290,8 +295,8 @@
 
             {% if thickness_option_index != nil %}
               <div class="pb-canvas__step">
-                <p class="pb-canvas__label">{% if handle_down contains 'wood' %}Thickness{% else %}Wrap{% endif %}</p>
-                <div class="pb-canvas__thick" role="radiogroup" aria-label="Thickness">
+                <p class="pb-canvas__label">{% if handle_down contains 'wood' %}{{ 'product_page.thickness' | t }}{% else %}{{ 'product_page.wrap' | t }}{% endif %}</p>
+                <div class="pb-canvas__thick" role="radiogroup" aria-label="{{ 'product_page.thickness' | t }}">
                   {% for value in product.options_with_values[thickness_option_index].values %}
                     {% assign thick_down = value | downcase %}
                     {% assign thick_key = value | handleize %}
@@ -306,7 +311,7 @@
                     {% endif %}
                     <button type="button" class="pb-thick" data-thickness="{{ thick_key }}" data-thickness-label="{{ value | escape }}" aria-pressed="false">
                       <strong>{{ value }}</strong>
-                      <span>{% if thick_key == 'slim' %}~2 cm{% elsif thick_key == 'thick' %}~4 cm{% else %}Thickness{% endif %}</span>
+                      <span>{% if thick_key == 'slim' %}{% if use_inches %}{{ 'product_page.wrap_slim_in' | t }}{% else %}{{ 'product_page.wrap_slim_cm' | t }}{% endif %}{% elsif thick_key == 'thick' %}{% if use_inches %}{{ 'product_page.wrap_thick_in' | t }}{% else %}{{ 'product_page.wrap_thick_cm' | t }}{% endif %}{% else %}{{ 'product_page.thickness' | t }}{% endif %}</span>
                     </button>
                   {% endfor %}
                 </div>
@@ -315,8 +320,8 @@
 
             {% if frame_option_index != nil %}
               <div class="pb-canvas__step">
-                <p class="pb-canvas__label">Frame colour</p>
-                <div class="pb-canvas__frames" role="radiogroup" aria-label="Frame colour">
+                <p class="pb-canvas__label">{{ 'product_page.frame_colour' | t }}</p>
+                <div class="pb-canvas__frames" role="radiogroup" aria-label="{{ 'product_page.frame_colour' | t }}">
                   {% for value in product.options_with_values[frame_option_index].values %}
                     {% assign frame_down = value | downcase %}
                     {% assign frame_key = 'frame' %}
@@ -348,8 +353,8 @@
 
             {% if hanger_option_index != nil %}
               <div class="pb-canvas__step">
-                <p class="pb-canvas__label">Hanger colour</p>
-                <div class="pb-canvas__frames" role="radiogroup" aria-label="Hanger colour">
+                <p class="pb-canvas__label">{{ 'product_page.hanger_colour' | t }}</p>
+                <div class="pb-canvas__frames" role="radiogroup" aria-label="{{ 'product_page.hanger_colour' | t }}">
                   {% for value in product.options_with_values[hanger_option_index].values %}
                     {% assign hanger_down = value | downcase %}
                     {% assign hanger_key = value | handleize %}
@@ -427,16 +432,16 @@
 
             <div class="pb-canvas__step pb-canvas__sizes-wrap">
               <div class="pb-canvas__sizes-head">
-                <span>Size</span>
+                <span>{{ 'product_page.size' | t }}</span>
                 <span class="muted" data-size-hint></span>
               </div>
-              <div class="pb-size-list" data-size-grid role="listbox" aria-label="Size"></div>
+              <div class="pb-size-list" data-size-grid role="listbox" aria-label="{{ 'product_page.size' | t }}"></div>
             </div>
 
             <div class="pb-canvas__buybox">
               <div>
                 {% if product.price_varies %}
-                  <p class="pb-canvas__from">From {{ product.price_min | money }}</p>
+                  <p class="pb-canvas__from">{{ 'general.from' | t }} {{ product.price_min | money }}</p>
                 {% endif %}
                 <p class="pb-canvas__price" data-product-price>{{ current_variant.price | money }}</p>
                 <p class="pb-canvas__selection muted" data-selection-summary></p>
@@ -457,9 +462,8 @@
                 </button>
               </div>
             </div>
-            <p class="pb-canvas__vat muted">
-              Use <strong>Personalize design</strong> to upload your photo and see the live mockup, then add to cart.
-            </p>
+            <p class="pb-canvas__vat muted">{{ 'product_page.personalize_hint' | t }}</p>
+            {% render 'local-print-promise', class: 'pb-canvas__delivery local-print-promise' %}
             <input
               type="hidden"
               name="properties[Personalised print]"
@@ -502,15 +506,15 @@
         <div class="page-width pb-canvas__about">
           <h2>
             {% if is_framed_canvas %}
-              About this framed canvas
+              {{ 'product_page.about_framed_canvas' | t }}
             {% elsif is_wooden_framed %}
-              About this wooden framed print
+              {{ 'product_page.about_wooden_framed' | t }}
             {% elsif is_framed %}
-              About this framed print
+              {{ 'product_page.about_framed' | t }}
             {% elsif is_poster %}
-              About this poster
+              {{ 'product_page.about_poster' | t }}
             {% else %}
-              About these canvas prints
+              {{ 'product_page.about_canvas' | t }}
             {% endif %}
           </h2>
           <div class="rte">{{ product.description }}</div>
@@ -519,38 +523,38 @@
 
       <div class="page-width pb-canvas__features">
         <article>
-          <h3>Fully customise your print</h3>
-          <p>Use Personalize design to upload your photo, preview on a live mockup, then add to cart. We print and ship to your door.</p>
+          <h3>{{ 'product_page.customise_title' | t }}</h3>
+          <p>{{ 'product_page.customise_body' | t }}</p>
         </article>
         {% if is_framed_canvas %}
           <article>
-            <h3>Tray frame · three colours</h3>
-            <p>Wood, dark wood or black tray frames that give your canvas a clean gallery finish.</p>
+            <h3>{{ 'product_page.tray_title' | t }}</h3>
+            <p>{{ 'product_page.tray_body' | t }}</p>
           </article>
         {% elsif is_wooden_framed %}
           <article>
-            <h3>Wooden frame · four colours</h3>
-            <p>White, wood, dark wood or black wooden frames — metal framed prints coming soon as a separate range.</p>
+            <h3>{{ 'product_page.wood_frame_title' | t }}</h3>
+            <p>{{ 'product_page.wood_frame_body' | t }}</p>
           </article>
         {% elsif is_framed %}
           <article>
-            <h3>Four frame colours</h3>
-            <p>White, wood, dark wood or black — match your room and let the print take centre stage.</p>
+            <h3>{{ 'product_page.frame_colours_title' | t }}</h3>
+            <p>{{ 'product_page.frame_colours_body' | t }}</p>
           </article>
         {% elsif is_poster %}
           <article>
-            <h3>Premium paper finish</h3>
-            <p>This finish is selected on the posters page — more paper options coming soon as separate products.</p>
+            <h3>{{ 'product_page.paper_title' | t }}</h3>
+            <p>{{ 'product_page.paper_body' | t }}</p>
           </article>
         {% else %}
           <article>
-            <h3>Slim or thick wrap</h3>
-            <p>Choose a modern slim edge (~2 cm) or a deeper gallery wrap (~4 cm) for every size.</p>
+            <h3>{{ 'product_page.wrap_title' | t }}</h3>
+            <p>{% if use_inches %}{{ 'product_page.wrap_body_in' | t }}{% else %}{{ 'product_page.wrap_body_cm' | t }}{% endif %}</p>
           </article>
         {% endif %}
         <article>
-          <h3>Many sizes &amp; formats</h3>
-          <p>Portrait, landscape and square options across {{ size_count }} sizes — pick what fits your wall.</p>
+          <h3>{{ 'product_page.sizes_title' | t }}</h3>
+          <p>{{ 'product_page.sizes_body' | t: count: size_count }}</p>
         </article>
       </div>
     </div>
@@ -770,6 +774,7 @@
               {{ 'products.sold_out' | t }}
             {% endif %}
           </button>
+          {% render 'local-print-promise', class: 'pb-canvas__delivery local-print-promise' %}
         {% endform %}
       </div>
     </div>

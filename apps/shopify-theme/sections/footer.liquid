@@ -66,7 +66,7 @@
       <div class="site-footer__locale">
         {% render 'localization-form', unique: 'footer' %}
       </div>
-      <p class="site-footer__note">{{ 'footer.note' | t }}</p>
+      <p class="site-footer__note">{% render 'local-print-promise', tag: 'span', class: 'local-print-promise' %}</p>
     </div>
   </div>
 </footer>
