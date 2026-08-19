@@ -904,6 +904,59 @@
   {% render 'variant-picker-script', section_id: section.id %}
 {% endif %}
 
+{%- comment -%} JSON-LD: Product + BreadcrumbList for SEO rich results {%- endcomment -%}
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": {{ product.title | json }},
+    "url": "{{ shop.url }}{{ product.url }}",
+    "description": {{ product.description | strip_html | truncate: 5000 | json }},
+    {% if product.featured_media %}
+      "image": [{{ product.featured_media | image_url: width: 1200 | prepend: 'https:' | json }}],
+    {% endif %}
+    "brand": {
+      "@type": "Brand",
+      "name": {{ shop.name | json }}
+    },
+    "sku": {{ current_variant.sku | default: current_variant.id | json }},
+    "offers": {
+      "@type": "AggregateOffer",
+      "priceCurrency": {{ cart.currency.iso_code | json }},
+      "lowPrice": {{ product.price_min | money_without_currency | json }},
+      "highPrice": {{ product.price_max | money_without_currency | json }},
+      "offerCount": {{ product.variants.size }},
+      "availability": "https://schema.org/{% if product.available %}InStock{% else %}OutOfStock{% endif %}",
+      "url": "{{ shop.url }}{{ product.url }}"
+    }
+  }
+</script>
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "{{ shop.url }}"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": {{ category_label | json }},
+        "item": "{{ shop.url }}{{ category_url }}"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": {{ display_title | json }}
+      }
+    ]
+  }
+</script>
+
 {% schema %}
 {
   "name": "Product information",
