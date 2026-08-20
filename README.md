@@ -1,4 +1,4 @@
-# SnapzDaddy
+# Snapp Daddy
 
 Turn Moments Into Keepsakes — photo personalization, powered by **Shopify + Gelato**.
 

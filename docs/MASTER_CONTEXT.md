@@ -1,11 +1,11 @@
-# SnapzDaddy
+# Snapp Daddy
 
 Tagline:
 Turn Moments Into Keepsakes
 
 ## Vision
 
-SnapzDaddy is a modern photo personalization platform inspired by Snapfish, Photobox and Moonpig.
+Snapp Daddy is a modern photo personalization platform inspired by Snapfish, Photobox and Moonpig.
 
 Users can:
 
@@ -19,14 +19,14 @@ Users can:
 
 All products are fulfilled by third-party print-on-demand providers.
 
-SnapzDaddy owns:
+Snapp Daddy owns:
 
 - Customer relationship
 - Frontend
 - Checkout
 - User accounts
 
-SnapzDaddy does not own:
+Snapp Daddy does not own:
 
 - Printing equipment
 - Warehouses

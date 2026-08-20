@@ -1,5 +1,5 @@
 export const brand = {
-  name: "SnapzDaddy",
+  name: "Snapp Daddy",
   colors: {
     primary: "#2563EB",
     dark: "#0F172A",

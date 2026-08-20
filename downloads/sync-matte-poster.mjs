@@ -11,8 +11,8 @@ const API = `https://${SHOP}/admin/api/2025-01/graphql.json`;
 const LIVE_ID = "gid://shopify/Product/15933319512408";
 const SOURCE_ID = "gid://shopify/Product/15933333274968";
 const ONLINE = "gid://shopify/Publication/333315113304";
-const VENDOR = "SnapzDaddy";
-const DESCRIPTION = `<p>Personalised premium matte paper posters from SnapzDaddy. Upload your photo, preview it on a live product mockup, and we print and ship to your door.</p>
+const VENDOR = "Snapp Daddy";
+const DESCRIPTION = `<p>Personalised premium matte paper posters from Snapp Daddy. Upload your photo, preview it on a live product mockup, and we print and ship to your door.</p>
 <ul>
 <li><strong>Paper finishing:</strong> Matte, smooth, non-reflective surface.</li>
 <li><strong>Paper weight:</strong> 200 gsm (80 lb), thickness 0.26 mm (10.3 mils).</li>

@@ -3,8 +3,8 @@ import { env } from "@/env";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "SnapzDaddy has moved",
-  description: "Shop SnapzDaddy on Shopify with Gelato personalization.",
+  title: "Snapp Daddy has moved",
+  description: "Shop Snapp Daddy on Shopify with Gelato personalization.",
   robots: { index: false, follow: true },
 };
 

@@ -1,13 +1,13 @@
 # Shopify + Gelato Migration Runbook (Option A)
 
-SnapzDaddy’s production storefront is **Shopify + Gelato**. The Next.js shop, Fabric editor, and custom mockup engine are retired.
+Snapp Daddy’s production storefront is **Shopify + Gelato**. The Next.js shop, Fabric editor, and custom mockup engine are retired.
 
 ## Phase 1 — Store + Gelato (do this first)
 
 ### 1. Create or open a Shopify store
 
 1. Go to [shopify.com](https://www.shopify.com) → Start free trial / log in.
-2. Store name: **SnapzDaddy**.
+2. Store name: **Snapp Daddy**.
 3. Note your store URL: `https://YOUR-STORE.myshopify.com`.
 
 ### 2. Install Gelato
@@ -27,10 +27,10 @@ SnapzDaddy’s production storefront is **Shopify + Gelato**. The Next.js shop, 
 
 Use `YOUR-STORE.myshopify.com` until DNS cutover. Set this URL in:
 
-- `apps/web/.env.local` → `NEXT_PUBLIC_SHOPIFY_STORE_URL=https://pixora-3393.myshopify.com`
+- `apps/web/.env.local` → `NEXT_PUBLIC_SHOPIFY_STORE_URL=https://snappdaddy.com`
 - Root `.env` / hosting env if the redirect app is deployed
 
-Store in use: **https://pixora-3393.myshopify.com**
+Store in use: **https://snappdaddy.com**
 
 Personalizer steps: [gelato-personalizer-enable.md](./gelato-personalizer-enable.md)
 

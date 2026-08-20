@@ -1,10 +1,10 @@
-# Enable Gelato Personalizer on pixora-3393
+# Enable Gelato Personalizer on Snapp Daddy
 
-Store: https://pixora-3393.myshopify.com
+Store: https://snappdaddy.com
 
 ## Turn Personalizer ON (Shopify Admin)
 
-1. Open: https://pixora-3393.myshopify.com/admin
+1. Open: https://snappdaddy.com/admin
 2. Go to **Online Store → Themes**
 3. On your **current theme**, click **Customize**
 4. In the left sidebar (bottom area), open **App embeds** (puzzle-piece / embeds icon — not “Sections”)

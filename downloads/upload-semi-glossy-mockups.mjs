@@ -293,8 +293,8 @@ async function main() {
     {
       product: {
         id: PRODUCT_ID,
-        vendor: "SnapzDaddy",
-        descriptionHtml: `<p>Personalised classic semi-glossy paper posters from SnapzDaddy. Upload your photo, preview it on a live product mockup, and we print and ship to your door.</p>
+        vendor: "Snapp Daddy",
+        descriptionHtml: `<p>Personalised classic semi-glossy paper posters from Snapp Daddy. Upload your photo, preview it on a live product mockup, and we print and ship to your door.</p>
 <ul>
 <li><strong>Paper finishing:</strong> Semi-glossy, enhances colours with a subtle shine.</li>
 <li><strong>Paper weight:</strong> 170 gsm (65 lb), thickness 0.19 mm (7.5 mils).</li>

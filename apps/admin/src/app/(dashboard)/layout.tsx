@@ -15,7 +15,7 @@ export default function DashboardLayout({
   return (
     <div className="min-h-screen lg:grid lg:grid-cols-[240px_1fr]">
       <aside className="border-r bg-card p-6">
-        <p className="text-lg font-semibold">SnapzDaddy Admin</p>
+        <p className="text-lg font-semibold">Snapp Daddy Admin</p>
         <nav className="mt-8 space-y-2">
           {navItems.map((item) => (
             <Link

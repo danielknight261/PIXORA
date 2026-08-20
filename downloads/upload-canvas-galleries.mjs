@@ -1,5 +1,5 @@
 /**
- * Map Gelato Fine Art Poster mockups (Simple first).
+ * Map Gelato canvas mockups (Simple first) onto Personalized Canvas Print.
  */
 import fs from "node:fs";
 import path from "node:path";
@@ -7,23 +7,23 @@ import os from "os";
 
 const SHOP = "hxbghe-6d.myshopify.com";
 const API = `https://${SHOP}/admin/api/2025-01/graphql.json`;
-const PRODUCT_ID = "gid://shopify/Product/15933348086104";
+const PRODUCT_ID = "gid://shopify/Product/15928489378136";
 const MOCKUP_ROOT =
-  "c:\\Users\\HughesHub\\Downloads\\96bac08d-038c-48d3-91b8-2b5546ef740e\\f26a3763-f766-4f94-bb8d-771113986554";
+  "c:\\Users\\HughesHub\\Downloads\\054ea5be-86fa-4382-926b-9ee210262019\\d875fd75-1e8e-41c8-8b87-21e2e13f5808";
 const IMAGE_ORDER = [
   "Simple.webp",
-  "Close-Up-Modern-Living-Room-Beige-0.webp",
-  "Kitchen-Japanese-White-1.webp",
+  "Close-Up-Plain-Gray-0.webp",
+  "Home-Office-Scandinavian-White-1.webp",
 ];
-const REPORT_PATH = "downloads/fine-art-mockup-upload-report.json";
-const VARIANT_PATH = "downloads/fine-art-variants-classed.json";
+const REPORT_PATH = "downloads/canvas-gallery-upload-report.json";
+const VARIANT_PATH = "downloads/canvas-variants-classed.json";
 const SNIPPET_PATH = path.join(
   "apps",
   "shopify-theme",
   "snippets",
-  "fine-art-poster-gallery-data.liquid"
+  "canvas-variant-gallery-data.liquid"
 );
-const GALLERY_JSON = "downloads/fine-art-poster-gallery.json";
+const GALLERY_JSON = "downloads/canvas-variant-gallery.json";
 
 function loadToken() {
   const kit = JSON.parse(
@@ -73,55 +73,31 @@ async function gql(token, query, variables) {
 
 function parseFolder(name) {
   const m = name.match(
-    /^fine_arts_poster_geo_simplified_product_12-0_(hor|ver)_(.+)_200-gsm-80lb-enhanced-uncoated$/i
+    /^canvas_\d+x\d+-mm-(\d+)x(\d+)-inch_canvas_wood-fsc-(slim|thick)_4-0_(hor|ver)$/i
   );
   if (!m) return null;
-  const hor = m[1].toLowerCase() === "hor";
-  const key = m[2].toLowerCase();
-  const inchM = key.match(/(\d+)x(\d+)-inch/);
-  const mmM = key.match(/^(\d+)x(\d+)-mm/);
-  const aM = key.match(/^a([0-4])(?:-|_|$)/);
-  const inch = inchM ? `${inchM[1]}x${inchM[2]}` : null;
-  const mm = mmM ? `${mmM[1]}x${mmM[2]}` : null;
-  const square =
-    (inch && inch.split("x")[0] === inch.split("x")[1]) ||
-    (mm && mm.split("x")[0] === mm.split("x")[1]);
-  let orient = "portrait";
-  if (hor) orient = "landscape";
-  else if (square) orient = "square";
   return {
     folder: name,
-    key,
-    orient,
-    inch,
-    mm,
-    a: aM ? `a${aM[1]}` : null,
-    xl: /\bxl\b/.test(key),
-    fiveR: /\b5r\b/.test(key),
+    inchKey: `${m[1]}x${m[2]}`,
+    thickness: m[3].toLowerCase() === "thick" ? "Thick" : "Slim",
+    orientation: m[4].toLowerCase() === "hor" ? "Horizontal" : "Vertical",
   };
 }
 
-function sizeBlob(size) {
-  return String(size)
-    .toLowerCase()
-    .replace(/[″"']/g, "")
-    .replace(/\s+/g, "");
+function inchFromShopifySize(size) {
+  const m = String(size).match(/(\d+)\s*[x×]\s*(\d+)\s*(?:″|"|in)/i);
+  return m ? `${m[1]}x${m[2]}` : null;
 }
 
 function matches(meta, variant) {
-  if (meta.orient !== variant.orient) return false;
-  const size = sizeBlob(variant.size);
-  if (meta.fiveR) return size.includes("5x7") || size.includes("13x18");
-  if (meta.xl) return size.includes("11x17") || size.includes("xl");
-  if (meta.a === "a4") return size.includes("8x12") || size.includes("21x29.7");
-  if (meta.a) return size.includes(meta.a);
-  if (meta.inch && size.includes(meta.inch)) return true;
-  if (meta.mm) {
-    const [w, h] = meta.mm.split("x").map((n) => Number(n) / 10);
-    const cm = `${w}x${h}`;
-    if (size.includes(cm)) return true;
-  }
-  return false;
+  const opts = Object.fromEntries(
+    (variant.options || []).map((o) => [o.name, o.value])
+  );
+  return (
+    opts.Orientation === meta.orientation &&
+    opts.Thickness === meta.thickness &&
+    inchFromShopifySize(opts.Size) === meta.inchKey
+  );
 }
 
 function buildJobs() {
@@ -157,6 +133,7 @@ function buildJobs() {
       title: hit.title,
       orient: hit.orient,
       size: hit.size,
+      thickness: hit.thickness,
       files,
       missing,
     });
@@ -181,7 +158,7 @@ async function stagedUpload(token, filePath, filename) {
           filename,
           mimeType: "image/webp",
           httpMethod: "POST",
-          resource: "IMAGE",
+          resource: "FILE",
           fileSize: String(fileSize),
         },
       ],
@@ -202,7 +179,35 @@ async function stagedUpload(token, filePath, filename) {
   return target.resourceUrl;
 }
 
-async function createMedia(token, items) {
+async function createShopFiles(token, items) {
+  const data = await gql(
+    token,
+    `mutation fileCreate($files: [FileCreateInput!]!) {
+      fileCreate(files: $files) {
+        files {
+          id
+          fileStatus
+          ... on MediaImage { id status image { url } }
+          ... on GenericFile { id url }
+        }
+        userErrors { field message }
+      }
+    }`,
+    {
+      files: items.map((item) => ({
+        originalSource: item.resourceUrl,
+        contentType: "IMAGE",
+        alt: item.alt,
+        filename: item.filename,
+      })),
+    }
+  );
+  const errs = data.fileCreate.userErrors || [];
+  if (errs.length) throw new Error(JSON.stringify(errs));
+  return data.fileCreate.files;
+}
+
+async function createProductMedia(token, items) {
   const data = await gql(
     token,
     `mutation productCreateMedia($productId: ID!, $media: [CreateMediaInput!]!) {
@@ -214,7 +219,7 @@ async function createMedia(token, items) {
     {
       productId: PRODUCT_ID,
       media: items.map((item) => ({
-        originalSource: item.resourceUrl,
+        originalSource: item.originalSource,
         mediaContentType: "IMAGE",
         alt: item.alt,
       })),
@@ -223,6 +228,49 @@ async function createMedia(token, items) {
   const errs = data.productCreateMedia.mediaUserErrors || [];
   if (errs.length) throw new Error(JSON.stringify(errs));
   return data.productCreateMedia.media;
+}
+
+async function fetchAllProductMedia(token) {
+  const nodes = [];
+  let cursor = null;
+  for (;;) {
+    const data = await gql(
+      token,
+      `query ($id: ID!, $cursor: String) {
+        product(id: $id) {
+          media(first: 100, after: $cursor) {
+            pageInfo { hasNextPage endCursor }
+            nodes { id }
+          }
+        }
+      }`,
+      { id: PRODUCT_ID, cursor }
+    );
+    nodes.push(...data.product.media.nodes);
+    if (!data.product.media.pageInfo.hasNextPage) break;
+    cursor = data.product.media.pageInfo.endCursor;
+  }
+  return nodes;
+}
+
+async function deleteProductMedia(token, mediaIds) {
+  for (let i = 0; i < mediaIds.length; i += 20) {
+    const batch = mediaIds.slice(i, i + 20);
+    const data = await gql(
+      token,
+      `mutation productDeleteMedia($productId: ID!, $mediaIds: [ID!]!) {
+        productDeleteMedia(productId: $productId, mediaIds: $mediaIds) {
+          deletedMediaIds
+          mediaUserErrors { message }
+        }
+      }`,
+      { productId: PRODUCT_ID, mediaIds: batch }
+    );
+    const errs = data.productDeleteMedia.mediaUserErrors || [];
+    if (errs.length) console.warn("delete errs", errs);
+    console.log(`Deleted ${Math.min(i + 20, mediaIds.length)}/${mediaIds.length}`);
+    await sleep(400);
+  }
 }
 
 async function waitUrls(token, mediaIds) {
@@ -235,17 +283,24 @@ async function waitUrls(token, mediaIds) {
         `query ($id: ID!) {
           node(id: $id) {
             ... on MediaImage {
+              fileStatus
               status
               image { url }
+            }
+            ... on GenericFile {
+              fileStatus
+              url
             }
           }
         }`,
         { id }
       );
-      const status = data.node?.status;
+      const node = data.node || {};
+      const status = node.status || node.fileStatus;
+      const raw = node.image?.url || node.url;
       if (status === "FAILED") throw new Error("FAILED " + id);
-      if (status === "READY" && data.node?.image?.url) {
-        url = data.node.image.url.split("?")[0] + "?width=1100";
+      if ((status === "READY" || status === "UPLOADED") && raw) {
+        url = raw.split("?")[0] + "?width=1100";
         break;
       }
       await sleep(700);
@@ -275,15 +330,32 @@ async function main() {
   if (dry) {
     console.log(
       "sample",
-      jobs.slice(0, 3).map((j) => ({ title: j.title, folder: j.folder }))
+      jobs.slice(0, 4).map((j) => ({
+        title: j.title,
+        folder: j.folder,
+        missing: j.missing,
+      }))
     );
     return;
   }
   if (unmatched.length || leftover.length) {
     throw new Error("Map is incomplete; fix matching before upload");
   }
+  const missingAny = jobs.filter((j) => j.missing.length);
+  if (missingAny.length) {
+    throw new Error("Missing mockup files: " + missingAny[0].title);
+  }
 
   const token = loadToken();
+  const existingMedia = await fetchAllProductMedia(token);
+  console.log("existing product media", existingMedia.length);
+  if (existingMedia.length) {
+    await deleteProductMedia(
+      token,
+      existingMedia.map((m) => m.id)
+    );
+  }
+
   await gql(
     token,
     `mutation ($product: ProductUpdateInput!) {
@@ -296,19 +368,19 @@ async function main() {
       product: {
         id: PRODUCT_ID,
         vendor: "Snapp Daddy",
-        descriptionHtml: `<p>Personalised fine art posters from Snapp Daddy. Upload your photo, preview it on a live product mockup, and we print and ship to your door.</p>
+        descriptionHtml: `<p>Personalised canvas prints from Snapp Daddy. Upload your photo, preview it on a live product mockup, and we print and ship gallery-quality canvas to your door.</p>
 <ul>
-<li><strong>Paper finishing:</strong> Fine art, matte surface with a soft textured feel.</li>
-<li><strong>Paper weight:</strong> 200 gsm (80 lb), enhanced uncoated paper.</li>
-<li><strong>Sustainable paper:</strong> FSC-certified or equivalent.</li>
-<li><strong>Sizes:</strong> 29 sizes in portrait, landscape and square.</li>
+<li><strong>Canvas:</strong> FSC-certified wood stretcher bars, cotton-polyester blend (300–350gsm).</li>
+<li><strong>Thickness:</strong> Slim (~2cm) or Thick (~4cm) gallery wrap.</li>
+<li><strong>Sizes:</strong> 26 sizes in portrait, landscape and square.</li>
+<li><strong>Hanging kit:</strong> Included (varies by country).</li>
 </ul>
 <p>No minimum orders. Printed and shipped on demand.</p>
 <div data-gelato-customization="1"></div>`,
         seo: {
-          title: "Fine Art Poster",
+          title: "Personalized Canvas Print",
           description:
-            "Personalised fine art posters. Upload your photo, preview a live mockup, then we print and ship.",
+            "Personalised canvas prints. Upload your photo, preview a live mockup, then we print and ship.",
         },
       },
     }
@@ -324,6 +396,8 @@ async function main() {
       report = { ok: [], fail: [] };
     }
   }
+  report.ok = report.ok.filter((row) => (row.urls || []).length >= 3);
+  report.fail = [];
   const done = new Set(report.ok.map((r) => r.variantId));
 
   let i = 0;
@@ -342,19 +416,19 @@ async function main() {
         const kind = file.name.replace(/\.webp$/i, "").toLowerCase();
         items.push({
           resourceUrl,
+          filename,
           alt: `${job.title} · ${kind}`,
         });
         await sleep(120);
       }
-      const media = await createMedia(token, items);
-      const ids = media.map((m) => m.id);
+      const files = await createShopFiles(token, items);
+      const ids = files.map((f) => f.id);
       const urls = await waitUrls(token, ids);
       report.ok.push({
         variantId: job.variantId,
         title: job.title,
         orient: job.orient,
         urls,
-        mediaIds: ids,
       });
       done.add(job.variantId);
       fs.writeFileSync(REPORT_PATH, JSON.stringify(report, null, 2));
@@ -392,14 +466,36 @@ async function main() {
     galleryVariants: Object.keys(gallery).length,
   });
 
-  const featured = report.ok
-    .filter((p) => p.mediaIds?.[0])
-    .map((p) => ({
-      id: `gid://shopify/ProductVariant/${p.variantId}`,
-      mediaId: p.mediaIds[0],
-    }));
-  for (let i = 0; i < featured.length; i += 25) {
-    const batch = featured.slice(i, i + 25);
+  const leftoverMedia = await fetchAllProductMedia(token);
+  if (leftoverMedia.length) {
+    console.log("clearing product media before featured", leftoverMedia.length);
+    await deleteProductMedia(
+      token,
+      leftoverMedia.map((m) => m.id)
+    );
+  }
+
+  const featuredRows = [];
+  for (const row of report.ok) {
+    const simpleUrl = (row.urls || [])[0];
+    if (!simpleUrl) continue;
+    const media = await createProductMedia(token, [
+      {
+        originalSource: simpleUrl.split("?")[0],
+        alt: `${row.title} · simple`,
+      },
+    ]);
+    const mediaId = media[0]?.id;
+    if (mediaId) {
+      featuredRows.push({
+        id: `gid://shopify/ProductVariant/${row.variantId}`,
+        mediaId,
+      });
+    }
+    await sleep(120);
+  }
+  for (let i = 0; i < featuredRows.length; i += 25) {
+    const batch = featuredRows.slice(i, i + 25);
     const data = await gql(
       token,
       `mutation ($productId: ID!, $variants: [ProductVariantsBulkInput!]!) {
@@ -411,7 +507,7 @@ async function main() {
     );
     const errs = data.productVariantsBulkUpdate.userErrors || [];
     if (errs.length) console.warn("featured errs", errs);
-    console.log("featured", Math.min(i + 25, featured.length), "/", featured.length);
+    console.log("featured", Math.min(i + 25, featuredRows.length), "/", featuredRows.length);
     await sleep(300);
   }
 }

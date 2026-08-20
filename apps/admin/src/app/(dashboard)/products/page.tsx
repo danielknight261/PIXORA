@@ -4,7 +4,7 @@ export default function AdminProductsPage() {
       <div>
         <h1 className="text-3xl font-bold">Products & fulfillment</h1>
         <p className="mt-2 text-muted-foreground">
-          SnapzDaddy commerce moved to <strong>Shopify + Gelato</strong>. Publish
+          Snapp Daddy commerce moved to <strong>Shopify + Gelato</strong>. Publish
           canvas and mug products from the Gelato Shopify app — do not use the
           old catalog import.
         </p>

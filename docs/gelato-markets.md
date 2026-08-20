@@ -1,6 +1,6 @@
 # Gelato print countries (Shopify Markets)
 
-SnapzDaddy sells through **Shopify Markets** and fulfils with **Gelato**. This file is the Admin checklist the theme cannot do from git.
+Snapp Daddy sells through **Shopify Markets** and fulfils with **Gelato**. This file is the Admin checklist the theme cannot do from git.
 
 The theme shows a country-aware delivery line (`snippets/local-print-promise.liquid`):
 

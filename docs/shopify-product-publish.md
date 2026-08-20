@@ -1,6 +1,6 @@
-# Publish SnapzDaddy products via Gelato → Shopify
+# Publish Snapp Daddy products via Gelato → Shopify
 
-Use this after the store is connected and the SnapzDaddy theme is pushed.
+Use this after the store is connected and the Snapp Daddy theme is pushed.
 
 ## Collections (create in Shopify Admin)
 

@@ -1,7 +1,7 @@
 import type { NextConfig } from "next";
 
 const shopifyStoreUrl =
-  process.env.NEXT_PUBLIC_SHOPIFY_STORE_URL ?? "https://pixora.myshopify.com";
+  process.env.NEXT_PUBLIC_SHOPIFY_STORE_URL ?? "https://snappdaddy.com";
 
 const nextConfig: NextConfig = {
   async redirects() {
