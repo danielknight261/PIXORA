@@ -18,7 +18,7 @@
               value="{{ country.iso_code }}"
               {% if country.iso_code == localization.country.iso_code %}selected{% endif %}
             >
-              {{ country.name }} ({{ country.currency.iso_code }})
+              {{ country.iso_code }} ({{ country.currency.iso_code }})
             </option>
           {%- endfor -%}
         </select>

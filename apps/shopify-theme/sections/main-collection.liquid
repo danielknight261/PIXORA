@@ -75,7 +75,7 @@
     <script>
       window.location.replace({{ routes.root_url | json }});
     </script>
-    <div class="page-width collection-body" style="padding: 3rem 0;">
+    <div class="page-width collection-body" style="padding-block: 3rem;">
       <p class="muted">{{ 'collection.redirecting' | t }}</p>
       <a class="button button--primary" href="{{ routes.root_url }}">{{ 'general.continue_shopping' | t }}</a>
     </div>
@@ -85,7 +85,7 @@
     <script>
       window.location.replace('/products/canvas-20x20-cm-8x8');
     </script>
-    <div class="page-width collection-body" style="padding: 3rem 0;">
+    <div class="page-width collection-body" style="padding-block: 3rem;">
       {%- capture dest_name -%}{{ 'collection.canvas_name' | t }}{%- endcapture -%}
       <p class="muted">{{ 'collection.redirecting_product' | t: name: dest_name }}</p>
       <a class="button button--primary" href="/products/canvas-20x20-cm-8x8">{{ 'collection.continue_canvas' | t }}</a>
@@ -95,7 +95,7 @@
     <script>
       window.location.replace('/products/framed-canvas');
     </script>
-    <div class="page-width collection-body" style="padding: 3rem 0;">
+    <div class="page-width collection-body" style="padding-block: 3rem;">
       {%- capture dest_name -%}{{ 'collection.framed_canvas_name' | t }}{%- endcapture -%}
       <p class="muted">{{ 'collection.redirecting_product' | t: name: dest_name }}</p>
       <a class="button button--primary" href="/products/framed-canvas">{{ 'collection.continue_framed_canvas' | t }}</a>
@@ -105,7 +105,7 @@
     <script>
       window.location.replace('/products/acrylic-print');
     </script>
-    <div class="page-width collection-body" style="padding: 3rem 0;">
+    <div class="page-width collection-body" style="padding-block: 3rem;">
       {%- capture dest_name -%}{{ 'collection.acrylic_name' | t }}{%- endcapture -%}
       <p class="muted">{{ 'collection.redirecting_product' | t: name: dest_name }}</p>
       <a class="button button--primary" href="/products/acrylic-print">{{ 'collection.continue_acrylic' | t }}</a>
@@ -115,7 +115,7 @@
     <script>
       window.location.replace('/products/wood-prints');
     </script>
-    <div class="page-width collection-body" style="padding: 3rem 0;">
+    <div class="page-width collection-body" style="padding-block: 3rem;">
       {%- capture dest_name -%}{{ 'collection.wood_name' | t }}{%- endcapture -%}
       <p class="muted">{{ 'collection.redirecting_product' | t: name: dest_name }}</p>
       <a class="button button--primary" href="/products/wood-prints">{{ 'collection.continue_wood' | t }}</a>
@@ -125,7 +125,7 @@
     <script>
       window.location.replace('/products/premium-matte-paper-poster-with-hanger');
     </script>
-    <div class="page-width collection-body" style="padding: 3rem 0;">
+    <div class="page-width collection-body" style="padding-block: 3rem;">
       {%- capture dest_name -%}{{ 'collection.hanger_name' | t }}{%- endcapture -%}
       <p class="muted">{{ 'collection.redirecting_product' | t: name: dest_name }}</p>
       <a class="button button--primary" href="/products/premium-matte-paper-poster-with-hanger">{{ 'collection.continue_hanger' | t }}</a>
@@ -135,7 +135,7 @@
     <script>
       window.location.replace('/products/white-17oz-stainless-steel-water-bottle');
     </script>
-    <div class="page-width collection-body" style="padding: 3rem 0;">
+    <div class="page-width collection-body" style="padding-block: 3rem;">
       {%- capture dest_name -%}{{ 'collection.bottle_name' | t }}{%- endcapture -%}
       <p class="muted">{{ 'collection.redirecting_product' | t: name: dest_name }}</p>
       <a class="button button--primary" href="/products/white-17oz-stainless-steel-water-bottle">{{ 'collection.continue_bottle' | t }}</a>
