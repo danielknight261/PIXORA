@@ -2,8 +2,11 @@
   <div class="page-width site-footer__top">
     <div class="site-footer__brand-block">
       <a class="site-footer__logo" href="{{ routes.root_url }}">
-        {% render 'brand-logo', logo_class: 'site-footer__logo-img' %}
-        <span class="site-footer__brand">{{ settings.brand_name | default: shop.name }}</span>
+        {% render 'brand-logo', logo_class: 'site-footer__logo-img', logo_file: 'snapdaddy-dad.png' %}
+        <span class="site-footer__brand">
+          <span class="site-footer__brand-snapp">Snapp</span>
+          <span class="site-footer__brand-daddy">Daddy</span>
+        </span>
       </a>
       <p class="site-footer__tagline">
         {{ settings.brand_tagline | default: 'Turn Moments Into Keepsakes' }}.

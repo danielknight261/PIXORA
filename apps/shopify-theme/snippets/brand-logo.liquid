@@ -1,13 +1,14 @@
 {% assign logo_alt = settings.brand_name | default: 'Snapp Daddy' %}
-{% if settings.logo != blank %}
-  {{ settings.logo | image_url: width: 160 | image_tag: alt: logo_alt, class: logo_class, loading: 'eager' }}
+{% assign logo_file = logo_file | default: 'snapdaddy-logo.png' %}
+{% if settings.logo != blank and logo_file == 'snapdaddy-logo.png' %}
+  {{ settings.logo | image_url: width: 480 | image_tag: alt: logo_alt, class: logo_class, loading: 'eager' }}
 {% else %}
   <img
-    src="{{ 'snapdaddy-logo.png' | asset_url }}"
+    src="{{ logo_file | asset_url }}"
     alt="{{ logo_alt }}"
     class="{{ logo_class }}"
-    width="80"
-    height="80"
+    width="320"
+    height="180"
     loading="eager"
   >
 {% endif %}

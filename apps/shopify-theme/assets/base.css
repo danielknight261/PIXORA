@@ -91,24 +91,12 @@ img {
 }
 
 .site-header__logo-img {
-  height: 2.5rem;
-  width: 2.5rem;
+  height: 3rem;
+  width: auto;
+  max-width: min(16rem, 58vw);
   object-fit: contain;
   display: block;
-  flex-shrink: 0;
-}
-
-.site-header__brand {
-  font-family: var(--font-heading);
-  font-weight: 700;
-  font-size: 1.4rem;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-  color: var(--color-brand-nav);
-  line-height: 1;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  flex-shrink: 1;
 }
 
 .site-header__actions {
@@ -156,13 +144,8 @@ img {
   }
 
   .site-header__logo-img {
-    height: 2rem;
-    width: 2rem;
-  }
-
-  .site-header__brand {
-    font-size: 1rem;
-    letter-spacing: 0.08em;
+    height: 2.35rem;
+    max-width: min(11rem, 52vw);
   }
 
   .localization__select {
@@ -2559,8 +2542,8 @@ body.quick-view-open {
 }
 
 .site-footer__logo-img {
-  height: 3rem;
-  width: 3rem;
+  height: 3.25rem;
+  width: 3.25rem;
   object-fit: contain;
   display: block;
   flex-shrink: 0;
@@ -2569,11 +2552,19 @@ body.quick-view-open {
 .site-footer__brand {
   font-family: var(--font-heading);
   font-weight: 700;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
+  letter-spacing: 0.01em;
+  text-transform: none;
   margin: 0;
   font-size: 1.35rem;
-  color: #fff;
+  line-height: 1.1;
+}
+
+.site-footer__brand-snapp {
+  color: #f7f6f3;
+}
+
+.site-footer__brand-daddy {
+  color: #c45c26;
 }
 
 .site-footer__tagline {
