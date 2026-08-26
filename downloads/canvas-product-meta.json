@@ -1,0 +1,53 @@
+{
+  "id": "gid://shopify/Product/15928489378136",
+  "handle": "canvas-20x20-cm-8x8",
+  "vendor": "Snapp Daddy",
+  "options": [
+    {
+      "name": "Orientation",
+      "values": [
+        "Vertical",
+        "Horizontal"
+      ]
+    },
+    {
+      "name": "Thickness",
+      "values": [
+        "Slim",
+        "Thick"
+      ]
+    },
+    {
+      "name": "Size",
+      "values": [
+        "20x20 cm / 8x8″",
+        "20x25 cm / 8x10″",
+        "20x30 cm / 8x12″",
+        "20x60 cm / 8x24″",
+        "27x35 cm / 11x14″",
+        "30x30 cm / 12x12″",
+        "30x40 cm / 12x16″",
+        "30x45 cm / 12x18″",
+        "30x60 cm / 12x24″",
+        "30x90 cm / 12x36″",
+        "30x100 cm / 12x40″",
+        "40x40 cm / 16x16″",
+        "40x50 cm / 16x20″",
+        "40x60 cm / 16x24″",
+        "40x80 cm / 16x32″",
+        "45x60 cm / 18x24″",
+        "50x50 cm / 20x20″",
+        "50x60 cm / 20x24″",
+        "50x70 cm / 20x28″",
+        "50x75 cm / 20x30″",
+        "50x100 cm / 20x40″",
+        "60x60 cm / 24x24″",
+        "60x75 cm / 24x30″",
+        "60x80 cm / 24x32″",
+        "60x90 cm / 24x36″",
+        "70x100 cm / 28x40″"
+      ]
+    }
+  ],
+  "descriptionHtml": "<p>Personalised canvas prints from Pixora. Upload your photo, preview it on a live product mockup, and we print and ship gallery-quality canvas to your door.</p>\n<ul>\n<li>\n<strong>Canvas:</strong> FSC-certified wood stretcher bars, cotton-polyester blend (300–350gsm)</li>\n<li>\n<strong>Thickness:</strong> Slim (~2cm) or Thick (~4cm) gallery wrap</li>\n<li>\n<strong>Sizes:</strong> 26 cm/inch options in portrait, landscape, and square</li>\n<li>\n<strong>Hanging kit:</strong> Included (varies by country)</li>\n</ul>\n<p>Printed and shipped on demand. No minimum order.</p>\n<div data-gelato-customization=\"1\"></div>"
+}

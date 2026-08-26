@@ -1,0 +1,53 @@
+{
+  "ok": [
+    {
+      "variantId": "57983128797528",
+      "variantIds": [
+        "57983128797528"
+      ],
+      "title": "20x20 cm / 8x8″",
+      "titles": [
+        "20x20 cm / 8x8″"
+      ],
+      "orient": "square",
+      "frame": "",
+      "urls": [
+        "https://cdn.shopify.com/s/files/1/1006/7256/9688/files/57983128797528-Simple.webp?width=1100",
+        "https://cdn.shopify.com/s/files/1/1006/7256/9688/files/57983128797528-Home-Office-Parisian-White-2.webp?width=1100"
+      ]
+    },
+    {
+      "variantId": "57983128830296",
+      "variantIds": [
+        "57983128830296"
+      ],
+      "title": "40x40 cm / 16x16″",
+      "titles": [
+        "40x40 cm / 16x16″"
+      ],
+      "orient": "square",
+      "frame": "",
+      "urls": [
+        "https://cdn.shopify.com/s/files/1/1006/7256/9688/files/57983128830296-Simple.webp?width=1100",
+        "https://cdn.shopify.com/s/files/1/1006/7256/9688/files/57983128830296-Home-Office-Parisian-White-2.webp?width=1100"
+      ]
+    },
+    {
+      "variantId": "57983128863064",
+      "variantIds": [
+        "57983128863064"
+      ],
+      "title": "60x60 cm / 24x24″",
+      "titles": [
+        "60x60 cm / 24x24″"
+      ],
+      "orient": "square",
+      "frame": "",
+      "urls": [
+        "https://cdn.shopify.com/s/files/1/1006/7256/9688/files/57983128863064-Simple.webp?width=1100",
+        "https://cdn.shopify.com/s/files/1/1006/7256/9688/files/57983128863064-Home-Office-Parisian-White-2.webp?width=1100"
+      ]
+    }
+  ],
+  "fail": []
+}

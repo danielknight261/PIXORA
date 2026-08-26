@@ -1,0 +1,45 @@
+{
+  "id": "gid://shopify/Product/15942727139672",
+  "handle": "wood-prints",
+  "vendor": "My Store",
+  "options": [
+    {
+      "name": "Orientation",
+      "values": [
+        "Vertical",
+        "Horizontal"
+      ]
+    },
+    {
+      "name": "Size",
+      "values": [
+        "20x20 cm / 8x8″",
+        "20x30 cm / 8x12″",
+        "20x60 cm / 8x24″",
+        "30x30 cm / 12x12″",
+        "30x40 cm / 12x16″",
+        "30x45 cm / 12x18″",
+        "30x90 cm / 12x36″",
+        "40x40 cm / 16x16″",
+        "40x50 cm / 16x20″",
+        "40x60 cm / 16x24″",
+        "45x60 cm / 18x24″",
+        "50x50 cm / 20x20″",
+        "50x70 cm / 20x28″",
+        "50x75 cm / 20x30″",
+        "60x60 cm / 24x24″",
+        "60x80 cm / 24x32″",
+        "60x90 cm / 24x36″",
+        "70x100 cm / 28x40″"
+      ]
+    },
+    {
+      "name": "Thickness",
+      "values": [
+        "10 mm",
+        "20 mm"
+      ]
+    }
+  ],
+  "descriptionHtml": "<p>Our wood prints offer a natural, rustic feel with artwork printed on sustainably sourced wood. The wood grain adds warmth and texture, creating unique, matte-finished pieces:</p>\n<ul>\n    <li>\n<strong>Material:</strong> FSC-certified birch wood, showcasing natural grain for a rustic feel.</li>\n    <li>\n<strong>Finish:</strong> Clean edges with edge-to-edge prints for a seamless look.</li>\n    <li>\n<strong>Thickness:</strong> Choose between 10mm (0.4\") or 20mm (0.79\").</li>\n    <li>\n<strong>Printing:</strong> Unprinted white areas reveal the wood grain for added texture.</li>\n    <li>\n<strong>Hanging Kit:</strong> Included; varies by country.</li>\n    <li>\n<strong>Sizes:</strong> 18 options in inches (US&amp;CA) and cms (rest of the world).</li>\n</ul>\n<div data-gelato-customization=\"1\"></div>"
+}

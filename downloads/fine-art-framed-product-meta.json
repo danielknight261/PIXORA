@@ -1,0 +1,58 @@
+{
+  "id": "gid://shopify/Product/15937938129240",
+  "handle": "fine-art-framed-poster",
+  "vendor": "My Store",
+  "options": [
+    {
+      "name": "Orientation",
+      "values": [
+        "Vertical",
+        "Horizontal"
+      ]
+    },
+    {
+      "name": "Size",
+      "values": [
+        "13x18 cm / 5x7″",
+        "15x20 cm / 6x8″",
+        "20x25 cm / 8x10″",
+        "20x50 cm / 8x20″",
+        "21x29.7 cm / 8x12\"",
+        "25x60 cm / 10x24″",
+        "27x35 cm / 11x14″",
+        "28x43  cm / XL (11x17″)",
+        "A3 (29.7 x 42  cm)",
+        "30x40 cm / 12x16″",
+        "30x45 cm / 12x18″",
+        "40x50 cm / 16x20″",
+        "40x60 cm / 16x24″",
+        "A2 (42 x 59.4  cm)",
+        "45x60 cm / 18x24″",
+        "50x70 cm / 20x28″",
+        "A1 (59.4 x 84.1  cm)",
+        "60x80 cm / 24x32″",
+        "60x90 cm / 24x36″",
+        "70x100 cm / 28x40″",
+        "75x100 cm / 30x40″",
+        "A0 (84.1 x 118.9  cm)",
+        "25x25 cm / 10x10″",
+        "30x30 cm / 12x12″",
+        "35x35 cm / 14x14″",
+        "40x40 cm / 16x16″",
+        "45x45 cm / 18x18″",
+        "50x50 cm / 20x20″",
+        "70x70 cm / 28x28″"
+      ]
+    },
+    {
+      "name": "Frame",
+      "values": [
+        "White frame",
+        "Wood frame",
+        "Dark wood frame",
+        "Black frame"
+      ]
+    }
+  ],
+  "descriptionHtml": "<p>Discover our Fine Art Wooden Framed Posters - iconic artworks printed on luxurious matte paper with vivid colors using fine art 12-color printing technology. Perfect for adding elegance and lasting quality to any space.</p>\n<ul>\n<li>\n<strong>Color Vibrancy:</strong> Our 12-color fine art printing technology delivers vivid, accurate colors with stunning depth, far beyond standard 4-color inkjet printing technology.</li>\n<li>\n<strong>Frame Material:</strong> Durable pine wood.</li>\n<li>\n<strong>Paper Finishing:</strong> Smooth matte finish for a clean, glare-free display.</li>\n<li>\n<strong>Paper Weight:</strong> 200 gsm (80 lb), thickness: 0.26 mm (10.3 mils).</li>\n<li>\n<strong>Frame Measurements:</strong> 20mm (0.79\") thick, 10-14mm (0.4\"-0.6\") wide.</li>\n<li>\n<strong>Available Sizes:</strong> Offered in a variety of sizes to fit any space or frame.</li>\n<li>\n<strong>Protection:</strong> Shatterproof plexiglass protects the poster.</li>\n<li>\n<strong>Eco-Friendly Materials:</strong> Printed on environmentally conscious, FSC-certified paper and wood.</li>\n<li>\n<strong>Ready-to-hang:</strong> Includes hanging kit, ready to hang directly on the wall.</li>\n</ul>\n<div data-gelato-customization=\"1\"></div>"
+}

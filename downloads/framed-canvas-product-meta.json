@@ -1,0 +1,41 @@
+{
+  "id": "gid://shopify/Product/15938102231384",
+  "handle": "framed-canvas",
+  "vendor": "My Store",
+  "options": [
+    {
+      "name": "Orientation",
+      "values": [
+        "Vertical",
+        "Horizontal"
+      ]
+    },
+    {
+      "name": "Size",
+      "values": [
+        "20x25 cm / 8x10″",
+        "20x30 cm / 8x12″",
+        "30x30 cm / 12x12″",
+        "30x40 cm / 12x16″",
+        "30x45 cm / 12x18″",
+        "40x50 cm / 16x20″",
+        "40x60 cm / 16x24″",
+        "45x60 cm / 18x24″",
+        "50x70 cm / 20x28″",
+        "50x75 cm / 20x30″",
+        "60x60 cm / 24x24″",
+        "60x80 cm / 24x32″",
+        "60x90 cm / 24x36″"
+      ]
+    },
+    {
+      "name": "Frame",
+      "values": [
+        "Wood frame",
+        "Dark wood frame",
+        "Black frame"
+      ]
+    }
+  ],
+  "descriptionHtml": "<p>Elevate your space with our framed canvas prints, featuring rich texture that adds depth for a captivating art experience:</p>\n<ul>\n    <li>\n<strong>Canvas Material:</strong> FSC-certified wood stretcher bars, cotton-polyester blend (300-350gsm, 350-400 microns).</li>\n    <li>\n<strong>Size Options:</strong> 13 sizes in inches (US&amp;CA) and cms (rest of the world).</li>\n    <li>\n<strong>Frame Colors:</strong> Black, Natural Wood, Dark Brown.</li>\n    <li>\n<strong>Sustainable Wood:</strong> FSC-certified or locally sourced poplar or pine.</li>\n    <li>\n<strong>High-Quality Printing:</strong> Long-lasting, vibrant colors.</li>\n    <li>\n<strong>Hanging Kit:</strong> Included, varies by country.</li>\n    <li>\n<strong>Frame Dimensions:</strong> The width (the front of the frame) is 9 to 14 mm wide (0.35\" to 0.55\"), with thickness varying by region— 42 mm (1.65\") in North America and 32 mm (1.26\") in Europe. A 12 mm (0.45\") gap between the canvas and frame ensures a snug fit.</li>\n</ul>\n<div data-gelato-customization=\"1\"></div>"
+}

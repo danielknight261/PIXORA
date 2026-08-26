@@ -1,0 +1,33 @@
+{
+  "id": "gid://shopify/Product/15942726386008",
+  "handle": "foam-portrait",
+  "vendor": "My Store",
+  "options": [
+    {
+      "name": "Size",
+      "values": [
+        "20x30 cm / 8x12″",
+        "20x60 cm / 8x24″",
+        "30x40 cm / 12x16″",
+        "30x45 cm / 12x18″",
+        "30x90 cm / 12x36″",
+        "40x50 cm / 16x20″",
+        "40x60 cm / 16x24″",
+        "45x60 cm / 18x24″",
+        "50x70 cm / 20x28″",
+        "50x75 cm / 20x30″",
+        "60x80 cm / 24x32″",
+        "60x90 cm / 24x36″",
+        "70x100 cm / 28x40″"
+      ]
+    },
+    {
+      "name": "Color",
+      "values": [
+        "black",
+        "white"
+      ]
+    }
+  ],
+  "descriptionHtml": "<p>Our popular foam prints are sleek, modern, and super lightweight. Perfect to lift the look of any space - foam prints are versatile, available in various sizes, and will last for years to come.</p>\n\n<p><strong>Features:</strong></p>\n<ul>\n<li>\n<strong>Material:</strong> Solid PVC panel with a protective UV film for a lightweight, durable, and long-lasting print.</li>\n<li>\n<strong>Texture &amp; Finish:</strong> Smooth texture with an intense, natural look and feel, perfect for enhancing any space.</li>\n<li>\n<strong>Color Options:</strong> Available in white and black.</li>\n<li>\n<strong>Thickness:</strong> 5mm (0.2\") for a modern, elegant finish.</li>\n<li>\n<strong>Hanging Kit:</strong> Included with each foam board print; varies by country of fulfillment.</li>\n<li>\n<strong>Available Sizes:</strong> 18 sizes (13 portrait/landscape, 5 square); inches for US/Canada, centimeters elsewhere. Sizes may vary slightly by region.</li>\n<li>\n<strong>Packaging:</strong> Robust packaging ensures the foam board print arrives in pristine condition.</li>\n</ul>\n<div data-gelato-customization=\"1\"></div>"
+}

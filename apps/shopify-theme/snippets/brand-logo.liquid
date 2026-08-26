@@ -1,14 +1,8 @@
+{%- comment -%}
+  Temporary text wordmark — logo image disabled until brand assets are ready.
+{%- endcomment -%}
 {% assign logo_alt = settings.brand_name | default: 'Snapp Daddy' %}
-{% assign logo_file = logo_file | default: 'snapdaddy-logo.png' %}
-{% if settings.logo != blank and logo_file == 'snapdaddy-logo.png' %}
-  {{ settings.logo | image_url: width: 480 | image_tag: alt: logo_alt, class: logo_class, loading: 'eager' }}
-{% else %}
-  <img
-    src="{{ logo_file | asset_url }}"
-    alt="{{ logo_alt }}"
-    class="{{ logo_class }}"
-    width="320"
-    height="180"
-    loading="eager"
-  >
-{% endif %}
+<span class="{{ logo_class }} brand-wordmark" aria-label="{{ logo_alt }}">
+  <span class="brand-wordmark__snapp">Snapp</span>
+  <span class="brand-wordmark__daddy">Daddy</span>
+</span>

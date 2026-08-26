@@ -1,0 +1,86 @@
+[
+  {
+    "id": "57983128797528",
+    "gid": "gid://shopify/ProductVariant/57983128797528",
+    "title": "20x20 cm / 8x8″",
+    "sku": "c7d1409f-a2b8-4438-ba3a-1fe688bd04fe",
+    "price": "13.43",
+    "options": [
+      {
+        "name": "Size",
+        "value": "20x20 cm / 8x8″"
+      }
+    ],
+    "orient": "square",
+    "size": "20x20 cm / 8x8″",
+    "sizeBlob": "20x20cm/8x8",
+    "inch": "8x8",
+    "square": true,
+    "a": null,
+    "xl": false,
+    "fiveR": false,
+    "frame": "",
+    "assembly": "",
+    "orientationOpt": "",
+    "frameOpt": "",
+    "allOpts": {
+      "Size": "20x20 cm / 8x8″"
+    }
+  },
+  {
+    "id": "57983128830296",
+    "gid": "gid://shopify/ProductVariant/57983128830296",
+    "title": "40x40 cm / 16x16″",
+    "sku": "4fa03cb9-087f-4866-8dce-96ee10f67c1e",
+    "price": "20.81",
+    "options": [
+      {
+        "name": "Size",
+        "value": "40x40 cm / 16x16″"
+      }
+    ],
+    "orient": "square",
+    "size": "40x40 cm / 16x16″",
+    "sizeBlob": "40x40cm/16x16",
+    "inch": "16x16",
+    "square": true,
+    "a": null,
+    "xl": false,
+    "fiveR": false,
+    "frame": "",
+    "assembly": "",
+    "orientationOpt": "",
+    "frameOpt": "",
+    "allOpts": {
+      "Size": "40x40 cm / 16x16″"
+    }
+  },
+  {
+    "id": "57983128863064",
+    "gid": "gid://shopify/ProductVariant/57983128863064",
+    "title": "60x60 cm / 24x24″",
+    "sku": "fb00753b-73b2-4469-87b2-b6501eafe72b",
+    "price": "33.57",
+    "options": [
+      {
+        "name": "Size",
+        "value": "60x60 cm / 24x24″"
+      }
+    ],
+    "orient": "square",
+    "size": "60x60 cm / 24x24″",
+    "sizeBlob": "60x60cm/24x24",
+    "inch": "24x24",
+    "square": true,
+    "a": null,
+    "xl": false,
+    "fiveR": false,
+    "frame": "",
+    "assembly": "",
+    "orientationOpt": "",
+    "frameOpt": "",
+    "allOpts": {
+      "Size": "60x60 cm / 24x24″"
+    }
+  }
+]

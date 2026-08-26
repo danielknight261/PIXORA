@@ -1,0 +1,73 @@
+{
+  "id": "gid://shopify/Product/15938229141848",
+  "handle": "premium-semi-glossy-paper-wooden-framed-poster-premium-1",
+  "vendor": "Snapp Daddy",
+  "options": [
+    {
+      "name": "Orientation - Size",
+      "values": [
+        "Vertical - 13x18 cm / 5x7″",
+        "Vertical - 15x20 cm / 6x8″",
+        "Vertical - 20x25 cm / 8x10″",
+        "Vertical - 21x29.7 cm / 8x12\"",
+        "Vertical - 27x35 cm / 11x14″",
+        "Vertical - 28x43  cm / XL (11x17″)",
+        "Vertical - A3 (29.7 x 42  cm)",
+        "Vertical - 30x30 cm / 12x12″",
+        "Vertical - 30x40 cm / 12x16″",
+        "Vertical - 30x45 cm / 12x18″",
+        "Vertical - 40x40 cm / 16x16″",
+        "Vertical - 40x50 cm / 16x20″",
+        "Vertical - 40x60 cm / 16x24″",
+        "Vertical - A2 (42 x 59.4  cm)",
+        "Vertical - 45x60 cm / 18x24″",
+        "Vertical - 50x50 cm / 20x20″",
+        "Vertical - 50x70 cm / 20x28″",
+        "Vertical - A1 (59.4 x 84.1  cm)",
+        "Vertical - 60x80 cm / 24x32″",
+        "Vertical - 60x90 cm / 24x36″",
+        "Vertical - 70x70 cm / 28x28″",
+        "Vertical - 70x100 cm / 28x40″",
+        "Horizontal - 13x18 cm / 5x7″",
+        "Horizontal - 15x20 cm / 6x8″",
+        "Horizontal - 20x25 cm / 8x10″",
+        "Horizontal - 21x29.7 cm / 8x12\"",
+        "Horizontal - 27x35 cm / 11x14″",
+        "Horizontal - 28x43  cm / XL (11x17″)",
+        "Horizontal - A3 (29.7 x 42  cm)",
+        "Horizontal - 30x30 cm / 12x12″",
+        "Horizontal - 30x40 cm / 12x16″",
+        "Horizontal - 30x45 cm / 12x18″",
+        "Horizontal - 40x40 cm / 16x16″",
+        "Horizontal - 40x50 cm / 16x20″",
+        "Horizontal - 40x60 cm / 16x24″",
+        "Horizontal - A2 (42 x 59.4  cm)",
+        "Horizontal - 45x60 cm / 18x24″",
+        "Horizontal - 50x50 cm / 20x20″",
+        "Horizontal - 50x70 cm / 20x28″",
+        "Horizontal - A1 (59.4 x 84.1  cm)",
+        "Horizontal - 60x80 cm / 24x32″",
+        "Horizontal - 60x90 cm / 24x36″",
+        "Horizontal - 70x70 cm / 28x28″",
+        "Horizontal - 70x100 cm / 28x40″"
+      ]
+    },
+    {
+      "name": "Frame",
+      "values": [
+        "White frame",
+        "Wood frame",
+        "Dark wood frame",
+        "Black frame"
+      ]
+    },
+    {
+      "name": "Assembly",
+      "values": [
+        "Ready-to-hang",
+        "Not assembled"
+      ]
+    }
+  ],
+  "descriptionHtml": "<p>No minimum orders, printed and shipped on demand.</p>\n<div data-gelato-customization=\"1\"></div>"
+}

@@ -88,15 +88,35 @@ img {
   align-items: center;
   gap: 0.55rem;
   min-width: 0;
+  text-decoration: none;
+  color: inherit;
+}
+
+.site-header__logo-img,
+.brand-wordmark {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: clamp(1.15rem, 2.4vw, 1.45rem);
+  letter-spacing: 0.01em;
+  line-height: 1.1;
+  white-space: nowrap;
+}
+
+.brand-wordmark__snapp {
+  color: inherit;
+}
+
+.brand-wordmark__daddy {
+  color: var(--color-brand-nav, #c45c26);
 }
 
 .site-header__logo-img {
-  height: 3rem;
+  height: auto;
   width: auto;
-  max-width: min(16rem, 58vw);
-  object-fit: contain;
-  display: block;
-  flex-shrink: 1;
+  max-width: none;
+  object-fit: unset;
+  display: inline;
+  flex-shrink: 0;
 }
 
 .site-header__actions {
@@ -144,8 +164,7 @@ img {
   }
 
   .site-header__logo-img {
-    height: 2.35rem;
-    max-width: min(11rem, 52vw);
+    font-size: 1.1rem;
   }
 
   .localization__select {
@@ -1463,6 +1482,21 @@ img {
   box-shadow: var(--shadow-card);
 }
 
+.product__media--gallery {
+  overflow: visible;
+}
+
+.product__media--gallery .product__media-frame {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--radius);
+}
+
+.product__media--gallery .pb-gallery__thumbs {
+  margin-top: 0.75rem;
+  padding: 0 0.25rem 0.25rem;
+}
+
 .product__title {
   font-family: var(--font-heading);
   font-size: clamp(1.75rem, 3vw, 2.5rem);
@@ -2559,10 +2593,12 @@ body.quick-view-open {
   line-height: 1.1;
 }
 
+.site-footer__brand .brand-wordmark__snapp,
 .site-footer__brand-snapp {
   color: #f7f6f3;
 }
 
+.site-footer__brand .brand-wordmark__daddy,
 .site-footer__brand-daddy {
   color: #c45c26;
 }

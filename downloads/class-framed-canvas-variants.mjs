@@ -1,0 +1,160 @@
+import fs from "node:fs";
+import path from "node:path";
+import os from "node:os";
+
+const SHOP = "hxbghe-6d.myshopify.com";
+const API = `https://${SHOP}/admin/api/2025-01/graphql.json`;
+const PRODUCT_ID = "gid://shopify/Product/15938102231384";
+
+function loadToken() {
+  const kit = JSON.parse(
+    fs.readFileSync(
+      path.join(
+        os.homedir(),
+        "AppData/Roaming/shopify-cli-kit-nodejs/Config/config.json"
+      ),
+      "utf8"
+    )
+  );
+  const account = Object.values(
+    JSON.parse(kit.sessionStore)["accounts.shopify.com"]
+  )[0];
+  const shopKey = Object.keys(account.applications).find((k) =>
+    k.startsWith(SHOP)
+  );
+  const token = account.applications[shopKey]?.accessToken;
+  if (!token) throw new Error("No shop token");
+  return token;
+}
+
+function frameKey(raw) {
+  const v = String(raw || "").toLowerCase();
+  if (v.includes("dark")) return "dark-wood";
+  if (v.includes("black")) return "black";
+  if (v.includes("wood") || v.includes("natural")) return "natural-wood";
+  return v.replace(/\s+/g, "-");
+}
+
+function inchKey(size) {
+  const m = String(size).match(/(\d+)\s*[x×]\s*(\d+)\s*(?:″|"|in)/i);
+  return m ? `${m[1]}x${m[2]}` : null;
+}
+
+function classify(v) {
+  const opts = Object.fromEntries(
+    (v.selectedOptions || []).map((o) => [o.name, o.value])
+  );
+  const size = opts.Size || "";
+  const inch = inchKey(size);
+  const square = Boolean(inch && inch.split("x")[0] === inch.split("x")[1]);
+  const orientRaw = String(opts.Orientation || v.title || "").toLowerCase();
+  let orient = "portrait";
+  if (orientRaw.includes("horiz") || orientRaw.includes("land")) {
+    orient = "landscape";
+  } else if (square) {
+    orient = "square";
+  } else if (orientRaw.includes("vert") || orientRaw.includes("port")) {
+    orient = "portrait";
+  }
+  return {
+    orient,
+    size,
+    inch,
+    square,
+    frame: frameKey(opts.Frame),
+    orientationOpt: opts.Orientation || "",
+    frameOpt: opts.Frame || "",
+  };
+}
+
+const token = loadToken();
+const variants = [];
+let cursor = null;
+let product = null;
+for (;;) {
+  const res = await fetch(API, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      Authorization: `Bearer ${token}`,
+    },
+    body: JSON.stringify({
+      query: `query ($id: ID!, $cursor: String) {
+        product(id: $id) {
+          id title handle vendor status descriptionHtml
+          options { name values }
+          collections(first: 10) { nodes { handle } }
+          variants(first: 50, after: $cursor) {
+            pageInfo { hasNextPage endCursor }
+            nodes {
+              id title sku price
+              selectedOptions { name value }
+              media(first: 5) {
+                nodes { ... on MediaImage { id image { url } } }
+              }
+            }
+          }
+        }
+      }`,
+      variables: { id: PRODUCT_ID, cursor },
+    }),
+  });
+  const json = await res.json();
+  if (json.errors) throw new Error(JSON.stringify(json.errors));
+  product = json.data.product;
+  variants.push(...product.variants.nodes);
+  if (!product.variants.pageInfo.hasNextPage) break;
+  cursor = product.variants.pageInfo.endCursor;
+}
+
+const rows = variants.map((v) => {
+  const c = classify(v);
+  return {
+    id: v.id.split("/").pop(),
+    gid: v.id,
+    title: v.title,
+    sku: v.sku,
+    price: v.price,
+    options: v.selectedOptions,
+    ...c,
+  };
+});
+
+const byOrient = {};
+const byFrame = {};
+const byInch = {};
+for (const r of rows) {
+  byOrient[r.orient] = (byOrient[r.orient] || 0) + 1;
+  byFrame[r.frame] = (byFrame[r.frame] || 0) + 1;
+  byInch[r.inch || "(none)"] = (byInch[r.inch || "(none)"] || 0) + 1;
+}
+console.log({
+  handle: product.handle,
+  vendor: product.vendor,
+  status: product.status,
+  options: product.options,
+  collections: product.collections.nodes.map((c) => c.handle),
+  variants: rows.length,
+  byOrient,
+  byFrame,
+  byInch,
+  sample: rows[0],
+});
+fs.writeFileSync(
+  "downloads/framed-canvas-variants-classed.json",
+  JSON.stringify(rows, null, 2)
+);
+fs.writeFileSync(
+  "downloads/framed-canvas-product-meta.json",
+  JSON.stringify(
+    {
+      id: product.id,
+      handle: product.handle,
+      vendor: product.vendor,
+      options: product.options,
+      descriptionHtml: product.descriptionHtml,
+    },
+    null,
+    2
+  )
+);

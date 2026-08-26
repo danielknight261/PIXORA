@@ -483,7 +483,7 @@
               "colorOptionIndex": {% if color_option_index != nil %}{{ color_option_index }}{% else %}null{% endif %},
               "fixedOrient": {% if fixed_orient != blank %}{{ fixed_orient | json }}{% else %}null{% endif %},
               "variantMapUrl": {% if variant_map_asset != blank %}{{ variant_map_asset | asset_url | json }}{% else %}null{% endif %},
-              "galleryMap": {% if handle_down contains 'canvas' and handle_down != 'framed-canvas' %}{% render 'canvas-variant-gallery-data' %}{% elsif handle_down == 'premium-matte-paper-poster' %}{% render 'matte-poster-gallery-data' %}{% elsif handle_down == 'classic-semi-glossy-paper-poster' %}{% render 'semi-glossy-poster-gallery-data' %}{% elsif handle_down == 'fine-art-poster' %}{% render 'fine-art-poster-gallery-data' %}{% else %}{% render 'variant-gallery-map' %}{% endif %},
+              "galleryMap": {% if handle_down == 'framed-canvas' %}{% render 'framed-canvas-variant-gallery-data' %}{% elsif handle_down contains 'canvas' %}{% render 'canvas-variant-gallery-data' %}{% elsif handle_down == 'premium-matte-paper-poster' %}{% render 'matte-poster-gallery-data' %}{% elsif handle_down == 'classic-semi-glossy-paper-poster' %}{% render 'semi-glossy-poster-gallery-data' %}{% elsif handle_down == 'fine-art-framed-poster' %}{% render 'fine-art-framed-poster-gallery-data' %}{% elsif handle_down == 'fine-art-poster' %}{% render 'fine-art-poster-gallery-data' %}{% elsif handle_down == 'classic-semi-glossy-paper-wooden-framed-poster-bestseller-1' %}{% render 'classic-framed-poster-gallery-data' %}{% elsif handle_down == 'premium-semi-glossy-paper-wooden-framed-poster-premium-1' %}{% render 'premium-framed-poster-gallery-data' %}{% elsif handle_down == 'classic-semi-glossy-paper-metal-framed-poster' %}{% render 'metal-framed-poster-gallery-data' %}{% elsif handle_down == 'acrylic-print' %}{% render 'acrylic-print-gallery-data' %}{% elsif handle_down == 'aluminum-print' %}{% render 'aluminum-print-gallery-data' %}{% elsif handle_down == 'brushed-aluminum-print' %}{% render 'brushed-aluminum-gallery-data' %}{% elsif handle_down == 'foam-portrait' %}{% render 'foam-portrait-gallery-data' %}{% elsif handle_down == 'foam-landscape' %}{% render 'foam-landscape-gallery-data' %}{% elsif handle_down == 'foam-square' %}{% render 'foam-square-gallery-data' %}{% elsif handle_down == 'wood-prints' %}{% render 'wood-prints-gallery-data' %}{% else %}{% render 'variant-gallery-map' %}{% endif %},
               "variants": [
                 {%- for variant in product.variants -%}
                   {
@@ -639,8 +639,8 @@
       endif
     -%}
     <div class="page-width product{% if is_prodigi_gift %} product--sticker{% endif %}" id="Product-{{ section.id }}">
-      <div class="product__media">
-        <div class="product__media-frame" data-product-media>
+      <div class="product__media{% if is_bottle and product.media.size > 1 %} product__media--gallery{% endif %}">
+        <div class="product__media-frame" data-product-media{% if is_bottle and product.media.size > 1 %} data-gift-gallery{% endif %}>
           {% if current_variant.featured_media %}
             {% assign media = current_variant.featured_media %}
           {% else %}
@@ -658,7 +658,54 @@
           {% else %}
             {% render 'mock-image', product: product, class: 'product__image', width: 900 %}
           {% endif %}
+          {% if is_bottle and product.media.size > 1 %}
+            <button type="button" class="pb-gallery__nav pb-gallery__nav--prev" data-gift-gallery-prev aria-label="Previous image">
+              ‹
+            </button>
+            <button type="button" class="pb-gallery__nav pb-gallery__nav--next" data-gift-gallery-next aria-label="Next image">
+              ›
+            </button>
+          {% endif %}
         </div>
+        {% if is_bottle and product.media.size > 1 %}
+          <div class="pb-gallery__thumbs" data-gift-gallery-thumbs>
+            {% for m in product.media %}
+              <button
+                type="button"
+                class="pb-gallery__thumb{% if forloop.first %} is-active{% endif %}"
+                data-gift-gallery-src="{{ m | image_url: width: 1400 }}"
+                aria-label="View image {{ forloop.index }}"
+              >
+                <img src="{{ m | image_url: width: 160 }}" alt="" width="80" height="80" loading="lazy">
+              </button>
+            {% endfor %}
+          </div>
+          <script>
+            (function () {
+              var root = document.getElementById('Product-{{ section.id }}');
+              if (!root) return;
+              var img = root.querySelector('[data-product-image]');
+              var thumbs = root.querySelectorAll('[data-gift-gallery-src]');
+              var prev = root.querySelector('[data-gift-gallery-prev]');
+              var next = root.querySelector('[data-gift-gallery-next]');
+              if (!img || !thumbs.length) return;
+              var index = 0;
+              function show(i) {
+                index = (i + thumbs.length) % thumbs.length;
+                var src = thumbs[index].getAttribute('data-gift-gallery-src');
+                if (src) img.src = src;
+                thumbs.forEach(function (t, n) {
+                  t.classList.toggle('is-active', n === index);
+                });
+              }
+              thumbs.forEach(function (t, n) {
+                t.addEventListener('click', function () { show(n); });
+              });
+              if (prev) prev.addEventListener('click', function () { show(index - 1); });
+              if (next) next.addEventListener('click', function () { show(index + 1); });
+            })();
+          </script>
+        {% endif %}
         {% if is_prodigi_gift %}
           <p class="product__media-caption muted">{{ prodigi_caption }}</p>
         {% endif %}
