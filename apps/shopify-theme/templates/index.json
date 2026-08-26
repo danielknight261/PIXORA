@@ -3,9 +3,8 @@
     "hero": {
       "type": "hero",
       "settings": {
-        "eyebrow": "Personalised photo printing",
-        "heading": "Turn your photos into keepsakes",
-        "text": "Upload a favourite photo, preview it on the product, and we’ll print and deliver premium quality to your door.",
+        "heading": "Print your favourites",
+        "text": "Preview your photo on the product, then we print and ship.",
         "button_label": "Shop wall art",
         "button_link": "/collections/wall-art",
         "button_label_2": "Shop gifts",
@@ -262,7 +261,7 @@
       ],
       "settings": {
         "heading": "Shop photo products",
-        "text": "Wall art, posters, mugs, phone cases and tote bags — personalise with a live mockup, then we print and ship.",
+        "text": "Wall art and gifts — personalise with a live mockup, then we print and ship.",
         "footer_heading": "",
         "footer_text": ""
       }
@@ -305,34 +304,35 @@
           "type": "step",
           "settings": {
             "title": "Upload your photo",
-            "text": "Pick a favourite moment — phone or desktop, JPG or PNG.",
-            "accent": "cyan"
+            "text": "Use a clear JPG or PNG from your phone or computer. Higher resolution prints sharper.",
+            "detail": "JPG · PNG"
           }
         },
         "s2": {
           "type": "step",
           "settings": {
             "title": "Personalise live",
-            "text": "See your design on a real product mockup before you buy.",
-            "accent": "magenta"
+            "text": "Place and crop on a real product mockup so you see the finish before checkout.",
+            "detail": "Live preview"
           }
         },
         "s3": {
           "type": "step",
           "settings": {
             "title": "We print & ship",
-            "text": "Premium print-on-demand quality, packed and delivered to your door.",
-            "accent": "mint"
+            "text": "Made to order with Gelato — often printed locally, then packed and delivered to your door.",
+            "detail": "Print on demand"
           }
         }
       },
       "block_order": ["s1", "s2", "s3"],
       "settings": {
-        "eyebrow": "Simple process",
-        "heading": "From photo to keepsake in three steps",
-        "text": "Upload your favourite snap, personalise on a live product mockup, and we print and ship premium quality to your door."
+        "eyebrow": "How it works",
+        "heading": "From photo to doorstep",
+        "text": "Three steps. Live mockup before you pay. Printed near you when we can.",
+        "footnote": "Typical delivery depends on your country — see the note on each product."
       }
     }
   },
-  "order": ["hero", "product_blocks", "trust_strip", "how_it_works"]
+  "order": ["hero", "trust_strip", "product_blocks", "how_it_works"]
 }

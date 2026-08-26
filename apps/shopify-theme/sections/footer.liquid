@@ -5,7 +5,6 @@
         {% render 'brand-logo', logo_class: 'site-footer__brand' %}
       </a>
       <p class="site-footer__tagline">
-        {{ settings.brand_tagline | default: 'Turn Moments Into Keepsakes' }}.
         {{ 'footer.tagline' | t }}
       </p>
     </div>
@@ -20,11 +19,7 @@
           <li><a href="{{ collections['mugs'].url | default: '/collections/mugs' }}">{{ 'header.mugs' | t }}</a></li>
           <li><a href="{{ collections['phone-cases'].url | default: '/collections/phone-cases' }}">{{ 'header.phone_cases' | t }}</a></li>
           <li><a href="{{ collections['tote-bags'].url | default: '/collections/tote-bags' }}">{{ 'header.totes' | t }}</a></li>
-          <li><a href="{{ collections['stickers'].url | default: '/collections/stickers' }}">{{ 'header.stickers' | t }}</a></li>
-          <li><a href="{{ collections['acrylic-prisms'].url | default: '/collections/acrylic-prisms' }}">{{ 'header.prisms' | t }}</a></li>
-          <li><a href="{{ collections['towels'].url | default: '/collections/towels' }}">{{ 'header.towels' | t }}</a></li>
-          <li><a href="{{ collections['tattoos'].url | default: '/collections/tattoos' }}">{{ 'header.tattoos' | t }}</a></li>
-          <li><a href="{{ collections['occasions'].url | default: '/collections/occasions' }}">{{ 'header.occasions' | t }}</a></li>
+          <li><a href="{{ collections['wall-art'].url | default: '/collections/wall-art' }}">{{ 'header.all_wall_art' | t }}</a></li>
         </ul>
       </div>
 
@@ -34,7 +29,6 @@
           <li><a href="{{ settings.help_link | default: '/pages/contact' }}">{{ 'footer.customer_service' | t }}</a></li>
           <li><a href="/pages/shipping">{{ 'footer.shipping_delivery' | t }}</a></li>
           <li><a href="/pages/faq">{{ 'footer.faqs' | t }}</a></li>
-          <li><a href="{{ routes.account_url }}">{{ 'general.your_orders' | t }}</a></li>
         </ul>
       </div>
 

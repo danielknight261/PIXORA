@@ -18,7 +18,6 @@
         endif
       -%}
       <div class="trust-strip__item" {{ block.shopify_attributes }}>
-        <span class="trust-strip__dot trust-strip__dot--{{ block.settings.accent | default: 'cyan' }}" aria-hidden="true"></span>
         <div>
           <p class="trust-strip__title">{% if is_pod %}{{ 'delivery.title' | t }}{% else %}{{ block.settings.title }}{% endif %}</p>
           {% if is_pod %}
@@ -31,7 +30,6 @@
     {% endfor %}
     {% unless live_delivery_used %}
       <div class="trust-strip__item">
-        <span class="trust-strip__dot trust-strip__dot--mint" aria-hidden="true"></span>
         <div>
           <p class="trust-strip__title">{{ 'delivery.title' | t }}</p>
           <p class="trust-strip__text">{% render 'local-print-promise', tag: 'span', class: 'local-print-promise' %}</p>

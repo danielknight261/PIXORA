@@ -8,38 +8,37 @@
 
   <div class="product-blocks__grid">
     {% for block in section.blocks %}
+      {% if block.settings.coming_soon %}
+        {% continue %}
+      {% endif %}
       {% liquid
         assign card_href = block.settings.link | default: routes.collections_url
         assign live_from = blank
         assign thumb_handle = blank
-        unless block.settings.coming_soon
-          assign link_path = card_href | split: '?' | first
-          if link_path contains '/products/'
-            assign product_handle = link_path | split: '/products/' | last | split: '/' | first
-            assign thumb_handle = product_handle
+        assign link_path = card_href | split: '?' | first
+        if link_path contains '/products/'
+          assign product_handle = link_path | split: '/products/' | last | split: '/' | first
+          assign thumb_handle = product_handle
+          capture live_from
+            render 'from-price', handle: product_handle
+          endcapture
+        elsif link_path contains '/collections/'
+          assign collection_handle = link_path | split: '/collections/' | last | split: '/' | first
+          assign thumb_handle = collection_handle
+          if collection_handle == 'canvas-prints' or collection_handle == 'canvas'
+            assign thumb_handle = 'canvas-20x20-cm-8x8'
             capture live_from
-              render 'from-price', handle: product_handle
+              render 'from-price', handle: 'canvas-20x20-cm-8x8'
             endcapture
-          elsif link_path contains '/collections/'
-            assign collection_handle = link_path | split: '/collections/' | last | split: '/' | first
-            assign thumb_handle = collection_handle
-            if collection_handle == 'canvas-prints' or collection_handle == 'canvas'
-              assign thumb_handle = 'canvas-20x20-cm-8x8'
-              capture live_from
-                render 'from-price', handle: 'canvas-20x20-cm-8x8'
-              endcapture
-            else
-              capture live_from
-                render 'from-price', handle: collection_handle
-              endcapture
-            endif
+          else
+            capture live_from
+              render 'from-price', handle: collection_handle
+            endcapture
           endif
-        endunless
+        endif
         assign live_from = live_from | strip
         assign price_text = blank
-        if block.settings.coming_soon
-          assign price_text = 'general.coming_soon' | t
-        elsif live_from != blank
+        if live_from != blank
           assign price_text = live_from
         elsif block.settings.price_label != blank and block.settings.price_label != 'Coming soon'
           assign price_text = block.settings.price_label
@@ -52,12 +51,12 @@
         assign thumb_html = thumb_html | strip
       %}
       <a
-        class="product-block{% if block.settings.coming_soon %} product-block--soon{% endif %}"
+        class="product-block"
         href="{{ card_href }}"
         {{ block.shopify_attributes }}
       >
         <div
-          class="product-block__media product-block__media--{{ block.settings.accent | default: 'blue' }}{% if thumb_html != blank or block.settings.image != blank %} product-block__media--photo{% endif %}"
+          class="product-block__media{% if thumb_html != blank or block.settings.image != blank %} product-block__media--photo{% endif %}"
           {% if block.settings.image != blank %}
             style="background-image: url({{ block.settings.image | image_url: width: 800 }})"
           {% endif %}
@@ -68,9 +67,6 @@
             <span class="product-block__glyph" aria-hidden="true">
               {{ block.settings.title | slice: 0 | upcase }}
             </span>
-          {% endif %}
-          {% if block.settings.coming_soon %}
-            <span class="product-block__badge">{{ 'general.coming_soon' | t }}</span>
           {% endif %}
         </div>
         <div class="product-block__info">

@@ -12,13 +12,27 @@
 
     <ol class="how-it-works__steps">
       {% for block in section.blocks %}
-        <li class="how-it-works__step how-it-works__step--{{ block.settings.accent | default: 'cyan' }}" {{ block.shopify_attributes }}>
-          <span class="how-it-works__number" aria-hidden="true">{{ forloop.index }}</span>
+        <li class="how-it-works__step" {{ block.shopify_attributes }}>
+          <div class="how-it-works__marker">
+            <span class="how-it-works__number{% if forloop.first %} how-it-works__number--accent{% endif %}" aria-hidden="true">{{ forloop.index }}</span>
+            {% unless forloop.last %}
+              <span class="how-it-works__connector" aria-hidden="true"></span>
+            {% endunless %}
+          </div>
           <h3 class="how-it-works__title">{{ block.settings.title }}</h3>
-          <p class="how-it-works__desc">{{ block.settings.text }}</p>
+          {% if block.settings.text != blank %}
+            <p class="how-it-works__desc">{{ block.settings.text }}</p>
+          {% endif %}
+          {% if block.settings.detail != blank %}
+            <p class="how-it-works__detail">{{ block.settings.detail }}</p>
+          {% endif %}
         </li>
       {% endfor %}
     </ol>
+
+    {% if section.settings.footnote != blank %}
+      <p class="how-it-works__footnote">{{ section.settings.footnote }}</p>
+    {% endif %}
   </div>
 </section>
 
@@ -30,19 +44,25 @@
       "type": "text",
       "id": "eyebrow",
       "label": "Eyebrow",
-      "default": "Simple process"
+      "default": "How it works"
     },
     {
       "type": "text",
       "id": "heading",
       "label": "Heading",
-      "default": "From photo to keepsake in three steps"
+      "default": "From photo to doorstep"
     },
     {
       "type": "textarea",
       "id": "text",
       "label": "Intro",
-      "default": "Upload your favourite snap, personalise on a live product mockup, and we print and ship premium quality to your door."
+      "default": "Three steps. Live mockup before you pay. Printed near you when we can."
+    },
+    {
+      "type": "text",
+      "id": "footnote",
+      "label": "Footnote",
+      "default": "Typical delivery depends on your country — see the note on each product."
     }
   ],
   "blocks": [
@@ -60,19 +80,13 @@
           "type": "textarea",
           "id": "text",
           "label": "Text",
-          "default": "Choose a clear, high-resolution image from your phone or computer."
+          "default": "Use a clear JPG or PNG from your phone or computer. Higher resolution prints sharper."
         },
         {
-          "type": "select",
-          "id": "accent",
-          "label": "Accent",
-          "options": [
-            { "value": "cyan", "label": "Cyan" },
-            { "value": "magenta", "label": "Magenta" },
-            { "value": "blue", "label": "Blue" },
-            { "value": "mint", "label": "Mint" }
-          ],
-          "default": "cyan"
+          "type": "text",
+          "id": "detail",
+          "label": "Detail",
+          "default": "JPG · PNG"
         }
       ]
     }
@@ -85,24 +99,24 @@
           "type": "step",
           "settings": {
             "title": "Upload your photo",
-            "text": "Pick a favourite moment — phone or desktop, JPG or PNG.",
-            "accent": "cyan"
+            "text": "Use a clear JPG or PNG from your phone or computer. Higher resolution prints sharper.",
+            "detail": "JPG · PNG"
           }
         },
         {
           "type": "step",
           "settings": {
             "title": "Personalise live",
-            "text": "See your design on a real product mockup before you buy.",
-            "accent": "magenta"
+            "text": "Place and crop on a real product mockup so you see the finish before checkout.",
+            "detail": "Live preview"
           }
         },
         {
           "type": "step",
           "settings": {
             "title": "We print & ship",
-            "text": "Premium print-on-demand quality, packed and delivered to your door.",
-            "accent": "mint"
+            "text": "Made to order with Gelato — often printed locally, then packed and delivered to your door.",
+            "detail": "Print on demand"
           }
         }
       ]
