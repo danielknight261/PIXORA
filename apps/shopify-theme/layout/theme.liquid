@@ -51,8 +51,10 @@
         "@type": "Organization",
         "name": {{ shop.name | json }},
         "url": {{ shop.url | json }},
-        {% if settings.brand_logo %}
-          "logo": {{ settings.brand_logo | image_url: width: 600 | prepend: 'https:' | json }},
+        {% if settings.logo != blank %}
+          "logo": {{ settings.logo | image_url: width: 600 | prepend: 'https:' | json }},
+        {% else %}
+          "logo": {{ 'snappdaddy-logo.png' | asset_url | prepend: 'https:' | json }},
         {% endif %}
         "contactPoint": {
           "@type": "ContactPoint",
@@ -62,8 +64,8 @@
       }
     </script>
 
-    <link rel="icon" href="{{ 'snapdaddy-favicon.png' | asset_url }}" type="image/png">
-    <link rel="apple-touch-icon" href="{{ 'snapdaddy-favicon.png' | asset_url }}">
+    <link rel="icon" href="{{ 'snappdaddy-favicon.png' | asset_url }}" type="image/png" sizes="512x512">
+    <link rel="apple-touch-icon" href="{{ 'snappdaddy-favicon.png' | asset_url }}">
     {{ content_for_header }}
     {{ 'base.css' | asset_url | stylesheet_tag }}
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -124,5 +126,6 @@
     </script>
     <script src="{{ 'design-preview.js' | asset_url }}" defer></script>
     <script src="{{ 'sticker-preview.js' | asset_url }}" defer></script>
+    <script src="{{ 'personalize-gate.js' | asset_url }}" defer></script>
   </body>
 </html>

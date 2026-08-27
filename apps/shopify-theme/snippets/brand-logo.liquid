@@ -1,8 +1,24 @@
 {%- comment -%}
-  Temporary text wordmark — logo image disabled until brand assets are ready.
+  Snapp Daddy wordmark. Theme setting logo overrides the bundled asset.
 {%- endcomment -%}
 {% assign logo_alt = settings.brand_name | default: 'Snapp Daddy' %}
-<span class="{{ logo_class }} brand-wordmark" aria-label="{{ logo_alt }}">
-  <span class="brand-wordmark__snapp">Snapp</span>
-  <span class="brand-wordmark__daddy">Daddy</span>
-</span>
+{% if settings.logo != blank %}
+  {{
+    settings.logo
+    | image_url: width: 640
+    | image_tag:
+      class: logo_class,
+      alt: logo_alt,
+      loading: 'eager',
+      widths: '240, 360, 480, 640'
+  }}
+{% else %}
+  <img
+    src="{{ 'snappdaddy-logo.png' | asset_url }}"
+    alt="{{ logo_alt | escape }}"
+    class="{{ logo_class }}"
+    width="1024"
+    height="284"
+    loading="eager"
+  >
+{% endif %}

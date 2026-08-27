@@ -26,12 +26,10 @@
     for (var i = 0; i < keys.length; i++) {
       var k = keys[i].toLowerCase();
       var val = properties[keys[i]];
+      if (k === 'personalized print' || k === 'personalised print') continue;
       if (
         k.indexOf('customization') !== -1 ||
         k.indexOf('gelato') !== -1 ||
-        k.indexOf('personal') !== -1 ||
-        k === 'personalized print' ||
-        k === 'personalised print' ||
         k === 'artwork' ||
         k === 'artwork name' ||
         looksLikeFilename(val)
@@ -62,11 +60,15 @@
   function needsCleanup(properties) {
     var props = properties || {};
     var keys = Object.keys(props);
+    var hasNote = false;
     for (var i = 0; i < keys.length; i++) {
-      if (keys[i].toLowerCase() === 'design preview') return true;
+      var k = keys[i].toLowerCase();
+      if (k === 'design preview') return true;
+      if (k === 'personalized print' || k === 'personalised print') hasNote = true;
       if (isBrokenPreviewUrl(props[keys[i]])) return true;
     }
     if (isPersonalized(props) && props[PRINT_NOTE_KEY] !== PRINT_NOTE_VALUE) return true;
+    if (hasNote && !isPersonalized(props)) return true;
     return false;
   }
 
@@ -102,35 +104,42 @@
       .catch(function () {});
   }
 
-  function ensurePrintNoteInput(form) {
-    if (!form) return;
-    var bad = form.querySelectorAll(
-      'input[name="properties[Design preview]"], input[name="properties[design preview]"]'
-    );
-    for (var i = 0; i < bad.length; i++) bad[i].remove();
-
-    var existing = form.querySelector('input[name="properties[' + PRINT_NOTE_KEY + ']"]');
-    if (!existing) {
-      existing = document.createElement('input');
-      existing.type = 'hidden';
-      existing.name = 'properties[' + PRINT_NOTE_KEY + ']';
-      form.appendChild(existing);
-    }
-    existing.value = PRINT_NOTE_VALUE;
-  }
-
   function wireProductPage() {
     var form = document.getElementById('product-form');
     if (!form) return;
     if (form.querySelector('[data-sticker-file]')) return;
-    ensurePrintNoteInput(form);
     form.addEventListener(
       'submit',
       function () {
-        ensurePrintNoteInput(form);
+        var note = form.querySelector('input[name="properties[' + PRINT_NOTE_KEY + ']"]');
+        if (!hasGelatoOrArtwork(form)) {
+          if (note) note.remove();
+          return;
+        }
+        if (!note) {
+          note = document.createElement('input');
+          note.type = 'hidden';
+          note.name = 'properties[' + PRINT_NOTE_KEY + ']';
+          form.appendChild(note);
+        }
+        note.value = PRINT_NOTE_VALUE;
       },
       true
     );
+  }
+
+  function hasGelatoOrArtwork(form) {
+    var inputs = form.querySelectorAll('input[name^="properties["], textarea[name^="properties["]');
+    for (var i = 0; i < inputs.length; i++) {
+      var name = (inputs[i].name || '').toLowerCase();
+      var val = String(inputs[i].value || '').trim();
+      if (!val) continue;
+      if (name.indexOf('personalised print') !== -1 || name.indexOf('personalized print') !== -1) continue;
+      if (name.indexOf('gelato') !== -1 || name.indexOf('customization') !== -1 || name.indexOf('artwork') !== -1) {
+        return true;
+      }
+    }
+    return false;
   }
 
   if (document.body.classList.contains('template-cart')) wireCartPage();

@@ -301,34 +301,37 @@
           <h1 class="pb-canvas__title">{{ display_title }}</h1>
           <p class="pb-canvas__subtitle">
             {% if is_hanger %}
-              Poster with hanger — pick hanger colour, orientation and size
+              {{ 'product_page.subtitle_hanger' | t }}
             {% elsif is_metal_framed %}
-              Metal framed print — pick orientation and size
+              {{ 'product_page.subtitle_metal_framed' | t }}
             {% elsif is_framed_canvas %}
-              Canvas in a tray frame — pick frame colour, orientation and size
+              {{ 'product_page.subtitle_framed_canvas' | t }}
             {% elsif is_wooden_framed %}
-              Wooden framed print — pick frame colour, orientation and size
-              {%- if assembly_option_index != nil %} · assembly{% endif -%}
+              {{ 'product_page.subtitle_wooden_framed' | t }}
+              {%- if assembly_option_index != nil %}{{ 'product_page.subtitle_assembly' | t }}{% endif -%}
             {% elsif fixed_orient != blank %}
-              Foam board print — pick size
-              {%- if color_option_index != nil %} and edge colour{% endif -%}
+              {{ 'product_page.subtitle_foam' | t }}
+              {%- if color_option_index != nil %}{{ 'product_page.subtitle_and_edge_colour' | t }}{% endif -%}
             {% elsif handle_down contains 'wood-print' %}
-              Wood print — pick thickness, orientation and size
+              {{ 'product_page.subtitle_wood' | t }}
             {% elsif handle_down contains 'acrylic' %}
-              Acrylic print — pick orientation and size
+              {{ 'product_page.subtitle_acrylic' | t }}
             {% elsif handle_down contains 'aluminum' or handle_down contains 'aluminium' %}
-              Metal print — pick orientation and size
+              {{ 'product_page.subtitle_metal' | t }}
             {% elsif is_poster %}
-              Pick orientation and size
+              {{ 'product_page.subtitle_poster' | t }}
             {% elsif is_framed %}
-              Pick options and size
+              {{ 'product_page.subtitle_framed' | t }}
             {% else %}
-              Pick orientation and size
-              {%- if thickness_option_index != nil %} · thickness{% endif -%}
+              {{ 'product_page.subtitle_default' | t }}
+              {%- if thickness_option_index != nil %}{{ 'product_page.subtitle_thickness' | t }}{% endif -%}
             {% endif %}
-            {%- if size_count > 0 %} · {{ size_count }} sizes{% endif -%}
-            {%- if product.price_varies %} · from {{ product.price_min | money }}{% endif -%}.
-            Then personalize with your photo.
+            {%- if size_count > 0 %}{{ 'product_page.subtitle_sizes' | t: count: size_count }}{% endif -%}
+            {%- if product.price_varies -%}
+              {%- capture price_min -%}{{ product.price_min | money }}{%- endcapture -%}
+              {{ 'product_page.subtitle_from' | t: price: price_min }}
+            {%- endif -%}.
+            {{ 'product_page.then_personalise' | t }}
           </p>
         </div>
       </div>
@@ -373,7 +376,7 @@
         </div>
 
         <div class="pb-canvas__panel">
-          {% form 'product', product, id: 'product-form', class: 'pb-canvas__form' %}
+          {% form 'product', product, id: 'product-form', class: 'pb-canvas__form', data-personalize-gate: 'true' %}
             <input type="hidden" name="id" value="{{ current_variant.id }}" data-variant-id>
             <input type="hidden" name="quantity" value="1">
 
@@ -481,8 +484,8 @@
 
             {% if color_option_index != nil %}
               <div class="pb-canvas__step">
-                <p class="pb-canvas__label">Edge colour</p>
-                <div class="pb-canvas__frames" role="radiogroup" aria-label="Edge colour">
+                <p class="pb-canvas__label">{{ 'product_page.edge_colour' | t }}</p>
+                <div class="pb-canvas__frames" role="radiogroup" aria-label="{{ 'product_page.edge_colour' | t }}">
                   {% for value in product.options_with_values[color_option_index].values %}
                     {% assign color_key = value | handleize %}
                     <button
@@ -905,13 +908,13 @@
         {% if product.description != blank %}
           <div class="product__description rte">{{ product.description }}</div>
         {% endif %}
-        {% form 'product', product, id: 'product-form', class: 'product-form' %}
+        {% form 'product', product, id: 'product-form', class: 'product-form', data-personalize-gate: 'true' %}
           <input type="hidden" name="id" value="{{ current_variant.id }}" data-variant-id>
           {% unless product.has_only_default_variant %}
             {% if color_option_index != nil and is_mug or color_option_index != nil and is_tote %}
               <div class="pb-canvas__step product-form__color">
-                <p class="pb-canvas__label">{% if handle_down contains 'color-inside' %}Inside colour{% else %}Colour{% endif %}</p>
-                <div class="pb-canvas__frames" role="radiogroup" aria-label="{% if handle_down contains 'color-inside' %}Inside colour{% else %}Colour{% endif %}" data-gift-color>
+                <p class="pb-canvas__label">{% if handle_down contains 'color-inside' %}{{ 'product_page.inside_colour' | t }}{% else %}{{ 'product_page.colour' | t }}{% endif %}</p>
+                <div class="pb-canvas__frames" role="radiogroup" aria-label="{% if handle_down contains 'color-inside' %}{{ 'product_page.inside_colour' | t }}{% else %}{{ 'product_page.colour' | t }}{% endif %}" data-gift-color>
                   {% for value in product.options_with_values[color_option_index].values %}
                     {% assign color_down = value | downcase %}
                     {% assign color_key = value | handleize %}

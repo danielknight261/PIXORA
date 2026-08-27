@@ -17,6 +17,7 @@
   capture header_aluminum_from
     render 'from-price', handle: 'aluminum-prints'
   endcapture
+  assign aluminum_alt = 'header.aluminium' | t
   capture header_acrylic_from
     render 'from-price', handle: 'acrylic-print'
   endcapture
@@ -158,7 +159,7 @@
               </span>
             </a>
             <a class="site-header__tile" href="/collections/aluminum-prints">
-              <span class="site-header__swatch site-header__swatch--slate" aria-hidden="true">{% render 'category-thumb', handle: 'aluminum-prints', alt: 'Metal / aluminium', class: 'site-header__thumb', width: 160 %}</span>
+              <span class="site-header__swatch site-header__swatch--slate" aria-hidden="true">{% render 'category-thumb', handle: 'aluminum-prints', alt: aluminum_alt, class: 'site-header__thumb', width: 160 %}</span>
               <span class="site-header__tile-copy">
                 <span class="site-header__tile-title">{{ 'header.aluminium' | t }}</span>
                 <span class="site-header__tile-desc">{% if header_aluminum_from != blank %}{{ header_aluminum_from }}{% else %}{{ 'header.fallback_aluminium' | t }}{% endif %}</span>
