@@ -212,7 +212,7 @@
 
       <div class="site-header__cat">
         <a class="site-header__cat-link site-header__cat-link--gifts" href="{{ collections['home-gifts'].url | default: '/collections/home-gifts' }}">
-          {{ 'header.home_gifts' | t }}
+          {{ 'header.gifts' | t }}
           <svg class="site-header__chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
         </a>
         <div class="site-header__panel site-header__panel--wide" role="menu">
@@ -333,25 +333,47 @@
       </div>
 
       <div class="site-header__cat">
-        <a class="site-header__cat-link site-header__cat-link--cards" href="{{ collections['occasions'].url | default: '/collections/occasions' }}">
+        <a class="site-header__cat-link site-header__cat-link--cards" href="{{ collections['wall-art'].url | default: '/collections/wall-art' }}">
           {{ 'header.occasions' | t }}
           <svg class="site-header__chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
         </a>
         <div class="site-header__panel site-header__panel--narrow" role="menu">
           <p class="site-header__panel-kicker">{{ 'header.celebrate' | t }}</p>
           <div class="site-header__panel-list">
-            <a class="site-header__tile" href="/collections/cards">
-              <span class="site-header__swatch site-header__swatch--magenta" aria-hidden="true">{% render 'category-thumb', handle: 'posters', alt: 'Greeting cards', class: 'site-header__thumb', width: 160 %}</span>
+            <a class="site-header__tile" href="/collections/wall-art">
               <span class="site-header__tile-copy">
-                <span class="site-header__tile-title">{{ 'header.cards' | t }}</span>
-                <span class="site-header__tile-desc">{{ 'general.coming_soon' | t }}</span>
+                <span class="site-header__tile-title">{{ 'header.occasion_birthday' | t }}</span>
+                <span class="site-header__tile-desc">{{ 'header.occasion_birthday_desc' | t }}</span>
               </span>
             </a>
-            <a class="site-header__tile" href="/collections/calendars">
-              <span class="site-header__swatch site-header__swatch--mint" aria-hidden="true">{% render 'category-thumb', handle: 'framed-photo-tiles', alt: 'Calendars', class: 'site-header__thumb', width: 160 %}</span>
+            <a class="site-header__tile" href="/products/framed-canvas">
               <span class="site-header__tile-copy">
-                <span class="site-header__tile-title">{{ 'header.calendars' | t }}</span>
-                <span class="site-header__tile-desc">{{ 'general.coming_soon' | t }}</span>
+                <span class="site-header__tile-title">{{ 'header.occasion_anniversary' | t }}</span>
+                <span class="site-header__tile-desc">{{ 'header.occasion_anniversary_desc' | t }}</span>
+              </span>
+            </a>
+            <a class="site-header__tile" href="/collections/photo-tiles">
+              <span class="site-header__tile-copy">
+                <span class="site-header__tile-title">{{ 'header.occasion_baby' | t }}</span>
+                <span class="site-header__tile-desc">{{ 'header.occasion_baby_desc' | t }}</span>
+              </span>
+            </a>
+            <a class="site-header__tile" href="/products/canvas-20x20-cm-8x8">
+              <span class="site-header__tile-copy">
+                <span class="site-header__tile-title">{{ 'header.occasion_home' | t }}</span>
+                <span class="site-header__tile-desc">{{ 'header.occasion_home_desc' | t }}</span>
+              </span>
+            </a>
+            <a class="site-header__tile" href="/collections/wall-art">
+              <span class="site-header__tile-copy">
+                <span class="site-header__tile-title">{{ 'header.occasion_pets' | t }}</span>
+                <span class="site-header__tile-desc">{{ 'header.occasion_pets_desc' | t }}</span>
+              </span>
+            </a>
+            <a class="site-header__tile" href="/collections/home-gifts">
+              <span class="site-header__tile-copy">
+                <span class="site-header__tile-title">{{ 'header.occasion_christmas' | t }}</span>
+                <span class="site-header__tile-desc">{{ 'header.occasion_christmas_desc' | t }}</span>
               </span>
             </a>
           </div>
@@ -363,9 +385,9 @@
   <div class="site-header__categories site-header__categories--mobile">
     <nav class="page-width site-header__categories-inner" aria-label="{{ 'header.shop_categories' | t }}">
       <a class="site-header__chip site-header__chip--blue" href="{{ collections['wall-art'].url | default: '/collections/wall-art' }}">{{ 'header.wall_art' | t }}</a>
-      <a class="site-header__chip site-header__chip--rose" href="{{ collections['posters'].url | default: '/collections/posters' }}">{{ 'header.posters' | t }}</a>
       <a class="site-header__chip site-header__chip--magenta" href="{{ collections['home-gifts'].url | default: '/collections/home-gifts' }}">{{ 'header.gifts' | t }}</a>
-      <a class="site-header__chip site-header__chip--teal" href="{{ collections['occasions'].url | default: '/collections/occasions' }}">{{ 'header.occasions' | t }}</a>
+      <a class="site-header__chip site-header__chip--rose" href="{{ collections['photo-tiles'].url | default: '/collections/photo-tiles' }}">{{ 'header.for_home' | t }}</a>
+      <a class="site-header__chip site-header__chip--teal" href="/collections/wall-art">{{ 'header.occasions' | t }}</a>
     </nav>
   </div>
 

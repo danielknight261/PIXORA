@@ -12,61 +12,61 @@
     "settings": [
       {
         "type": "paragraph",
-        "content": "Studio Ink — warm paper, ink black, copper accent, studio blue. Professional with a creative edge."
+        "content": "Warm ivory, charcoal type, forest CTAs, terracotta used sparingly for badges."
       },
       {
         "type": "color",
         "id": "color_primary",
-        "label": "Primary CTA (copper)",
-        "default": "#C45C26"
+        "label": "Primary CTA (forest)",
+        "default": "#25483B"
       },
       {
         "type": "color",
         "id": "color_brand_nav",
         "label": "Brand / nav (ink)",
-        "default": "#12141A"
+        "default": "#20201D"
       },
       {
         "type": "color",
         "id": "color_brand_nav_hover",
-        "label": "Brand hover (studio blue)",
-        "default": "#1F4B7A"
+        "label": "Brand hover (forest)",
+        "default": "#25483B"
       },
       {
         "type": "color",
         "id": "color_accent",
-        "label": "Accent (studio blue)",
-        "default": "#1F4B7A"
+        "label": "Accent (forest)",
+        "default": "#25483B"
       },
       {
         "type": "color",
         "id": "color_secondary",
-        "label": "Secondary (slate)",
-        "default": "#3D4450"
+        "label": "Secondary (warm grey)",
+        "default": "#716E67"
       },
       {
         "type": "color",
         "id": "color_dark",
         "label": "Ink (text)",
-        "default": "#12141A"
+        "default": "#20201D"
       },
       {
         "type": "color",
         "id": "color_light",
         "label": "Paper (background)",
-        "default": "#F7F6F3"
+        "default": "#F7F4EE"
       },
       {
         "type": "color",
         "id": "color_muted",
         "label": "Muted text",
-        "default": "#6B7280"
+        "default": "#716E67"
       },
       {
         "type": "color",
         "id": "color_border",
         "label": "Border",
-        "default": "#D8DCE3"
+        "default": "#DDD8CE"
       }
     ]
   },

@@ -21,7 +21,7 @@
         <div>
           <p class="trust-strip__title">{% if is_pod %}{{ 'delivery.title' | t }}{% else %}{{ block.settings.title }}{% endif %}</p>
           {% if is_pod %}
-            <p class="trust-strip__text">{% render 'local-print-promise', tag: 'span', class: 'local-print-promise' %}</p>
+            <p class="trust-strip__text">{% render 'local-print-promise', tag: 'span', class: 'local-print-promise', compact: true %}</p>
           {% elsif block.settings.text != blank %}
             <p class="trust-strip__text">{{ block.settings.text }}</p>
           {% endif %}
@@ -32,7 +32,7 @@
       <div class="trust-strip__item">
         <div>
           <p class="trust-strip__title">{{ 'delivery.title' | t }}</p>
-          <p class="trust-strip__text">{% render 'local-print-promise', tag: 'span', class: 'local-print-promise' %}</p>
+          <p class="trust-strip__text">{% render 'local-print-promise', tag: 'span', class: 'local-print-promise', compact: true %}</p>
         </div>
       </div>
     {% endunless %}

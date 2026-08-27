@@ -70,7 +70,13 @@
           {% endif %}
         </div>
         <div class="product-block__info">
+          {% if block.settings.badge != blank %}
+            <p class="product-block__badge">{{ block.settings.badge }}</p>
+          {% endif %}
           <h2 class="product-block__title">{{ block.settings.title }}</h2>
+          {% if block.settings.text != blank %}
+            <p class="product-block__desc">{{ block.settings.text }}</p>
+          {% endif %}
           {% if price_text != blank %}
             <p class="product-block__price">{{ price_text }}</p>
           {% endif %}
@@ -130,6 +136,16 @@
           "id": "title",
           "label": "Title",
           "default": "Canvas prints"
+        },
+        {
+          "type": "textarea",
+          "id": "text",
+          "label": "Short description"
+        },
+        {
+          "type": "text",
+          "id": "badge",
+          "label": "Badge"
         },
         {
           "type": "text",

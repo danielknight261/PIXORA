@@ -1,0 +1,37 @@
+<section class="home-editorial">
+  <div class="page-width">
+    {% if section.settings.heading != blank %}
+      <h2 class="home-editorial__heading">{{ section.settings.heading }}</h2>
+    {% endif %}
+    <div class="home-quotes">
+      {% for block in section.blocks %}
+        <blockquote class="home-quote" {{ block.shopify_attributes }}>
+          <p>“{{ block.settings.quote }}”</p>
+          {% if block.settings.attr != blank %}
+            <footer>{{ block.settings.attr }}</footer>
+          {% endif %}
+        </blockquote>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Customer quotes",
+  "settings": [
+    { "type": "text", "id": "heading", "label": "Heading", "default": "From people who’ve printed theirs" }
+  ],
+  "blocks": [
+    {
+      "type": "quote",
+      "name": "Quote",
+      "settings": [
+        { "type": "textarea", "id": "quote", "label": "Quote" },
+        { "type": "text", "id": "attr", "label": "Attribution" }
+      ]
+    }
+  ],
+  "presets": [{ "name": "Customer quotes" }]
+}
+{% endschema %}

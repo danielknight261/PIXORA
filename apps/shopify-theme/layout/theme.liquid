@@ -68,10 +68,11 @@
     {{ 'base.css' | asset_url | stylesheet_tag }}
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
       :root {
-        /* Studio Ink */
+        --font-heading: "Fraunces", "Times New Roman", serif;
+        --font-body: "Poppins", system-ui, sans-serif;
         --color-primary: {{ settings.color_primary }};
         --color-brand-nav: {{ settings.color_brand_nav }};
         --color-brand-nav-hover: {{ settings.color_brand_nav_hover }};
@@ -85,7 +86,11 @@
         --foreground: {{ settings.color_dark }};
         --ink: {{ settings.color_dark }};
         --paper: {{ settings.color_light }};
-        --surface: #ffffff;
+        --surface: #FCFBF8;
+        --card: #FCFBF8;
+        --sage: #E6E8DF;
+        --terracotta: #C9684B;
+        --forest-hover: #19352C;
         --magenta: {{ settings.color_primary }};
         --cyan: {{ settings.color_accent }};
         --mint: {{ settings.color_secondary }};

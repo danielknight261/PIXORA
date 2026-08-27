@@ -3,267 +3,13 @@
     "hero": {
       "type": "hero",
       "settings": {
-        "heading": "Print your favourites",
-        "text": "Preview your photo on the product, then we print and ship.",
-        "button_label": "Shop wall art",
+        "eyebrow": "",
+        "heading": "Your memories, made to keep.",
+        "text": "Turn your favourite photos into beautiful wall art, gifts and everyday things.",
+        "button_label": "Create something personal →",
         "button_link": "/collections/wall-art",
-        "button_label_2": "Shop gifts",
+        "button_label_2": "Explore gifts",
         "button_link_2": "/collections/home-gifts"
-      }
-    },
-    "product_blocks": {
-      "type": "product-blocks",
-      "blocks": {
-        "canvas": {
-          "type": "product_block",
-          "settings": {
-            "title": "Canvas prints",
-            "price_label": "From £19.76",
-            "link": "/collections/canvas-prints",
-            "accent": "blue",
-            "coming_soon": false
-          }
-        },
-        "framed_canvas": {
-          "type": "product_block",
-          "settings": {
-            "title": "Framed canvas",
-            "price_label": "From £36.98",
-            "link": "/collections/framed-canvas",
-            "accent": "cyan",
-            "coming_soon": false
-          }
-        },
-        "framed": {
-          "type": "product_block",
-          "settings": {
-            "title": "Framed prints",
-            "price_label": "From £21.46",
-            "link": "/collections/framed-prints",
-            "accent": "mint",
-            "coming_soon": false
-          }
-        },
-        "aluminum": {
-          "type": "product_block",
-          "settings": {
-            "title": "Metal / aluminium prints",
-            "price_label": "From £24.44",
-            "link": "/collections/aluminum-prints",
-            "accent": "slate",
-            "coming_soon": false
-          }
-        },
-        "acrylic": {
-          "type": "product_block",
-          "settings": {
-            "title": "Acrylic prints",
-            "price_label": "From £35.72",
-            "link": "/products/acrylic-print",
-            "accent": "cyan",
-            "coming_soon": false
-          }
-        },
-        "posters": {
-          "type": "product_block",
-          "settings": {
-            "title": "Posters",
-            "price_label": "From £6.18",
-            "link": "/collections/posters",
-            "accent": "rose",
-            "coming_soon": false
-          }
-        },
-        "posters_hangers": {
-          "type": "product_block",
-          "settings": {
-            "title": "Posters with hangers",
-            "price_label": "From £21.02",
-            "link": "/products/premium-matte-paper-poster-with-hanger",
-            "accent": "magenta",
-            "coming_soon": false
-          }
-        },
-        "foam": {
-          "type": "product_block",
-          "settings": {
-            "title": "Foam prints",
-            "price_label": "From £18.80",
-            "link": "/collections/foam-prints",
-            "accent": "blue",
-            "coming_soon": false
-          }
-        },
-        "wood": {
-          "type": "product_block",
-          "settings": {
-            "title": "Wood prints",
-            "price_label": "From £31.96",
-            "link": "/products/wood-prints",
-            "accent": "mint",
-            "coming_soon": false
-          }
-        },
-        "mugs": {
-          "type": "product_block",
-          "settings": {
-            "title": "Personalised mugs",
-            "price_label": "From £7.38",
-            "link": "/collections/mugs",
-            "accent": "magenta",
-            "coming_soon": false
-          }
-        },
-        "phone_cases": {
-          "type": "product_block",
-          "settings": {
-            "title": "Phone cases",
-            "price_label": "From £14.42",
-            "link": "/collections/phone-cases",
-            "accent": "cyan",
-            "coming_soon": false
-          }
-        },
-        "tote_bags": {
-          "type": "product_block",
-          "settings": {
-            "title": "Tote bags",
-            "price_label": "From £19.96",
-            "link": "/collections/tote-bags",
-            "accent": "blue",
-            "coming_soon": false
-          }
-        },
-        "stickers": {
-          "type": "product_block",
-          "settings": {
-            "title": "Stickers",
-            "price_label": "From £3.95",
-            "link": "/collections/stickers",
-            "accent": "mint",
-            "coming_soon": false
-          }
-        },
-        "tattoos": {
-          "type": "product_block",
-          "settings": {
-            "title": "Temporary tattoos",
-            "price_label": "From £5.95",
-            "link": "/collections/tattoos",
-            "accent": "rose",
-            "coming_soon": false
-          }
-        },
-        "magnets": {
-          "type": "product_block",
-          "settings": {
-            "title": "Magnets",
-            "price_label": "From £5.95",
-            "link": "/collections/magnets",
-            "accent": "slate",
-            "coming_soon": false
-          }
-        },
-        "photo_tiles": {
-          "type": "product_block",
-          "settings": {
-            "title": "Photo tiles",
-            "price_label": "From £11.95",
-            "link": "/collections/photo-tiles",
-            "accent": "cyan",
-            "coming_soon": false
-          }
-        },
-        "cushions": {
-          "type": "product_block",
-          "settings": {
-            "title": "Cushions",
-            "price_label": "From £19.95",
-            "link": "/collections/cushions",
-            "accent": "magenta",
-            "coming_soon": false
-          }
-        },
-        "acrylic_prisms": {
-          "type": "product_block",
-          "settings": {
-            "title": "Acrylic prisms",
-            "price_label": "From £12.95",
-            "link": "/collections/acrylic-prisms",
-            "accent": "blue",
-            "coming_soon": false
-          }
-        },
-        "jigsaws": {
-          "type": "product_block",
-          "settings": {
-            "title": "Jigsaws",
-            "price_label": "From £19.95",
-            "link": "/collections/jigsaws",
-            "accent": "mint",
-            "coming_soon": false
-          }
-        },
-        "towels": {
-          "type": "product_block",
-          "settings": {
-            "title": "Towels",
-            "price_label": "From £14.95",
-            "link": "/collections/towels",
-            "accent": "cyan",
-            "coming_soon": false
-          }
-        },
-        "cards": {
-          "type": "product_block",
-          "settings": {
-            "title": "Greeting cards",
-            "price_label": "Coming soon",
-            "link": "/collections/cards",
-            "accent": "rose",
-            "coming_soon": true
-          }
-        },
-        "calendars": {
-          "type": "product_block",
-          "settings": {
-            "title": "Calendars",
-            "price_label": "Coming soon",
-            "link": "/collections/calendars",
-            "accent": "mint",
-            "coming_soon": true
-          }
-        }
-      },
-      "block_order": [
-        "canvas",
-        "framed_canvas",
-        "framed",
-        "aluminum",
-        "acrylic",
-        "posters",
-        "posters_hangers",
-        "foam",
-        "wood",
-        "mugs",
-        "phone_cases",
-        "tote_bags",
-        "stickers",
-        "tattoos",
-        "magnets",
-        "photo_tiles",
-        "cushions",
-        "acrylic_prisms",
-        "jigsaws",
-        "towels",
-        "cards",
-        "calendars"
-      ],
-      "settings": {
-        "heading": "Shop photo products",
-        "text": "Wall art and gifts — personalise with a live mockup, then we print and ship.",
-        "footer_heading": "",
-        "footer_text": ""
       }
     },
     "trust_strip": {
@@ -272,16 +18,16 @@
         "t1": {
           "type": "item",
           "settings": {
-            "title": "Premium print quality",
-            "text": "Vivid colour & durable finishes",
+            "title": "See it before you buy",
+            "text": "Live preview on the product",
             "accent": "cyan"
           }
         },
         "t2": {
           "type": "item",
           "settings": {
-            "title": "Live product mockups",
-            "text": "See your design before you buy",
+            "title": "Made to order",
+            "text": "Printed for you, not from stock",
             "accent": "magenta"
           }
         },
@@ -289,13 +35,204 @@
           "type": "item",
           "settings": {
             "title": "Printed on demand",
-            "text": "Made for you, shipped to your door",
+            "text": "Packed and delivered to your door",
             "accent": "mint"
           }
         }
       },
       "block_order": ["t1", "t2", "t3"],
       "settings": {}
+    },
+    "memory_categories": {
+      "type": "memory-categories",
+      "blocks": {
+        "wall": {
+          "type": "category",
+          "settings": {
+            "title": "Wall art",
+            "text": "Turn your favourite memories into beautiful pieces for your home.",
+            "link": "/collections/wall-art",
+            "fallback_asset": "classic-framed-story-room.webp"
+          }
+        },
+        "gifts": {
+          "type": "category",
+          "settings": {
+            "title": "Personalised gifts",
+            "text": "Meaningful gifts made from the moments you love.",
+            "link": "/collections/home-gifts",
+            "fallback_asset": "hanger-story-lifestyle.webp"
+          }
+        },
+        "everyday": {
+          "type": "category",
+          "settings": {
+            "title": "Everyday memories",
+            "text": "Take your favourite photographs with you every day.",
+            "link": "/collections/tote-bags",
+            "fallback_asset": "matte-poster-story-room.webp"
+          }
+        }
+      },
+      "block_order": ["wall", "gifts", "everyday"],
+      "settings": {
+        "heading": "Turn memories into…",
+        "text": ""
+      }
+    },
+    "product_blocks": {
+      "type": "product-blocks",
+      "blocks": {
+        "framed_canvas": {
+          "type": "product_block",
+          "settings": {
+            "title": "Framed canvas",
+            "text": "A tray frame that lets the photo float.",
+            "badge": "Bestseller",
+            "price_label": "From £36.98",
+            "link": "/collections/framed-canvas",
+            "accent": "cyan",
+            "coming_soon": false
+          }
+        },
+        "canvas": {
+          "type": "product_block",
+          "settings": {
+            "title": "Canvas prints",
+            "text": "Gallery wrap, slim or thick, ready to hang.",
+            "badge": "",
+            "price_label": "From £19.76",
+            "link": "/collections/canvas-prints",
+            "accent": "blue",
+            "coming_soon": false
+          }
+        },
+        "framed": {
+          "type": "product_block",
+          "settings": {
+            "title": "Framed prints",
+            "text": "Wood or metal, paper behind glass.",
+            "badge": "Perfect gift",
+            "price_label": "From £21.46",
+            "link": "/collections/framed-prints",
+            "accent": "mint",
+            "coming_soon": false
+          }
+        },
+        "mugs": {
+          "type": "product_block",
+          "settings": {
+            "title": "Personalised mugs",
+            "text": "The everyday gift that still feels personal.",
+            "badge": "Perfect gift",
+            "price_label": "From £7.38",
+            "link": "/collections/mugs",
+            "accent": "magenta",
+            "coming_soon": false
+          }
+        },
+        "posters_hangers": {
+          "type": "product_block",
+          "settings": {
+            "title": "Poster with hanger",
+            "text": "Magnetic wood rails. Hang from a single pin.",
+            "badge": "",
+            "price_label": "From £21.02",
+            "link": "/products/premium-matte-paper-poster-with-hanger",
+            "accent": "magenta",
+            "coming_soon": false
+          }
+        },
+        "photo_tiles": {
+          "type": "product_block",
+          "settings": {
+            "title": "Photo tiles",
+            "text": "Restickable frames for a nursery or hallway.",
+            "badge": "",
+            "price_label": "From £11.95",
+            "link": "/collections/photo-tiles",
+            "accent": "cyan",
+            "coming_soon": false
+          }
+        }
+      },
+      "block_order": [
+        "framed_canvas",
+        "canvas",
+        "framed",
+        "mugs",
+        "posters_hangers",
+        "photo_tiles"
+      ],
+      "settings": {
+        "heading": "Pieces you’ll want to live with",
+        "text": "A few of the finishes people keep coming back to — every one is personalised with your photo.",
+        "footer_heading": "Looking for a different finish?",
+        "footer_text": "Browse all wall art and gifts. Every product can be previewed before you buy."
+      }
+    },
+    "lifestyle_moments": {
+      "type": "lifestyle-moments",
+      "blocks": {
+        "holiday": {
+          "type": "moment",
+          "settings": {
+            "title": "The first family holiday",
+            "text": "The one that still lives on your phone — printed for the wall.",
+            "link": "/collections/wall-art",
+            "fallback_asset": "classic-framed-story-bedroom.webp"
+          }
+        },
+        "person": {
+          "type": "moment",
+          "settings": {
+            "title": "Your favourite person",
+            "text": "A portrait that belongs in the room.",
+            "link": "/products/framed-canvas",
+            "fallback_asset": "premium-framed-story-room.webp"
+          }
+        },
+        "dog": {
+          "type": "moment",
+          "settings": {
+            "title": "The dog who runs the house",
+            "text": "Pets, kids, and the chaos you actually love.",
+            "link": "/collections/wall-art",
+            "fallback_asset": "wood-story-room.webp"
+          }
+        },
+        "home": {
+          "type": "moment",
+          "settings": {
+            "title": "A house that feels like home",
+            "text": "First prints on new walls.",
+            "link": "/products/canvas-20x20-cm-8x8",
+            "fallback_asset": "metal-framed-story-wall.webp"
+          }
+        }
+      },
+      "block_order": ["holiday", "person", "dog", "home"],
+      "settings": {
+        "eyebrow": "Made to keep",
+        "heading": "The moments worth keeping",
+        "text": "A holiday. Someone you love. The dog. A house that finally feels like yours."
+      }
+    },
+    "shop_occasions": {
+      "type": "shop-occasions",
+      "blocks": {
+        "bday": { "type": "occasion", "settings": { "title": "Birthday", "link": "/collections/wall-art" } },
+        "anniv": { "type": "occasion", "settings": { "title": "Anniversary", "link": "/products/framed-canvas" } },
+        "baby": { "type": "occasion", "settings": { "title": "New baby", "link": "/collections/photo-tiles" } },
+        "newhome": { "type": "occasion", "settings": { "title": "New home", "link": "/products/canvas-20x20-cm-8x8" } },
+        "pets": { "type": "occasion", "settings": { "title": "Pet memories", "link": "/collections/wall-art" } },
+        "xmas": { "type": "occasion", "settings": { "title": "Christmas", "link": "/collections/home-gifts" } }
+      },
+      "block_order": ["bday", "anniv", "baby", "newhome", "pets", "xmas"],
+      "settings": {
+        "heading": "Shop by occasion",
+        "text": "Birthday, anniversary, new baby, new home — start with the moment."
+      }
     },
     "how_it_works": {
       "type": "how-it-works",
@@ -304,35 +241,102 @@
           "type": "step",
           "settings": {
             "title": "Upload your photo",
-            "text": "Use a clear JPG or PNG from your phone or computer. Higher resolution prints sharper.",
-            "detail": "JPG · PNG"
+            "text": "A clear picture from your phone is enough.",
+            "detail": ""
           }
         },
         "s2": {
           "type": "step",
           "settings": {
-            "title": "Personalise live",
-            "text": "Place and crop on a real product mockup so you see the finish before checkout.",
-            "detail": "Live preview"
+            "title": "See it on the product",
+            "text": "Place and crop on a live mockup before you pay.",
+            "detail": ""
           }
         },
         "s3": {
           "type": "step",
           "settings": {
-            "title": "We print & ship",
-            "text": "Made to order with Gelato — often printed locally, then packed and delivered to your door.",
-            "detail": "Print on demand"
+            "title": "We print and ship",
+            "text": "Made to order, often printed near you.",
+            "detail": ""
           }
         }
       },
       "block_order": ["s1", "s2", "s3"],
       "settings": {
-        "eyebrow": "How it works",
-        "heading": "From photo to doorstep",
-        "text": "Three steps. Live mockup before you pay. Printed near you when we can.",
-        "footnote": "Typical delivery depends on your country — see the note on each product."
+        "eyebrow": "",
+        "heading": "See it before you buy",
+        "text": "Upload a photo, preview it on the product, then we print and ship.",
+        "footnote": ""
+      }
+    },
+    "home_quotes": {
+      "type": "home-quotes",
+      "blocks": {
+        "q1": {
+          "type": "quote",
+          "settings": {
+            "quote": "It stopped being a photo on my phone and started being something in the room.",
+            "attr": "A framed canvas"
+          }
+        },
+        "q2": {
+          "type": "quote",
+          "settings": {
+            "quote": "I could see the mug before I bought it. That was the whole reason I went through with it.",
+            "attr": "A personalised gift"
+          }
+        },
+        "q3": {
+          "type": "quote",
+          "settings": {
+            "quote": "We hung the holiday print the same week we got back. The house felt finished.",
+            "attr": "A canvas for a new home"
+          }
+        }
+      },
+      "block_order": ["q1", "q2", "q3"],
+      "settings": {
+        "heading": "From people who’ve printed theirs"
+      }
+    },
+    "gift_recipients": {
+      "type": "gift-recipients",
+      "blocks": {
+        "mum": { "type": "recipient", "settings": { "title": "For Mum", "link": "/collections/mugs", "fallback_asset": "hanger-story-lifestyle.webp" } },
+        "dad": { "type": "recipient", "settings": { "title": "For Dad", "link": "/collections/wall-art", "fallback_asset": "wood-story-pair.webp" } },
+        "partners": { "type": "recipient", "settings": { "title": "For partners", "link": "/products/framed-canvas", "fallback_asset": "premium-framed-story-bedroom.webp" } },
+        "friends": { "type": "recipient", "settings": { "title": "For friends", "link": "/collections/home-gifts", "fallback_asset": "foam-story-pair.webp" } },
+        "pets": { "type": "recipient", "settings": { "title": "For pet lovers", "link": "/collections/wall-art", "fallback_asset": "acrylic-story-look.webp" } },
+        "homes": { "type": "recipient", "settings": { "title": "For new homes", "link": "/products/canvas-20x20-cm-8x8", "fallback_asset": "canvas-story-hanging.webp" } }
+      },
+      "block_order": ["mum", "dad", "partners", "friends", "pets", "homes"],
+      "settings": {
+        "heading": "Find a gift that actually means something.",
+        "text": "If you’re not sure what to get them, start with who it’s for."
+      }
+    },
+    "home_final_cta": {
+      "type": "home-final-cta",
+      "settings": {
+        "heading": "Your favourite moments deserve more than a camera roll.",
+        "text": "Upload a photo, see it on the product, and we’ll print it to keep.",
+        "button_label": "Create something personal →",
+        "button_link": "/collections/wall-art",
+        "fallback_asset": "premium-framed-story-room.webp"
       }
     }
   },
-  "order": ["hero", "trust_strip", "product_blocks", "how_it_works"]
+  "order": [
+    "hero",
+    "trust_strip",
+    "memory_categories",
+    "product_blocks",
+    "lifestyle_moments",
+    "shop_occasions",
+    "how_it_works",
+    "home_quotes",
+    "gift_recipients",
+    "home_final_cta"
+  ]
 }

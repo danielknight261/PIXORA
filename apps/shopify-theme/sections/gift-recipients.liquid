@@ -1,0 +1,51 @@
+<section class="home-editorial home-editorial--sage">
+  <div class="page-width">
+    {% if section.settings.heading != blank %}
+      <h2 class="home-editorial__heading">{{ section.settings.heading }}</h2>
+    {% endif %}
+    {% if section.settings.text != blank %}
+      <p class="home-editorial__intro">{{ section.settings.text }}</p>
+    {% endif %}
+    <div class="gift-grid">
+      {% for block in section.blocks %}
+        <a class="gift-tile" href="{{ block.settings.link | default: '/collections/home-gifts' }}" {{ block.shopify_attributes }}>
+          <div class="gift-tile__media">
+            {% if block.settings.image != blank %}
+              {{
+                block.settings.image
+                | image_url: width: 800
+                | image_tag: loading: 'lazy', widths: '400,800', sizes: '(min-width: 900px) 15vw, 44vw', alt: block.settings.title
+              }}
+            {% elsif block.settings.fallback_asset != blank %}
+              <img src="{{ block.settings.fallback_asset | asset_url }}" alt="" width="1000" height="1250" loading="lazy">
+            {% endif %}
+          </div>
+          <span>{{ block.settings.title }}</span>
+        </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Gift recipients",
+  "settings": [
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Find a gift that actually means something." },
+    { "type": "textarea", "id": "text", "label": "Intro", "default": "If you’re not sure what to get them, start with who it’s for." }
+  ],
+  "blocks": [
+    {
+      "type": "recipient",
+      "name": "Recipient",
+      "settings": [
+        { "type": "text", "id": "title", "label": "Title" },
+        { "type": "url", "id": "link", "label": "Link" },
+        { "type": "image_picker", "id": "image", "label": "Image" },
+        { "type": "text", "id": "fallback_asset", "label": "Fallback theme asset filename" }
+      ]
+    }
+  ],
+  "presets": [{ "name": "Gift recipients" }]
+}
+{% endschema %}

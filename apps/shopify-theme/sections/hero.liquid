@@ -1,10 +1,9 @@
 <section class="hero hero--home">
   <div class="page-width hero__inner">
     <div class="hero__copy">
-      <p class="hero__brand">
-        <span class="brand-wordmark__snapp">Snapp</span>
-        <span class="brand-wordmark__daddy">Daddy</span>
-      </p>
+      {% if section.settings.eyebrow != blank %}
+        <p class="hero__eyebrow">{{ section.settings.eyebrow }}</p>
+      {% endif %}
       <h1 class="hero__title">{{ section.settings.heading }}</h1>
       {% if section.settings.text != blank %}
         <p class="hero__text">{{ section.settings.text }}</p>
@@ -25,15 +24,26 @@
       {% endif %}
       {% render 'local-print-promise', class: 'hero__delivery local-print-promise' %}
     </div>
-    <div class="hero__media" aria-hidden="true">
+    <div class="hero__media">
       {% if section.settings.image != blank %}
         {{
           section.settings.image
-          | image_url: width: 1600
-          | image_tag: class: 'hero__media-img', loading: 'eager', widths: '800,1200,1600', sizes: '(min-width: 900px) 48vw, 100vw'
+          | image_url: width: 1800
+          | image_tag:
+            class: 'hero__media-img',
+            loading: 'eager',
+            widths: '800,1200,1800',
+            sizes: '(min-width: 900px) 52vw, 100vw',
+            alt: section.settings.heading
         }}
       {% else %}
-        {% render 'category-thumb', handle: 'framed-canvas', alt: '', class: 'hero__media-img', width: 1200 %}
+        <img
+          src="{{ 'classic-framed-story-room.webp' | asset_url }}"
+          class="hero__media-img"
+          alt=""
+          width="1679"
+          height="2100"
+        >
       {% endif %}
     </div>
   </div>
@@ -47,25 +57,30 @@
       "type": "image_picker",
       "id": "image",
       "label": "Hero image",
-      "info": "Optional. Defaults to a framed canvas product photo."
+      "info": "Landscape lifestyle shot. Falls back to a framed print in a room."
+    },
+    {
+      "type": "text",
+      "id": "eyebrow",
+      "label": "Eyebrow"
     },
     {
       "type": "text",
       "id": "heading",
       "label": "Heading",
-      "default": "Print your favourites"
+      "default": "Your memories, made to keep."
     },
     {
       "type": "textarea",
       "id": "text",
       "label": "Text",
-      "default": "Preview your photo on the product, then we print and ship."
+      "default": "Turn your favourite photos into beautiful wall art, gifts and everyday things."
     },
     {
       "type": "text",
       "id": "button_label",
       "label": "Primary button",
-      "default": "Shop wall art"
+      "default": "Create something personal →"
     },
     {
       "type": "url",
@@ -76,7 +91,7 @@
       "type": "text",
       "id": "button_label_2",
       "label": "Secondary button",
-      "default": "Shop gifts"
+      "default": "Explore gifts"
     },
     {
       "type": "url",

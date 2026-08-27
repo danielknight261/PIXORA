@@ -1,0 +1,35 @@
+{%- comment -%}
+  Short details paragraph under spec chips. Kind is set in main-product.
+{%- endcomment -%}
+{%- case kind -%}
+  {%- when 'framed-canvas' -%}
+    {{ 'product_page.pdp_lead_framed_canvas' | t }}
+  {%- when 'canvas' -%}
+    {% if use_inches %}{{ 'product_page.pdp_lead_canvas_in' | t }}{% else %}{{ 'product_page.pdp_lead_canvas' | t }}{% endif %}
+  {%- when 'brushed' -%}
+    {{ 'product_page.pdp_lead_brushed' | t }}
+  {%- when 'aluminum' -%}
+    {{ 'product_page.pdp_lead_aluminum' | t }}
+  {%- when 'hanger' -%}
+    {{ 'product_page.pdp_lead_hanger' | t }}
+  {%- when 'wood' -%}
+    {{ 'product_page.pdp_lead_wood' | t }}
+  {%- when 'semi-glossy' -%}
+    {{ 'product_page.pdp_lead_semi_glossy' | t }}
+  {%- when 'matte' -%}
+    {{ 'product_page.pdp_lead_matte' | t }}
+  {%- when 'fine-art' -%}
+    {{ 'product_page.pdp_lead_fine_art' | t }}
+  {%- when 'classic-framed' -%}
+    {{ 'product_page.pdp_lead_classic_framed' | t }}
+  {%- when 'premium-framed' -%}
+    {{ 'product_page.pdp_lead_premium_framed' | t }}
+  {%- when 'fine-art-framed' -%}
+    {{ 'product_page.pdp_lead_fine_art_framed' | t }}
+  {%- when 'metal-framed' -%}
+    {{ 'product_page.pdp_lead_metal_framed' | t }}
+  {%- when 'acrylic' -%}
+    {{ 'product_page.pdp_lead_acrylic' | t }}
+  {%- when 'foam' -%}
+    {{ 'product_page.pdp_lead_foam' | t }}
+{%- endcase -%}

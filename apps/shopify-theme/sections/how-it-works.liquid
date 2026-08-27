@@ -1,4 +1,4 @@
-<section class="how-it-works" id="how-it-works">
+<section class="how-it-works how-it-works--center" id="how-it-works">
   <div class="page-width">
     {% if section.settings.eyebrow != blank %}
       <p class="how-it-works__eyebrow">{{ section.settings.eyebrow }}</p>
@@ -13,6 +13,15 @@
     <ol class="how-it-works__steps">
       {% for block in section.blocks %}
         <li class="how-it-works__step" {{ block.shopify_attributes }}>
+          {% if block.settings.image != blank %}
+            <div class="how-it-works__media">
+              {{
+                block.settings.image
+                | image_url: width: 900
+                | image_tag: loading: 'lazy', widths: '400,700,900', sizes: '(min-width: 768px) 30vw, 90vw', alt: block.settings.title
+              }}
+            </div>
+          {% endif %}
           <div class="how-it-works__marker">
             <span class="how-it-works__number{% if forloop.first %} how-it-works__number--accent{% endif %}" aria-hidden="true">{{ forloop.index }}</span>
             {% unless forloop.last %}
@@ -87,6 +96,11 @@
           "id": "detail",
           "label": "Detail",
           "default": "JPG · PNG"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image (optional)"
         }
       ]
     }

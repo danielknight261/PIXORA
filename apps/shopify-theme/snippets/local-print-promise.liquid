@@ -1,7 +1,7 @@
 {%- comment -%}
   Country-aware Gelato print promise.
   Local hub (32 countries) vs EU neighbour vs nearest hub.
-  Optional: class, tag (p|span).
+  Optional: class, tag (p|span), compact (days only).
 {%- endcomment -%}
 {%- liquid
   assign iso = localization.country.iso_code | upcase
@@ -20,4 +20,8 @@
   endif
   assign days = days_key | t
 -%}
-<{{ wrap_tag }} class="{{ wrap_class }}">{{ message_key | t: country: localization.country.name, days: days }}</{{ wrap_tag }}>
+{%- if compact -%}
+  <{{ wrap_tag }} class="{{ wrap_class }}">{{ 'delivery.typical_line' | t: days: days }}</{{ wrap_tag }}>
+{%- else -%}
+  <{{ wrap_tag }} class="{{ wrap_class }}">{{ message_key | t: country: localization.country.name, days: days }}</{{ wrap_tag }}>
+{%- endif -%}

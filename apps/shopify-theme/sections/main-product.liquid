@@ -601,7 +601,52 @@
 
       {% if product.description != blank or has_pdp_story %}
       <div class="pdp-details">
-        {% if product.description != blank %}
+        {% if has_pdp_story %}
+          <section class="pdp-glance" aria-labelledby="PdpGlance-{{ section.id }}">
+            <div class="page-width">
+              <p class="pdp-glance__eyebrow">{{ 'product_page.pdp_glance_eyebrow' | t }}</p>
+              <h2 class="pdp-glance__title" id="PdpGlance-{{ section.id }}">{{ 'product_page.story_section_eyebrow' | t }}</h2>
+              {% render 'pdp-spec-chips', kind: spec_kind %}
+              <p class="pdp-glance__lead">{% render 'pdp-story-lead', kind: spec_kind, use_inches: use_inches %}</p>
+            </div>
+          </section>
+          <div class="pdp-made-head">
+            <div class="page-width">
+              <h2 class="pdp-story__intro-title">{{ 'product_page.story_section_title' | t }}</h2>
+            </div>
+          </div>
+          {% if is_framed_canvas %}
+            {% render 'framed-canvas-story' %}
+          {% elsif is_canvas_print %}
+            {% render 'canvas-print-story', use_inches: use_inches %}
+          {% elsif is_brushed_aluminum %}
+            {% render 'brushed-aluminum-story' %}
+          {% elsif is_aluminum_print %}
+            {% render 'aluminum-print-story' %}
+          {% elsif is_hanger %}
+            {% render 'hanger-poster-story' %}
+          {% elsif is_wood_print %}
+            {% render 'wood-print-story' %}
+          {% elsif is_semi_glossy_poster %}
+            {% render 'semi-glossy-poster-story' %}
+          {% elsif is_matte_poster %}
+            {% render 'matte-poster-story' %}
+          {% elsif is_fine_art_poster %}
+            {% render 'fine-art-poster-story' %}
+          {% elsif is_classic_framed %}
+            {% render 'classic-framed-story' %}
+          {% elsif is_premium_framed %}
+            {% render 'premium-framed-story' %}
+          {% elsif is_fine_art_framed %}
+            {% render 'fine-art-framed-story' %}
+          {% elsif is_metal_framed %}
+            {% render 'metal-framed-story' %}
+          {% elsif is_acrylic_print %}
+            {% render 'acrylic-print-story' %}
+          {% elsif is_foam_print %}
+            {% render 'foam-print-story' %}
+          {% endif %}
+        {% elsif product.description != blank %}
           <div class="page-width pb-canvas__about">
             <h2>
               {% if is_framed_canvas %}
@@ -643,44 +688,6 @@
             {% render 'pdp-spec-chips', kind: spec_kind %}
             <div class="pb-canvas__about-copy rte">{{ product.description }}</div>
           </div>
-        {% endif %}
-
-        {% if has_pdp_story %}
-          <div class="page-width pdp-story__intro">
-            <p class="pdp-story__eyebrow">{{ 'product_page.story_section_eyebrow' | t }}</p>
-            <h2 class="pdp-story__intro-title">{{ 'product_page.story_section_title' | t }}</h2>
-          </div>
-          {% if is_framed_canvas %}
-            {% render 'framed-canvas-story' %}
-          {% elsif is_canvas_print %}
-            {% render 'canvas-print-story', use_inches: use_inches %}
-          {% elsif is_brushed_aluminum %}
-            {% render 'brushed-aluminum-story' %}
-          {% elsif is_aluminum_print %}
-            {% render 'aluminum-print-story' %}
-          {% elsif is_hanger %}
-            {% render 'hanger-poster-story' %}
-          {% elsif is_wood_print %}
-            {% render 'wood-print-story' %}
-          {% elsif is_semi_glossy_poster %}
-            {% render 'semi-glossy-poster-story' %}
-          {% elsif is_matte_poster %}
-            {% render 'matte-poster-story' %}
-          {% elsif is_fine_art_poster %}
-            {% render 'fine-art-poster-story' %}
-          {% elsif is_classic_framed %}
-            {% render 'classic-framed-story' %}
-          {% elsif is_premium_framed %}
-            {% render 'premium-framed-story' %}
-          {% elsif is_fine_art_framed %}
-            {% render 'fine-art-framed-story' %}
-          {% elsif is_metal_framed %}
-            {% render 'metal-framed-story' %}
-          {% elsif is_acrylic_print %}
-            {% render 'acrylic-print-story' %}
-          {% elsif is_foam_print %}
-            {% render 'foam-print-story' %}
-          {% endif %}
         {% endif %}
       </div>
       {% endif %}
