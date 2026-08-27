@@ -1,0 +1,74 @@
+{%- comment -%}
+  Photobox-style stepped image + copy rows for gallery-wrap canvas prints.
+{%- endcomment -%}
+<section class="pdp-story" aria-label="{{ 'product_page.canvas_story_label' | t }}">
+  <div class="page-width">
+    <article class="pdp-story__row">
+      <div class="pdp-story__media">
+        <img
+          src="{{ 'canvas-story-wrap.webp' | asset_url }}"
+          width="1680"
+          height="2100"
+          alt="{{ 'product_page.canvas_story_wrap_alt' | t }}"
+          loading="lazy"
+        >
+      </div>
+      <div class="pdp-story__copy">
+        <p class="pdp-story__eyebrow">{{ 'product_page.canvas_story_wrap_eyebrow' | t }}</p>
+        <h2>{{ 'product_page.canvas_story_wrap_title' | t }}</h2>
+        <p>{% if use_inches %}{{ 'product_page.canvas_story_wrap_body_in' | t }}{% else %}{{ 'product_page.canvas_story_wrap_body_cm' | t }}{% endif %}</p>
+      </div>
+    </article>
+
+    <article class="pdp-story__row pdp-story__row--flip">
+      <div class="pdp-story__media">
+        <img
+          src="{{ 'canvas-story-texture.webp' | asset_url }}"
+          width="1680"
+          height="2100"
+          alt="{{ 'product_page.canvas_story_texture_alt' | t }}"
+          loading="lazy"
+        >
+      </div>
+      <div class="pdp-story__copy">
+        <p class="pdp-story__eyebrow">{{ 'product_page.canvas_story_texture_eyebrow' | t }}</p>
+        <h2>{{ 'product_page.canvas_story_texture_title' | t }}</h2>
+        <p>{{ 'product_page.canvas_story_texture_body' | t }}</p>
+      </div>
+    </article>
+
+    <article class="pdp-story__row">
+      <div class="pdp-story__media">
+        <img
+          src="{{ 'canvas-story-corner.webp' | asset_url }}"
+          width="1680"
+          height="2100"
+          alt="{{ 'product_page.canvas_story_corner_alt' | t }}"
+          loading="lazy"
+        >
+      </div>
+      <div class="pdp-story__copy">
+        <p class="pdp-story__eyebrow">{{ 'product_page.canvas_story_corner_eyebrow' | t }}</p>
+        <h2>{{ 'product_page.canvas_story_corner_title' | t }}</h2>
+        <p>{{ 'product_page.canvas_story_corner_body' | t }}</p>
+      </div>
+    </article>
+
+    <article class="pdp-story__row pdp-story__row--flip">
+      <div class="pdp-story__media">
+        <img
+          src="{{ 'canvas-story-hanging.webp' | asset_url }}"
+          width="1680"
+          height="2100"
+          alt="{{ 'product_page.canvas_story_hanging_alt' | t }}"
+          loading="lazy"
+        >
+      </div>
+      <div class="pdp-story__copy">
+        <p class="pdp-story__eyebrow">{{ 'product_page.canvas_story_hanging_eyebrow' | t }}</p>
+        <h2>{{ 'product_page.canvas_story_hanging_title' | t }}</h2>
+        <p>{{ 'product_page.canvas_story_hanging_body' | t }}</p>
+      </div>
+    </article>
+  </div>
+</section>

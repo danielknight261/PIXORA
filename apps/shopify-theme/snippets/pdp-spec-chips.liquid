@@ -1,0 +1,84 @@
+{%- comment -%}
+  Scanable spec chips above the product description. Kind is set in main-product.
+{%- endcomment -%}
+{%- if kind != blank -%}
+  <ul class="pdp-specs">
+    {%- case kind -%}
+      {%- when 'framed-canvas' -%}
+        <li><span class="pdp-specs__label">{{ 'product_page.spec_frame' | t }}</span><span class="pdp-specs__value">{{ 'product_page.spec_tray_3' | t }}</span></li>
+        <li><span class="pdp-specs__label">{{ 'product_page.spec_wrap' | t }}</span><span class="pdp-specs__value">{{ 'product_page.spec_canvas_wrap' | t }}</span></li>
+        <li><span class="pdp-specs__label">{{ 'product_page.spec_hanging' | t }}</span><span class="pdp-specs__value">{{ 'product_page.spec_kit_included' | t }}</span></li>
+        <li><span class="pdp-specs__label">{{ 'product_page.spec_sizes' | t }}</span><span class="pdp-specs__value">{{ 'product_page.spec_many_sizes' | t }}</span></li>
+      {%- when 'canvas' -%}
+        <li><span class="pdp-specs__label">{{ 'product_page.spec_wrap' | t }}</span><span class="pdp-specs__value">{{ 'product_page.spec_slim_or_thick' | t }}</span></li>
+        <li><span class="pdp-specs__label">{{ 'product_page.spec_material' | t }}</span><span class="pdp-specs__value">{{ 'product_page.spec_cotton_poly' | t }}</span></li>
+        <li><span class="pdp-specs__label">{{ 'product_page.spec_hanging' | t }}</span><span class="pdp-specs__value">{{ 'product_page.spec_kit_included' | t }}</span></li>
+        <li><span class="pdp-specs__label">{{ 'product_page.spec_sizes' | t }}</span><span class="pdp-specs__value">{{ 'product_page.spec_many_sizes' | t }}</span></li>
+      {%- when 'aluminum' -%}
+        <li><span class="pdp-specs__label">{{ 'product_page.spec_panel' | t }}</span><span class="pdp-specs__value">{{ 'product_page.spec_frameless_metal' | t }}</span></li>
+        <li><span class="pdp-specs__label">{{ 'product_page.spec_thickness' | t }}</span><span class="pdp-specs__value">{{ 'product_page.spec_3mm' | t }}</span></li>
+        <li><span class="pdp-specs__label">{{ 'product_page.spec_hanging' | t }}</span><span class="pdp-specs__value">{{ 'product_page.spec_magnetic_mounts' | t }}</span></li>
+        <li><span class="pdp-specs__label">{{ 'product_page.spec_finish' | t }}</span><span class="pdp-specs__value">{{ 'product_page.spec_ready' | t }}</span></li>
+      {%- when 'brushed' -%}
+        <li><span class="pdp-specs__label">{{ 'product_page.spec_finish' | t }}</span><span class="pdp-specs__value">{{ 'product_page.spec_brushed_grain' | t }}</span></li>
+        <li><span class="pdp-specs__label">{{ 'product_page.spec_thickness' | t }}</span><span class="pdp-specs__value">{{ 'product_page.spec_3mm' | t }}</span></li>
+        <li><span class="pdp-specs__label">{{ 'product_page.spec_hanging' | t }}</span><span class="pdp-specs__value">{{ 'product_page.spec_magnetic_mounts' | t }}</span></li>
+        <li><span class="pdp-specs__label">{{ 'product_page.spec_panel' | t }}</span><span class="pdp-specs__value">{{ 'product_page.spec_frameless_metal' | t }}</span></li>
+      {%- when 'hanger' -%}
+        <li><span class="pdp-specs__label">{{ 'product_page.spec_frame' | t }}</span><span class="pdp-specs__value">{{ 'product_page.spec_wood_rails' | t }}</span></li>
+        <li><span class="pdp-specs__label">{{ 'product_page.spec_paper' | t }}</span><span class="pdp-specs__value">{{ 'product_page.spec_200gsm_matte' | t }}</span></li>
+        <li><span class="pdp-specs__label">{{ 'product_page.spec_hanging' | t }}</span><span class="pdp-specs__value">{{ 'product_page.spec_cord_included' | t }}</span></li>
+        <li><span class="pdp-specs__label">{{ 'product_page.spec_finish' | t }}</span><span class="pdp-specs__value">{{ 'product_page.spec_ready' | t }}</span></li>
+      {%- when 'wood' -%}
+        <li><span class="pdp-specs__label">{{ 'product_page.spec_material' | t }}</span><span class="pdp-specs__value">{{ 'product_page.spec_birch' | t }}</span></li>
+        <li><span class="pdp-specs__label">{{ 'product_page.spec_thickness' | t }}</span><span class="pdp-specs__value">{{ 'product_page.spec_10_15mm' | t }}</span></li>
+        <li><span class="pdp-specs__label">{{ 'product_page.spec_finish' | t }}</span><span class="pdp-specs__value">{{ 'product_page.spec_grain_ink' | t }}</span></li>
+        <li><span class="pdp-specs__label">{{ 'product_page.spec_hanging' | t }}</span><span class="pdp-specs__value">{{ 'product_page.spec_ready' | t }}</span></li>
+      {%- when 'semi-glossy' -%}
+        <li><span class="pdp-specs__label">{{ 'product_page.spec_paper' | t }}</span><span class="pdp-specs__value">{{ 'product_page.spec_170gsm' | t }}</span></li>
+        <li><span class="pdp-specs__label">{{ 'product_page.spec_build' | t }}</span><span class="pdp-specs__value">{{ 'product_page.spec_frameless_sheet' | t }}</span></li>
+        <li><span class="pdp-specs__label">{{ 'product_page.spec_hanging' | t }}</span><span class="pdp-specs__value">{{ 'product_page.spec_frame_yourself' | t }}</span></li>
+        <li><span class="pdp-specs__label">{{ 'product_page.spec_sizes' | t }}</span><span class="pdp-specs__value">{{ 'product_page.spec_many_sizes' | t }}</span></li>
+      {%- when 'matte' -%}
+        <li><span class="pdp-specs__label">{{ 'product_page.spec_paper' | t }}</span><span class="pdp-specs__value">{{ 'product_page.spec_200gsm_full_matte' | t }}</span></li>
+        <li><span class="pdp-specs__label">{{ 'product_page.spec_build' | t }}</span><span class="pdp-specs__value">{{ 'product_page.spec_frameless_sheet' | t }}</span></li>
+        <li><span class="pdp-specs__label">{{ 'product_page.spec_hanging' | t }}</span><span class="pdp-specs__value">{{ 'product_page.spec_frame_yourself' | t }}</span></li>
+        <li><span class="pdp-specs__label">{{ 'product_page.spec_sizes' | t }}</span><span class="pdp-specs__value">{{ 'product_page.spec_many_sizes' | t }}</span></li>
+      {%- when 'fine-art' -%}
+        <li><span class="pdp-specs__label">{{ 'product_page.spec_paper' | t }}</span><span class="pdp-specs__value">{{ 'product_page.spec_200gsm_archival' | t }}</span></li>
+        <li><span class="pdp-specs__label">{{ 'product_page.spec_finish' | t }}</span><span class="pdp-specs__value">{{ 'product_page.spec_giclee' | t }}</span></li>
+        <li><span class="pdp-specs__label">{{ 'product_page.spec_hanging' | t }}</span><span class="pdp-specs__value">{{ 'product_page.spec_frame_yourself' | t }}</span></li>
+        <li><span class="pdp-specs__label">{{ 'product_page.spec_sizes' | t }}</span><span class="pdp-specs__value">{{ 'product_page.spec_many_sizes' | t }}</span></li>
+      {%- when 'classic-framed' -%}
+        <li><span class="pdp-specs__label">{{ 'product_page.spec_frame' | t }}</span><span class="pdp-specs__value">{{ 'product_page.spec_slim_wood' | t }}</span></li>
+        <li><span class="pdp-specs__label">{{ 'product_page.spec_paper' | t }}</span><span class="pdp-specs__value">{{ 'product_page.spec_semi_gloss_paper' | t }}</span></li>
+        <li><span class="pdp-specs__label">{{ 'product_page.spec_hanging' | t }}</span><span class="pdp-specs__value">{{ 'product_page.spec_sawtooth' | t }}</span></li>
+        <li><span class="pdp-specs__label">{{ 'product_page.spec_finish' | t }}</span><span class="pdp-specs__value">{{ 'product_page.spec_ready' | t }}</span></li>
+      {%- when 'premium-framed' -%}
+        <li><span class="pdp-specs__label">{{ 'product_page.spec_frame' | t }}</span><span class="pdp-specs__value">{{ 'product_page.spec_slim_wood' | t }}</span></li>
+        <li><span class="pdp-specs__label">{{ 'product_page.spec_paper' | t }}</span><span class="pdp-specs__value">{{ 'product_page.spec_premium_semi' | t }}</span></li>
+        <li><span class="pdp-specs__label">{{ 'product_page.spec_hanging' | t }}</span><span class="pdp-specs__value">{{ 'product_page.spec_sawtooth' | t }}</span></li>
+        <li><span class="pdp-specs__label">{{ 'product_page.spec_finish' | t }}</span><span class="pdp-specs__value">{{ 'product_page.spec_ready' | t }}</span></li>
+      {%- when 'fine-art-framed' -%}
+        <li><span class="pdp-specs__label">{{ 'product_page.spec_frame' | t }}</span><span class="pdp-specs__value">{{ 'product_page.spec_slim_wood' | t }}</span></li>
+        <li><span class="pdp-specs__label">{{ 'product_page.spec_paper' | t }}</span><span class="pdp-specs__value">{{ 'product_page.spec_200gsm_archival' | t }}</span></li>
+        <li><span class="pdp-specs__label">{{ 'product_page.spec_finish' | t }}</span><span class="pdp-specs__value">{{ 'product_page.spec_giclee' | t }}</span></li>
+        <li><span class="pdp-specs__label">{{ 'product_page.spec_hanging' | t }}</span><span class="pdp-specs__value">{{ 'product_page.spec_sawtooth' | t }}</span></li>
+      {%- when 'metal-framed' -%}
+        <li><span class="pdp-specs__label">{{ 'product_page.spec_frame' | t }}</span><span class="pdp-specs__value">{{ 'product_page.spec_slim_metal' | t }}</span></li>
+        <li><span class="pdp-specs__label">{{ 'product_page.spec_paper' | t }}</span><span class="pdp-specs__value">{{ 'product_page.spec_semi_gloss_paper' | t }}</span></li>
+        <li><span class="pdp-specs__label">{{ 'product_page.spec_hanging' | t }}</span><span class="pdp-specs__value">{{ 'product_page.spec_ready' | t }}</span></li>
+        <li><span class="pdp-specs__label">{{ 'product_page.spec_sizes' | t }}</span><span class="pdp-specs__value">{{ 'product_page.spec_many_sizes' | t }}</span></li>
+      {%- when 'acrylic' -%}
+        <li><span class="pdp-specs__label">{{ 'product_page.spec_panel' | t }}</span><span class="pdp-specs__value">{{ 'product_page.spec_clear_acrylic' | t }}</span></li>
+        <li><span class="pdp-specs__label">{{ 'product_page.spec_thickness' | t }}</span><span class="pdp-specs__value">{{ 'product_page.spec_3_5mm' | t }}</span></li>
+        <li><span class="pdp-specs__label">{{ 'product_page.spec_hanging' | t }}</span><span class="pdp-specs__value">{{ 'product_page.spec_standoffs' | t }}</span></li>
+        <li><span class="pdp-specs__label">{{ 'product_page.spec_finish' | t }}</span><span class="pdp-specs__value">{{ 'product_page.spec_ready' | t }}</span></li>
+      {%- when 'foam' -%}
+        <li><span class="pdp-specs__label">{{ 'product_page.spec_panel' | t }}</span><span class="pdp-specs__value">{{ 'product_page.spec_foam_board' | t }}</span></li>
+        <li><span class="pdp-specs__label">{{ 'product_page.spec_thickness' | t }}</span><span class="pdp-specs__value">{{ 'product_page.spec_5_10mm' | t }}</span></li>
+        <li><span class="pdp-specs__label">{{ 'product_page.spec_hanging' | t }}</span><span class="pdp-specs__value">{{ 'product_page.spec_light_hang' | t }}</span></li>
+        <li><span class="pdp-specs__label">{{ 'product_page.spec_sizes' | t }}</span><span class="pdp-specs__value">{{ 'product_page.spec_many_sizes' | t }}</span></li>
+    {%- endcase -%}
+  </ul>
+{%- endif -%}

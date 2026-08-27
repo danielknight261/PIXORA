@@ -1,0 +1,91 @@
+{%- comment -%}
+  Photobox-style stepped rows for unframed fine art (giclée) posters.
+{%- endcomment -%}
+<section class="pdp-story" aria-label="{{ 'product_page.fine_art_story_label' | t }}">
+  <div class="page-width">
+    <article class="pdp-story__row">
+      <div class="pdp-story__media">
+        <img
+          src="{{ 'fine-art-story-look.webp' | asset_url }}"
+          width="1680"
+          height="2100"
+          alt="{{ 'product_page.fine_art_story_look_alt' | t }}"
+          loading="lazy"
+        >
+      </div>
+      <div class="pdp-story__copy">
+        <p class="pdp-story__eyebrow">{{ 'product_page.fine_art_story_look_eyebrow' | t }}</p>
+        <h2>{{ 'product_page.fine_art_story_look_title' | t }}</h2>
+        <p>{{ 'product_page.fine_art_story_look_body' | t }}</p>
+      </div>
+    </article>
+
+    <article class="pdp-story__row pdp-story__row--flip">
+      <div class="pdp-story__media">
+        <img
+          src="{{ 'fine-art-story-border.webp' | asset_url }}"
+          width="1680"
+          height="2100"
+          alt="{{ 'product_page.fine_art_story_border_alt' | t }}"
+          loading="lazy"
+        >
+      </div>
+      <div class="pdp-story__copy">
+        <p class="pdp-story__eyebrow">{{ 'product_page.fine_art_story_border_eyebrow' | t }}</p>
+        <h2>{{ 'product_page.fine_art_story_border_title' | t }}</h2>
+        <p>{{ 'product_page.fine_art_story_border_body' | t }}</p>
+      </div>
+    </article>
+
+    <article class="pdp-story__row">
+      <div class="pdp-story__media">
+        <img
+          src="{{ 'fine-art-story-paper.webp' | asset_url }}"
+          width="1680"
+          height="2100"
+          alt="{{ 'product_page.fine_art_story_paper_alt' | t }}"
+          loading="lazy"
+        >
+      </div>
+      <div class="pdp-story__copy">
+        <p class="pdp-story__eyebrow">{{ 'product_page.fine_art_story_paper_eyebrow' | t }}</p>
+        <h2>{{ 'product_page.fine_art_story_paper_title' | t }}</h2>
+        <p>{{ 'product_page.fine_art_story_paper_body' | t }}</p>
+      </div>
+    </article>
+
+    <article class="pdp-story__row pdp-story__row--flip">
+      <div class="pdp-story__media">
+        <img
+          src="{{ 'fine-art-story-giclee.webp' | asset_url }}"
+          width="1680"
+          height="2100"
+          alt="{{ 'product_page.fine_art_story_giclee_alt' | t }}"
+          loading="lazy"
+        >
+      </div>
+      <div class="pdp-story__copy">
+        <p class="pdp-story__eyebrow">{{ 'product_page.fine_art_story_giclee_eyebrow' | t }}</p>
+        <h2>{{ 'product_page.fine_art_story_giclee_title' | t }}</h2>
+        <p>{{ 'product_page.fine_art_story_giclee_body' | t }}</p>
+      </div>
+    </article>
+
+    <article class="pdp-story__row">
+      <div class="pdp-story__media">
+        <img
+          src="{{ 'fine-art-story-detail.webp' | asset_url }}"
+          width="1680"
+          height="2100"
+          alt="{{ 'product_page.fine_art_story_detail_alt' | t }}"
+          loading="lazy"
+        >
+      </div>
+      <div class="pdp-story__copy">
+        <p class="pdp-story__eyebrow">{{ 'product_page.fine_art_story_detail_eyebrow' | t }}</p>
+        <h2>{{ 'product_page.fine_art_story_detail_title' | t }}</h2>
+        <p>{{ 'product_page.fine_art_story_detail_body' | t }}</p>
+      </div>
+    </article>
+  </div>
+</section>

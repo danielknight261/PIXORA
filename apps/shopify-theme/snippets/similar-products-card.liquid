@@ -1,0 +1,20 @@
+{%- comment -%}
+  Tile for the similar-products scroller.
+  Params: handle, href, title, desc
+{%- endcomment -%}
+{%- capture similar_from -%}
+  {%- render 'from-price', handle: handle -%}
+{%- endcapture -%}
+{%- assign similar_from = similar_from | strip -%}
+<a class="similar-products__card" href="{{ href }}" {{ attr }}>
+  <span class="similar-products__media" aria-hidden="true">
+    {% render 'category-thumb', handle: handle, alt: title, class: 'similar-products__img', width: 480 %}
+  </span>
+  <span class="similar-products__title">{{ title }}</span>
+  {% if similar_from != blank %}
+    <span class="similar-products__price">{{ similar_from }}</span>
+  {% endif %}
+  {% if desc != blank %}
+    <span class="similar-products__desc">{{ desc }}</span>
+  {% endif %}
+</a>

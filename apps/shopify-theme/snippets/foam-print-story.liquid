@@ -1,0 +1,74 @@
+{%- comment -%}
+  Photobox-style stepped rows for foam board prints (portrait, square, landscape).
+{%- endcomment -%}
+<section class="pdp-story" aria-label="{{ 'product_page.foam_story_label' | t }}">
+  <div class="page-width">
+    <article class="pdp-story__row">
+      <div class="pdp-story__media">
+        <img
+          src="{{ 'foam-story-board.webp' | asset_url }}"
+          width="1680"
+          height="2100"
+          alt="{{ 'product_page.foam_story_board_alt' | t }}"
+          loading="lazy"
+        >
+      </div>
+      <div class="pdp-story__copy">
+        <p class="pdp-story__eyebrow">{{ 'product_page.foam_story_board_eyebrow' | t }}</p>
+        <h2>{{ 'product_page.foam_story_board_title' | t }}</h2>
+        <p>{{ 'product_page.foam_story_board_body' | t }}</p>
+      </div>
+    </article>
+
+    <article class="pdp-story__row pdp-story__row--flip">
+      <div class="pdp-story__media">
+        <img
+          src="{{ 'foam-story-close.webp' | asset_url }}"
+          width="1000"
+          height="1000"
+          alt="{{ 'product_page.foam_story_close_alt' | t }}"
+          loading="lazy"
+        >
+      </div>
+      <div class="pdp-story__copy">
+        <p class="pdp-story__eyebrow">{{ 'product_page.foam_story_close_eyebrow' | t }}</p>
+        <h2>{{ 'product_page.foam_story_close_title' | t }}</h2>
+        <p>{{ 'product_page.foam_story_close_body' | t }}</p>
+      </div>
+    </article>
+
+    <article class="pdp-story__row">
+      <div class="pdp-story__media">
+        <img
+          src="{{ 'foam-story-pair.webp' | asset_url }}"
+          width="1000"
+          height="1000"
+          alt="{{ 'product_page.foam_story_pair_alt' | t }}"
+          loading="lazy"
+        >
+      </div>
+      <div class="pdp-story__copy">
+        <p class="pdp-story__eyebrow">{{ 'product_page.foam_story_pair_eyebrow' | t }}</p>
+        <h2>{{ 'product_page.foam_story_pair_title' | t }}</h2>
+        <p>{{ 'product_page.foam_story_pair_body' | t }}</p>
+      </div>
+    </article>
+
+    <article class="pdp-story__row pdp-story__row--flip">
+      <div class="pdp-story__media">
+        <img
+          src="{{ 'foam-story-hold.webp' | asset_url }}"
+          width="800"
+          height="1000"
+          alt="{{ 'product_page.foam_story_hold_alt' | t }}"
+          loading="lazy"
+        >
+      </div>
+      <div class="pdp-story__copy">
+        <p class="pdp-story__eyebrow">{{ 'product_page.foam_story_hold_eyebrow' | t }}</p>
+        <h2>{{ 'product_page.foam_story_hold_title' | t }}</h2>
+        <p>{{ 'product_page.foam_story_hold_body' | t }}</p>
+      </div>
+    </article>
+  </div>
+</section>

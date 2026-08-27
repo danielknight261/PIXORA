@@ -1,0 +1,74 @@
+{%- comment -%}
+  Photobox-style stepped image + copy rows for framed canvas.
+{%- endcomment -%}
+<section class="pdp-story" aria-label="{{ 'product_page.story_label' | t }}">
+  <div class="page-width">
+    <article class="pdp-story__row">
+      <div class="pdp-story__media">
+        <img
+          src="{{ 'framed-canvas-story-frame.webp' | asset_url }}"
+          width="1680"
+          height="2100"
+          alt="{{ 'product_page.story_frame_alt' | t }}"
+          loading="lazy"
+        >
+      </div>
+      <div class="pdp-story__copy">
+        <p class="pdp-story__eyebrow">{{ 'product_page.story_eyebrow' | t }}</p>
+        <h2>{{ 'product_page.story_frame_title' | t }}</h2>
+        <p>{{ 'product_page.story_frame_body' | t }}</p>
+      </div>
+    </article>
+
+    <article class="pdp-story__row pdp-story__row--flip">
+      <div class="pdp-story__media">
+        <img
+          src="{{ 'framed-canvas-story-sizes.webp' | asset_url }}"
+          width="1796"
+          height="2245"
+          alt="{{ 'product_page.story_sizes_alt' | t }}"
+          loading="lazy"
+        >
+      </div>
+      <div class="pdp-story__copy">
+        <p class="pdp-story__eyebrow">{{ 'product_page.story_sizes_eyebrow' | t }}</p>
+        <h2>{{ 'product_page.story_sizes_title' | t }}</h2>
+        <p>{{ 'product_page.story_sizes_body' | t }}</p>
+      </div>
+    </article>
+
+    <article class="pdp-story__row">
+      <div class="pdp-story__media">
+        <img
+          src="{{ 'framed-canvas-story-colours.webp' | asset_url }}"
+          width="1796"
+          height="2245"
+          alt="{{ 'product_page.story_colours_alt' | t }}"
+          loading="lazy"
+        >
+      </div>
+      <div class="pdp-story__copy">
+        <p class="pdp-story__eyebrow">{{ 'product_page.story_colours_eyebrow' | t }}</p>
+        <h2>{{ 'product_page.story_colours_title' | t }}</h2>
+        <p>{{ 'product_page.story_colours_body' | t }}</p>
+      </div>
+    </article>
+
+    <article class="pdp-story__row pdp-story__row--flip">
+      <div class="pdp-story__media">
+        <img
+          src="{{ 'framed-canvas-story-texture.webp' | asset_url }}"
+          width="1680"
+          height="2100"
+          alt="{{ 'product_page.story_texture_alt' | t }}"
+          loading="lazy"
+        >
+      </div>
+      <div class="pdp-story__copy">
+        <p class="pdp-story__eyebrow">{{ 'product_page.story_texture_eyebrow' | t }}</p>
+        <h2>{{ 'product_page.story_texture_title' | t }}</h2>
+        <p>{{ 'product_page.story_texture_body' | t }}</p>
+      </div>
+    </article>
+  </div>
+</section>

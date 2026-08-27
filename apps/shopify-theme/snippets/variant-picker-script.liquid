@@ -19,7 +19,7 @@
       var galleryMap = data.galleryMap || {};
 
       var idInput = root.querySelector('[data-variant-id]');
-      var priceEl = root.querySelector('[data-product-price]');
+      var priceEls = root.querySelectorAll('[data-product-price]');
       var imageEl = root.querySelector('[data-product-image]') || root.querySelector('[data-product-media] img');
       var addBtn = root.querySelector('[data-add-to-cart]');
       var sizeGrid = root.querySelector('[data-size-grid]');
@@ -283,7 +283,7 @@
       function applyVariant(variant) {
         if (!variant) return;
         if (idInput) idInput.value = variant.id;
-        if (priceEl) priceEl.textContent = variant.priceFormatted;
+        priceEls.forEach(function (el) { el.textContent = variant.priceFormatted; });
         galleryState.images = imagesForVariant(variant);
         preloadImages(galleryState.images);
         showGalleryImage(0);

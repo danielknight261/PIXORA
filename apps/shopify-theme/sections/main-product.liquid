@@ -73,9 +73,25 @@
   if handle_down == 'framed-canvas' or title_down == 'framed canvas'
     assign is_framed_canvas = true
   endif
+  assign is_canvas_print = false
+  if is_framed_canvas == false
+    if handle_down contains 'canvas' or title_down contains 'canvas'
+      assign is_canvas_print = true
+    endif
+  endif
   assign is_metal_framed = false
   if handle_down contains 'metal-framed'
     assign is_metal_framed = true
+  endif
+  assign is_aluminum_print = false
+  assign is_brushed_aluminum = false
+  if is_metal_framed == false
+    if handle_down contains 'aluminum' or handle_down contains 'aluminium'
+      assign is_aluminum_print = true
+    endif
+    if handle_down contains 'brushed'
+      assign is_brushed_aluminum = true
+    endif
   endif
   assign is_wooden_framed = false
   if is_framed_canvas == false and is_metal_framed == false
@@ -85,9 +101,95 @@
       assign is_wooden_framed = true
     endif
   endif
+  assign is_wood_print = false
+  if is_wooden_framed == false
+    if handle_down == 'wood-prints' or handle_down contains 'wood-print'
+      assign is_wood_print = true
+    endif
+  endif
   assign is_hanger = false
   if hanger_option_index != nil or handle_down contains 'hanger'
     assign is_hanger = true
+  endif
+  assign is_semi_glossy_poster = false
+  if handle_down == 'classic-semi-glossy-paper-poster'
+    assign is_semi_glossy_poster = true
+  endif
+  assign is_matte_poster = false
+  if handle_down == 'premium-matte-paper-poster'
+    assign is_matte_poster = true
+  endif
+  assign is_fine_art_poster = false
+  if handle_down == 'fine-art-poster'
+    assign is_fine_art_poster = true
+  endif
+  assign is_classic_framed = false
+  if handle_down contains 'classic-semi-glossy-paper-wooden-framed'
+    assign is_classic_framed = true
+  endif
+  assign is_premium_framed = false
+  if handle_down contains 'premium-semi-glossy-paper-wooden-framed'
+    assign is_premium_framed = true
+  endif
+  assign is_fine_art_framed = false
+  if handle_down == 'fine-art-framed-poster'
+    assign is_fine_art_framed = true
+  endif
+  assign is_acrylic_print = false
+  if handle_down == 'acrylic-print' or handle_down contains 'acrylic'
+    assign is_acrylic_print = true
+  endif
+  assign is_foam_print = false
+  if handle_down contains 'foam'
+    assign is_foam_print = true
+  endif
+  assign has_pdp_story = false
+  assign spec_kind = blank
+  if is_framed_canvas
+    assign has_pdp_story = true
+    assign spec_kind = 'framed-canvas'
+  elsif is_canvas_print
+    assign has_pdp_story = true
+    assign spec_kind = 'canvas'
+  elsif is_brushed_aluminum
+    assign has_pdp_story = true
+    assign spec_kind = 'brushed'
+  elsif is_aluminum_print
+    assign has_pdp_story = true
+    assign spec_kind = 'aluminum'
+  elsif is_hanger
+    assign has_pdp_story = true
+    assign spec_kind = 'hanger'
+  elsif is_wood_print
+    assign has_pdp_story = true
+    assign spec_kind = 'wood'
+  elsif is_semi_glossy_poster
+    assign has_pdp_story = true
+    assign spec_kind = 'semi-glossy'
+  elsif is_matte_poster
+    assign has_pdp_story = true
+    assign spec_kind = 'matte'
+  elsif is_fine_art_poster
+    assign has_pdp_story = true
+    assign spec_kind = 'fine-art'
+  elsif is_classic_framed
+    assign has_pdp_story = true
+    assign spec_kind = 'classic-framed'
+  elsif is_premium_framed
+    assign has_pdp_story = true
+    assign spec_kind = 'premium-framed'
+  elsif is_fine_art_framed
+    assign has_pdp_story = true
+    assign spec_kind = 'fine-art-framed'
+  elsif is_metal_framed
+    assign has_pdp_story = true
+    assign spec_kind = 'metal-framed'
+  elsif is_acrylic_print
+    assign has_pdp_story = true
+    assign spec_kind = 'acrylic'
+  elsif is_foam_print
+    assign has_pdp_story = true
+    assign spec_kind = 'foam'
   endif
   assign category_label = 'header.wall_art' | t
   assign category_url = '/collections/wall-art'
@@ -245,13 +347,8 @@
                   class="product__image"
                   src="{{ media | image_url: width: 1100 }}"
                   alt="{{ media.alt | default: product.title | escape }}"
-                  {% if is_poster %}
-                    width="{{ media.width | default: 1100 }}"
-                    height="{{ media.height | default: 1100 }}"
-                  {% else %}
-                    width="1100"
-                    height="1100"
-                  {% endif %}
+                  width="{{ media.width | default: 1100 }}"
+                  height="{{ media.height | default: 1100 }}"
                   data-product-image
                 >
               {% else %}
@@ -502,36 +599,99 @@
         </div>
       </div>
 
-      {% if product.description != blank %}
-        <div class="page-width pb-canvas__about">
-          <h2>
-            {% if is_framed_canvas %}
-              {{ 'product_page.about_framed_canvas' | t }}
-            {% elsif is_wooden_framed %}
-              {{ 'product_page.about_wooden_framed' | t }}
-            {% elsif is_framed %}
-              {{ 'product_page.about_framed' | t }}
-            {% elsif is_poster %}
-              {{ 'product_page.about_poster' | t }}
-            {% else %}
-              {{ 'product_page.about_canvas' | t }}
-            {% endif %}
-          </h2>
-          <div class="rte">{{ product.description }}</div>
-        </div>
+      {% if product.description != blank or has_pdp_story %}
+      <div class="pdp-details">
+        {% if product.description != blank %}
+          <div class="page-width pb-canvas__about">
+            <h2>
+              {% if is_framed_canvas %}
+                {{ 'product_page.about_framed_canvas' | t }}
+              {% elsif is_premium_framed %}
+                {{ 'product_page.about_premium_framed' | t }}
+              {% elsif is_fine_art_framed %}
+                {{ 'product_page.about_fine_art_framed' | t }}
+              {% elsif is_wooden_framed %}
+                {{ 'product_page.about_wooden_framed' | t }}
+              {% elsif is_metal_framed %}
+                {{ 'product_page.about_metal_framed' | t }}
+              {% elsif is_framed %}
+                {{ 'product_page.about_framed' | t }}
+              {% elsif is_hanger %}
+                {{ 'product_page.about_hanger' | t }}
+              {% elsif is_semi_glossy_poster %}
+                {{ 'product_page.about_semi_glossy' | t }}
+              {% elsif is_matte_poster %}
+                {{ 'product_page.about_matte_poster' | t }}
+              {% elsif is_fine_art_poster %}
+                {{ 'product_page.about_fine_art' | t }}
+              {% elsif is_poster %}
+                {{ 'product_page.about_poster' | t }}
+              {% elsif is_brushed_aluminum %}
+                {{ 'product_page.about_brushed' | t }}
+              {% elsif is_aluminum_print %}
+                {{ 'product_page.about_aluminum' | t }}
+              {% elsif is_wood_print %}
+                {{ 'product_page.about_wood' | t }}
+              {% elsif is_acrylic_print %}
+                {{ 'product_page.about_acrylic' | t }}
+              {% elsif is_foam_print %}
+                {{ 'product_page.about_foam' | t }}
+              {% else %}
+                {{ 'product_page.about_canvas' | t }}
+              {% endif %}
+            </h2>
+            {% render 'pdp-spec-chips', kind: spec_kind %}
+            <div class="pb-canvas__about-copy rte">{{ product.description }}</div>
+          </div>
+        {% endif %}
+
+        {% if has_pdp_story %}
+          <div class="page-width pdp-story__intro">
+            <p class="pdp-story__eyebrow">{{ 'product_page.story_section_eyebrow' | t }}</p>
+            <h2 class="pdp-story__intro-title">{{ 'product_page.story_section_title' | t }}</h2>
+          </div>
+          {% if is_framed_canvas %}
+            {% render 'framed-canvas-story' %}
+          {% elsif is_canvas_print %}
+            {% render 'canvas-print-story', use_inches: use_inches %}
+          {% elsif is_brushed_aluminum %}
+            {% render 'brushed-aluminum-story' %}
+          {% elsif is_aluminum_print %}
+            {% render 'aluminum-print-story' %}
+          {% elsif is_hanger %}
+            {% render 'hanger-poster-story' %}
+          {% elsif is_wood_print %}
+            {% render 'wood-print-story' %}
+          {% elsif is_semi_glossy_poster %}
+            {% render 'semi-glossy-poster-story' %}
+          {% elsif is_matte_poster %}
+            {% render 'matte-poster-story' %}
+          {% elsif is_fine_art_poster %}
+            {% render 'fine-art-poster-story' %}
+          {% elsif is_classic_framed %}
+            {% render 'classic-framed-story' %}
+          {% elsif is_premium_framed %}
+            {% render 'premium-framed-story' %}
+          {% elsif is_fine_art_framed %}
+            {% render 'fine-art-framed-story' %}
+          {% elsif is_metal_framed %}
+            {% render 'metal-framed-story' %}
+          {% elsif is_acrylic_print %}
+            {% render 'acrylic-print-story' %}
+          {% elsif is_foam_print %}
+            {% render 'foam-print-story' %}
+          {% endif %}
+        {% endif %}
+      </div>
       {% endif %}
 
+      {% unless is_framed_canvas or is_canvas_print or is_aluminum_print or is_hanger or is_wood_print or is_semi_glossy_poster or is_matte_poster or is_fine_art_poster or is_classic_framed or is_premium_framed or is_fine_art_framed or is_metal_framed or is_acrylic_print or is_foam_print %}
       <div class="page-width pb-canvas__features">
         <article>
           <h3>{{ 'product_page.customise_title' | t }}</h3>
           <p>{{ 'product_page.customise_body' | t }}</p>
         </article>
-        {% if is_framed_canvas %}
-          <article>
-            <h3>{{ 'product_page.tray_title' | t }}</h3>
-            <p>{{ 'product_page.tray_body' | t }}</p>
-          </article>
-        {% elsif is_wooden_framed %}
+        {% if is_wooden_framed %}
           <article>
             <h3>{{ 'product_page.wood_frame_title' | t }}</h3>
             <p>{{ 'product_page.wood_frame_body' | t }}</p>
@@ -556,6 +716,16 @@
           <h3>{{ 'product_page.sizes_title' | t }}</h3>
           <p>{{ 'product_page.sizes_body' | t: count: size_count }}</p>
         </article>
+      </div>
+      {% endunless %}
+
+      <div class="pdp-sticky-bar" data-pdp-sticky-bar>
+        <div class="pdp-sticky-bar__inner">
+          <p class="pdp-sticky-bar__price" data-product-price>{{ current_variant.price | money }}</p>
+          <a class="button button--primary pdp-sticky-bar__cta" href="#Product-{{ section.id }}">
+            {{ 'product_page.sticky_personalize' | t }}
+          </a>
+        </div>
       </div>
     </div>
 
@@ -954,6 +1124,25 @@
 
 {% if is_variant_picker %}
   {% render 'variant-picker-script', section_id: section.id %}
+  <script>
+    (function () {
+      var bar = document.querySelector('[data-pdp-sticky-bar]');
+      var buybox = document.querySelector('.pb-canvas__buybox');
+      if (!bar || !buybox) return;
+      function setVisible(on) {
+        bar.classList.toggle('is-visible', on);
+        document.body.classList.toggle('has-pdp-sticky', on);
+      }
+      if (!('IntersectionObserver' in window) || window.matchMedia('(min-width: 900px)').matches) {
+        setVisible(false);
+        return;
+      }
+      var io = new IntersectionObserver(function (entries) {
+        setVisible(!entries[0].isIntersecting);
+      }, { threshold: 0 });
+      io.observe(buybox);
+    })();
+  </script>
 {% endif %}
 
 {%- comment -%} JSON-LD: Product + BreadcrumbList for SEO rich results {%- endcomment -%}

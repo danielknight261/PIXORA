@@ -1,0 +1,74 @@
+{%- comment -%}
+  Photobox-style stepped rows for classic semi-glossy paper posters.
+{%- endcomment -%}
+<section class="pdp-story" aria-label="{{ 'product_page.poster_story_label' | t }}">
+  <div class="page-width">
+    <article class="pdp-story__row">
+      <div class="pdp-story__media">
+        <img
+          src="{{ 'poster-story-look.webp' | asset_url }}"
+          width="1680"
+          height="2100"
+          alt="{{ 'product_page.poster_story_look_alt' | t }}"
+          loading="lazy"
+        >
+      </div>
+      <div class="pdp-story__copy">
+        <p class="pdp-story__eyebrow">{{ 'product_page.poster_story_look_eyebrow' | t }}</p>
+        <h2>{{ 'product_page.poster_story_look_title' | t }}</h2>
+        <p>{{ 'product_page.poster_story_look_body' | t }}</p>
+      </div>
+    </article>
+
+    <article class="pdp-story__row pdp-story__row--flip">
+      <div class="pdp-story__media">
+        <img
+          src="{{ 'poster-story-paper.webp' | asset_url }}"
+          width="1680"
+          height="2100"
+          alt="{{ 'product_page.poster_story_paper_alt' | t }}"
+          loading="lazy"
+        >
+      </div>
+      <div class="pdp-story__copy">
+        <p class="pdp-story__eyebrow">{{ 'product_page.poster_story_paper_eyebrow' | t }}</p>
+        <h2>{{ 'product_page.poster_story_paper_title' | t }}</h2>
+        <p>{{ 'product_page.poster_story_paper_body' | t }}</p>
+      </div>
+    </article>
+
+    <article class="pdp-story__row">
+      <div class="pdp-story__media">
+        <img
+          src="{{ 'poster-story-finish.webp' | asset_url }}"
+          width="1000"
+          height="1000"
+          alt="{{ 'product_page.poster_story_finish_alt' | t }}"
+          loading="lazy"
+        >
+      </div>
+      <div class="pdp-story__copy">
+        <p class="pdp-story__eyebrow">{{ 'product_page.poster_story_finish_eyebrow' | t }}</p>
+        <h2>{{ 'product_page.poster_story_finish_title' | t }}</h2>
+        <p>{{ 'product_page.poster_story_finish_body' | t }}</p>
+      </div>
+    </article>
+
+    <article class="pdp-story__row pdp-story__row--flip">
+      <div class="pdp-story__media">
+        <img
+          src="{{ 'poster-story-gallery.webp' | asset_url }}"
+          width="2400"
+          height="3000"
+          alt="{{ 'product_page.poster_story_gallery_alt' | t }}"
+          loading="lazy"
+        >
+      </div>
+      <div class="pdp-story__copy">
+        <p class="pdp-story__eyebrow">{{ 'product_page.poster_story_gallery_eyebrow' | t }}</p>
+        <h2>{{ 'product_page.poster_story_gallery_title' | t }}</h2>
+        <p>{{ 'product_page.poster_story_gallery_body' | t }}</p>
+      </div>
+    </article>
+  </div>
+</section>

@@ -1,0 +1,278 @@
+{%- liquid
+  assign similar_heading = section.settings.heading
+  if similar_heading == blank
+    assign similar_heading = 'product_page.similar_title' | t
+  endif
+  assign similar_intro = section.settings.intro
+  if similar_intro == blank
+    assign similar_intro = 'product_page.similar_intro' | t
+  endif
+  assign similar_footer_label = section.settings.footer_label
+  if similar_footer_label == blank
+    assign similar_footer_label = 'header.all_wall_art' | t
+  endif
+  assign similar_footer_link = section.settings.footer_link
+  if similar_footer_link == blank
+    assign similar_footer_link = '/collections/wall-art'
+  endif
+  assign similar_count = 0
+  for block in section.blocks
+    assign card_href = block.settings.link
+    if card_href == blank
+      continue
+    endif
+    assign link_path = card_href | split: '?' | first
+    assign thumb_handle = block.settings.handle | strip
+    if thumb_handle == blank
+      if link_path contains '/products/'
+        assign thumb_handle = link_path | split: '/products/' | last | split: '/' | first
+      elsif link_path contains '/collections/'
+        assign thumb_handle = link_path | split: '/collections/' | last | split: '/' | first
+      endif
+    endif
+    if request.page_type == 'product' and product.handle == thumb_handle
+      continue
+    endif
+    if request.page_type == 'collection' and collection.handle == thumb_handle
+      continue
+    endif
+    assign similar_count = similar_count | plus: 1
+  endfor
+-%}
+
+{%- if similar_count > 0 -%}
+  <section class="similar-products" id="SimilarProducts-{{ section.id }}" data-similar-products>
+    <div class="page-width">
+      <div class="similar-products__head">
+        <div>
+          {% if similar_heading != blank %}
+            <h2 class="similar-products__heading">{{ similar_heading }}</h2>
+          {% endif %}
+          {% if similar_intro != blank %}
+            <p class="similar-products__intro">{{ similar_intro }}</p>
+          {% endif %}
+        </div>
+        {% if similar_count > 3 %}
+          <div class="similar-products__nav">
+            <button type="button" class="similar-products__btn" data-similar-prev aria-label="{{ 'product_page.similar_prev' | t }}">‹</button>
+            <button type="button" class="similar-products__btn" data-similar-next aria-label="{{ 'product_page.similar_next' | t }}">›</button>
+          </div>
+        {% endif %}
+      </div>
+
+      <div class="similar-products__track" data-similar-track>
+        {%- for block in section.blocks -%}
+          {%- liquid
+            assign card_href = block.settings.link
+            if card_href == blank
+              continue
+            endif
+            assign link_path = card_href | split: '?' | first
+            assign thumb_handle = block.settings.handle | strip
+            if thumb_handle == blank
+              if link_path contains '/products/'
+                assign thumb_handle = link_path | split: '/products/' | last | split: '/' | first
+              elsif link_path contains '/collections/'
+                assign thumb_handle = link_path | split: '/collections/' | last | split: '/' | first
+              endif
+            endif
+            if request.page_type == 'product' and product.handle == thumb_handle
+              continue
+            endif
+            if request.page_type == 'collection' and collection.handle == thumb_handle
+              continue
+            endif
+          -%}
+          {% render 'similar-products-card',
+            handle: thumb_handle,
+            href: card_href,
+            title: block.settings.title,
+            desc: block.settings.text,
+            attr: block.shopify_attributes
+          %}
+        {%- endfor -%}
+      </div>
+
+      {% if similar_footer_link != blank %}
+        <p class="similar-products__footer">
+          <a href="{{ similar_footer_link }}">{{ similar_footer_label }} →</a>
+        </p>
+      {% endif %}
+    </div>
+  </section>
+
+  <script>
+    (function () {
+      var root = document.getElementById('SimilarProducts-{{ section.id }}');
+      if (!root) return;
+      var track = root.querySelector('[data-similar-track]');
+      var prev = root.querySelector('[data-similar-prev]');
+      var next = root.querySelector('[data-similar-next]');
+      if (!track) return;
+      function step() {
+        var card = track.querySelector('.similar-products__card');
+        return card ? card.getBoundingClientRect().width + 16 : 260;
+      }
+      if (prev) prev.addEventListener('click', function () {
+        track.scrollBy({ left: -step(), behavior: 'smooth' });
+      });
+      if (next) next.addEventListener('click', function () {
+        track.scrollBy({ left: step(), behavior: 'smooth' });
+      });
+    })();
+  </script>
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "Similar products",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "More ways to print your photo"
+    },
+    {
+      "type": "textarea",
+      "id": "intro",
+      "label": "Intro",
+      "default": "Same picture, a different finish — frames, metal, posters and more."
+    },
+    {
+      "type": "text",
+      "id": "footer_label",
+      "label": "Footer link label",
+      "default": "All wall art"
+    },
+    {
+      "type": "url",
+      "id": "footer_link",
+      "label": "Footer link"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "item",
+      "name": "Product",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Canvas prints"
+        },
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Short description"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Link"
+        },
+        {
+          "type": "text",
+          "id": "handle",
+          "label": "Product or collection handle",
+          "info": "Optional. Used for the thumbnail and from-price if the link is not a product or collection URL."
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Similar products",
+      "settings": {
+        "heading": "More ways to print your photo",
+        "intro": "Same picture, a different finish — frames, metal, posters and more.",
+        "footer_label": "All wall art",
+        "footer_link": "/collections/wall-art"
+      },
+      "blocks": [
+        {
+          "type": "item",
+          "settings": {
+            "title": "Canvas prints",
+            "text": "Sizes, wraps & personalise",
+            "link": "/products/canvas-20x20-cm-8x8"
+          }
+        },
+        {
+          "type": "item",
+          "settings": {
+            "title": "Framed canvas",
+            "text": "Tray frame · 3 colours",
+            "link": "/products/framed-canvas"
+          }
+        },
+        {
+          "type": "item",
+          "settings": {
+            "title": "Framed prints",
+            "text": "Wood & metal frames",
+            "link": "/collections/framed-prints"
+          }
+        },
+        {
+          "type": "item",
+          "settings": {
+            "title": "Acrylic prints",
+            "text": "Glossy, vivid colour",
+            "link": "/products/acrylic-print"
+          }
+        },
+        {
+          "type": "item",
+          "settings": {
+            "title": "Metal / aluminium",
+            "text": "Smooth & brushed",
+            "link": "/collections/aluminum-prints"
+          }
+        },
+        {
+          "type": "item",
+          "settings": {
+            "title": "Posters",
+            "text": "Matte, fine art & semi-glossy",
+            "link": "/collections/posters"
+          }
+        },
+        {
+          "type": "item",
+          "settings": {
+            "title": "Posters with hangers",
+            "text": "Matte · hanger colours",
+            "link": "/products/premium-matte-paper-poster-with-hanger"
+          }
+        },
+        {
+          "type": "item",
+          "settings": {
+            "title": "Foam prints",
+            "text": "Portrait · landscape · square",
+            "link": "/collections/foam-prints"
+          }
+        },
+        {
+          "type": "item",
+          "settings": {
+            "title": "Wood prints",
+            "text": "Natural grain · thickness",
+            "link": "/products/wood-prints"
+          }
+        },
+        {
+          "type": "item",
+          "settings": {
+            "title": "Photo tiles",
+            "text": "Restickable frames",
+            "link": "/collections/photo-tiles"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

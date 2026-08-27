@@ -3,7 +3,110 @@
     "main": {
       "type": "main-product",
       "settings": {}
+    },
+    "similar_products": {
+      "type": "similar-products",
+      "blocks": {
+        "canvas": {
+          "type": "item",
+          "settings": {
+            "title": "Canvas prints",
+            "text": "Sizes, wraps & personalise",
+            "link": "/products/canvas-20x20-cm-8x8"
+          }
+        },
+        "framed_canvas": {
+          "type": "item",
+          "settings": {
+            "title": "Framed canvas",
+            "text": "Tray frame · 3 colours",
+            "link": "/products/framed-canvas"
+          }
+        },
+        "framed": {
+          "type": "item",
+          "settings": {
+            "title": "Framed prints",
+            "text": "Wood & metal frames",
+            "link": "/collections/framed-prints"
+          }
+        },
+        "acrylic": {
+          "type": "item",
+          "settings": {
+            "title": "Acrylic prints",
+            "text": "Glossy, vivid colour",
+            "link": "/products/acrylic-print"
+          }
+        },
+        "aluminum": {
+          "type": "item",
+          "settings": {
+            "title": "Metal / aluminium",
+            "text": "Smooth & brushed",
+            "link": "/collections/aluminum-prints"
+          }
+        },
+        "posters": {
+          "type": "item",
+          "settings": {
+            "title": "Posters",
+            "text": "Matte, fine art & semi-glossy",
+            "link": "/collections/posters"
+          }
+        },
+        "hangers": {
+          "type": "item",
+          "settings": {
+            "title": "Posters with hangers",
+            "text": "Matte · hanger colours",
+            "link": "/products/premium-matte-paper-poster-with-hanger"
+          }
+        },
+        "foam": {
+          "type": "item",
+          "settings": {
+            "title": "Foam prints",
+            "text": "Portrait · landscape · square",
+            "link": "/collections/foam-prints"
+          }
+        },
+        "wood": {
+          "type": "item",
+          "settings": {
+            "title": "Wood prints",
+            "text": "Natural grain · thickness",
+            "link": "/products/wood-prints"
+          }
+        },
+        "tiles": {
+          "type": "item",
+          "settings": {
+            "title": "Photo tiles",
+            "text": "Restickable frames",
+            "link": "/collections/photo-tiles"
+          }
+        }
+      },
+      "block_order": [
+        "canvas",
+        "framed_canvas",
+        "framed",
+        "acrylic",
+        "aluminum",
+        "posters",
+        "hangers",
+        "foam",
+        "wood",
+        "tiles"
+      ],
+      "settings": {
+        "heading": "More ways to print your photo",
+        "intro": "Same picture, a different finish — frames, metal, posters and more.",
+        "footer_label": "All wall art",
+        "footer_link": "/collections/wall-art"
+      }
     }
   },
-  "order": ["main"]
+  "order": ["main", "similar_products"]
 }

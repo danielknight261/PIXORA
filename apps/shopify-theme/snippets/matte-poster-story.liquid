@@ -1,0 +1,74 @@
+{%- comment -%}
+  Photobox-style stepped rows for premium matte paper posters (not hangers).
+{%- endcomment -%}
+<section class="pdp-story" aria-label="{{ 'product_page.matte_poster_story_label' | t }}">
+  <div class="page-width">
+    <article class="pdp-story__row">
+      <div class="pdp-story__media">
+        <img
+          src="{{ 'matte-poster-story-look.webp' | asset_url }}"
+          width="1680"
+          height="2100"
+          alt="{{ 'product_page.matte_poster_story_look_alt' | t }}"
+          loading="lazy"
+        >
+      </div>
+      <div class="pdp-story__copy">
+        <p class="pdp-story__eyebrow">{{ 'product_page.matte_poster_story_look_eyebrow' | t }}</p>
+        <h2>{{ 'product_page.matte_poster_story_look_title' | t }}</h2>
+        <p>{{ 'product_page.matte_poster_story_look_body' | t }}</p>
+      </div>
+    </article>
+
+    <article class="pdp-story__row pdp-story__row--flip">
+      <div class="pdp-story__media">
+        <img
+          src="{{ 'matte-poster-story-paper.webp' | asset_url }}"
+          width="1680"
+          height="2100"
+          alt="{{ 'product_page.matte_poster_story_paper_alt' | t }}"
+          loading="lazy"
+        >
+      </div>
+      <div class="pdp-story__copy">
+        <p class="pdp-story__eyebrow">{{ 'product_page.matte_poster_story_paper_eyebrow' | t }}</p>
+        <h2>{{ 'product_page.matte_poster_story_paper_title' | t }}</h2>
+        <p>{{ 'product_page.matte_poster_story_paper_body' | t }}</p>
+      </div>
+    </article>
+
+    <article class="pdp-story__row">
+      <div class="pdp-story__media">
+        <img
+          src="{{ 'matte-poster-story-finish.webp' | asset_url }}"
+          width="1000"
+          height="1000"
+          alt="{{ 'product_page.matte_poster_story_finish_alt' | t }}"
+          loading="lazy"
+        >
+      </div>
+      <div class="pdp-story__copy">
+        <p class="pdp-story__eyebrow">{{ 'product_page.matte_poster_story_finish_eyebrow' | t }}</p>
+        <h2>{{ 'product_page.matte_poster_story_finish_title' | t }}</h2>
+        <p>{{ 'product_page.matte_poster_story_finish_body' | t }}</p>
+      </div>
+    </article>
+
+    <article class="pdp-story__row pdp-story__row--flip">
+      <div class="pdp-story__media">
+        <img
+          src="{{ 'matte-poster-story-room.webp' | asset_url }}"
+          width="2400"
+          height="3000"
+          alt="{{ 'product_page.matte_poster_story_room_alt' | t }}"
+          loading="lazy"
+        >
+      </div>
+      <div class="pdp-story__copy">
+        <p class="pdp-story__eyebrow">{{ 'product_page.matte_poster_story_room_eyebrow' | t }}</p>
+        <h2>{{ 'product_page.matte_poster_story_room_title' | t }}</h2>
+        <p>{{ 'product_page.matte_poster_story_room_body' | t }}</p>
+      </div>
+    </article>
+  </div>
+</section>
