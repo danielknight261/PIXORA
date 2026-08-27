@@ -685,5 +685,14 @@
     "foam_story_hold_title": "Light enough to hold, big enough for a wall",
     "foam_story_hold_body": "Landscape boards are wide and still light. Personalise with your photo, pick the size, then hang it or hold it up to see how it fills the space.",
     "foam_story_hold_alt": "A person holding a landscape foam print of a man kissing a toddler against a white wall"
+  },
+  "seo": {
+    "home_title": "Personalised photo gifts and wall art | Snapp Daddy",
+    "home_description": "Turn your favourite photos into canvas prints, framed wall art, mugs and gifts. Preview your design, then we print to order.",
+    "default_description": "Snapp Daddy turns your photos into personalised wall art, mugs and gifts. Preview before you buy, printed to order.",
+    "collection_description": "Shop {{ title }} at Snapp Daddy. Personalise with your photo, preview it on the product, then we print to order.",
+    "product_description": "Personalise {{ title }} with your photo. Preview it on the product, then we print to order.",
+    "og_image_alt": "Snapp Daddy personalised photo gifts and wall art",
+    "skip_to_content": "Skip to content"
   }
 }

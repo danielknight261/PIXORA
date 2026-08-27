@@ -2,6 +2,8 @@
 
 Production storefront: **Shopify + Gelato** ([migration runbook](./shopify-gelato-migration.md)).
 
+Commercial launch ticks: [go-live.md](./go-live.md).
+
 ## Before cutover
 
 - [ ] Theme published (`apps/shopify-theme` pushed)

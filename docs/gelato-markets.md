@@ -20,7 +20,7 @@ Not every SKU prints in every hub. Confirm canvas, framed, mugs, etc. on each Ge
 
 | Wave | Markets | Languages |
 | --- | --- | --- |
-| **0** | Rename shop from “My Store”; connect custom domain; UK VAT; test order UK **and** US | Theme EN |
+| **0** | Rename shop from “My Store”; connect custom domain; UK VAT; test order UK **and** US — tick [go-live.md](./go-live.md) | Theme EN |
 | **1** | GB, IE, US, CA, AU, NZ, DE, AT, FR, NL | EN, DE, FR, NL (theme files exist) |
 | **2** | IT, ES, PT, BE, CH, SE, DK, NO, PL | IT, ES, PT, PL (theme files exist for IT/ES/PT/PL) |
 | **3** | MX, BR, ZA, SG, MY, IN, AE | ES/PT/EN as appropriate |

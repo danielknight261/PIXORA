@@ -1266,6 +1266,8 @@
       "url": "{{ shop.url }}{{ collection.url }}",
       {% if collection.description != blank %}
         "description": {{ collection.description | strip_html | truncate: 5000 | json }},
+      {% else %}
+        "description": {{ 'seo.collection_description' | t: title: collection.title | json }},
       {% endif %}
       {% if collection.image %}
         "image": {{ collection.image | image_url: width: 1200 | prepend: 'https:' | json }},
@@ -1276,38 +1278,41 @@
           {
             "@type": "ListItem",
             "position": 1,
-            "name": "Home",
+            "name": {{ 'general.home' | t | json }},
             "item": "{{ shop.url }}"
           },
           {% if is_wall_art or is_canvas or is_posters or is_framed_prints or is_framed_canvas or is_aluminum or is_foam or is_acrylic or is_wood or is_hangers %}
             {
               "@type": "ListItem",
               "position": 2,
-              "name": "Wall art",
+              "name": {{ 'header.wall_art' | t | json }},
               "item": "{{ shop.url }}/collections/wall-art"
             },
             {
               "@type": "ListItem",
               "position": 3,
-              "name": {{ collection.title | json }}
+              "name": {{ collection.title | json }},
+              "item": "{{ shop.url }}{{ collection.url }}"
             }
           {% elsif is_home_gifts or is_mugs or is_phone_cases or is_tote_bags or is_prodigi_hub or is_water_bottles %}
             {
               "@type": "ListItem",
               "position": 2,
-              "name": "Home & gifts",
+              "name": {{ 'header.home_gifts' | t | json }},
               "item": "{{ shop.url }}/collections/home-gifts"
             },
             {
               "@type": "ListItem",
               "position": 3,
-              "name": {{ collection.title | json }}
+              "name": {{ collection.title | json }},
+              "item": "{{ shop.url }}{{ collection.url }}"
             }
           {% else %}
             {
               "@type": "ListItem",
               "position": 2,
-              "name": {{ collection.title | json }}
+              "name": {{ collection.title | json }},
+              "item": "{{ shop.url }}{{ collection.url }}"
             }
           {% endif %}
         ]

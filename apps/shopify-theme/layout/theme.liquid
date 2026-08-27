@@ -3,67 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>
-      {{ page_title }}{% if current_tags %} &ndash; tagged "{{ current_tags | join: ', ' }}"{% endif %}{% if current_page != 1 %} &ndash; Page {{ current_page }}{% endif %}{% unless page_title contains shop.name or page_title contains settings.brand_name %} &ndash; {{ settings.brand_name | default: shop.name }}{% endunless %}
-    </title>
-    {% if page_description %}
-      <meta name="description" content="{{ page_description | escape }}">
-    {% endif %}
-    <link rel="canonical" href="{{ canonical_url }}">
-
-    {%- comment -%} Open Graph {%- endcomment -%}
-    <meta property="og:site_name" content="{{ shop.name }}">
-    <meta property="og:url" content="{{ canonical_url }}">
-    <meta property="og:title" content="{{ page_title | escape }}">
-    {% if page_description %}
-      <meta property="og:description" content="{{ page_description | escape }}">
-    {% endif %}
-    {% if template.name == 'product' %}
-      <meta property="og:type" content="product">
-      {% if product.featured_media %}
-        <meta property="og:image" content="https:{{ product.featured_media | image_url: width: 1200 }}">
-        <meta property="og:image:width" content="1200">
-        <meta property="og:image:alt" content="{{ product.featured_media.alt | default: product.title | escape }}">
-      {% endif %}
-      <meta property="product:price:amount" content="{{ product.selected_or_first_available_variant.price | money_without_currency }}">
-      <meta property="product:price:currency" content="{{ cart.currency.iso_code }}">
-    {% elsif template.name == 'collection' and collection.image %}
-      <meta property="og:type" content="website">
-      <meta property="og:image" content="https:{{ collection.image | image_url: width: 1200 }}">
-    {% else %}
-      <meta property="og:type" content="website">
-    {% endif %}
-
-    {%- comment -%} Twitter Card {%- endcomment -%}
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="{{ page_title | escape }}">
-    {% if page_description %}
-      <meta name="twitter:description" content="{{ page_description | escape }}">
-    {% endif %}
-    {% if template.name == 'product' and product.featured_media %}
-      <meta name="twitter:image" content="https:{{ product.featured_media | image_url: width: 1200 }}">
-    {% endif %}
-
-    {%- comment -%} Organization structured data {%- endcomment -%}
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": {{ shop.name | json }},
-        "url": {{ shop.url | json }},
-        {% if settings.logo != blank %}
-          "logo": {{ settings.logo | image_url: width: 600 | prepend: 'https:' | json }},
-        {% else %}
-          "logo": {{ 'snappdaddy-logo.png' | asset_url | prepend: 'https:' | json }},
-        {% endif %}
-        "contactPoint": {
-          "@type": "ContactPoint",
-          "contactType": "customer service",
-          "url": "{{ shop.url }}/pages/contact"
-        }
-      }
-    </script>
-
+    {% render 'seo-meta' %}
     <link rel="icon" href="{{ 'snappdaddy-favicon.png' | asset_url }}" type="image/png" sizes="512x512">
     <link rel="apple-touch-icon" href="{{ 'snappdaddy-favicon.png' | asset_url }}">
     {{ content_for_header }}
@@ -101,6 +41,7 @@
     </style>
   </head>
   <body class="template-{{ template.name }}">
+    <a class="skip-link" href="#MainContent">{{ 'seo.skip_to_content' | t }}</a>
     {% sections 'header-group' %}
     <main id="MainContent" role="main">
       {{ content_for_layout }}

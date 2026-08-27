@@ -9,6 +9,7 @@ Turn Moments Into Keepsakes — photo personalization, powered by **Shopify + Ge
 | Storefront theme | [`apps/shopify-theme`](apps/shopify-theme) (Liquid) |
 | Personalization + mockups | Gelato Personalization Studio on Shopify |
 | Fulfilment | Gelato Shopify app |
+| Go-live checklist | [`docs/go-live.md`](docs/go-live.md) |
 | Migration runbook | [`docs/shopify-gelato-migration.md`](docs/shopify-gelato-migration.md) |
 | Product publish guide | [`docs/shopify-product-publish.md`](docs/shopify-product-publish.md) |
 

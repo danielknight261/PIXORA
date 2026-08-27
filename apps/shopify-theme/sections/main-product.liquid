@@ -1156,26 +1156,35 @@
 {% endif %}
 
 {%- comment -%} JSON-LD: Product + BreadcrumbList for SEO rich results {%- endcomment -%}
+{%- liquid
+  assign product_ld_desc = product.description | strip_html | strip
+  if product_ld_desc == blank
+    assign product_ld_desc = 'seo.product_description' | t: title: product.title
+  endif
+  assign product_ld_brand = settings.brand_name | default: shop.name
+  assign product_ld_low = product.price_min | money_without_currency | replace: ',', ''
+  assign product_ld_high = product.price_max | money_without_currency | replace: ',', ''
+-%}
 <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Product",
     "name": {{ product.title | json }},
     "url": "{{ shop.url }}{{ product.url }}",
-    "description": {{ product.description | strip_html | truncate: 5000 | json }},
+    "description": {{ product_ld_desc | truncate: 5000 | json }},
     {% if product.featured_media %}
       "image": [{{ product.featured_media | image_url: width: 1200 | prepend: 'https:' | json }}],
     {% endif %}
     "brand": {
       "@type": "Brand",
-      "name": {{ shop.name | json }}
+      "name": {{ product_ld_brand | json }}
     },
     "sku": {{ current_variant.sku | default: current_variant.id | json }},
     "offers": {
       "@type": "AggregateOffer",
       "priceCurrency": {{ cart.currency.iso_code | json }},
-      "lowPrice": {{ product.price_min | money_without_currency | json }},
-      "highPrice": {{ product.price_max | money_without_currency | json }},
+      "lowPrice": {{ product_ld_low | json }},
+      "highPrice": {{ product_ld_high | json }},
       "offerCount": {{ product.variants.size }},
       "availability": "https://schema.org/{% if product.available %}InStock{% else %}OutOfStock{% endif %}",
       "url": "{{ shop.url }}{{ product.url }}"
@@ -1190,7 +1199,7 @@
       {
         "@type": "ListItem",
         "position": 1,
-        "name": "Home",
+        "name": {{ 'general.home' | t | json }},
         "item": "{{ shop.url }}"
       },
       {
@@ -1202,7 +1211,8 @@
       {
         "@type": "ListItem",
         "position": 3,
-        "name": {{ display_title | json }}
+        "name": {{ display_title | json }},
+        "item": "{{ shop.url }}{{ product.url }}"
       }
     ]
   }

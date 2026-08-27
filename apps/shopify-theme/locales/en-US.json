@@ -127,5 +127,13 @@
     "acrylic_story_stack_body": "Color sits behind the acrylic so it looks deeper and brighter. Portraits, landscapes and stills all get that gallery-glass finish without a frame.",
     "foam_story_pair_body": "Two boards side by side above a table. Personalize with your photos, pick portrait, square or landscape on the matching product page, and they sit as a set.",
     "foam_story_hold_body": "Landscape boards are wide and still light. Personalize with your photo, pick the size, then hang it or hold it up to see how it fills the space."
+  },
+  "seo": {
+    "home_title": "Personalized photo gifts and wall art | Snapp Daddy",
+    "home_description": "Turn your favorite photos into canvas prints, framed wall art, mugs and gifts. Preview your design, then we print to order.",
+    "default_description": "Snapp Daddy turns your photos into personalized wall art, mugs and gifts. Preview before you buy, printed to order.",
+    "collection_description": "Shop {{ title }} at Snapp Daddy. Personalize with your photo, preview it on the product, then we print to order.",
+    "product_description": "Personalize {{ title }} with your photo. Preview it on the product, then we print to order.",
+    "og_image_alt": "Snapp Daddy personalized photo gifts and wall art"
   }
 }
